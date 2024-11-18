@@ -44,7 +44,7 @@ apiurl="https://wic-doctor.com:3004/getclinics"
             console.log("item clinic: ",item,JSON.parse(item.clinic_name))
             // Vérification si "name", "ville", et "specialities" sont des objets ou des chaînes JSON
             const name = typeof item.clinic_name === 'string' ? JSON.parse(item.clinic_name).fr : item.clinic_name?.fr || "Nom inconnu";
-            const ville = typeof item.addresses[0].ville === 'string' ? JSON.parse(item.addresses[0].ville).fr : item.addresses[0].ville?.fr || "Ville inconnue";
+            const ville = typeof JSON.parse(item.addresses[0].ville).fr === 'string' ? JSON.parse(item.addresses[0].ville).fr : item.addresses[0].ville?.fr || "Ville inconnue";
 
             const title = item.addresses[0].address || "Titre non fourni";
             const horaires = item.horaires || "Horaires non fournis";
@@ -71,7 +71,7 @@ apiurl="https://wic-doctor.com:3004/getclinics"
                                     <div class="mt-2 mb-0">
                                         <ul class="item-card-features mb-0">
                                             <li><span><i class="fa fa-map-marker me-1 text-muted"></i>${ville}</span></li>
-                                            <li class="mb-0"><span><i class="fa fa-user-md me-1 text-muted"></i> ${title} d'expérience</span></li>
+                                            
                                             <li><span><i class="fa fa-clock-o me-1"> ${horaires}</i></span></li>
                                         </ul>
                                     </div>
