@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Découvrez les spécificités de notre plateforme WIC Doctor qui vous permet de réserver des rdv et consulter votre médecin en ligne">
+	<meta name="author" content="Spruko Technologies Private Limited">
+	<meta name="title" content="WIC Doctor : RDV et téléconsultation">
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="assets/images/brand/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="assets/images/brand/favicon.ico">
+
+	<!-- Title -->
+	<title>WIC Doctor </title>
+
+	<!-- Bootstrap Css -->
+	<link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="index.html"><img src="assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="index.html"><img src="assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="index.html"><img src="assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="contact.html">Contactez-nous </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+	<!-- /Header-main -->
+
+	<!--Sliders Section-->
+	<section>
+		<div class="banner-2 cover-image sptb-2 sptb-tab banner-section bg-background1 position-relative"
+			data-image-src="assets/images/banners/WIC.DOC-Banner.jpeg">
+			<div class="header-text mb-0">
+				<div class="container">
+					<div class="text-center text-white mb-0">
+						<h1>
+							<a href="" class="typewrite" data-period="2000"
+								data-type='[ "Prise de rendez-vous médical en ligne"]'>
+								<span class="wrap"></span>
+							</a>
+						</h1>
+	
+						<p>Rapide, gratuit et sécurisé</p>
+					</div>
+					<div class="row">
+						<div class="col-xl-10 col-lg-12 col-md-12 d-block mx-auto">
+							<div class="item-search-tabs">
+								<div class="item-search-menu">
+									<!-- Menu tabs -->
+									<ul class="nav">
+										<li class="">
+											<a class="active" data-bs-toggle="tab" href="#tab1">
+												<i class="fa fa-user-md"></i>	Médecins 
+											</a>
+										</li>
+										<li>
+											<a data-bs-toggle="tab" href="#tab2"><i class="fa fa-hospital-o" style="margin-right: 3px;"></i>Cliniques</a>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-content index-search-select">
+									<div class="tab-pane active" id="tab1">
+										<div class="search-background">
+											<div class="form row no-gutters">
+												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectPays">
+													</select>
+												</div>
+												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectVille">
+													</select>
+												</div>
+												<div class="form-group col-xl-4 col-lg-4 col-md-12 mb-0">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelect">
+													</select>
+												</div>
+												<div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0">
+													<a class="btn btn-block btn-orange fs-14" onclick="RechercheDoctor()">
+														<i class="fa fa-search"></i> Rechercher
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab2">
+										<div class="search-background">
+											<div class="form row no-gutters">
+												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectPaysClinic">
+													</select>
+												</div>
+												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectVilleClinic">
+													</select>
+												</div>
+												<div class="form-group col-xl-4 col-lg-4 col-md-12 mb-0">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectClinic">
+													</select>
+												</div>
+												<div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0">
+													<a class="btn btn-block btn-orange fs-14" onclick="RechercheClinic()">
+														<i class="fa fa-search"></i> Rechercher
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Positionnement de l'image alignée à droite dans la section -->
+					<div class="position-absolute" style="top: 50%;right: 0;transform: translateY(-50%);z-index: -1;">
+						<div class="dl-patient-engagement-hero-right-image" 
+							target="_self">
+							<img alt="wic doctor télémedecine" src="assets/images/media/doctors/DOC1.png"
+								class="dl-image object-cover rounded-br-[24px]"
+								style="width: 20vw; height: auto; max-height: 80vh;">
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--/Section-->
+
+	<!--Statistics-->
+	<section>
+		<div class="about-1 cover-image sptb ">
+			<div class="content-text mb-0 text-white info">
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-lg-3 col-md-6">
+							<div class="counter-status md-mb-0">
+								<div class="counter-icon Consultations ">
+
+								</div>
+								<p class="font-weight-normal counter-tittle">Consultations réalisées
+								</p>
+								<p class="counter mb-0 counter-chiffre">10 000
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="counter-status status-1 md-mb-0">
+								<div class="counter-icon text-warning Medecins">
+
+								</div>
+								<p class="font-weight-normal counter-tittle">Médecins disponibles
+								</p>
+								<p class="counter mb-0 counter-chiffre">250</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="counter-status status md-mb-0">
+								<div class="counter-icon text-primary Specalites">
+
+								</div>
+								<p class="font-weight-normal counter-tittle">Spécialités médicales
+								</p>
+								<p class="counter mb-0 counter-chiffre">50</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="counter-status status">
+								<div class="counter-icon text-success Satisfaction">
+								</div>
+								<p class="font-weight-normal counter-tittle">Satisfaction des patients
+								</p>
+								<p class="counter mb-0 counter-chiffre">97 %
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/Statistics-->
+	<!--Section-->
+	<section class="sptb section-bg">
+		<div class="container">
+			<div class="text-justify">
+				<h2 class="mb-4">À propos de WIC Doctor
+				</h2>
+				<h4 class="leading-Automatic">WIC Doctor : votre allié santé en ligne. </h4>
+				<p class="leading-Automatic">Nous avons conçu un espace qui vous simplifie l'accès aux soins tout en
+					vous garantissant un suivi médical de qualité, où que vous soyez.
+				</p>
+				<p class="leading-Automatic">Notre mission est de rendre la santé accessible à tous en offrant une gamme
+					complète de services en ligne. Finis les déplacements de centaines de kilomètres et les files
+					d’attentes interminables, avec WIC Doctor vous pouvez consulter un médecin où que vous soyez.
+				</p>
+				<p class="leading-Automatic mb-0">Nos professionnels de santé partenaires s’engagent à vous fournir un
+					accompagnement personnalisé et à jour, afin de vous aider à mieux gérer votre bien-être au
+					quotidien. Ensemble, nous œuvrons pour une médecine moderne, accessible et en phase avec vos
+					besoins.
+				</p>
+				<p class="leading-Automatic mb-0">Rejoignez-nous et découvrez une nouvelle façon de prendre soin de
+					vous.
+
+				</p>
+			</div>
+		</div>
+	</section>
+	<!--/Section-->
+
+	<!--Section-->
+	<section class="sptb">
+		<div class="container">
+			<div class="section-title center-block text-center">
+				<h2>Comment ça marche ?
+				</h2>
+				<p>Obtenez un rendez-vous médical ou une téléconsultation en deux clics !
+				</p>
+			</div>
+			<div class="row ">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="mb-lg-0 mb-4">
+							<div class="service-card text-center">
+								<div class="icon-bg box-shadow icon-service text-primary about  CreationCompte">
+
+								</div>
+								<div class="servic-data mt-3">
+									<h4 class="font-weight-semibold mb-2">Créer un compte
+									</h4>
+									<p class="text-muted mb-0">Créer votre compte pour pouvoir gérer vos rendez-vous et
+										votre dossier médical en ligne.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="mb-sm-0 mb-4">
+							<div class="service-card text-center">
+								<div class="icon-bg box-shadow icon-service text-secondary about  Recherche">
+								</div>
+								<div class="servic-data mt-3">
+									<h4 class="font-weight-semibold mb-2">Rechercher</h4>
+									<p class="text-muted mb-0">Recherchez le spécialiste le plus proche de chez vous.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="mb-sm-0 mb-4">
+							<div class="service-card text-center">
+								<div class="icon-bg box-shadow icon-service text-danger about  PriseRdv">
+								</div>
+								<div class="servic-data mt-3">
+									<h4 class="font-weight-semibold mb-2">Rendez-vous en ligne
+									</h4>
+									<p class="text-muted mb-0">Consultez les disponibilités et réservez un rendez-vous
+										en ligne.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="">
+							<div class="service-card text-center">
+								<div class="icon-bg box-shadow icon-service text-success about  Suvi">
+								</div>
+								<div class="servic-data mt-3">
+									<h4 class="font-weight-semibold mb-2">Suivi médical
+									</h4>
+									<p class="text-muted mb-0">Effectuez le suivi médical en ligne avec votre médecin et
+										les différents laboratoires.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/Section-->
+
+	<!--Section-->
+	<section>
+		<div class="cover-image sptb backgroundcolor">
+			<div class="content-text mb-0">
+				<div class="container">
+					<div class="text-center text-white ">
+						<h2 class="mb-2 display-5" style="color: #18167A;">Prêt à prendre soin de votre santé en toute
+							simplicité ?
+						</h2>
+						<p style="color: #18167A;">Profitez de nos services en ligne dès maintenant.
+						</p>
+						<div class="mt-5">
+							<a href="ad-posts.html" class="btn btn-secondary btn-lg">Prendre rendez-vous
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/Section-->
+
+	<!--Section-->
+	<section class="sptb">
+		<div class="container">
+			<div class="section-title center-block text-center">
+				<h2>Pourquoi choisir WIC Doctor ?
+				</h2>
+			</div>
+			<div class="row ">
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card mb-0">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon bg-info mb-3 appel">
+
+								</div>
+								<h3>Accessibilité 24/7 </h3>
+								<p>Notre plateforme est disponible 24/7, vous permettant de consulter un médecin ou de
+									prendre un rendez-vous quand vous voulez.
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon  mb-3 Teleconsultaton">
+								</div>
+								<h3>Téléconsultation rapide et sécurisée</h3>
+								<p>Profitez de consultations en ligne avec des professionnels de santé qualifiés, sans
+									avoir à vous déplacer, et en toute sécurité.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg fea-icon  mb-3 PRDV">
+								</div>
+								<h3>Prise de rendez-vous simplifiée</h3>
+								<p>Trouvez le bon spécialiste et réservez votre créneau en quelques clics grâce à notre
+									système intuitif de prise de rendez-vous.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon mb-3 Journal">
+								</div>
+								<h3>Journal médical</h3>
+								<p>Accédez à des informations de qualité, des conseils santé et des articles
+									scientifiques fiables rédigés par nos spécialistes.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card mb-lg-0">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon mb-3 personalise">
+								</div>
+								<h3>Suivi personnalisé</h3>
+								<p>Bénéficiez d’un accompagnement rapproché grâce à un accès direct à votre dossier
+									médical et aux recommandations de nos médecins.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card mb-lg-0 mb-md-0">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon mb-3 confidentialite">
+								</div>
+								<h3>Confidentialité garantie</h3>
+								<p>Nous assurons la protection de vos données personnelles et de votre dossier médical
+									avec des standards de sécurité élevés.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--/Section-->
+
+
+
+
+	<!-- Newsletter-->
+	<section class="sptb section-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-xl-6 col-md-12">
+					<div class="sub-newsletter">
+						<h3 class="mb-2"><i class="fa fa-paper-plane-o me-2"></i> Inscrivez-vous à notre Journal Médical
+						</h3>
+						<p class="mb-0">Recevez les derniers conseils médicaux proposés par des spécialistes.
+							Votre email
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-xl-6 col-md-12">
+					<div class="input-group sub-input mt-1">
+						<input type="text" class="form-control input-lg " placeholder="Enter your Email">
+						<div class="input-group-append ">
+							<button type="button" class="btn btn-primary btn-lg br-te-3  br-be-3">
+								S’inscrire
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/Newsletter-->
+
+	<!--Footer Section-->
+	<section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="./qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="./trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="./contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="assets/js/circle-progress.min.js"></script>
+
+	<!-- Star Rating Js-->
+	<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--jquery-touchSwipe-->
+	<script src="assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+	<script src="assets/js/select2.js"></script>
+
+	<!-- sticky Js-->
+	<script src="assets/js/sticky.js"></script>
+
+	<!-- Cookie js -->
+	<script src="assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="assets/plugins/cookie/cookie.js"></script>
+
+	<!--Counters -->
+	<script src="assets/plugins/counters/counterup.min.js"></script>
+	<script src="assets/plugins/counters/waypoints.min.js"></script>
+	<script src="assets/plugins/counters/numeric-counter.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!--Dotcors-->
+	<script src="assets/js/recherche.js"></script>
+	<!-- Swipe Js-->
+	<script src="assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="assets/js/owl-carousel.js"></script>
+	<!-- Typewritter Js-->
+	<script src="assets/js/typewritter.js"></script>
+	<!-- Theme-color js -->
+	<script src="assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="assets/js/custom.js"></script>
+
+	<!-- switcher-custom js -->
+	<script src="assets/js/switcher-custom.js"></script>
+</body>
+
+</html>

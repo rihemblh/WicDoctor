@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+    <meta name="author" content="WIC Doctor">
+
+
+    <!-- Favicon -->
+    <link rel="icon" alt="WIC Doctor" href="assets/images/brand/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="assets/images/brand/favicon.png">
+
+    <meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+    <title>WIC Doctor : plateforme de télémédecine</title>
+    <!-- Bootstrap Css -->
+    <link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style Css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!--Icons  Css -->
+    <link href="assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="index.html"><img src="assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="index.html"><img src="assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="index.html"><img src="assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="contact.html">Contactez-nous </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+	<!-- /Header-main -->
+
+	<!--Sliders Section-->
+	<section>
+		<div class="banner-2 cover-image sptb-2 sptb-tab banner-section bg-background1 position-relative"
+			data-image-src="assets/images/banners/WIC.DOC-Banner.jpeg">
+			<div class="header-text mb-0">
+				<div class="container">
+					<div class="text-center text-white mb-0">
+						<h1>
+							<a href="" class="typewrite" data-period="2000"
+								data-type='[ "Prise de rendez-vous médical en ligne"]'>
+								<span class="wrap"></span>
+							</a>
+						</h1>
+	
+						<p>Rapide, gratuit et sécurisé</p>
+					</div>
+					<div class="row">
+						<div class="col-xl-10 col-lg-12 col-md-12 d-block mx-auto">
+							<div class="item-search-tabs">
+								<div class="item-search-menu">
+									<!-- Menu tabs -->
+									<ul class="nav">
+										<li class="">
+											<a class="active" data-bs-toggle="tab" href="#tab1">
+												<i class="fa fa-user-md"></i>	Médecins 
+											</a>
+										</li>
+										<li>
+											<a data-bs-toggle="tab" href="#tab2"><i class="fa fa-hospital-o" style="margin-right: 3px;"></i>Cliniques</a>
+										</li>
+									</ul>
+								</div>
+								<div class="tab-content index-search-select">
+									<div class="tab-pane active" id="tab1">
+										<div class="search-background">
+											<div class="form row no-gutters">
+												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectPays">
+													</select>
+												</div>
+												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectVille">
+													</select>
+												</div>
+												<div class="form-group col-xl-4 col-lg-4 col-md-12 mb-0">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelect">
+													</select>
+												</div>
+												<div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0">
+													<a class="btn btn-block btn-orange fs-14" onclick="RechercheDoctor()">
+														<i class="fa fa-search"></i> Rechercher
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab2">
+										<div class="search-background">
+											<div class="form row no-gutters">
+												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectPaysClinic">
+													</select>
+												</div>
+												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectVilleClinic">
+													</select>
+												</div>
+												<div class="form-group col-xl-4 col-lg-4 col-md-12 mb-0">
+													<select class="form-control select2-show-search border-bottom-0 w-100"
+														data-placeholder="Select" id="dynamicSelectClinic">
+													</select>
+												</div>
+												<div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0">
+													<a class="btn btn-block btn-orange fs-14" onclick="RechercheClinic()">
+														<i class="fa fa-search"></i> Rechercher
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Positionnement de l'image alignée à droite dans la section -->
+					<div class="position-absolute" style="top: 50%;right: 0;transform: translateY(-50%);z-index: -1;">
+						<div class="dl-patient-engagement-hero-right-image" 
+							target="_self">
+							<img alt="wic doctor télémedecine" src="assets/images/media/doctors/DOC1.png"
+								class="dl-image object-cover rounded-br-[24px]"
+								style="width: 20vw; height: auto; max-height: 80vh;">
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!--rendez-vous-->
+
+
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Prise de Rendez-vous</h2>
+            <div class="row mb-3">
+                <div class="col-1 nav-button">
+                    <button class="btn" onclick="navigateWeek(-1)">❮</button> <!-- Left arrow -->
+                </div>
+                <div class="col-10">
+                    <table class="table">
+                        <thead>
+                            <tr id="days-header">
+                                <!-- Les jours de la semaine seront générés ici via JavaScript -->
+                            </tr>
+                        </thead>
+                        <tbody id="time-slots-container">
+                            <!-- Les créneaux horaires seront affichés ici -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-1 nav-button">
+                    <button class="btn" onclick="navigateWeek(1)">❯</button> <!-- Right arrow -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog"
+            aria-labelledby="confirmationModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmationModalLabel">Confirmation de Réservation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Êtes-vous sûr de vouloir réserver ce créneau ?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-danger" id="confirmBooking">Confirmer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!--rendez-vous-->
+
+
+        <section>
+            <div class="cover-image sptb bg-background-color" data-image-src="assets/images/banners/banner4.jpg">
+                <div class="content-text mb-0">
+                    <div class="content-text mb-0">
+                        <div class="container">
+                            <div class="text-center text-white ">
+                                <h2 class="mb-2"> Inscrivez-vous </h2>
+                                Pour recevoir nos dernières publications</p>
+                                <div class="row">
+                                    <div class="col-lg-7 mx-auto d-block">
+                                        <div class="mt-5">
+                                            <div class="input-group sub-input mt-1">
+                                                <input type="text" class="form-control input-lg "
+                                                    placeholder="Votre e-mail">
+                                                <div class="input-group-append ">
+                                                    <button type="button"
+                                                        class="btn btn-secondary btn-lg br-te-3  br-be-3">
+                                                        S’inscrire
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Footer Section-->
+        <section>
+            <footer class="text-white footer-bg">
+                <div class="footer-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-12">
+                                <h6>About</h6>
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="javascript:;">Our Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Contact US</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Faq</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-12">
+                                <h6>Resources</h6>
+                                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="javascript:;">Search Doctor</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Search Hospital</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Search Clinic</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Search Fitnesscenter</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Search BloodBank</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 col-md-12">
+                                <h6>More</h6>
+                                <hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                                <div class="clearfix"></div>
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="javascript:;">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Terms and Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Book Appointments</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Subscribers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <h6>Contact</h6>
+                                <hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                                <ul class="list-unstyled mb-0 contact-footer">
+                                    <li>
+                                        <i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+                                        94070, USA
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope "></i>info12323@example.com
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone"></i>+ 01 234 567 88
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-print"></i>+ 01 234 567 89
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <h6>Subscribe</h6>
+                                <hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                                <div class="clearfix"></div>
+                                <div class="input-group w-100">
+                                    <input class="form-control br-ts-3 br-bs-3" placeholder="Email" type="text">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary br-te-3 br-be-3" type="button">Subscribe</button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-5">Follow Us</h6>
+                                <hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                                <ul class="list-unstyled list-inline follow-footer">
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-white p-0">
+                    <div class="container">
+                        <div class="row d-flex">
+                            <div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+                                Copyright © 2024 <a href="javascript:void(0);" class="fs-14 text-primary">WIC DOTCOR</a>
+                                All
+                                rights reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!--Footer Section-->
+
+        <!-- Popup Login-->
+        <div class="modal" id="exampleModal">
+            <div class="modal-dialog modal-lg modal-appoint" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button
+                            aria-label="Close" class="close" data-bs-dismiss="modal" type="button"><span
+                                aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Your Name</label>
+                                    <input class="form-control" placeholder="Enter Your Name" type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Your Email</label>
+                                    <input class="form-control" placeholder="Enter your Email" type="email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Your Number</label>
+                                    <input class="form-control" placeholder="Enter your Phone Number" type="number">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Select Gender</label>
+                                    <select class="form-control select2" name="user[hour]">
+                                        <option value="">Male</option>
+                                        <option value="0">Female</option>
+                                        <option value="1">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Select Date</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+                                            </div>
+                                        </div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+                                            type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Select City</label>
+                                    <select class="form-control form-select select2-show-search" name="city">
+                                        <option selected value="0">Select City</option>
+                                        <option value="1">Hyderabad</option>
+                                        <option value="2">Mumbai</option>
+                                        <option value="3">Delhi</option>
+                                        <option value="4">Bangalore</option>
+                                        <option value="5">Ahmedabad</option>
+                                        <option value="6">Chennai</option>
+                                        <option value="7">Kolkata</option>
+                                        <option value="8">Lucknow</option>
+                                        <option value="9">Jaipur</option>
+                                        <option value="10">Bhopal</option>
+                                        <option value="11">Visakhapatnam</option>
+                                        <option value="12">Patna</option>
+                                        <option value="13">Srinagar</option>
+                                        <option value="14">Lucknow</option>
+                                        <option value="15">Bhubaneswar</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Select Hospital</label>
+                                    <select class="form-control form-select select2-show-search" name="Hospital">
+                                        <option selected value="0">Select Hospital</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Select Specialist</label>
+                                    <select class="form-control form-select select2-show-search" name="Specialist">
+                                        <option selected value="0">Select Specialist</option>
+                                        <option value="1">Cardiologist</option>
+                                        <option value="2">Neurosurgeon</option>
+                                        <option value="3">Orthopaedic Surgeon</option>
+                                        <option value="4">Oncologist</option>
+                                        <option value="5">Neurologist</option>
+                                        <option value="6">Gastroenterologist</option>
+                                        <option value="7">ENT</option>
+                                        <option value="8">Dentist</option>
+                                        <option value="9">Psychiatrist</option>
+                                        <option value="10">Urologist</option>
+                                        <option value="11">Gynecologist</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Select Slot</label>
+                                    <select class="form-control form-select select2-show-search" name="Slot">
+                                        <option selected value="0">Select Hospital</option>
+                                        <option value="1">morning</option>
+                                        <option value="2">Afternoon</option>
+                                        <option value="3">Evening</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="">
+                            <a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Popup Login-->
+
+        <!-- Back to top -->
+        <a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+        <!-- JQuery js-->
+        <script src="assets/js/jquery.min.js"></script>
+
+        <!-- Bootstrap js -->
+        <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+        <!--JQueryVehiclerkline Js-->
+        <script src="assets/js/jquery.sparkline.min.js"></script>
+
+        <!-- Circle Progress Js-->
+        <script src="assets/js/circle-progress.min.js"></script>
+
+
+
+        <!-- Star Rating Js-->
+        <script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+        <!--Owl Carousel js -->
+        <script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+        <!--Horizontal Menu-->
+        <script src="assets/plugins/horizontal/horizontal.js"></script>
+
+        <!--Counters -->
+        <script src="assets/plugins/counters/counterup.min.js"></script>
+        <script src="assets/plugins/counters/waypoints.min.js"></script>
+        <script src="assets/plugins/counters/numeric-counter.js"></script>
+
+        <!-- Datepicker js -->
+        <script src="assets/plugins/date-picker/spectrum.js"></script>
+        <script src="assets/plugins/date-picker/jquery-ui.js"></script>
+        <script src="assets/plugins/date-picker/datepicker.js"></script>
+
+        <!--JQuery TouchSwipe js-->
+        <script src="assets/js/jquery.touchSwipe.min.js"></script>
+
+        <!--Select2 js -->
+        <script src="assets/plugins/select2/select2.full.min.js"></script>
+        <script src="assets/js/select2.js"></script>
+
+        <!-- Cookie js -->
+        <script src="assets/plugins/cookie/jquery.ihavecookies.js"></script>
+        <script src="assets/plugins/cookie/cookie.js"></script>
+
+        <!-- sticky Js-->
+        <script src="assets/js/sticky.js"></script>
+
+        <!-- Swipe Js-->
+        <script src="assets/js/swipe.js"></script>
+
+        <!--Owl-Carousel Js-->
+        <script src="assets/js/owl-carousel.js"></script>
+
+        <!-- Typewritter Js-->
+        <script src="assets/js/typewritter.js"></script>
+
+        <!-- Rendez-vous-->
+        <script src="assets/js/rendez-vous.js"></script>
+
+        <!-- Rendez-vous-->
+
+        <!--Dotcors-->
+        <script src="assets/js/doctor.js"></script>
+
+        <!--Dotcors-->
+        <script src="assets/js/recherche.js"></script>
+        <!-- Theme-color js -->
+        <script src="assets/js/themeColors.js"></script>
+
+        <!-- Custom Js-->
+        <script src="assets/js/custom.js"></script>
+
+
+        <!-- switcher-custom js -->
+        <script src="assets/js/switcher-custom.js"></script>
+
+    </body>
+
+</html>
