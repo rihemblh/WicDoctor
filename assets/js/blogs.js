@@ -5,7 +5,8 @@ try {
 	const response = await fetch(apiUrl);
 	const data = await response.json();
 	console.log("List blog: ",data)
-    data.forEach(item => {
+    const blogs = data.blogs
+    blogs.forEach(item => {
     document.getElementById('list-blog').innerHTML=document.getElementById('list-blog').innerHTML+
     `<div class="col-xl-4 col-lg-6 col-md-12">
 								<div class="card">
