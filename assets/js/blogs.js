@@ -1,4 +1,6 @@
 let apiUrl= 'https://wic-doctor.com:3004/blogs'
+
+async function fetchblogs() {
 try {
 	const response = await fetch(apiUrl);
 	const data = await response.json();
@@ -28,3 +30,5 @@ try {
 	console.error("Erreur lors de la récupération des données :", error);
 	//document.getElementById('carouselSpecialities').innerHTML = '<p>Erreur lors du chargement des images.</p>';
   }
+}
+fetchblogs()
