@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="index.html"><img src="assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="index.html"><img src="assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="index.html"><img src="assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+						
+							<li aria-haspopup="true">
+								<a href="contact.html">Contactez-nous </a>
+							</li>
+							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+	<!-- /Header-main -->
+
+
+	
+		<style>
+		
+
+
+
+		</style>
+        <!--Breadcrumb-->
+		<div>
+			<div class="bannerimg cover-image bg-background3" data-image-src="../assets/images/banners/banner2.jpg">
+				<div class="header-text mb-0">
+					<div class="container">
+						<div class="text-center text-white ">
+							<h1 class="">Politique de confidentialité</h1>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/Breadcrumb-->
+<section class="sptb section-bg section-politique" >
+    <div class="container">
+			<p class="normal0" >
+				Dans le cadre de ses activités et afin de permettre à ses utilisateurs, à savoir ses clients et ses prospects (désignés ci-après les “Utilisateurs”), de bénéficier des services proposés sur son site internet <strong><span style="background-color:#ffff00">«»</span></strong>, la société Way Interactive Convergence collecte et traite leurs données personnelles.
+			</p>
+			<p class="normal0" >
+				La présente politique s’applique lorsque nous agissons en tant que responsable du traitement des données personnelles des Utilisateurs de notre site <strong><span style="background-color:#ffff00">«»</span></strong>, c’est-à-dire lorsque nous déterminons les finalités et les moyens de traitement de ces données personnelles. Cette politique ne s’applique pas aux données que vous partagez avec Way Interactive Convergence lorsque vous êtes le responsable du traitement et que nous agissons en tant que sous-traitant. Pour obtenir des informations sur la manière dont Way Interactive Convergence protège vos données en tant que sous-traitant, veuillez consulter notre rubrique sur la sécurité des données dans nos conditions générales d’utilisation. Way Interactive Convergence attache une grande importance au respect de la vie privée et de la confidentialité des données personnelles de ses Utilisateurs. Ainsi, nous nous engageons à traiter ces données conformément aux lois et réglementations applicables, notamment <strong>la Loi n° 78-17 du 6 janvier 1978</strong> relative à l’informatique, aux fichiers et aux libertés (ci-après dénommée “<strong>Loi Informatique et Liberté</strong>“) et le Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données (ci-après dénommé “RGPD”). En utilisant le site <strong><span style="background-color:#ffff00">«»</span></strong><strong> </strong>de Way Interactive Convergence, les Utilisateurs acceptent les pratiques relatives aux données décrites dans cette déclaration. Cette politique de confidentialité s’applique à tous les services fournis par la société Way Interactive Convergence. Nous invitons tous les Utilisateurs à lire attentivement l’intégralité de la politique de confidentialité de Way Interactive Convergence ci-dessous.
+			</p>
+			<h5 s>
+				<strong><span style="color:#606060">Données à caractère personnel :</span></strong>
+			</h5>
+			<p class="normal0" >
+				Une donnée à caractère personnel désigne toute information relative à une personne physique identifiée ou identifiable, c’est-à-dire qu’elle peut être directement ou indirectement identifiée par référence à un numéro d’identification ou à un ou plusieurs éléments qui lui sont propres.
+			</p>
+			<h5 s>
+				<strong><span style="color:#606060">Traitement de données à caractère personnel :</span></strong>
+			</h5>
+			<p class="normal0" >
+				Le traitement de données à caractère personnel englobe toute opération ou ensemble d’opérations portant sur de telles données, quelle que soit la méthode utilisée. Cela inclut notamment la collecte, l’enregistrement, l’organisation, la conservation, l’adaptation ou la modification, l’extraction, la consultation, l’utilisation, la communication par transmission, diffusion ou toute autre forme de mise à disposition, le rapprochement ou l’interconnexion, ainsi que le verrouillage, l’effacement ou la destruction.
+			</p>
+			<h5 s>
+				<strong><span style="color:#606060">Cookie :</span></strong>
+			</h5>
+			<p class="normal0" >
+				Un cookie est une information déposée sur le disque dur d’un internaute par le serveur du site qu’il visite. Il contient plusieurs données, telles que le nom du serveur qui l’a déposé, un identifiant sous forme de numéro unique, et éventuellement une date d’expiration. Les cookies ne peuvent pas exécuter de programmes ni introduire de virus sur l’ordinateur de l’internaute. Ils sont attribués de manière unique et peuvent seulement être lus par un serveur Web du domaine qui a émis le cookie à l’intention de l’internaute.
+			</p>
+			<h5 s>
+				<strong><span style="color:#606060">Responsable du traitement - DPO :</span></strong>
+			</h5>
+			<p class="normal0" >
+				Le responsable du traitement des données personnelles mentionnées dans le présent document est la société Way Interactive Convergence, une SASU (société par actions simplifiée unipersonnelle) au capital de 1000 euros, immatriculée au RCS du Metz sous le numéro <strong>SIREN 981 888 829 – TVA Intra FR84981888829</strong>, dont le siège social est situé au<strong> n. 4, rue Marconi – 57075 Metz – France</strong>.<br />La société Way Interactive Convergence a désigné un délégué à la protection des données (Data Protection Officer – DPO) qui peut être contacté à l’adresse suivante: <strong>«</strong><strong><u>abuse@way-interactive-convergence.com</u></strong><strong>»</strong>.
+			</p>
+			<h5 s>
+				<strong><span style="color:#606060">Collecte des données personnelles :</span></strong>
+			</h5>
+			<p class="normal0" >
+				Lorsque les utilisateurs passent une commande, Way Interactive Convergence collecte des informations d’identification personnelles, telles que l’adresse électronique, le nom, l’adresse personnelle ou professionnelle et le numéro de téléphone.<br />Les informations recueillies sur le site peuvent être partagées au sein de Way Interactive Convergence et de ses filiales contrôlées, et les données personnelles peuvent être enregistrées et traitées en dehors du pays des utilisateurs. En utilisant les services de Way Interactive Convergence, les utilisateurs consentent à ces transferts vers des pays membres ou non de l’Union européenne. Way Interactive Convergence met en place des mesures garantissant la protection et la sécurité de ces données, conformément à la réglementation en vigueur.<br />Certaines informations sur les actions effectuées par les utilisateurs dans leur espace client peuvent également être automatiquement collectées par le site de Way Interactive Convergence. Cela peut inclure les dates des dernières connexions à cet espace et les dates des dernières utilisations des outils mis à disposition. Ces informations sont recueillies par Way Interactive Convergence dans le but d’améliorer la qualité du service lorsque les utilisateurs entrent en contact avec ses services.<br />Way Interactive Convergence n’a en aucun cas connaissance des informations bancaires de ses utilisateurs lors d’un paiement par carte de crédit. Les opérations bancaires sont réalisées directement sur le serveur de la banque.<br />Way Interactive Convergence encourage ses utilisateurs à consulter les clauses de fonctionnement des sites Web auxquels ils choisissent de se connecter à partir du sien, mais n’est pas responsable des clauses de confidentialité ou du contenu de ces sites Web externes.
+			</p>
+			<h5 s>
+				<strong><span style="color:#606060">Utilisation des données personnelles :</span></strong>
+			</h5>
+			<p class="normal0" >
+				Le site <strong><span style="background-color:#ffff00">«»</span></strong>, appartenant à Way Interactive Convergence, collecte et utilise les informations personnelles des utilisateurs pour gérer les commandes et leur fournir les services demandés. Way Interactive Convergence peut également utiliser leurs informations d’identification personnelles pour les informer de la disponibilité d’autres produits ou services. Way Interactive Convergence peut également les contacter via des questionnaires visant à obtenir leur opinion sur les services actuels ou sur de nouveaux services potentiels qui peuvent être proposés.
+			</p>
+			<p class="normal0" >
+				Way Interactive Convergence ne vend pas, ne loue pas et ne cède pas ses listes de clients à des tiers. Cependant, Way Interactive Convergence peut partager des données avec certains partenaires de confiance qui fournissent des services avancés. Tous ces tiers sont interdits d’exploiter les informations personnelles des utilisateurs de Way Interactive Convergence en dehors de la fourniture de ces services à Way Interactive Convergence, et ils sont tenus de maintenir la confidentialité de ces informations.
+			</p>
+			<p class="normal0" >
+				Way Interactive Convergence n’utilise pas et ne divulgue aucune information personnelle sans le consentement explicite de ses utilisateurs. Way Interactive Convergence ne divulguera leurs informations personnelles sans préavis que si elle y est obligée par la loi ou si elle est convaincue, de bonne foi, qu’une telle action est nécessaire pour :
+			</p>
+			<p class="normal0" >
+				<span > </span><strong>(a)</strong> se conformer aux obligations légales ou aux procédures légales concernant Way Interactive Convergence ou le site.<br /><strong>(b)</strong> protéger et défendre les droits ou la propriété de Way Interactive Convergence.<br /><strong>(c)</strong> en cas de situations critiques mettant en jeu la sécurité personnelle des autres clients ou du public, des mesures seront prises pour agir et les protéger.
+			</p>
+			<h5 s>
+				<strong><span style="color:#606060">Conservation des données personnelles :</span></strong>
+			</h5>
+			<p class="normal0" >
+				Dans le but de se conformer à ses obligations légales et de disposer des éléments nécessaires pour faire valoir ses droits, Way Interactive Convergence peut archiver les données conformément à la réglementation en vigueur. Ainsi, les données personnelles collectées par Way Interactive Convergence, telles que l’identité et les coordonnées des utilisateurs, sont archivées pendant une durée maximale de deux ans après la cessation des relations contractuelles pour les utilisateurs clients. Pour les utilisateurs prospects, la durée de conservation est calculée à partir de la collecte des données par le responsable de traitement ou du dernier contact.<br />La cessation des relations contractuelles est définie comme la résiliation explicite du contrat par l’utilisateur ou la non-utilisation des services de Way Interactive Convergence pendant une période de cinq ans.
+			</p>
+			<h5 s>
+				<strong><span style="color:#606060">Utilisation des cookies :</span></strong>
+			</h5>
+			<p class="normal0" >
+				Le site <strong><span style="background-color:#ffff00">«»</span></strong><span style="background-color:#ffff00"> </span>de Way Interactive Convergence utilise des cookies dans le but de faciliter la navigation sur le site, d’exécuter les services fournis par Way Interactive Convergence, de mesurer l’audience du site et de permettre le partage de pages du site.
+			</p>
+			<p class="normal0" >
+				Les utilisateurs consentent expressément à l’utilisation des cookies en cliquant sur le bouton “Ok” du bandeau présent sur le site ou en poursuivant leur navigation
+			</p>
+			<h6 >
+				<strong><span style="font-style:normal; color:#606060">1. Types de cookies utilisés :</span></strong>
+			</h6>
+			<p class="normal0" >
+				<span > </span><strong>(a)</strong> Les cookies nécessaires à la navigation sur le site. Ces cookies sont indispensables au bon fonctionnement du site <strong><span style="background-color:#ffff00">«»</span></strong>. Ils permettent l’utilisation des principales fonctionnalités du site. Sans ces cookies, les utilisateurs ne peuvent pas naviguer normalement sur le site.<br /><strong>(b)</strong> Les cookies fonctionnels : Ces cookies permettent de personnaliser l’expérience utilisateur.<br /><strong>(c)</strong> Les cookies analytiques : Ces cookies permettent de mesurer l’utilisation et les performances du site afin d’améliorer son fonctionnement. Ils effectuent des analyses de fréquentation des pages d’information, suivent les taux d’ouverture, de clics et de rebond au niveau individuel.
+			</p>
+			<h6 >
+				<strong><span style="font-style:normal; color:#606060">2. Gestion des cookies :</span></strong>
+			</h6>
+			<p class="normal0" >
+				Les utilisateurs ont la possibilité d’accepter ou de refuser les cookies sur le site, ou de les refuser une fois pour toutes en paramétrant leur navigateur.<br />Si un utilisateur choisit de refuser tous les cookies, cela peut réduire l’accès à certaines pages du site. Les modalités de suppression des cookies varient en fonction du navigateur utilisé par les utilisateurs (se référer aux indications fournies dans le menu des navigateurs).
+			</p>
+			<h6 >
+				<strong><span style="font-style:normal; color:#606060">3. Durée de vie des cookies :</span></strong>
+			</h6>
+			<p class="normal0" >
+				Les cookies sont conservés sur le terminal de l’utilisateur pendant une durée maximale de <span style="background-color:#ffff00">13 mois </span>à partir du moment où l’utilisateur donne son consentement. À l’expiration de cette période, le consentement de l’utilisateur sera à nouveau demandé. Pour plus d’informations, veuillez consulter le site de la CNIL :<strong>«</strong><strong><u>https://www.cnil.fr/fr/site-web-cookies-et-autres-traceurs</u></strong><strong>»</strong>
+			</p>
+			<h6 >
+				</a><strong><span style="font-style:normal; color:#606060"> </span></strong><strong><span style="font-style:normal; color:#606060">1.3 Droit des utilisateurs :</span></strong>
+			</h6>
+			<p class="normal0" >
+				Les utilisateurs qui ont fourni leurs données personnelles à Way Interactive Convergence bénéficient des droits suivants conformément à la réglementation en vigueur :
+			</p>
+			<h6 >
+				<strong><span style="font-style:normal; color:#606060">Droits d'accès et de rectification :</span></strong>
+			</h6>
+			<p class="normal0" >
+				Les utilisateurs ont le droit d’accéder à leurs données personnelles et de les corriger. Ils peuvent le faire en se connectant à leur compte sur<span style="background-color:#ffff00"> </span><strong><span style="background-color:#ffff00">«»</span></strong><span style="background-color:#ffff00"> </span>et en cliquant sur “Mon profil”, ou en contactant le service client à l’adresse<span style="background-color:#ffff00"> </span><strong><span style="background-color:#ffff00">«»</span></strong>.
+			</p>
+			<h6 >
+				<strong><span style="font-style:normal; color:#606060">Droit à l'effacement des données « droit à l'oubli », droit à la limitation du traitement et droit d'opposition :</span></strong>
+			</h6>
+			<p class="normal0" >
+				Dans les cas prévus par la réglementation en vigueur, les utilisateurs ont le droit de demander la suppression de leurs données, de limiter leur traitement ou de s’opposer à leur traitement.
+			</p>
+			<h6 >
+				<strong><span style="font-style:normal; color:#606060">Droit de désinscription :</span></strong>
+			</h6>
+			<p class="normal0" >
+				Les utilisateurs ont le droit de se désinscrire de la newsletter de <strong><span style="background-color:#ffff00">«»</span></strong><span style="background-color:#ffff00"> </span>ou des emails marketing en suivant les liens de désinscription présents dans chaque email.
+			</p>
+			<h6 >
+				<strong><span style="font-style:normal; color:#606060">Droit à la portabilité des données :</span></strong>
+			</h6>
+			<p class="normal0" >
+				Les utilisateurs ont le droit de demander la portabilité de leurs données brutes fournies à Way Interactive Convergence.
+			</p>
+			<p class="normal0" >
+				Ces droits peuvent être exercés en envoyant un e-mail à l’adresse<strong> «</strong><strong><u>abuse@way-interactive convergence.com</u></strong><strong>»</strong> ou par courrier postal à l’adresse suivante : Way Interactive Convergence, 1, rue de l’Etang – L5326 Contern – LUXEMBOURG. Veuillez fournir une pièce d’identité pour appuyer votre demande. L’utilisateur a également le droit de déposer une réclamation auprès de la CNIL. Les coordonnées de la CNIL sont disponibles sur le site internet <strong>«</strong><strong><u>https://www.cnil.fr</u></strong><strong>»</strong>.
+			</p>
+			<p class="normal0" >
+				La société Way Interactive Convergence prend toutes les mesures nécessaires pour assurer la sécurité et la confidentialité des données personnelles. Des précautions sont prises pour éviter toute altération, dommage ou accès non autorisé à ces données. Si vous avez des questions concernant la sécurité du site internet <strong><span style="background-color:#ffff00">«»</span></strong><span style="background-color:#ffff00"> </span>de Way Interactive Convergence, vous pouvez les adresser à <strong>«</strong><strong><u>abuse@way-interactive-convergence.com</u></strong><strong>»</strong>.
+			</p>
+			<p class="normal0" >
+				Way Interactive Convergence se réserve le droit de modifier cette politique de confidentialité afin de se conformer aux évolutions des lois et réglementations en vigueur. Il est recommandé aux utilisateurs de consulter régulièrement cette politique de confidentialité pour se tenir informés des mesures prises pour protéger leurs données personnelles.
+			</p>
+			<p class="normal0">
+				
+			</p>
+</div>
+</section>
+	<!--Footer Section-->
+	<section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+							
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="./trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+					
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Les conditions</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+									</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles</a>
+									</a>
+								</li>
+								<li>
+									<a href="#">Termes et licences d'utilisation
+									</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="assets/plugins/counters/counterup.min.js"></script>
+	<script src="assets/plugins/counters/waypoints.min.js"></script>
+	<script src="assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="assets/plugins/date-picker/spectrum.js"></script>
+	<script src="assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+	<script src="assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>
