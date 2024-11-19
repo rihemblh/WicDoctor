@@ -22,7 +22,7 @@ try {
 											
 										</div><a class="text-dark" href="javascript:void(0);">
 										<h4 class="font-weight-semibold mb-3">${item.titre}</h4></a>
-										<p>${item.contenu}</p><a class="btn btn-primary btn-sm" href="javascript:void(0);">Read More</a>
+										<a class="btn btn-primary btn-sm" href="javascript:void(0);">Read More</a>
 									</div>
 								</div>
 							</div>`
