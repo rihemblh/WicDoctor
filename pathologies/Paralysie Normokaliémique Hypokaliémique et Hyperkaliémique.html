@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Diagnostic et Traitement de la Paralysie Normokaliémique, Hypokaliémique et Hyperkaliémique – Comprendre, Diagnostiquer et Traiter</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que la Paralysie Normokaliémique, Hypokaliémique et Hyperkaliémique ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Causes et Facteurs de Risque de la Paralysie Normokaliémique, Hypokaliémique et Hyperkaliémique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Symptômes et Signes des Paralysies Normokaliémiques, Hypokaliémiques et Hyperkaliémiques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic des Paralysies Normokaliémiques, Hypokaliémiques et Hyperkaliémiques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements des Paralysies Normokaliémiques, Hypokaliémiques et Hyperkaliémiques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que la Paralysie Normokaliémique, Hypokaliémique et Hyperkaliémique ?</h2></div><div class="info-text"><p><p>Les paralysies associées à des anomalies du potassium sanguin se manifestent par des épisodes de faiblesse musculaire et, dans certains cas, des paralysies plus graves. Ces troubles sont souvent liés à des variations des niveaux de potassium, un électrolyte crucial pour la fonction musculaire et nerveuse. On distingue trois types principaux :</p><ul>
+<li><strong>Paralysie normokaliémique</strong> : Les niveaux de potassium dans le sang sont dans la plage normale, mais des anomalies dans la régulation cellulaire peuvent provoquer des symptômes de paralysie.</li>
+<li><strong>Paralysie hypokaliémique</strong> : Une diminution du potassium sanguin entraîne des troubles musculaires, allant de la faiblesse musculaire à la paralysie complète.</li>
+<li><strong>Paralysie hyperkaliémique</strong> : Un excès de potassium dans le sang provoque également des symptômes neurologiques et musculaires, pouvant affecter la fonction cardiaque et respiratoire.</li>
+</ul><p>Ces paralysies peuvent survenir de manière aiguë et récurrente, souvent sous l’influence de facteurs génétiques, de troubles hormonaux ou d’abus de médicaments.</p><h4><strong>Caractéristiques principales de la paralysie</strong> :</h4><ul>
+<li><strong>Faiblesse musculaire</strong> : La faiblesse affecte principalement les muscles des membres, parfois le tronc, et dans les formes graves, les muscles respiratoires.</li>
+<li><strong>Symptômes fluctuants</strong> : Les symptômes varient en fonction des niveaux de potassium et peuvent inclure des épisodes récurrents de faiblesse ou de paralysie partielle ou complète.</li>
+<li><strong>Anomalies cardiaques</strong> : Les paralysies hyperkaliémiques peuvent entraîner des troubles du rythme cardiaque, parfois mortels.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque de la Paralysie Normokaliémique, Hypokaliémique et Hyperkaliémique</h2></div><div class="info-text"><p><p>Les causes des paralysies associées aux anomalies du potassium sont variées, allant des troubles génétiques à des conditions médicales sous-jacentes ou des influences médicamenteuses.</p><h4><strong>Facteurs de risque des paralysies liées au potassium</strong> :</h4><ul>
+<li><strong>Facteurs génétiques</strong> : Certaines formes de paralysie sont héréditaires et peuvent être liées à des mutations génétiques affectant la régulation du potassium cellulaire. Des troubles comme la <strong>paralysie périodique familiale</strong> sont associés à ces anomalies.</li>
+<li><strong>Troubles hormonaux</strong> : Des déséquilibres hormonaux, notamment une hyperaldostéronisme, peuvent favoriser des variations des niveaux de potassium.</li>
+<li><strong>Médicaments</strong> : L’utilisation de médicaments diurétiques ou de certains traitements pour l’hypertension peut induire des variations du potassium et entraîner des paralysies.</li>
+<li><strong>Maladies métaboliques et rénales</strong> : Les troubles du métabolisme des électrolytes et des dysfonctionnements rénaux peuvent affecter l'équilibre du potassium dans le corps.</li>
+<li><strong>Facteurs environnementaux</strong> : Une alimentation déséquilibrée, notamment un excès ou une carence en potassium, peut également être un facteur de risque.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Signes des Paralysies Normokaliémiques, Hypokaliémiques et Hyperkaliémiques</h2></div><div class="info-text"><p><p>Les symptômes des paralysies liées aux anomalies du potassium varient selon le type et l’intensité des épisodes. Bien que les symptômes puissent apparaître soudainement, les patients peuvent avoir des antécédents de crises récurrentes.</p><h4><strong>Symptômes courants</strong> :</h4><ul>
+<li><strong>Paralysie normokaliémique</strong> : La faiblesse musculaire ou la paralysie apparaît alors que les niveaux de potassium dans le sang sont normaux, souvent due à des anomalies dans la fonction des canaux ioniques.</li>
+<li><strong>Paralysie hypokaliémique</strong> : La faiblesse musculaire est souvent généralisée, touchant particulièrement les muscles proximaux (jambes et bras). Des symptômes peuvent inclure une sensation de lourdeur, des crampes, voire une paralysie complète dans les formes graves.</li>
+<li><strong>Paralysie hyperkaliémique</strong> : Les symptômes incluent une faiblesse musculaire importante, des anomalies du rythme cardiaque (arythmies), des difficultés respiratoires dues à l’atteinte des muscles respiratoires.</li>
+<li><strong>Douleurs et crampes</strong> : Les patients peuvent ressentir des douleurs musculaires avant ou après les épisodes de paralysie.</li>
+<li><strong>Anomalies cardiaques</strong> : Les troubles du rythme, en particulier lors de paralysie hyperkaliémique, peuvent entraîner des palpitations, des syncopes, ou même un arrêt cardiaque dans les cas extrêmes.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic des Paralysies Normokaliémiques, Hypokaliémiques et Hyperkaliémiques</h2></div><div class="info-text"><p><p>Le diagnostic des paralysies liées aux anomalies du potassium repose sur un examen clinique détaillé et des tests diagnostiques pour mesurer les niveaux de potassium et identifier les causes sous-jacentes.</p><h4><strong>Méthodes diagnostiques</strong> :</h4><ul>
+<li><strong>Tests sanguins</strong> : Mesurer les niveaux de potassium sérique est essentiel pour différencier les types de paralysie (normokaliémique, hypokaliémique, hyperkaliémique).</li>
+<li><strong>Tests génétiques</strong> : Si une cause héréditaire est suspectée, des tests génétiques peuvent être réalisés pour identifier des mutations spécifiques associées aux paralysies périodiques.</li>
+<li><strong>Électrocardiogramme (ECG)</strong> : Un ECG est indispensable pour détecter des anomalies du rythme cardiaque, particulièrement dans les cas de paralysie hyperkaliémique.</li>
+<li><strong>Électromyogramme (EMG)</strong> : Un EMG peut être utilisé pour évaluer l'activité électrique des muscles et confirmer le diagnostic.</li>
+<li><strong>Examen clinique</strong> : L'observation des symptômes cliniques et des antécédents médicaux permet de déterminer le type de paralysie et la cause sous-jacente.</li>
+</ul><p>Le <strong>portail WIC-DOCTOR</strong> permet aux patients de bénéficier de <strong>consultations à distance</strong> avec des spécialistes pour l’interprétation des résultats de tests et l'ajustement des traitements, offrant ainsi un suivi efficace et personnalisé.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements des Paralysies Normokaliémiques, Hypokaliémiques et Hyperkaliémiques</h2></div><div class="info-text"><p><p>Le traitement des paralysies associées aux anomalies du potassium vise à rétablir l'équilibre électrolytique, à prévenir les crises et à traiter les causes sous-jacentes.</p><h4><strong>Options thérapeutiques</strong> :</h4><ul>
+<li><strong>Paralysie hypokaliémique</strong> :</li>
+<li><strong>Suppléments de potassium</strong> : Les patients présentant une hypokaliémie doivent recevoir des suppléments de potassium pour restaurer les niveaux sanguins.</li>
+<li><strong>Modification des médicaments</strong> : Dans les cas où des médicaments, comme les diurétiques, sont responsables, des ajustements peuvent être nécessaires.</li>
+<li>
+<p><strong>Alimentation riche en potassium</strong> : Un régime alimentaire adapté, riche en potassium, peut être recommandé.</p>
+</li>
+<li>
+<p><strong>Paralysie hyperkaliémique</strong> :</p>
+</li>
+<li><strong>Médicaments pour abaisser le potassium</strong> : L'administration de médicaments tels que le calcium, le bicarbonate ou le gluconate de calcium peut aider à réduire le potassium sanguin.</li>
+<li><strong>Dialyse</strong> : Dans les cas graves d'hyperkaliémie, la dialyse peut être utilisée pour éliminer l'excès de potassium.</li>
+<li>
+<p><strong>Correction des anomalies hormonales</strong> : Le traitement des troubles hormonaux sous-jacents (comme l'hyperaldostéronisme) peut être nécessaire.</p>
+</li>
+<li>
+<p><strong>Paralysie normokaliémique</strong> :</p>
+</li>
+<li><strong>Traitement des causes sous-jacentes</strong> : L'accent est mis sur la gestion des conditions médicales qui perturbent la régulation cellulaire du potassium, comme les troubles génétiques ou les anomalies des canaux ioniques.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> permet un suivi à distance efficace pour les patients souffrant de paralysies liées aux anomalies du potassium. Les consultations à distance permettent de suivre l’évolution des symptômes et d’ajuster le traitement.</p><h4><strong>1. Spécialistes en neurologie</strong> :</h4><p>Les <strong>neurologues</strong> sont les médecins spécialisés dans le diagnostic et le traitement des troubles musculaires et neurologiques liés à ces paralysies.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Évaluation des symptômes neurologiques</strong> et des tests de</li>
+</ul><p>diagnostic pour déterminer le type de paralysie.
+  - <strong>Gestion des épisodes aigus</strong> et des stratégies de prévention des crises futures.</p><h4><strong>2. Spécialistes en électrolytes et métabolisme</strong> :</h4><p>Les <strong>endocrinologues</strong> ou <strong>néphrologues</strong> jouent un rôle clé dans la gestion des déséquilibres électrolytiques et métaboliques sous-jacents.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Suivi des niveaux de potassium</strong> et des autres électrolytes.</li>
+<li><strong>Gestion des médicaments et des traitements</strong> pour maintenir un équilibre optimal des électrolytes.</li>
+</ul><h4><strong>3. Télémédecine via WIC-DOCTOR</strong> :</h4><p>Le <strong>portail WIC-DOCTOR</strong> permet aux patients d'accéder à des consultations à distance avec des <strong>spécialistes</strong> en neurologie, en métabolisme et en électrolytes pour un suivi optimal.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations à distance</strong> pour suivre l’évolution de la maladie et ajuster les traitements.</li>
+<li><strong>Prescriptions électroniques</strong> pour des traitements personnalisés.</li>
+<li><strong>Suivi régulier</strong> des niveaux de potassium et de la fonction cardiaque.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Douleur Sciatique : Causes, Symptômes et Traitements</h1><p><p>La <strong>douleur sciatique</strong> est une douleur qui irradie le long du nerf sciatique, le plus long nerf du corps humain, qui va de la partie inférieure du dos jusqu'aux jambes. Elle peut être causée par diverses conditions, notamment une hernie discale, une sténose du canal rachidien, ou des tensions musculaires. Bien que la douleur sciatique soit fréquente, elle peut être invalidante et réduire la qualité de vie. Heureusement, il existe plusieurs traitements et méthodes pour gérer et soulager cette douleur. Grâce au <strong>portail WIC-DOCTOR</strong>, les patients peuvent bénéficier d’un suivi médical à distance et d’un accompagnement personnalisé pour traiter cette affection.</p><hr/></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de la Douleur Sciatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de la Douleur Sciatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de la Douleur Sciatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de la Douleur Sciatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de la Douleur Sciatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de la Douleur Sciatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">**Prévention de la Douleur Sci<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de la Douleur Sciatique</h2></div><div class="info-text"><p><p>La douleur sciatique est généralement causée par une compression ou une irritation du nerf sciatique. Ce nerf, qui commence au bas de la colonne vertébrale, se divise en plusieurs branches qui passent dans les jambes. Lorsque l’un de ces nerfs est comprimé, généralement au niveau des vertèbres lombaires ou sacrum, cela peut entraîner des douleurs qui irradient le long de la jambe, parfois jusqu'au pied.</p><p>Les causes les plus courantes de douleur sciatique incluent les hernies discales, la sténose du canal rachidien, ou des troubles musculo-squelettiques. Bien que la douleur puisse être aiguë et soudaine, elle peut également se développer progressivement au fil du temps.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de la Douleur Sciatique</h2></div><div class="info-text"><p><p>Les symptômes de la douleur sciatique varient selon la cause sous-jacente, mais comprennent généralement :</p><ul>
+<li><strong>Douleur intense dans le bas du dos</strong> : La douleur commence souvent dans le bas du dos ou les fesses et peut irradier le long de la jambe, parfois jusqu’au pied.</li>
+<li><strong>Engourdissement ou picotements</strong> : Les personnes souffrant de sciatique peuvent ressentir un engourdissement ou des sensations de picotements dans la jambe ou le pied.</li>
+<li><strong>Faiblesse musculaire</strong> : Les muscles de la jambe peuvent devenir faibles ou avoir du mal à se contracter correctement.</li>
+<li><strong>Douleur lancinante ou brûlante</strong> : La douleur peut être vive et lancinante, parfois ressentie comme une brûlure.</li>
+<li><strong>Douleur qui s’intensifie lors de certains mouvements</strong> : Les douleurs peuvent s’aggraver lorsqu’on éternue, tousse, ou lorsqu’on se penche ou reste dans une position trop longtemps.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de la Douleur Sciatique</h2></div><div class="info-text"><p><h4><strong>Causes de la Douleur Sciatique</strong> :</h4><ol>
+<li><strong>Hernie discale</strong> : Lorsque l’un des disques intervertébraux entre les vertèbres lombaires ou sacrées fait saillie, il peut comprimer les racines nerveuses du nerf sciatique.</li>
+<li><strong>Sténose du canal rachidien</strong> : Un rétrécissement du canal rachidien, souvent lié au vieillissement, peut également exercer une pression sur le nerf sciatique.</li>
+<li><strong>Syndrome du piriforme</strong> : Un spasme du muscle piriforme, situé dans la fesse, peut également pincer le nerf sciatique et provoquer des douleurs.</li>
+<li><strong>Spondylolisthésis</strong> : Lorsque l’une des vertèbres glisse sur une autre, elle peut comprimer les racines nerveuses et entraîner une douleur sciatique.</li>
+<li><strong>Blessures ou traumatismes</strong> : Des blessures directes à la colonne vertébrale ou aux muscles autour de la colonne peuvent entraîner une compression nerveuse.</li>
+<li><strong>Arthrite</strong> : L’arthrite, notamment l’arthrose, peut provoquer des changements dans la colonne vertébrale qui compriment le nerf sciatique.</li>
+</ol><h4><strong>Facteurs de Risque</strong> :</h4><ul>
+<li><strong>Âge avancé</strong> : Le vieillissement entraîne des changements dégénératifs dans la colonne vertébrale, comme les hernies discales ou la sténose du canal rachidien.</li>
+<li><strong>Mauvaise posture</strong> : Les mauvaises habitudes de posture, notamment au travail ou en dormant, peuvent accroître la pression sur la colonne vertébrale et les nerfs.</li>
+<li><strong>Surpoids et obésité</strong> : L'excès de poids augmente la pression sur les disques intervertébraux et peut contribuer à des problèmes de la colonne vertébrale.</li>
+<li><strong>Manque d’exercice physique</strong> : Un mode de vie sédentaire favorise la faiblesse musculaire et la mauvaise posture, augmentant ainsi le risque de douleurs sciatiques.</li>
+<li><strong>Tabagisme</strong> : Le tabac diminue la circulation sanguine vers la colonne vertébrale et peut accélérer les problèmes dégénératifs des disques.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de la Douleur Sciatique</h2></div><div class="info-text"><p><p>Les complications de la douleur sciatique peuvent être graves si elle n'est pas traitée correctement. Parmi les complications possibles, on trouve :</p><ol>
+<li><strong>Perte de mobilité</strong> : La douleur sciatique chronique peut entraîner une perte de mobilité, rendant difficile les activités quotidiennes comme marcher ou se lever.</li>
+<li><strong>Syndrome de la queue de cheval</strong> : Bien que rare, cette condition survient lorsque la compression des racines nerveuses du bas de la colonne vertébrale affecte les fonctions urinaires et les mouvements des jambes. Il s'agit d'une urgence médicale.</li>
+<li><strong>Incontinence</strong> : Si les racines nerveuses sont gravement comprimées, cela peut entraîner une perte de contrôle des fonctions de la vessie ou de l’intestin.</li>
+<li><strong>Déficience musculaire</strong> : Si la compression nerveuse persiste sans traitement, elle peut entraîner une faiblesse musculaire durable ou une atrophie des muscles de la jambe.</li>
+</ol><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de la Douleur Sciatique</h2></div><div class="info-text"><p><p>Le diagnostic de la douleur sciatique repose sur un examen clinique détaillé et, dans certains cas, des examens complémentaires :</p><ol>
+<li><strong>Anamnèse et examen physique</strong> : Le médecin interroge le patient sur les symptômes, leur intensité et leur durée. L'examen physique permet d'évaluer la mobilité du dos et de vérifier les réflexes et la sensibilité des jambes.</li>
+<li><strong>Imagerie médicale</strong> :</li>
+<li><strong>Radiographie</strong> : Une radiographie de la colonne vertébrale peut être réalisée pour examiner les structures osseuses et identifier des problèmes comme l’arthrose ou les fractures.</li>
+<li><strong>IRM (Imagerie par Résonance Magnétique)</strong> : L’IRM est souvent utilisée pour visualiser les hernies discales, la sténose du canal rachidien ou d’autres anomalies affectant les nerfs.</li>
+<li><strong>Scanner (TDM)</strong> : Dans certains cas, un scanner peut être utilisé pour une vue plus détaillée des structures vertébrales et nerveuses.</li>
+<li><strong>Electromyogramme (EMG)</strong> : Cet examen permet d'évaluer la fonction des muscles et des nerfs, en détectant d’éventuelles anomalies nerveuses.</li>
+</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de la Douleur Sciatique</h2></div><div class="info-text"><p><h4><strong>Traitements Médicamenteux</strong> :</h4><ol>
+<li><strong>Anti-inflammatoires non stéroïdiens (AINS)</strong> : Les AINS, comme l'ibuprofène, peuvent soulager l’inflammation et la douleur.</li>
+<li><strong>Analgésiques</strong> : Des analgésiques comme le paracétamol peuvent être utilisés pour gérer la douleur légère à modérée.</li>
+<li><strong>Relaxants musculaires</strong> : Utilisés pour traiter les spasmes musculaires qui peuvent accompagner la sciatique.</li>
+<li><strong>Corticostéroïdes</strong> : En cas de douleur sévère et inflammatoire, des injections de corticostéroïdes dans la colonne vertébrale peuvent réduire l'inflammation autour du nerf sciatique.</li>
+</ol><h4><strong>Traitements non médicamenteux</strong> :</h4><ol>
+<li><strong>Kinésithérapie</strong> : La physiothérapie, comprenant des exercices d’étirement et de renforcement musculaire, peut être très utile pour soulager la douleur sciatique et améliorer la posture.</li>
+<li><strong>Chiropratique</strong> : La manipulation de la colonne vertébrale par un chiropraticien peut parfois apporter un soulagement.</li>
+<li><strong>Massages thérapeutiques</strong> : Des massages peuvent réduire les tensions musculaires et améliorer la circulation sanguine.</li>
+<li><strong>Yoga et étirements</strong> : Des exercices doux de yoga peuvent soulager la douleur sciatique en étirant les muscles et en réduisant la pression sur les nerfs.</li>
+</ol><h4><strong>Chirurgie</strong> :</h4><p>Si les traitements conservateurs échouent et que la douleur persiste ou s’aggrave, une intervention chirurgicale peut être envisagée :
+1. <strong>Microdiscectomie</strong> : Intervention consistant à retirer la portion du disque hernié qui comprime le nerf.
+2. <strong>Laminectomie</strong> : Retrait d'une petite portion d'os (lame) pour libérer l’espace autour du nerf sciatique.</p><h4><strong>Suivi médical à distance avec WIC-DOCTOR</strong> :</h4><p>Les patients souffrant de douleur sciatique peuvent bénéficier de <strong>consultations à distance via WIC-DOCTOR</strong>. Ce suivi virtuel permet de recevoir des conseils médicaux continus, des prescriptions adaptées et des recommandations pour des exercices thérapeutiques. La plateforme WIC-DOCTOR facilite le suivi personnalisé et l’accès à des spécialistes du dos, réduisant ainsi la nécessité de déplacements fréquents.</p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>**Prévention de la Douleur Sci</h2></div><div class="info-text"><p><p>atique**</p><p>La prévention de la douleur sciatique repose sur des mesures simples mais efficaces :
+1. <strong>Adopter une bonne posture</strong> : Maintenir une posture correcte, notamment lors de la position assise et du port de charges, est essentiel pour préserver la santé de la colonne vertébrale.
+2. <strong>Exercice physique régulier</strong> : Renforcer les muscles du dos et de l’abdomen par des exercices adaptés aide à maintenir la stabilité de la colonne vertébrale.
+3. <strong>Maintenir un poids santé</strong> : L'excès de poids exerce une pression supplémentaire sur la colonne vertébrale, ce qui augmente le risque de souffrir de sciatique.
+4. <strong>Éviter les mouvements brusques</strong> : Limiter les torsions ou les mouvements trop rapides du dos peut prévenir les douleurs liées à une tension musculaire.</p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

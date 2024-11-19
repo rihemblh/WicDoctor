@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Cryptorchidie chez l'Enfant : Comprendre, Diagnostiquer et Traiter</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que la Cryptorchidie ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Causes et Facteurs de Risque de la Cryptorchidie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Symptômes de la Cryptorchidie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic de la Cryptorchidie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements de la Cryptorchidie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que la Cryptorchidie ?</h2></div><div class="info-text"><p><p>La <strong>cryptorchidie</strong> se définit par l'absence d'un ou des deux testicules dans le scrotum d'un nourrisson, à la naissance. Normalement, les testicules descendent dans le scrotum au cours des derniers mois de la grossesse, mais dans le cas de la cryptorchidie, ce processus n’est pas complet. La cryptorchidie peut concerner un seul testicule (cryptorchidie unilatérale) ou les deux testicules (cryptorchidie bilatérale).</p><h4><strong>Caractéristiques principales de la cryptorchidie</strong> :</h4><ul>
+<li><strong>Absence de testicule dans le scrotum</strong> : Le testicule peut être retrouvé dans l'abdomen ou dans l'aine.</li>
+<li><strong>Formes de cryptorchidie</strong> : La cryptorchidie peut être <strong>palpable</strong>, c'est-à-dire qu'on peut localiser le testicule sous la peau, ou <strong>non palpable</strong>, lorsque le testicule est intrabdominal et ne peut être localisé sans imagerie.</li>
+<li><strong>Évolution naturelle</strong> : Dans de nombreux cas, le testicule peut descendre spontanément dans le scrotum au cours des premiers mois de la vie, mais ce n'est pas toujours le cas.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque de la Cryptorchidie</h2></div><div class="info-text"><p><p>Les causes exactes de la cryptorchidie ne sont pas toujours connues, mais plusieurs facteurs génétiques et environnementaux peuvent jouer un rôle. Parfois, la condition peut être associée à des malformations génétiques ou à des troubles hormonaux.</p><h4><strong>Facteurs de risque de la cryptorchidie</strong> :</h4><ul>
+<li><strong>Prématurité</strong> : Les bébés nés prématurément présentent un risque accru de cryptorchidie en raison d'un développement incomplet du système hormonal et du trajet de descente des testicules.</li>
+<li><strong>Poids de naissance faible</strong> : Les nourrissons ayant un poids de naissance faible sont également plus susceptibles de développer une cryptorchidie.</li>
+<li><strong>Antécédents familiaux</strong> : Les antécédents familiaux de cryptorchidie augmentent le risque de cette pathologie.</li>
+<li><strong>Facteurs hormonaux</strong> : Des anomalies dans les hormones responsables de la descente des testicules peuvent être une cause sous-jacente.</li>
+<li><strong>Facteurs environnementaux</strong> : Des expositions précoces à des perturbateurs endocriniens peuvent être associées à un risque accru.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes de la Cryptorchidie</h2></div><div class="info-text"><p><p>Dans la majorité des cas, la cryptorchidie est identifiée lors des examens de routine effectués après la naissance. La principale caractéristique de la pathologie est l'absence de l'un ou des deux testicules dans le scrotum.</p><h4><strong>Symptômes courants de la cryptorchidie</strong> :</h4><ul>
+<li><strong>Absence de testicule palpable</strong> : L'absence d'un ou des deux testicules dans le scrotum, qui peut être facilement détectée par un examen physique.</li>
+<li><strong>Testicule palpable dans l'aine ou l'abdomen</strong> : Le testicule peut être trouvé dans l'aine ou l'abdomen et parfois être déplacé manuellement dans le scrotum.</li>
+<li><strong>Incapacité à localiser le testicule</strong> : Dans les cas de cryptorchidie non palpable, les tests d’imagerie, comme l'échographie, sont nécessaires pour localiser le testicule.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic de la Cryptorchidie</h2></div><div class="info-text"><p><p>Le diagnostic de la cryptorchidie repose principalement sur un examen physique effectué lors de la visite de routine du nourrisson. Si un testicule est absent ou non palpable, des examens complémentaires peuvent être nécessaires pour localiser le testicule ou évaluer les risques associés à la pathologie.</p><h4><strong>Méthodes diagnostiques</strong> :</h4><ul>
+<li><strong>Examen clinique</strong> : Le pédiatre examine les testicules du nourrisson pour vérifier leur présence dans le scrotum et localiser toute anomalie.</li>
+<li><strong>Échographie testiculaire</strong> : Si le testicule n'est pas palpable, une échographie permet de localiser un testicule dans l'aine ou l'abdomen.</li>
+<li><strong>IRM ou tomodensitométrie (TDM)</strong> : Dans les cas plus complexes, l'imagerie avancée peut être utilisée pour localiser précisément les testicules non descendus.</li>
+<li><strong>Bilan hormonal</strong> : Un bilan hormonal peut être prescrit si une anomalie hormonale est suspectée, notamment pour évaluer la fonction de l'axe hypothalamo-hypophyso-gonadique.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements de la Cryptorchidie</h2></div><div class="info-text"><p><p>Le traitement de la cryptorchidie vise à corriger la descente des testicules et à prévenir les complications à long terme, telles que l'infertilité ou le risque de cancer testiculaire. Dans de nombreux cas, une intervention chirurgicale est nécessaire pour abaisser le testicule dans le scrotum, une procédure appelée orchidopexie.</p><h4><strong>Options thérapeutiques</strong> :</h4><ul>
+<li><strong>Observation</strong> : Chez les nourrissons, si la cryptorchidie est unilatérale et que le testicule est palpable, il est possible que le testicule descende spontanément au cours des premiers mois de la vie, sans nécessiter de traitement.</li>
+<li><strong>Traitement hormonal</strong> : Des injections de gonadotrophine chorionique humaine (hCG) peuvent être utilisées pour stimuler la descente des testicules chez certains enfants.</li>
+<li><strong>Chirurgie (orchidopexie)</strong> : Si le testicule ne descend pas spontanément ou si la cryptorchidie est bilatérale, une chirurgie est pratiquée pour placer les testicules dans le scrotum. Cela se fait généralement entre 6 mois et 1 an.</li>
+<li><strong>Suivi post-opératoire</strong> : Après une orchidopexie, des visites de suivi régulières sont essentielles pour s'assurer que le testicule reste dans le scrotum et pour surveiller d'éventuelles complications.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> propose des services de <strong>télémédecine</strong> pour la gestion de la <strong>cryptorchidie chez l'enfant</strong>, permettant aux parents et aux pédiatres de bénéficier de consultations spécialisées à distance et d'un suivi régulier du développement de l'enfant.</p><h4><strong>1. Pédiatres et Urologues pédiatriques</strong></h4><p>Les <strong>pédiatres</strong> et les <strong>urologues pédiatriques</strong> sont des spécialistes clés dans le diagnostic et le traitement de la cryptorchidie.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations spécialisées</strong> pour diagnostiquer la cryptorchidie et décider du traitement approprié.</li>
+<li><strong>Suivi des enfants après une orchidopexie</strong> pour surveiller la position des testicules et prévenir toute complication.</li>
+<li><strong>Conseils pour les parents</strong> sur les soins post-opératoires et le suivi à domicile.</li>
+</ul><h4><strong>2. Centres de Chirurgie Pédiatrique</strong></h4><p>Les <strong>centres de chirurgie pédiatrique</strong> sont spécialisés dans l'orchidopexie et autres procédures nécessaires pour corriger la cryptorchidie.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Chirurgie de correction</strong> de la cryptorchidie sous anesthésie générale.</li>
+<li><strong>Suivi post-opératoire</strong> pour vérifier la réussite de l'intervention et prévenir toute récidive.</li>
+<li><strong>Consultations à distance</strong> pour le suivi après la chirurgie, grâce à WIC-DOCTOR.</li>
+</ul><h4><strong>3. Télémédecine via WIC-DOCTOR</strong></h4><p>Le <strong>portail WIC-DOCTOR</strong> permet aux parents d’accéder à des consultations à distance avec des <strong>pédiatres</strong> et <strong>urologues pédiatriques</strong>, facilitant le diagnostic et le suivi de la cryptorchidie sans avoir à se déplacer.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations à distance</strong> pour diagnostiquer la cryptorchidie et déterminer la meilleure approche thérapeutique.</li>
+<li><strong>Suivi post-opératoire</strong> pour les enfants ayant subi une orchidopexie.</li>
+<li><strong>Prescriptions électroniques</strong> pour les traitements hormonaux ou pour un suivi régulier.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

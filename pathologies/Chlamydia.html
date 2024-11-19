@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Chlamydia : Causes, Symptômes et Traitements</h1><p><p>La <strong>chlamydia</strong> est une infection sexuellement transmissible (IST) causée par la bactérie <em>Chlamydia trachomatis</em>. Elle est l'une des IST les plus courantes dans le monde. Bien souvent asymptomatique, elle peut causer de graves complications, notamment des problèmes de fertilité chez les hommes et les femmes si elle n'est pas traitée. Heureusement, la chlamydia peut être facilement diagnostiquée et traitée grâce à des antibiotiques. Avec l'essor de la <strong>télémédecine</strong> via <strong>WIC-DOCTOR</strong>, les patients peuvent bénéficier d'un suivi médical à distance pour le diagnostic, le traitement et le suivi de cette pathologie.</p><hr/></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de la Chlamydia<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de la Chlamydia<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de la Chlamydia<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de la Chlamydia<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de la Chlamydia<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de la Chlamydia<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de la Chlamydia</h2></div><div class="info-text"><p><p>La chlamydia est causée par l’infection de <em>Chlamydia trachomatis</em>, une bactérie intracellulaire qui se transmet principalement lors de rapports sexuels non protégés. Les zones les plus fréquemment touchées sont les organes génitaux, le rectum, ainsi que la gorge en cas de rapports oraux. Bien que souvent sans symptômes, elle peut entraîner des douleurs, des écoulements anormaux, et, si elle est laissée sans traitement, provoquer des infections pelviennes, des complications lors de la grossesse, et augmenter le risque de transmission du VIH.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de la Chlamydia</h2></div><div class="info-text"><p><p>Chez de nombreuses personnes, la chlamydia ne présente aucun symptôme, ce qui rend difficile son identification sans un dépistage. Lorsque des symptômes apparaissent, ils peuvent varier en fonction du sexe et de l'endroit de l'infection.</p><h4><strong>Chez les femmes :</strong></h4><ul>
+<li><strong>Écoulements vaginaux anormaux</strong> : Souvent de couleur jaunâtre ou verdâtre, parfois accompagnés d'une mauvaise odeur.</li>
+<li><strong>Douleurs pelviennes</strong> : En particulier dans le bas-ventre.</li>
+<li><strong>Saignements anormaux</strong> : Entre les règles ou après un rapport sexuel.</li>
+<li><strong>Brûlures ou douleurs lors de la miction</strong> : Sensation de gêne ou de brûlure en urinant.</li>
+<li><strong>Douleurs pendant les rapports sexuels</strong> : En raison de l'infection dans le col de l'utérus.</li>
+</ul><h4><strong>Chez les hommes :</strong></h4><ul>
+<li><strong>Écoulements du pénis</strong> : Généralement clairs ou jaunâtres.</li>
+<li><strong>Brûlures ou douleurs lors de la miction</strong> : Sensation de brûlure, de douleur ou de gêne en urinant.</li>
+<li><strong>Douleurs ou gonflements des testicules</strong> : Infection qui peut atteindre l'épididyme, provoquant douleur et inflammation.</li>
+<li><strong>Douleurs dans l'urètre</strong> : Sensibilité ou douleur au niveau du conduit urinaire.</li>
+</ul><h4><strong>Chlamydia rectale</strong> (possible chez les hommes et les femmes) :</h4><ul>
+<li><strong>Douleurs rectales</strong> : En cas de rapports anaux non protégés.</li>
+<li><strong>Écoulements rectaux</strong> : Parfois associés à des démangeaisons ou des saignements.</li>
+</ul><h4><strong>Chlamydia pharyngée</strong> :</h4><ul>
+<li><strong>Maux de gorge</strong> : Transmise par rapports oraux, la chlamydia peut entraîner une inflammation de la gorge.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de la Chlamydia</h2></div><div class="info-text"><p><p>La chlamydia est causée par la bactérie <em>Chlamydia trachomatis</em>. Elle se transmet principalement par contact sexuel direct avec une personne infectée, y compris par des rapports vaginaux, anaux ou oraux non protégés. Les principaux facteurs de risque incluent :</p><ol>
+<li><strong>Sexe non protégé</strong> : Les rapports sexuels sans préservatif, quel que soit le type (vaginaux, anaux ou oraux), augmentent le risque de contracter la chlamydia.</li>
+<li><strong>Multiplicité des partenaires sexuels</strong> : Un nombre élevé de partenaires sexuels augmente le risque d'exposition.</li>
+<li><strong>Antécédents d'IST</strong> : Les personnes ayant déjà eu une autre IST courent un risque accru de chlamydia.</li>
+<li><strong>Jeunes adultes et adolescents</strong> : Les personnes de moins de 25 ans sont plus susceptibles de contracter la chlamydia en raison de comportements sexuels à risque plus fréquents.</li>
+<li><strong>Absence de dépistage</strong> : Ne pas se faire tester régulièrement, surtout si l’on a plusieurs partenaires sexuels, augmente les chances de passer à côté de l'infection.</li>
+</ol><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de la Chlamydia</h2></div><div class="info-text"><p><p>Si elle n'est pas traitée, la chlamydia peut entraîner plusieurs complications graves, tant chez les hommes que chez les femmes :</p><h4><strong>Chez les femmes :</strong></h4><ul>
+<li><strong>Maladie inflammatoire pelvienne (MIP)</strong> : Infection des organes reproducteurs qui peut entraîner des douleurs chroniques, des troubles de la fertilité et augmenter le risque d'ectopie placentaire.</li>
+<li><strong>Infertilité</strong> : Les infections non traitées peuvent endommager les trompes de Fallope, rendant la grossesse difficile ou impossible.</li>
+<li><strong>Grossesse ectopique</strong> : Une infection des trompes de Fallope peut augmenter le risque de grossesse extra-utérine, où l'œuf fécondé se développe en dehors de l'utérus, une condition potentiellement dangereuse.</li>
+</ul><h4><strong>Chez les hommes :</strong></h4><ul>
+<li><strong>Épididymite</strong> : Infection de l'épididyme, qui peut entraîner des douleurs testiculaires et une infertilité.</li>
+<li><strong>Prostatite</strong> : Inflammation de la prostate, souvent associée à des douleurs pelviennes et des troubles urinaires.</li>
+<li><strong>Stérilité</strong> : Bien que plus rare, une chlamydia non traitée peut également affecter la fertilité masculine.</li>
+</ul><h4><strong>Chez les deux sexes :</strong></h4><ul>
+<li><strong>Augmentation du risque de transmission du VIH</strong> : La chlamydia peut rendre l'individu plus vulnérable au VIH en provoquant des lésions sur les muqueuses génitales.</li>
+<li><strong>Infections récurrentes</strong> : Les personnes ayant eu une chlamydia ont un risque plus élevé de contracter à nouveau l'infection si elles ne suivent pas un traitement approprié.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de la Chlamydia</h2></div><div class="info-text"><p><p>Le diagnostic de la chlamydia repose sur des tests de laboratoire simples qui permettent de détecter la bactérie dans les sécrétions génitales, l'urine ou des échantillons prélevés lors d'un examen médical.</p><ol>
+<li><strong>Test urinaire</strong> : Le test de dépistage peut être réalisé sur un échantillon d'urine pour détecter la présence de <em>Chlamydia trachomatis</em>.</li>
+<li><strong>Prélèvement génital</strong> : Un écouvillonnage vaginal ou urétral peut être effectué pour prélever des cellules ou des sécrétions et tester leur contenu.</li>
+<li><strong>Test rectal ou pharyngé</strong> : Dans les cas de chlamydia rectale ou pharyngée, des prélèvements peuvent être effectués sur les zones concernées.</li>
+<li><strong>Analyse de laboratoire</strong> : Des tests PCR (réaction en chaîne par polymérase) peuvent être utilisés pour identifier l'ADN de la bactérie.</li>
+</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de la Chlamydia</h2></div><div class="info-text"><p><p>La chlamydia est traitée avec des antibiotiques. Le traitement est généralement efficace, mais il est important de suivre toutes les recommandations médicales et de compléter la prescription pour éviter les récidives.</p><h4><strong>Traitements médicamenteux :</strong></h4><ol>
+<li><strong>Antibiotiques oraux</strong> : Le plus souvent, une seule dose d'azithromycine est suffisante pour traiter l'infection, ou bien un traitement de 7 jours avec de la doxycycline est prescrit.</li>
+<li><strong>Antibiotiques pour partenaires sexuels</strong> : Il est important que tous les partenaires sexuels de la personne infectée soient traités, même s'ils ne présentent pas de symptômes, pour éviter la réinfection.</li>
+<li><strong>Suivi médical</strong> : Après le traitement, un dépistage de contrôle peut être recommandé pour s'assurer que l'infection a été complètement éliminée.</li>
+</ol><h4><strong>Prévention :</strong></h4><ul>
+<li><strong>Utilisation de préservatifs</strong> : Le préservatif est la méthode la plus efficace pour prévenir la transmission de la chlamydia et d'autres IST.</li>
+<li><strong>Dépistage régulier</strong> : Il est recommandé de se faire dépister régulièrement si vous avez plusieurs partenaires sexuels, surtout pour les jeunes adultes et les personnes sexuellement actives.</li>
+<li><strong>Communication avec les partenaires</strong> : Informer les partenaires sexuels de l'infection permet de prendre des mesures préventives et de traiter l'infection rapidement.</li>
+</ul><h4><strong>Suivi à distance avec WIC-DOCTOR :</strong></h4><ul>
+<li><strong>Consultations virtuelles</strong> : Grâce à <strong>WIC-DOCTOR</strong>, les patients peuvent consulter un professionnel de santé en ligne pour un diagnostic, obtenir une prescription d'antibiotiques et recevoir des conseils sur le traitement et la prévention.</li>
+<li><strong>Suivi post-traitement</strong> : Un suivi à distance permet de vérifier que l'infection a été correctement traitée et de prévenir les récidives.</li>
+<li><strong>Dépistage régulier</strong> : Des rappels pour des tests de dépistage peuvent être envoyés via l'application ou la plateforme WIC-DOCTOR, facilitant le suivi à long terme.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

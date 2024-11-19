@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Diagnostic et Traitement de la Sténose de l'Artère Rénale : Comprendre, Diagnostiquer et Traiter</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que la Sténose de l'Artère Rénale ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Causes et Facteurs de Risque de la Sténose de l'Artère Rénale<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Symptômes et Signes de la Sténose de l'Artère Rénale<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic de la Sténose de l'Artère Rénale<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements de la Sténose de l'Artère Rénale<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que la Sténose de l'Artère Rénale ?</h2></div><div class="info-text"><p><p>La sténose de l'artère rénale se produit lorsqu'une ou les deux artères rénales subissent un rétrécissement. Cela limite le flux sanguin vers les reins, perturbant leur fonctionnement et pouvant provoquer des conséquences sévères.</p><h4><strong>Caractéristiques principales de la sténose de l'artère rénale</strong> :</h4><ul>
+<li><strong>Réduction du flux sanguin vers les reins</strong> : Cela empêche les reins de recevoir suffisamment de sang pour fonctionner correctement, ce qui peut entraîner une insuffisance rénale.</li>
+<li><strong>Hypertension secondaire</strong> : Le rétrécissement de l'artère rénale est l'une des causes de l'hypertension secondaire, car la diminution du flux sanguin stimule la production de rénine, une hormone qui augmente la pression artérielle.</li>
+<li><strong>Insuffisance rénale</strong> : Une sténose prolongée peut entraîner des lésions rénales, voire une insuffisance rénale chronique si elle n'est pas traitée.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque de la Sténose de l'Artère Rénale</h2></div><div class="info-text"><p><p>La sténose de l'artère rénale peut avoir différentes causes, et les facteurs de risque varient selon la pathologie sous-jacente.</p><h4><strong>Causes de la sténose de l'artère rénale</strong> :</h4><ul>
+<li><strong>Athérosclérose</strong> : L'athérosclérose, ou accumulation de dépôts de graisses et de cholestérol sur les parois des artères, est la cause la plus fréquente de la sténose de l'artère rénale, surtout chez les personnes âgées ou ayant des antécédents de maladies cardiaques.</li>
+<li><strong>Fibromatose musculaire</strong> : Il s'agit d'un rétrécissement des artères rénales causé par une prolifération anormale de cellules musculaires dans les parois de l'artère. Ce type de sténose est plus fréquent chez les jeunes et peut toucher une seule artère rénale.</li>
+<li><strong>Hypertension chronique</strong> : L'hypertension artérielle de longue durée peut endommager les artères rénales et favoriser le développement de sténoses.</li>
+<li><strong>Diabète</strong> : Le diabète peut endommager les vaisseaux sanguins, y compris les artères rénales, augmentant ainsi le risque de sténose.</li>
+<li><strong>Autres causes rares</strong> : Certaines conditions, comme la displasie fibromusculaire, peuvent entraîner des rétrécissements dans les artères rénales, mais ces causes sont moins fréquentes.</li>
+</ul><h4><strong>Facteurs de risque</strong> :</h4><ul>
+<li><strong>Tabagisme</strong> : Le tabac favorise le développement de plaques d'athérome et augmente le risque de sténose des artères rénales.</li>
+<li><strong>Hypercholestérolémie</strong> : Un taux élevé de cholestérol dans le sang favorise la formation de plaques graisseuses dans les artères.</li>
+<li><strong>Antécédents familiaux</strong> de maladies cardiaques et rénales.</li>
+<li><strong>Âge avancé</strong> : L'athérosclérose devient plus fréquente avec l'âge, augmentant le risque de sténose rénale.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Signes de la Sténose de l'Artère Rénale</h2></div><div class="info-text"><p><p>Les symptômes de la sténose de l'artère rénale peuvent être silencieux ou insidieux, particulièrement dans les phases initiales de la maladie. Cependant, lorsque des signes apparaissent, ils peuvent inclure :</p><h4><strong>Symptômes courants de la sténose de l'artère rénale</strong> :</h4><ul>
+<li><strong>Hypertension artérielle</strong> : L'un des signes les plus fréquents, parfois difficile à contrôler avec les médicaments classiques.</li>
+<li><strong>Douleurs lombaires ou abdominales</strong> : Douleur persistante dans le bas du dos ou l'abdomen, souvent associée à des troubles rénaux.</li>
+<li><strong>Insuffisance rénale</strong> : Fatigue, œdème, et baisse de la production d'urine (oligurie).</li>
+<li><strong>Mictions fréquentes</strong> ou <strong>urines mousseuses</strong> : Cela peut être un signe de problème rénal avancé.</li>
+<li><strong>Infections urinaires fréquentes</strong> : Une mauvaise fonction rénale due à une sténose peut entraîner une accumulation d'urine et favoriser les infections urinaires.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic de la Sténose de l'Artère Rénale</h2></div><div class="info-text"><p><p>Le diagnostic de la sténose de l'artère rénale nécessite une combinaison d'examens cliniques et d'imagerie pour confirmer le rétrécissement et évaluer la gravité de l'obstruction.</p><h4><strong>Méthodes diagnostiques</strong> :</h4><ul>
+<li><strong>Échographie Doppler</strong> : Cette technique permet de visualiser le flux sanguin dans les artères rénales et de détecter des zones de sténose.</li>
+<li><strong>Angiographie rénale</strong> : Un examen radiologique permettant de visualiser les artères rénales à l'aide d'un produit de contraste. Il est considéré comme la méthode la plus précise pour diagnostiquer la sténose.</li>
+<li><strong>Tomodensitométrie (TDM)</strong> : Une imagerie en coupe permet de détecter les rétrécissements dans les artères rénales.</li>
+<li><strong>IRM rénale</strong> : Une alternative à l'angiographie, qui ne nécessite pas l'injection de produits de contraste iodés, est particulièrement utile pour les patients avec des contre-indications à l'angiographie.</li>
+<li><strong>Tests de fonction rénale</strong> : Des analyses de sang pour mesurer les niveaux de créatinine et d'urée permettent de vérifier l'impact de la sténose sur la fonction rénale.</li>
+</ul><p>Le <strong>portail WIC-DOCTOR</strong> permet d'accéder à des consultations spécialisées à distance, facilitant l'analyse des résultats de ces examens et offrant un suivi personnalisé.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements de la Sténose de l'Artère Rénale</h2></div><div class="info-text"><p><p>Le traitement de la sténose de l'artère rénale dépend de la cause et de la gravité du rétrécissement. Une prise en charge rapide est essentielle pour éviter des complications, comme l'insuffisance rénale.</p><h4><strong>Options thérapeutiques</strong> :</h4><ul>
+<li><strong>Médicaments antihypertenseurs</strong> : Des médicaments comme les inhibiteurs de l'enzyme de conversion de l'angiotensine (IEC), les bloqueurs des récepteurs de l'angiotensine II (ARA), ou les diurétiques sont souvent utilisés pour contrôler l'hypertension associée à la sténose.</li>
+<li><strong>Angioplastie et pose de stent</strong> : Une procédure minimement invasive consistant à dilater l'artère rénale à l'aide d'un ballon et, si nécessaire, de poser un stent pour maintenir l'artère ouverte.</li>
+<li><strong>Chirurgie</strong> : Dans les cas graves, une intervention chirurgicale peut être nécessaire pour contourner ou réparer l'artère rénale.</li>
+<li><strong>Réhabilitation rénale</strong> : Si une insuffisance rénale est déjà présente, un traitement de soutien comme la dialyse peut être nécessaire jusqu'à ce que la fonction rénale se stabilise.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> offre des consultations spécialisées pour les patients souffrant de sténose de l'artère rénale, permettant un suivi médical de qualité à distance.</p><h4><strong>1. Cardiologues et néphrologues spécialisés</strong></h4><p>Les <strong>cardiologues</strong> et <strong>néphrologues</strong> sont les principaux spécialistes impliqués dans le diagnostic et la gestion de la sténose de l'artère rénale.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Suivi de l'hypertension</strong> et gestion des traitements antihypertenseurs.</li>
+<li><strong>Évaluation de la fonction rénale</strong> et des risques associés à la sténose.</li>
+</ul><h4><strong>2. Centres de référence pour l'hypertension réno-vasculaire</strong></h4><p>Les <strong>centres spécialisés</strong> dans les troubles vasculaires rénaux offrent des traitements avancés pour la sténose de l'artère rénale, y compris l'angioplastie et la pose de stents.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Évaluations angiographiques</strong>.</li>
+<li><strong>Suivi post-intervention</strong> pour prévenir les récidives et assurer la stabilité des artères rénales.</li>
+</ul><h4></h4><p><strong>3. Télémédecine via WIC-DOCTOR</strong>
+Le <strong>portail WIC-DOCTOR</strong> permet aux patients d'avoir des consultations à distance, garantissant une gestion optimale de la sténose rénale.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations en ligne</strong> pour discuter des résultats d'imagerie et ajuster les traitements.</li>
+<li><strong>Suivi régulier</strong> pour l'hypertension et la fonction rénale.</li>
+<li><strong>Prescriptions électroniques</strong> pour les médicaments antihypertenseurs et autres traitements nécessaires.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Diagnostic Prénatal de la Tachycardie par Réentrée Intranodale (TRIN) : Comprendre, Diagnostiquer et Traiter</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que la Tachycardie par Réentrée Intranodale (TRIN) ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Causes et Facteurs de Risque de la Tachycardie par Réentrée Intranodale (TRIN)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Symptômes et Signes de la Tachycardie par Réentrée Intranodale (TRIN)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic Prénatal de la Tachycardie par Réentrée Intranodale (TRIN)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements de la Tachycardie par Réentrée Intranodale (TRIN)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que la Tachycardie par Réentrée Intranodale (TRIN) ?</h2></div><div class="info-text"><p><p>La <strong>tachycardie par réentrée intranodale (TRIN)</strong> est un trouble du rythme cardiaque qui résulte d'un circuit électrique anormal dans le nœud auriculo-ventriculaire (nœud AV), une structure cardiaque clé dans la conduction des signaux électriques du cœur. Ce type de tachycardie est souvent paroxystique, c'est-à-dire qu'il survient de manière intermittente, et se caractérise par un rythme cardiaque rapide (généralement supérieur à 100 battements par minute). Bien que la TRIN soit plus courante chez les adultes, des cas peuvent être détectés chez les nourrissons ou même pendant la grossesse, lorsqu'une surveillance cardiaque spécifique est réalisée.</p><h4><strong>Caractéristiques principales de la TRIN</strong> :</h4><ul>
+<li><strong>Rythme cardiaque rapide et régulier</strong> : Le cœur bat beaucoup plus vite que la normale, souvent de manière régulière mais trop rapide.</li>
+<li><strong>Origine du trouble</strong> : La réentrée du signal électrique dans le nœud AV provoque un rythme cardiaque anormalement élevé.</li>
+<li><strong>Survenue paroxystique</strong> : La tachycardie par réentrée intranodale peut survenir soudainement et s'arrêter spontanément, bien qu’elle puisse aussi devenir persistante dans certains cas.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque de la Tachycardie par Réentrée Intranodale (TRIN)</h2></div><div class="info-text"><p><p>La tachycardie par réentrée intranodale peut être causée par des anomalies dans le système électrique du cœur, notamment des troubles congénitaux. Bien que cette condition soit plus fréquente chez les adultes, elle peut aussi survenir chez les enfants, y compris les nourrissons. Certains facteurs génétiques ou des conditions médicales peuvent augmenter le risque de développer une TRIN.</p><h4><strong>Facteurs de risque de la TRIN</strong> :</h4><ul>
+<li><strong>Anomalies congénitales du cœur</strong> : Des défauts dans la conduction électrique du cœur, souvent présents dès la naissance, peuvent augmenter le risque de TRIN. Ces anomalies peuvent inclure des altérations du nœud AV ou des voies électriques anormales.</li>
+<li><strong>Facteurs génétiques</strong> : Les antécédents familiaux de troubles du rythme cardiaque, y compris la TRIN, peuvent augmenter le risque de développer cette condition chez l'enfant.</li>
+<li><strong>Pathologies cardiaques associées</strong> : Certaines affections cardiaques comme les malformations cardiaques congénitales ou la cardiopathie ischémique peuvent être associées à une probabilité plus élevée de TRIN.</li>
+<li><strong>Médicaments et stimulants</strong> : Bien que cela soit plus rare dans le cadre prénatal, certains médicaments ou substances (comme la caféine ou les drogues) peuvent influencer l'apparition de troubles du rythme cardiaque chez les adultes et enfants.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Signes de la Tachycardie par Réentrée Intranodale (TRIN)</h2></div><div class="info-text"><p><p>Les symptômes de la TRIN peuvent varier en fonction de l'âge du patient et de la sévérité des épisodes. Chez les nourrissons, les signes peuvent être plus subtils et difficiles à détecter sans surveillance spécialisée. Cependant, des symptômes cliniques peuvent se manifester à la naissance ou dans les premières années de vie.</p><h4><strong>Symptômes courants de la TRIN</strong> :</h4><ul>
+<li><strong>Palpitations cardiaques</strong> : Les parents peuvent remarquer que leur enfant a une fréquence cardiaque anormalement rapide ou irrégulière, parfois associée à des palpitations.</li>
+<li><strong>Fatigue excessive et irritabilité</strong> : La fréquence cardiaque élevée peut entraîner une fatigue intense chez l'enfant, ainsi qu'une irritabilité ou des pleurs excessifs.</li>
+<li><strong>Essoufflement et difficulté à s'alimenter</strong> : Une tachycardie persistante peut provoquer des difficultés respiratoires et de la difficulté à s’alimenter chez les nourrissons.</li>
+<li><strong>Épisodes de syncope</strong> : Bien que rares, des épisodes de perte de connaissance peuvent se produire si la TRIN n'est pas contrôlée, entraînant une baisse du flux sanguin vers le cerveau.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic Prénatal de la Tachycardie par Réentrée Intranodale (TRIN)</h2></div><div class="info-text"><p><p>Le <strong>diagnostic prénatal de la tachycardie par réentrée intranodale</strong> peut être complexe car cette pathologie peut passer inaperçue sans une surveillance cardiaque précise. Cependant, dans certains cas, des signes peuvent être détectés lors des échographies ou par des tests spécialisés, notamment si la mère présente des antécédents de troubles du rythme cardiaque.</p><h4><strong>Méthodes diagnostiques prénatales</strong> :</h4><ul>
+<li><strong>Échographie obstétricale</strong> : L’échographie fœtale permet de mesurer la fréquence cardiaque du fœtus et peut détecter des signes de tachycardie. Des variations anormales du rythme cardiaque ou une fréquence cardiaque élevée peuvent être observées.</li>
+<li><strong>Cardiotocographie (CTG)</strong> : Utilisée pour surveiller la fréquence cardiaque fœtale, la CTG peut aider à identifier des anomalies dans le rythme cardiaque du fœtus, y compris des épisodes de tachycardie par réentrée intranodale.</li>
+<li><strong>Électrocardiogramme fœtal (ECG fœtal)</strong> : Un ECG fœtal peut être utilisé pour détecter les épisodes de TRIN et confirmer le diagnostic. Cette méthode permet de visualiser précisément les anomalies du rythme cardiaque fœtal.</li>
+<li><strong>Tests génétiques</strong> : Si des antécédents familiaux de troubles du rythme cardiaque existent, des tests génétiques peuvent être réalisés pour identifier des prédispositions héréditaires à la TRIN.</li>
+</ul><p>Le <strong>portail WIC-DOCTOR</strong> propose un suivi médical à distance pour les futures mamans, en offrant des consultations spécialisées et un accompagnement personnalisé lors du diagnostic prénatal de la TRIN.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements de la Tachycardie par Réentrée Intranodale (TRIN)</h2></div><div class="info-text"><p><p>Le traitement de la <strong>tachycardie par réentrée intranodale (TRIN)</strong> dépend de la gravité des symptômes et de l’âge du patient. La TRIN peut être contrôlée efficacement avec les traitements appropriés, mais une prise en charge précoce est essentielle pour éviter des complications cardiaques à long terme.</p><h4><strong>Options thérapeutiques pour la TRIN</strong> :</h4><ul>
+<li><strong>Médicaments antiarythmiques</strong> : Les médicaments tels que les bêtabloquants ou les antiarythmiques (comme l’adénosine ou le vérapamil) sont souvent utilisés pour ralentir la fréquence cardiaque et rétablir un rythme normal.</li>
+<li><strong>Cardioversion</strong> : Dans les cas graves où les médicaments ne sont pas efficaces, une <strong>cardioversion électrique</strong> peut être utilisée pour restaurer un rythme cardiaque normal.</li>
+<li><strong>Ablation par cathéter</strong> : Cette procédure consiste à détruire la voie anormale dans le nœud AV qui provoque la réentrée du signal. Bien que plus courante chez les adultes, cette intervention peut être envisagée chez les enfants ou adolescents dans des cas graves et persistants de TRIN.</li>
+<li><strong>Suivi à long terme</strong> : Un suivi régulier est important pour s'assurer que la TRIN ne réapparaît pas et pour adapter le traitement si nécessaire.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> facilite l’accès à des consultations spécialisées pour la gestion du diagnostic et du traitement de la tachycardie par réentrée intranodale. Grâce à la télémédecine, les médecins peuvent suivre l'évolution de la condition à distance et ajuster les traitements en fonction des besoins du patient.</p><h4><strong>1. Médecins spécialisés en cardiologie pédiatrique et troubles du rythme cardiaque</strong></h4><p>Les <strong>cardiologues pédiatriques</strong> sont des experts dans le diagnostic et la gestion des troubles du rythme cardiaque chez les enfants, y compris la tachycardie par réentrée intranodale.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Évaluation des symptômes cardiaques</strong> pour identifier les signes précoces de la TRIN.</li>
+<li><strong>Prescription de traitements appropriés</strong> pour contrôler le rythme cardiaque et prévenir les complications.</li>
+</ul><h4><strong>2. Centres spécialisés en rythmologie cardiaque</strong></h4><p>Les</p><p><strong>centres de rythmologie cardiaque</strong> sont des institutions spécialisées dans le traitement des troubles du rythme cardiaque et offrent des technologies avancées pour la prise en charge de la TRIN.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Suivi de la fréquence cardiaque</strong> et du rythme pour identifier toute anomalie.</li>
+<li><strong>Conseils et traitements</strong> pour gérer la TRIN sur le long terme.</li>
+</ul><h4><strong>3. Télémédecine via WIC-DOCTOR</strong></h4><p>Le <strong>portail WIC-DOCTOR</strong> permet aux parents de suivre l’évolution de la tachycardie par réentrée intranodale de leur enfant à distance, en bénéficiant de consultations avec des spécialistes cardiaques.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations à distance</strong> pour discuter des symptômes et des traitements possibles.</li>
+<li><strong>Suivi continu</strong> de la fréquence cardiaque et de l'état général du patient.</li>
+<li><strong>Prescriptions électroniques</strong> pour des médicaments antiarythmiques ou d'autres traitements nécessaires.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

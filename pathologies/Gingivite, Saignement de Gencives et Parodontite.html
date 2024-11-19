@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Gingivite, Saignement de Gencives et Parodontite : Causes, Symptômes et Traitements</h1><p><p>Les affections des gencives, comme la gingivite et la parodontite, sont des problèmes bucco-dentaires courants qui peuvent entraîner des douleurs, des saignements et des complications graves si elles ne sont pas traitées. Ces pathologies sont généralement causées par une mauvaise hygiène bucco-dentaire, mais peuvent également résulter d'autres facteurs tels que des maladies systémiques, des médicaments ou des habitudes de vie. Grâce au <strong>portail WIC-DOCTOR</strong>, les patients peuvent accéder à des <strong>consultations de télémédecine</strong> pour discuter de leurs symptômes, recevoir un traitement adapté et être suivis à distance par un dentiste.</p><hr/></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de la Gingivite, des Saignements de Gencives et de la Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de la Gingivite, Saignement de Gencives et Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de la Gingivite et de la Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de la Gingivite et de la Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de la Gingivite, Saignement de Gencives et Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de la Gingivite, Saignement de Gencives et Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Suivi Médical à Distance avec WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('H')"><button class="alphabet-button">Suivi Médical, Spécialistes et Établissements<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('I')"><button class="alphabet-button">Les Bénéfices d’un Traitement Précoce<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de la Gingivite, des Saignements de Gencives et de la Parodontite</h2></div><div class="info-text"><p><p>La gingivite et la parodontite sont des inflammations des gencives, mais elles diffèrent par leur gravité et leur impact sur les tissus de soutien des dents. La gingivite est une forme précoce et réversible d'inflammation des gencives, tandis que la parodontite est plus grave et peut endommager les tissus et les os qui soutiennent les dents, entraînant des pertes dentaires si elle n'est pas traitée.</p><ul>
+<li>
+<p><strong>Gingivite</strong> : Il s'agit de l'inflammation des gencives, généralement causée par l'accumulation de plaque bactérienne. Les gencives deviennent rouges, gonflées, et peuvent saigner, notamment lors du brossage des dents.</p>
+</li>
+<li>
+<p><strong>Saignement des Gencives</strong> : C'est un signe fréquent de gingivite, où les gencives saignent facilement lors du brossage ou de l’utilisation du fil dentaire.</p>
+</li>
+<li>
+<p><strong>Parodontite</strong> : Cette forme avancée d'infection des gencives affecte les tissus qui soutiennent les dents. Elle peut entraîner des récessions gingivales, la perte d'attache des dents, et éventuellement la perte des dents.</p>
+</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de la Gingivite, Saignement de Gencives et Parodontite</h2></div><div class="info-text"><p><p>Les symptômes varient en fonction de la gravité de l’infection, mais incluent généralement :</p><ul>
+<li><strong>Gingivite</strong> :</li>
+<li>Rougeur et gonflement des gencives.</li>
+<li>Saignement facile lors du brossage des dents ou de l’utilisation du fil dentaire.</li>
+<li>Mauvaise haleine persistante.</li>
+<li>
+<p>Sensibilité dentaire légère.</p>
+</li>
+<li>
+<p><strong>Saignement de Gencives</strong> :</p>
+</li>
+<li>Les gencives saignent régulièrement, particulièrement lors du brossage ou de l'utilisation du fil dentaire.</li>
+<li>
+<p>Les gencives deviennent souvent plus sensibles au toucher.</p>
+</li>
+<li>
+<p><strong>Parodontite</strong> :</p>
+</li>
+<li>Recul des gencives, qui peut rendre les dents plus longues et visibles.</li>
+<li>Formation de poches profondes entre les dents et les gencives.</li>
+<li>Douleur ou inconfort autour des dents.</li>
+<li>Perte de dents dans les cas graves.</li>
+<li>Sensibilité accrue aux températures chaudes et froides.</li>
+<li>Mauvaise haleine persistante et goût métallique dans la bouche.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de la Gingivite et de la Parodontite</h2></div><div class="info-text"><p><p>Les principales causes des affections des gencives sont les suivantes :</p><ol>
+<li><strong>Mauvaise hygiène bucco-dentaire</strong> : Une mauvaise hygiène dentaire permet à la plaque bactérienne de s'accumuler sur les dents et les gencives, ce qui peut entraîner une gingivite et, si elle n’est pas traitée, une parodontite.</li>
+<li><strong>Tabagisme</strong> : Fumer affaiblit les défenses de l’organisme, y compris celles des gencives, ce qui augmente le risque de gingivite et de parodontite.</li>
+<li><strong>Maladies systémiques</strong> : Certaines conditions médicales, comme le diabète, peuvent augmenter le risque de maladies des gencives. Un contrôle insuffisant de la glycémie peut altérer la réponse immunitaire et favoriser l'inflammation des gencives.</li>
+<li><strong>Médicaments</strong> : Certains médicaments, notamment ceux qui réduisent la production de salive, peuvent augmenter le risque de maladies des gencives.</li>
+<li><strong>Génétique</strong> : Certaines personnes peuvent être génétiquement prédisposées à développer des problèmes de gencives.</li>
+<li><strong>Alimentation déséquilibrée</strong> : Une alimentation pauvre en nutriments, en particulier en vitamine C, peut affaiblir les gencives et les rendre plus vulnérables aux infections.</li>
+</ol><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de la Gingivite et de la Parodontite</h2></div><div class="info-text"><p><p>Si elles ne sont pas traitées, les affections des gencives peuvent entraîner des complications graves :</p><ul>
+<li><strong>Perte de dents</strong> : La parodontite, si elle n'est pas traitée, peut entraîner une perte de dents due à la dégradation des tissus et des os de soutien.</li>
+<li><strong>Infections graves</strong> : Les infections des gencives peuvent se propager à d'autres parties du corps, comme le cœur, et provoquer des maladies cardiaques.</li>
+<li><strong>Mauvaise haleine persistante</strong> : La parodontite peut provoquer une mauvaise haleine chronique (halitose) en raison des bactéries présentes dans les poches parodontales.</li>
+<li><strong>Problèmes de mastication</strong> : La perte de dents ou la mobilité dentaire due à des infections des gencives peut rendre la mastication difficile.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de la Gingivite, Saignement de Gencives et Parodontite</h2></div><div class="info-text"><p><p>Le diagnostic repose généralement sur l'examen clinique et un entretien médical :</p><ol>
+<li><strong>Examen dentaire</strong> : Le dentiste examine l'état des gencives, cherche des signes d'inflammation, de saignement et de récession gingivale, et évalue la profondeur des poches parodontales.</li>
+<li><strong>Mesure de la profondeur des poches parodontales</strong> : À l'aide d'un instrument appelé <em>sonde parodontale</em>, le dentiste mesure la profondeur des poches formées entre les dents et les gencives pour déterminer la gravité de la parodontite.</li>
+<li><strong>Radiographies dentaires</strong> : Dans certains cas, des radiographies peuvent être nécessaires pour évaluer la perte osseuse et les dommages aux tissus de soutien des dents.</li>
+</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de la Gingivite, Saignement de Gencives et Parodontite</h2></div><div class="info-text"><p><p>Les traitements varient en fonction de la gravité de la maladie, mais peuvent inclure :</p><ol>
+<li><strong>Traitements de la Gingivite</strong> :</li>
+<li><strong>Nettoyage dentaire professionnel</strong> : Le dentiste ou l'hygiéniste dentaire procédera à un détartrage pour éliminer la plaque et le tartre qui causent l'inflammation.</li>
+<li><strong>Amélioration des habitudes d’hygiène bucco-dentaire</strong> : Il est essentiel d'adopter une routine de brossage des dents rigoureuse et d'utiliser régulièrement du fil dentaire pour prévenir l'accumulation de plaque.</li>
+<li>
+<p><strong>Rinçages antibactériens</strong> : Des solutions antiseptiques peuvent être utilisées pour réduire l'inflammation et prévenir l'infection.</p>
+</li>
+<li>
+<p><strong>Traitements de la Parodontite</strong> :</p>
+</li>
+<li><strong>Détartrage et surfaçage radiculaire</strong> : Un détartrage plus profond peut être effectué pour enlever la plaque et le tartre sous les gencives. Le surfaçage radiculaire permet de lisser les racines des dents, ce qui aide les gencives à se réattacher.</li>
+<li><strong>Chirurgie parodontale</strong> : Si la parodontite est avancée, une chirurgie peut être nécessaire pour réduire les poches parodontales et restaurer les tissus de soutien.</li>
+<li><strong>Antibiotiques</strong> : Des antibiotiques locaux ou oraux peuvent être prescrits pour contrôler l’infection bactérienne.</li>
+</ol><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi Médical à Distance avec WIC-DOCTOR</h2></div><div class="info-text"><p><p>Grâce à la <strong>télémédecine</strong>, <strong>WIC-DOCTOR</strong> permet un suivi à distance efficace des patients souffrant de gingivite ou de parodontite. Voici quelques services offerts :</p><ul>
+<li><strong>Consultations virtuelles</strong> : Les patients peuvent consulter un dentiste à distance pour discuter de leurs symptômes, recevoir des conseils sur l'hygiène bucco-dentaire et suivre l’évolution de leur traitement.</li>
+<li><strong>Suivi personnalisé</strong> : WIC-DOCTOR offre des programmes de suivi personnalisé pour adapter les traitements en fonction des progrès réalisés et aider à prévenir les récidives.</li>
+<li><strong>Conseils d’hygiène bucco-dentaire</strong> : Des conseils pratiques sur le brossage des dents, l'utilisation du fil dentaire et l'alimentation peuvent être fournis pour améliorer la santé bucco-dentaire.</li>
+</ul><hr/></p></div></div></div><div class="container section-H" id="H"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi Médical, Spécialistes et Établissements</h2></div><div class="info-text"><p><p>Le suivi de la gingivite et de la parodontite peut être effectué par différents professionnels de santé, y compris :</p><ul>
+<li><strong>Dentistes</strong> : Ils jouent un rôle essentiel dans le diagnostic, le traitement et la gestion de la gingivite et de la parodontite.</li>
+<li><strong>Parodontistes</strong> : Ce sont des spécialistes des maladies des gencives et des tissus de soutien des dents.</li>
+</ul><p>Ils peuvent intervenir dans les cas plus graves de parodontite.
+- <strong>Cliniques dentaires et hôpitaux</strong> : De nombreuses cliniques et hôpitaux spécialisés proposent des traitements avancés pour la parodontite, notamment des interventions chirurgicales.</p><hr/></p></div></div></div><div class="container section-I" id="I"><div class="info-section"><div class="section-title center-block text-center"><h2>Les Bénéfices d’un Traitement Précoce</h2></div><div class="info-text"><p><p>Un traitement précoce permet de prévenir les complications graves, telles que la perte de dents et l'infection systémique. En prenant des mesures adaptées dès les premiers signes de gingivite ou de saignement des gencives, il est possible de restaurer la santé des gencives et d’éviter l’évolution vers une parodontite.</p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

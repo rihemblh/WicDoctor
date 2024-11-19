@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Diagnostic Prénatal du Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant : Comprendre, Diagnostiquer et Traiter</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que le Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Causes et Facteurs de Risque du Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Symptômes et Signes du Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic Prénatal et Postnatal du Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements du Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que le Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant ?</h2></div><div class="info-text"><p><p>Le <strong>syndrome de la jonction pyélo-urétérale</strong> chez l'enfant se caractérise par une obstruction partielle ou complète à la jonction entre le bassinet rénal et l'uretère, ce qui empêche l'urine de s'écouler correctement du rein vers la vessie. Cette obstruction entraîne la dilatation du bassinet rénal, une condition appelée <strong>hydronéphrose</strong>, et peut, dans les cas non traités, causer des infections urinaires répétées et endommager la fonction rénale.</p><h4><strong>Caractéristiques principales du syndrome de la jonction pyélo-urétérale chez l'enfant</strong> :</h4><ul>
+<li><strong>Obstruction urinaire</strong> : La difficulté d'écoulement de l'urine due à l'obstruction de la jonction pyélo-urétérale entraîne une accumulation dans le rein.</li>
+<li><strong>Hydronéphrose</strong> : L'accumulation d'urine dans le rein provoque sa dilatation, que l'on observe par échographie.</li>
+<li><strong>Infections urinaires récurrentes</strong> : Cette condition peut favoriser le développement d'infections urinaires fréquentes chez l'enfant.</li>
+<li><strong>Complications rénales</strong> : Si elle n'est pas traitée, l'hydronéphrose peut entraîner une insuffisance rénale et des lésions permanentes.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque du Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant</h2></div><div class="info-text"><p><p>Le <strong>syndrome de la jonction pyélo-urétérale</strong> chez l'enfant résulte souvent de problèmes de développement pendant la grossesse, mais les facteurs exacts peuvent être variés. Bien que la cause précise soit souvent inconnue, des facteurs génétiques, familiaux ou environnementaux peuvent jouer un rôle dans son apparition.</p><h4><strong>Facteurs de risque du syndrome de la jonction pyélo-urétérale chez l'enfant</strong> :</h4><ul>
+<li><strong>Facteurs génétiques</strong> : Certaines malformations rénales, dont le syndrome de la jonction pyélo-urétérale, peuvent avoir un caractère héréditaire. Les antécédents familiaux de malformations urinaires augmentent le risque de cette condition chez les enfants.</li>
+<li><strong>Anomalies du développement</strong> : Des anomalies pendant le développement embryonnaire peuvent perturber la formation de la jonction entre le bassinet et l'uretère.</li>
+<li><strong>Autres malformations congénitales</strong> : Le syndrome de la jonction pyélo-urétérale peut parfois être associé à d'autres anomalies congénitales, telles que des malformations cardiaques, des anomalies du tractus génital ou des troubles du tractus gastro-intestinal.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Signes du Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant</h2></div><div class="info-text"><p><p>Chez les nourrissons et les jeunes enfants, le syndrome de la jonction pyélo-urétérale peut se manifester par des symptômes subtils, ce qui rend le diagnostic plus difficile. Cependant, certains signes peuvent alerter les parents et les médecins.</p><h4><strong>Symptômes courants du syndrome de la jonction pyélo-urétérale chez l'enfant</strong> :</h4><ul>
+<li><strong>Hydronéphrose détectée à l'échographie</strong> : Le plus souvent, le syndrome est découvert à la suite d'une échographie prénatale ou postnatale montrant une dilatation du bassinet rénal.</li>
+<li><strong>Infections urinaires récurrentes</strong> : Les infections urinaires fréquentes, accompagnées de symptômes tels que fièvre, douleur abdominale, ou miction douloureuse, peuvent être un signe de l’obstruction.</li>
+<li><strong>Douleurs abdominales</strong> : Les enfants peuvent se plaindre de douleurs abdominales ou de coliques en raison de l'accumulation d'urine dans les reins.</li>
+<li><strong>Problèmes de croissance</strong> : Dans les cas graves, l’hydronéphrose non traitée peut entraîner des troubles de la croissance en raison de l'insuffisance rénale progressive.</li>
+<li><strong>Insuffisance rénale</strong> : Si l’obstruction persiste sans traitement, elle peut conduire à une insuffisance rénale chronique, avec des signes tels que fatigue excessive, nausées et mauvaise prise de poids.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic Prénatal et Postnatal du Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant</h2></div><div class="info-text"><p><p>Le <strong>diagnostic prénatal</strong> du syndrome de la jonction pyélo-urétérale est généralement posé à l'aide de l’échographie obstétricale, qui peut détecter une dilatation du bassinet rénal dès la grossesse. Un diagnostic postnatal peut être confirmé par des tests supplémentaires, notamment des échographies, des cystogrammes et des tests de fonction rénale.</p><h4><strong>Méthodes diagnostiques prénatales et postnatales</strong> :</h4><ul>
+<li><strong>Échographie obstétricale</strong> : L'échographie réalisée pendant la grossesse peut mettre en évidence une dilatation du bassinet rénal, qui est un signe de possible obstruction de la jonction pyélo-urétérale. Ce test permet de suivre l'évolution de l’hydronéphrose chez le fœtus.</li>
+<li><strong>Échographie postnatale</strong> : Après la naissance, une échographie rénale est effectuée pour confirmer la dilatation du bassinet rénal et évaluer l’étendue de l’obstruction.</li>
+<li><strong>Cystographie mictionnelle</strong> : Ce test permet d’évaluer la fonction des voies urinaires et de détecter d'éventuelles anomalies fonctionnelles.</li>
+<li><strong>Tests de fonction rénale</strong> : Des analyses sanguines et urinaires peuvent être effectuées pour vérifier la fonction rénale et détecter des signes de dysfonction rénale.</li>
+<li><strong>Tests génétiques</strong> : Si des antécédents familiaux de malformations rénales existent, des tests génétiques peuvent être envisagés pour identifier des mutations associées.</li>
+</ul><p>Le <strong>portail WIC-DOCTOR</strong> facilite l’accès à un suivi prénatal ou postnatal par <strong>télémédecine</strong>, permettant aux parents de consulter à distance des spécialistes pour discuter des résultats des tests et déterminer la meilleure approche de traitement.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements du Syndrome de la Jonction Pyélo-Urétérale chez l'Enfant</h2></div><div class="info-text"><p><p>Le traitement du syndrome de la jonction pyélo-urétérale dépend de la gravité de l’obstruction, de l’âge de l'enfant et de l'étendue des dommages rénaux. Dans les cas bénins, un suivi régulier peut suffire, mais des traitements plus agressifs peuvent être nécessaires si des complications surviennent.</p><h4><strong>Options thérapeutiques pour le syndrome de la jonction pyélo-urétérale chez l'enfant</strong> :</h4><ul>
+<li><strong>Surveillance échographique</strong> : Dans les formes légères, une surveillance régulière par échographie peut suffire pour suivre l'évolution de l'hydronéphrose et s'assurer que l'obstruction ne progresse pas.</li>
+<li><strong>Antibioprophylaxie</strong> : Pour prévenir les infections urinaires récurrentes, une prophylaxie antibiotique peut être prescrite jusqu'à la résolution de l'obstruction ou la mise en place d'un traitement chirurgical.</li>
+<li><strong>Chirurgie (pyéloplastie)</strong> : Si l'obstruction est sévère ou si des infections urinaires fréquentes apparaissent, une intervention chirurgicale est souvent nécessaire. La pyéloplastie est l'opération la plus courante pour traiter ce syndrome. Elle consiste à enlever l’obstruction et à rétablir un écoulement normal de l'urine.</li>
+<li><strong>Suivi post-chirurgical</strong> : Après l’intervention, un suivi est nécessaire pour évaluer la récupération de la fonction rénale et détecter toute nouvelle anomalie.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> permet aux parents d'accéder à des consultations spécialisées en <strong>néphrologie pédiatrique</strong> via la télémédecine. Cette approche permet un suivi personnalisé et à distance, essentiel pour le traitement et la gestion du syndrome de la jonction pyélo-urétérale chez l’enfant.</p><h4><strong>1. Pédiatres en néphrologie</strong> :</h4><p>Les pédiatres spécialisés en néphrologie sont les experts dans la gestion des malformations ré</p><p>nales et du suivi de l'hydronéphrose.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Évaluation des résultats échographiques</strong> pour identifier les anomalies rénales.</li>
+<li><strong>Conseils sur les traitements et les suivis</strong> en fonction de l’évolution de la condition.</li>
+</ul><h4><strong>2. Chirurgiens pédiatriques</strong> :</h4><p>Les chirurgiens pédiatriques spécialisés en urologie ou en néphrologie pédiatrique sont responsables des interventions chirurgicales.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Chirurgie de pyéloplastie</strong> pour traiter les obstructions sévères.</li>
+<li><strong>Suivi post-chirurgical</strong> pour évaluer la fonction rénale et éviter les complications.</li>
+</ul><h4><strong>3. Télémédecine via WIC-DOCTOR</strong> :</h4><p>Le <strong>portail WIC-DOCTOR</strong> offre une plateforme de télémédecine, permettant aux parents de recevoir des consultations à distance avec des spécialistes.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations en ligne</strong> pour discuter des options de traitement et des résultats des tests.</li>
+<li><strong>Suivi régulier</strong> pour surveiller l’évolution de la fonction rénale.</li>
+<li><strong>Prescriptions électroniques</strong> pour une prise en charge rapide et personnalisée.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

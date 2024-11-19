@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Diagnostic et Prise en Charge du Pseudoxanthome Élastique : Comprendre, Diagnostiquer et Traiter</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que le Pseudoxanthome Élastique ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Causes et Facteurs de Risque du Pseudoxanthome Élastique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Symptômes et Signes du Pseudoxanthome Élastique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic du Pseudoxanthome Élastique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements du Pseudoxanthome Élastique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que le Pseudoxanthome Élastique ?</h2></div><div class="info-text"><p><p>Le <strong>pseudoxanthome élastique</strong> est une maladie génétique autosomique récessive qui affecte le métabolisme du collagène et des fibres élastiques, entraînant des dépôts anormaux dans les tissus élastiques de la peau, des yeux, des vaisseaux sanguins et des autres organes internes. Bien que le <strong>PXE</strong> soit souvent diagnostiqué pendant l’enfance ou l’adolescence, les signes cliniques peuvent évoluer progressivement tout au long de la vie.</p><h4><strong>Caractéristiques principales du pseudoxanthome élastique</strong> :</h4><ul>
+<li><strong>Lésions cutanées caractéristiques</strong> : Des plaques jaunes ou orange peuvent apparaître sur la peau, souvent autour des plis du cou, des aisselles, du dos et des coudes.</li>
+<li><strong>Anomalies des vaisseaux sanguins</strong> : Les dépôts dans les parois des artères peuvent entraîner des problèmes cardiovasculaires, comme l'athérosclérose prématurée et des accidents vasculaires.</li>
+<li><strong>Complications oculaires</strong> : Le <strong>PXE</strong> peut provoquer des changements dans la rétine, entraînant des troubles visuels, tels que la perte de la vision centrale (dégénérescence maculaire).</li>
+<li><strong>Atteinte des organes internes</strong> : Bien que rare, des manifestations dans les organes internes (comme les reins) peuvent également être observées.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque du Pseudoxanthome Élastique</h2></div><div class="info-text"><p><p>Le <strong>pseudoxanthome élastique</strong> est une maladie héréditaire causée par des mutations dans le gène <strong>ABCC6</strong> situé sur le chromosome 16. Cette mutation perturbe le métabolisme des fibres élastiques et conduit à des dépôts anormaux dans différents tissus de l'organisme.</p><h4><strong>Facteurs de risque du pseudoxanthome élastique</strong> :</h4><ul>
+<li><strong>Hérédité génétique</strong> : La maladie se transmet de manière autosomique récessive, ce qui signifie que les deux parents doivent être porteurs du gène muté pour qu'un enfant soit affecté.</li>
+<li><strong>Mutation du gène ABCC6</strong> : Les mutations de ce gène sont responsables de l'accumulation de dépôts anormaux dans les tissus élastiques, affectant principalement la peau, les vaisseaux sanguins et les yeux.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Signes du Pseudoxanthome Élastique</h2></div><div class="info-text"><p><p>Les symptômes du <strong>pseudoxanthome élastique</strong> varient en fonction de la gravité de la maladie et de l'âge de la personne. Les signes cliniques peuvent être visibles dès l'enfance, bien que des formes plus légères de la maladie ne se manifestent qu'à l'âge adulte.</p><h4><strong>Symptômes courants du pseudoxanthome élastique</strong> :</h4><ul>
+<li><strong>Lésions cutanées</strong> : Des plaques jaunes ou orangées, souvent dans les plis cutanés (comme le cou, les coudes, l'aine), sont les manifestations les plus visibles.</li>
+<li><strong>Complications oculaires</strong> : Les patients peuvent souffrir de troubles visuels, notamment de la <strong>dégénérescence maculaire</strong>, qui peut entraîner une perte progressive de la vision centrale.</li>
+<li><strong>Problèmes cardiovasculaires</strong> : Les dépôts dans les parois des artères peuvent conduire à des <strong>accidents vasculaires cérébraux</strong>, des <strong>hypertensions artérielles</strong>, et d’autres complications cardiaques, y compris des <strong>artères durcies</strong> (artérite).</li>
+<li><strong>Anomalies rénales</strong> : Bien que rares, des problèmes rénaux peuvent également se manifester, augmentant le risque de maladies chroniques du rein.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic du Pseudoxanthome Élastique</h2></div><div class="info-text"><p><p>Le diagnostic du <strong>pseudoxanthome élastique</strong> repose sur un ensemble de critères cliniques, d’examens dermatologiques, d’imagerie et de tests génétiques. Un diagnostic précoce est crucial pour permettre un suivi et une prise en charge efficaces.</p><h4><strong>Méthodes diagnostiques pour le pseudoxanthome élastique</strong> :</h4><ul>
+<li><strong>Examen dermatologique</strong> : Les plaques jaunes ou orange présentes sur la peau sont souvent les premiers signes visibles du <strong>PXE</strong>. L'examen clinique de la peau est essentiel pour un diagnostic initial.</li>
+<li><strong>Tests génétiques</strong> : Un test génétique permettant de détecter des mutations du gène <strong>ABCC6</strong> est la méthode de diagnostic la plus fiable pour confirmer le <strong>pseudoxanthome élastique</strong>.</li>
+<li><strong>Examen ophtalmologique</strong> : Un examen rétinien approfondi peut détecter des anomalies spécifiques, telles que la <strong>dégénérescence maculaire</strong> et d'autres troubles rétiniens.</li>
+<li><strong>Imagerie cardiaque et vasculaire</strong> : Des tests comme l'<strong>échographie Doppler</strong> et l’<strong>IRM vasculaire</strong> peuvent être utilisés pour évaluer l’atteinte des vaisseaux sanguins et surveiller la présence d’athérosclérose ou d’autres problèmes cardiovasculaires.</li>
+<li><strong>Biopsie cutanée</strong> : Dans certains cas, une biopsie de la peau peut être réalisée pour analyser les dépôts anormaux dans les tissus élastiques.</li>
+</ul><p>Le <strong>portail WIC-DOCTOR</strong> offre des consultations à distance avec des <strong>dermatologues</strong>, des <strong>ophtalmologues</strong> et des <strong>cardiologues</strong> pour aider à diagnostiquer et à suivre cette maladie complexe.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements du Pseudoxanthome Élastique</h2></div><div class="info-text"><p><p>Actuellement, il n'existe pas de traitement curatif pour le <strong>pseudoxanthome élastique</strong>, mais un suivi médical régulier et un traitement symptomatique peuvent aider à gérer les complications et à améliorer la qualité de vie des patients.</p><h4><strong>Options thérapeutiques pour le pseudoxanthome élastique</strong> :</h4><ul>
+<li><strong>Surveillance régulière</strong> : Un suivi étroit est crucial pour détecter les complications cardiovasculaires et oculaires précoces. Les patients doivent être régulièrement surveillés par des <strong>dermatologues</strong>, des <strong>ophtalmologues</strong> et des <strong>cardiologues</strong>.</li>
+<li><strong>Traitements dermatologiques</strong> : Bien qu’il n’existe pas de traitement spécifique pour les lésions cutanées, des traitements topiques et des procédures comme le <strong>laser</strong> peuvent être utilisés pour améliorer l'apparence des plaques cutanées.</li>
+<li><strong>Contrôle des maladies cardiovasculaires</strong> : Des médicaments pour contrôler la <strong>pression artérielle</strong>, <strong>les lipides sanguins</strong> et <strong>l'athérosclérose</strong> sont utilisés pour réduire le risque d’accidents vasculaires cérébraux et d'autres complications cardiaques.</li>
+<li><strong>Interventions ophtalmologiques</strong> : Pour les problèmes oculaires, des traitements peuvent inclure la surveillance des troubles rétiniens et l’utilisation de <strong>chirurgie rétinienne</strong> en cas de dégénérescence maculaire avancée.</li>
+<li><strong>Traitement de la dégénérescence rétinienne</strong> : En cas de dégradation importante de la rétine, des traitements comme la <strong>chirurgie de la rétine</strong> ou des <strong>injections intra-oculaires</strong> peuvent être envisagés.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> facilite l'accès à des consultations spécialisées pour le suivi et le traitement du <strong>pseudoxanthome élastique</strong>. Grâce à la télémédecine, les patients peuvent bénéficier d’un suivi continu et personnalisé, avec des recommandations adaptées en fonction de l’évolution de la maladie.</p><h4><strong>1. Dermatologues spécialisés</strong></h4><p>Les <strong>dermatologues</strong> jouent un rôle clé dans le diagnostic et la gestion des lésions cutanées associées au <strong>pseudoxanthome élastique</strong>.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Évaluation des lésions cutanées</strong> et recommandations pour le traitement symptomatique.</li>
+<li><strong>Conseils sur la gestion de l'apparence des plaques cutanées</strong>.</li>
+</ul><h4><strong>2. Ophtalmologues spécialisés</strong></h4><p>Les <strong>ophtalmologues</strong> sont essentiels pour détecter et traiter les complications rétiniennes du <strong>PXE</strong>.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Suivi de la dégénérescence maculaire</strong> et autres anomalies rétiniennes.</li>
+<li><strong>Interventions chirurgicales</strong> si nécessaire.</li>
+</ul><h4><strong>3. Cardiologues spécialisés</strong></h4><p>Les <strong>cardiologues</strong> surveillent les complications vasculaires associées</p><p>au <strong>pseudoxanthome élastique</strong>, notamment l’athérosclérose et les risques cardiovasculaires.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Évaluation des risques cardiovasculaires</strong> et gestion de la pression artérielle.</li>
+<li><strong>Surveillance régulière</strong> pour prévenir les accidents vasculaires.</li>
+</ul><h4><strong>4. Télémédecine via WIC-DOCTOR</strong></h4><p>Le <strong>portail WIC-DOCTOR</strong> offre des consultations à distance avec des spécialistes en dermatologie, ophtalmologie et cardiologie pour une gestion complète du <strong>pseudoxanthome élastique</strong>.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations à distance</strong> avec des spécialistes pour discuter des options thérapeutiques.</li>
+<li><strong>Suivi régulier</strong> des symptômes et des complications associées.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

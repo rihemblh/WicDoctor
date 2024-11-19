@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Hypotension Orthostatique : Comprendre, Diagnostiquer, Traiter et Gérer la Pathologie</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Qu'est-ce que l'Hypotension Orthostatique ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Causes et Facteurs de Risque de l'Hypotension Orthostatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Symptômes de l'Hypotension Orthostatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Diagnostic de l'Hypotension Orthostatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Spécialités Médicales Impliquées dans le Diagnostic et le Traitement<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Lieux de Traitement et Soins Disponibles via WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Traitement de l'Hypotension Orthostatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('I')"><button class="alphabet-button">Télémédecine avec WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('J')"><button class="alphabet-button">Conclusion : Accès aux Soins et Suivi Optimisé avec WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Qu'est-ce que l'Hypotension Orthostatique ?</h2></div><div class="info-text"><p><p>L'<strong>hypotension orthostatique</strong>, également connue sous le nom d’<strong>hypotension posturale</strong>, est une chute soudaine de la pression artérielle lorsqu'une personne passe de la position couchée ou assise à la position debout. Cette condition peut entraîner des symptômes de <strong>vertige</strong>, de <strong>sensation de tête légère</strong>, voire de <strong>syncope</strong> (perte de conscience temporaire). Elle survient lorsque le système circulatoire ne parvient pas à ajuster rapidement la pression artérielle en réponse à la gravité, ce qui entraîne une insuffisance d'irrigation sanguine vers le cerveau.</p></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Hypotension Orthostatique</h2></div><div class="info-text"><p><h4><strong>Causes de l'Hypotension Orthostatique</strong></h4><p>Les causes de l'hypotension orthostatique peuvent être diverses et incluent :
+- <strong>Diminution du volume sanguin</strong> : Cela peut être dû à une déshydratation, à une perte de sang importante (hémorragie), ou à des conditions médicales telles que l’anémie.
+- <strong>Médicaments</strong> : Certains médicaments, tels que les diurétiques, les bêta-bloquants, les inhibiteurs de l’enzyme de conversion (IEC), ou les médicaments pour traiter l’hypertension, peuvent entraîner une chute de la pression artérielle en position debout.
+- <strong>Problèmes cardiaques</strong> : Des conditions telles que les <strong>troubles du rythme cardiaque</strong>, les <strong>insuffisances cardiaques</strong> ou les <strong>valvulopathies</strong> peuvent perturber la régulation de la pression artérielle.
+- <strong>Troubles neurologiques</strong> : Certaines maladies neurologiques comme la <strong>maladie de Parkinson</strong> ou la <strong>dysautonomie</strong> (trouble du système nerveux autonome) peuvent altérer la régulation de la pression artérielle.
+- <strong>Troubles endocriniens</strong> : Les maladies telles que l’<strong>hypothyroïdie</strong> ou l'<strong>insuffisance surrénalienne</strong> (maladie d’Addison) peuvent affecter la pression artérielle.
+- <strong>Vieillissement</strong> : Le vieillissement entraîne souvent une altération du système de régulation de la pression artérielle, ce qui rend les personnes âgées plus vulnérables à l'hypotension orthostatique.</p><h4><strong>Facteurs de Risque</strong></h4><p>Les principaux facteurs de risque incluent :
+- <strong>Âge avancé</strong> : Les personnes âgées, en particulier celles de plus de 65 ans, sont plus susceptibles de développer une hypotension orthostatique.
+- <strong>Antécédents médicaux</strong> : Un antécédent d'hypertension, d’insuffisance cardiaque, ou de troubles neurologiques augmente le risque.
+- <strong>Médicaments</strong> : Les patients sous traitements pour l'hypertension, les troubles cardiaques, ou les problèmes rénaux peuvent être à risque.
+- <strong>Déshydratation</strong> : Une hydratation insuffisante, surtout en cas de fièvre, de vomissements ou de diarrhée, est un facteur de risque majeur.</p></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Hypotension Orthostatique</h2></div><div class="info-text"><p><p>Les symptômes les plus courants de l’hypotension orthostatique comprennent :
+- <strong>Vertiges</strong> ou <strong>étourdissements</strong> en passant de la position allongée ou assise à la position debout.
+- <strong>Sensation de tête légère</strong> ou de <strong>flou mental</strong>.
+- <strong>Évanouissements</strong> ou <strong>perte de connaissance temporaire</strong> dans les cas graves.
+- <strong>Fatigue</strong> ou <strong>faiblesse</strong> généralisée.
+- <strong>Nausées</strong> associées aux étourdissements.
+- <strong>Vision floue</strong> ou <strong>sensation de brouillard visuel</strong> lors du changement de position.</p><p>Ces symptômes apparaissent généralement dans les 2 à 5 minutes suivant le passage de la position couchée ou assise à la position debout.</p></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Hypotension Orthostatique</h2></div><div class="info-text"><p><p>Le diagnostic de l'hypotension orthostatique repose sur plusieurs étapes :</p><h4>1. <strong>Examen clinique</strong></h4><p>Le médecin commencera par une <strong>anamnèse</strong> détaillée pour connaître les antécédents médicaux, les médicaments pris et les symptômes ressentis. Ensuite, il effectuera un <strong>examen physique</strong> pour observer les signes de chute de la pression artérielle.</p><h4>2. <strong>Mesure de la pression artérielle</strong></h4><p>La méthode la plus courante pour diagnostiquer l'hypotension orthostatique consiste à mesurer la <strong>pression artérielle</strong> en position couchée, assise et debout. Une chute de plus de 20 mmHg de la pression systolique (pression la plus élevée) ou une chute de 10 mmHg de la pression diastolique (pression la plus basse) après 3 minutes en position debout confirme le diagnostic.</p><h4>3. <strong>Tests complémentaires</strong></h4><p>En fonction des symptômes et de la situation clinique, des examens complémentaires peuvent être réalisés pour rechercher une cause sous-jacente :
+- <strong>Analyse de sang</strong> pour vérifier l’anémie ou les troubles hormonaux (hypothyroïdie, insuffisance surrénalienne).
+- <strong>Électrocardiogramme (ECG)</strong> pour détecter les anomalies du rythme cardiaque.
+- <strong>Échocardiographie</strong> pour évaluer la fonction cardiaque.
+- <strong>Tilt test</strong> ou test de bascule pour évaluer la réponse de la pression artérielle aux changements de position.</p><h4>4. <strong>Diagnostic différentiel</strong></h4><p>Il est essentiel de différencier l'hypotension orthostatique d'autres conditions comme :
+- La <strong>syncope</strong> liée à un trouble cardiaque (arrêt cardiaque, arythmie).
+- Les <strong>vertiges</strong> dus à des troubles vestibulaires ou neurologiques.
+- L'<strong>hypotension chronique</strong> (bas débit sanguin permanent).</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Spécialités Médicales Impliquées dans le Diagnostic et le Traitement</h2></div><div class="info-text"><p><p>Les spécialistes médicaux impliqués dans le diagnostic et le traitement de l'hypotension orthostatique incluent :
+- <strong>Médecins généralistes</strong> : Ils sont souvent les premiers à diagnostiquer l'hypotension orthostatique et à prescrire des examens complémentaires.
+- <strong>Cardiologues</strong> : Ils sont sollicités en cas de suspicion de trouble cardiaque sous-jacent ou pour gérer les symptômes si la condition est liée à une insuffisance cardiaque.
+- <strong>Neurologues</strong> : En cas de suspicion de troubles neurologiques comme la <strong>maladie de Parkinson</strong> ou la <strong>dysautonomie</strong>.
+- <strong>Endocrinologues</strong> : En cas de suspicion de troubles hormonaux (hypothyroïdie, insuffisance surrénalienne).
+- <strong>Gériatres</strong> : Pour le diagnostic et la gestion de l'hypotension orthostatique chez les personnes âgées.</p></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Traitement et Soins Disponibles via WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> permet un accès facilité aux soins et au suivi pour l'hypotension orthostatique grâce à la <strong>télémédecine</strong> et l'<strong>Intelligence Artificielle</strong> :
+- <strong>Consultations en ligne</strong> avec des <strong>médecins généralistes</strong>, <strong>cardiologues</strong>, ou <strong>neurologues</strong> pour poser un diagnostic préliminaire et orienter vers un traitement adapté.
+- <strong>Suivi à distance</strong> des patients souffrant d'hypotension orthostatique, en particulier pour ceux qui doivent ajuster leur traitement médicamenteux ou leur mode de vie.
+- <strong>Prescriptions de traitements personnalisés</strong> pour stabiliser la pression artérielle, que ce soit par des médicaments, des changements alimentaires ou des recommandations pour améliorer l'hydratation.
+- Le <strong>portail WIC-DOCTOR</strong> offre également une <strong>analyse des symptômes</strong> en utilisant l'<strong>Intelligence Artificielle</strong>, afin de proposer des solutions de traitement optimisées.</p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de l'Hypotension Orthostatique</h2></div><div class="info-text"><p><p>Le traitement de l'hypotension orthostatique vise à augmenter la pression artérielle et à réduire les symptômes. Les options incluent :</p><h4>1. <strong>Modifications du mode de vie</strong></h4><ul>
+<li><strong>Augmenter l'hydratation</strong> : Boire plus d'eau pour augmenter le volume sanguin et prévenir la déshydratation.</li>
+<li><strong>Éviter les changements brusques de position</strong> : Se lever lentement de la position couchée ou assise pour éviter une chute brutale de la pression.</li>
+<li><strong>Port de bas de compression</strong> : Les bas de compression peuvent aider à améliorer la circulation sanguine et prévenir l'accumulation de sang dans les jambes.</li>
+</ul><h4>2. <strong>Médicaments</strong></h4><p>Des médicaments peuvent être prescrits pour augmenter la pression artérielle et améliorer la fonction circulatoire :
+- <strong>Fludrocortisone</strong> : Un médicament qui augmente la rétention de sel et d'eau, augmentant ainsi le volume sanguin.
+- **Médicaments pour stimuler la</p><p>pression artérielle** : En cas d'hypotension sévère.</p><h4>3. <strong>Suivi médical à long terme</strong></h4><p>Les patients souffrant d'hypotension orthostatique, en particulier ceux ayant des causes sous-jacentes telles que la maladie de Parkinson, peuvent nécessiter un suivi à long terme pour ajuster les traitements.</p><hr/></p></div></div></div><div class="container section-I" id="I"><div class="info-section"><div class="section-title center-block text-center"><h2>Télémédecine avec WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> offre des <strong>consultations en ligne</strong> pour l’hypotension orthostatique, permettant :
+- <strong>Évaluation à distance</strong> des symptômes et des facteurs de risque.
+- <strong>Suivi continu</strong> pour ajuster les traitements et recommander des modifications du mode de vie.
+- <strong>Consultations spécialisées</strong> avec des <strong>cardiologues</strong>, <strong>neurologues</strong>, ou <strong>gériatres</strong> pour une gestion optimale des symptômes.</p><hr/></p></div></div></div><div class="container section-J" id="J"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion : Accès aux Soins et Suivi Optimisé avec WIC-DOCTOR</h2></div><div class="info-text"><p><p>L'<strong>hypotension orthostatique</strong> peut être une condition bénigne, mais elle nécessite une prise en charge appropriée pour éviter les complications. Le <strong>portail WIC-DOCTOR</strong> facilite l'accès aux soins spécialisés grâce à la <strong>télémédecine</strong> et à l'<strong>Intelligence Artificielle</strong>, assurant un suivi adapté pour chaque patient.</p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>
