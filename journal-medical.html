@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html class="no-js" lang="fr-fr">
+	<head>
 
-<head>
-
-	<meta charset="UTF-8">
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description"
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description"
 		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
-	<meta name="author" content="WIC Doctor">
+		<meta name="author" content="Spruko Technologies Private Limited">
+		<meta name="keywords" content="appointments, booking, bootstrap list template,  directory listing html template,  directory website template, doctor directory, doctor search, health template, healthcare directory, hospital,  html css templates, html directory listing, listing, medical bootstrap template, medical directory, medical html template , medical template,  medical web templates, medical website templates, pharma website templates, responsive html template,template html css, online directory website,  html5 template, themeforest html,  online directory, simple html templates ">
 
+		<!-- Favicon -->
+		<link rel="icon" href="assets/images/brand/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/brand/favicon.ico" >
 
-	<!-- Favicon -->
-	<link rel="icon" alt="WIC Doctor" href="assets/images/brand/favicon.png" type="image/x-icon">
-	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="assets/images/brand/favicon.png">
+		<!-- Title -->
+		<title>WIC DOTCOR  </title>
 
-	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
-	<title>WIC Doctor : plateforme de télémédecine</title>
-	<!-- Bootstrap Css -->
-	<link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap Css -->
+		<link  id="style"  href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Style Css -->
-	<link href="assets/css/style.css" rel="stylesheet">
+		<!-- Style Css -->
+		<link href="assets/css/style.css" rel="stylesheet" >
 
-	<!--Icons  Css -->
-	<link href="assets/css/icons.css" rel="stylesheet">
+		<!--Icons  Css -->
+		<link href="assets/css/icons.css" rel="stylesheet">
 
-</head>
+	</head>
 
-<body>
-
-
-	<!--Loader-->
-	<div id="global-loader">
-		<img alt="" class="loader-img" src="assets/images/loader.svg">
-	</div>
-	<!--/Loader-->
-
-	<!-- Header-main -->
-	<div class="header-main">
-
-
-
+	<body>
+															
 		<!--Header Search-->
 		<header class="header-search border-bottom p-2 bg-white">
 			<div class="container">
@@ -94,7 +82,10 @@
 							width="80" alt="img"></a></span>
 				<span class="smllogo"><a href="index.html"><img src="assets/images/brand/logo-dr-wic.png" width="50"
 							alt="img"></a></span>
-				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
 			</div>
 		</div>
 		<!-- /Horizontal Header -->
@@ -118,17 +109,23 @@
 							<li aria-haspopup="true">
 								<a href="trouver-une-clinique.html">Trouvez une clinique</a>
 							</li>
-							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
-								<span>
-									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
-											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
-								</span>
-							</li>
+						
 							<li aria-haspopup="true">
 								<a href="contact.html">Contactez-nous </a>
 							</li>
-						
 							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
 						</ul>
 						<ul class="mb-0 d-flex align-items-center ms-auto">
 							<li class="me-3" id="SeConnecter">
@@ -270,184 +267,181 @@
 			</div>
 		</div>
 	</section>
-		<!-- /Header-main -->
-
-		<!--Sliders Section-->
-		<section>
-
-				<div class="header-text mb-0">
-					<div class="container">
-						<div class="text-center text-white ">
-							<h1 class="forgottt">Réinitialisation de mot de passe</h1>
-					
-						</div>
-					</div>
-				</div>
-			
-		</section>
-		<!--/Sliders Section-->
 
 		<!--Section-->
 		<section class="sptb">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5 col-xl-4 col-md-6 d-block mx-auto">
-						<div class="single-page w-100 p-0" >
-							<div class="wrapper wrapper2">
-								<form id="forgotPasswordForm" class="card-body">
-									<p class="vous_pouvez">Veuillez entrer votre adresse mail</p>
-									<div class="mail">
-										<input type="email" name="email" id="email">
-										<label>Adresse mail</label>
-									</div>
-									<div class="submit">
-										<button type="submit" class="btn btn-primary btn-block">Envoyer</button>
-									</div>
-									
-								</form>
-							</div>
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="row" id="list-blog">
+							
+						
 						</div>
+						
 					</div>
 				</div>
 			</div>
 		</section>
 		<!--/Section-->
 
-
-	<!--Footer Section-->
-	<section>
-		<footer class="text-white footer-bg">
-			<div class="footer-main">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-md-12">
-							<p class="footer-title">À propos </p>
-							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
-								</li>
-								<li>
-									<a href="javascript:;">Témoignages</a>
-								</li>
-							
-								<li>
-									<a href="javascript:;">FAQ</a>
-								</li>
-								<li>
-									<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
-								</li>
-								
-							</ul>
-						</div>
-						<div class="col-lg-3 col-md-12">
-							<p class="footer-title">Trouvez</p>
-							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
-							<div class="clearfix"></div>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="javascript:;">Professionnels de santé</a>
-								</li>
-								<li>
-									<a href="javascript:;">Pharmacies & Parapharmacies</a>
-								</li>
-								<li>
-									<a href="./trouver-une-clinique.html">Cliniques</a>
-								</li>
-								<li>
-									<a href="javascript:;">Laboratoires</a>
-								</li>
-								
-							</ul>
-						</div>
-						<div class="col-lg-3 col-md-12">
-							<p  class="footer-title">Ressources</p>
-							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="javascript:;">Médicaments</a>
-								</li>
-								<li>
-									<a href="javascript:;">Journal Médical</a>
-								</li>
-								<!-- <li>
-									<a href="javascript:;">Forum Médical</a>
-								</li> -->
-								<!-- <li>
-									<a href="javascript:;">La technologie Médicale</a>
-								</li> -->
-
-							</ul>
-						</div>
-						
-					
-						<div class="col-lg-3 col-md-12">
-							<p class="footer-title">Les conditions</p>
-							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
-							<div class="clearfix"></div>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
-								</li>
-								<li>
-									<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
-									</a>
-								</li>
-								<li>
-									<a href="https://wic-doctor.com/Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles</a>
-									</a>
-								</li>
-								<li>
-									<a href="#">Termes et licences d'utilisation
-									</a>
-								</li>
-								<li>
-									<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
-								</li>
-								<!-- <li>
-									<a href="javascript:;">Support technique</a>
-								</li>
-								<li>
-									<a href="javascript:;">Réseaux Sociaux</a>
-								</li> -->
-							</ul>
-						</div>
-						<!-- 	<div class="col-lg-3 col-md-12">
-							<h6>Contact</p>
-							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
-							<ul class="list-unstyled mb-0 contact-footer">
-								<li>
-									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
-									94070, USA
-								</li>
-								<li>
-									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
-								</li>
-								<li>
-									<i class="fa fa-phone"></i>+33 2 55 04 55 04
-								</li>
-								<li>
-									<i class="fa fa-print"></i>+ 01 234 567 89
-								</li>
-							</ul>
-						</div> -->
-
+		<!-- Newsletter-->
+			<!-- Newsletter-->
+	<section class="sptb section-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-xl-6 col-md-12">
+					<div class="sub-newsletter">
+						<h3 class="mb-2"><i class="fa fa-paper-plane-o me-2"></i> Inscrivez-vous</h3>
+						<p class="mb-0">Pour recevoir nos dernières publications</p>
 					</div>
 				</div>
-			</div>
-			<div class="text-white p-0">
-				<div class="container">
-					<div class="row d-flex">
-						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
-							Copyright © 2024 WIC DOCTOR All
-							rights reserved.
+				<div class="col-lg-5 col-xl-6 col-md-12">
+					<div class="input-group sub-input mt-1">
+						<input class="form-control input-lg" placeholder="Votre e-mail" type="text">
+						<div class="input-group-append">
+							<button class="btn btn-primary btn-lg br-te-3 br-be-3" type="button">S'inscrire</button>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
 	</section>
-	<!--Footer Section-->
+		<!--/Newsletter-->
+
+		<!--Footer Section-->
+		<section>
+			<footer class="text-white footer-bg">
+				<div class="footer-main">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-12">
+								<p class="footer-title">À propos </p>
+								<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+									</li>
+									<li>
+										<a href="javascript:;">Témoignages</a>
+									</li>
+								
+									<li>
+										<a href="javascript:;">FAQ</a>
+									</li>
+									<li>
+										<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-12">
+								<p class="footer-title">Trouvez</p>
+								<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+								<div class="clearfix"></div>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:;">Professionnels de santé</a>
+									</li>
+									<li>
+										<a href="javascript:;">Pharmacies & Parapharmacies</a>
+									</li>
+									<li>
+										<a href="./trouver-une-clinique.html">Cliniques</a>
+									</li>
+									<li>
+										<a href="javascript:;">Laboratoires</a>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-12">
+								<p  class="footer-title">Ressources</p>
+								<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:;">Médicaments</a>
+									</li>
+									<li>
+										<a href="javascript:;">Journal Médical</a>
+									</li>
+									<!-- <li>
+										<a href="javascript:;">Forum Médical</a>
+									</li> -->
+									<!-- <li>
+										<a href="javascript:;">La technologie Médicale</a>
+									</li> -->
+	
+								</ul>
+							</div>
+							
+						
+							<div class="col-lg-3 col-md-12">
+								<p class="footer-title">Les conditions</p>
+								<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+								<div class="clearfix"></div>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:;">Conditions générales de vente en ligne</a>
+									</li>
+									<li>
+										<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+										</a>
+									</li>
+									<li>
+										<a href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles
+										</a>
+									</li>
+									<li>
+										<a href="#">Termes et licences d'utilisation
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">Mentions légales</a>
+									</li>
+									<!-- <li>
+										<a href="javascript:;">Support technique</a>
+									</li>
+									<li>
+										<a href="javascript:;">Réseaux Sociaux</a>
+									</li> -->
+								</ul>
+							</div>
+							<!-- 	<div class="col-lg-3 col-md-12">
+								<h6>Contact</p>
+								<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+								<ul class="list-unstyled mb-0 contact-footer">
+									<li>
+										<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+										94070, USA
+									</li>
+									<li>
+										<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+									</li>
+									<li>
+										<i class="fa fa-phone"></i>+33 2 55 04 55 04
+									</li>
+									<li>
+										<i class="fa fa-print"></i>+ 01 234 567 89
+									</li>
+								</ul>
+							</div> -->
+	
+						</div>
+					</div>
+				</div>
+				<div class="text-white p-0">
+					<div class="container">
+						<div class="row d-flex">
+							<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+								Copyright © 2024 WIC DOCTOR All
+								rights reserved.
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<!--Footer Section-->
 
 		<!-- Back to top -->
 		<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
@@ -468,17 +462,14 @@
 		<!-- Star Rating Js-->
 		<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
 
-		<!--Horizontal Menu-->
-		<script src="assets/plugins/horizontal/horizontal.js"></script>
-
 		<!--Owl Carousel js -->
 		<script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
 
+		<!--Horizontal Menu-->
+		<script src="assets/plugins/horizontal/horizontal.js"></script>
+
 		<!--JQuery TouchSwipe js-->
 		<script src="assets/js/jquery.touchSwipe.min.js"></script>
-
-		<!-- sticky Js-->
-		<script src="assets/js/sticky.js"></script>
 
 		<!--Select2 js -->
 		<script src="assets/plugins/select2/select2.full.min.js"></script>
@@ -487,15 +478,21 @@
 		<!-- Cookie js -->
 		<script src="assets/plugins/cookie/jquery.ihavecookies.js"></script>
 		<script src="assets/plugins/cookie/cookie.js"></script>
-<!--Cryptojs-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+		<!-- sticky Js-->
+		<script src="assets/js/sticky.js"></script>
+
+		<!-- Vertical scroll bar Js-->
+		<script src="assets/plugins/vertical-scroll/jquery.bootstrap.newsbox.js"></script>
+		<script src="assets/plugins/vertical-scroll/vertical-scroll.js"></script>
+
 		<!-- Swipe Js-->
 		<script src="assets/js/swipe.js"></script>
 
 		<!--Owl-Carousel Js-->
 		<script src="assets/js/owl-carousel.js"></script>
-<!-- Typewritter Js-->
-<script src="assets/js/typewritter.js"></script>
+	<!-- Typewritter Js-->
+	<script src="assets/js/typewritter.js"></script>
 		<!-- Theme-color js -->
 		<script src="assets/js/themeColors.js"></script>
 
@@ -504,10 +501,6 @@
 
 		<!-- switcher-custom js -->
 		<script src="assets/js/switcher-custom.js"></script>
-
-		<script src="assets/js/forgot-password.js"></script>
-		
-		<script src="assets/js/recherche.js"></script>
-
+<script src="assets/js/recherche.js"></script>
 	</body>
 </html>
