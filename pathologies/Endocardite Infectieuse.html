@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Endocardite Infectieuse : Causes, Symptômes et Traitements</h1><p><p>L'endocardite infectieuse est une infection grave qui touche l'endocarde, la membrane interne des cavités cardiaques et des valves cardiaques. Elle survient généralement lorsqu'une bactérie ou un champignon pénètre dans le sang et atteint le cœur, entraînant une inflammation. Cette pathologie nécessite une prise en charge médicale urgente pour éviter des complications majeures, telles que l'insuffisance cardiaque ou des embolies septiques. Grâce à <strong>WIC-DOCTOR</strong>, les patients peuvent bénéficier d’un suivi médical à distance via des <strong>consultations de télémédecine</strong>, pour un diagnostic précoce et un traitement adapté.</p><hr/></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de l'Endocardite Infectieuse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de l'Endocardite Infectieuse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de l'Endocardite Infectieuse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de l'Endocardite Infectieuse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de l'Endocardite Infectieuse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de l'Endocardite Infectieuse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Suivi Médical et Spécialistes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de l'Endocardite Infectieuse</h2></div><div class="info-text"><p><p>L'endocardite infectieuse est une maladie rare, mais grave, généralement causée par des bactéries. Elle se développe lorsque des micro-organismes, souvent présents dans la bouche ou sur la peau, entrent dans la circulation sanguine (bactériémie) et infectent les valves cardiaques ou les parois internes du cœur. Les personnes les plus vulnérables sont celles qui ont des valves cardiaques endommagées, des prothèses valvulaires, ou une prédisposition génétique à développer des infections cardiaques. Cette infection peut entraîner la formation de végétations, c’est-à-dire des amas de bactéries, de cellules et de débris qui se forment sur les valves cardiaques.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Endocardite Infectieuse</h2></div><div class="info-text"><p><p>Les symptômes de l'endocardite infectieuse peuvent être variés et se développer progressivement. Les signes les plus courants comprennent :</p><ul>
+<li><strong>Fièvre persistante</strong> : La fièvre est souvent le premier symptôme, pouvant durer plusieurs jours voire semaines. Elle est souvent accompagnée de frissons et de sueurs nocturnes.</li>
+<li><strong>Douleurs articulaires et musculaires</strong> : De nombreux patients souffrent de douleurs diffuses, souvent similaires à des douleurs rhumatismales.</li>
+<li><strong>Fatigue extrême</strong> : Une sensation de fatigue intense, qui ne disparaît pas au repos, est fréquente.</li>
+<li><strong>Essoufflement</strong> : L’infection peut affecter la fonction cardiaque et entraîner des difficultés respiratoires.</li>
+<li><strong>Murmure cardiaque</strong> : Le médecin peut entendre un souffle cardiaque anormal pendant l'auscultation du cœur, ce qui peut être un signe de dommage à une valve cardiaque.</li>
+<li><strong>Pétéchies</strong> : Des taches rouges ou violettes peuvent apparaître sur la peau, souvent sur les membres ou les muqueuses.</li>
+<li><strong>Saignements et ecchymoses</strong> : En raison de la formation de caillots infectés, des saignements ou des ecchymoses peuvent survenir, en particulier sous les ongles ou sur les orteils.</li>
+<li><strong>Embolies septiques</strong> : Des caillots infectés peuvent se déplacer dans le corps, provoquant des embolies (blocage des artères), affectant des organes comme les reins, le cerveau ou les poumons.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Endocardite Infectieuse</h2></div><div class="info-text"><p><p>L'endocardite infectieuse résulte généralement d'une bactériémie, mais certains facteurs rendent certaines personnes plus susceptibles de développer cette infection :</p><ol>
+<li><strong>Valvulopathies préexistantes</strong> : Les personnes ayant des valves cardiaques endommagées ou une maladie cardiaque sous-jacente sont à risque accru.</li>
+<li><strong>Prothèses cardiaques</strong> : Les patients ayant des valves cardiaques artificielles ou des dispositifs implantés sont plus susceptibles de développer une endocardite infectieuse.</li>
+<li><strong>Interventions dentaires et infections buccales</strong> : Les bactéries de la bouche peuvent pénétrer dans le sang lors de soins dentaires, de blessures à la bouche ou de procédures invasives.</li>
+<li><strong>Consommation de drogues intraveineuses</strong> : Les personnes qui s’injectent des drogues ont un risque élevé en raison des infections cutanées et de la pénétration de bactéries dans le sang.</li>
+<li><strong>Infections urinaires ou cutanées</strong> : Les infections sévères, telles que les infections urinaires ou cutanées, peuvent favoriser la dissémination des bactéries dans le sang.</li>
+<li><strong>Diabète</strong> : Le diabète mal contrôlé augmente les risques d'infection et peut favoriser la bactériémie.</li>
+<li><strong>Affaiblissement du système immunitaire</strong> : Les personnes immunodéprimées (en raison de traitements médicaux, de maladies comme le VIH, ou de conditions comme la chimiothérapie) sont plus vulnérables à cette infection.</li>
+</ol><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de l'Endocardite Infectieuse</h2></div><div class="info-text"><p><p>Si elle n'est pas traitée, l'endocardite infectieuse peut entraîner des complications graves, telles que :</p><ul>
+<li><strong>Insuffisance cardiaque</strong> : L'infection peut endommager les valves cardiaques et perturber la fonction cardiaque, entraînant une insuffisance cardiaque.</li>
+<li><strong>Embolies septiques</strong> : Les caillots infectés peuvent se déplacer dans d'autres parties du corps, provoquant des infarctus dans les poumons, le cerveau ou d'autres organes.</li>
+<li><strong>Infections rénales</strong> : Les bactéries peuvent infecter les reins, entraînant des dommages aux organes.</li>
+<li><strong>Abcès cérébraux</strong> : Lorsque des embolies touchent le cerveau, cela peut entraîner des abcès cérébraux, avec des symptômes neurologiques graves comme des AVC ou des convulsions.</li>
+<li><strong>Choc septique</strong> : Dans les formes graves, l'infection peut entraîner un choc septique, où le corps entre dans une défaillance multi-organes, menaçant la vie du patient.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Endocardite Infectieuse</h2></div><div class="info-text"><p><p>Le diagnostic de l'endocardite infectieuse repose sur un ensemble de tests diagnostiques, qui incluent :</p><ol>
+<li><strong>Anamnèse médicale</strong> : Le médecin posera des questions sur les antécédents médicaux, les symptômes récents et les facteurs de risque, comme les antécédents cardiaques ou les procédures invasives.</li>
+<li><strong>Examen physique</strong> : L'examen clinique permet de rechercher des signes caractéristiques comme un souffle cardiaque, des pétéchies ou des signes de congestion pulmonaire.</li>
+<li><strong>Tests sanguins</strong> :</li>
+<li><strong>Hémocultures</strong> : Des prélèvements sanguins permettent d'identifier la bactérie responsable de l'infection.</li>
+<li><strong>Tests de la fonction rénale et hépatique</strong> : Des tests peuvent être effectués pour évaluer les complications organiques liées à l'infection.</li>
+<li><strong>Échocardiographie</strong> : L'échocardiographie transthoracique (ETT) ou transœsophagienne (ETO) permet de visualiser les valves cardiaques et de rechercher la présence de végétations infectieuses.</li>
+<li><strong>Scanner ou IRM</strong> : Ces examens peuvent être réalisés en cas de complications, telles que des embolies septiques ou des abcès cérébraux.</li>
+</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de l'Endocardite Infectieuse</h2></div><div class="info-text"><p><p>Le traitement de l'endocardite infectieuse repose principalement sur l’utilisation d’antibiotiques ou d'antifongiques, administrés par voie intraveineuse. Les options de traitement incluent :</p><ol>
+<li><strong>Antibiothérapie intraveineuse</strong> : Des antibiotiques puissants sont administrés directement dans la veine pour éradiquer l'infection. Le choix des médicaments dépend du type de bactérie détecté dans les hémocultures.</li>
+<li><strong>Chirurgie cardiaque</strong> : En cas de complications graves, comme une destruction des valves cardiaques ou des embolies septiques majeures, une intervention chirurgicale peut être nécessaire pour réparer ou remplacer les valves cardiaques.</li>
+<li><strong>Soins de soutien</strong> : Le traitement peut inclure des médicaments pour soutenir la fonction cardiaque et gérer les symptômes associés à l'insuffisance cardiaque.</li>
+</ol><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi Médical et Spécialistes</h2></div><div class="info-text"><p><p>Le suivi médical est essentiel pour éviter les complications de l'endocardite infectieuse et s'assurer de l'efficacité du traitement. Les spécialistes impliqués peuvent inclure :</p><h4><strong>Médecins et spécialistes</strong> :</h4><ul>
+<li><strong>Cardiologue</strong> : Le cardiologue suivra l'évolution de la maladie cardiaque et du traitement de l'endocardite.</li>
+<li><strong>Infectiologue</strong> : Ce spécialiste des maladies infectieuses joue un rôle clé dans la gestion de l'antibiothérapie et dans la lutte contre l'infection.</li>
+<li><strong>Chirurgien cardiaque</strong> : En cas de nécessité d'une intervention chirurgicale pour réparer ou remplacer une valve cardiaque, un chirurgien cardiaque sera impliqué.</li>
+<li><strong>WIC-DOCTOR</strong> : Grâce à <strong>WIC-DOCTOR</strong>, les patients peuvent bénéficier d'un suivi médical à distance avec des consultations de télémédecine pour le suivi de leur traitement antibiotique, la gestion des complications et la prévention des récidives.</li>
+</ul><h4><strong>Cliniques et Hôpitaux spécialisés</strong> :</h4><ul>
+<li><strong>Hôpitaux spécialisés en cardiologie et infectiologie</strong> : Les centres hospitaliers universitaires (CHU) et les hôpitaux spécialisés dans les maladies cardiaques et infectieuses sont essentiels pour la gestion de l'endocardite infectieuse.</li>
+<li><strong>Centres de soins intensifs</strong> : En cas de complications sévères, une prise en charge en soins intensifs peut être requise.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

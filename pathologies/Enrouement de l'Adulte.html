@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Enrouement de l'Adulte : Causes, Symptômes et Traitements</h1><p><p>L'enrouement est un trouble vocal fréquent qui affecte la qualité de la voix, la rendant rauque, faible ou même presque inaudible. Bien qu'il puisse survenir occasionnellement, un enrouement persistant peut être le signe d'une pathologie sous-jacente qui nécessite une évaluation médicale. Plusieurs facteurs peuvent contribuer à l'apparition de l'enrouement, allant des infections bénignes aux troubles plus graves. Grâce au <strong>portail WIC-DOCTOR</strong>, les patients peuvent recevoir un suivi médical personnalisé à distance, notamment via des <strong>consultations de télémédecine</strong>, pour un diagnostic précoce et une gestion adaptée.</p><hr/></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de l'Enrouement de l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de l'Enrouement de l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes de l'Enrouement de l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de l'Enrouement de l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de l'Enrouement de l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de l'Enrouement de l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Suivi Médical et Spécialistes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de l'Enrouement de l'Adulte</h2></div><div class="info-text"><p><p>L'enrouement est un symptôme qui peut être causé par une altération de la voix due à une inflammation, une irritation ou un dysfonctionnement des cordes vocales. Ce trouble peut survenir de manière aiguë, comme dans le cas d'une infection des voies respiratoires, ou devenir chronique si la cause persiste, comme dans le cas des troubles neurologiques ou des maladies de reflux gastro-œsophagien (RGO). Bien que l'enrouement soit souvent bénin et passager, il peut aussi être un symptôme de pathologies plus graves comme des nodules vocaux, des polypes sur les cordes vocales ou même des cancers du larynx.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Enrouement de l'Adulte</h2></div><div class="info-text"><p><p>Les principaux symptômes associés à l'enrouement incluent :</p><ul>
+<li><strong>Voix rauque ou cassée</strong> : La voix peut devenir plus grave, plus faible ou difficile à entendre.</li>
+<li><strong>Difficulté à parler</strong> : L'enrouement peut rendre la parole laborieuse et nécessiter plus d'effort pour émettre des sons.</li>
+<li><strong>Douleur ou inconfort dans la gorge</strong> : Les patients peuvent ressentir une irritation ou une gêne dans la gorge, surtout lors de la phonation.</li>
+<li><strong>Toux</strong> : Parfois, l'enrouement est accompagné d'une toux persistante, en particulier si l'inflammation est liée à une infection des voies respiratoires supérieures.</li>
+<li><strong>Sensation de gorge sèche ou éraflée</strong> : La gorge peut sembler irritée, sèche ou enflée, surtout après avoir parlé ou chanté pendant un long moment.</li>
+<li><strong>Perte de la voix</strong> : Dans les cas plus graves, l'enrouement peut s'accompagner d'une perte temporaire de la voix.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes de l'Enrouement de l'Adulte</h2></div><div class="info-text"><p><p>L'enrouement peut être causé par une variété de facteurs, dont les principaux sont les suivants :</p><ol>
+<li><strong>Infections des voies respiratoires</strong> :</li>
+<li><strong>Rhume et grippe</strong> : Les infections virales des voies respiratoires supérieures, comme le rhume ou la grippe, peuvent provoquer une inflammation des cordes vocales, entraînant un enrouement temporaire.</li>
+<li>
+<p><strong>Laryngite</strong> : L'inflammation aiguë du larynx, souvent causée par une infection virale ou bactérienne, est l'une des causes les plus courantes d'enrouement.</p>
+</li>
+<li>
+<p><strong>RGO (Reflux gastro-œsophagien)</strong> : Le reflux acide peut irriter les cordes vocales et provoquer des épisodes d'enrouement, souvent associés à une sensation de brûlure dans la poitrine.</p>
+</li>
+<li>
+<p><strong>Surmenage vocal</strong> : Les personnes qui utilisent leur voix de manière excessive, comme les enseignants, les chanteurs ou les conférenciers, peuvent développer des symptômes d'enrouement dus à une fatigue des cordes vocales.</p>
+</li>
+<li>
+<p><strong>Tabagisme et alcool</strong> : L'exposition à la fumée de tabac et la consommation excessive d'alcool peuvent irriter les cordes vocales et favoriser l'enrouement chronique.</p>
+</li>
+<li>
+<p><strong>Troubles neurologiques</strong> : Certaines conditions neurologiques, comme la paralysie des cordes vocales ou les troubles du nerf récurrent laryngé, peuvent altérer la fonction vocale et entraîner un enrouement persistant.</p>
+</li>
+<li>
+<p><strong>Troubles de la thyroïde</strong> : Une hypothyroïdie ou une hyperthyroïdie non traitée peut entraîner un enrouement lié à des perturbations hormonales affectant les cordes vocales.</p>
+</li>
+<li>
+<p><strong>Cancers du larynx</strong> : Bien que plus rares, les tumeurs malignes des cordes vocales ou du larynx peuvent entraîner un enrouement persistant, souvent accompagné de douleur ou de difficulté à avaler.</p>
+</li>
+<li>
+<p><strong>Nodules et polypes des cordes vocales</strong> : Les nodules vocaux, souvent causés par une utilisation excessive de la voix, peuvent rendre la voix enrouée et difficile à projeter.</p>
+</li>
+</ol><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de l'Enrouement de l'Adulte</h2></div><div class="info-text"><p><p>Bien que l'enrouement soit souvent bénin, certaines complications peuvent survenir, en particulier lorsque la cause sous-jacente est négligée :</p><ul>
+<li><strong>Perte permanente de la voix</strong> : En cas d'abus vocal chronique, de nodules ou de lésions non traitées sur les cordes vocales, l'enrouement peut évoluer vers une perte permanente de la voix.</li>
+<li><strong>Infections respiratoires chroniques</strong> : Les infections non traitées ou mal soignées peuvent entraîner des complications, comme des sinusites chroniques ou des infections pulmonaires.</li>
+<li><strong>Complications liées au cancer</strong> : Si l'enrouement persiste au-delà de trois semaines, cela peut être un signe de cancer du larynx, qui nécessite une détection précoce pour optimiser les chances de guérison.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Enrouement de l'Adulte</h2></div><div class="info-text"><p><p>Le diagnostic de l'enrouement repose sur une évaluation clinique approfondie. Les tests diagnostiques peuvent inclure :</p><ol>
+<li><strong>Examen physique et anamnèse</strong> : Le médecin commencera par interroger le patient sur la durée de l'enrouement, les symptômes associés, les facteurs de risque (tabagisme, usage excessif de la voix, etc.) et les antécédents médicaux (RGO, infections récurrentes, etc.).</li>
+<li><strong>Laryngoscopie</strong> : Un examen direct du larynx à l’aide d'un endoscope permet de visualiser les cordes vocales et de détecter d’éventuelles anomalies telles que des nodules, des polypes, des infections ou des signes de cancer.</li>
+<li><strong>Échographie ou scanner</strong> : Dans certains cas, des examens d’imagerie peuvent être nécessaires pour évaluer l’état des structures vocales et détecter d’éventuelles masses ou anomalies.</li>
+<li><strong>Tests de la fonction thyroïdienne</strong> : En cas de suspicion de trouble hormonal, des tests sanguins peuvent être réalisés pour mesurer les niveaux de thyroïde.</li>
+<li><strong>Bilan de reflux gastro-œsophagien (RGO)</strong> : Si le médecin suspecte un reflux acide, des tests diagnostiques comme la pH-métrie ou la manométrie œsophagienne peuvent être recommandés.</li>
+</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de l'Enrouement de l'Adulte</h2></div><div class="info-text"><p><p>Le traitement de l'enrouement dépend de sa cause sous-jacente et de sa sévérité. Les approches les plus courantes incluent :</p><ol>
+<li><strong>Repos vocal</strong> : Le repos vocal est essentiel pour permettre aux cordes vocales de récupérer. Il est conseillé de limiter la parole et d'éviter de crier ou de chuchoter.</li>
+<li><strong>Hydratation</strong> : Boire suffisamment d'eau pour garder les cordes vocales hydratées et réduire l'irritation.</li>
+<li><strong>Traitement de l'infection sous-jacente</strong> : Si l'enrouement est dû à une infection virale ou bactérienne, des médicaments comme des antiviraux, des antibiotiques ou des corticostéroïdes peuvent être prescrits.</li>
+<li><strong>Antiacides et inhibiteurs de la pompe à protons (IPP)</strong> : Pour traiter le reflux gastro-œsophagien (RGO), des médicaments peuvent être utilisés pour réduire l’acidité gastrique et protéger les cordes vocales.</li>
+<li><strong>Thérapie vocale</strong> : Un orthophoniste peut aider à enseigner des techniques pour mieux utiliser la voix et éviter le surmenage des cordes vocales.</li>
+<li><strong>Chirurgie</strong> : Dans les cas graves de nodules vocaux, de polypes ou de cancer du larynx, une intervention chirurgicale peut être nécessaire pour retirer les lésions ou effectuer des réparations.</li>
+</ol><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi Médical et Spécialistes</h2></div><div class="info-text"><p><p>Le suivi médical est crucial, en particulier si l'enrouement persiste ou devient chronique. Voici les spécialistes impliqués :</p><h4><strong>Médecins et spécialistes</strong> :</h4><ul>
+<li><strong>Oto-rhino-laryngologiste (ORL)</strong> : L'ORL est le spécialiste de l'examen des voies respiratoires supérieures, du larynx et des cordes vocales. Il est essentiel pour poser un diagnostic et déterminer le traitement approprié.</li>
+<li><strong>Orthophoniste</strong> : En cas d'enrouement dû à une mauvaise utilisation de la voix, l'orthophoniste peut aider à rééduquer les cordes vocales et à enseigner des techniques de phonation.</li>
+<li><strong>Gastro-entérologue</strong> : En cas de suspicion de reflux gastro-œsophagien, un gastro-entérologue peut intervenir pour prescrire un traitement médical adapté.</li>
+<li><strong>WIC-DOCTOR</strong> : Grâce à **WIC</li>
+</ul><p>-DOCTOR<strong>, les patients peuvent bénéficier d'un suivi médical à distance, notamment pour des </strong>consultations de télémédecine**, permettant une prise en charge rapide et un suivi personnalisé sans avoir à se déplacer.</p><h4><strong>Centres spécialisés</strong> :</h4><ul>
+<li><strong>Cliniques ORL et centres de rééducation vocale</strong> : Ces établissements offrent des soins spécialisés pour traiter les troubles de la voix, avec des consultations d'ORL et des séances de rééducation vocale.</li>
+<li><strong>Centres anti-tabac</strong> : Si l'enrouement est lié au tabagisme, des consultations dans un centre spécialisé dans l'aide à l'arrêt du tabac peuvent être bénéfiques.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

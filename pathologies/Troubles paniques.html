@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Troubles paniques : Comprendre, Diagnostiquer, Traiter et Suivre les Patients</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Qu'est-ce que les Troubles paniques ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Causes et Facteurs de Risque des Troubles paniques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Symptômes des Troubles paniques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Diagnostic des Troubles paniques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Traitement des Troubles paniques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Spécialistes Impliqués dans le Traitement des Troubles paniques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Qu'est-ce que les Troubles paniques ?</h2></div><div class="info-text"><p><p>Les <strong>troubles paniques</strong> sont un type de trouble anxieux caractérisé par des <strong>attacks de panique récurrentes et imprévisibles</strong>. Une <strong>attaque de panique</strong> se manifeste par un <strong>sentiment intense de peur ou de malaise</strong>, souvent accompagné de symptômes physiques tels que des palpitations, des sueurs, des tremblements, des difficultés respiratoires, ou encore une sensation de perte de contrôle.</p><p>Ces attaques peuvent survenir de manière soudaine et sans cause apparente, créant ainsi une forte <strong>anxiété anticipatoire</strong> chez la personne concernée. Les troubles paniques peuvent sérieusement perturber la vie quotidienne, conduisant à l'évitement de certaines situations par peur de nouvelles attaques.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Troubles paniques</h2></div><div class="info-text"><p><p>Les <strong>troubles paniques</strong> peuvent être dus à une combinaison de facteurs biologiques, psychologiques et environnementaux. Les éléments suivants sont fréquemment cités comme causes possibles des attaques de panique.</p><h4><strong>Causes biologiques :</strong></h4><ol>
+<li><strong>Génétique</strong> : Des antécédents familiaux de troubles anxieux ou de troubles paniques augmentent le risque de développer cette pathologie. Les études suggèrent qu'une <strong>prédisposition génétique</strong> joue un rôle important.</li>
+<li><strong>Anomalies dans le fonctionnement cérébral</strong> : Des dysfonctionnements dans les régions du cerveau impliquées dans la gestion du stress et de la peur (comme l'amygdale et l'hypothalamus) peuvent être observés chez les personnes souffrant de troubles paniques.</li>
+<li><strong>Déséquilibre chimique</strong> : Des troubles dans la régulation des neurotransmetteurs, comme la <strong>sérotonine</strong>, la <strong>noradrénaline</strong> et le <strong>GABA</strong>, ont été associés aux attaques de panique.</li>
+</ol><h4><strong>Causes psychologiques :</strong></h4><ol>
+<li><strong>Facteurs psychologiques et émotionnels</strong> : Des événements stressants de la vie, tels que des traumatismes, un décès, ou des situations de grande pression (travail, relations sociales) peuvent déclencher les attaques de panique.</li>
+<li><strong>Ruminations et hypervigilance</strong> : Les personnes sujettes à des pensées anxieuses ou à une hypervigilance constante peuvent être plus sensibles aux attaques de panique. La peur de la peur, ou la crainte de revivre une attaque de panique, peut renforcer le cycle.</li>
+</ol><h4><strong>Facteurs environnementaux :</strong></h4><ol>
+<li><strong>Stress élevé et facteur déclencheur</strong> : Des situations stressantes chroniques ou aiguës (accident, problème de santé, surmenage professionnel) peuvent précipiter les troubles paniques.</li>
+<li><strong>Abus de substances</strong> : L'abus de drogues, d'alcool ou même la consommation excessive de caféine peuvent induire ou aggraver les attaques de panique.</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Troubles paniques</h2></div><div class="info-text"><p><p>Les symptômes des <strong>troubles paniques</strong> peuvent varier d'une personne à l'autre, mais comprennent généralement des <strong>attacks de panique</strong> répétées qui peuvent survenir sans avertissement.</p><h4><strong>1. Attaques de panique :</strong></h4><p>Une attaque de panique est caractérisée par un <strong>sentiment soudain de terreur intense</strong> accompagné de plusieurs symptômes physiques et psychologiques :
+- <strong>Palpitations cardiaques</strong> ou accélération du rythme cardiaque.
+- <strong>Sensation de suffocation</strong> ou difficulté à respirer.
+- <strong>Douleur thoracique</strong> ou malaise au niveau de la poitrine.
+- <strong>Vertiges, nausées ou sensation de tête légère</strong>.
+- <strong>Tremblements, sueurs excessives</strong>.
+- <strong>Chaleur ou frissons</strong>.
+- <strong>Engourdissements ou picotements</strong> dans les mains, les pieds ou d'autres parties du corps.
+- <strong>Sensation de dépersonnalisation</strong> (sensation d'être détaché de soi-même) ou de déréalisation (sensation que les choses autour sont irréelles).
+- <strong>Peur de mourir</strong> ou de perdre le contrôle de soi.</p><p>Les <strong>attaques de panique</strong> peuvent être accompagnées de <strong>pensées catastrophiques</strong> concernant la santé, le contrôle de la situation ou la peur de la mort.</p><h4><strong>2. Anxiété anticipatoire :</strong></h4><p>Les personnes ayant des troubles paniques vivent souvent dans l'<strong>anxiété anticipatoire</strong>, c'est-à-dire qu'elles craignent que de nouvelles attaques se produisent, ce qui peut limiter leurs activités et leur interaction sociale.</p><h4><strong>3. Évitement de situations spécifiques :</strong></h4><p>Afin d’éviter les attaques de panique, les patients peuvent commencer à éviter des situations ou des lieux où ils ont déjà expérimenté une attaque de panique. Cela peut inclure des endroits publics, des transports en commun, ou même des réunions sociales.</p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Troubles paniques</h2></div><div class="info-text"><p><p>Le diagnostic des <strong>troubles paniques</strong> repose sur une <strong>évaluation clinique complète</strong> réalisée par un psychiatre ou un psychologue, à l’aide de différents outils diagnostiques.</p><h4><strong>Méthodes diagnostiques :</strong></h4><ol>
+<li><strong>Entretien clinique</strong> : Le professionnel de la santé interroge le patient sur les symptômes, leur fréquence, leur intensité, et leur impact sur la vie quotidienne. Il cherchera également à évaluer la durée des attaques et les facteurs déclenchants.</li>
+<li><strong>Évaluation psychologique</strong> : Des tests psychométriques et des questionnaires d'évaluation des symptômes, comme le <strong>Questionnaire des Attaques de Panique</strong> (PAS), peuvent être utilisés pour mieux comprendre la nature et la sévérité des symptômes.</li>
+<li><strong>Élimination des causes organiques</strong> : Le professionnel devra exclure d'autres causes possibles des symptômes physiques (ex : troubles cardiaques, troubles endocriniens) pour confirmer le diagnostic.</li>
+</ol><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement des Troubles paniques</h2></div><div class="info-text"><p><p>Les <strong>troubles paniques</strong> sont traitables, et un <strong>plan de traitement personnalisé</strong> est essentiel pour gérer les symptômes et améliorer la qualité de vie des patients. Le traitement combine généralement la <strong>psychothérapie</strong> et la <strong>médication</strong>.</p><h4><strong>1. Thérapie cognitivo-comportementale (TCC) :</strong></h4><p>La <strong>TCC</strong> est le traitement de première ligne pour les troubles paniques. Elle aide le patient à comprendre et à modifier ses pensées et comportements anxieux, tout en lui apprenant à affronter progressivement ses peurs à travers la <strong>thérapie d’exposition</strong>.</p><p>Les principales techniques de la TCC incluent :
+- <strong>Exposition graduée</strong> : L'exposition progressive aux situations qui déclenchent l'anxiété, afin de réduire la peur et d'apprendre à gérer les symptômes de panique.
+- <strong>Restructuration cognitive</strong> : Apprendre à identifier et à remplacer les pensées irrationnelles qui alimentent l'anxiété.</p><h4><strong>2. Médicaments :</strong></h4><p>Les médicaments sont souvent utilisés en complément de la TCC, en particulier dans les cas graves ou lorsque les symptômes sont persistants. Les médicaments couramment prescrits pour les troubles paniques comprennent :
+- <strong>Antidépresseurs (ISRS, IRSNa)</strong> : Ces médicaments augmentent la concentration de neurotransmetteurs comme la sérotonine et la noradrénaline, qui jouent un rôle clé dans la régulation de l'anxiété.
+- <strong>Benzodiazépines</strong> : Utilisées pour un soulagement rapide des symptômes d'anxiété sévère, mais doivent être prises avec précaution en raison de leur potentiel de dépendance.
+- <strong>Bêta-bloquants</strong> : Pour contrôler les symptômes physiques de l'anxiété, comme les palpitations.</p><h4><strong>3. Autres approches thérapeutiques :</strong></h4><ul>
+<li><strong>Relaxation et méditation</strong> : Des techniques comme la respiration profonde, la méditation de pleine conscience et la relaxation musculaire peuvent être utiles pour gérer le stress et l'anxiété.</li>
+<li><strong>Pratiques physiques régulières</strong> : L'exercice physique peut réduire les niveaux d'anxiété en libérant des endorphines et en régulant les hormones du stress.</li>
+</ul><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Spécialistes Impliqués dans le Traitement des Troubles paniques</h2></div><div class="info-text"><p><ul>
+<li><strong>Psychiatre</strong> : Le psychiatre évalue les symptômes, prescrit des médicaments et assure la gestion des troubles associés (anxiété, dépression).</li>
+<li><strong>Psychologue (spécialisé en TCC)</strong> : Le psychologue applique des</li>
+</ul><p>techniques de thérapie cognitive et comportementale pour traiter les troubles paniques.
+- <strong>Médecin généraliste</strong> : Offre une première évaluation et oriente le patient vers des spécialistes en santé mentale.
+- <strong>Services de télémédecine</strong> : WIC-DOCTOR permet des consultations en ligne avec des professionnels qualifiés pour un suivi à distance.</p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

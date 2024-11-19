@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Troubles Obsessionnels Compulsifs (TOC) : Comprendre, Diagnostiquer, Traiter et Suivre les Patients</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Qu'est-ce que les Troubles Obsessionnels Compulsifs (TOC) ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Causes et Facteurs de Risque des Troubles Obsessionnels Compulsifs (TOC)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Symptômes des Troubles Obsessionnels Compulsifs (TOC)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Diagnostic des Troubles Obsessionnels Compulsifs (TOC)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Traitement des Troubles Obsessionnels Compulsifs (TOC)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Spécialistes Impliqués dans le Traitement des TOC<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Qu'est-ce que les Troubles Obsessionnels Compulsifs (TOC) ?</h2></div><div class="info-text"><p><p>Les <strong>Troubles Obsessionnels Compulsifs (TOC)</strong> sont un groupe de troubles mentaux caractérisés par la présence de <strong>pensées obsessionnelles</strong> (idées, images ou impulsions intrusives et anxiogènes) et de <strong>compulsions</strong> (comportements ou actions répétitives destinées à réduire l'anxiété générée par ces obsessions). Les personnes souffrant de TOC peuvent ressentir un besoin irrésistible de réaliser des actions précises ou de suivre des rituels pour éviter des événements qu'elles jugent menaçant, même si ces actions n'ont pas de lien logique avec la menace perçue.</p><p>Les TOC peuvent interférer gravement avec la vie quotidienne, la qualité de vie, et entraîner une détresse émotionnelle importante.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Troubles Obsessionnels Compulsifs (TOC)</h2></div><div class="info-text"><p><p>Les causes des TOC sont multifactoricielles, impliquant des facteurs biologiques, psychologiques et environnementaux.</p><h4><strong>Causes biologiques :</strong></h4><ol>
+<li><strong>Déséquilibre chimique dans le cerveau</strong> : Des anomalies dans la régulation de certains neurotransmetteurs, comme la sérotonine, sont souvent associées aux TOC.</li>
+<li><strong>Génétique</strong> : Les TOC ont tendance à être plus fréquents chez les individus ayant des antécédents familiaux de troubles obsessionnels compulsifs ou d'autres troubles anxieux.</li>
+<li><strong>Facteurs neuroanatomiques</strong> : Des études ont suggéré que certaines anomalies dans des régions spécifiques du cerveau, comme le cortex orbito-frontal, le striatum et le thalamus, sont liées aux TOC.</li>
+</ol><h4><strong>Causes psychologiques :</strong></h4><ol>
+<li><strong>Conditionnement</strong> : Certaines théories suggèrent que les TOC peuvent résulter d'un apprentissage où un individu associe des comportements compulsifs à la réduction de l'anxiété.</li>
+<li><strong>Perception de contrôle</strong> : Les individus souffrant de TOC peuvent avoir une perception exagérée de leur capacité à prévenir les événements catastrophiques en réalisant des rituels.</li>
+</ol><h4><strong>Facteurs environnementaux :</strong></h4><ol>
+<li><strong>Stress et traumatismes</strong> : Des événements de vie stressants, comme des deuils, des changements majeurs ou des traumatismes, peuvent déclencher ou aggraver les symptômes des TOC.</li>
+<li><strong>Infections</strong> : Certains chercheurs ont étudié un lien potentiel entre des infections virales, telles que l'infection streptococcique, et le déclenchement des symptômes des TOC chez les enfants (syndrome PANDAS).</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Troubles Obsessionnels Compulsifs (TOC)</h2></div><div class="info-text"><p><p>Les symptômes des TOC varient d'une personne à l'autre, mais ils se manifestent généralement par des obsessions et des compulsions qui interfèrent avec la vie quotidienne.</p><h4><strong>1. Obsessions :</strong></h4><p>Les obsessions sont des pensées, des images mentales ou des impulsions récurrentes et intrusives qui provoquent une détresse ou une anxiété. Les pensées obsessionnelles peuvent être de différentes natures :
+- <strong>Peurs irrationnelles</strong> : Peur d'être contaminé, de causer un dommage à soi-même ou aux autres.
+- <strong>Doutes constants</strong> : Doutes persistants sur des actions quotidiennes (ex : verrouillage de portes, cuisson des aliments, etc.).
+- <strong>Pensées violentes ou inappropriées</strong> : Idées de faire du mal à autrui ou de commettre des actes inacceptables, souvent très gênantes pour la personne qui les éprouve.</p><h4><strong>2. Compulsions :</strong></h4><p>Les compulsions sont des comportements répétitifs ou des actes mentaux qu’une personne ressent comme nécessaires pour réduire l'anxiété provoquée par les obsessions. Ces comportements sont généralement réalisés pour neutraliser ou prévenir une situation perçue comme menaçante.
+- <strong>Lavage ou nettoyage excessif</strong> : Par exemple, se laver les mains de manière répétée pour éviter la contamination.
+- <strong>Comptage ou répétition d'actions</strong> : Répéter des actions de manière précise ou compter de manière compulsive (par exemple, compter les marches ou les objets).
+- <strong>Vérification excessive</strong> : Vérifier plusieurs fois des objets ou des actions (ex : verrouiller les portes, éteindre les appareils électroménagers).
+- <strong>Rituels mentaux</strong> : Prière mentale, compter dans sa tête, ou autre activité pour réduire l'anxiété.</p><h4><strong>Autres symptômes associés :</strong></h4><ul>
+<li><strong>Anxiété élevée</strong> : La personne peut vivre un stress et une angoisse intenses, souvent exacerbés par la difficulté à résister à ses compulsions.</li>
+<li><strong>Dépression</strong> : Les TOC peuvent entraîner des sentiments de frustration et de désespoir, avec un risque accru de dépression.</li>
+<li><strong>Isolement social</strong> : La personne peut éviter certaines situations sociales ou activités en raison de la peur que ses symptômes ne deviennent apparents.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Troubles Obsessionnels Compulsifs (TOC)</h2></div><div class="info-text"><p><p>Le diagnostic des TOC repose sur une évaluation clinique approfondie par un professionnel de la santé mentale, généralement un psychiatre ou un psychologue.</p><h4><strong>Méthodes diagnostiques :</strong></h4><ol>
+<li><strong>Entretien clinique</strong> : Le professionnel de santé évalue les symptômes, leur durée, leur impact sur la vie quotidienne, et leur sévérité.</li>
+<li><strong>Questionnaires et échelles d'évaluation</strong> : Des outils comme l'<strong>Inventaire des TOC de Yale-Brown</strong> ou l'<strong>Échelle des obsessions et compulsions</strong> sont utilisés pour quantifier les symptômes et leur intensité.</li>
+<li><strong>Évaluation des troubles concomitants</strong> : Les TOC peuvent coexister avec d'autres troubles comme l'anxiété généralisée, les troubles dépressifs majeurs ou les troubles de la personnalité, et il est important d'évaluer ces comorbidités.</li>
+</ol><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement des Troubles Obsessionnels Compulsifs (TOC)</h2></div><div class="info-text"><p><p>Le traitement des TOC vise à réduire les symptômes et à améliorer la qualité de vie. Les approches thérapeutiques combinent généralement la <strong>thérapie cognitivo-comportementale (TCC)</strong> et la <strong>médication</strong>.</p><h4><strong>1. Thérapie Cognitivo-Comportementale (TCC) :</strong></h4><p>La <strong>TCC</strong>, en particulier la technique de <strong>désensibilisation et exposition avec prévention de la réponse (EPR)</strong>, est le traitement de première ligne pour les TOC. Elle consiste à exposer progressivement la personne à ses obsessions tout en l'aidant à résister à ses compulsions, afin de réduire l'anxiété associée à ces pensées.</p><h4><strong>2. Médicaments :</strong></h4><p>Les médicaments sont souvent utilisés en complément de la TCC pour traiter les TOC. Les médicaments les plus couramment prescrits incluent :
+- <strong>Inhibiteurs sélectifs de la recapture de la sérotonine (ISRS)</strong> : Ces médicaments peuvent aider à réduire les symptômes obsessionnels.
+- <strong>Antidépresseurs tricycliques</strong> : Utilisés dans certains cas où les ISRS ne sont pas efficaces.
+- <strong>Antipsychotiques</strong> : Dans les formes sévères ou résistantes aux traitements classiques.</p><h4><strong>3. Techniques complémentaires :</strong></h4><ul>
+<li><strong>Mindfulness et relaxation</strong> : La méditation de pleine conscience et les exercices de relaxation peuvent être utilisés pour réduire le stress et l'anxiété associés aux TOC.</li>
+<li><strong>Thérapies de soutien</strong> : Le soutien psychologique et les groupes de soutien peuvent être bénéfiques pour les patients et leur entourage.</li>
+</ul><h4><strong>4. Approches plus avancées :</strong></h4><ul>
+<li><strong>Stimulation cérébrale profonde (SCP)</strong> : Dans les cas très graves et résistants au traitement, la stimulation cérébrale profonde peut être envisagée pour réguler les circuits neuronaux responsables des TOC.</li>
+<li><strong>TMS (stimulation magnétique transcrânienne)</strong> : Une approche non invasive qui peut aider dans le traitement des TOC résistants aux médicaments.</li>
+</ul><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Spécialistes Impliqués dans le Traitement des TOC</h2></div><div class="info-text"><p><ul>
+<li><strong>Psychiatre</strong> : Diagnostique et prescrit des traitements médicaux, y compris des antid</li>
+</ul><p>épresseurs et des anxiolytiques.
+- <strong>Psychologue (spécialisé en TCC)</strong> : Pratique la thérapie cognitive-comportementale pour traiter les TOC.
+- <strong>Médecin généraliste</strong> : Peut offrir une première évaluation et orienter vers des spécialistes en santé mentale.
+- <strong>Services de télémédecine</strong> : Permet aux patients de recevoir des consultations en ligne et un suivi à distance de la part de professionnels qualifiés.</p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

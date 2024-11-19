@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Vertiges : Comprendre, Diagnostiquer, Traiter et Suivre les Patients</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Qu'est-ce que les Vertiges ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Causes et Facteurs de Risque des Vertiges<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Symptômes des Vertiges<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Diagnostic des Vertiges<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Traitement des Vertiges<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Suivi et Services via WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Spécialistes Impliqués dans le Traitement des Vertiges<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Qu'est-ce que les Vertiges ?</h2></div><div class="info-text"><p><p>Les <strong>vertiges</strong> sont une sensation de malaise ou de déséquilibre qui peut donner l'impression que vous ou votre environnement êtes en mouvement, alors que rien ne bouge réellement. Contrairement à l’étourdissement, qui est une sensation de faiblesse ou de légèreté, les vertiges impliquent une perte réelle d'équilibre. Ils sont souvent associés à des troubles de l'oreille interne ou du système nerveux central, mais peuvent aussi être causés par une variété d'autres facteurs.</p><p>Les vertiges peuvent être très perturbants et dans certains cas, rendre l'activité quotidienne difficile, notamment la marche, la conduite, ou même la station debout prolongée. Les épisodes de vertiges peuvent être aigus ou chroniques et peuvent s'accompagner de symptômes comme des nausées, des vomissements, des troubles de l'équilibre, ou des troubles auditifs.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Vertiges</h2></div><div class="info-text"><p><p>Les vertiges peuvent être causés par de nombreuses conditions médicales. Il existe principalement deux types de vertiges : les vertiges <strong>périphériques</strong> (liés aux oreilles internes) et les vertiges <strong>centrales</strong> (provenant du cerveau). La cause exacte dépend de la nature des vertiges et de l'intensité des symptômes.</p><h4><strong>Causes fréquentes des vertiges périphériques :</strong></h4><ol>
+<li><strong>Vertige positionnel paroxystique bénin (VPPB)</strong> : Une des causes les plus courantes de vertige, qui se produit lorsque de petits cristaux de calcium se déplacent dans l'oreille interne, perturbant l'équilibre.</li>
+<li><strong>Labyrinthite</strong> : Une infection ou une inflammation du labyrinthe de l'oreille interne, souvent causée par une infection virale, entraînant vertiges et troubles de l'audition.</li>
+<li><strong>Maladie de Ménière</strong> : Une maladie chronique de l'oreille interne causant des épisodes de vertiges sévères accompagnés de tinnitus (bourdonnements d'oreilles) et de perte auditive.</li>
+<li><strong>Névrite vestibulaire</strong> : Une inflammation du nerf vestibulaire, qui est responsable de la transmission des informations d'équilibre entre l'oreille interne et le cerveau.</li>
+<li><strong>Hypotension orthostatique</strong> : Une chute de la pression artérielle en se levant brusquement, ce qui peut provoquer une sensation de vertige.</li>
+</ol><h4><strong>Causes fréquentes des vertiges centraux :</strong></h4><ol>
+<li><strong>Accident vasculaire cérébral (AVC)</strong> : Un AVC affectant les zones du cerveau responsables de l’équilibre peut provoquer des vertiges.</li>
+<li><strong>Sclérose en plaques</strong> : Une maladie auto-immune affectant le système nerveux central, qui peut perturber les signaux de l'équilibre.</li>
+<li><strong>Tumeurs cérébrales</strong> : Des tumeurs dans certaines régions du cerveau peuvent affecter l’équilibre et provoquer des vertiges.</li>
+<li><strong>Migraines vestibulaires</strong> : Des vertiges pouvant accompagner des migraines sévères, souvent associés à des nausées, des vomissements et une hypersensibilité à la lumière.</li>
+</ol><h4><strong>Facteurs de risque :</strong></h4><ol>
+<li><strong>Âge avancé</strong> : Les vertiges sont plus fréquents chez les personnes âgées, souvent en raison du vieillissement des systèmes vestibulaire et nerveux.</li>
+<li><strong>Antécédents familiaux de vertiges ou de troubles de l'équilibre</strong>.</li>
+<li><strong>Conditions préexistantes</strong> : Les maladies cardiaques, les troubles de la pression artérielle, les infections virales récurrentes ou l'hypertension peuvent accroître le risque de vertiges.</li>
+<li><strong>Médicaments</strong> : Certains médicaments, notamment les antihypertenseurs, les diurétiques, ou les médicaments utilisés pour traiter des troubles psychiatriques, peuvent provoquer des vertiges comme effet secondaire.</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Vertiges</h2></div><div class="info-text"><p><p>Les vertiges peuvent se manifester de manière différente selon la cause sous-jacente et leur gravité. Les symptômes les plus courants sont les suivants :</p><ol>
+<li><strong>Sensation de rotation ou de mouvement</strong> : La personne a l'impression que son environnement tourne autour d’elle, même lorsqu'elle est immobile.</li>
+<li><strong>Perte d'équilibre</strong> : Des difficultés à marcher ou à se tenir debout sans se sentir déséquilibré.</li>
+<li><strong>Nausées et vomissements</strong> : Les vertiges peuvent entraîner des nausées sévères et des vomissements, surtout lors des épisodes aigus.</li>
+<li><strong>Troubles auditifs</strong> : Des bruits dans les oreilles, comme des bourdonnements ou des sifflements (tinnitus), peuvent accompagner les vertiges dans le cas de certaines affections de l'oreille interne.</li>
+<li><strong>Sensibilité à la lumière et aux sons</strong> : Les vertiges peuvent être associés à une hypersensibilité à la lumière et aux sons, en particulier si les vertiges sont dus à une migraine vestibulaire.</li>
+</ol><p>Les vertiges peuvent être intermittents ou permanents et varier en intensité. Il est essentiel de consulter un médecin si les vertiges deviennent fréquents ou sévères, ou s'ils sont accompagnés de symptômes tels que des douleurs thoraciques, une faiblesse soudaine, ou une altération de la vision.</p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Vertiges</h2></div><div class="info-text"><p><p>Le diagnostic des vertiges repose sur un examen clinique approfondi, des tests de fonction vestibulaire, ainsi que des examens d'imagerie si nécessaire.</p><h4><strong>Méthodes diagnostiques :</strong></h4><ol>
+<li><strong>Examen physique et neurologique</strong> : Le médecin effectuera un examen pour évaluer la fonction de l'oreille interne, de l'équilibre, et du système nerveux.</li>
+<li><strong>Test de positionnement</strong> : Le test de Dix-Hallpike est utilisé pour diagnostiquer le vertige positionnel paroxystique bénin (VPPB).</li>
+<li><strong>Tests auditifs</strong> : En cas de vertiges associés à des troubles auditifs, des tests de l'audition (comme l'audiométrie) peuvent être réalisés.</li>
+<li><strong>Imagerie médicale</strong> : Une <strong>IRM cérébrale</strong> ou un <strong>scanner</strong> peuvent être utilisés pour exclure des causes centrales des vertiges, comme un AVC ou une tumeur cérébrale.</li>
+<li><strong>Tests vestibulaires</strong> : Des tests spécifiques de l'équilibre, comme les <strong>potentiels évoqués vestibulaires</strong>, peuvent être réalisés pour évaluer la fonction du système vestibulaire.</li>
+<li><strong>Analyse sanguine</strong> : Parfois, un test sanguin peut être demandé pour vérifier des anomalies qui pourraient causer des vertiges, telles qu'une infection ou un déséquilibre électrolytique.</li>
+</ol><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement des Vertiges</h2></div><div class="info-text"><p><p>Le traitement des vertiges dépend de la cause sous-jacente. Il existe plusieurs approches thérapeutiques :</p><h4><strong>Traitement médicamenteux :</strong></h4><ol>
+<li><strong>Antivertigineux</strong> : Des médicaments tels que les <strong>antihistaminiques</strong>, les <strong>anticholinergiques</strong>, ou les <strong>benzodiazépines</strong> peuvent être utilisés pour réduire la sensation de vertige et soulager les nausées associées.</li>
+<li><strong>Médicaments pour les causes spécifiques</strong> : Si les vertiges sont liés à une infection (comme une labyrinthite) ou à une condition médicale sous-jacente (comme la migraine vestibulaire ou l'hypotension), des médicaments spécifiques seront prescrits pour traiter la condition.</li>
+<li><strong>Diurétiques</strong> : En cas de <strong>maladie de Ménière</strong>, des diurétiques peuvent être prescrits pour réduire la rétention de liquide dans l'oreille interne.</li>
+</ol><h4><strong>Rééducation vestibulaire</strong> :</h4><ul>
+<li><strong>Physiothérapie vestibulaire</strong> : Un traitement spécifique consiste à réaliser des exercices pour améliorer l'équilibre et réduire les symptômes. Ces exercices visent à entraîner le cerveau à compenser les perturbations de l'équilibre.</li>
+</ul><h4><strong>Chirurgie</strong> :</h4><ul>
+<li>Dans de rares cas, lorsque les vertiges sont liés à une pathologie spécifique comme un <strong>bénin paroxystique</strong> ou une tumeur, une intervention chirurgicale peut être nécessaire.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi et Services via WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les services de <strong>WIC-DOCTOR</strong> permettent une prise en charge à distance des vertiges grâce à la <strong>télémédecine</strong>. Les patients peuvent consulter des médecins spécialisés en <strong>neurologie</strong>, <strong>ORL</strong>, et <strong>médecine interne</strong>, qui pourront diagnostiquer, traiter, et suivre l’évolution des symptômes des vertiges à distance.</p><h4><strong>Services de WIC-DOCTOR :</strong></h4><ol>
+<li><strong>Consultations en ligne</strong> avec des <strong>médecins généralistes</strong> et des <strong>spécialistes</strong> en neurologie ou en otorhinolaryngologie pour un diagnostic rapide.</li>
+<li><strong>Suivi personnalisé</strong> via des outils numériques permettant de surveiller l'évolution des symptômes et d'adapter le traitement si nécessaire.</li>
+<li><strong>Télémédecine pour les exercices de rééducation vestibulaire</strong>, permettant aux patients de suivre les recommandations thérapeutiques à domicile.</li>
+</ol><p>Grâce à l'<strong>intelligence artificielle</strong> et aux outils de suivi à distance, WIC-DOCTOR permet un suivi continu et un ajustement rapide du traitement, tout en réduisant la nécessité de déplacements fréquents.</p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Spécialistes Impliqués dans le Traitement des Vertiges</h2></div><div class="info-text"><p><p>Les vertiges nécessitent souvent une prise en charge pluridisciplinaire, incluant :</p><ul>
+<li><strong>Neurologues</strong> : pour le diagnostic des causes centrales (AVC, tumeurs cérébrales).</li>
+<li><strong>ORL</strong> : pour les causes liées à l'oreille interne (VPPB, labyrinthite, Ménière).</li>
+<li><strong>Médecins généralistes</strong> : pour l'évaluation initiale et l'orientation vers des spécialistes.</li>
+<li><strong>Physiothérapeutes spécialisés en rééducation vestibulaire</strong> : pour le traitement non médicamenteux des vertiges.</li>
+</ul><h4><strong>WIC-DOCTOR recommande des consultations en ligne avec des médecins spécialisés dans ces domaines pour un diagnostic rapide et un traitement adapté</strong>.</h4><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

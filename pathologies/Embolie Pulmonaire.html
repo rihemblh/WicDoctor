@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Embolie Pulmonaire : Causes, Symptômes et Traitements</h1><p><p>L'embolie pulmonaire est une affection grave qui survient lorsqu'un caillot sanguin, souvent provenant des jambes, se déplace vers les poumons, bloquant une ou plusieurs artères pulmonaires. Cette obstruction peut réduire l'oxygénation du sang et mettre la vie en danger. L’embolie pulmonaire nécessite une prise en charge rapide et adaptée pour éviter des complications graves, telles que l'insuffisance cardiaque ou un arrêt cardiaque. Grâce au <strong>portail WIC-DOCTOR</strong>, les patients peuvent bénéficier de consultations de télémédecine pour évaluer leurs risques et recevoir un suivi médical à distance.</p><hr/></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de l'Embolie Pulmonaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de l'Embolie Pulmonaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de l'Embolie Pulmonaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de l'Embolie Pulmonaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de l'Embolie Pulmonaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de l'Embolie Pulmonaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Suivi Médical et Spécialistes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de l'Embolie Pulmonaire</h2></div><div class="info-text"><p><p>L'embolie pulmonaire est causée par un <strong>caillot sanguin</strong> qui migre du bas du corps (habituellement des veines profondes des jambes) jusqu'aux poumons. Ce caillot, appelé <strong>thrombus</strong>, se loge dans les artères pulmonaires, provoquant une obstruction. Ce phénomène est souvent secondaire à une <strong>thrombose veineuse profonde (TVP)</strong>, mais il peut également résulter d'autres sources de caillots, comme des <strong>graisses</strong>, de l’<strong>air</strong>, ou des <strong>caillots issus d’autres parties du corps</strong>. L’obstruction des artères pulmonaires perturbe la circulation sanguine et l’oxygénation des tissus, entraînant une hypoxie et parfois des dommages irréversibles aux poumons.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Embolie Pulmonaire</h2></div><div class="info-text"><p><p>Les symptômes de l’embolie pulmonaire varient en fonction de la gravité de l’obstruction et de la taille du caillot. Les signes les plus fréquents incluent :</p><ul>
+<li><strong>Essoufflement soudain</strong> : L'essoufflement est souvent rapide et prononcé, surtout lors d'un effort physique, et peut survenir soudainement.</li>
+<li><strong>Douleur thoracique</strong> : La douleur est souvent aiguë et peut ressembler à une douleur cardiaque. Elle peut être ressentie de manière plus intense à l’inspiration profonde.</li>
+<li><strong>Toux</strong> : Parfois accompagnée d’une expectoration de sang (hémoptysie), la toux est un symptôme fréquent.</li>
+<li><strong>Rythme cardiaque rapide (tachycardie)</strong> : Le cœur tente de compenser la baisse d'oxygène en accélérant son rythme.</li>
+<li><strong>Pâleur et sueurs froides</strong> : La diminution de l’oxygénation peut provoquer une pâleur soudaine et des sueurs froides.</li>
+<li><strong>Étourdissements ou évanouissement</strong> : L’hypoxie (manque d’oxygène dans le sang) peut entraîner des vertiges, des évanouissements ou une perte de conscience.</li>
+<li><strong>Gonflement et douleur des jambes</strong> : La <strong>thrombose veineuse profonde</strong>, principale cause d’embolie pulmonaire, provoque souvent un gonflement et de la douleur dans les jambes.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Embolie Pulmonaire</h2></div><div class="info-text"><p><p>Les causes de l’embolie pulmonaire sont généralement liées à la formation de caillots sanguins qui se déplacent vers les poumons. Les facteurs de risque incluent :</p><ol>
+<li><strong>Thrombose veineuse profonde (TVP)</strong> : La principale cause d’embolie pulmonaire est la formation de caillots dans les veines profondes des jambes qui peuvent se détacher et migrer vers les poumons.</li>
+<li><strong>Immobilisation prolongée</strong> : Les personnes alitées ou qui ne bougent pas suffisamment, comme après une chirurgie, un accident, ou lors de longs voyages en avion, sont à risque de développer des caillots sanguins.</li>
+<li><strong>Chirurgie majeure</strong> : Les interventions chirurgicales, en particulier celles des jambes, des hanches et de l’abdomen, augmentent le risque de formation de caillots.</li>
+<li><strong>Antécédents familiaux</strong> : Certaines personnes héritent de troubles de la coagulation, augmentant leur propension à développer des caillots sanguins.</li>
+<li><strong>Vieillissement</strong> : Les personnes âgées ont un risque accru de formation de caillots en raison de changements dans la circulation sanguine.</li>
+<li><strong>Obésité</strong> : L'excès de poids et l'inactivité physique qui l'accompagne augmentent le risque de thrombose.</li>
+<li><strong>Cancer</strong> : Certaines formes de cancer augmentent la production de facteurs de coagulation, ce qui prédispose à la formation de caillots.</li>
+<li><strong>Troubles de la coagulation</strong> : Des conditions médicales telles que l’hémophilie ou des anomalies dans les facteurs de coagulation peuvent entraîner une augmentation du risque de formation de caillots.</li>
+<li><strong>Contraception hormonale et grossesse</strong> : Les traitements hormonaux et la grossesse augmentent les risques de formation de caillots en raison des modifications hormonales et de l'immobilisation.</li>
+</ol><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de l'Embolie Pulmonaire</h2></div><div class="info-text"><p><p>Une embolie pulmonaire non traitée peut entraîner des complications graves, telles que :</p><ul>
+<li><strong>Insuffisance cardiaque</strong> : Lorsque l'embolie est importante, elle peut entraîner une surcharge du cœur, avec un risque d'insuffisance cardiaque aiguë.</li>
+<li><strong>Choc</strong> : Dans les cas graves, l'embolie pulmonaire peut entraîner un choc, une défaillance multi-organes et une hypotension sévère.</li>
+<li><strong>Dommages pulmonaires permanents</strong> : Une embolie pulmonaire massive peut causer des lésions irréversibles dans les poumons, affectant la fonction respiratoire.</li>
+<li><strong>Décès</strong> : Dans les cas les plus graves, l’embolie pulmonaire peut entraîner la mort si le traitement n’est pas administré rapidement.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Embolie Pulmonaire</h2></div><div class="info-text"><p><p>Le diagnostic de l’embolie pulmonaire repose sur un ensemble d'examens cliniques et diagnostiques :</p><ol>
+<li><strong>Anamnèse médicale</strong> : Le médecin posera des questions sur les antécédents médicaux, les facteurs de risque, les symptômes et les événements récents (chirurgie, voyage long-courrier, etc.).</li>
+<li><strong>Examen clinique</strong> : L’examen physique permet de rechercher des signes cliniques caractéristiques, tels que l’essoufflement, la douleur thoracique, et la tachycardie.</li>
+<li><strong>Imagerie médicale</strong> :</li>
+<li><strong>Scanner thoracique (angioscanner)</strong> : C'est l'examen de référence pour confirmer la présence d'un caillot dans les artères pulmonaires.</li>
+<li><strong>Échographie veineuse</strong> : Utilisée pour détecter une thrombose veineuse profonde, qui peut être la source de l’embolie.</li>
+<li><strong>Radiographie thoracique</strong> : Bien que moins spécifique, elle peut montrer des signes indirects d’embolie pulmonaire, comme un infiltrat pulmonaire.</li>
+<li><strong>Tests de laboratoire</strong> :</li>
+<li><strong>Dosage des D-dimères</strong> : Un test sanguin qui peut être élevé en cas de formation de caillots, bien que cet examen ne soit pas spécifique.</li>
+<li><strong>Gaz du sang artériel</strong> : Il permet de mesurer l'oxygénation du sang et d'évaluer l'impact de l'embolie sur la fonction pulmonaire.</li>
+</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de l'Embolie Pulmonaire</h2></div><div class="info-text"><p><p>Le traitement de l’embolie pulmonaire dépend de sa gravité, de l'état général du patient, et des facteurs de risque. Il inclut généralement :</p><ol>
+<li><strong>Anticoagulants</strong> : Les médicaments anticoagulants, tels que l’héparine ou la warfarine, sont administrés pour prévenir l'extension du caillot et la formation de nouveaux caillots.</li>
+<li><strong>Thrombolyse</strong> : En cas d'embolie pulmonaire massive, des médicaments thrombolytiques peuvent être administrés pour dissoudre rapidement le caillot.</li>
+<li><strong>Chirurgie ou intervention endovasculaire</strong> : Dans certains cas graves, une intervention chirurgicale ou un cathéter d’aspiration peut être utilisé pour retirer le caillot.</li>
+<li><strong>Oxygénothérapie</strong> : Des mesures d'oxygénothérapie peuvent être mises en place pour améliorer l'oxygénation du sang.</li>
+<li><strong>Compression veineuse</strong> : Des bas de compression ou des dispositifs de compression peuvent être utilisés pour prévenir la formation de caillots dans les jambes.</li>
+</ol><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi Médical et Spécialistes</h2></div><div class="info-text"><p><p>Le suivi médical de l'embolie pulmonaire nécessite souvent une prise en charge spécialisée pour éviter les récidives et gérer les complications :</p><h4><strong>Médecins et spécialistes</strong> :</h4><ul>
+<li><strong>Médecin généraliste</strong> : Après un diagnostic initial, le médecin traitant suivra l’évolution du patient et ajustera le traitement anticoagulant.</li>
+<li><strong>Cardiologue et pneumologue</strong> : Dans le cadre d'une embolie pulmonaire importante ou chronique, un suivi par un cardiologue ou un pneumologue peut être nécessaire.</li>
+<li><strong>Centre hospitalier spécialisé</strong> : Dans les cas graves, une prise en charge en soins intensifs peut être requise.</li>
+<li><strong>WIC-DOCTOR</strong> : Grâce au suivi à distance via <strong>WIC-DOCTOR</strong>, les patients peuvent bénéficier de conseils médicaux virtuels et de suivi après le traitement, notamment pour la gestion des anticoagulants et la prévention des complications.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

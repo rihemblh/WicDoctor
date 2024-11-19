@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Cancer des Sinus Nasaux et Paranasaux : Comprendre, Diagnostiquer et Traiter</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que le Cancer des Sinus Nasaux et Paranasaux ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Causes et Facteurs de Risque du Cancer des Sinus Nasaux et Paranasaux<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Symptômes du Cancer des Sinus Nasaux et Paranasaux<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic du Cancer des Sinus Nasaux et Paranasaux<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements du Cancer des Sinus Nasaux et Paranasaux<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que le Cancer des Sinus Nasaux et Paranasaux ?</h2></div><div class="info-text"><p><p>Les <strong>sinus nasaux</strong> sont des cavités remplies d'air situées dans les os du visage et du crâne. Les <strong>sinus paranasaux</strong> sont des espaces adjacents aux sinus principaux (frontal, maxillaire, sphénoïdal, et ethmoïdal). Le cancer des sinus nasaux et paranasaux survient lorsque des cellules anormales se développent dans les tissus qui tapissent ces sinus.</p><h4><strong>Caractéristiques principales du cancer des sinus nasaux et paranasaux</strong> :</h4><ul>
+<li><strong>Types de cancers</strong> :</li>
+<li><strong>Carcinome épidermoïde</strong> : Le type de cancer des sinus le plus courant. Il se développe à partir des cellules qui tapissent la muqueuse des sinus.</li>
+<li><strong>Adénocarcinome</strong> : Un type moins courant qui se forme dans les glandes des sinus.</li>
+<li><strong>Lymphome</strong> : Un cancer du système lymphatique qui peut se développer dans les sinus, bien que rare.</li>
+<li><strong>Sarcome</strong> : Un type de cancer qui affecte les tissus mous, moins fréquemment associé aux sinus.</li>
+<li><strong>Localisation</strong> : Le cancer des sinus peut affecter n'importe lequel des sinus, mais il est plus fréquemment observé dans les sinus maxillaires (près des joues) et ethmoïdaux (derrière les yeux).</li>
+</ul><p>Les cancers des sinus nasaux et paranasaux sont souvent diagnostiqués à un stade avancé, car les symptômes peuvent être vagues et similaires à ceux d'autres affections plus courantes comme les infections des sinus.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque du Cancer des Sinus Nasaux et Paranasaux</h2></div><div class="info-text"><p><p>Les causes exactes du cancer des sinus nasaux et paranasaux sont encore mal comprises, mais plusieurs facteurs peuvent augmenter le risque de développer cette pathologie.</p><h4><strong>Causes et facteurs de risque</strong> :</h4><ul>
+<li><strong>Exposition à des substances chimiques</strong> : L'inhalation de produits chimiques industriels, tels que les poussières de bois, les solvants ou les produits chimiques utilisés dans l'industrie du caoutchouc, peut augmenter le risque de cancer des sinus. Cela concerne principalement les travailleurs dans ces industries.</li>
+<li><strong>Tabagisme</strong> : Fumer est un facteur de risque connu pour de nombreux cancers, y compris ceux des sinus nasaux et paranasaux. Les produits chimiques du tabac peuvent irriter et endommager les cellules des sinus.</li>
+<li><strong>Infections virales</strong> : Certaines infections virales, comme le virus du papillome humain (VPH), sont liées à un risque accru de cancers dans les sinus.</li>
+<li><strong>Antécédents familiaux de cancers des sinus</strong> : Bien que rare, un risque familial de cancer des sinus nasaux et paranasaux peut exister.</li>
+<li><strong>Système immunitaire affaibli</strong> : Les personnes dont le système immunitaire est affaibli (en raison de traitements médicaux, de maladies auto-immunes, etc.) sont plus susceptibles de développer des cancers des sinus.</li>
+<li><strong>Exposition à des radiations</strong> : L'exposition à des radiations dans le passé, par exemple dans le cadre d'un traitement contre d'autres cancers, peut également augmenter le risque de développer un cancer des sinus.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes du Cancer des Sinus Nasaux et Paranasaux</h2></div><div class="info-text"><p><p>Le cancer des sinus nasaux et paranasaux peut se manifester par des symptômes variés, souvent similaires à ceux d'une infection des sinus, ce qui rend le diagnostic difficile à un stade précoce.</p><h4><strong>Symptômes fréquents</strong> :</h4><ul>
+<li><strong>Congestion nasale</strong> : Une obstruction des sinus peut entraîner une congestion nasale persistante qui ne répond pas aux traitements classiques des infections des sinus.</li>
+<li><strong>Douleurs faciales</strong> : Une douleur ou une pression dans le visage, particulièrement dans la région des sinus maxillaires (joues) ou ethmoïdaux (près des yeux), est courante.</li>
+<li><strong>Écoulement nasal</strong> : Un écoulement nasal purulent ou sanguinolent peut être un signe de cancer des sinus.</li>
+<li><strong>Perte d'odorat</strong> : La perte de l'odorat (anosmie) peut se produire lorsque les sinus sont affectés.</li>
+<li><strong>Douleur ou engourdissement dans les dents</strong> : Les cancers des sinus maxillaires peuvent causer des douleurs dans les dents supérieures ou une sensation de pression dentaire.</li>
+<li><strong>Vision trouble ou double</strong> : Si la tumeur touche les sinus ethmoïdaux ou sphénoïdaux, elle peut affecter les nerfs optiques, entraînant des problèmes de vision.</li>
+<li><strong>Enflure des ganglions lymphatiques</strong> : En cas de propagation du cancer, des ganglions lymphatiques enflés peuvent être observés dans le cou.</li>
+<li><strong>Perte de poids inexpliquée et fatigue</strong> : Comme pour de nombreuses formes de cancer, une perte de poids et une fatigue persistante peuvent survenir.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic du Cancer des Sinus Nasaux et Paranasaux</h2></div><div class="info-text"><p><p>Le diagnostic du cancer des sinus nasaux et paranasaux implique plusieurs étapes afin de confirmer la présence du cancer, de déterminer son type et de mesurer son étendue.</p><h4><strong>Méthodes diagnostiques</strong> :</h4><ul>
+<li><strong>Examen physique</strong> : Un examen clinique pour vérifier les symptômes visibles, comme la congestion, l'enflure faciale ou les ganglions lymphatiques enflés.</li>
+<li><strong>Imagerie</strong> : Des examens d'imagerie, comme la <strong>CT scan</strong> (tomodensitométrie) ou l'<strong>IRM</strong> (imagerie par résonance magnétique), sont utilisés pour évaluer la taille et la localisation de la tumeur ainsi que la propagation éventuelle aux tissus voisins.</li>
+<li><strong>Biopsie</strong> : Une biopsie est nécessaire pour confirmer le diagnostic. Elle consiste à prélever un échantillon de tissu tumoral pour analyse en laboratoire. La biopsie peut être réalisée par endoscopie, où un petit tube flexible est inséré dans les sinus, ou par une biopsie chirurgicale si nécessaire.</li>
+<li><strong>Examen endoscopique</strong> : Un endoscope (tube flexible avec une caméra) peut être utilisé pour examiner directement l'intérieur des sinus et prélever un échantillon de tissu.</li>
+<li><strong>Examens de l’étendue (staging)</strong> : Si le cancer est confirmé, des tests supplémentaires seront effectués pour déterminer s'il s'est propagé aux ganglions lymphatiques ou à d'autres organes.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements du Cancer des Sinus Nasaux et Paranasaux</h2></div><div class="info-text"><p><p>Le traitement du cancer des sinus nasaux et paranasaux dépend du type de cancer, de sa localisation, de son stade et de la santé générale du patient. Il peut inclure une combinaison de chirurgie, radiothérapie et chimiothérapie.</p><h4><strong>Options thérapeutiques</strong> :</h4><ul>
+<li><strong>Chirurgie</strong> : L'option principale pour les tumeurs localisées est la chirurgie pour retirer la tumeur, souvent avec une marge de tissu sain. Dans certains cas, une chirurgie reconstructive peut être nécessaire pour restaurer l'apparence et la fonction du visage.</li>
+<li><strong>Radiothérapie</strong> : La radiothérapie est souvent utilisée après la chirurgie pour détruire les cellules cancéreuses restantes, ou dans les cas où la chirurgie n'est pas possible. Elle est également utilisée pour les cancers plus avancés.</li>
+<li><strong>Chimiothérapie</strong> : La chimiothérapie peut être utilisée pour traiter les cancers des sinus plus agressifs ou ceux qui se sont propagés à d'autres parties du corps.</li>
+<li><strong>Thérapies ciblées</strong> : Certaines thérapies ciblées peuvent être utilisées en fonction du type spécifique de cancer des sinus, notamment pour traiter les cancers associés au <strong>virus du papillome humain (VPH)</strong>.</li>
+<li><strong>Suivi après traitement</strong> : Après le traitement, un suivi régulier est essentiel pour détecter toute récidive du cancer ou gérer les effets secondaires du traitement.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> offre des services de <strong>télémédecine</strong> pour permettre aux médecins, cliniques et hôpitaux de suivre à distance les patients atteints de cancer des sinus nasaux et paranasaux, en offrant des consultations à distance et un suivi médical personnalisé.</p><h4><strong>1. Hôpitaux et Cliniques Spécialisées en Oncologie</strong></h4><p>Les <strong>centres spécialisés en oncologie</strong> offrent des soins complets pour</p><p>le cancer des sinus nasaux et paranasaux, incluant la chirurgie, la radiothérapie et la chimiothérapie.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations avec des chirurgiens spécialisés</strong> dans les cancers des sinus et de la tête et du cou.</li>
+<li><strong>Chirurgie reconstructive</strong> pour restaurer la fonction du visage et les structures respiratoires après une intervention chirurgicale.</li>
+<li><strong>Radiothérapie</strong> pour les cancers résiduels ou inopérables.</li>
+<li><strong>Suivi régulier post-traitement</strong> pour surveiller les éventuelles récidives.</li>
+</ul><h4><strong>2. Centres de Radiothérapie</strong></h4><p>Les <strong>centres de radiothérapie</strong> sont essentiels pour traiter les cancers des sinus par des techniques ciblées et des traitements de radiothérapie.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Radiothérapie</strong> pour détruire les cellules cancéreuses après la chirurgie ou lorsque la chirurgie n'est pas une option.</li>
+<li><strong>Suivi après radiothérapie</strong> pour gérer les effets secondaires et prévenir la récidive.</li>
+</ul><h4><strong>3. Télémédecine via WIC-DOCTOR</strong></h4><p>Le <strong>portail WIC-DOCTOR</strong> offre des consultations à distance avec des spécialistes de l'oncologie, permettant aux patients de recevoir des soins de qualité à distance, en particulier pour le suivi après traitement ou pour les patients vivant loin des centres spécialisés.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations à distance</strong> avec des oncologues et chirurgiens spécialisés.</li>
+<li><strong>Suivi personnalisé</strong> pour évaluer l'efficacité du traitement et surveiller les complications.</li>
+<li><strong>Gestion des soins post-chirurgicaux</strong> et surveillance des récidives.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

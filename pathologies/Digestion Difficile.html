@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Digestion Difficile : Causes, Symptômes et Traitements</h1><p><p>La <strong>digestion difficile</strong>, également appelée <strong>dyspepsie</strong> ou <strong>troubles digestifs fonctionnels</strong>, est un problème fréquent qui touche de nombreuses personnes. Elle se manifeste par une sensation d’inconfort dans l’estomac, souvent accompagnée de ballonnements, de douleurs abdominales et de lourdeurs après les repas. Ces symptômes peuvent être occasionnels ou chroniques, et bien que généralement bénins, ils peuvent altérer la qualité de vie. Grâce au <strong>portail WIC-DOCTOR</strong>, les patients peuvent consulter un professionnel de santé à distance pour diagnostiquer et gérer leurs symptômes, et recevoir des conseils personnalisés pour améliorer leur digestion.</p><hr/></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de la Digestion Difficile<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de la Digestion Difficile<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de la Digestion Difficile<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de la Digestion Difficile<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic et Évaluation de la Digestion Difficile<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de la Digestion Difficile<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Prévention de la Digestion Difficile<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de la Digestion Difficile</h2></div><div class="info-text"><p><p>La <strong>digestion difficile</strong> se caractérise par des troubles fonctionnels du système digestif, sans qu’il n’y ait de cause organique sous-jacente identifiable (comme une ulcération ou une infection). Elle est souvent associée à une sensation de plénitude, de douleurs dans la partie supérieure de l'abdomen, ou encore à des nausées après les repas.</p><p>Il existe deux formes principales de dyspepsie :
+1. <strong>Dyspepsie fonctionnelle</strong> : Il s'agit de troubles chroniques de la digestion sans cause identifiée, souvent liés au stress, à l'alimentation ou à des facteurs émotionnels.
+2. <strong>Dyspepsie organique</strong> : Cette forme est liée à des pathologies sous-jacentes comme des ulcères, des reflux gastro-œsophagiens, ou des maladies biliaires.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de la Digestion Difficile</h2></div><div class="info-text"><p><p>Les symptômes de la digestion difficile varient selon les individus, mais les plus courants incluent :</p><ul>
+<li><strong>Douleurs abdominales</strong> : Sensation de douleur ou de gêne dans la partie supérieure de l'abdomen.</li>
+<li><strong>Ballonnements</strong> : Sensation de ventre gonflé et lourd après les repas.</li>
+<li><strong>Nausées</strong> : Une sensation de malaise qui peut rendre l'estomac particulièrement sensible.</li>
+<li><strong>Sensation de plénitude</strong> : Un sentiment de ventre plein ou encombré, même après avoir mangé de petites quantités.</li>
+<li><strong>Brûlures d'estomac</strong> : Cela peut être un signe de reflux gastro-œsophagien associé à des troubles digestifs.</li>
+<li><strong>Rots fréquents</strong> : L'air avalé pendant les repas peut entraîner des éructations excessives.</li>
+<li><strong>Perte d’appétit</strong> : Certains patients peuvent ressentir une diminution de l'appétit, notamment en raison de la gêne abdominale.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de la Digestion Difficile</h2></div><div class="info-text"><p><p>La digestion difficile peut être causée par une multitude de facteurs. Voici les plus courants :</p><h4><strong>Causes principales</strong> :</h4><ol>
+<li><strong>Alimentation</strong> : Une alimentation trop riche en graisses, en aliments frits ou épicés, ou une prise excessive d'alcool ou de café peuvent perturber le processus digestif.</li>
+<li><strong>Stress et anxiété</strong> : Le stress joue un rôle crucial dans les troubles digestifs en perturbant l'équilibre des acides gastriques et en affectant le fonctionnement normal du système digestif.</li>
+<li><strong>Reflux gastro-œsophagien (RGO)</strong> : Le reflux acide peut entraîner une gêne après les repas, avec des symptômes comme les brûlures d’estomac.</li>
+<li><strong>Mauvaise digestion des aliments</strong> : Certaines personnes éprouvent des difficultés à digérer certains aliments, comme le lactose, le gluten ou les fibres, ce qui peut provoquer des ballonnements et des douleurs.</li>
+<li><strong>Antibiotiques et médicaments</strong> : L'utilisation de certains médicaments, en particulier les anti-inflammatoires non stéroïdiens (AINS) ou les antibiotiques, peut dérégler le système digestif.</li>
+<li><strong>Pathologies sous-jacentes</strong> : Des maladies comme la gastrite, les ulcères peptiques ou la pancréatite peuvent causer des symptômes similaires.</li>
+</ol><h4><strong>Facteurs de risque</strong> :</h4><ol>
+<li><strong>Sédentarité</strong> : Un mode de vie inactif peut ralentir le processus digestif.</li>
+<li><strong>Habitudes alimentaires</strong> : Manger trop rapidement, grignoter fréquemment ou consommer des repas copieux peut perturber la digestion.</li>
+<li><strong>Âge avancé</strong> : Le vieillissement peut affecter le système digestif et ralentir le processus de digestion.</li>
+<li><strong>Tabagisme et alcool</strong> : Ces substances peuvent irriter l’estomac et favoriser les troubles digestifs.</li>
+<li><strong>Antécédents familiaux</strong> : Des troubles digestifs chroniques peuvent être présents dans certaines familles, en raison de facteurs génétiques.</li>
+</ol><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de la Digestion Difficile</h2></div><div class="info-text"><p><p>La digestion difficile est souvent bénigne et ne nécessite pas de traitement médical complexe. Toutefois, si elle persiste ou s’aggrave, des complications peuvent survenir :</p><ul>
+<li><strong>Déshydratation</strong> : En cas de vomissements ou de diarrhée associés, la déshydratation peut devenir une complication sérieuse.</li>
+<li><strong>Ulcerations de l’estomac</strong> : Si le reflux acide ou les troubles digestifs chroniques ne sont pas traités, des ulcères peuvent se développer dans la muqueuse gastrique.</li>
+<li><strong>Syndrome de l’intestin irritable (SCI)</strong> : Une digestion difficile persistante peut être un symptôme du SCI, une condition qui provoque des douleurs abdominales, des ballonnements et des troubles du transit.</li>
+<li><strong>Perturbation de l’alimentation</strong> : Les douleurs récurrentes ou l'inconfort digestif peuvent amener les personnes concernées à éviter certains aliments, ce qui peut entraîner des carences nutritionnelles.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic et Évaluation de la Digestion Difficile</h2></div><div class="info-text"><p><p>Le diagnostic de la digestion difficile repose principalement sur un examen clinique et l'exclusion d'autres pathologies sous-jacentes :</p><ol>
+<li><strong>Anamnèse</strong> : Le médecin interrogera le patient sur les symptômes, leur fréquence, leur durée et les habitudes alimentaires.</li>
+<li><strong>Examen physique</strong> : Un examen abdominal peut être effectué pour rechercher des signes d’inflammation ou de troubles organiques.</li>
+<li><strong>Tests de laboratoire</strong> : Des analyses de sang peuvent être effectuées pour détecter d’éventuelles infections, des carences nutritionnelles ou des signes d’une maladie sous-jacente.</li>
+<li><strong>Endoscopie</strong> : Si des symptômes plus graves sont présents, comme des brûlures d'estomac persistantes, une endoscopie gastro-intestinale peut être réalisée pour examiner l’intérieur de l’estomac et de l'œsophage.</li>
+</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de la Digestion Difficile</h2></div><div class="info-text"><p><p>Le traitement de la digestion difficile varie en fonction de la cause sous-jacente et de la gravité des symptômes :</p><h4><strong>Modifications du mode de vie et soins à domicile</strong> :</h4><ol>
+<li><strong>Alimentation équilibrée</strong> : Évitez les aliments gras, épicés et lourds, et privilégiez des repas légers et faciles à digérer. Mangez lentement et évitez les repas trop copieux.</li>
+<li><strong>Réduction du stress</strong> : La gestion du stress à travers la relaxation, la méditation ou le yoga peut améliorer la digestion.</li>
+<li><strong>Éviter l'alcool et le tabac</strong> : Ces substances peuvent irriter l’estomac et aggraver les symptômes.</li>
+<li><strong>Hydratation</strong> : Assurez-vous de boire suffisamment d’eau pour éviter la déshydratation et favoriser une bonne digestion.</li>
+</ol><h4><strong>Médicaments</strong> :</h4><ul>
+<li><strong>Antiacides</strong> : Ils peuvent être utilisés pour neutraliser l'acidité gastrique et soulager les symptômes de brûlures d'estomac.</li>
+<li><strong>Prokinétiques</strong> : Ces médicaments aident à améliorer la motilité intestinale et à soulager la sensation de plénitude.</li>
+<li><strong>Antispasmodiques</strong> : Ils peuvent être prescrits pour réduire les crampes abdominales et les douleurs liées aux troubles digestifs.</li>
+<li><strong>Inhibiteurs de la pompe à protons (IPP)</strong> : En cas de reflux gastro-œsophagien, ces médicaments aident à réduire la production d’acide gastrique.</li>
+</ul><h4><strong>Suivi médical à distance avec WIC-DOCTOR</strong> :</h4><p>Le <strong>portail WIC-DOCTOR</strong> offre aux patients un accès facile à des <strong>consultations de télémédecine</strong> pour gérer la digestion difficile. Un professionnel de santé peut offrir un diagnostic à distance, fournir des conseils nutritionnels et suivre l’évolution des symptômes, permettant ainsi un traitement personnalisé et un meilleur suivi.</p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Prévention de la Digestion Difficile</h2></div><div class="info-text"><p><p>Pour prévenir les troubles digestifs, il est essentiel de suivre quelques conseils simples :</p><ul>
+<li><strong>Évitez les repas trop copieux</strong> et privilégiez des repas plus petits et fréquents.</li>
+<li><strong>Réduisez le stress</strong> par des techniques de relaxation.</li>
+<li><strong>Pratiquez une activité physique régulière</strong> pour stimuler la digestion et maintenir un poids santé.</li>
+<li><strong>Consommez des fibres</strong> pour améliorer la digestion et prévenir les ballonnements.</li>
+<li><strong>Limitez l’alcool et le tabac</strong>, deux facteurs aggravants pour le système digestif.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

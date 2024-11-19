@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Piqûre d’Insectes et d’Autres Animaux : Comprendre, Diagnostiquer et Traiter</h1><p></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Qu'est-ce qu'une Piqûre d'Insectes et d'Autres Animaux ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Causes et Facteurs de Risque des Piqûres d'Insectes et d'Autres Animaux<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Symptômes des Piqûres d'Insectes et d'Autres Animaux<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Diagnostic des Piqûres d'Insectes et d'Autres Animaux<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Traitement des Piqûres d'Insectes et d'Autres Animaux<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Suivi et Gestion via WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Qu'est-ce qu'une Piqûre d'Insectes et d'Autres Animaux ?</h2></div><div class="info-text"><p><p>Les piqûres d'insectes et d'animaux sont des morsures ou des piqûres causées par des insectes tels que les moustiques, les abeilles, les guêpes, ou encore des animaux comme les chiens, les chats et d'autres créatures. Ces piqûres peuvent entraîner des réactions locales comme des démangeaisons, des douleurs, des rougeurs, ou des gonflements. Dans certains cas, elles peuvent causer des réactions allergiques graves (choc anaphylactique) ou transmettre des maladies infectieuses.</p><p>Les insectes et animaux responsables des piqûres sont souvent présents dans des environnements extérieurs (jardins, forêts, plages), mais les piqûres d'animaux domestiques peuvent survenir dans des espaces intérieurs.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Piqûres d'Insectes et d'Autres Animaux</h2></div><div class="info-text"><p><p>Les piqûres peuvent être causées par différents types d'insectes ou d'animaux qui mordent ou piquent pour se défendre, se nourrir ou marquer leur territoire. La réaction de chaque individu à ces piqûres peut varier, et certains facteurs augmentent les risques de complications.</p><h4><strong>Causes possibles des piqûres :</strong></h4><ol>
+<li><strong>Insectes</strong> :</li>
+<li><strong>Moustiques</strong> : Ils piquent pour se nourrir de sang, ce qui peut entraîner des démangeaisons et dans certains cas, la transmission de maladies comme le paludisme ou la dengue.</li>
+<li><strong>Abeilles et guêpes</strong> : Ces insectes piquent en cas de menace pour se défendre. La piqûre est généralement douloureuse et peut provoquer une réaction allergique.</li>
+<li><strong>Puces et tiques</strong> : Ces parasites se nourrissent du sang des animaux, et leur piqûre peut provoquer des démangeaisons et des infections.</li>
+<li>
+<p><strong>Cimex (punaises de lit)</strong> : Bien qu’elles ne soient pas porteuses de maladies graves, leur piqûre provoque des démangeaisons et des rougeurs.</p>
+</li>
+<li>
+<p><strong>Animaux</strong> :</p>
+</li>
+<li><strong>Morsures de chien ou de chat</strong> : En cas de peur ou d'agression, ces animaux peuvent mordre, entraînant une plaie qui peut devenir infectée.</li>
+<li><strong>Serpents</strong> : Les morsures de serpents peuvent être dangereuses, surtout si l'animal est venimeux. Cela nécessite un traitement médical d'urgence.</li>
+<li><strong>Araignées</strong> : Certaines araignées venimeuses, comme la veuve noire ou la recluse brune, peuvent provoquer des réactions graves.</li>
+</ol><h4><strong>Facteurs de risque :</strong></h4><ul>
+<li><strong>Environnement</strong> : Passer du temps dans des zones où vivent des insectes (forêts, jardins, plages, etc.) augmente le risque de piqûres.</li>
+<li><strong>Allergies</strong> : Les personnes ayant des antécédents d’allergies ou de réactions anaphylactiques sont à risque de subir une réaction grave.</li>
+<li><strong>Animaux domestiques</strong> : Les propriétaires d'animaux de compagnie peuvent être plus exposés aux piqûres ou morsures d'animaux, surtout si ces derniers ne sont pas bien entretenus ou sont agressifs.</li>
+<li><strong>Travailleurs ou activités de plein air</strong> : Les personnes travaillant dans des environnements extérieurs (jardinage, randonnée, agriculture) sont particulièrement exposées aux piqûres d'insectes et aux morsures d'animaux.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Piqûres d'Insectes et d'Autres Animaux</h2></div><div class="info-text"><p><p>Les symptômes varient en fonction du type d'insecte ou d'animal, de la gravité de la piqûre, et de la réaction individuelle. Les symptômes peuvent être locaux (dans la zone de la piqûre) ou systémiques (affectant l'ensemble du corps).</p><h4><strong>Symptômes locaux :</strong></h4><ul>
+<li><strong>Rougeur et enflure</strong> autour de la piqûre ou de la morsure.</li>
+<li><strong>Démangeaisons et irritation</strong> : C’est l’un des symptômes les plus fréquents.</li>
+<li><strong>Douleur aiguë</strong> à l’endroit de la piqûre, surtout avec les piqûres de guêpes ou d'abeilles.</li>
+<li><strong>Petites bosses ou boutons</strong> : Souvent, une petite bosse dure ou une ecchymose se forme après la piqûre.</li>
+</ul><h4><strong>Symptômes graves (réactions systémiques) :</strong></h4><ul>
+<li><strong>Réactions allergiques sévères (anaphylaxie)</strong> : Symptômes tels que gonflement de la gorge, difficulté à respirer, faiblesse, et perte de conscience, qui nécessitent des soins d'urgence.</li>
+<li><strong>Infections</strong> : En cas de morsure profonde ou d’atteinte cutanée, des bactéries peuvent pénétrer et provoquer une infection, avec rougeur, chaleur, et pus.</li>
+<li><strong>Fièvre</strong> : Les piqûres de certaines tiques ou d'insectes infectés peuvent entraîner des symptômes systémiques comme de la fièvre.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Piqûres d'Insectes et d'Autres Animaux</h2></div><div class="info-text"><p><p>Le diagnostic des piqûres d'insectes et d'animaux repose généralement sur un examen clinique, mais dans certains cas, des tests supplémentaires peuvent être nécessaires, notamment pour évaluer la gravité de la réaction allergique ou suspecter une infection.</p><h4><strong>Méthodes diagnostiques :</strong></h4><ol>
+<li><strong>Examen clinique</strong> : Un professionnel de la santé procède à un examen de la zone de la piqûre pour déterminer la cause (insecte ou animal) et évaluer les symptômes.</li>
+<li><strong>Antécédents médicaux</strong> : Le médecin interroge le patient sur la localisation de la piqûre, l'heure de l'incident et les symptômes associés.</li>
+<li><strong>Tests allergologiques</strong> : Si une réaction allergique grave est suspectée, des tests cutanés ou des prises de sang peuvent être effectués pour identifier l'allergène responsable.</li>
+<li><strong>Examen microbiologique</strong> : En cas de suspicion d'infection, des prélèvements de la plaie peuvent être effectués pour identifier des agents pathogènes.</li>
+</ol><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement des Piqûres d'Insectes et d'Autres Animaux</h2></div><div class="info-text"><p><p>Le traitement dépend du type de piqûre, des symptômes présentés et de la gravité de la réaction. Le traitement vise à soulager la douleur, l’inflammation, prévenir les infections et traiter les réactions allergiques.</p><h4><strong>Options de traitement :</strong></h4><ol>
+<li><strong>Soins locaux</strong> :  </li>
+<li>Nettoyer soigneusement la piqûre avec de l'eau et du savon.</li>
+<li>Appliquer une <strong>pommade anti-démangeaison</strong> ou une crème à base de cortisone pour soulager l'inflammation et les démangeaisons.</li>
+<li>
+<p>Utiliser des <strong>compresses froides</strong> pour réduire l’enflure.</p>
+</li>
+<li>
+<p><strong>Antihistaminiques</strong> :<br/>
+   Si la piqûre entraîne des démangeaisons ou une éruption cutanée, des antihistaminiques peuvent être prescrits pour réduire la réaction allergique.</p>
+</li>
+<li>
+<p><strong>Antibiotiques</strong> :<br/>
+   Si une infection est suspectée (par exemple, à la suite d'une morsure de chien ou d'araignée), des antibiotiques peuvent être nécessaires pour prévenir ou traiter une infection bactérienne.</p>
+</li>
+<li>
+<p><strong>Épinéphrine (adrénaline)</strong> :<br/>
+   En cas de réaction allergique grave (anaphylaxie), une injection d'épinéphrine peut être nécessaire pour contrer la réaction et restaurer la respiration.</p>
+</li>
+<li>
+<p><strong>Morsure de serpent</strong> :<br/>
+   En cas de morsure de serpent venimeux, il est crucial de se rendre immédiatement à l'hôpital pour un traitement par sérum antivenin et une surveillance médicale.</p>
+</li>
+<li>
+<p><strong>Consultation à distance</strong> :<br/>
+<strong>WIC-DOCTOR</strong> offre un service de <strong>télémédecine</strong> qui permet aux patients de consulter des médecins en ligne pour un suivi rapide des piqûres, obtenir des conseils sur les premiers secours ou même obtenir une prescription en ligne pour des médicaments contre les allergies ou les infections.</p>
+</li>
+</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi et Gestion via WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> offre des services de <strong>télémédecine</strong> pour la gestion des piqûres d'insectes et d'animaux, permettant ainsi aux patients d'obtenir une consultation à distance, un suivi médical et un traitement adapté.</p><h4><strong>Services disponibles via WIC-DOCTOR :</strong></h4><ol>
+<li><strong>Consultations en ligne</strong> : Vous pouvez consulter un médecin généraliste ou un spécialiste en cas de réaction allergique ou d'infection.</li>
+<li><strong>Prescription électronique</strong> : Si nécessaire, les médecins peuvent prescrire des antihistaminiques, des antibiotiques ou d'autres médicaments par voie électronique.</li>
+<li><strong>Suivi à distance</strong> : Les médecins peuvent suivre l’évolution des symptômes et adapter le traitement à distance via la plateforme de télémédecine.</li>
+</ol><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

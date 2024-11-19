@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../../assets/css/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+										<p class="contact-index">+216 53 926 192</p>
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="index.html"><img src="../../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="../index.html"><img src="../../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+				<a class="callusbtn" href="tel:245-6325-3256"><i aria-hidden="true" class="fa fa-phone"></i></a>
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="index.html">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
+								</span>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../pathologies.html">Pathologies </a>
+							</li>
+						
+							
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+<br>
+    <section class="sptb section-bg">
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h1>Brûlure : Causes, Symptômes et Traitements</h1><p><p>Une <strong>brûlure</strong> est une lésion de la peau et des tissus sous-jacents causée par une exposition à une chaleur excessive, à des produits chimiques, à l’électricité ou à des radiations. Les brûlures peuvent varier en termes de gravité, allant des brûlures superficielles qui affectent uniquement la couche supérieure de la peau, aux brûlures graves qui impliquent les couches profondes et peuvent entraîner des complications majeures. Grâce à la <strong>télémédecine</strong> via <strong>WIC-DOCTOR</strong>, les patients peuvent bénéficier d’un suivi à distance pour une gestion optimale des soins après une brûlure et une évaluation continue des signes de complications.</p><hr/></p>  
+                <div class="button-container text-center">
+                    <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de la Brûlure<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes des Brûlures<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque des Brûlures<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications des Brûlures<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic des Brûlures<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement des Brûlures<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                </div>
+            </div>
+
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de la Brûlure</h2></div><div class="info-text"><p><p>Les brûlures sont classées en fonction de leur profondeur et de leur étendue. Elles peuvent être :</p><ul>
+<li><strong>Brûlures superficielles (1er degré)</strong> : Elles touchent seulement la couche externe de la peau (épiderme), provoquant une rougeur et une douleur modérée sans formation de cloques.</li>
+<li><strong>Brûlures partielles (2e degré)</strong> : Elles affectent l’épiderme et le derme, entraînant des cloques, des douleurs plus intenses et un risque d’infection.</li>
+<li><strong>Brûlures profondes (3e degré)</strong> : Elles traversent toutes les couches de la peau, endommageant les tissus sous-jacents (muscles, tendons, os), et peuvent causer une perte de sensation en raison des lésions nerveuses. Ces brûlures nécessitent des soins médicaux immédiats et peuvent laisser des cicatrices permanentes.</li>
+</ul><p>Les brûlures peuvent résulter de diverses causes, telles que des sources thermiques (feu, eau bouillante), chimiques (acides, produits ménagers), électriques (électrocution) ou solaires (coup de soleil).</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Brûlures</h2></div><div class="info-text"><p><p>Les symptômes dépendent de la gravité de la brûlure, mais les signes courants comprennent :</p><ul>
+<li><strong>Douleur intense</strong> : Les brûlures de 1er et 2e degré sont généralement très douloureuses, avec une sensation de picotement ou de brûlure.</li>
+<li><strong>Rougeur</strong> : Une peau rouge et enflammée, visible dans les brûlures superficielles.</li>
+<li><strong>Claquage et cloques</strong> : Les brûlures de 2e degré peuvent entraîner des cloques remplies de liquide.</li>
+<li><strong>Perte de sensation</strong> : Dans le cas de brûlures profondes (3e degré), la peau peut devenir blanche ou carbonisée et la personne peut ne pas ressentir de douleur en raison des lésions nerveuses.</li>
+<li><strong>Gonflement</strong> : Les zones brûlées peuvent gonfler, notamment pour les brûlures graves.</li>
+<li><strong>Fièvre et frissons</strong> : Dans certains cas, notamment pour les brûlures sévères ou lorsqu'il y a infection, des signes systémiques comme la fièvre peuvent apparaître.</li>
+<li><strong>Infection</strong> : Une brûlure non traitée peut entraîner une infection bactérienne, avec formation de pus et odeur nauséabonde.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Brûlures</h2></div><div class="info-text"><p><p>Les principales causes de brûlures incluent :</p><ol>
+<li><strong>Chaleur</strong> : Brûlures causées par des flammes, de l'eau bouillante, des surfaces chaudes, des radiateurs, etc.</li>
+<li><strong>Produits chimiques</strong> : Les acides, alcalins et autres produits chimiques caustiques peuvent provoquer des brûlures chimiques graves.</li>
+<li><strong>Électricité</strong> : L'électrocution est une cause fréquente de brûlures graves, qui endommagent la peau mais peuvent aussi affecter les tissus internes comme les muscles et les organes.</li>
+<li><strong>Radiation (brûlure solaire)</strong> : L’exposition prolongée au soleil sans protection adéquate peut provoquer des coups de soleil, entraînant des brûlures superficielles de la peau.</li>
+<li><strong>Fractures thermiques</strong> : Les brûlures de congélation ou "brûlures par le froid" peuvent survenir lors d'une exposition à des températures extrêmement basses.</li>
+</ol><p>Les facteurs de risque pour les brûlures incluent :</p><ul>
+<li><strong>Enfants et personnes âgées</strong> : Ces groupes sont plus vulnérables aux brûlures graves, en raison de la peau plus fragile ou de la moindre capacité à réagir rapidement à une situation dangereuse.</li>
+<li><strong>Accidents domestiques</strong> : Les brûlures surviennent souvent à domicile, à cause des cuissons, des produits ménagers ou des accidents liés à l’eau chaude.</li>
+<li><strong>Comportement à risque</strong> : Les travailleurs exposés à des risques chimiques ou thermiques dans des environnements industriels peuvent être plus susceptibles de subir des brûlures.</li>
+<li><strong>Fumeurs</strong> : Le tabac est un facteur aggravant, particulièrement en cas d’incendie ou d’accidents domestiques.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications des Brûlures</h2></div><div class="info-text"><p><p>Les complications graves des brûlures incluent :</p><ul>
+<li><strong>Infections</strong> : Les brûlures, surtout celles qui sont profondes, exposent les tissus sous-jacents, ce qui facilite l’entrée des bactéries et peut entraîner une infection grave.</li>
+<li><strong>Déshydratation</strong> : Les brûlures étendues peuvent entraîner une perte de liquides corporels, augmentant le risque de déshydratation.</li>
+<li><strong>Choc hypovolémique</strong> : Une brûlure importante peut entraîner une perte de sang et de liquides, entraînant une pression artérielle dangereusement basse (choc).</li>
+<li><strong>Cicatrices et déformations</strong> : Les brûlures profondes peuvent laisser des cicatrices permanentes et, dans certains cas, entraîner des déformations du tissu cutané.</li>
+<li><strong>Complications respiratoires</strong> : Les brûlures des voies respiratoires supérieures, causées par l'inhalation de fumée ou de chaleur, peuvent entraîner des problèmes respiratoires sévères.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Brûlures</h2></div><div class="info-text"><p><p>Le diagnostic des brûlures repose généralement sur l’examen clinique et l'évaluation de la profondeur et de l'étendue des lésions. Les étapes courantes comprennent :</p><ol>
+<li><strong>Examen physique</strong> : Le médecin examine la peau pour évaluer la gravité de la brûlure, en fonction de la profondeur, de la taille de la zone affectée, et de la présence de cloques ou de nécrose.</li>
+<li><strong>Évaluation de la surface corporelle brûlée</strong> : Utilisation de la règle des "neuf" pour estimer le pourcentage de la surface corporelle affectée.</li>
+<li><strong>Test des infections</strong> : Culture de la plaie pour identifier la présence d'infections bactériennes.</li>
+<li><strong>Tests de la fonction respiratoire</strong> : Si la brûlure est due à une inhalation de fumée, des tests pour évaluer la fonction pulmonaire peuvent être nécessaires.</li>
+</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement des Brûlures</h2></div><div class="info-text"><p><p>Le traitement des brûlures dépend de leur gravité. Les options incluent :</p><h4><strong>Modifications du Mode de Vie</strong></h4><ul>
+<li><strong>Protection solaire</strong> : Utiliser des crèmes solaires et porter des vêtements protecteurs pour éviter les coups de soleil.</li>
+<li><strong>Éviter les produits irritants</strong> : Pour les brûlures chimiques, l’évitement de l'exposition à des produits dangereux et le port de protections adaptées sont essentiels.</li>
+</ul><h4><strong>Soins Immédiats (Premiers Secours)</strong></h4><ul>
+<li><strong>Refroidir la brûlure</strong> : Placer la zone touchée sous l’eau froide (pas glacée) pendant 10-20 minutes pour diminuer la température locale.</li>
+<li><strong>Recouvrir la brûlure</strong> : Utiliser un pansement stérile et non adhésif pour éviter toute contamination.</li>
+<li><strong>Éviter de percer les cloques</strong> : Les cloques doivent être laissées intactes pour protéger la peau sous-jacente des infections.</li>
+</ul><h4><strong>Médicaments</strong></h4><ul>
+<li><strong>Analgésiques</strong> : Des médicaments comme l’ibuprofène ou le paracétamol pour soulager la douleur.</li>
+<li><strong>Antibiotiques</strong> : Si une infection est présente, des antibiotiques peuvent être administrés pour prévenir la propagation de l’infection.</li>
+<li><strong>Crèmes et onguents</strong> : Des crèmes à base de corticostéroïdes ou d’antiseptiques pour soulager l’inflammation et prévenir l’infection.</li>
+</ul><h4><strong>Interventions Chirurgicales</strong></h4><ul>
+<li><strong>Greffes de peau</strong> : Pour les brûlures profondes, une greffe de peau peut être nécessaire pour recouvrir les zones touchées.</li>
+<li><strong>Débridement</strong> : Dans les cas graves, l'enlèvement du tissu mort ou endommagé est crucial pour favoriser la guérison.</li>
+</ul><h4><strong>Suivi à Distance avec WIC-DOCTOR</strong></h4><ul>
+<li><strong>Consultations virtuelles</strong> : Les patients peuvent suivre leur traitement à distance avec <strong>WIC-DOCTOR</strong>, où des professionnels de santé évaluent la guérison et donnent des conseils personnalisés.</li>
+<li><strong>Suivi des signes d’infection</strong> : Grâce aux outils de télémédecine, les patients peuvent être suivis pour détecter les signes d'infection ou de complications respiratoires après une brûlure.</li>
+<li><strong>Rééducation</strong> : Des programmes de rééducation, en particulier pour les brûlures graves, peuvent être suivis à distance pour aider à la récupération et prévenir les complications.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Scrolling to section:", sectionId);  // Debugging line
+            const section = document.getElementById(sectionId);
+            
+            if (section) {
+                // Calculate the position with offset
+                const offset = 100; // Adjust this value as needed for desired offset
+                const sectionTop = section.offsetTop - offset;
+
+                // Scroll the page to the target position
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log("Section with id", sectionId, "not found!");  // Debugging line
+            }
+        }
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+    <section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="../qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+								<li>
+									<a href="javascript:;">Mentions légales</a>
+								</li>
+								<li>
+									<a href="javascript:;">Politique de confidentialité</a>
+								</li>
+								<li>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="../trouver-une-clinique.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+                                <li>
+									<a href="../pathologies.html">Pathologies: diagnostique et intervention</a>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p  class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Médicaments</a>
+								</li>
+								<li>
+									<a href="javascript:;">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Support</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">FAQ</a>
+								</li>
+								<li>
+									<a href="../contact.html">Contactez-nous</a>
+								</li>
+								
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="../../assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="../../assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="../../assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="../../assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="../../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="../../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="../../assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="../../assets/plugins/counters/counterup.min.js"></script>
+	<script src="../../assets/plugins/counters/waypoints.min.js"></script>
+	<script src="../../assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="../../assets/plugins/date-picker/spectrum.js"></script>
+	<script src="../../assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="../../assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="../../assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="../../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="../../assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="../../assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="../../assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="../../assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="../../assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="../../assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="../../assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="../../assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="../../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>
