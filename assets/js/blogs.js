@@ -8,18 +8,18 @@ try {
     const blogs = data.blogs
     blogs.forEach(item => {
         if(item.titre == "Comment la télémédecine améliore l’accès aux soins dans les zones rurales")
-            href='Comment la télémédecine améliore l’accès aux soins dans les zones rurales.html'
+            href='télémédecine-zones-rurales.html'
           if(item.titre == "Intelligence artificielle et télémédecine : comment les technologies transforment les soins")
-            href='Intelligence artificielle et télémédecine : comment les technologies transforment les soins.html'
+            href='Intelligence-artificielle-et-télémédecine.html'
           if(item.titre == "Comment la télémédecine facilite la gestion des maladies chroniques")
-            href='Comment la télémédecine facilite la gestion des maladies chroniques.html'
+            href='télémédecine-maladies-chroniques.html'
     document.getElementById('list-blog').innerHTML=document.getElementById('list-blog').innerHTML+
     `<div class="col-xl-4 col-lg-6 col-md-12">
 								<div class="card">
 									<div class="item7-card-img">
 										<a href="javascript:void(0);"></a> <img alt="img" class="cover-image" src="assets/images/media/blogs/${item.image}">
 										<div class="item7-card-text">
-											<span class="badge bg-secondary">Hospital</span>
+											<span class="badge bg-secondary">${item.catégorie}</span>
 										</div>
 									</div>
 									<div class="card-body">
