@@ -1,5 +1,5 @@
 let apiUrl= 'https://wic-doctor.com:3004/blogs'
-
+let href=""
 async function fetchblogs() {
 try {
 	const response = await fetch(apiUrl);
@@ -7,6 +7,12 @@ try {
 	console.log("List blog: ",data)
     const blogs = data.blogs
     blogs.forEach(item => {
+        if(item.titre == "Comment la télémédecine améliore l’accès aux soins dans les zones rurales")
+            href='Comment la télémédecine améliore l’accès aux soins dans les zones rurales.html'
+          if(item.titre == "Intelligence artificielle et télémédecine : comment les technologies transforment les soins")
+            href='Intelligence artificielle et télémédecine : comment les technologies transforment les soins.html'
+          if(item.titre == "Comment la télémédecine facilite la gestion des maladies chroniques")
+            href='Comment la télémédecine facilite la gestion des maladies chroniques.html'
     document.getElementById('list-blog').innerHTML=document.getElementById('list-blog').innerHTML+
     `<div class="col-xl-4 col-lg-6 col-md-12">
 								<div class="card">
@@ -22,7 +28,7 @@ try {
 											
 										</div><a class="text-dark" href="javascript:void(0);">
 										<h4 class="font-weight-semibold mb-3">${item.titre}</h4></a>
-										<a class="btn btn-primary btn-sm" href="javascript:void(0);">Read More</a>
+										<a class="btn btn-primary btn-sm" href="${href}">Voir plus</a>
 									</div>
 								</div>
 							</div>`
