@@ -35,7 +35,7 @@ document.getElementById("DoctorsDetails").innerHTML = document.getElementById("D
 								<div class="d-md-flex">
 									<img src="assets/images/media/doctors/${photos}" class="w-150 h-150 br-2" alt="user">
 									<div class="ms-4">
-										<a href="userprofile.html" class="text-dark">
+										<a class="text-dark">
 											<h4 class="mt-3 mb-1 font-weight-bold">${JSON.parse(Detailsdoctors.name).fr} <i
 													class="ion-checkmark-circled  text-success fs-14 ms-1"></i></h4>
 										</a>
