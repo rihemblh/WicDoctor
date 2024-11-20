@@ -31,12 +31,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Localisation des Médecins</title>
+
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<style>
 		#map {
 			height: 500px;
 			width: 100%;
 		}
+		.container.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px; /* Espacement entre les boutons */
+}
+/* Style des boutons */
+
 	</style>
 
 
@@ -286,29 +296,21 @@
 
 	<!--Map-->
 
-	<div class="d-lg-flex">
-		
-
-		<!-- Conteneur de la liste -->
-		<div class="container map-content-width overflow-hidden mh-500 flex-fill">
-			<div class="card mb-0 map-list-card">
-				<div class="card-body p-3">
-					<div class="vscroll mh-500">
-						<div class="p-2" id="doctorList">
-
-						</div>
-
-					</div>
-					<script src="assets/js/deroulantes.js"></script>
-					<script>
-
-					</script>
-				</div>
-			</div>
+	
+		<div class=" container vscroll mh-500">
+		<div class="p-2" id="annuaire-list"></div>
 		</div>
+		<div class="container pagination">
+			<button id="prev-btn" disabled class="btn btn-primary"> <i class="fa fa-chevron-left" ></i> Précédent</button>
+			<button id="next-btn" class="btn btn-primary">Suivant <i class="fa fa-chevron-right"></i></button>
+		</div>
+		
+		
+		
+		<script src="assets/js/deroulantes.js"></script>
+	
 
-	</div>
-
+		
 
 
 

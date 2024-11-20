@@ -1,96 +1,116 @@
-// Fetch all specialties
+const annuaireList = document.getElementById('annuaire-list');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
 
+let currentPage = 1;
+const limit = 10; // Nombre de résultats par page
 
-// Function to search for doctors based on selected criteria
-function RechercheDoctor() {
+// Fonction pour charger une page
+async function loadPage(page) {
+    const offset = (page - 1) * limit;
 
-    // If there are any parameters, search with them
-    apiurl = `https://wic-doctor.com:3004/getannuaire`;
+    try {                            
+        const response = await fetch(`http://localhost:3001/getannuaire?limit=${limit}&offset=${offset}`);
+        const data = await response.json();
 
+        // Afficher les résultats
+        renderResults(data);
 
-    console.log("API URL: ", apiurl);
-
-    // Fetch the data using the constructed URL
-    fetch(apiurl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erreur lors de la récupération des données des médecins');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log('Données récupérées:', JSON.stringify(data));
-            displayDoctorsInCards(data);
-        })
-        .catch(error => {
-            console.error('Erreur:', error);
-            const container = document.getElementById('doctorList');
-            container.innerHTML = '<center><h2> Pas de médecin trouvé avec ces critères</h2></center>';
-        });
+        // Activer/désactiver les boutons de pagination
+        prevBtn.disabled = page === 1;
+        nextBtn.disabled = data.length < limit; // Désactiver si moins de résultats que `limit`
+    } catch (error) {
+        console.error('Erreur lors du chargement des données:', error);
+    }
 }
 
-// Function to display doctors in cards
-// Function to display doctors in cards
-function displayDoctorsInCards(doctors) {
-    const container = document.getElementById('doctorList');
-    container.innerHTML = ''; // Clear previous results
+// Fonction pour afficher les résultats
+function renderResults(data) {
+    annuaireList.innerHTML = ''; // Réinitialiser la liste
 
-    console.log('Doctors to display:', doctors); // Log the data of doctors
+    data.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'annuaire-item';
 
-    if (!doctors || doctors.length === 0) {
-        container.innerHTML = '<p>Aucun médecin trouvé.</p>';
-    } else {
-        doctors.forEach((item) => {
-            // Extraire les données dynamiquement
-            const nomPrenom = item["Nom et prénom"] || "Nom inconnu";
-            const specialite = item["Spécialité"] || "Spécialité inconnue";
-            const adresse = item["Adresse"] || "Adresse inconnue";
-            const gouvernorat = item["Gouvernorat"] || "Gouvernorat inconnu";
-            const pays = item["Pays"] || "Pays inconnu";
-            
-            // Utiliser une image de profil par défaut si aucun champ de photo n'est fourni
-            const photo = item["photo"]  || "doctor.png";; 
-        
-            // Construire dynamiquement la carte pour chaque docteur
-            const cardHTML = `
-            <div class="scrollable-container" style="max-height:350px; overflow-y: auto; padding:10px; height:100%">
-                <div class="card-container" style="display:flex; flex-direction:column;">
-                    <div class="card overflow-hidden">
-                        <div class="d-md-flex">
-                            <div class="item-card9-img" style="width: 122px;height: 106px;border-radius: 50%;object-fit: cover;">
-                                <div class="item-card9-imgs">			
-                                    <img alt="img" class="cover-image" src="assets/images/media/doctors/${photo}">
-                                    
-                                </div>
+        // Gestion du nom
+        let name;
+        try {
+            const parsedName = JSON.parse(item.name);
+            name = parsedName.fr || 'Nom non disponible';
+        } catch (e) {
+            name = item.name || 'Nom non disponible';
+        }
+
+        // Gestion des spécialités
+        let specialities = item.specialities || 'Non spécifié';
+
+
+        // Gestion du pays
+        let pays;
+        try {
+            const parsedPays = JSON.parse(item.pays);
+            pays = parsedPays.fr || 'Non spécifié';
+        } catch (e) {
+            pays = item.pays || 'Non spécifié';
+        }
+
+        // Gestion de la ville
+        let ville;
+        try {
+            const parsedVille = JSON.parse(item.ville);
+            ville = parsedVille.fr || 'Non spécifié';
+        } catch (e) {
+            ville = item.ville || 'Non spécifié';
+        }
+
+        div.innerHTML = `
+           <div class="scrollable-container" style="max-height:350px; overflow-y: auto; padding:10px; height:100%">
+                <div class="card" style="border: none;">
+                    <div class="d-md-flex">
+                        <!-- Image du médecin -->
+                        <div class="item-card9-img" style="width: 122px;height: 106px;border-radius: 50%;object-fit: cover;">
+                            <div class="item-card9-imgs">
+                                <img alt="img" class="cover-image" src="assets/images/media/doctors/${item.photo || 'doctor.png'}">
                             </div>
-                            <div class="card border-0 mb-0">
-                                <div class="card-body">
-                                    <div class="item-card9">    
-                                       
-                                            <h4 class="font-weight-bold mt-1 mb-1">${nomPrenom}</h4>
-                                        </a>
-                                        <div class="mt-2 mb-0">
-                                            <ul class="item-card-features mb-0">
-                                                <li><span><i class="fa fa-map-marker me-1 text-muted"></i>${adresse}</span></li>
-                                                <li><span><i class="fe fe-briefcase me-1 text-muted d-inline-block"></i>${specialite}</span></li>
-                                                <li><span><i class="fa fa-flag me-1 text-muted"></i>${gouvernorat}, ${pays}</span></li>
-                                            </ul>
-                                        </div>
+                        </div>
+
+                        <!-- Informations du médecin -->
+                        <div class="card border-0 mb-0" style="flex: 1;">
+                            <div class="card-body">
+                                <div class="item-card9">
+                                    <h4 class="font-weight-bold mt-1 mb-1">${name}</h4>
+                                    
+                                    <div class="mt-2 mb-0">
+                                        <ul class="item-card-features mb-0">
+                                            <li><span><i class="fa fa-map-marker me-1 text-muted"></i>${ville}, ${pays}</span></li>
+                                            <li><span><i class="fe fe-briefcase me-1 text-muted d-inline-block"></i>${specialities}</span></li>
+                                            <li><span><i class="fa fa-phone me-1 text-muted"></i>${item.phone_number || 'Non disponible'}</span></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                      
                     </div>
                 </div>
             </div>
-            `;
-        
-            // Ajouter la carte au conteneur
-            container.innerHTML += cardHTML;
-        });
-        
-     }
-    }
+        `;
 
-RechercheDoctor()
+        annuaireList.appendChild(div);
+    });
+}
+
+// Gestion des clics sur les boutons de pagination
+prevBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        loadPage(currentPage);
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    currentPage++;
+    loadPage(currentPage);
+});
+
+// Charger la première page au chargement
+loadPage(currentPage);
