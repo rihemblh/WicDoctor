@@ -73,7 +73,8 @@ document.getElementById('Register').addEventListener('submit', function(event) {
     }
 
 
-
+ 
+});
 function showPopupnom() {
     document.getElementById('popupnom').style.display = 'flex';
 }
