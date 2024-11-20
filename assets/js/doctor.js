@@ -164,7 +164,7 @@ async function fetchCarouselData2() {
 						<div class="card-footer p-0 btn-appointment border-footer">
 							<div class="btn-group w-100">
 								<a class="w-50 btn btn-outline-light p-2 border-top-0 border-bottom-0 border-start-0 border-end-0"onclick="GetDetailsDoctor('${encryptedData}')"><i class="fe fe-eye me-1" ></i> Rendez vous</a>
-								<a class="w-50 btn btn-outline-light p-2 border-top-0 border-bottom-0 border-end-0"  ><i class="fe fe-phone me-1"></i> Téléconsultation</a>
+								<a class="w-50 btn btn-outline-light p-2 border-top-0 border-bottom-0 border-end-0" onclick="GetDetailsDoctor('${encryptedData}')"  ><i class="fe fe-phone me-1"></i> Téléconsultation</a>
 							</div>
 						</div>
 								</div>
