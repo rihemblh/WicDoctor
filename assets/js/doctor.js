@@ -217,5 +217,6 @@ $(document).ready(function() {
 });
 function GetDetailsDoctor(doctorecrypted){
     sessionStorage.setItem("dataDetails",doctorecrypted)
+	sessionStorage.setItem("status", "add")
     window.location.href = 'prise-de-rendez-vous.html'; // Rediriger vers la page 2
 }

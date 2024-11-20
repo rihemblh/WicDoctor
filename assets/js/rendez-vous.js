@@ -183,6 +183,7 @@ var apiurl
 var requestOptions
 function ConfirmerRedezvous() {
     motifSelect = document.getElementById('motifSelect').value;
+    console.log('sessionStorage.getItem("status"): ',sessionStorage.getItem("status"))
     if (sessionStorage.getItem("status") == "add") {
         console.log("add")
         object = Object.assign(object, { "motif_id": motifSelect })
