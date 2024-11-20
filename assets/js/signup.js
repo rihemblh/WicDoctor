@@ -73,14 +73,7 @@ document.getElementById('Register').addEventListener('submit', function(event) {
     }
 
 
-    const phonePattern = /^\d{8}$/;
-    if (!phonePattern.test(tel.value)) {
-        event.preventDefault();
-        showPopupphone();
-        return;}
 
-    // Si toutes les validations passent
-});
 function showPopupnom() {
     document.getElementById('popupnom').style.display = 'flex';
 }
