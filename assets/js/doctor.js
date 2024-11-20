@@ -10,7 +10,7 @@ function decryptData(cipherText) {
     const bytes = CryptoJS.AES.decrypt(cipherText, secretKey);
     return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 }
-var currentPath = window.location.pathname;
+var currentPath = "https://wic-doctor.com/";
 console.log("currentPath: ",currentPath)
 let url = currentPath
 const indexPosition = url.indexOf("index");
