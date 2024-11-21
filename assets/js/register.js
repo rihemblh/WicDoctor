@@ -1,10 +1,10 @@
 function GoogleConnect(){
     
-    window.location.href = 'http://localhost:3001/auth/google';
+    window.location.href = 'https://wic-doctor.com:3004/auth/google';
 
 }
 
 function FacebookConnect(){
-    window.location.href = 'http://localhost:3001/auth/facebook';
+    window.location.href = 'https://wic-doctor.com:3004/auth/facebook';
     
 }

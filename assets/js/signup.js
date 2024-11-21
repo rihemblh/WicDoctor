@@ -12,7 +12,7 @@ document.getElementById('Register').addEventListener('submit', async function (e
 console.log("JSON.stringify({ name,lastname, email, phone }: ",JSON.stringify({ name,lastname, email, phone }))
     try {
         // Send POST request to the API
-        const response = await fetch('http://localhost:3001/api/logup', {
+        const response = await fetch('https://wic-doctor.com:3004/api/logup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
