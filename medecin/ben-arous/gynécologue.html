@@ -648,7 +648,7 @@ function decryptData(cipherText) {
   const bytes = CryptoJS.AES.decrypt(cipherText, secretKeyresult);
   return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 }
-  currentPath=decryptData(sessionStorage.getItem("path"))
+  currentPath="https://wic-doctor.com/"
   console.log("*************************currentpath: ",currentPath)
   var ListeDoctors = []
  //params = decryptData(sessionStorage.getItem('data'));
