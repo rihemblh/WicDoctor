@@ -93,7 +93,7 @@
 								<a href="javascript:void(0);">
 									<i class="fa fa-envelope"></i>
 									<div class="support-text">
-										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p class="contact-index">contact@wic-doctor.com</p>
 										<p>Pour toutes vos questions</p>
 									</div>
 								</a>
@@ -343,7 +343,7 @@
 
 						// Fonction pour récupérer les médecins et afficher les marqueurs
 						function fetchDoctors() {
-							$.getJSON('https://wic-doctor.com:3004/api/clinicsparposition', function (data) {
+							$.getJSON('http://localhost:3001/api/clinicsparposition', function (data) {
 								$.each(data, function (i, doctor) {
 									const marker = new google.maps.Marker({
 										position: new google.maps.LatLng(doctor.latitude, doctor.longitude),
