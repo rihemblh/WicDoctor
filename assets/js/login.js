@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
     try {
         // Send POST request to the API
-        const response = await fetch('https://wic-doctor.com:3004/api/login', {
+        const response = await fetch('http://localhost:3001/api/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
                     body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
                 };
                 // Appeler l'API
-                fetch("https://wic-doctor.com:3004/ajouterrendezvous", requestOptions)
+                fetch("http://localhost:3001/ajouterrendezvous", requestOptions)
                     .then(response => {
 
                         if (!response.ok) {
@@ -91,7 +91,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
                     body: JSON.stringify(rendezvousClinic) // Convertir l'objet en chaîne JSON
                 };
                 // Appeler l'API
-                fetch("https://wic-doctor.com:3004/ajouterrendezvousclinic", requestOptions)
+                fetch("http://localhost:3001/ajouterrendezvousclinic", requestOptions)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Erreur lors de l\'envoi des données');

@@ -1,4 +1,4 @@
-const apiUrl = 'https://wic-doctor.com:3004/affalldoctors';
+const apiUrl = 'http://localhost:3001/affalldoctors';
 
 // Fonction pour récupérer la liste des médecins
 async function fetchDoctorsList() {

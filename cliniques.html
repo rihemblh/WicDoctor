@@ -132,7 +132,7 @@
 								<a href="qui-sommes-nous.html">À propos</a>
 							</li> -->
 							<li aria-haspopup="true">
-								<a href="trouver-un-medecin.html">Trouvez un médecin</a>
+								<a href="medecin/tous.html">Trouvez un médecin</a>
 							</li>
 							<li aria-haspopup="true">
 								<a href="trouver-une-clinique.html">Trouvez une clinique</a>
@@ -343,7 +343,7 @@
 
 						// Fonction pour récupérer les médecins et afficher les marqueurs
 						function fetchDoctors() {
-							$.getJSON('https://wic-doctor.com:3004/api/clinicsparposition', function (data) {
+							$.getJSON('http://localhost:3001/api/clinicsparposition', function (data) {
 								$.each(data, function (i, doctor) {
 									const marker = new google.maps.Marker({
 										position: new google.maps.LatLng(doctor.latitude, doctor.longitude),
