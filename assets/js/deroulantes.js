@@ -3,6 +3,7 @@ const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 
 let currentPage = 1;
+//rihem 25/11/2025
 const limit = 10; // Nombre de résultats par page
 
 // Fonction pour charger une page
