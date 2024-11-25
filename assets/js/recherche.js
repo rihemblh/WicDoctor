@@ -12,7 +12,7 @@ function decryptData(cipherText) {
   return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 }
 // Récupérer les données depuis l'API et créer les <optgroup>
-fetch('https://wic-doctor.com:3004/specialties')
+fetch('http://localhost:3001/specialties')
   .then(response => {
     if (!response.ok) {
       throw new Error('Erreur lors de la récupération des catégories');
@@ -37,7 +37,7 @@ fetch('https://wic-doctor.com:3004/specialties')
 
       console.log("item: ", item)
       const option = document.createElement('option');
-      option.value = item.id;
+      option.value = JSON.parse(item.name).fr;
       option.textContent = JSON.parse(item.name).fr;
       optgroup.appendChild(option);
     });
@@ -70,7 +70,7 @@ fetch('https://wic-doctor.com:3004/specialties')
     selectclinic.appendChild(optgroupclinic);
 
   });
-fetch('https://wic-doctor.com:3004/getvilles')
+fetch('http://localhost:3001/getvilles')
   .then(response => {
     if (!response.ok) {
       throw new Error('Erreur lors de la récupération des catégories');
@@ -134,7 +134,7 @@ fetch('https://wic-doctor.com:3004/getvilles')
     // Ajouter l'<optgroup> au <select>
     selectclinic.appendChild(optgroupclinic);
   });
-fetch('https://wic-doctor.com:3004/getpays')
+fetch('http://localhost:3001/getpays')
   .then(response => {
     if (!response.ok) {
       throw new Error('Erreur lors de la récupération des catégories');
@@ -221,7 +221,7 @@ function RechercheDoctor() {
 
 
   var ListeDoctors
-  var apiurlSearch = "https://wic-doctor.com:3004/doctorsadd?"
+  var apiurlSearch = "http://localhost:3001/doctorsadd?"
   var objectTitle = {}
   let currentPath = decryptData(sessionStorage.getItem('origin'))
   console.log("currentPath: ", currentPath)
@@ -347,7 +347,7 @@ function RechercheClinic() {
 
 
   var ListeClinics
-  var apiurlSearch = "https://wic-doctor.com:3004/getclinicsspcitypay?"
+  var apiurlSearch = "http://localhost:3001/getclinicsspcitypay?"
 
   if (specialtyIdClinic != "") {
     params.append('speciality_id', specialtyIdClinic);
@@ -390,7 +390,7 @@ function RechercheClinic() {
 
 function SearchSpecialities(id,name) {
   console.log("id: ",id)
-  var apiurlSearch = "https://wic-doctor.com:3004/doctorsadd?"
+  var apiurlSearch = "http://localhost:3001/doctorsadd?"
   const params = new URLSearchParams();
   let currentPath = decryptData(sessionStorage.getItem('origin'))
   console.log("currentPath: ", currentPath)
@@ -483,7 +483,7 @@ function Deconexion() {
     },
   };
   // Appeler l'API
-  fetch("https://wic-doctor.com:3004/logout", requestOptions)
+  fetch("http://localhost:3001/logout", requestOptions)
     .then(response => {
       if (!response.ok) {
         throw new Error('Erreur lors de l\'envoi des données');
