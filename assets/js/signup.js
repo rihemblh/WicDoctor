@@ -37,7 +37,7 @@ document.getElementById('Register').addEventListener('submit', function(event) {
     // Récupérer les champs de saisie
     const name = document.querySelector('input[name="name"]');
     const lastname = document.querySelector('input[name="lastname"]');
-
+    const password = document.querySelector('input[name="password"]');
     const tel = document.querySelector('input[name="tel"]');
     const mail = document.querySelector('input[name="mail"]');
 
@@ -59,24 +59,34 @@ document.getElementById('Register').addEventListener('submit', function(event) {
     
     
 
- 
+ // validation password
+/*   if (password.value.trim() === "" || password.value.length < 8) {
+        event.preventDefault();  // Empêche la soumission du formulaire
+        showPopupnom();
+        showPopupnom();
+        return;
+    }*/
+
 
     // Validation de l'email
     const mailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!mailPattern.test(mail.value)) {
+ /*   if (!mailPattern.test(mail.value)) {
        
        
         event.preventDefault();
         showPopupmail();
         showPopupmail();
         return;
-    }
+    }*/
 
 
  
 });
 function showPopupnom() {
     document.getElementById('popupnom').style.display = 'flex';
+}
+function showPopupnom() {
+    document.getElementById('popuppwd').style.display = 'flex';
 }
 
 function closePopupnom() {
