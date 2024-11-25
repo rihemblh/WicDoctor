@@ -70,7 +70,9 @@ document.getElementById('Register').addEventListener('submit', function(event) {
 
     // Validation de l'email
     const mailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
  /*   if (!mailPattern.test(mail.value)) {
+
        
        
         event.preventDefault();
@@ -81,7 +83,7 @@ document.getElementById('Register').addEventListener('submit', function(event) {
 
 
  
-});
+}); 
 function showPopupnom() {
     document.getElementById('popupnom').style.display = 'flex';
 }
