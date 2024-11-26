@@ -343,7 +343,7 @@
 
 						// Fonction pour récupérer les médecins et afficher les marqueurs
 						function fetchDoctors() {
-							$.getJSON('http://localhost:3001/api/clinicsparposition', function (data) {
+							$.getJSON('https://wic-doctor.com:3004/api/clinicsparposition', function (data) {
 								$.each(data, function (i, doctor) {
 									const marker = new google.maps.Marker({
 										position: new google.maps.LatLng(doctor.latitude, doctor.longitude),

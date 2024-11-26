@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const email = document.getElementById("email").value;
 
         try {
-            const response = await fetch('http://localhost:3001/api/forgot-password', {
+            const response = await fetch('https://wic-doctor.com:3004/api/forgot-password', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

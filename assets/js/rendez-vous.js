@@ -13,7 +13,7 @@ function encryptData(data) {
 Detailsdoctors = decryptData(sessionStorage.getItem('dataDetails'));
 
 // Fetching slots data for the doctor
-fetch(`http://localhost:3001/afftempsdoctorsbyid?doctor_id=${Detailsdoctors.doctor_id}`)
+fetch(`https://wic-doctor.com:3004/afftempsdoctorsbyid?doctor_id=${Detailsdoctors.doctor_id}`)
     .then(response => {
         if (!response.ok) {
             throw new Error('Erreur lors de la récupération des créneaux');
@@ -187,13 +187,13 @@ function ConfirmerRedezvous() {
     if (sessionStorage.getItem("status") == "add") {
         console.log("add")
         object = Object.assign(object, { "motif_id": motifSelect })
-        apiurl = "http://localhost:3001/ajouterrendezvous"
+        apiurl = "https://wic-doctor.com:3004/ajouterrendezvous"
     }
     else if (sessionStorage.getItem("status") == "edit") {
         console.log("edit")
         object = Object.assign({ "end_at": object.ends_at }, { "start_at": object.start_at }, { "patern_id": motifSelect })
         console.log("decryptData(sessionStorage.getItem('id')", decryptData(sessionStorage.getItem("id")))
-        apiurl = `http://localhost:3001/updateappointement/${decryptData(sessionStorage.getItem("id"))}`
+        apiurl = `https://wic-doctor.com:3004/updateappointement/${decryptData(sessionStorage.getItem("id"))}`
     }
 
     encryptedData = encryptData(object);

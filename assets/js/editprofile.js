@@ -67,7 +67,7 @@ document.getElementById("updateProfileButton").addEventListener("click", async (
     if (height) updatedProfile.height = parseFloat(height);
 
     try {
-        const response = await fetch(`http://localhost:3001/update/patient/${patientId}`, {
+        const response = await fetch(`https://wic-doctor.com:3004/update/patient/${patientId}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

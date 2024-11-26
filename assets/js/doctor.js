@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:3001/specialties';
+const apiUrl = 'https://wic-doctor.com:3004/specialties';
 const secretKey = "maCleSecrete";
  // Fonction pour crypter
  function encryptData(data) {
@@ -109,7 +109,7 @@ $(document).ready(function() {
 	fetchCarouselDataSpecialities();
 });
 
-const apiUrl2 = 'http://localhost:3001/affalldoctors';
+const apiUrl2 = 'https://wic-doctor.com:3004/affalldoctors';
 
 
 async function fetchCarouselData2() {

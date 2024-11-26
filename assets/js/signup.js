@@ -12,7 +12,7 @@ document.getElementById('Register').addEventListener('submit', async function (e
 console.log("JSON.stringify({ name,lastname, email, phone }: ",JSON.stringify({ name,lastname, email, phone }))
     try {
         // Send POST request to the API
-        const response = await fetch('http://localhost:3001/api/logup', {
+        const response = await fetch('https://wic-doctor.com:3004/api/logup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -44,20 +44,24 @@ document.getElementById('Register').addEventListener('submit', function(event) {
     // Validation du nom
     if (name.value.trim() === "" || name.value.length < 2 || name.value.length > 50) {
         event.preventDefault();  // Empêche la soumission du formulaire
-        showPopupnom();
-        showPopupnom();
+        alert ('Nom est obligatoire')
+        ;
         return;
     }
     
      // Validation du nom
      if (lastname.value.trim() === "" || lastname.value.length < 2 || lastname.value.length > 50) {
         event.preventDefault();  // Empêche la soumission du formulaire
-        showPopupnom();
-        showPopupnom();
+        alert ('Prénom est obligatoire')
+
         return;
     }
-    
-    
+    //validation tel+email
+    if (tel.value.trim() === "" && mail.value.trim() === "") {
+        event.preventDefault();  // Empêche la soumission du formulaire
+        alert ('Email ou Téléphone obligatoire')
+        return;
+    }
 
  // validation password
 /*   if (password.value.trim() === "" || password.value.length < 8) {

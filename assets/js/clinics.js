@@ -10,7 +10,7 @@ function decryptData(cipherText) {
     const bytes = CryptoJS.AES.decrypt(cipherText, secretKey);
     return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 }
-apiurl="http://localhost:3001/getclinics"
+apiurl="https://wic-doctor.com:3004/getclinics"
  // Fetch the data using the constructed URL
  fetch(apiurl)
  .then(response => {
