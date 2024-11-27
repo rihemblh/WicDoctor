@@ -37,7 +37,7 @@ fetch('https://wic-doctor.com:3004/specialties')
 
       console.log("item: ", item)
       const option = document.createElement('option');
-      option.value = item.id;
+      option.value = JSON.parse(item.name).fr;
       option.textContent = JSON.parse(item.name).fr;
       optgroup.appendChild(option);
     });
