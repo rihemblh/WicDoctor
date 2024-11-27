@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+																				<p class="contact-index">+216 26 311 777  /  +33 743 13 00 13</p>
+
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="https://wic-doctor.com/">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+						
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								
+							</li>
+							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>1. Qu'est-ce que l'État de Stress Post-Traumatique (ESPT) ?</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p><p>L'<strong>ESPT</strong> est un trouble psychologique qui survient après un événement traumatique extrême. Il peut toucher toute personne ayant été exposée à une situation menaçant la vie, comme un accident grave, une agression, un acte de violence, un conflit armé, une catastrophe naturelle, ou toute autre expérience traumatique. Ce trouble peut se manifester de manière prolongée et affecter de manière significative la qualité de vie du patient.</p><h4><strong>Symptômes de l'ESPT :</strong></h4><p>Les symptômes de l'ESPT peuvent être variés, mais ils incluent généralement un ensemble de symptômes émotionnels, cognitifs et physiques qui surviennent après l'événement traumatique.</p><ul>
+<li><strong>Revivescences du traumatisme</strong> : Flashbacks, cauchemars, pensées intrusives liées à l'événement traumatique.</li>
+<li><strong>Évitement</strong> : Eviter les rappels du traumatisme (lieux, personnes, situations).</li>
+<li><strong>Hypervigilance</strong> : Anxiété excessive, difficulté à se détendre, réactions de sursaut ou d'irritabilité.</li>
+<li><strong>Anxiété et dépression</strong> : Sentiment de tristesse intense, perte de plaisir, désespoir, culpabilité.</li>
+<li><strong>Problèmes de concentration</strong> : Difficulté à se concentrer ou à prendre des décisions.</li>
+<li><strong>Troubles du sommeil</strong> : Insomnie, sommeil agité, terreurs nocturnes.</li>
+</ul><hr/></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">2. Causes de l'État de Stress Post-Traumatique (ESPT) chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">3. Symptômes de l'État de Stress Post-Traumatique (ESPT) chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">4. Diagnostic de l'État de Stress Post-Traumatique (ESPT) chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">5. Traitements de l'État de Stress Post-Traumatique (ESPT) chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes de l'État de Stress Post-Traumatique (ESPT) chez l'Adulte</h2></div><div class="info-text"><p><p>L'ESPT est déclenché par un événement traumatique intense, mais plusieurs facteurs peuvent influencer sa survenue et son intensité. Les causes de l'ESPT sont principalement liées à des facteurs psychologiques, biologiques et environnementaux.</p><h4><strong>Facteurs de risque</strong> :</h4><ul>
+<li><strong>Exposition à un événement traumatique</strong> : Le principal facteur déclencheur est l'exposition directe à un événement traumatisant (accident, agression, guerre, etc.).</li>
+<li><strong>Prédispositions génétiques</strong> : Certaines personnes peuvent être plus vulnérables à développer l'ESPT en raison de prédispositions génétiques ou biologiques.</li>
+<li><strong>Facteurs psychologiques</strong> : Un trouble de l'anxiété, une personnalité plus vulnérable ou une histoire de traumatismes infantiles peuvent augmenter le risque.</li>
+<li><strong>Soutien social limité</strong> : L'absence de soutien familial ou social après un traumatisme peut augmenter le risque de développer l'ESPT.</li>
+<li><strong>Facteurs de stress supplémentaires</strong> : L'ESPT peut être exacerbée par des stress supplémentaires, tels que des problèmes financiers, des relations familiales tendues, ou des antécédents de troubles mentaux.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes de l'État de Stress Post-Traumatique (ESPT) chez l'Adulte</h2></div><div class="info-text"><p><p>Les symptômes de l'ESPT peuvent apparaître immédiatement après l'événement traumatique ou se manifester plusieurs semaines, mois, voire années après le traumatisme. Ces symptômes sont classés en plusieurs catégories : reviviscences, évitement, altération de l’humeur, et hyperactivité neurovégétative.</p><h4><strong>Symptômes émotionnels et cognitifs</strong> :</h4><ul>
+<li><strong>Ressentis intenses de peur, d’horreur, ou d’impuissance pendant et après l'événement traumatique</strong>.</li>
+<li><strong>Revivescences</strong> : Flashbacks et cauchemars répétés liés à l'événement, entraînant une détresse émotionnelle.</li>
+<li><strong>Évitement</strong> : Tendance à éviter les lieux, les conversations ou les situations qui rappellent l'événement traumatique.</li>
+<li><strong>Altération de l’humeur</strong> : Sentiment de dépression, de culpabilité excessive, ou de dévalorisation personnelle.</li>
+<li><strong>Difficulté à se concentrer</strong> : Problèmes d'attention ou de mémoire.</li>
+</ul><h4><strong>Symptômes physiques</strong> :</h4><ul>
+<li><strong>Troubles du sommeil</strong> : Insomnie, réveils fréquents pendant la nuit, sommeil perturbé par des cauchemars.</li>
+<li><strong>Hypervigilance</strong> : Anxiété constante, réactions exagérées au bruit ou à des situations surprenantes.</li>
+<li><strong>Réactions de sursaut</strong> : Frissons ou tressaillements à des stimuli inoffensifs.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic de l'État de Stress Post-Traumatique (ESPT) chez l'Adulte</h2></div><div class="info-text"><p><p>Le diagnostic de l'ESPT repose sur une évaluation clinique approfondie. Les médecins et psychologues utilisent des critères diagnostiques spécifiques pour déterminer si une personne présente un ESPT, basé sur ses symptômes et leur durée.</p><h4><strong>Méthodes diagnostiques</strong> :</h4><ul>
+<li><strong>Entretien clinique</strong> : Le professionnel de santé discute avec le patient pour évaluer la nature et la durée des symptômes.</li>
+<li><strong>Critères du DSM-5</strong> : Le Diagnostic and Statistical Manual of Mental Disorders (DSM-5) propose des critères spécifiques pour diagnostiquer l’ESPT, y compris la durée des symptômes (plus de 1 mois) et leur impact sur la vie quotidienne.</li>
+<li><strong>Échelles de dépistage</strong> : Des outils comme le <strong>PCL-5</strong> (Post-Traumatic Stress Disorder Checklist) peuvent être utilisés pour évaluer l’intensité des symptômes.</li>
+<li><strong>Bilan psychologique</strong> : Parfois, un bilan psychologique complet est réalisé pour mieux comprendre les antécédents et l’impact du traumatisme.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements de l'État de Stress Post-Traumatique (ESPT) chez l'Adulte</h2></div><div class="info-text"><p><p>Le traitement de l’ESPT repose sur une combinaison de thérapies psychologiques, de médicaments et de stratégies de gestion du stress. L’objectif est de réduire les symptômes et d’aider le patient à retrouver un équilibre émotionnel.</p><h4><strong>1. Thérapies psychologiques :</strong></h4><ul>
+<li><strong>Thérapie cognitivo-comportementale (TCC)</strong> : Cette approche aide les patients à identifier et à modifier les pensées et comportements négatifs associés au traumatisme.</li>
+<li><strong>Thérapie par exposition</strong> : Elle consiste à exposer progressivement le patient à des rappels du traumatisme dans un environnement contrôlé pour réduire la peur et l’anxiété.</li>
+<li><strong>Thérapie de désensibilisation et retraitement par les mouvements oculaires (EMDR)</strong> : Cette méthode thérapeutique utilise des mouvements oculaires pour aider à retraiter les souvenirs traumatiques et réduire leur impact émotionnel.</li>
+</ul><h4><strong>2. Médicaments :</strong></h4><ul>
+<li><strong>Antidépresseurs</strong> : Les inhibiteurs sélectifs de la recapture de la sérotonine (ISRS) sont souvent prescrits pour traiter les symptômes de l'ESPT.</li>
+<li><strong>Anxiolytiques</strong> : Ces médicaments aident à réduire l’anxiété et les symptômes de stress.</li>
+<li><strong>Médicaments pour le sommeil</strong> : Des médicaments peuvent être utilisés pour traiter les troubles du sommeil associés à l’ESPT.</li>
+</ul><h4><strong>3. Techniques complémentaires :</strong></h4><ul>
+<li><strong>Exercice physique</strong> : L’activité physique régulière peut réduire l’anxiété et améliorer l’humeur.</li>
+<li><strong>Méditation et relaxation</strong> : Des techniques telles que la pleine conscience, la relaxation musculaire progressive et le yoga sont bénéfiques pour la gestion du stress.</li>
+</ul><h4><strong>Prise en charge à distance via WIC-DOCTOR</strong> :</h4><p>Le <strong>portail WIC-DOCTOR</strong> propose des consultations à distance avec des psychologues et des psychiatres spécialisés dans l’ESPT pour un suivi personnalisé, permettant de recevoir des conseils sur la gestion des symptômes et des stratégies thérapeutiques adaptées.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> facilite l’accès à des soins spécialisés en santé mentale pour le traitement de l’ESPT, en offrant des consultations en ligne accessibles à toute heure.</p><h4><strong>1. Psychothérapie et psychologie</strong> :</h4><p>Les psychologues et psychiatres du <strong>portail WIC-DOCTOR</strong> peuvent offrir un diagnostic approfondi, des traitements thérapeutiques adaptés et un suivi personnalisé.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Thérapie cognitivo-comportementale.</li>
+<li>Thérapie par exposition et EMDR.</li>
+<li>Suivi psychologique continu.</li>
+</ul><h4><strong>2. Médecins généralistes</strong> :</h4><p>Un médecin généraliste peut être consulté pour discuter des symptômes et recommander des traitements médicaux ou orienter vers un spécialiste en santé mentale.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Prescrire des médicaments antidépresseurs ou anxiolytiques.</li>
+<li>Orienter vers un psychologue ou un psychiatre.</li>
+<li>Suivi médical global de l'ESPT.</li>
+</ul><h4><strong>3. Prise en charge en ligne</strong> :</h4><p>Avec WIC-DOCTOR, vous pouvez accéder à des services psychologiques en ligne pour un suivi continu</p><p>, dans un environnement sécurisé et confidentiel.</p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+						
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="../trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p  class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+					
+				
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a href="../Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

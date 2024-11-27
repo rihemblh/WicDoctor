@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+																				<p class="contact-index">+216 26 311 777  /  +33 743 13 00 13</p>
+
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="https://wic-doctor.com/">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+						
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								
+							</li>
+							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>1. Qu'est-ce que le Covid Long (Syndrome Post-Covid) ?</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p><p>Le <strong>Covid long</strong> désigne un ensemble de symptômes qui persistent pendant plusieurs semaines ou mois après une infection initiale par le SARS-CoV-2. Cette condition affecte un pourcentage notable de personnes qui ont traversé une phase aiguë de Covid-19, même si elles n'ont pas eu une forme grave de la maladie.</p><h4><strong>Symptômes du Covid Long :</strong></h4><p>Les symptômes du Covid long varient d’un patient à l’autre, mais certains signes sont communs, notamment :</p><ul>
+<li><strong>Fatigue intense</strong> : Un épuisement chronique, souvent pire après un effort physique ou mental.</li>
+<li><strong>Problèmes respiratoires</strong> : Difficulté à respirer, essoufflement, toux persistante.</li>
+<li><strong>Douleurs musculaires et articulaires</strong> : Douleurs généralisées qui persistent longtemps après la guérison de l'infection initiale.</li>
+<li><strong>Troubles cognitifs</strong> : Difficultés de concentration, de mémoire, souvent qualifiées de "brouillard cérébral" (brain fog).</li>
+<li><strong>Troubles du sommeil</strong> : Insomnie ou sommeil de mauvaise qualité.</li>
+<li><strong>Maux de tête persistants</strong> : Douleurs fréquentes et intenses qui ne répondent pas aux traitements habituels.</li>
+<li><strong>Symptômes digestifs</strong> : Douleurs abdominales, nausées, ou troubles intestinaux.</li>
+</ul><p>Le Covid long peut affecter plusieurs systèmes organiques, y compris le système nerveux, respiratoire et cardiaque.</p><hr/></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">2. Causes et Facteurs de Risque du Covid Long<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">3. Symptômes et Signes du Covid Long<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">4. Diagnostic du Covid Long<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">5. Traitements du Covid Long<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque du Covid Long</h2></div><div class="info-text"><p><p>Le mécanisme exact à l’origine du <strong>Covid long</strong> reste encore mal compris, mais plusieurs théories ont émergé. Ce phénomène semble être dû à une réponse immunitaire anormale ou à la persistance du virus dans certaines parties du corps.</p><h4><strong>Facteurs de risque du Covid long :</strong></h4><ul>
+<li><strong>Sévérité de l’infection aiguë</strong> : Bien que le Covid long puisse toucher même des personnes ayant eu une forme bénigne de la maladie, les personnes ayant présenté des symptômes graves (hospitalisation, soins intensifs) sont plus susceptibles de développer cette condition.</li>
+<li><strong>Antécédents médicaux</strong> : Les personnes souffrant de maladies chroniques (diabète, obésité, maladies cardiaques, etc.) sont plus vulnérables.</li>
+<li><strong>Sexe et âge</strong> : Certaines études suggèrent que les femmes, en particulier dans la tranche d'âge 30-50 ans, sont plus susceptibles de développer des symptômes prolongés.</li>
+<li><strong>Facteurs immunitaires</strong> : Les personnes ayant une réponse immunitaire excessive ou une auto-immunité (réaction anormale du système immunitaire contre ses propres tissus) sont plus exposées au Covid long.</li>
+<li><strong>Infections répétées</strong> : Des études ont suggéré que les personnes ayant eu des infections répétées ou prolongées au Covid-19 sont plus susceptibles de développer des symptômes persistants.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Signes du Covid Long</h2></div><div class="info-text"><p><p>Le <strong>Covid long</strong> peut se manifester par une large variété de symptômes, qui peuvent interférer avec les activités quotidiennes. Les symptômes peuvent apparaître progressivement après la guérison de l’infection aiguë ou persister bien après.</p><h4><strong>Symptômes courants du Covid long</strong> :</h4><ul>
+<li><strong>Fatigue extrême</strong> : Un épuisement constant, non soulagé par le sommeil, est souvent signalé.</li>
+<li><strong>Problèmes respiratoires</strong> : Une sensation de manque d’air, d’essoufflement, des douleurs thoraciques et une toux persistante peuvent survenir.</li>
+<li><strong>Douleurs musculaires et articulaires</strong> : Des douleurs corporelles persistantes, semblables à celles des courbatures, peuvent durer plusieurs mois.</li>
+<li><strong>Brouillard cérébral</strong> : Les patients souffrent de troubles cognitifs, de difficultés de concentration, de mémoire et d'attention.</li>
+<li><strong>Troubles du sommeil</strong> : Des difficultés d’endormissement ou des réveils fréquents pendant la nuit, parfois accompagnés de rêves agités.</li>
+<li><strong>Problèmes cardiaques</strong> : Des palpitations, des douleurs thoraciques et des problèmes cardiaques non expliqués peuvent survenir.</li>
+<li><strong>Symptômes digestifs</strong> : Ballonnements, diarrhée, ou constipation sont également des symptômes fréquents.</li>
+<li><strong>Anxiété et dépression</strong> : L'impact mental de cette maladie prolongée conduit souvent à des troubles de l'humeur, y compris l'anxiété et la dépression.</li>
+</ul><p>Ces symptômes peuvent fluctuer, avec des périodes de rémission suivies de rechutes.</p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic du Covid Long</h2></div><div class="info-text"><p><p>Le <strong>diagnostic du Covid long</strong> repose sur l’identification de symptômes persistants après la phase aiguë de l'infection, généralement plus de 4 semaines après la guérison de l’infection initiale.</p><h4><strong>Méthodes diagnostiques</strong> :</h4><ul>
+<li><strong>Bilan clinique</strong> : Un médecin effectuera un examen approfondi des symptômes rapportés par le patient, en s’assurant qu'ils ne sont pas liés à d’autres causes.</li>
+<li><strong>Tests sanguins</strong> : Pour exclure des infections ou maladies sous-jacentes, et parfois pour rechercher des marqueurs d’inflammation.</li>
+<li><strong>Imagerie médicale</strong> : Des radiographies ou des scanners thoraciques peuvent être réalisés pour évaluer les dommages pulmonaires.</li>
+<li><strong>Tests cognitifs</strong> : En cas de troubles cognitifs, des évaluations neuropsychologiques peuvent être proposées pour évaluer la fonction cérébrale.</li>
+<li><strong>Examen cardiaque et respiratoire</strong> : Si des symptômes cardiaques ou respiratoires persistent, des tests comme l'ECG ou les tests de fonction pulmonaire peuvent être demandés.</li>
+</ul><p>Le <strong>diagnostic du Covid long</strong> peut parfois être difficile à établir, car les symptômes sont variés et peuvent ressembler à ceux d’autres pathologies.</p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements du Covid Long</h2></div><div class="info-text"><p><p>Il n’existe actuellement pas de traitement unique et standardisé pour le <strong>Covid long</strong>. Cependant, plusieurs stratégies peuvent aider à gérer les symptômes et améliorer la qualité de vie des patients.</p><h4><strong>Stratégies de traitement pour le Covid long :</strong></h4><ul>
+<li><strong>Soins symptomatiques</strong> : Le traitement des symptômes individuels, comme la gestion de la fatigue, des douleurs musculaires, ou des troubles du sommeil, peut inclure des analgésiques, des anti-inflammatoires, ou des médicaments pour réguler le sommeil.</li>
+<li><strong>Rééducation physique et respiratoire</strong> : Un programme de rééducation physique, supervisé par un kinésithérapeute, peut aider à restaurer la fonction musculaire et respiratoire, surtout après une infection grave.</li>
+<li><strong>Suivi psychologique</strong> : La prise en charge de l’anxiété et de la dépression via des thérapies cognitivo-comportementales (TCC) ou des traitements médicamenteux peut être bénéfique.</li>
+<li><strong>Suivi cardiaque et pulmonaire</strong> : En cas de complications cardiaques ou respiratoires, un suivi spécialisé et des traitements adaptés seront nécessaires.</li>
+<li><strong>Alimentation et supplémentation</strong> : Des conseils nutritionnels peuvent aider à rétablir l’équilibre du système immunitaire et à améliorer l'énergie générale. Des suppléments de vitamines et minéraux (notamment vitamine D et zinc) peuvent être recommandés pour soutenir la récupération.</li>
+</ul><h4><strong>Prise en charge personnalisée</strong> :</h4><p>Le <strong>portail WIC-DOCTOR</strong> offre des consultations spécialisées en <strong>télémédecine</strong>, permettant un suivi personnalisé pour chaque patient atteint de Covid long. Vous pouvez consulter des médecins généralistes, des <a href="https://wic-doctor.com/medecin/pneumologue.html">pneumologues</a>, des <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a>, des kinésithérapeutes, ainsi que des psychologues pour un soutien complet et adapté à vos besoins.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> vous permet de bénéficier d'une prise en charge à distance, avec une équipe de professionnels médicaux qualifiés qui peuvent vous accompagner tout au long de votre rétablissement.</p><h4><strong>1. Médecins généralistes</strong> :</h4><p>Les médecins généralistes jouent un rôle clé dans le suivi et la gestion des symptômes du Covid long, en recommandant des traitements symptomatiques et en orientant vers des spécialistes si nécessaire.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Évaluation des symptômes et suivi de l'évolution du Covid long.</li>
+<li>Références vers des spécialistes selon les besoins du patient.</li>
+</ul><h4><strong>2. <a href="https://wic-doctor.com/medecin/pneumologue.html">Pneumologues</a> et <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a></strong> :</h4><p>Les <a href="https://wic-doctor.com/medecin/pneumologue.html">pneumologues</a> et <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a> assurent le suivi des complications respiratoires et cardiaques qui peuvent découler du Covid long.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Suivi des fonctions pulmonaires et cardiaques.</li>
+<li>Tests de fonction respiratoire et conseils thérapeutiques.</li>
+</ul><h4><strong>3. Kinésithérapeutes et rééducateurs</strong> :</h4><p>Les kinésithérapeutes peuvent proposer des séances de rééducation adaptées</p><p>pour aider à la récupération physique et respiratoire.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Rééducation respiratoire et musculaire pour améliorer l'endurance et la mobilité.</li>
+</ul><h4><strong>4. Psychologues et psychiatres</strong> :</h4><p>Le Covid long a un impact majeur sur la santé mentale. Un suivi psychologique est essentiel pour gérer les symptômes de stress, d'anxiété, ou de dépression associés à cette maladie.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Thérapies cognitivo-comportementales et suivi psychologique.</li>
+</ul><h4><strong>5. Nutritionnistes et diététiciens</strong> :</h4><p>Un suivi nutritionnel peut être recommandé pour soutenir le système immunitaire et améliorer la récupération.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Conseils diététiques pour une alimentation équilibrée et optimisée pour le rétablissement.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+						
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="../trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p  class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+					
+				
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a href="../Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>
