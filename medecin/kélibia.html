@@ -2,7 +2,15 @@
 <html class="no-js" lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-VQ6Y9SHVYS');
+</script>
 	<meta charset="UTF-8">
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -761,12 +769,12 @@
 		function getDoctorSpec(name) {
 			console.log("*************************************************: ", name)
 			// Vérifiez si `name` est une chaîne JSON
-			if (typeof name === 'string' && name.trim().startsWith('[') && name.trim().endsWith(']')) {
+			if (JSON.stringify(name).trim().startsWith('[') && JSON.stringify(name).trim().endsWith(']')) {
 				console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame")
 				try {
-					const parsedName = JSON.parse(name);
-					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(parsedName[0].name).fr)
-					return JSON.parse(parsedName[0].name).fr; // Vérifiez si la clé 'fr' existe
+					
+					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name[0].name).fr)
+					return JSON.parse(name[0].name).fr; // Vérifiez si la clé 'fr' existe
 				} catch (error) {
 					console.error("Erreur lors du parsing :", error);
 				}
@@ -818,16 +826,16 @@
 															<div class="btn-group w-100">
 																
 																<a href=""  
-    class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action "     style="${doctor.type === 'non-conventionné' ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
+    class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action "     style="${doctor.priority	=== 2 ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
  
 
-    ${doctor.type === 'non-conventionné' ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+    ${doctor.priority === 2 ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
     id="teleconsultation">
     <i class="fe fe-eye me-1 d-inline-block"></i>Téléconsultation
 </a>
 																<a href=""  
-																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.type === 'non-conventionné' ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
-																	${doctor.type === 'non-conventionné' ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.priority === 2 ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
+																	${doctor.priority === 2 ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
 																	data-bs-toggle="modal"><i
 																		class="fe fe-phone  me-1 d-inline-block"></i>Rendez-vous</a>
 															</div>
