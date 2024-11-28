@@ -4,6 +4,40 @@ function decryptData(cipherText) {
     const bytes = CryptoJS.AES.decrypt(cipherText, secretKey);
     return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 }
+const contactField = document.getElementById('email');
+let itiInstance;
+
+contactField.addEventListener('input', () => {
+    const value = contactField.value.trim();
+console.log("value: ",value)
+    // Vérifie si l'entrée ressemble à un numéro de téléphone (+ ou chiffres uniquement)
+    if (/^\+|\d/.test(value) && contactField.type === 'email') {
+        // Convertir le champ en input type="tel"
+        contactField.type = 'tel';
+
+        // Initialiser l'instance intl-tel-input
+        itiInstance = intlTelInput(contactField, {
+            initialCountry: 'auto',
+            geoIpLookup: (callback) => {
+                fetch("https://ipinfo.io")
+                .then((response) => response.json())
+                    .then((data) => callback(data.country))
+                    .catch(() => callback('us'));
+            },
+            utilsScript: "./utils.js", // Remplacez `path/to/` par le chemin correct vers votre fichier utils.js
+            loadUtilsOnInit: true, // Nouvelle méthode pour charger les utilitaires
+                    });
+    }
+});
+
+// Optionnel : Réinitialiser le champ si l'utilisateur supprime tout
+contactField.addEventListener('blur', () => {
+    if (contactField.value.trim() === '' && itiInstance) {
+        contactField.type = 'email';
+        itiInstance.destroy(); // Supprime l'instance ITI
+        itiInstance = null;
+    }
+});
 // Ensure you include this script at the bottom of your HTML file
 document.getElementById('loginForm').addEventListener('submit', async function (event) {
     event.preventDefault(); // Prevent the default form submission
