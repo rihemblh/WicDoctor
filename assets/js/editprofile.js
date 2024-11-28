@@ -1,5 +1,46 @@
 const secretKey = "maCleSecrete"; // Define your secret key here
+document.getElementById('cnam_checkbox').addEventListener('change', function () {
+    const cnamSection = document.getElementById('cnam_section');
+    cnamSection.style.display = this.checked ? 'block' : 'none';
+});
 
+document.getElementById('other_insurance_checkbox').addEventListener('change', function () {
+    const otherInsuranceSection = document.getElementById('other_insurance_section');
+    otherInsuranceSection.style.display = this.checked ? 'block' : 'none';
+});
+function validateProfileForm() {
+    const firstName = document.getElementById('first_name').value.trim();
+    const lastName = document.getElementById('last_name').value.trim();
+    const phoneNumber = document.getElementById('phone_number').value.trim();
+    const gender = document.getElementById('gender').value.trim();
+
+    const warningMessage = document.getElementById('warning-message');
+    if (!firstName || !lastName || !phoneNumber || !gender) {
+        warningMessage.style.display = 'block';
+    } else {
+        warningMessage.style.display = 'none';
+    }
+}
+
+// Valider au chargement de la page
+document.addEventListener('DOMContentLoaded', function () {
+    validateProfileForm();
+});
+
+// Valider à chaque modification d'un champ
+document.querySelectorAll('#first_name, #last_name, #phone_number, #gender').forEach(function (input) {
+    input.addEventListener('input', validateProfileForm);
+});
+
+// Vérifier aussi lors du clic sur le bouton
+document.getElementById('updateProfileButton').addEventListener('click', function (e) {
+    e.preventDefault();
+    validateProfileForm();
+    if (document.getElementById('warning-message').style.display === 'none') {
+        alert('Profil mis à jour avec succès !');
+        // Ici, ajouter la logique pour envoyer les données au serveur si nécessaire
+    }
+});
 function decryptData(cipherText) {
     const bytes = CryptoJS.AES.decrypt(cipherText, secretKey);
     return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
@@ -13,7 +54,7 @@ function encryptData(data) {
 const authData = sessionStorage.getItem("auth");
 if (authData) {
     const login = decryptData(authData);
-    console.log("Initial login data: ", login);
+    console.log("Initial login data: ", JSON.stringify(login));
 
     // Assuming the user's first name is in the result array
     const user = login.result[0]; // Get the first user object from the result array
@@ -25,13 +66,35 @@ if (authData) {
     // Populate form fields with user data
     document.getElementById("first_name").value = user.first_name || '';
     document.getElementById("last_name").value = user.last_name || '';
-    document.getElementById("email").value = login.email || ''; // Use email for email field
+    document.getElementById("email").value = user.email || ''; // Use email for email field
     document.getElementById("phone_number").value = user.phone_number || '';
-    document.getElementById("age").value = user.age || '';
+    document.getElementById("mobile_number").value = user.mobile_number || '';
+    //document.getElementById("age").value = user.age || '';
     document.getElementById("gender").value = user.gender || '';
     document.getElementById("weight").value = user.weight || '';
     document.getElementById("height").value = user.height || '';
+    document.getElementById("medical_history").value = user.medical_history || '';
+    document.getElementById("notes").value = user.notes || '';
+    document.getElementById("matriculeCNSS").value = user.matriculeCNSS || '';
+    document.getElementById("dateExpiration").value = user.dateExpiration || '';
+    document.getElementById("assurance").value = user.assurance || '';
+    document.getElementById("groupe_sanguin").value = user.groupe_sanguin || '';
+    document.getElementById("allergie").value = user.allergie || '';
+    document.getElementById("date_naissance").value = user.date_naissance || '';
+    
+    // Handle the insurance checkbox (CNAM and Assurance)
+    if ((user.matriculeCNSS !=""|| user.dateExpiration !="" )& (user.matriculeCNSS !=null|| user.dateExpiration !=null))  {
+        document.getElementById("cnam_checkbox").checked = true;
+        document.getElementById("cnam_section").style.display = 'block'; // Show CNSS matricule field
+    }
+     if ((user.assurance !="")& (user.assurance !=null)){ 
+        document.getElementById("other_insurance_checkbox").checked = true;
+        document.getElementById("other_insurance_section").style.display = 'block'; // Show assurance name field
+    }
+
+   
 }
+
 
 document.getElementById("updateProfileButton").addEventListener("click", async () => {
     const authData = sessionStorage.getItem("auth");
@@ -54,18 +117,48 @@ document.getElementById("updateProfileButton").addEventListener("click", async (
     const phoneNumber = document.getElementById("phone_number").value;
     if (phoneNumber) updatedProfile.phone_number = phoneNumber;
 
-    const age = document.getElementById("age").value;
-    if (age) updatedProfile.age = parseInt(age);
+    const mobileNumber = document.getElementById("mobile_number").value;
+    if (mobileNumber) updatedProfile.mobile_number = mobileNumber;
+
+    /* const age = document.getElementById("age").value;
+    if (age) updatedProfile.age = age; // Keep as string or parse to integer if needed */
 
     const gender = document.getElementById("gender").value;
     if (gender) updatedProfile.gender = gender;
 
     const weight = document.getElementById("weight").value;
-    if (weight) updatedProfile.weight = parseFloat(weight);
+    if (weight) updatedProfile.weight = weight;
 
     const height = document.getElementById("height").value;
-    if (height) updatedProfile.height = parseFloat(height);
+    if (height) updatedProfile.height = height;
 
+    const medicalHistory = document.getElementById("medical_history").value;
+    if (medicalHistory) updatedProfile.medical_history = medicalHistory;
+
+    const notes = document.getElementById("notes").value;
+    if (notes) updatedProfile.notes = notes;
+
+    const matriculeCNSS = document.getElementById("matriculeCNSS").value;
+    if (matriculeCNSS) updatedProfile.matriculeCNSS = matriculeCNSS;
+
+    const dateExpiration = document.getElementById("dateExpiration").value;
+    if (dateExpiration) updatedProfile.dateExpiration = dateExpiration;
+
+    const assurance = document.getElementById("assurance").value;
+    if (assurance) updatedProfile.assurance = assurance;
+
+    const groupeSanguin = document.getElementById("groupe_sanguin").value;
+    if (groupeSanguin) updatedProfile.groupe_sanguin = groupeSanguin;
+
+    const allergie = document.getElementById("allergie").value;
+    if (allergie) updatedProfile.allergie = allergie;
+
+    const dateNaissance = document.getElementById("date_naissance").value;
+    if (dateNaissance) updatedProfile.date_naissance = dateNaissance;
+
+    const nomAssurance = document.getElementById("assurance").value;
+    if (nomAssurance) updatedProfile.assurance = nomAssurance;
+console.log("updatedProfile: ",JSON.stringify(updatedProfile))
     try {
         const response = await fetch(`https://wic-doctor.com:3004/update/patient/${patientId}`, {
             method: 'PUT',
@@ -99,3 +192,4 @@ document.getElementById("updateProfileButton").addEventListener("click", async (
         alert('An error occurred while updating the profile.');
     }
 });
+

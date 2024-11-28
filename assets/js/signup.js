@@ -1,4 +1,6 @@
 // Ensure you include this script at the bottom of your HTML file
+let valid
+console.log("phoneInputField: ",phoneInputField)
 document.getElementById('Register').addEventListener('submit', async function (event) {
     event.preventDefault(); // Prevent the default form submission
 
@@ -31,7 +33,165 @@ console.log("JSON.stringify({ name,lastname, email, phone }: ",JSON.stringify({ 
         alert('Une erreur est survenue. Veuillez réessayer.');
     }
 });
+ var iti
+var phoneInputField
+document.addEventListener("DOMContentLoaded", function() {
+    var phoneInput = document.querySelector("#phone");
+    phoneInputField = document.getElementById("phone");
+    console.log("phoneInput: ",phoneInput,"phoneInputField: ",phoneInputField)
+     iti = window.intlTelInput(phoneInputField, {
+        initialCountry: "auto", // Le pays initial sera déterminé automatiquement selon la position de l'utilisateur
+        geoIpLookup: function(callback) {
+            fetch("https://ipinfo.io")
+                .then(response => response.json())
+                .then(data => callback(data.country))
+                .catch(() => callback("us")); // Si la géolocalisation échoue, utiliser "US" comme valeur par défaut
+        },
+        utilsScript: "./utils.js", // Remplacez `path/to/` par le chemin correct vers votre fichier utils.js
+        loadUtilsOnInit: true, // Nouvelle méthode pour charger les utilitaires
 
+
+    });
+});
+// Affiche une erreur visuelle
+function showError(message) {
+    phoneInputField = document.getElementById("phone");
+
+    const phoneInputContainer = phoneInputField.closest(".tel");
+    let errorMessage = phoneInputContainer.querySelector(".error-message");
+
+    // Créer un message d'erreur si absent
+    if (!errorMessage) {
+        errorMessage = document.createElement("div");
+        errorMessage.classList.add("error-message");
+        phoneInputContainer.appendChild(errorMessage);
+    }
+
+    // Afficher l'erreur
+    errorMessage.innerText = message;
+    errorMessage.style.display = "block";
+    phoneInputField.classList.add("error");
+}
+
+// Supprime les erreurs visuelles
+function clearError() {
+    const phoneInputContainer = phoneInputField.closest(".tel");
+    const errorMessage = phoneInputContainer.querySelector(".error-message");
+
+    if (errorMessage) {
+        errorMessage.style.display = "none";
+    }
+    phoneInputField.classList.remove("error");
+}
+// Fonction qui ajoute `validLength` en fonction du code pays
+function addValidLengthToCountry(country) {
+    const dialCode = country.dialCode;
+
+    // Vérifie si l'indicatif pays est dans notre dictionnaire
+    if (phoneLengthByCountry[dialCode]) {
+        country.validLength = phoneLengthByCountry[dialCode];
+    } else {
+        country.validLength = null; // Si aucun correspondant n'est trouvé, on attribue `null`
+    }
+
+    return country;
+}
+const phoneLengthByCountry = {
+    "1": 10,   // USA, Canada
+    "33": 9,   // France
+    "44": 10,  // Royaume-Uni
+    "49": 11,  // Allemagne
+    "39": 9,   // Italie
+    "61": 9,   // Australie
+    "91": 10,  // Inde
+    "55": 10,  // Brésil
+    "216": 8,  // Tunisie
+    "34": 9,   // Espagne
+    "81": 10,  // Japon
+    "7": 10,   // Russie
+    "52": 10,  // Mexique
+    "34": 9,   // Espagne
+    "20": 9,   // Egypte
+    "61": 9,   // Australie
+    "977": 10, // Népal
+    "31": 9,   // Pays-Bas
+    "62": 10,  // Indonésie
+    "90": 10,  // Turquie
+    "27": 9,   // Afrique du Sud
+    "30": 10,  // Grèce
+    "1": 10,   // USA
+    "41": 9,   // Suisse
+    "46": 10,  // Suède
+    "64": 9,   // Nouvelle-Zélande
+    "63": 10,  // Philippines
+    "254": 9,  // Kenya
+    "256": 9,  // Ouganda
+    "233": 9,  // Ghana
+    "254": 9,  // Kenya
+    "254": 9,  // Kenya
+    "27": 9,   // Afrique du Sud
+    "40": 10,  // Roumanie
+    "46": 10,  // Suède
+    "20": 9,   // Egypte
+    "48": 9,   // Pologne
+    "55": 10,  // Brésil
+    "54": 10   // Argentine
+};
+
+// Fonction qui ajoute `validLength` en fonction du code pays
+function addValidLengthToCountry(country) {
+    const dialCode = country.dialCode;
+
+    // Vérifie si l'indicatif pays est dans notre dictionnaire
+    if (phoneLengthByCountry[dialCode]) {
+        country.validLength = phoneLengthByCountry[dialCode];
+    } else {
+        country.validLength = null; // Si aucun correspondant n'est trouvé, on attribue `null`
+    }
+
+    return country;
+}
+let selectedCountryData
+function validatePhoneNumber() {
+
+    // Récupérer le numéro complet et la validité
+    const phoneNumber = phoneInputField = document.getElementById("phone").value;
+
+    const isValid = iti.isValidNumber();
+     selectedCountryData = iti.getSelectedCountryData();
+
+    console.log("Numéro complet :", phoneNumber || "Vide");
+    console.log("Est valide :", isValid);
+    console.log("Pays sélectionné :", JSON.stringify(selectedCountryData));
+
+    selectedCountryData = addValidLengthToCountry(selectedCountryData);
+        // Vérifier si la longueur du numéro est correcte après l'indicatif pays
+        const phoneWithoutCode = phoneNumber.replace(`+${selectedCountryData.dialCode}`, '').replace(' ', '').trim();
+        
+        if (phoneWithoutCode.length === selectedCountryData.validLength) {
+            console.log("valid: ",phoneWithoutCode.length === selectedCountryData.validLength)
+            valid = true;
+        }
+        else {
+            valid = false
+        }
+        if (!valid) {
+            console.log('valid: ',valid)
+           document.getElementById("error-phone").style.display="block"
+            return false;
+        }
+        else{
+            document.getElementById("error-phone").style.display="none"
+            return true;
+
+        }
+
+
+}
+
+
+
+// Ajouter un écouteur à la soumission du formulaire
 
 document.getElementById('Register').addEventListener('submit', function(event) {
     // Récupérer les champs de saisie
@@ -49,6 +209,11 @@ document.getElementById('Register').addEventListener('submit', function(event) {
         return;
     }
     
+    if (!validatePhoneNumber()) {
+        event.preventDefault();  // Empêche la soumission du formulaire
+        //alert("Le formulaire a été soumis avec succès !");
+        // Envoyer le formulaire ou exécuter une autre action ici
+    }
      // Validation du nom
      if (lastname.value.trim() === "" || lastname.value.length < 2 || lastname.value.length > 50) {
         event.preventDefault();  // Empêche la soumission du formulaire

@@ -309,24 +309,25 @@
 						</aside>
 					</div>
 				</div>
-
 				<div class="col-xl-9 col-lg-12 col-md-12">
 					<div class="card mb-0">
 						<div class="card-header">
 							<h3 class="card-title">Mon Profil</h3>
 						</div>
 						<div class="card-body">
+							 <!-- Avertissement en haut -->
+							 <div id="warning-message" class="alert alert-warning" style="display: none;">
+								Veuillez compléter votre profil : Nom, Prénom, Numéro de téléphone fixe et Genre sont obligatoires.
+							</div>
 							<form id="profile-form">
 								<div class="row">
 									<!-- First Name -->
 									<div class="col-sm-6 col-md-6">
 										<div class="form-group">
 											<label class="form-label">Prénom</label>
-											<input type="text" id="first_name" class="form-control"
-												placeholder="Prénom">
+											<input type="text" id="first_name" class="form-control" placeholder="Prénom">
 										</div>
 									</div>
-
 									<!-- Last Name -->
 									<div class="col-sm-6 col-md-6">
 										<div class="form-group">
@@ -334,26 +335,15 @@
 											<input type="text" id="last_name" class="form-control" placeholder="Nom">
 										</div>
 									</div>
-
-									<!-- Phone Number -->
+									<!-- Date of Birth -->
 									<div class="col-sm-6 col-md-6">
 										<div class="form-group">
-											<label class="form-label">Adresse mail</label>
-											<input type="email" id="email" class="form-control" placeholder="Email">
+											<label class="form-label">Date de naissance</label>
+											<input type="date" id="date_naissance" class="form-control">
 										</div>
 									</div>
-
-									<!-- Mobile Number -->
-									<div class="col-sm-6 col-md-6">
-										<div class="form-group">
-											<label class="form-label">Numéro de téléphone</label>
-											<input type="tel" id="phone_number" class="form-control"
-												placeholder="Numéro de téléphone">
-										</div>
-									</div>
-
 									<!-- Gender -->
-									<div class="col-sm-6 col-md-4">
+									<div class="col-sm-6 col-md-6">
 										<div class="form-group">
 											<label class="form-label">Genre</label>
 											<select id="gender" name="gender" class="form-control">
@@ -364,39 +354,137 @@
 											</select>
 										</div>
 									</div>
-
-									<!-- Age -->
-									<div class="col-sm-6 col-md-2">
+									<!-- Email -->
+									<div class="col-sm-6 col-md-6">
 										<div class="form-group">
-											<label class="form-label">Age</label>
-											<input type="number" id="age" class="form-control" placeholder="Age">
+											<label class="form-label">Adresse mail</label>
+											<input type="email" id="email" class="form-control" placeholder="Email">
 										</div>
 									</div>
-
-									<!-- Weight -->
-									<div class="col-sm-6 col-md-3">
+									<!-- Phone Number -->
+									<div class="col-sm-6 col-md-6">
 										<div class="form-group">
-											<label class="form-label">Poids</label>
+											<label class="form-label">Numéro de téléphone fixe</label>
+											<input type="tel" id="phone_number" class="form-control" placeholder="Numéro de téléphone fixe">
+										</div>
+									</div>
+									<!-- Mobile Number -->
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label class="form-label">Numéro de téléphone mobile</label>
+											<input type="tel" id="mobile_number" class="form-control" placeholder="Numéro de téléphone mobile">
+										</div>
+									</div>
+									<!-- Blood Group -->
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label class="form-label">Groupe sanguin</label>
+											<select id="groupe_sanguin" name="blood_group" class="form-control">
+												<option disabled selected value="">--Choisissez--</option>
+												<option value="A+">A+</option>
+												<option value="A-">A-</option>
+												<option value="B+">B+</option>
+												<option value="B-">B-</option>
+												<option value="O+">O+</option>
+												<option value="O-">O-</option>
+												<option value="AB+">AB+</option>
+												<option value="AB-">AB-</option>
+											</select>
+										</div>
+									</div>
+									<!-- Weight -->
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label class="form-label">Poids (kg)</label>
 											<input type="number" id="weight" class="form-control" placeholder="Poids">
 										</div>
 									</div>
-
 									<!-- Height -->
-									<div class="col-sm-6 col-md-3">
+									<div class="col-sm-6 col-md-6">
 										<div class="form-group">
-											<label class="form-label">Hauteur</label>
+											<label class="form-label">Hauteur (cm)</label>
 											<input type="number" id="height" class="form-control" placeholder="Hauteur">
+										</div>
+									</div>
+									<!-- Allergies -->
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label class="form-label">Allergies</label>
+											<input type="text" id="allergie" class="form-control" placeholder="allergie">
+										</div>
+									</div>
+									<!-- Medical History -->
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="form-label">Historique médical</label>
+											<textarea id="medical_history" class="form-control" placeholder="Historique médical"></textarea>
+										</div>
+									</div>
+									<!-- Antecedents -->
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="form-label">Antécédents</label>
+											<textarea id="antecedents" class="form-control" placeholder="Antécédents"></textarea>
+										</div>
+									</div>
+									<!-- Insurance -->
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="form-label">Assurance</label>
+											<div class="row">
+												<!-- CNAM Checkbox -->
+												<div class="col-6">
+													<label class="d-block">
+														<input type="checkbox" id="cnam_checkbox" class="insurance-checkbox me-2">
+														CNAM
+													</label>
+												</div>
+												<!-- Other Insurance Checkbox -->
+												<div class="col-6">
+													<label class="d-block">
+														<input type="checkbox" id="other_insurance_checkbox" class="insurance-checkbox me-2">
+														Assurance
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- CNAM Section -->
+									<div class="col-sm-6 col-md-6" id="cnam_section" style="display: none;">
+										<div class="form-group">
+											<label class="form-label">Matricule CNAM</label>
+											<input type="text" id="matriculeCNSS" class="form-control" placeholder="Matricule CNAM">
+										</div>
+										<div class="form-group">
+											<label class="form-label">Date d'expiration</label>
+											<input type="date" id="dateExpiration" class="form-control">
+										</div>
+									</div>
+									<!-- Other Insurance Section -->
+									<div class="col-sm-6 col-md-6" id="other_insurance_section" style="display: none;">
+										<div class="form-group">
+											<label class="form-label">Nom de l'assurance</label>
+											<input type="text" id="assurance" class="form-control" placeholder="Nom de l'assurance">
+										</div>
+									</div>
+									<!-- Notes -->
+									<div class="col-sm-12">
+										<div class="form-group">
+											<label class="form-label">Notes</label>
+											<textarea id="notes" class="form-control" placeholder="Ajoutez des notes supplémentaires"></textarea>
 										</div>
 									</div>
 								</div>
 							</form>
 						</div>
 						<div class="card-footer">
+							
 							<button id="updateProfileButton" class="btn btn-secondary">Mettre à jour</button>
-
 						</div>
 					</div>
+					</div>
 				</div>
+			
 			</div>
 		</div>
 	</section>

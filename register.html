@@ -25,6 +25,8 @@
 
 	<!--Icons  Css -->
 	<link href="assets/css/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/intlTelInput.min.css">
+	<script src="./assets/js/intlTelInput.min.js"></script>
 
 </head>
 
@@ -63,7 +65,7 @@
 								<a href="javascript:void(0);">
 									<i class="fa fa-phone"></i>
 									<div class="support-text">
-																				<p class="contact-index">+216 26 311 777  /  +33 743 13 00 13</p>
+										<p class="contact-index">+216 26 311 777 / +33 743 13 00 13</p>
 
 										<p>Disponible 24/7 </p>
 									</div>
@@ -89,11 +91,11 @@
 		<div class="horizontal-header clearfix">
 			<div class="container">
 				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
-				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img src="assets/images/brand/logo-dr-wic.png"
-							width="80" alt="img"></a></span>
-				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="assets/images/brand/logo-dr-wic.png" width="50"
-							alt="img"></a></span>
-				<a class="callusbtn" ><i aria-hidden="true" class="fa fa-phone"></i></a>
+				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img
+							src="assets/images/brand/logo-dr-wic.png" width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="assets/images/brand/logo-dr-wic.png"
+							width="50" alt="img"></a></span>
+				<a class="callusbtn"><i aria-hidden="true" class="fa fa-phone"></i></a>
 			</div>
 		</div>
 		<!-- /Horizontal Header -->
@@ -119,15 +121,16 @@
 							</li>
 							<li aria-haspopup="true" class="d-lg-none mt-5 pb-5 mt-lg-0">
 								<span>
-									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-secondary btn-block mb-lg-0"><i
+									<a href="https://wic-doctor.com/inscription-professionnel/"
+										class="btn btn-secondary btn-block mb-lg-0"><i
 											class="icon icon-plus me-1 text-white"></i>Vous êtes un professionnel?</a>
 								</span>
 							</li>
 							<li aria-haspopup="true">
 								<a href="contact.html">Contactez-nous </a>
 							</li>
-						
-							
+
+
 						</ul>
 						<ul class="mb-0 d-flex align-items-center ms-auto">
 							<li class="me-3" id="SeConnecter">
@@ -137,26 +140,30 @@
 							</li>
 							<li class="me-3" id="B2B">
 								<span>
-									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+									<a href="https://wic-doctor.com/inscription-professionnel/"
+										class="btn btn-danger btn-block mb-lg-0">Vous êtes un
 										professionnel?</a>
 								</span>
-								
+
 							</li>
-						
-							  <!-- Avatar with User Initial and Dropdown Menu -->
-							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+
+							<!-- Avatar with User Initial and Dropdown Menu -->
+							<li class="nav-item dropdown d-flex align-items-center" id="Login">
 								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
-								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
 								</a>
 								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
 									<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
 									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
-									<li><hr class="dropdown-divider"></li>
-									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+									<li>
+										<hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
 								</ul>
 							</li>
-						
-							
+
+
 						</ul>
 					</nav>
 				</div>
@@ -180,7 +187,7 @@
 								<span class="wrap"></span>
 							</a>
 						</h1>
-	
+
 						<p>Rapide, gratuit et sécurisé</p>
 					</div>
 					<div class="row">
@@ -191,11 +198,12 @@
 									<ul class="nav">
 										<li class="">
 											<a class="active" data-bs-toggle="tab" href="#tab1">
-												<i class="fa fa-user-md"></i>	Médecins 
+												<i class="fa fa-user-md"></i> Médecins
 											</a>
 										</li>
 										<li>
-											<a data-bs-toggle="tab" href="#tab2"><i class="fa fa-hospital-o" style="margin-right: 3px;"></i>Cliniques</a>
+											<a data-bs-toggle="tab" href="#tab2"><i class="fa fa-hospital-o"
+													style="margin-right: 3px;"></i>Cliniques</a>
 										</li>
 									</ul>
 								</div>
@@ -204,22 +212,26 @@
 										<div class="search-background">
 											<div class="form row no-gutters">
 												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
-													<select class="form-control select2-show-search border-bottom-0 w-100"
+													<select
+														class="form-control select2-show-search border-bottom-0 w-100"
 														data-placeholder="Select" id="dynamicSelectPays">
 													</select>
 												</div>
 												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
-													<select class="form-control select2-show-search border-bottom-0 w-100"
+													<select
+														class="form-control select2-show-search border-bottom-0 w-100"
 														data-placeholder="Select" id="dynamicSelectVille">
 													</select>
 												</div>
 												<div class="form-group col-xl-4 col-lg-4 col-md-12 mb-0">
-													<select class="form-control select2-show-search border-bottom-0 w-100"
+													<select
+														class="form-control select2-show-search border-bottom-0 w-100"
 														data-placeholder="Select" id="dynamicSelect">
 													</select>
 												</div>
 												<div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0">
-													<a class="btn btn-block btn-orange fs-14" onclick="RechercheDoctor()">
+													<a class="btn btn-block btn-orange fs-14"
+														onclick="RechercheDoctor()">
 														<i class="fa fa-search"></i> Rechercher
 													</a>
 												</div>
@@ -230,17 +242,20 @@
 										<div class="search-background">
 											<div class="form row no-gutters">
 												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
-													<select class="form-control select2-show-search border-bottom-0 w-100"
+													<select
+														class="form-control select2-show-search border-bottom-0 w-100"
 														data-placeholder="Select" id="dynamicSelectPaysClinic">
 													</select>
 												</div>
 												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
-													<select class="form-control select2-show-search border-bottom-0 w-100"
+													<select
+														class="form-control select2-show-search border-bottom-0 w-100"
 														data-placeholder="Select" id="dynamicSelectVilleClinic">
 													</select>
 												</div>
 												<div class="form-group col-xl-4 col-lg-4 col-md-12 mb-0">
-													<select class="form-control select2-show-search border-bottom-0 w-100"
+													<select
+														class="form-control select2-show-search border-bottom-0 w-100"
 														data-placeholder="Select" id="dynamicSelectClinic">
 													</select>
 												</div>
@@ -258,12 +273,11 @@
 					</div>
 					<!-- Positionnement de l'image alignée à droite dans la section -->
 					<div class="position-absolute" style="top: 50%;right: 0;transform: translateY(-50%);z-index: -1;">
-						<div class="dl-patient-engagement-hero-right-image" 
-							target="_self">
+						<div class="dl-patient-engagement-hero-right-image" target="_self">
 							<img alt="wic doctor télémedecine" src="assets/images/media/doctors/DOC1.png"
 								class="dl-image object-cover rounded-br-[24px]"
 								style="width: 20vw; height: auto; max-height: 80vh;">
-					</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -271,7 +285,7 @@
 	</section>
 
 	<!--Section-->
-	
+
 	<section class="sptb">
 		<div class="container customerpage">
 			<div class="row">
@@ -281,19 +295,19 @@
 						<div class="wrapper wrapper2">
 
 							<div class="btn-list text-center opt-register">
-									
-							
+
+
 								<a href="#" class="btn btn-icon btn-google" onclick="GoogleConnect()">
 									<span class="fa fa-google bg-google"></span>
 									<span class="btn-text">Connecter avec Google</span>
 								</a>
-						
+
 							</div>
 							<div id="popupnom" class="popup" style="display:none;">
 								<div class="popup-content">
 									<span class="close" onclick="closePopupnom()">&times;</span>
 									<p>Le nom doit contenir entre 2 et 50 caractères.</p>
-									
+
 								</div>
 							</div>
 
@@ -307,38 +321,49 @@
 								<div class="popup-content">
 									<span class="close" onclick="closePopupphone()">&times;</span>
 									<p>vérifier votre numéro de téléphone</p>
-									
+
 								</div>
 							</div>
 
-							
-							
+
 							<form id="Register" class="card-body" tabindex="500">
 								<script src="assets/js/signup.js"></script>
-								<div class="name">
-									<input type="text" name="name">
-									<label>Nom</label>
-								</div>
-								<div class="name">
-									<input type="text" name="lastname">
-									<label>Prénom</label>
-								</div>
-								<div class="tel">
-									<input type="tel" name="tel">
-									<label>Numéro de téléphone</label>
-								</div>
-								<div class="mail">
-									<input type="email" name="mail">
 
-						<label>Adresse mail</label>
+								<div class="name">
+									<input type="text" name="name" id="name" required>
+									<label for="name">Nom</label>
 								</div>
-									<div class="submit">
-										<button type="submit" class="btn btn-primary btn-block">Créer un compte</button>
-									</div> <br>
-								<p class="text-dark mb-0">vous avez déjà un compte?<a href="login.html"
-										class="text-primary ms-1">Se connecter</a></p>
+
+								<div class="name">
+									<input type="text" name="lastname" id="lastname" required>
+									<label for="lastname">Prénom</label>
+								</div>
+
+								<div class="tel">
+									<input type="tel" id="phone" name="tel" required>
+									<label for="phone">Numéro de téléphone</label>
+									<!-- Zone d'affichage du message d'erreur -->
+									<div class="error-message" id="error-phone" style="display: none; color: red;">Numéro de téléphone invalide pour le pays sélectionné </div>
+								</div>
+
+								<div class="mail">
+									<input type="email" name="mail" id="mail">
+									<label for="mail">Adresse mail</label>
+								</div>
+
+								<div class="submit">
+									<button type="submit" class="btn btn-primary btn-block">Créer un compte</button>
+								</div>
+
+								<br>
+
+								<p class="text-dark mb-0">Vous avez déjà un compte?
+									<a href="login.html" class="text-primary ms-1">Se connecter</a>
+								</p>
 							</form>
-							
+
+
+
 						</div>
 					</div>
 				</div>
@@ -364,14 +389,14 @@
 								<li>
 									<a href="javascript:;">Témoignages</a>
 								</li>
-							
+
 								<li>
 									<a href="javascript:;">FAQ</a>
 								</li>
 								<li>
 									<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
 								</li>
-								
+
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-12">
@@ -391,11 +416,11 @@
 								<li>
 									<a href="javascript:;">Laboratoires</a>
 								</li>
-								
+
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-12">
-							<p  class="footer-title">Ressources</p>
+							<p class="footer-title">Ressources</p>
 							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
 							<ul class="list-unstyled mb-0">
 								<li>
@@ -413,22 +438,26 @@
 
 							</ul>
 						</div>
-						
-					
+
+
 						<div class="col-lg-3 col-md-12">
 							<p class="footer-title">Les conditions</p>
 							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
 							<div class="clearfix"></div>
 							<ul class="list-unstyled mb-0">
 								<li>
-									<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+									<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+										générales de vente en ligne</a>
 								</li>
 								<li>
-									<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+									<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+										d'utilisation</a>
 									</a>
 								</li>
 								<li>
-									<a href="https://wic-doctor.com/Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles</a>
+									<a
+										href="https://wic-doctor.com/Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+										de confidentialité des données personnelles</a>
 									</a>
 								</li>
 								<li>
@@ -517,8 +546,8 @@
 	<!-- Cookie js -->
 	<script src="assets/plugins/cookie/jquery.ihavecookies.js"></script>
 	<script src="assets/plugins/cookie/cookie.js"></script>
-<!--Cryptojs-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 	<!-- sticky Js-->
 	<script src="assets/js/sticky.js"></script>
 
@@ -529,8 +558,8 @@
 
 	<!--Owl-Carousel Js-->
 	<script src="assets/js/owl-carousel.js"></script>
-<!-- Typewritter Js-->
-<script src="assets/js/typewritter.js"></script>
+	<!-- Typewritter Js-->
+	<script src="assets/js/typewritter.js"></script>
 	<!-- Theme-color js -->
 	<script src="assets/js/themeColors.js"></script>
 
@@ -542,7 +571,7 @@
 
 	<script src="assets/js/recherche.js"></script>
 
-	
+
 
 </body>
 

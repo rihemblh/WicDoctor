@@ -223,7 +223,7 @@ function RechercheDoctor() {
   var ListeDoctors
   var apiurlSearch = "https://wic-doctor.com:3004/doctorsadd?"
   var objectTitle = {}
-  let currentPath = decryptData(sessionStorage.getItem('origin'))
+  let currentPath = "https://wic-doctor.com/"
   console.log("currentPath: ", currentPath)
   sessionStorage.setItem('path', encryptData(currentPath))
   if (specialtyId != "") {
