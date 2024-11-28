@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+																				<p class="contact-index">+216 26 311 777  /  +33 743 13 00 13</p>
+
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="https://wic-doctor.com/">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+						
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								
+							</li>
+							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>1. Qu'est-ce que la Rosacée et la Couperose ?</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p><p>La <strong>rosacée</strong> est une maladie inflammatoire de la peau qui se manifeste par des rougeurs persistantes et parfois des boutons sur le visage, en particulier sur les joues, le nez et le front. Elle évolue par poussées, et bien que bénigne, elle peut être inconfortable et affecter la qualité de vie. La <strong>couperose</strong> est une forme plus légère de rosacée, qui se caractérise principalement par des rougeurs localisées sans inflammation marquée. Elle est souvent causée par des vaisseaux sanguins dilatés sous la peau.</p><h4><strong>Caractéristiques de la Rosacée et de la Couperose :</strong></h4><ul>
+<li><strong>Rougeurs et érythème</strong> : La peau présente des rougeurs persistantes sur le visage, souvent aggravées par certains facteurs déclencheurs.</li>
+<li><strong>Pustules et papules</strong> : Des boutons rouges ou des petites bosses peuvent apparaître, souvent confondus avec de l'acné.</li>
+<li><strong>Sensibilité cutanée</strong> : La peau devient plus sensible, avec une tendance à piquer ou à brûler.</li>
+<li><strong>Vaisseaux sanguins visibles</strong> : Dans le cas de la couperose, des petites veines rouges ou des télangiectasies peuvent être visibles, souvent autour du nez, des joues et du menton.</li>
+<li><strong>Peau sèche ou rugueuse</strong> : Dans les stades plus avancés de la rosacée, la peau peut devenir rugueuse et épaissie, notamment autour du nez.</li>
+</ul><hr/></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">2. Causes de la Rosacée et de la Couperose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">3. Symptômes de la Rosacée et de la Couperose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">4. Diagnostic de la Rosacée et de la Couperose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">5. Traitements de la Rosacée et de la Couperose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">6. Lieux et Types de Soins selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes de la Rosacée et de la Couperose</h2></div><div class="info-text"><p><p>Les causes exactes de la <strong>rosacée</strong> et de la <strong>couperose</strong> ne sont pas entièrement comprises, mais plusieurs facteurs peuvent favoriser leur apparition.</p><h4><strong>Facteurs principaux :</strong></h4><ul>
+<li><strong>Prédisposition génétique</strong> : La rosacée et la couperose peuvent être héréditaires, les personnes ayant des antécédents familiaux de ces conditions étant plus susceptibles d'en souffrir.</li>
+<li><strong>Vasodilatation</strong> : Les vaisseaux sanguins sous la peau peuvent se dilater de manière excessive, entraînant des rougeurs et des vaisseaux visibles, particulièrement en raison de l’exposition à des températures extrêmes, ou du stress.</li>
+<li><strong>Facteurs environnementaux</strong> : Le soleil, le vent, le froid, ou des changements de température peuvent aggraver les symptômes.</li>
+<li><strong>Aliments et boissons</strong> : La consommation de certains aliments (comme les épices, l'alcool, ou les boissons chaudes) peut exacerber les symptômes de la rosacée.</li>
+<li><strong>Infections bactériennes</strong> : Certaines formes de rosacée peuvent être aggravées par des bactéries, comme <em>Helicobacter pylori</em>, qui peuvent interférer avec la circulation sanguine dans la peau.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes de la Rosacée et de la Couperose</h2></div><div class="info-text"><p><p>Les symptômes de la <strong>rosacée</strong> et de la <strong>couperose</strong> varient d'une personne à l'autre. La rosacée se développe souvent en plusieurs stades, avec des symptômes allant de simples rougeurs à des formes plus sévères avec des lésions.</p><h4><strong>Symptômes fréquents :</strong></h4><ul>
+<li><strong>Rougeurs sur le visage</strong> : Les symptômes commencent souvent par des rougeurs modérées sur les joues, le nez, le menton ou le front.</li>
+<li><strong>Apparition de petites bosses</strong> : Des pustules (boutons) rouges apparaissent souvent, particulièrement chez les personnes présentant de l'acné rosacée.</li>
+<li><strong>Télangiectasies (vaisseaux visibles)</strong> : Des veines fines et rouges peuvent apparaître sous la peau, surtout autour du nez et des joues, caractéristiques de la couperose.</li>
+<li><strong>Sensation de chaleur ou de brûlure</strong> : Les personnes atteintes peuvent ressentir une chaleur intense sur leur visage, en particulier après des facteurs déclencheurs comme l’alcool, les températures extrêmes, ou les émotions fortes.</li>
+<li><strong>Peau sensible</strong> : La peau devient plus réactive aux produits de soins et aux changements de température.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic de la Rosacée et de la Couperose</h2></div><div class="info-text"><p><p>Le diagnostic de la <strong>rosacée</strong> et de la <strong>couperose</strong> repose sur un examen clinique minutieux de la peau et de l’historique médical du patient. Aucun test spécifique n'est généralement nécessaire, bien que dans certains cas, des examens supplémentaires peuvent être réalisés.</p><h4><strong>Méthodes diagnostiques :</strong></h4><ul>
+<li><strong>Examen clinique</strong> : Le médecin examine la peau, les zones affectées, et recherche les signes typiques de la rosacée et de la couperose, comme les rougeurs et les vaisseaux dilatés.</li>
+<li><strong>Antécédents médicaux</strong> : Un interrogatoire sur les symptômes, les facteurs déclencheurs, et les habitudes de vie permet de mieux cerner les causes sous-jacentes.</li>
+<li><strong>Tests complémentaires</strong> : Dans de rares cas, des tests peuvent être effectués pour exclure d’autres conditions cutanées, comme l’acné ou la dermatite, qui peuvent présenter des symptômes similaires.</li>
+<li><strong>Consultation à distance</strong> : Grâce à la <strong>télémédecine</strong>, les patients peuvent consulter un médecin dermatologue via le <strong>portail WIC-DOCTOR</strong> pour un diagnostic rapide et des recommandations de traitement adaptées.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements de la Rosacée et de la Couperose</h2></div><div class="info-text"><p><p>Le traitement de la <strong>rosacée</strong> et de la <strong>couperose</strong> varie en fonction de la gravité des symptômes, de la forme de la maladie, et de la réponse du patient au traitement.</p><h4><strong>Traitements médicaux :</strong></h4><ul>
+<li><strong>Crèmes et gels topiques</strong> : Des traitements topiques à base de <em>métronidazole</em>, <em>azélaïque</em> ou <em>ivermectine</em> sont souvent utilisés pour réduire les rougeurs et les éruptions cutanées.</li>
+<li><strong>Antibiotiques oraux</strong> : Dans les formes modérées à sévères, des antibiotiques oraux comme la <em>tétracycline</em> peuvent être prescrits pour réduire l’inflammation.</li>
+<li><strong>Traitements au laser</strong> : Les lasers vasculaires sont efficaces pour traiter les télangiectasies (vaisseaux dilatés) et réduire les rougeurs persistantes.</li>
+<li><strong>Réduction de l'inflammation</strong> : Des médicaments anti-inflammatoires peuvent être utilisés pour calmer les poussées de rosacée.</li>
+</ul><h4><strong>Traitements non médicamenteux :</strong></h4><ul>
+<li><strong>Soins de la peau doux</strong> : Il est essentiel d’utiliser des produits adaptés pour les peaux sensibles, afin d’éviter l’irritation.</li>
+<li><strong>Crèmes solaires</strong> : L’utilisation quotidienne d’une crème solaire est cruciale pour protéger la peau des rayons UV, qui peuvent exacerber la rosacée.</li>
+<li><strong>Éviter les déclencheurs</strong> : Éviter les facteurs connus pour déclencher les symptômes, comme la chaleur, le froid, ou les aliments épicés.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> permet d’obtenir des conseils médicaux à distance pour la gestion de la <strong>rosacée</strong> et de la <strong>couperose</strong>. Cela permet un suivi personnalisé et rapide, avec des médecins spécialisés.</p><h4><strong>1. Dermatologues</strong> :</h4><p>Les dermatologues sont des experts dans le traitement des affections cutanées et peuvent recommander des traitements adaptés à la rosacée et à la couperose.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Diagnostic de la rosacée et de la couperose.</li>
+<li>Prescription de traitements médicaux et suivi à distance via télémédecine.</li>
+</ul><h4><strong>2. Médecins généralistes</strong> :</h4><p>Les médecins généralistes peuvent fournir des conseils sur la gestion des symptômes et recommander des traitements de première ligne.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Suivi des symptômes et conseils pour gérer les poussées de rosacée et de couperose.</li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+						
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="../trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p  class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+					
+				
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a href="../Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

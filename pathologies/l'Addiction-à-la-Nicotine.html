@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+																				<p class="contact-index">+216 26 311 777  /  +33 743 13 00 13</p>
+
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="https://wic-doctor.com/">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+						
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								
+							</li>
+							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Diagnostic et Prise en Charge de l'Addiction à la Nicotine : Comprendre, Diagnostiquer et Traiter</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que l'Addiction à la Nicotine ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Causes et Facteurs de Risque de l'Addiction à la Nicotine<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Symptômes et Signes de l'Addiction à la Nicotine<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic de l'Addiction à la Nicotine<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements de l'Addiction à la Nicotine<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">7. Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que l'Addiction à la Nicotine ?</h2></div><div class="info-text"><p><p>L'<strong>addiction à la nicotine</strong> se manifeste par un besoin irrésistible de consommer des produits contenant de la nicotine, principalement des cigarettes, mais aussi des e-cigarettes, des patchs ou des gommes. La nicotine, un alcaloïde présent dans le tabac, agit sur le système nerveux central en créant une sensation de bien-être et de relaxation, ce qui incite les fumeurs à renouveler leur consommation.</p><h4><strong>Caractéristiques principales de l'addiction à la nicotine</strong> :</h4><ul>
+<li><strong>Dépendance physique</strong> : Le corps s'habitue à la nicotine et ressent des symptômes de sevrage lorsque la consommation est réduite ou arrêtée.</li>
+<li><strong>Dépendance psychologique</strong> : Les fumeurs développent souvent des associations mentales avec certaines situations (stress, repas, pauses) qui renforcent leur besoin de fumer.</li>
+<li><strong>Tolérance accrue</strong> : Avec le temps, le fumeur nécessite des quantités de plus en plus importantes de nicotine pour obtenir le même effet.</li>
+<li><strong>Symptômes de sevrage</strong> : Lorsque la consommation est réduite ou interrompue, des symptômes tels que l'irritabilité, l'anxiété, les troubles du sommeil et la prise de poids peuvent survenir.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque de l'Addiction à la Nicotine</h2></div><div class="info-text"><p><p>L'<strong>addiction à la nicotine</strong> résulte d'une interaction complexe entre des facteurs biologiques, psychologiques et environnementaux. Bien que l'exposition au tabac soit la cause directe de cette dépendance, de nombreux autres facteurs peuvent jouer un rôle dans son développement.</p><h4><strong>Facteurs de risque de l'addiction à la nicotine</strong> :</h4><ul>
+<li><strong>Prédisposition génétique</strong> : Certaines personnes sont plus susceptibles de devenir dépendantes à la nicotine en raison de facteurs génétiques qui influencent la façon dont leur corps réagit à la nicotine.</li>
+<li><strong>Début précoce</strong> : Fumer dès l'adolescence augmente significativement le risque de dépendance à la nicotine, car le cerveau est encore en développement et plus vulnérable aux effets addictifs.</li>
+<li><strong>Environnement social</strong> : Les influences sociales et familiales peuvent jouer un rôle clé. Par exemple, vivre dans un environnement où le tabagisme est courant peut encourager la consommation de tabac.</li>
+<li><strong>Stress et troubles psychologiques</strong> : Les personnes souffrant de stress, d'anxiété ou de dépression peuvent être plus enclines à fumer pour gérer leurs émotions.</li>
+<li><strong>Accessibilité et marketing</strong> : L'accessibilité au tabac et les campagnes de marketing ciblant des jeunes adultes peuvent favoriser l'initiation au tabagisme.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Signes de l'Addiction à la Nicotine</h2></div><div class="info-text"><p><p>Les signes de l'<strong>addiction à la nicotine</strong> varient en fonction de la gravité de la dépendance. Ces symptômes sont principalement physiques, mais ils peuvent également avoir une composante psychologique et comportementale.</p><h4><strong>Symptômes courants de l'addiction à la nicotine</strong> :</h4><ul>
+<li><strong>Envies de fumer</strong> : Les fumeurs ressentent souvent des envies irrésistibles de consommer de la nicotine, même lorsqu'ils essaient d'arrêter.</li>
+<li><strong>Symptômes de sevrage</strong> : Lorsqu'ils réduisent leur consommation ou tentent d'arrêter de fumer, de nombreux fumeurs ressentent des symptômes tels que l'anxiété, l'irritabilité, la dépression, la fatigue, et des troubles du sommeil.</li>
+<li><strong>Augmentation de la tolérance</strong> : Les fumeurs doivent augmenter leur consommation de nicotine pour obtenir les mêmes effets, ce qui peut entraîner une consommation excessive.</li>
+<li><strong>Comportements associés</strong> : Certaines personnes associent des activités spécifiques, comme boire un café ou conduire, à l'acte de fumer, renforçant ainsi leur dépendance.</li>
+<li><strong>Problèmes de santé</strong> : À long terme, le tabagisme entraîne des problèmes respiratoires, cardiovasculaires et un risque accru de cancer.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic de l'Addiction à la Nicotine</h2></div><div class="info-text"><p><p>Le diagnostic de l'<strong>addiction à la nicotine</strong> repose sur une évaluation clinique complète des antécédents médicaux et des habitudes de consommation du tabac du patient. Des tests de dépistage, ainsi que des évaluations psychologiques et comportementales, peuvent être utilisés pour déterminer l'intensité de la dépendance.</p><h4><strong>Méthodes diagnostiques pour l'addiction à la nicotine</strong> :</h4><ul>
+<li><strong>Questionnaires et échelles de dépendance</strong> : Des outils comme le <strong>test de Fagerström</strong> peuvent être utilisés pour évaluer la dépendance à la nicotine, en se basant sur des critères tels que la fréquence de consommation et les symptômes de sevrage.</li>
+<li><strong>Entretien clinique</strong> : Le médecin recueille des informations sur la quantité de tabac consommée, les habitudes du fumeur et les tentatives précédentes d'arrêt. Il évalue également l'impact de la dépendance sur la vie quotidienne du patient.</li>
+<li><strong>Examens médicaux</strong> : Des examens médicaux, tels que des tests pulmonaires ou cardiovasculaires, peuvent être effectués pour évaluer les effets du tabagisme sur la santé.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements de l'Addiction à la Nicotine</h2></div><div class="info-text"><p><p>Le traitement de l'<strong>addiction à la nicotine</strong> varie en fonction de la sévérité de la dépendance. Les options thérapeutiques incluent des approches pharmacologiques, comportementales et de soutien, qui visent à réduire les symptômes de sevrage et à prévenir les rechutes.</p><h4><strong>Options thérapeutiques pour l'addiction à la nicotine</strong> :</h4><ul>
+<li><strong>Substituts nicotiniques</strong> : Les patchs, gommes, pastilles ou inhalateurs à base de nicotine aident à réduire les symptômes de sevrage en fournissant de petites doses de nicotine sans les autres substances nocives présentes dans la cigarette.</li>
+<li><strong>Médicaments non nicotiniques</strong> : Des médicaments comme la <strong>varénicline (Champix)</strong> et le <strong>bupropion (Zyban)</strong> sont utilisés pour réduire les envies de fumer et les symptômes de sevrage.</li>
+<li><strong>Thérapie comportementale</strong> : La <strong>thérapie cognitivo-comportementale (TCC)</strong> aide les patients à identifier et à modifier les comportements et pensées associés au tabagisme. Elle peut également enseigner des techniques de gestion du stress et des stratégies pour éviter les déclencheurs.</li>
+<li><strong>Soutien psychologique et groupes de soutien</strong> : Des séances de counseling ou des groupes de soutien peuvent aider à maintenir la motivation et à renforcer l'engagement envers l'abandon du tabac.</li>
+<li><strong>Méthodes alternatives</strong> : Certaines personnes recourent à des traitements comme l'<strong>hypnose</strong>, l'<strong>acupuncture</strong> ou les <strong>thérapies de relaxation</strong> pour réduire les envies de fumer.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> offre une gamme de services de télémédecine pour accompagner les patients dans leur processus d'arrêt du tabac, avec un suivi personnalisé et des conseils adaptés.</p><h4><strong>1. Médecins spécialisés en addiction</strong> :</h4><p>Les <strong>médecins spécialistes</strong> dans le traitement de l'addiction à la nicotine sont des experts dans l'évaluation et la gestion des symptômes de dépendance.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Évaluation de la dépendance</strong> et proposition de traitements personnalisés.</li>
+<li><strong>Suivi médical</strong> pour ajuster les traitements au fur et à mesure des progrès du patient.</li>
+</ul><h4><strong>2. Psychologues et conseillers</strong> :</h4><p>Les <strong>psychologues spécialisés</strong> dans l'addiction peuvent accompagner les patients sur le plan comportemental, en leur apprenant à gérer les situations déclencheuses et à renforcer leur motivation.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Thérapie comportementale</strong> pour modifier les comportements liés au tabagisme.</li>
+<li><strong>Soutien émotionnel</strong> pour aider à surmonter les défis du sevrage.</li>
+</ul><h4><strong>3. Télémédecine via WIC-DOCTOR</strong> :</h4><p>Le <strong>portail WIC-DOCTOR</strong> permet aux patients de bénéficier de <strong>consultations à distance</strong> pour obtenir des conseils médicaux et psychologiques tout au long de leur parcours de sevrage.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations à distance</strong> pour évaluer les progrès, ajuster les traitements et répondre aux préoccupations du patient.</li>
+<li><strong>Suivi régulier</strong> pour aider à maintenir la motivation et prévenir les rechutes.</li>
+</ul><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>7. Conclusion</h2></div><div class="info-text"><p><p>L'<strong>addiction à la nicotine</strong> est une pathologie complexe mais traitable. Grâce à des méthodes modernes et un suivi adapté, les patients peuvent réussir à se libérer de cette dépendance et améliorer leur qualité de vie. Le **portail W</p><p>IC-DOCTOR<strong> offre des solutions pratiques de </strong>télémédecine**, permettant un suivi personnalisé et un accompagnement dans la lutte contre l'addiction à la nicotine, même à distance.</p><hr/><h4><strong>Balises SEO</strong> :</h4><ul>
+<li><strong>#AddictionNicotine</strong></li>
+<li><strong>#SevrageTabagique</strong></li>
+<li><strong>#ArrêterDeFumer</strong></li>
+<li><strong>#TraitementAddictionNicotine</strong></li>
+<li><strong>#TélémédecineAddiction</strong></li>
+<li><strong>#WICDOCTORSevrage</strong></li>
+<li><strong>#SoutienSevrageNicotine</strong></li>
+<li><strong>#ThérapieComportementaleFumer</strong></li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+						
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="../trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p  class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+					
+				
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a href="../Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

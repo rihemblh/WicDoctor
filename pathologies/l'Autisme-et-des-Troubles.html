@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+																				<p class="contact-index">+216 26 311 777  /  +33 743 13 00 13</p>
+
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="https://wic-doctor.com/">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+						
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								
+							</li>
+							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>1. Qu'est-ce que l'Autisme et les Troubles Envahissants du Développement (TED) ?</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p><p>Les <strong>troubles du spectre de l'autisme</strong> (TSA) regroupent une série de troubles neurodéveloppementaux caractérisés par des altérations de la communication, des interactions sociales et des comportements répétitifs. Les <strong>troubles envahissants du développement</strong> (TED) incluent plusieurs conditions similaires, dont l’autisme, mais aussi le syndrome d'Asperger, le trouble désintégratif de l'enfance et le trouble envahissant du développement non spécifié.</p><h4><strong>Caractéristiques principales des TSA et TED</strong> :</h4><ul>
+<li><strong>Difficultés de communication</strong> : Les enfants et adultes atteints de TSA peuvent avoir du mal à développer un langage verbal et non verbal. Certains peuvent ne pas parler du tout, tandis que d’autres peuvent avoir des difficultés à utiliser des mots de manière appropriée.</li>
+<li><strong>Problèmes dans les interactions sociales</strong> : Les personnes atteintes de TSA peuvent éprouver des difficultés à comprendre les normes sociales, à nouer des relations ou à partager des émotions.</li>
+<li><strong>Comportements répétitifs et intérêts restreints</strong> : Les personnes autistes ont souvent des comportements répétitifs (comme se balancer ou taper des mains) et des intérêts très spécifiques.</li>
+<li><strong>Hypersensibilité ou hyposensibilité sensorielle</strong> : Beaucoup de personnes avec des TSA présentent une hypersensibilité ou une hyposensibilité aux sons, aux lumières, aux textures et à d’autres stimuli sensoriels.</li>
+</ul><hr/></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">2. Causes et Facteurs de Risque de l'Autisme et des TED<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">3. Symptômes et Signes de l'Autisme et des TED<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">4. Diagnostic de l'Autisme et des TED<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">5. Traitements des Troubles du Spectre de l'Autisme et des TED<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">7. Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque de l'Autisme et des TED</h2></div><div class="info-text"><p><p>Les causes exactes des troubles du spectre de l'autisme et des TED sont encore largement inconnues, bien que plusieurs facteurs semblent jouer un rôle dans leur développement.</p><h4><strong>Facteurs de risque des TSA et TED</strong> :</h4><ul>
+<li><strong>Génétique</strong> : Des études montrent qu'il existe une forte composante génétique dans le développement des TSA. Les antécédents familiaux d'autisme ou d'autres troubles neurodéveloppementaux augmentent le risque.</li>
+<li><strong>Facteurs environnementaux</strong> : L'exposition à certains facteurs environnementaux, tels que des infections virales ou des perturbations dans le développement cérébral prénatal, pourrait jouer un rôle.</li>
+<li><strong>Âge parental avancé</strong> : Un âge plus avancé des parents, en particulier du père, est parfois associé à un risque accru d'autisme.</li>
+<li><strong>Complications prénatales</strong> : Des complications pendant la grossesse, comme la prématurité ou un faible poids à la naissance, sont également considérées comme des facteurs de risque potentiels.</li>
+<li><strong>Facteurs neurologiques</strong> : Certaines anomalies cérébrales observées par imagerie dans le cerveau des personnes autistes pourraient être liées au développement de ces troubles.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Signes de l'Autisme et des TED</h2></div><div class="info-text"><p><p>Les symptômes des TSA et TED varient considérablement d'une personne à l'autre. Certains enfants peuvent présenter des symptômes légers, tandis que d’autres peuvent avoir des symptômes plus graves. Les signes sont généralement détectables avant l’âge de 3 ans.</p><h4><strong>Symptômes courants des TSA et TED</strong> :</h4><ul>
+<li><strong>Difficultés à communiquer</strong> : Cela peut se manifester par un retard du langage, une incapacité à faire des phrases complètes ou un discours répétitif. Certaines personnes peuvent ne pas parler du tout et utiliser des gestes pour communiquer.</li>
+<li><strong>Problèmes sociaux</strong> : Difficulté à comprendre les règles sociales, à établir un contact visuel ou à entretenir des conversations réciproques.</li>
+<li><strong>Comportements répétitifs</strong> : Comme la répétition de mouvements (balancement du corps, battements des mains) ou l'insistance sur des routines et des rituels.</li>
+<li><strong>Intérêts restreints</strong> : Les enfants et adultes autistes peuvent développer des intérêts très spécifiques ou obsessionnels, souvent à l'exclusion d'autres activités.</li>
+<li><strong>Sensibilité sensorielle</strong> : Beaucoup de personnes atteintes de TSA ont des réactions inhabituelles à des stimuli sensoriels, comme un bruit fort, une lumière brillante, ou certaines textures.</li>
+<li><strong>Difficultés motrices</strong> : Certains enfants présentent des difficultés à coordonner leurs mouvements, ce qui peut affecter la motricité fine (écrire, découper) ou la motricité globale (marcher, courir).</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic de l'Autisme et des TED</h2></div><div class="info-text"><p><p>Le diagnostic des TSA et TED repose sur une évaluation clinique approfondie, généralement menée par un pédiatre, un neurologue, ou un psychiatre spécialisé dans les troubles du développement. Il implique une observation comportementale et des tests de développement.</p><h4><strong>Méthodes diagnostiques pour les TSA et TED</strong> :</h4><ul>
+<li><strong>Observation clinique</strong> : Les professionnels de la santé observent les comportements de l’enfant ou de l’adulte pour détecter les signes typiques des TSA, tels que les difficultés de communication et les comportements répétitifs.</li>
+<li><strong>Entretien avec les parents ou les proches</strong> : Un entretien détaillé avec les parents ou les soignants est essentiel pour recueillir des informations sur le développement de l'enfant et ses comportements à la maison et à l'école.</li>
+<li><strong>Évaluations standardisées</strong> : Des outils comme l’<strong>ADOS</strong> (Autism Diagnostic Observation Schedule) ou l’<strong>ADOS-2</strong> sont utilisés pour évaluer la sévérité du trouble et les capacités sociales et de communication de l’individu.</li>
+<li><strong>Tests de développement</strong> : Le développement cognitif et langage est évalué par des tests standardisés pour déterminer si l'enfant présente des retards significatifs.</li>
+<li><strong>Imagerie cérébrale et génétique</strong> : Des examens comme l’IRM cérébrale ou des tests génétiques peuvent être effectués pour rechercher des anomalies structurelles ou des prédispositions génétiques.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements des Troubles du Spectre de l'Autisme et des TED</h2></div><div class="info-text"><p><p>Il n'existe pas de traitement curatif pour les troubles du spectre de l'autisme, mais des interventions précoces et des traitements adaptés peuvent améliorer les symptômes et aider les individus à mieux s'intégrer dans la société.</p><h4><strong>Options thérapeutiques pour les TSA et TED</strong> :</h4><ul>
+<li><strong>Interventions comportementales</strong> : L'<strong>ABA</strong> (Analyse Appliquée du Comportement) est l'une des thérapies les plus couramment utilisées pour aider les enfants autistes à développer des compétences sociales et à réduire les comportements problématiques.</li>
+<li><strong>Thérapies de langage et de communication</strong> : Ces thérapies visent à améliorer les compétences linguistiques, le langage verbal et non verbal, ainsi que la communication sociale.</li>
+<li><strong>Thérapies sensorielles</strong> : Ces thérapies aident les individus à mieux gérer leur hypersensibilité ou hyposensibilité sensorielle, en les exposant progressivement à des stimuli sensoriels.</li>
+<li><strong>Éducation spécialisée</strong> : Les enfants atteints de TSA peuvent bénéficier de programmes éducatifs spécialisés, souvent en petits groupes, pour s'assurer qu'ils reçoivent un enseignement adapté à leurs besoins.</li>
+<li><strong>Médicaments</strong> : Bien qu'aucun médicament ne traite directement l'autisme, certains médicaments peuvent être prescrits pour gérer des symptômes associés, tels que l'anxiété, l'hyperactivité ou les troubles du sommeil.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> permet aux familles et aux patients de bénéficier d’un suivi médical spécialisé à distance, garantissant un accès facile à des professionnels qualifiés.</p><h4><strong>1. Psychologues et psychiatres spécialisés</strong> :</h4><p>Les <strong>psychologues</strong> et <strong>psychiatres</strong> spécialisés dans l'autisme peuvent fournir des <strong>évaluations comportementales</strong> et des recommandations de traitements adaptés.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations comportementales</strong> pour l'élaboration de plans de traitement personnalisés.</li>
+<li><strong>Conseils et soutien familial</strong> pour mieux comprendre le comportement de l’enfant.</li>
+</ul><h4><strong>2. Orthophonistes et thérapeutes du langage</strong> :</h4><p>Les <strong>orthophonistes</strong> aident à améliorer les compétences langagières et de communication, essentielles pour les enfants atteints de TSA.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Thérapie du langage</strong> pour aider à développer des compétences verbales et non verbales.</li>
+<li><strong>Enseignement de stratégies de communication alternative</strong>.</li>
+</ul><h4><strong>3. Télémédecine via WIC-DOCTOR</strong> :</h4><p>Le <strong>portail WIC-DOCTOR</strong> permet un <strong>suivi à distance</strong>, offrant des consultations régulières avec des spécialistes en <strong>psychiatrie infantile</strong>, en <strong>orthophonie</strong> et en <strong>comportementalisme</strong>.</p><ul>
+<li>
+<p><strong>Services</strong> :</p>
+</li>
+<li>
+<p><strong>Consultations à distance</strong> pour ajuster les traitements en fonction de l’évolution du patient.</p>
+</li>
+<li><strong>Suivi régulier</strong> des progrès comportementaux et éducatifs.</li>
+<li><strong>Prescriptions électroniques</strong> pour des traitements personnalisés.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>7. Conclusion</h2></div><div class="info-text"><p><p>Les <strong>troubles du spectre de l'autisme</strong> et les <strong>troubles envahissants du développement</strong> peuvent affecter profondément la vie des individus, mais un <strong>diagnostic précoce</strong> et un <strong>suivi adapté</strong> peuvent grandement améliorer leur qualité de vie. Grâce aux services de <strong>télémédecine</strong> du <strong>portail WIC-DOCTOR</strong>, les patients peuvent bénéficier d’un accompagnement personnalisé et d’un suivi médical efficace, sans avoir à se déplacer.</p><hr/><h4><strong>Balises SEO</strong> :</h4><ul>
+<li><strong>#Autisme</strong></li>
+<li><strong>#TroublesEnvahissantsDuDéveloppement</strong></li>
+<li><strong>#TélémédecineAutisme</strong></li>
+<li><strong>#PriseEnChargeAutisme</strong></li>
+<li><strong>#ThérapieComportementale</strong></li>
+<li><strong>#WICDOCTORAutisme</strong></li>
+<li><strong>#SuiviTélémédecineAutisme</strong></li>
+<li><strong>#AutismeEnfants</strong></li>
+</ul><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+						
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="../trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p  class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+					
+				
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a href="../Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

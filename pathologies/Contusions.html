@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+																				<p class="contact-index">+216 26 311 777  /  +33 743 13 00 13</p>
+
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="https://wic-doctor.com/">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+						
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								
+							</li>
+							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>1. Qu'est-ce qu'une Contusion ?</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p><p>Une <strong>contusion</strong>, communément appelée "bleu", résulte d'un <strong>traumatisme</strong> contondant sur les tissus mous du corps. Contrairement à une coupure ou une écorchure, une contusion n'entraîne pas de rupture de la peau mais peut causer des lésions internes des vaisseaux sanguins, entraînant un <strong>saignement interne</strong>. Cela provoque l’apparition de <strong>bruising</strong> ou coloration bleue/purpurine à la surface de la peau, accompagnée de douleur et de gonflement.</p><h4><strong>Principales caractéristiques d'une contusion</strong> :</h4><ul>
+<li><strong>Douleur localisée</strong> : La douleur survient au niveau du point d'impact et peut varier en intensité.</li>
+<li><strong>Changements de couleur de la peau</strong> : Du bleu au violet au jaune, au fur et à mesure de la guérison.</li>
+<li><strong>Gonflement et œdème</strong> : Une accumulation de liquide dans les tissus peut entraîner un enflure autour de la blessure.</li>
+<li><strong>Hématome</strong> : Un amas de sang peut se former sous la peau, créant un gonflement visible.</li>
+</ul><hr/></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">2. Causes des Contusions<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">3. Symptômes et Effets Secondaires des Contusions<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">4. Diagnostic des Contusions<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">5. Traitement et Soins des Contusions<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">6. Suivi des Contusions et Récupération<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">7. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">8. Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes des Contusions</h2></div><div class="info-text"><p><p>Les contusions sont souvent causées par des <strong>traumatismes</strong> physiques, qu'ils soient accidentels ou dus à un choc direct sur le corps. Elles surviennent fréquemment lors de chutes, de coups, ou lors de la pratique d'un sport.</p><h4><strong>Causes courantes des contusions</strong> :</h4><ul>
+<li><strong>Accidents domestiques</strong> : Chutes, collisions avec des objets.</li>
+<li><strong>Sports</strong> : Chocs violents dans des sports de contact comme le football, le rugby ou le basket-ball.</li>
+<li><strong>Accidents de la route</strong> : Collisions avec des véhicules, chocs ou secousses violentes.</li>
+<li><strong>Violence physique</strong> : Frappes ou coups intentionnels.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Effets Secondaires des Contusions</h2></div><div class="info-text"><p><p>Les symptômes varient en fonction de la gravité de la contusion. La douleur initiale peut être intense, mais elle diminue généralement au fur et à mesure que la blessure guérit.</p><h4><strong>Symptômes fréquents des contusions</strong> :</h4><ul>
+<li><strong>Douleur</strong> : Localisée, généralement intense immédiatement après le traumatisme.</li>
+<li><strong>Changements de couleur</strong> : Le bleu initial devient souvent violet, puis jaunâtre à mesure que l'hématome se résorbe.</li>
+<li><strong>Gonflement</strong> : Un œdème est souvent visible dans les zones touchées, en particulier dans les parties du corps ayant une faible masse musculaire ou graisseuse.</li>
+<li><strong>Sensation de chaleur</strong> : Les zones touchées peuvent être plus chaudes que les tissus environnants en raison de l'inflammation.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic des Contusions</h2></div><div class="info-text"><p><p>Le diagnostic des contusions repose principalement sur un examen clinique. Le médecin évalue la zone de la blessure et la sévérité des symptômes. Dans certains cas, des examens complémentaires peuvent être nécessaires pour exclure des fractures ou des lésions plus graves.</p><h4><strong>Évaluations possibles pour une contusion</strong> :</h4><ul>
+<li><strong>Examen clinique</strong> : Le médecin palpe la zone affectée pour évaluer le degré de douleur et de gonflement.</li>
+<li><strong>Imagerie médicale</strong> : Une radiographie ou une échographie peut être réalisée si des fractures ou des lésions internes graves sont suspectées.</li>
+<li><strong>Bilan sanguin</strong> : Dans de rares cas, un test sanguin peut être effectué si une contusion concerne des zones ayant des vaisseaux sanguins importants, comme la tête ou l'abdomen.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitement et Soins des Contusions</h2></div><div class="info-text"><p><p>Le traitement des contusions repose principalement sur des <strong>soins à domicile</strong>, en particulier dans les cas bénins. Cependant, dans certains cas de contusions graves, un suivi médical plus poussé est nécessaire.</p><h4><strong>Traitement à domicile</strong> :</h4><ul>
+<li><strong>Repos et élévation</strong> : Repos et élévation de la partie blessée pour limiter l’enflure.</li>
+<li><strong>Application de glace</strong> : L'application de glace sur la zone affectée pendant 15 à 20 minutes, plusieurs fois par jour, aide à réduire l'inflammation et à soulager la douleur.</li>
+<li><strong>Compression</strong> : L'utilisation d'un bandage élastique peut aider à contenir l'œdème et à soutenir la zone blessée.</li>
+<li><strong>Anti-inflammatoires</strong> : Des médicaments comme l’ibuprofène ou l'aspirine peuvent être pris pour réduire la douleur et l’inflammation.</li>
+</ul><h4><strong>Traitement médical</strong> :</h4><ul>
+<li><strong>Consultation médicale</strong> : En cas de douleur persistante, de gonflement important ou de complications (difficulté à bouger la zone touchée), consulter un médecin est nécessaire.</li>
+<li><strong>Échographie ou imagerie</strong> : Si un hématome profond est suspecté ou si la contusion est particulièrement grave, des examens d’imagerie seront effectués.</li>
+<li><strong>Chirurgie</strong> : Dans des cas rares de contusions graves affectant des muscles, des vaisseaux sanguins ou des os, une intervention chirurgicale peut être envisagée pour réparer les lésions.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Suivi des Contusions et Récupération</h2></div><div class="info-text"><p><p>Le suivi des contusions est important pour évaluer la guérison et ajuster le traitement si nécessaire. La récupération des contusions simples se fait généralement en quelques jours à quelques semaines, selon la gravité de la blessure.</p><h4><strong>Phases de guérison des contusions</strong> :</h4><ul>
+<li><strong>Phase aiguë (1 à 3 jours)</strong> : Cette phase est marquée par la douleur intense, l'inflammation et le gonflement.</li>
+<li><strong>Phase subaiguë (3 à 10 jours)</strong> : Le bleu change de couleur (violet à jaune) et la douleur diminue. Le gonflement commence à se résorber.</li>
+<li><strong>Phase de guérison (1 à 2 semaines)</strong> : La peau retrouve son apparence normale, bien que l’hématome puisse persister un peu plus longtemps avant de disparaître complètement.</li>
+</ul><h4><strong>Suivi médical</strong> :</h4><ul>
+<li><strong>Contrôle de la douleur</strong> : Si la douleur persiste après les premières semaines, un suivi médical est recommandé.</li>
+<li><strong>Évaluation de la fonction de la zone touchée</strong> : Si la contusion touche une articulation ou un muscle, un suivi peut être nécessaire pour s’assurer de la mobilité et de la fonction.</li>
+<li><strong>Rééducation</strong> : En cas de contusion grave affectant un muscle ou une articulation, des séances de rééducation peuvent être nécessaires pour restaurer la fonction complète.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>7. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> permet aux patients d’accéder à une consultation spécialisée pour la prise en charge des contusions. Ce service facilite le suivi médical à distance et offre des conseils adaptés.</p><h4><strong>1. Médecins généralistes</strong> :</h4><p>Les <strong>médecins généralistes</strong> peuvent diagnostiquer et traiter les contusions bénignes, en fournissant des recommandations pour gérer la douleur et l'inflammation.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations de suivi</strong> pour évaluer la guérison de la contusion.</li>
+<li><strong>Conseils sur la gestion de la douleur</strong> et des traitements médicamenteux.</li>
+</ul><h4><strong>2. Spécialistes en traumatologie</strong> :</h4><p>Les <strong>traumatologues</strong> interviennent en cas de contusions graves ou de blessures complexes, notamment celles affectant les muscles, les ligaments ou les os.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Évaluation des lésions profondes</strong> et des complications possibles.</li>
+<li><strong>Traitements chirurgicaux</strong> si nécessaire.</li>
+</ul><h4><strong>3. Télémédecine via WIC-DOCTOR</strong> :</h4><p>Grâce à la <strong>télémédecine</strong>, les patients peuvent consulter des spécialistes pour discuter des symptômes, recevoir des conseils sur la gestion des contusions et suivre leur guérison à distance.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations à distance</strong> pour une évaluation de la contusion et un suivi régulier.</li>
+<li><strong>Conseils sur la gestion des blessures à domicile</strong> et la réduction des complications.</li>
+<li><strong>Prescription de traitements et de soins</strong> adaptés à l'état de la contusion.</li>
+</ul><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>8. Conclusion</h2></div><div class="info-text"><p><p>Les contusions sont des blessures courantes qui, bien que souvent bénignes, nécessitent une prise en charge appropriée pour éviter des complications. Un diagnostic rapide, un traitement approprié et un suivi régulier permettent de garantir une guérison complète. Le <strong>portail WIC-DOCTOR</strong> facilite l'accès à des soins médicaux spécialisés pour une gestion efficace des contusions, en offrant des consultations en ligne et des conseils adaptés.</p><hr/><h4><strong>Balises SEO</strong> :</h4><ul>
+<li><strong>#Contusion</strong></li>
+<li><strong>#Bleu</strong></li>
+<li><strong>#Traumatismes</strong></li>
+<li><strong>#Hématome</strong></li>
+<li><strong>#Gonflement</strong></li>
+<li>**#SoinsContusion</li>
+</ul><p>**
+- <strong>#TraitementContusion</strong>
+- <strong>#ConsultationEnLigne</strong>
+- <strong>#MédecinEnLigne</strong>
+- <strong>#WICDoctor</strong>
+- <strong>#SuiviContusion</strong></p></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+						
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="../trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p  class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+					
+				
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a href="../Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

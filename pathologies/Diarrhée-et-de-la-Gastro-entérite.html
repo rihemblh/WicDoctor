@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+																				<p class="contact-index">+216 26 311 777  /  +33 743 13 00 13</p>
+
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="https://wic-doctor.com/">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+						
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								
+							</li>
+							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>1. Qu'est-ce que la Diarrhée et la Gastro-entérite ?</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p><ul>
+<li>
+<p><strong>Diarrhée</strong> : La diarrhée est définie par l'augmentation de la fréquence des selles (plus de trois par jour), souvent accompagnée de selles liquides ou molles. Elle peut être causée par des infections, des troubles alimentaires, ou d'autres maladies sous-jacentes.</p>
+</li>
+<li>
+<p><strong>Gastro-entérite</strong> : La gastro-entérite est une inflammation du tractus gastro-intestinal, généralement causée par une infection virale ou bactérienne. Elle se caractérise par des symptômes tels que des douleurs abdominales, des nausées, des vomissements, et de la diarrhée.</p>
+</li>
+</ul><h4><strong>Symptômes de la diarrhée et de la gastro-entérite</strong> :</h4><p>Les symptômes de ces affections peuvent varier en fonction de leur cause, mais les plus courants incluent :</p><ul>
+<li><strong>Diarrhée fréquente</strong> : Selles molles ou liquides.</li>
+<li><strong>Nausées et vomissements</strong> : Fréquents dans les gastro-entérites virales et bactériennes.</li>
+<li><strong>Douleurs abdominales</strong> : Crampes ou sensations de ballonnement.</li>
+<li><strong>Fièvre</strong> : Parfois présente dans les infections bactériennes ou virales.</li>
+<li><strong>Fatigue et déshydratation</strong> : Perte de liquide par les selles et les vomissements.</li>
+</ul><hr/></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">2. Causes de la Diarrhée et de la Gastro-entérite chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">3. Symptômes de la Diarrhée et de la Gastro-entérite chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">4. Diagnostic de la Diarrhée et de la Gastro-entérite chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">5. Traitements de la Diarrhée et de la Gastro-entérite chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes de la Diarrhée et de la Gastro-entérite chez l'Adulte</h2></div><div class="info-text"><p><p>Les causes de la diarrhée et de la gastro-entérite sont diverses, allant des infections virales ou bactériennes aux facteurs alimentaires et environnementaux.</p><h4><strong>Causes infectieuses</strong> :</h4><ul>
+<li><strong>Virus</strong> : Les virus comme le <strong>norovirus</strong> et le <strong>rotavirus</strong> sont les principales causes de gastro-entérite virale.</li>
+<li><strong>Bactéries</strong> : Des bactéries telles que <strong>Salmonella</strong>, <strong>Escherichia coli</strong> (E. coli), <strong>Campylobacter</strong> et <strong>Shigella</strong> sont des causes fréquentes d'infections gastro-intestinales.</li>
+<li><strong>Parasites</strong> : Des parasites comme <strong>Giardia</strong> peuvent également provoquer des symptômes similaires.</li>
+</ul><h4><strong>Causes non infectieuses</strong> :</h4><ul>
+<li><strong>Intolérances alimentaires</strong> : Par exemple, l'intolérance au lactose ou au gluten peut causer de la diarrhée et des douleurs abdominales.</li>
+<li><strong>Médicaments</strong> : Certains médicaments, comme les antibiotiques, peuvent perturber la flore intestinale et entraîner des épisodes de diarrhée.</li>
+<li><strong>Maladies inflammatoires</strong> : Des conditions comme la <strong>maladie de Crohn</strong> ou la <strong>rectocolite hémorragique</strong> peuvent provoquer des épisodes récurrents de diarrhée et d'inflammation intestinale.</li>
+<li><strong>Stress et anxiété</strong> : Ces facteurs peuvent entraîner des symptômes gastro-intestinaux fonctionnels, y compris la diarrhée.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes de la Diarrhée et de la Gastro-entérite chez l'Adulte</h2></div><div class="info-text"><p><p>Les symptômes varient en fonction de la cause sous-jacente, mais les symptômes communs incluent :</p><h4><strong>Symptômes gastro-intestinaux</strong> :</h4><ul>
+<li>Diarrhée (fréquente et liquide)</li>
+<li>Douleurs ou crampes abdominales</li>
+<li>Ballonnements et gaz</li>
+<li>Nausées et vomissements</li>
+<li>Sensation de ventre distendu</li>
+</ul><h4><strong>Symptômes systémiques</strong> :</h4><ul>
+<li>Fièvre modérée (souvent dans les infections bactériennes)</li>
+<li>Fatigue et faiblesse</li>
+<li>Perte d’appétit</li>
+<li>Déshydratation (bouche sèche, urine foncée, faiblesse)</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic de la Diarrhée et de la Gastro-entérite chez l'Adulte</h2></div><div class="info-text"><p><p>Le diagnostic des diarrhées et de la gastro-entérite repose sur un entretien clinique, des tests de laboratoire et, si nécessaire, une analyse des selles pour identifier les agents pathogènes responsables.</p><h4><strong>Méthodes diagnostiques</strong> :</h4><ul>
+<li><strong>Entretien clinique</strong> : Le médecin interrogera le patient sur la durée des symptômes, leur évolution, les facteurs déclenchants et les antécédents médicaux.</li>
+<li><strong>Analyse des selles</strong> : En cas de diarrhée persistante ou sévère, un test des selles peut être effectué pour détecter la présence de bactéries, de virus ou de parasites.</li>
+<li><strong>Tests sanguins</strong> : Dans certains cas, des analyses sanguines peuvent être nécessaires pour évaluer la déshydratation et rechercher des signes d’infection.</li>
+<li><strong>Examen de l’abdomen</strong> : Un examen physique peut être réalisé pour évaluer la douleur abdominale, la présence de ballonnements ou de signes d’inflammation.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements de la Diarrhée et de la Gastro-entérite chez l'Adulte</h2></div><div class="info-text"><p><p>Le traitement dépend de la cause de la diarrhée et de la gastro-entérite. La plupart des cas sont bénins et peuvent être gérés à domicile, mais certains cas nécessitent une prise en charge médicale.</p><h4><strong>1. Traitement de la déshydratation</strong> :</h4><ul>
+<li><strong>Réhydratation orale</strong> : L'objectif principal est de prévenir ou traiter la déshydratation. Les solutions de réhydratation orale (SRO) ou des boissons isotoniques sont essentielles pour remplacer les fluides et électrolytes perdus.</li>
+<li><strong>Hydratation régulière</strong> : Il est important de boire beaucoup d'eau et de petites quantités de liquide fréquemment.</li>
+</ul><h4><strong>2. Médicaments</strong> :</h4><ul>
+<li><strong>Antidiarrhéiques</strong> : Les médicaments comme le <strong>lopéramide</strong> peuvent être utilisés pour ralentir la diarrhée, mais ils ne sont pas toujours recommandés en cas d’infection bactérienne ou parasitaire.</li>
+<li><strong>Antibiotiques</strong> : Si l'infection est bactérienne, des antibiotiques peuvent être nécessaires, mais ils ne sont pas efficaces contre les infections virales.</li>
+<li><strong>Probiotiques</strong> : L'utilisation de probiotiques peut aider à restaurer la flore intestinale et réduire la durée des symptômes.</li>
+</ul><h4><strong>3. Traitements pour les infections virales ou parasitaires</strong> :</h4><ul>
+<li><strong>Repos et diète légère</strong> : Manger des aliments faciles à digérer et éviter les produits irritants pour l'estomac (café, aliments gras, épices).</li>
+<li><strong>Antiviraux ou antiparasitaires</strong> : Dans les cas graves ou complexes, un traitement antiviral ou antiparasitaire peut être prescrit.</li>
+</ul><h4><strong>4. Suivi médical</strong> :</h4><p>En cas de symptômes graves (diarrhée persistante, forte fièvre, signes de déshydratation sévère), il est essentiel de consulter un professionnel de santé pour un diagnostic précis et un traitement adapté.</p><h4><strong>Prise en charge à distance via WIC-DOCTOR</strong> :</h4><p>Le <strong>portail WIC-DOCTOR</strong> offre des consultations à distance avec des médecins généralistes et des gastro-entérologues pour évaluer les symptômes, poser un diagnostic et fournir des recommandations sur le traitement et la gestion de la diarrhée et de la gastro-entérite.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> facilite l’accès à des professionnels de santé qualifiés pour la gestion des affections gastro-intestinales, avec des consultations en ligne et des conseils adaptés à votre situation.</p><h4><strong>1. Gastro-entérologues</strong> :</h4><p>Les gastro-entérologues sont spécialisés dans le diagnostic et le traitement des troubles digestifs et peuvent offrir des conseils détaillés sur la gestion de la diarrhée et des infections gastro-intestinales.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Diagnostiquer les causes des symptômes.</li>
+<li>Fournir des traitements spécifiques, y compris des médicaments contre les infections bactériennes et virales.</li>
+<li>Gérer les complications liées aux troubles digestifs chroniques.</li>
+</ul><h4><strong>2. Médecins généralistes</strong> :</h4><p>Les médecins généralistes sont souvent le premier point de contact pour les patients souffrant de diarrhée et de gastro-entérite.</p><ul>
+<li><strong>Services</strong> :</li>
+<li>Diagnostiquer et traiter les infections courantes.</li>
+<li>Prescrire des médicaments et conseiller sur la réhydratation.</li>
+<li>Orienter vers des spécialistes si nécessaire.</li>
+</ul><h4><strong>3. Prise en charge en ligne</strong> :</h4><p>Grâce à WIC-DOCTOR, vous pouvez bénéficier de consultations thérapeutiques à distance pour obtenir un suivi médical en temps réel.</p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+						
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="../trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p  class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+					
+				
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a href="../Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

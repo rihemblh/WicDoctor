@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<div class="header-main">
+
+
+
+		<!--Header Search-->
+		<header class="header-search border-bottom p-2 bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<div class="header-search-logo d-none d-lg-block">
+							<div class="desktoplogo">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+							<div class="desktoplogo-1">
+								<a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+										alt="WIC DOCTOR"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-12 header-support">
+						<ul class="hor-support float-end header-padding-contact">
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-phone"></i>
+									<div class="support-text">
+																				<p class="contact-index">+216 26 311 777  /  +33 743 13 00 13</p>
+
+										<p>Disponible 24/7 </p>
+									</div>
+								</a>
+							</li>
+							<li class="support-header">
+								<a href="javascript:void(0);">
+									<i class="fa fa-envelope"></i>
+									<div class="support-text">
+										<p class="contact-index">wic-doctor@way-interactive-convergence.com</p>
+										<p>Pour toutes vos questions</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/Header Search-->
+
+		<!-- Horizontal Header -->
+		<div class="horizontal-header clearfix">
+			<div class="container">
+				<a class="animated-arrow" id="horizontal-navtoggle"><span></span></a>
+				<span class="smllogo-white"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png"
+							width="80" alt="img"></a></span>
+				<span class="smllogo"><a href="https://wic-doctor.com/"><img src="../assets/images/brand/logo-dr-wic.png" width="50"
+							alt="img"></a></span>
+			
+						<a href="https://wic-doctor.com/inscription-professionnel/" class="callusbtn profissionel-mob">Vous êtes un
+							professionnel?</a>
+					
+			</div>
+		</div>
+		<!-- /Horizontal Header -->
+
+		<!-- Horizontal Menu -->
+		<div class="sticky">
+			<div class="header-style horizontal-main clearfix">
+				<div class="horizontal-mainwrapper container clearfix">
+					<nav class="horizontalMenu clearfix d-md-flex">
+						<ul class="horizontalMenu-list">
+							<!-- <li aria-haspopup="true">
+								<a class="active" href="https://wic-doctor.com/">Accueil </a>
+
+							</li>
+							<li aria-haspopup="true">
+								<a href="qui-sommes-nous.html">À propos</a>
+							</li> -->
+							<li aria-haspopup="true">
+								<a href="../trouver-un-medecin.html">Trouvez un médecin</a>
+							</li>
+							<li aria-haspopup="true">
+								<a href="../trouver-une-clinique.html">Trouvez une clinique</a>
+							</li>
+						
+							<li aria-haspopup="true">
+								<a href="../contact.html">Contactez-nous </a>
+							</li>
+							<li aria-haspopup="true">
+								
+							</li>
+							
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="mb-0 d-flex align-items-center ms-auto">
+							<li class="me-3" id="SeConnecter">
+								<span>
+									<a href="../login.html" class="btn btn-primary btn-block mb-lg-0">Se Connecter</a>
+								</span>
+							</li>
+							<li class="me-3" id="B2B">
+								<span>
+									<a href="https://wic-doctor.com/inscription-professionnel/" class="btn btn-danger btn-block mb-lg-0">Vous êtes un
+										professionnel?</a>
+								</span>
+								
+							</li>
+						
+							  <!-- Avatar with User Initial and Dropdown Menu -->
+							  <li class="nav-item dropdown d-flex align-items-center" id="Login" >
+								<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+									<li><a class="dropdown-item" href="../profil.html">Mon Profil</a></li>
+									<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+								</ul>
+							</li>
+						
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- /Horizontal Menu -->
+
+	</div>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Diagnostic et Prise en Charge du Burn-out : Comprendre, Diagnostiquer et Traiter l'Épuisement Professionnel</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p><p>Le <strong>burn-out</strong>, ou <strong>épuisement professionnel</strong>, est un état de fatigue mentale, émotionnelle et physique intense, souvent causé par un stress professionnel prolongé. Ce phénomène, qui touche de plus en plus de travailleurs, peut avoir un impact profond sur la santé mentale et physique. Grâce à la <strong>télémédecine</strong> de <strong>WIC-DOCTOR</strong>, vous pouvez bénéficier d’une consultation à distance pour évaluer vos symptômes et mettre en place une stratégie de traitement adaptée.</p><hr/></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que le Burn-out ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Symptômes du Burn-out<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Facteurs de Risque du Burn-out<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic du Burn-out<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements du Burn-out<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('H')"><button class="alphabet-button">Hashtags:<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que le Burn-out ?</h2></div><div class="info-text"><p><p>Le <strong>burn-out</strong> est un état d'épuisement extrême qui résulte généralement d'un stress professionnel chronique, combiné à une pression constante au travail. Il se manifeste par une sensation d'épuisement émotionnel, de déconnexion de son environnement de travail, et un sentiment de manque d’accomplissement personnel.</p><h4><strong>Causes principales du burn-out :</strong></h4><ul>
+<li><strong>Surcharge de travail</strong> : Des horaires excessifs et des attentes de performance irréalistes.</li>
+<li><strong>Manque de reconnaissance</strong> : Absence de feedback positif, ou incapacité à voir les résultats de son travail.</li>
+<li><strong>Stress constant</strong> : L’exposition prolongée à des situations stressantes sans répit.</li>
+<li><strong>Manque de soutien</strong> : L'isolement au travail et le manque de soutien de la part des collègues ou des supérieurs.</li>
+<li><strong>Conflits au travail</strong> : Les conflits non résolus ou les relations tendues avec les collègues ou la direction.</li>
+<li><strong>Manque de contrôle sur son travail</strong> : Absence de pouvoir sur les décisions importantes ou les processus de travail.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Symptômes du Burn-out</h2></div><div class="info-text"><p><p>Les symptômes du <strong>burn-out</strong> varient d'une personne à l'autre, mais incluent généralement un mélange de symptômes physiques, émotionnels et comportementaux. Ces signes peuvent évoluer progressivement, mais s'aggraver rapidement si le problème n'est pas traité.</p><h4><strong>Symptômes émotionnels et mentaux</strong> :</h4><ul>
+<li><strong>Fatigue extrême</strong> : Un épuisement constant qui ne disparaît pas, même après une période de repos.</li>
+<li><strong>Perte de motivation</strong> : Une incapacité à se sentir intéressé ou engagé dans son travail.</li>
+<li><strong>Détachement émotionnel</strong> : Sentiment de déconnexion par rapport aux collègues et à ses responsabilités professionnelles.</li>
+<li><strong>Sentiment d'incompétence</strong> : Doutes constants sur ses capacités et ses performances professionnelles.</li>
+<li><strong>Anxiété ou dépression</strong> : Un sentiment constant de nervosité, de tristesse, de désespoir ou de peur.</li>
+</ul><h4><strong>Symptômes physiques</strong> :</h4><ul>
+<li><strong>Troubles du sommeil</strong> : Insomnie ou sommeil de mauvaise qualité, même après de longues heures de repos.</li>
+<li><strong>Problèmes digestifs</strong> : Maux d'estomac, constipation ou diarrhée dus au stress.</li>
+<li><strong>Maux de tête fréquents</strong> : Des douleurs persistantes dues à l'anxiété et à la tension.</li>
+<li><strong>Tension musculaire</strong> : Muscles contractés, notamment dans le cou et les épaules.</li>
+</ul><h4><strong>Symptômes comportementaux</strong> :</h4><ul>
+<li><strong>Baisse de performance</strong> : Difficulté à accomplir des tâches simples ou à se concentrer sur son travail.</li>
+<li><strong>Retrait social</strong> : Éviter les interactions sociales et préférer l'isolement.</li>
+<li><strong>Augmentation des absences au travail</strong> : En raison de l'incapacité à se lever ou à travailler.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Facteurs de Risque du Burn-out</h2></div><div class="info-text"><p><p>Plusieurs facteurs peuvent rendre une personne plus susceptible de développer un <strong>burn-out</strong>. Ces facteurs incluent des éléments personnels et professionnels qui interagissent souvent entre eux.</p><h4><strong>Facteurs de risque du burn-out</strong> :</h4><ul>
+<li><strong>Charge de travail excessive</strong> : Les employés avec une charge de travail trop lourde sont plus vulnérables au burn-out.</li>
+<li><strong>Manque de contrôle</strong> : La difficulté à prendre des décisions ou à influencer son environnement de travail peut engendrer du stress.</li>
+<li><strong>Manque de reconnaissance</strong> : L'absence de validation de son travail ou de soutien de la part des collègues ou de la hiérarchie peut mener à l'épuisement.</li>
+<li><strong>Pression professionnelle</strong> : Les attentes irréalistes et l'absence de limites claires entre la vie personnelle et professionnelle augmentent le risque.</li>
+<li><strong>Personnalité perfectionniste</strong> : Les personnes ayant des attentes très élevées envers elles-mêmes sont plus susceptibles de s'épuiser.</li>
+<li><strong>Manque de soutien social</strong> : L'isolement au travail ou la présence d'un environnement de travail toxique peuvent aggraver la situation.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic du Burn-out</h2></div><div class="info-text"><p><p>Le diagnostic du <strong>burn-out</strong> repose principalement sur les symptômes cliniques observés par le patient et rapportés lors des consultations. Cependant, une évaluation approfondie peut inclure des tests spécifiques pour exclure d'autres affections qui pourraient présenter des symptômes similaires, comme la dépression ou les troubles anxieux.</p><h4><strong>Méthodes diagnostiques</strong> :</h4><ul>
+<li><strong>Entretien clinique</strong> : Un échange approfondi avec un professionnel de la santé pour évaluer les symptômes, la durée et les facteurs déclencheurs.</li>
+<li><strong>Questionnaires et auto-évaluation</strong> : Des outils comme le <strong>Maslach Burnout Inventory (MBI)</strong> ou des questionnaires spécifiques peuvent aider à mesurer la sévérité du burn-out.</li>
+<li><strong>Évaluation de la santé mentale</strong> : Un professionnel de la santé pourra également évaluer des signes de dépression, d'anxiété ou d'autres troubles.</li>
+<li><strong>Examens médicaux</strong> : Pour éliminer des causes physiques sous-jacentes telles que des troubles hormonaux ou des maladies chroniques.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements du Burn-out</h2></div><div class="info-text"><p><p>Le traitement du <strong>burn-out</strong> repose sur plusieurs axes qui visent à réduire le stress, à restaurer l’équilibre émotionnel et à prévenir une rechute.</p><h4><strong>Traitements pour le burn-out :</strong></h4><ul>
+<li><strong>Psychothérapie</strong> :</li>
+<li><strong>Thérapie cognitive-comportementale (TCC)</strong> : Une approche qui aide à modifier les pensées négatives et à développer des mécanismes de gestion du stress.</li>
+<li>
+<p><strong>Thérapie de relaxation et gestion du stress</strong> : Techniques de relaxation, yoga, méditation ou pleine conscience pour apaiser l’esprit et le corps.</p>
+</li>
+<li>
+<p><strong>Ajustement de la charge de travail</strong> :</p>
+</li>
+<li><strong>Réduction de la pression professionnelle</strong> : Discuter avec un supérieur pour alléger la charge de travail ou réorganiser les tâches.</li>
+<li>
+<p><strong>Aménagement des horaires</strong> : Permettre plus de flexibilité pour mieux gérer le stress et favoriser un meilleur équilibre travail-vie personnelle.</p>
+</li>
+<li>
+<p><strong>Support social et soutien professionnel</strong> :</p>
+</li>
+<li><strong>Soutien de la part de la famille et des amis</strong> : Avoir un réseau de soutien personnel est essentiel pour la récupération.</li>
+<li>
+<p><strong>Soutien en entreprise</strong> : Des discussions avec les supérieurs ou les ressources humaines pour améliorer l’environnement de travail et la reconnaissance.</p>
+</li>
+<li>
+<p><strong>Médicaments</strong> :</p>
+</li>
+<li>
+<p><strong>Antidépresseurs ou anxiolytiques</strong> : Dans certains cas, des médicaments peuvent être prescrits pour traiter des symptômes de dépression ou d’anxiété graves liés au burn-out.</p>
+</li>
+<li>
+<p><strong>Repos et récupération</strong> :</p>
+</li>
+<li><strong>Prise de congé ou de pause prolongée</strong> : Il peut être nécessaire de prendre un congé pour se ressourcer, se reposer et récupérer.</li>
+<li><strong>Changement d’environnement</strong> : Un environnement calme et apaisant peut faciliter la guérison et réduire le stress.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins selon WIC-DOCTOR</h2></div><div class="info-text"><p><p><strong>WIC-DOCTOR</strong> propose des consultations en <strong>télémédecine</strong> adaptées au traitement du <strong>burn-out</strong>. Vous pouvez consulter des <strong>médecins généralistes</strong> pour un premier diagnostic, ou des <strong>psychologues</strong> et <strong>psychiatres</strong> pour un suivi thérapeutique spécialisé.</p><h4><strong>1. Médecins généralistes</strong> :</h4><p>Les <strong>médecins généralistes</strong> sont les premiers interlocuteurs pour discuter des symptômes de fatigue et de stress au travail.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations en ligne</strong> pour discuter des symptômes de stress et de fatigue chronique.</li>
+<li><strong>Références pour des spécialistes</strong> : Si nécessaire, un médecin généraliste peut orienter le patient vers un thérapeute ou un psychiatre.</li>
+</ul><h4><strong>2. Psychologues et Psychothérapeutes</strong> :</h4><p>Les <strong>psychologues</strong> sont spécialisés dans la gestion des émotions et du stress, et peuvent accompagner un patient en burn-out pour restaurer son équilibre mental.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Thérapies cognitivo-comportementales (TCC)</strong> pour aider à gérer les pensées négatives.</li>
+<li><strong>Accompagnement émotionnel</strong> pour traiter les causes profondes du stress et du burn-out.</li>
+</ul><h4><strong>3. Psychiatrie</strong> :</h4><p>En cas de symptômes graves, comme la dépression ou l'anxiété sévère, un <strong>psychiatre</strong> peut proposer des traitements médicamenteux adaptés.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Évaluation psychiatrique</strong> pour déterminer si des médicaments sont nécessaires.</li>
+<li><strong>Suivi à long terme</strong> pour éviter les rechutes.</li>
+</ul><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>Le <strong>burn-out</strong> est un phénomène de plus en plus répandu, mais il peut être géré efficacement avec un traitement approprié. Grâce à <strong>WIC-DOCTOR</strong>, vous pouvez bénéficier d'une <strong>consultation à distance</strong>, d'un suivi personnalisé et d'une prise en charge globale pour retrouver un équilibre professionnel et personnel.</p><hr/></p></div></div></div><div class="container section-H" id="H"><div class="info-section"><div class="section-title center-block text-center"><h2>Hashtags:</h2></div><div class="info-text"><p><ul>
+<li><strong>#BurnOut</strong></li>
+<li>**#É</li>
+</ul><p>puisementProfessionnel<strong>
+- </strong>#StressAuTravail<strong>
+- </strong>#TélémédecineBurnOut<strong>
+- </strong>#SuiviPsychologique<strong>
+- </strong>#SantéMentale<strong>
+- </strong>#GestionDuStress<strong>
+- </strong>#SantéPsychologique**</p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+						
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="../trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p  class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+					
+				
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a href="../Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>
