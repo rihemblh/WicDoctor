@@ -140,14 +140,21 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
     // Gather form data
     const email = this.email.value;
+  
     const password = this.password.value;
     const contactField = document.getElementById('email');
     const value = contactField.value.trim();
 console.log("email: ",email,"password : ",password)
  // Vérifie si l'entrée ressemble à un numéro de téléphone (+ ou chiffres uniquement)
  console.log("/^[+0-9]/.test(value) && contactField.type === 'email': ",contactField.type === 'email')
+ let objauth
  if (/^[+0-9]/.test(value)) { 
+    objauth=Object.assign({password:password},{phone_number:email})
     validatePhoneNumber()
+ }
+ else{
+    objauth=Object.assign({password:password},{email:email})
+
  }
     // Validate form data
     if (!email || !password) {
