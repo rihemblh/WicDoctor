@@ -706,7 +706,6 @@
 			span.textContent = "...";
 			return span;
 		}
-
 		const paginationContainer = document.getElementById("pagination");
 		paginationContainer.innerHTML = ""; // Réinitialiser le contenu
 
@@ -766,19 +765,20 @@
 			}
 			return name; // Retourne false si ce n'est pas un JSON valide
 		}
-		function getDoctorSpec(name) {
-			console.log("*************************************************: ", name,typeof name === 'string')
-			if (typeof name === 'string') {
-				return name; // Retourne false si ce n'est pas un JSON valide
+		function getDoctorSpec(name1,name2) {
+			console.log("*************************************************: ", name1,name2)
+			console.log("!name1: ",!name1)
+			if (!name1) {
+				return name2; // Retourne false si ce n'est pas un JSON valide
 
 			}
 			// Vérifiez si `name` est une chaîne JSON
-			else if (JSON.stringify(name).trim().startsWith('[') && JSON.stringify(name).trim().endsWith(']')) {
+			else if (JSON.stringify(name1).trim().startsWith('[') && JSON.stringify(name1).trim().endsWith(']')) {
 				console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame")
 				try {
 					
-					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name[0].name).fr)
-					return JSON.parse(name[0].name).fr; // Vérifiez si la clé 'fr' existe
+					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name1[0].name).fr)
+					return JSON.parse(name1[0].name).fr; // Vérifiez si la clé 'fr' existe
 				} catch (error) {
 					console.error("Erreur lors du parsing :", error);
 				}
