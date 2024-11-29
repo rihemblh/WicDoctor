@@ -33,7 +33,8 @@
 
 	<!--Icons  Css -->
 	<link href="assets/css/icons.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="./assets/css/intlTelInput.min.css">
+	<script src="./assets/js/intlTelInput.min.js"></script>
 </head>
 
 <body>
@@ -301,8 +302,10 @@
 							<hr class="divider">
 							<form id="loginForm" class="card-body" tabindex="500">
 								<div class="mail">
-									<input  name="mail" id="email">
+									<input type="email" name="mail" id="email">
 									<label>Adresse mail / Téléphonne</label>
+									<!-- Zone d'affichage du message d'erreur -->
+									<div class="error-message" id="error-phone" style="display: none; color: red;">Numéro de téléphone invalide pour le pays sélectionné </div>
 								</div>
 								<div class="passwd">
 									<input type="password" name="password" id="password">

@@ -39,7 +39,7 @@ document.getElementById("DoctorsDetails").innerHTML = document.getElementById("D
 											<h4 class="mt-3 mb-1 font-weight-bold">${JSON.parse(Detailsdoctors.name).fr} <i
 													class="ion-checkmark-circled  text-success fs-14 ms-1"></i></h4>
 										</a>
-										<span class="text-gray">${JSON.parse(JSON.parse(Detailsdoctors.specialities)[0].name).fr}</span><br>
+										<span class="text-gray">${JSON.parse(Detailsdoctors.specialities)[0].name.fr}</span><br>
 
 										<span class="text-muted">Membre depuis ${year} </span><br>
 										<div class="rating-stars d-inline-flex mb-2 me-3">
