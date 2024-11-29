@@ -766,19 +766,19 @@
 			}
 			return name; // Retourne false si ce n'est pas un JSON valide
 		}
-		function getDoctorSpec(name) {
+		function getDoctorSpec(name1,name2) {
 			console.log("*************************************************: ", name,typeof name === 'string')
-			if (typeof name === 'string') {
-				return name; // Retourne false si ce n'est pas un JSON valide
+			if (!name1) {
+				return name2; // Retourne false si ce n'est pas un JSON valide
 
 			}
 			// Vérifiez si `name` est une chaîne JSON
-			else if (JSON.stringify(name).trim().startsWith('[') && JSON.stringify(name).trim().endsWith(']')) {
+			else if (JSON.stringify(name1).trim().startsWith('[') && JSON.stringify(name1).trim().endsWith(']')) {
 				console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame")
 				try {
 					
-					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name[0].name).fr)
-					return JSON.parse(name[0].name).fr; // Vérifiez si la clé 'fr' existe
+					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name1[0].name1).fr)
+					return JSON.parse(name1[0].name1).fr; // Vérifiez si la clé 'fr' existe
 				} catch (error) {
 					console.error("Erreur lors du parsing :", error);
 				}
@@ -794,7 +794,7 @@
 				console.log("doctor to show: ", doctor)
 				const photo = doctor.doctor_photo || "doctor.png";
 				const name = getDoctorName(doctor.name);
-				const speciality = getDoctorSpec(doctor.specialities);
+				const speciality = getDoctorSpec(doctor.specialities,doctor.specialites);
 				const city = getDoctorName(doctor.ville);
 				const phone = doctor.phone_number || "Non spécifié";
 

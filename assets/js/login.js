@@ -111,7 +111,7 @@ console.log("value: ",value)
 
         // Initialiser l'instance intl-tel-input
         itiInstance = intlTelInput(contactField, {
-            initialCountry: 'auto',
+            initialCountry: 'tn',
             geoIpLookup: (callback) => {
                 fetch("https://ipinfo.io")
                 .then((response) => response.json())
@@ -120,13 +120,23 @@ console.log("value: ",value)
             },
             utilsScript: "./utils.js", // Remplacez `path/to/` par le chemin correct vers votre fichier utils.js
             loadUtilsOnInit: true, // Nouvelle méthode pour charger les utilitaires
+
                     });
+                    contactField.value = "+216";
+                      // Mettre à jour la valeur du champ quand le pays change
+     contactField.addEventListener("countrychange", function () {
+        const dialCode = itiInstance.getSelectedCountryData().dialCode;
+        contactField.value = `+${dialCode} `;
+    });
+
     }
     if (contactField.value.trim() === '' && itiInstance) {
         contactField.type = 'email';
+        
         itiInstance.destroy(); // Supprime l'instance ITI
         itiInstance = null;
     }
+   
 });
 
 // Optionnel : Réinitialiser le champ si l'utilisateur supprime tout

@@ -1,6 +1,6 @@
 // Ensure you include this script at the bottom of your HTML file
 let valid
-console.log("phoneInputField: ",phoneInputField)
+console.log("phoneInputField: ", phoneInputField)
 document.getElementById('Register').addEventListener('submit', async function (event) {
     event.preventDefault(); // Prevent the default form submission
 
@@ -11,7 +11,7 @@ document.getElementById('Register').addEventListener('submit', async function (e
     const phone = this.tel.value;
     const email = this.mail.value;
 
-console.log("JSON.stringify({ name,lastname, email, phone }: ",JSON.stringify({ name,lastname, email, phone }))
+    console.log("JSON.stringify({ name,lastname, email, phone }: ", JSON.stringify({ name, lastname, email, phone }))
     try {
         // Send POST request to the API
         const response = await fetch('https://wic-doctor.com:3004/api/logup', {
@@ -19,11 +19,11 @@ console.log("JSON.stringify({ name,lastname, email, phone }: ",JSON.stringify({ 
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ name,lastname, email, phone }),
+            body: JSON.stringify({ name, lastname, email, phone }),
         });
 
         const data = response;
-        console.log("reponse:",data);
+        console.log("reponse:", data);
         if (response.ok) {
             alert(data.message || 'Inscription réussie! Vérifiez votre email pour confirmer.');
             window.location.href = 'index.html'; // Redirect to index.html
@@ -33,24 +33,30 @@ console.log("JSON.stringify({ name,lastname, email, phone }: ",JSON.stringify({ 
         alert('Une erreur est survenue. Veuillez réessayer.');
     }
 });
- var iti
+var iti
 var phoneInputField
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var phoneInput = document.querySelector("#phone");
     phoneInputField = document.getElementById("phone");
-    console.log("phoneInput: ",phoneInput,"phoneInputField: ",phoneInputField)
-     iti = window.intlTelInput(phoneInputField, {
-        initialCountry: "auto", // Le pays initial sera déterminé automatiquement selon la position de l'utilisateur
-        geoIpLookup: function(callback) {
+    console.log("phoneInput: ", phoneInput, "phoneInputField: ", phoneInputField)
+    iti = window.intlTelInput(phoneInputField, {
+        initialCountry: "tn", // Le pays initial sera déterminé automatiquement selon la position de l'utilisateur
+        geoIpLookup: function (callback) {
             fetch("https://ipinfo.io")
                 .then(response => response.json())
                 .then(data => callback(data.country))
-                .catch(() => callback("us")); // Si la géolocalisation échoue, utiliser "US" comme valeur par défaut
+                .catch(() => callback("tn")); // Si la géolocalisation échoue, utiliser "US" comme valeur par défaut
         },
         utilsScript: "./utils.js", // Remplacez `path/to/` par le chemin correct vers votre fichier utils.js
         loadUtilsOnInit: true, // Nouvelle méthode pour charger les utilitaires
 
 
+    });
+    phoneInputField.value = "+216";
+    // Mettre à jour la valeur du champ quand le pays change
+    phoneInputField.addEventListener("countrychange", function () {
+        const dialCode = itiInstance.getSelectedCountryData().dialCode;
+        contactField.value = `+${dialCode} `;
     });
 });
 // Affiche une erreur visuelle
@@ -158,33 +164,33 @@ function validatePhoneNumber() {
     const phoneNumber = phoneInputField = document.getElementById("phone").value;
 
     const isValid = iti.isValidNumber();
-     selectedCountryData = iti.getSelectedCountryData();
+    selectedCountryData = iti.getSelectedCountryData();
 
     console.log("Numéro complet :", phoneNumber || "Vide");
     console.log("Est valide :", isValid);
     console.log("Pays sélectionné :", JSON.stringify(selectedCountryData));
 
     selectedCountryData = addValidLengthToCountry(selectedCountryData);
-        // Vérifier si la longueur du numéro est correcte après l'indicatif pays
-        const phoneWithoutCode = phoneNumber.replace(`+${selectedCountryData.dialCode}`, '').replace(' ', '').trim();
-        
-        if (phoneWithoutCode.length === selectedCountryData.validLength) {
-            console.log("valid: ",phoneWithoutCode.length === selectedCountryData.validLength)
-            valid = true;
-        }
-        else {
-            valid = false
-        }
-        if (!valid) {
-            console.log('valid: ',valid)
-           document.getElementById("error-phone").style.display="block"
-            return false;
-        }
-        else{
-            document.getElementById("error-phone").style.display="none"
-            return true;
+    // Vérifier si la longueur du numéro est correcte après l'indicatif pays
+    const phoneWithoutCode = phoneNumber.replace(`+${selectedCountryData.dialCode}`, '').replace(' ', '').trim();
 
-        }
+    if (phoneWithoutCode.length === selectedCountryData.validLength) {
+        console.log("valid: ", phoneWithoutCode.length === selectedCountryData.validLength)
+        valid = true;
+    }
+    else {
+        valid = false
+    }
+    if (!valid) {
+        console.log('valid: ', valid)
+        document.getElementById("error-phone").style.display = "block"
+        return false;
+    }
+    else {
+        document.getElementById("error-phone").style.display = "none"
+        return true;
+
+    }
 
 
 }
@@ -193,7 +199,7 @@ function validatePhoneNumber() {
 
 // Ajouter un écouteur à la soumission du formulaire
 
-document.getElementById('Register').addEventListener('submit', function(event) {
+document.getElementById('Register').addEventListener('submit', function (event) {
     // Récupérer les champs de saisie
     const name = document.querySelector('input[name="name"]');
     const lastname = document.querySelector('input[name="lastname"]');
@@ -204,55 +210,55 @@ document.getElementById('Register').addEventListener('submit', function(event) {
     // Validation du nom
     if (name.value.trim() === "" || name.value.length < 2 || name.value.length > 50) {
         event.preventDefault();  // Empêche la soumission du formulaire
-        alert ('Nom est obligatoire')
-        ;
+        alert('Nom est obligatoire')
+            ;
         return;
     }
-    
+
     if (!validatePhoneNumber()) {
         event.preventDefault();  // Empêche la soumission du formulaire
         //alert("Le formulaire a été soumis avec succès !");
         // Envoyer le formulaire ou exécuter une autre action ici
     }
-     // Validation du nom
-     if (lastname.value.trim() === "" || lastname.value.length < 2 || lastname.value.length > 50) {
+    // Validation du nom
+    if (lastname.value.trim() === "" || lastname.value.length < 2 || lastname.value.length > 50) {
         event.preventDefault();  // Empêche la soumission du formulaire
-        alert ('Prénom est obligatoire')
+        alert('Prénom est obligatoire')
 
         return;
     }
     //validation tel+email
     if (tel.value.trim() === "" && mail.value.trim() === "") {
         event.preventDefault();  // Empêche la soumission du formulaire
-        alert ('Email ou Téléphone obligatoire')
+        alert('Email ou Téléphone obligatoire')
         return;
     }
 
- // validation password
-/*   if (password.value.trim() === "" || password.value.length < 8) {
-        event.preventDefault();  // Empêche la soumission du formulaire
-        showPopupnom();
-        showPopupnom();
-        return;
-    }*/
+    // validation password
+    /*   if (password.value.trim() === "" || password.value.length < 8) {
+            event.preventDefault();  // Empêche la soumission du formulaire
+            showPopupnom();
+            showPopupnom();
+            return;
+        }*/
 
 
     // Validation de l'email
     const mailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
- /*   if (!mailPattern.test(mail.value)) {
+    /*   if (!mailPattern.test(mail.value)) {
+   
+          
+          
+           event.preventDefault();
+           showPopupmail();
+           showPopupmail();
+           return;
+       }*/
 
-       
-       
-        event.preventDefault();
-        showPopupmail();
-        showPopupmail();
-        return;
-    }*/
 
 
- 
-}); 
+});
 function showPopupnom() {
     document.getElementById('popupnom').style.display = 'flex';
 }
