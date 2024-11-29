@@ -768,6 +768,10 @@
 		}
 		function getDoctorSpec(name) {
 			console.log("*************************************************: ", name)
+			if (typeof name === 'string') {
+				return name; // Retourne false si ce n'est pas un JSON valide
+
+			}
 			// Vérifiez si `name` est une chaîne JSON
 			if (JSON.stringify(name).trim().startsWith('[') && JSON.stringify(name).trim().endsWith(']')) {
 				console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame")
@@ -779,7 +783,6 @@
 					console.error("Erreur lors du parsing :", error);
 				}
 			}
-			return name; // Retourne false si ce n'est pas un JSON valide
 		}
 
 		// Fonction pour afficher les médecins
