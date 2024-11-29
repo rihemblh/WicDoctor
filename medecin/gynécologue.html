@@ -766,24 +766,26 @@
 			}
 			return name; // Retourne false si ce n'est pas un JSON valide
 		}
-		function getDoctorSpec(name) {
-			console.log("*************************************************: ", name,typeof name === 'string')
-			if (typeof name === 'string') {
-				return name; // Retourne false si ce n'est pas un JSON valide
+		function getDoctorSpec(name1,name2) {
+			console.log("*************************************************: ", name1,name2)
+			console.log("!name1: ",!name1)
+			if (!name1) {
+				return name2; // Retourne false si ce n'est pas un JSON valide
 
 			}
 			// Vérifiez si `name` est une chaîne JSON
-			else if (JSON.stringify(name).trim().startsWith('[') && JSON.stringify(name).trim().endsWith(']')) {
+			else if (JSON.stringify(name1).trim().startsWith('[') && JSON.stringify(name1).trim().endsWith(']')) {
 				console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame")
 				try {
 					
-					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name[0].name).fr)
-					return JSON.parse(name[0].name).fr; // Vérifiez si la clé 'fr' existe
+					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name1[0].name).fr)
+					return JSON.parse(name1[0].name).fr; // Vérifiez si la clé 'fr' existe
 				} catch (error) {
 					console.error("Erreur lors du parsing :", error);
 				}
 			}
 		}
+
 
 		// Fonction pour afficher les médecins
 		function displayDoctors(doctors) {
@@ -832,13 +834,13 @@
     class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action "     style="${doctor.priority	=== 2 ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
  
 
-    ${doctor.priority === 2 ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+    ${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
     id="teleconsultation">
     <i class="fe fe-eye me-1 d-inline-block"></i>Téléconsultation
 </a>
 																<a href=""  
-																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.priority === 2 ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
-																	${doctor.priority === 2 ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.type === "non-conventionné" ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
+																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
 																	data-bs-toggle="modal"><i
 																		class="fe fe-phone  me-1 d-inline-block"></i>Rendez-vous</a>
 															</div>
