@@ -103,9 +103,9 @@ contactField.addEventListener('input', () => {
     const value = contactField.value.trim();
 console.log("value: ",value)
     // Vérifie si l'entrée ressemble à un numéro de téléphone (+ ou chiffres uniquement)
-    console.log("/^\+|\d/.test(value) && contactField.type === 'email': ",contactField.type === 'email')
-    if (/^\+|\d/.test(value) && contactField.type === 'email') {
-        console.log("/^\+|\d/.test(value) && contactField.type === 'email'")
+    console.log("/^[+0-9]/.test(value)&& contactField.type === 'email': ",contactField.type === 'email')
+    if (/^[+0-9]/.test(value) && contactField.type === 'email') {
+        console.log("/^[+0-9]/.test(value) && contactField.type === 'email'")
         // Convertir le champ en input type="tel"
         contactField.type = 'tel';
 
