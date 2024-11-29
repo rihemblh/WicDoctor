@@ -690,7 +690,7 @@
 				currentPage = page; // Mettre à jour la page actuelle
 				loadDoctors({
 					speciality_id: undefined,
-					ville: "{\"fr\":\"nabeul\"}",
+					ville: "{\"fr\":\"Nabeul\"}",
 					pays: undefined,
 					limit: 10,
 					offset: (page - 1) * 10
@@ -721,7 +721,7 @@
 
 
 		// URL de base pour l'API
-		const apiBaseUrl = "https://wic-doctor.com:3004/doctorsadd?";
+		const apiBaseUrl = "http://localhost:3001/doctorsadd?";
 		const currentPath = "https://wic-doctor.com/";
 		const secretKey = "maCleSecrete"; // Clé secrète pour le décryptage
 		let ListeDoctors = [];
@@ -888,7 +888,7 @@
 		document.addEventListener("DOMContentLoaded", () => {
 			const initialParams = {
 				speciality_id: undefined,
-					ville: "{\"fr\":\"nabeul\"}",
+					ville: "{\"fr\":\"Nabeul\"}",
 					pays: undefined,
 				limit: 10,
 				offset: 0

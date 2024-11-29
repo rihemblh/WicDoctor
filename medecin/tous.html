@@ -766,20 +766,19 @@
 			}
 			return name; // Retourne false si ce n'est pas un JSON valide
 		}
-		function getDoctorSpec(name1,name2) {
-			console.log("*************************************************: ", name1,name2)
-			console.log("!name1: ",!name1)
-			if (!name1) {
-				return name2; // Retourne false si ce n'est pas un JSON valide
+		function getDoctorSpec(name) {
+			console.log("*************************************************: ", name,typeof name === 'string')
+			if (typeof name === 'string') {
+				return name; // Retourne false si ce n'est pas un JSON valide
 
 			}
 			// Vérifiez si `name` est une chaîne JSON
-			else if (JSON.stringify(name1).trim().startsWith('[') && JSON.stringify(name1).trim().endsWith(']')) {
+			else if (JSON.stringify(name).trim().startsWith('[') && JSON.stringify(name).trim().endsWith(']')) {
 				console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame")
 				try {
 					
-					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name1[0].name).fr)
-					return JSON.parse(name1[0].name).fr; // Vérifiez si la clé 'fr' existe
+					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name[0].name).fr)
+					return JSON.parse(name[0].name).fr; // Vérifiez si la clé 'fr' existe
 				} catch (error) {
 					console.error("Erreur lors du parsing :", error);
 				}
@@ -795,7 +794,7 @@
 				console.log("doctor to show: ", doctor)
 				const photo = doctor.doctor_photo || "doctor.png";
 				const name = getDoctorName(doctor.name);
-				const speciality = getDoctorSpec(doctor.specialities,doctor.specialites);
+				const speciality = getDoctorSpec(doctor.specialities);
 				const city = getDoctorName(doctor.ville);
 				const phone = doctor.phone_number || "Non spécifié";
 
@@ -806,14 +805,14 @@
                 <div class="d-md-flex">
                     <div class="item-card9-img">
                         <div class="item-card9-imgs">
-                            <a href="#" ${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`}  id="doctorDetails"></a>
+                            <a href="#" onclick="GetDetailsDoctor('${encryptedData}')" id="doctorDetails"></a>
                             <img alt="img" class="cover-image" src="./../assets/images/media/doctors/${photo}">
                         </div>
                     </div>
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="item-card9">
-                                <a href="#" ${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`}  class="text-dark">
+                                <a href="#" onclick="GetDetailsDoctor('${encryptedData}')" class="text-dark">
                                     <h4 class="font-weight-bold mt-1 mb-1">Dr ${name}</h4>
                                 </a>
                                 <span class="text-muted fs-13 mt-0">
@@ -830,16 +829,16 @@
 															<div class="btn-group w-100">
 																
 																<a href=""  
-    class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action "     style="${doctor.type === "non-conventionné" ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
+    class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action "     style="${doctor.priority	=== 2 ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
  
 
-    ${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+    ${doctor.priority === 2 ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
     id="teleconsultation">
     <i class="fe fe-eye me-1 d-inline-block"></i>Téléconsultation
 </a>
 																<a href=""  
-																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.type === "non-conventionné" ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
-																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.priority === 2 ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
+																	${doctor.priority === 2 ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
 																	data-bs-toggle="modal"><i
 																		class="fe fe-phone  me-1 d-inline-block"></i>Rendez-vous</a>
 															</div>
