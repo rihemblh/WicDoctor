@@ -156,6 +156,7 @@ console.log("email: ",email,"password : ",password)
     objauth=Object.assign({password:password},{email:email})
 
  }
+ 
  console.log("objauth: ",objauth)
     // Validate form data
     if (!email || !password) {
@@ -170,7 +171,7 @@ console.log("email: ",email,"password : ",password)
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ email, password }),
+            body: JSON.stringify(objauth),
         });
 
         const data = await response.json();
