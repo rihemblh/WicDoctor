@@ -145,8 +145,8 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     const value = contactField.value.trim();
 console.log("email: ",email,"password : ",password)
  // Vérifie si l'entrée ressemble à un numéro de téléphone (+ ou chiffres uniquement)
- console.log("/^\+|\d/.test(value) && contactField.type === 'email': ",contactField.type === 'email')
- if (/^\+|\d/.test(value)) { 
+ console.log("/^[+0-9]/.test(value) && contactField.type === 'email': ",contactField.type === 'email')
+ if (/^[+0-9]/.test(value)) { 
     validatePhoneNumber()
  }
     // Validate form data
