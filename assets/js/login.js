@@ -156,6 +156,7 @@ console.log("email: ",email,"password : ",password)
     objauth=Object.assign({password:password},{email:email})
 
  }
+ console.log("objauth: ",objauth)
     // Validate form data
     if (!email || !password) {
         alert('Tous les champs sont requis.');
