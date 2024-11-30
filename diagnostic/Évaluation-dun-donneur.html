@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Évaluation d'un Donneur Vivant de Rein : Indications, Exécution, Contre-indications et Lieux de Soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Indications de l'Évaluation d'un Donneur Vivant de Rein<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Déroulement de l'Évaluation d'un Donneur Vivant de Rein<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Contre-indications de l'Évaluation d'un Donneur Vivant de Rein<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Lieux de Soins et Suivi Après l’Évaluation d'un Donneur Vivant de Rein<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'Évaluation d'un Donneur Vivant de Rein</h2></div><div class="info-text"><p><p>L’évaluation d'un donneur vivant de rein est un processus crucial avant la transplantation rénale afin de s’assurer que le donneur est en bonne santé et que la procédure présente les moindres risques pour lui. Cette évaluation comprend des tests médicaux et psychologiques, et est réalisée dans un cadre médical très spécialisé. Selon le portail WIC-DOCTOR, voici les principales indications pour l’évaluation d’un donneur vivant de rein :</p><ul>
+<li><strong>Transplantation rénale</strong> : Les donneurs vivants sont principalement sollicités pour fournir un rein à un proche ayant une insuffisance rénale terminale. L'évaluation médicale permet de vérifier si le donneur est apte à procéder à la greffe tout en préservant sa santé.</li>
+<li><strong>Don d’organe pour un patient compatible</strong> : Lorsque le receveur a un besoin urgent de greffe rénale et qu'un donneur vivant compatible est trouvé, l'évaluation est essentielle pour garantir que le donneur peut supporter l’intervention.</li>
+<li><strong>Préparation psychologique du donneur</strong> : L’évaluation comprend également une évaluation psychologique pour s’assurer que le donneur est prêt à faire face aux implications émotionnelles et sociales de ce don.</li>
+<li><strong>Optimisation de la transplantation</strong> : Lorsque le don est effectué entre membres de la famille ou amis proches, l'évaluation permet de maximiser la compatibilité immunologique et la santé des deux parties.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Évaluation d'un Donneur Vivant de Rein</h2></div><div class="info-text"><p><p>L’évaluation d’un donneur vivant de rein se déroule en plusieurs étapes afin de garantir la sécurité du donneur et la réussite de la greffe. Les principales étapes comprennent :</p><ol>
+<li><strong>Préparation initiale</strong> :</li>
+<li><strong>Prise de contact</strong> : Un premier entretien est effectué avec un spécialiste en transplantation pour expliquer le processus et les risques associés.</li>
+<li>
+<p><strong>Consultation médicale complète</strong> : Le donneur potentiel subira un bilan de santé complet comprenant des tests sanguins, des examens urinaires, des échographies rénales et des tests de la fonction rénale pour vérifier l'absence de pathologies.</p>
+</li>
+<li>
+<p><strong>Tests médicaux</strong> :</p>
+</li>
+<li><strong>Analyses sanguines</strong> : Ces tests permettent d’évaluer la fonction rénale, le groupe sanguin et la compatibilité avec le receveur.</li>
+<li><strong>Imagerie médicale</strong> : Une échographie rénale et parfois un scanner ou une imagerie par résonance magnétique (IRM) sont réalisés pour s'assurer que les reins sont en bonne santé et qu'il n'y a aucune anomalie structurelle.</li>
+<li><strong>Évaluation cardiaque et respiratoire</strong> : Les tests cardiaques et pulmonaires peuvent être nécessaires pour évaluer la santé cardiovasculaire et respiratoire du donneur.</li>
+<li>
+<p><strong>Examen psychologique</strong> : Un entretien avec un psychologue est effectué pour évaluer la motivation du donneur, sa stabilité mentale et sa capacité à gérer les risques et les impacts psychologiques de la procédure.</p>
+</li>
+<li>
+<p><strong>Prise de décision finale</strong> :</p>
+</li>
+<li>Une fois l’évaluation complète réalisée, un comité médical multidisciplinaire examine les résultats pour déterminer si le donneur est apte à procéder au don de rein.</li>
+<li>
+<p>La décision finale dépendra de plusieurs facteurs, y compris l'état de santé général du donneur et les résultats des tests de compatibilité.</p>
+</li>
+<li>
+<p><strong>Durée de l'évaluation</strong> :</p>
+</li>
+<li>L'ensemble du processus d'évaluation peut prendre de <strong>quelques semaines à plusieurs mois</strong>, en fonction de la complexité des tests et de la disponibilité des spécialistes.</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de l'Évaluation d'un Donneur Vivant de Rein</h2></div><div class="info-text"><p><p>Certaines contre-indications peuvent empêcher un individu de devenir un donneur vivant de rein, principalement liées à des risques pour sa santé. Voici les principales contre-indications, selon le portail WIC-DOCTOR :</p><ul>
+<li><strong>Maladies rénales ou hypertension</strong> : Toute affection affectant la fonction rénale ou l’hypertension non contrôlée peut empêcher de devenir donneur, car cela augmenterait les risques pour la santé du donneur.</li>
+<li><strong>Maladies cardiovasculaires</strong> : Les troubles cardiaques graves ou les antécédents de maladies cardiaques peuvent entraîner un refus pour garantir la sécurité du donneur.</li>
+<li><strong>Obésité sévère</strong> : L’obésité sévère peut entraîner des complications pour le donneur, et il est souvent recommandé de maintenir un indice de masse corporelle (IMC) inférieur à un certain seuil.</li>
+<li><strong>Problèmes de santé mentale</strong> : Des troubles psychiatriques graves ou une instabilité émotionnelle peuvent être des contre-indications, en particulier si le donneur n'est pas capable de comprendre ou d’accepter pleinement les implications du don.</li>
+<li><strong>Incompatibilité immunologique</strong> : Si des tests révèlent que la compatibilité entre le donneur et le receveur est insuffisante, cela pourrait empêcher la transplantation.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Suivi Après l’Évaluation d'un Donneur Vivant de Rein</h2></div><div class="info-text"><p><p>L’évaluation d’un donneur vivant de rein se fait généralement dans des <strong>hôpitaux ou cliniques spécialisés en transplantation rénale</strong>. Ces établissements sont équipés pour réaliser les tests médicaux et psychologiques nécessaires et pour suivre le donneur tout au long du processus de don.</p><p>Voici les principaux lieux de soins recommandés pour l’évaluation d'un donneur vivant de rein :</p><ol>
+<li><strong>Centres de Transplantation Rénale</strong> :</li>
+<li>Ces centres sont des établissements spécialisés dans le diagnostic, l’évaluation et la réalisation des transplantations rénales. Ils disposent d'une équipe pluridisciplinaire incluant des néphrologues, des chirurgiens transplantologues, des <a href="https://wic-doctor.com/medecin/psychologue.html">psychologues</a> et des travailleurs sociaux.</li>
+<li>
+<p><strong>WIC-DOCTOR</strong> recommande ces centres pour une évaluation complète et des soins pré- et post-opératoires.</p>
+</li>
+<li>
+<p><strong>Hôpitaux Universitaires</strong> :</p>
+</li>
+<li>De nombreux hôpitaux universitaires disposent de départements de transplantation rénale et de centres spécialisés qui offrent des services complets pour les donneurs vivants.</li>
+<li>
+<p>Ces hôpitaux offrent également un suivi à long terme après le don de rein pour surveiller la santé du donneur.</p>
+</li>
+<li>
+<p><strong>Suivi Médical Post-Dons</strong> :</p>
+</li>
+<li>Après le don, le suivi est essentiel pour surveiller la fonction rénale restante et la santé générale du donneur. Cela peut inclure des consultations régulières avec un néphrologue, des tests de fonction rénale et des bilans de santé annuels.</li>
+<li><strong>WIC-DOCTOR</strong> met en avant l'importance de consultations à long terme pour assurer le bien-être du donneur après l’intervention chirurgicale.</li>
+</ol><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

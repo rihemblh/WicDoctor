@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Prothèse Totale du Genou : Indications, Déroulement, Risques et Lieux de Soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la Prothèse Totale du Genou<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications de la Prothèse Totale du Genou<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement de la Prothèse Totale du Genou<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Risques et Complications de la Prothèse Totale du Genou<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et Types de Soins Disponibles pour la Prothèse Totale du Genou selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un Lieu de Soin Adapté pour la Prothèse Totale du Genou<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la Prothèse Totale du Genou</h2></div><div class="info-text"><p><p>La <strong>prothèse totale du genou</strong> (PTG), également connue sous le nom de <strong>remplacement total du genou</strong>, est une intervention chirurgicale qui consiste à remplacer l'articulation du genou endommagée par une prothèse artificielle. Elle est principalement utilisée pour traiter les patients souffrant d’<strong>arthrose sévère</strong> ou de <strong>pathologies dégénératives</strong> du genou, lorsque les autres traitements non chirurgicaux n'ont pas permis d'améliorer la douleur et la mobilité.</p><p>L’objectif de cette intervention est de soulager la douleur, restaurer la fonction articulaire et permettre au patient de retrouver une vie active et fonctionnelle. La prothèse est généralement fabriquée en <strong>métal, polyéthylène</strong> et parfois <strong>céramique</strong>, et elle est conçue pour imiter le plus possible les mouvements naturels du genou.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de la Prothèse Totale du Genou</h2></div><div class="info-text"><p><p>La <strong>prothèse totale du genou</strong> est indiquée dans plusieurs cas de figure, principalement lorsqu'une <strong>arthrose avancée</strong> ou d'autres pathologies du genou entraînent une douleur chronique et une perte de mobilité. Les principales indications comprennent :</p><ul>
+<li>
+<p><strong>Arthrose du genou</strong> : Lorsque l’<strong>arthrose</strong> (usure du cartilage) atteint un stade avancé, provoquant une douleur intense et une limitation fonctionnelle. Elle est souvent la principale cause de la prothèse totale du genou.</p>
+</li>
+<li>
+<p><strong>Polyarthrite rhumatoïde</strong> : Les patients souffrant de <strong>polyarthrite rhumatoïde</strong> peuvent également avoir des lésions graves du genou nécessitant une prothèse.</p>
+</li>
+<li>
+<p><strong>Lésions traumatiques</strong> : Après un traumatisme grave (fractures du genou ou lésions ligamentaires irréparables), une prothèse peut être envisagée lorsque les autres traitements ont échoué.</p>
+</li>
+<li>
+<p><strong>Instabilité du genou</strong> : Chez les patients présentant une instabilité sévère du genou due à des lésions du cartilage ou des ligaments, une <strong>prothèse totale du genou</strong> peut être la meilleure option pour rétablir une stabilité fonctionnelle.</p>
+</li>
+<li>
+<p><strong>Douleur résistante aux traitements conservateurs</strong> : Lorsque les traitements non chirurgicaux comme les médicaments anti-inflammatoires, la kinésithérapie et les infiltrations de corticoïdes ne soulagent plus la douleur de manière efficace.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de la Prothèse Totale du Genou</h2></div><div class="info-text"><p><p>La chirurgie de la <strong>prothèse totale du genou</strong> se fait généralement sous <strong>anesthésie générale</strong> ou <strong>anesthésie rachidienne</strong> (anesthésie de la partie inférieure du corps). Le déroulement de l’opération peut se diviser en plusieurs étapes clés :</p><ol>
+<li>
+<p><strong>Consultation préopératoire</strong> :<br/>
+   Avant l'opération, le patient subira une évaluation complète de son état général, incluant des analyses sanguines, des radiographies et un bilan de santé pour vérifier l’état des articulations et des os environnants.</p>
+</li>
+<li>
+<p><strong>Incision et exposition du genou</strong> :<br/>
+   Le chirurgien pratique une incision à l’avant du genou pour accéder à l’articulation. La taille de l'incision peut varier, mais elle est généralement de l'ordre de 15 à 25 cm. Les muscles et ligaments autour du genou sont délicatement écartés.</p>
+</li>
+<li>
+<p><strong>Préparation de l'articulation</strong> :<br/>
+   Une fois l'articulation exposée, les surfaces endommagées du fémur et du tibia sont retirées pour laisser place à la prothèse. Le chirurgien prépare également la partie du genou qui recevra la pièce de prothèse, en la façonnant pour garantir une bonne fixation de la prothèse.</p>
+</li>
+<li>
+<p><strong>Pose de la prothèse</strong> :<br/>
+   La prothèse, composée de plusieurs éléments (composants fémoraux, tibiaux et parfois patellaires), est ensuite posée. La prothèse est fixée à l'os à l’aide de ciment orthopédique ou par un système de fixation sans ciment.</p>
+</li>
+<li>
+<p><strong>Réduction et vérification de l'articulation</strong> :<br/>
+   Le chirurgien vérifie le bon positionnement de la prothèse et l’amplitude de mouvement du genou. La stabilité et l’alignement sont soigneusement vérifiés.</p>
+</li>
+<li>
+<p><strong>Fermeture de l'incision</strong> :<br/>
+   Une fois la prothèse en place et vérifiée, l'incision est fermée à l’aide de sutures ou d’agrafes. Un pansement est appliqué.</p>
+</li>
+</ol><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Risques et Complications de la Prothèse Totale du Genou</h2></div><div class="info-text"><p><p>Bien que la <strong>prothèse totale du genou</strong> soit une procédure courante et généralement sûre, elle comporte certains risques et complications potentiels, notamment :</p><ul>
+<li>
+<p><strong>Infection</strong> : L'une des complications les plus graves après une chirurgie de prothèse. Des antibiotiques sont administrés pendant et après l'opération pour réduire ce risque, mais une infection peut parfois survenir.</p>
+</li>
+<li>
+<p><strong>Thrombose veineuse profonde (TVP)</strong> : Après une opération du genou, il existe un risque de formation de caillots sanguins dans les jambes, ce qui peut entraîner une <strong>phlébite</strong> ou même une <strong>embolie pulmonaire</strong>. Des anticoagulants sont généralement administrés pour prévenir cette complication.</p>
+</li>
+<li>
+<p><strong>Déplacement ou usure prématurée de la prothèse</strong> : Avec le temps, la prothèse peut s'user ou se déplacer, nécessitant parfois une intervention chirurgicale supplémentaire pour corriger ou remplacer la prothèse.</p>
+</li>
+<li>
+<p><strong>Raideur et douleur persistante</strong> : Malgré la chirurgie, certains patients peuvent ressentir une raideur ou des douleurs chroniques dans le genou. Cela peut être lié à une rééducation insuffisante ou à des problèmes d'alignement de la prothèse.</p>
+</li>
+<li>
+<p><strong>Problèmes d'alignement ou de stabilité</strong> : Si la prothèse n'est pas correctement alignée ou si l’articulation n’est pas stable, des complications peuvent survenir, affectant la fonction du genou.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et Types de Soins Disponibles pour la Prothèse Totale du Genou selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> permet aux patients de trouver des <strong>chirurgiens orthopédiques spécialisés</strong> et des <strong>centres de soins</strong> de qualité pour la réalisation de la <strong>prothèse totale du genou</strong>.</p><h4><strong>1. Hôpitaux spécialisés en chirurgie orthopédique</strong></h4><p>Les <strong>hôpitaux universitaires</strong> et les <strong>centres de chirurgie orthopédique spécialisés</strong> sont les meilleurs lieux pour réaliser cette intervention, car ils disposent d’équipes médicales expérimentées et d’équipements modernes pour assurer une prise en charge optimale du patient.</p><h4><strong>2. Cliniques privées spécialisées en chirurgie du genou</strong></h4><p>Certaines <strong>cliniques privées</strong> offrent des services de <strong>prothèse du genou</strong>, avec des soins personnalisés et un suivi de qualité. Ces établissements peuvent proposer des délais plus courts et des options plus flexibles.</p><h4><strong>3. Plateformes de soins en ligne</strong></h4><p>Grâce à <strong>WIC-DOCTOR</strong>, les patients peuvent également trouver des <strong>chirurgiens orthopédiques spécialisés</strong> en ligne et consulter des avis sur des établissements pour prendre une décision éclairée avant de subir l'intervention.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un Lieu de Soin Adapté pour la Prothèse Totale du Genou</h2></div><div class="info-text"><p><p>La <strong>prothèse totale du genou</strong> est une solution efficace pour traiter les douleurs chroniques et restaurer la fonction articulaire chez les patients souffrant de maladies dégénératives ou traumatiques du genou. Grâce au portail <strong>WIC-DOCTOR</strong>, vous pouvez facilement trouver des <strong>chirurgiens spécialisés</strong> et des <strong>hôpitaux de qualité</strong> pour bénéficier des meilleurs soins.</p><p><strong></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

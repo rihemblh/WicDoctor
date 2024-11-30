@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Laser à dioxyde de carbone (CO2) : Indications, Déroulement, Contre-indications et Lieux de soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation du laser à dioxyde de carbone (CO2)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications du laser à dioxyde de carbone (CO2)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement d'une procédure au laser à dioxyde de carbone (CO2)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications au laser à dioxyde de carbone (CO2)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour le laser à dioxyde de carbone (CO2) selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un lieu de soin adapté pour le laser à dioxyde de carbone (CO2)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation du laser à dioxyde de carbone (CO2)</h2></div><div class="info-text"><p><p>Le <strong>laser à dioxyde de carbone (CO2)</strong> est une technologie laser utilisée en médecine pour traiter une grande variété de pathologies. Ce type de laser émet une lumière infrarouge avec une longueur d'onde spécifique, permettant une <strong>précision chirurgicale</strong> exceptionnelle et une <strong>efficacité accrue</strong> dans des interventions telles que la <strong>chirurgie dermatologique</strong>, la <strong>chirurgie gynecologique</strong>, ainsi que dans le traitement de certaines pathologies respiratoires et ophtalmiques.</p><p>En chirurgie, le laser CO2 est souvent utilisé pour <strong>l'évaporation</strong> ou la <strong>vaporisation</strong> de tissus, permettant de traiter des lésions cutanées, des verrues, des cicatrices, des tumeurs bénignes et des affections respiratoires tout en minimisant le risque de complications et de cicatrices. Cette technique est réputée pour son <strong>précision</strong> et sa capacité à détruire des tissus ciblés tout en épargnant les tissus environnants sains.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications du laser à dioxyde de carbone (CO2)</h2></div><div class="info-text"><p><p>Le laser à dioxyde de carbone est utilisé dans divers domaines médicaux pour traiter plusieurs pathologies. Ses principales indications comprennent :</p><ul>
+<li>
+<p><strong>Chirurgie dermatologique</strong> : Le laser CO2 est couramment utilisé pour <strong>traiter des lésions cutanées bénignes</strong> comme les verrues, les kératoses séborrhéiques, les <strong>tumeurs bénignes</strong> de la peau, ainsi que pour <strong>l'excision de tumeurs cutanées</strong>. Il est également très efficace pour traiter des <strong>cicatrices</strong> (notamment les cicatrices chéloïdes ou hypertrophiques) et réduire leur apparence.</p>
+</li>
+<li>
+<p><strong>Rajeunissement cutané</strong> : En dermatologie esthétique, le laser CO2 est utilisé pour des traitements de <strong>rajeunissement de la peau</strong> (laser fractionné), permettant de réduire les rides, les taches pigmentaires et d'améliorer la texture de la peau en stimulant la production de collagène.</p>
+</li>
+<li>
+<p><strong>Chirurgie gynécologique</strong> : Le laser CO2 est également utilisé pour traiter certains <strong>problèmes gynécologiques</strong>, comme l'ablation de lésions précancéreuses du col de l'utérus (dysplasie cervicale) ou le traitement de fibromes et de polypes.</p>
+</li>
+<li>
+<p><strong>Pathologies respiratoires</strong> : Le laser CO2 est utilisé en oto-rhino-laryngologie pour <strong>traiter les pathologies des voies respiratoires supérieures</strong>, telles que les tumeurs bénignes dans la gorge, les polypes des cordes vocales ou l’ablation de certains types de tumeurs du larynx.</p>
+</li>
+<li>
+<p><strong>Chirurgie ophtalmique</strong> : Il est aussi employé en <strong>chirurgie ophtalmique</strong> pour traiter des affections comme les <strong>kystes de la paupière</strong> et pour effectuer des <strong>opérations du glaucome</strong> ou de la cataracte dans certains cas.</p>
+</li>
+<li>
+<p><strong>Chirurgie urologique</strong> : Le laser CO2 est parfois utilisé pour enlever ou réduire les <strong>calculs urinaires</strong> ou pour traiter certaines lésions bénignes dans les voies urinaires.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement d'une procédure au laser à dioxyde de carbone (CO2)</h2></div><div class="info-text"><p><p>Le déroulement d'une procédure utilisant le laser CO2 varie en fonction du type de traitement, mais voici les étapes générales qui le composent :</p><p><strong>1. Consultation et évaluation préopératoire :</strong><br/>
+Avant la procédure, le médecin procède à une évaluation complète de l'état de santé du patient. Selon le type de pathologie, des tests diagnostiques (biopsies, échographies, scanner) peuvent être réalisés pour déterminer la nature des lésions à traiter. Une discussion avec le patient sur les attentes, les risques et les bénéfices du traitement est essentielle.</p><p><strong>2. Préparation à la procédure :</strong><br/>
+La zone à traiter est soigneusement nettoyée et désinfectée. Dans le cas des traitements cutanés, une <strong>anesthésie locale</strong> (crème ou injection) est souvent appliquée pour rendre la procédure indolore. Pour les interventions plus invasives, une anesthésie générale ou une sédation consciente peut être utilisée, en particulier en chirurgie gynécologique ou dans les cas de chirurgie des voies respiratoires.</p><p><strong>3. Utilisation du laser CO2 :</strong><br/>
+Une fois la zone anesthésiée, le chirurgien utilise un <strong>laser CO2 à main</strong> ou un <strong>dispositif laser à fibre optique</strong> pour traiter la zone ciblée. Le laser émet des faisceaux lumineux d’une longueur d'onde spécifique, qui vaporisent ou évaporent les cellules endommagées ou pathologiques tout en minimisant les risques pour les tissus sains environnants. La procédure peut durer de <strong>20 minutes à 2 heures</strong> selon la complexité de l'intervention.</p><ul>
+<li>En <strong>dermatologie</strong>, il s'agit principalement de retirer les lésions de la peau.</li>
+<li>En <strong>gynécologie</strong>, l'ablation de tumeurs ou de polypes bénins se fait sous guidage laser.</li>
+<li>En <strong>chirurgie des voies respiratoires</strong>, le laser est utilisé pour enlever ou détruire les tissus anormaux.</li>
+</ul><p><strong>4. Suivi post-opératoire :</strong><br/>
+Après la procédure, un <strong>pansement</strong> ou une <strong>compression légère</strong> peut être appliqué sur la zone traitée. Les patients doivent suivre les instructions post-opératoires pour éviter toute infection ou irritation de la zone traitée. Des <strong>analgésiques</strong> peuvent être prescrits pour réduire la douleur ou l'inconfort. La <strong>récupération</strong> est généralement rapide, bien que des <strong>suivi médicaux réguliers</strong> soient nécessaires pour vérifier la guérison complète.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications au laser à dioxyde de carbone (CO2)</h2></div><div class="info-text"><p><p>Bien que le laser CO2 soit généralement sûr, certaines contre-indications doivent être prises en compte avant de procéder à un traitement :</p><ul>
+<li>
+<p><strong>Infections actives</strong> : En présence d'infections cutanées ou d'infections des voies respiratoires, l'utilisation du laser CO2 est déconseillée, car cela pourrait aggraver l'infection.</p>
+</li>
+<li>
+<p><strong>Troubles de la coagulation</strong> : Les patients ayant des troubles de la coagulation sanguine ou ceux prenant des anticoagulants doivent être particulièrement surveillés, car l'utilisation du laser peut provoquer des saignements.</p>
+</li>
+<li>
+<p><strong>Cancer non traité</strong> : Le laser CO2 ne doit pas être utilisé pour traiter des lésions suspectes de cancer, sans une confirmation préalable qu’il s'agit de tissus bénins. Il est également contre-indiqué pour l'ablation de tumeurs malignes sans intervention chirurgicale complémentaire.</p>
+</li>
+<li>
+<p><strong>Problèmes cutanés sévères</strong> : Les personnes ayant des antécédents de <strong>cicatrices chéloïdes</strong> ou une peau extrêmement sensible peuvent présenter un risque accru de complications, bien que des alternatives à faible intensité puissent être proposées.</p>
+</li>
+<li>
+<p><strong>Grossesse</strong> : Bien que généralement considéré comme sûr, le laser CO2 doit être utilisé avec prudence en période de grossesse, surtout pour les traitements qui ne sont pas urgents.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour le laser à dioxyde de carbone (CO2) selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> offre une liste de lieux spécialisés pour recevoir un traitement au laser CO2. Ces soins sont disponibles dans différents types d'établissements :</p><h4><strong>1. Cliniques dermatologiques et centres de chirurgie esthétique</strong></h4><p>Les <strong>cliniques dermatologiques</strong> sont les principaux centres où les patients peuvent recevoir des traitements au laser CO2 pour des affections cutanées telles que les verrues, les cicatrices, le rajeunissement de la peau, et les lésions bénignes de la peau.</p><h4><strong>2. Hôpitaux spécialisés en chirurgie gynécologique et oncologique</strong></h4><p>Les <strong>hôpitaux spécialisés en gynécologie</strong> ou en <strong>oncologie</strong> offrent des traitements au laser CO2 pour ablation de lésions bénignes du col de l’utérus, les polypes, et certaines interventions chez les femmes présentant des problèmes gynécologiques.</p><h4><strong>3. Centres d'oto-rhino-laryngologie (ORL)</strong></h4><p>Les <strong>centres ORL</strong> spécialisés dans le traitement des affections des voies respiratoires supérieures utilisent également le laser CO2 pour enlever ou traiter des lésions bénignes dans la gorge, les cordes vocales ou le larynx.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un lieu de soin adapté pour le laser à dioxyde de carbone (CO2)</h2></div><div class="info-text"><p><p>Le laser à dioxyde de carbone est un outil puissant et polyvalent dans le traitement de nombreuses pathologies bénignes, offrant une <strong>précision élevée</strong>, une <strong>récupération rapide</strong> et des <strong>risques réduits</strong>. Grâce au portail <strong>WIC-DOCTOR</strong>, les patients peuvent trouver des <strong>établissements spécialisés</strong> qui offrent des soins adaptés à leurs besoins et garantir ainsi un traitement efficace et sécurisé.</p><p><strong></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

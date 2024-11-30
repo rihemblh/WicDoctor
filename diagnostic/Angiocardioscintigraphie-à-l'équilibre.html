@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Angiocardioscintigraphie à l'Équilibre : Indications, Exécution, Contre-indications et Lieux de Soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Indications de l'Angiocardioscintigraphie à l'Équilibre<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Déroulement de l'Examen<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Contre-indications de l'Angiocardioscintigraphie à l'Équilibre<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Lieux et Types de Soins pour la Gestion de l'Angiocardioscintigraphie à l'Équilibre<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('I')"><button class="alphabet-button">H1: Angiocardioscintigraphie à l'Équilibre : Comprendre son Rôle dans le Diagnostic Cardiaque<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('J')"><button class="alphabet-button">H2: Quand l'Angiocardioscintigraphie à l'Équilibre est-elle Indiquée ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('K')"><button class="alphabet-button">H3: Évaluation du risque cardiovasculaire et diagnostic de l'ischémie myocardique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('L')"><button class="alphabet-button">H2: Comment se déroule l'Examen d'Angiocardioscintigraphie à l'Équilibre ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('M')"><button class="alphabet-button">H3: Injection, efforts physiques et analyse du flux sanguin cardiaque<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('N')"><button class="alphabet-button">H2: Quelles sont les Contre-indications à l'Angiocardioscintigraphie à l'Équilibre ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('O')"><button class="alphabet-button">H3: Précautions à prendre avant l'examen<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('P')"><button class="alphabet-button">H2: Lieux de Soins et Suivi après l'Angiocardioscintigraphie à l'Équilibre<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('Q')"><button class="alphabet-button">H3: Où réaliser votre Angiocardioscintigraphie et obtenir un suivi médical ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'Angiocardioscintigraphie à l'Équilibre</h2></div><div class="info-text"><p><p>L'<strong>angiocardioscintigraphie à l'équilibre</strong> est un examen d'imagerie médicale qui permet d'évaluer la circulation sanguine dans le cœur et d'identifier des zones de rétrécissement ou de blocage dans les artères coronaires. Cet examen est principalement utilisé pour :</p><ul>
+<li><strong>Évaluation de l'ischémie myocardique</strong> : Détection de la réduction du flux sanguin vers le cœur, indiquant une éventuelle maladie coronarienne (athérosclérose).</li>
+<li><strong>Prise en charge du risque cardiovasculaire</strong> : Identification des patients à risque élevé de maladies cardiaques, en particulier ceux avec des antécédents d'hypertension, de diabète ou de dyslipidémie.</li>
+<li><strong>Suivi post-infarctus</strong> : Surveillance de l'impact d'un infarctus du myocarde sur le flux sanguin cardiaque et évaluation de la fonction du muscle cardiaque après un infarctus.</li>
+<li><strong>Évaluation des greffes coronariennes</strong> : Suivi de la perméabilité des pontages coronariens ou des stents chez les patients ayant subi une intervention cardiaque.</li>
+<li><strong>Diagnostic de l'angine de poitrine</strong> : Recherche de symptômes d'angine stable ou instable, où le cœur ne reçoit pas suffisamment de sang pendant l'effort physique ou le stress.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>L'<strong>angiocardioscintigraphie à l'équilibre</strong> utilise des traces radioactives injectées dans le corps pour obtenir des images du flux sanguin dans le cœur. Voici les étapes clés du déroulement :</p><ol>
+<li><strong>Préparation</strong> :</li>
+<li>Le patient peut être invité à <strong>arrêter certains médicaments</strong> (notamment des médicaments cardiaques ou vasodilatateurs) quelques jours avant l'examen pour garantir des résultats fiables.</li>
+<li><strong>Jeûne</strong> : Il est souvent recommandé de ne pas manger ni boire pendant 4 à 6 heures avant l'examen.</li>
+<li>
+<p><strong>Vêtements confortables</strong> : Le patient doit porter des vêtements adaptés pour l'examen, notamment des vêtements qui permettent un accès facile à la zone du thorax.</p>
+</li>
+<li>
+<p><strong>Injection du produit radiopharmaceutique</strong> :</p>
+</li>
+<li>Une substance radioactif, généralement du <strong>technétium-99m</strong>, est injectée par voie intraveineuse. Cette substance permet de tracer l'irrigation sanguine dans le cœur.</li>
+<li>
+<p>Une première image est obtenue en <strong>repos</strong> pour observer la circulation sanguine au repos.</p>
+</li>
+<li>
+<p><strong>Phase de stimulation (effort ou pharmaco-stimulation)</strong> :</p>
+</li>
+<li><strong>Effort physique</strong> : Si le patient est capable de faire de l'exercice, une <strong>tapis roulant ou un vélo stationnaire</strong> est utilisé pour simuler un effort physique. Cela permet de comparer l'état des artères coronaires au repos et sous stress.</li>
+<li><strong>Pharmaco-stimulation</strong> : Si le patient ne peut pas faire d'exercice physique, un médicament comme l'adénosine est administré pour simuler un effort physique et dilater les artères coronaires.</li>
+<li>
+<p>Une nouvelle injection de produit radiopharmaceutique est réalisée pour obtenir des images du cœur après l'exercice ou la stimulation médicamenteuse.</p>
+</li>
+<li>
+<p><strong>Acquisition des images</strong> :</p>
+</li>
+<li>Les images sont capturées à l’aide d’un <strong>gamma-caméra</strong> qui détecte la radioactivité du produit injecté. Cela permet d’obtenir des images en coupe du cœur et d’identifier les zones présentant des anomalies dans la circulation sanguine.</li>
+<li>
+<p>L'examen peut durer environ 30 à 60 minutes, selon le protocole choisi (repos, effort ou stimulation).</p>
+</li>
+<li>
+<p><strong>Post-examen</strong> :</p>
+</li>
+<li>Le patient peut reprendre ses activités normales immédiatement après l'examen, sauf si des effets secondaires dus aux médicaments sont présents, ce qui peut nécessiter un suivi immédiat.</li>
+<li>Les résultats sont ensuite envoyés à un cardiologue pour une interprétation détaillée.</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de l'Angiocardioscintigraphie à l'Équilibre</h2></div><div class="info-text"><p><p>L'<strong>angiocardioscintigraphie à l'équilibre</strong> est généralement bien tolérée, mais certaines situations peuvent nécessiter des précautions ou des contre-indications :</p><ul>
+<li><strong>Grossesse</strong> : Comme pour la plupart des examens utilisant des produits radioactifs, l'angiocardioscintigraphie est contre-indiquée chez les femmes enceintes. En cas de grossesse suspectée ou confirmée, l'examen peut être reporté.</li>
+<li><strong>Allergies au produit de contraste</strong> : Bien que le produit utilisé dans cette procédure soit très spécifique et généralement bien toléré, des réactions allergiques rares peuvent survenir. Le patient doit informer le médecin si des allergies aux produits radioactifs ou aux médicaments sont connues.</li>
+<li><strong>Troubles graves du rythme cardiaque</strong> : Les patients présentant des arythmies graves peuvent nécessiter une évaluation préalable afin de garantir que l'examen n'aggravera pas leur état.</li>
+<li><strong>Incapacité à faire un effort physique</strong> : Les patients qui ne peuvent pas réaliser un effort physique suffisant (en raison d'une limitation cardiaque ou pulmonaire) devront utiliser la pharmacostimulation. Cependant, dans certains cas de troubles cardiaques sévères, cet examen peut ne pas être recommandé.</li>
+<li><strong>Insuffisance rénale sévère</strong> : Certaines contre-indications peuvent être liées à la gestion des produits radioactifs et à l'élimination des substances par les reins, nécessitant des précautions particulières.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour la Gestion de l'Angiocardioscintigraphie à l'Équilibre</h2></div><div class="info-text"><p><p>D’après les indications du <strong>portail WIC-DOCTOR</strong>, l'<strong>angiocardioscintigraphie à l'équilibre</strong> est principalement réalisée dans les établissements de soins spécialisés en <strong>cardiologie</strong> ou en <strong>médecine nucléaire</strong>. Voici les types de lieux où cet examen est effectué :</p><ol>
+<li><strong>Services de Cardiologie des Hôpitaux et Cliniques</strong> :</li>
+<li>Les <strong>hôpitaux et cliniques spécialisés en cardiologie</strong> disposent généralement des équipements nécessaires à la réalisation de l'angiocardioscintigraphie. Ces établissements sont capables de réaliser des tests d'effort sous surveillance médicale et d'administrer la pharmaco-stimulation en toute sécurité.</li>
+<li>
+<p>Ils offrent un suivi médical complet, y compris des consultations post-examen avec des <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a> pour discuter des résultats et des traitements recommandés.</p>
+</li>
+<li>
+<p><strong>Centres de Médecine Nucléaire</strong> :</p>
+</li>
+<li>Les <strong>centres de médecine nucléaire</strong> sont des installations spécialisées dans l’utilisation de la radioactivité pour diagnostiquer diverses pathologies, dont les maladies cardiaques. Ces centres sont équipés des <strong>gamma-caméras</strong> nécessaires pour réaliser l'angiocardioscintigraphie à l'équilibre.</li>
+<li>
+<p>Ces centres collaborent souvent avec des services de cardiologie pour offrir un diagnostic complet et un suivi personnalisé.</p>
+</li>
+<li>
+<p><strong>Cliniques Privées de Cardiologie</strong> :</p>
+</li>
+<li>Certaines <strong>cliniques privées</strong> spécialisées en <strong>cardiologie</strong> proposent cet examen dans un cadre plus personnalisé. Ces établissements sont souvent moins encombrés que les hôpitaux publics, ce qui peut offrir un confort accru pour les patients.</li>
+<li>
+<p>Ces cliniques sont équipées pour réaliser des tests sous effort ou sous pharmaco-stimulation et fournissent également un suivi des résultats en partenariat avec des <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a>.</p>
+</li>
+<li>
+<p><strong>Hôpitaux Universitaires</strong> :</p>
+</li>
+<li>Les <strong>hôpitaux universitaires</strong> ou les <strong>centres de recherche cardiovasculaire</strong> offrent souvent des équipements de pointe et des experts dans le domaine de la cardiologie, ce qui est essentiel pour interpréter correctement les résultats complexes d’une angiocardioscintigraphie.</li>
+<li>
+<p>Ces centres peuvent être choisis par des patients ayant des pathologies cardiaques complexes ou en recherche de traitements innovants.</p>
+</li>
+<li>
+<p><strong>Suivi et Références Médicales</strong> :</p>
+</li>
+<li>Après l'examen, le <strong>cardiologue</strong> interprète les résultats de l'angiocardioscintigraphie et oriente le patient vers un plan de traitement adapté, qui peut inclure des médicaments, une surveillance continue ou une intervention chirurgicale (comme un pontage coronarien ou la pose d’un stent).</li>
+</ol><hr/></p></div></div></div><div class="container section-I" id="I"><div class="info-section"><div class="section-title center-block text-center"><h2>H1: Angiocardioscintigraphie à l'Équilibre : Comprendre son Rôle dans le Diagnostic Cardiaque</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-J" id="J"><div class="info-section"><div class="section-title center-block text-center"><h2>H2: Quand l'Angiocardioscintigraphie à l'Équilibre est-elle Indiquée ?</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-K" id="K"><div class="info-section"><div class="section-title center-block text-center"><h2>H3: Évaluation du risque cardiovasculaire et diagnostic de l'ischémie myocardique</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-L" id="L"><div class="info-section"><div class="section-title center-block text-center"><h2>H2: Comment se déroule l'Examen d'Angiocardioscintigraphie à l'Équilibre ?</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-M" id="M"><div class="info-section"><div class="section-title center-block text-center"><h2>H3: Injection, efforts physiques et analyse du flux sanguin cardiaque</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-N" id="N"><div class="info-section"><div class="section-title center-block text-center"><h2>H2: Quelles sont les Contre-indications à l'Angiocardioscintigraphie à l'Équilibre ?</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-O" id="O"><div class="info-section"><div class="section-title center-block text-center"><h2>H3: Précautions à prendre avant l'examen</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-P" id="P"><div class="info-section"><div class="section-title center-block text-center"><h2>H2: Lieux de Soins et Suivi après l'Angiocardioscintigraphie à l'Équilibre</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-Q" id="Q"><div class="info-section"><div class="section-title center-block text-center"><h2>H3: Où réaliser votre Angiocardioscintigraphie et obtenir un suivi médical ?</h2></div><div class="info-text"><p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

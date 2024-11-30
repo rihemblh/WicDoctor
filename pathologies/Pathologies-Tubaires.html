@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Diagnostic et Traitement des Pathologies Tubaires – Comprendre, Diagnostiquer et Traiter</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Qu'est-ce que la Pathologie Tubaire ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Causes et Facteurs de Risque des Pathologies Tubaires<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Symptômes et Signes des Pathologies Tubaires<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Diagnostic des Pathologies Tubaires<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Traitements des Pathologies Tubaires<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">7. Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Qu'est-ce que la Pathologie Tubaire ?</h2></div><div class="info-text"><p><p>Les <strong>pathologies tubaires</strong> désignent un ensemble de conditions médicales affectant les trompes de Fallope, des structures essentielles pour la fertilité féminine. Elles peuvent résulter de diverses causes, y compris des infections, des anomalies anatomiques, des obstructions ou des malformations congénitales. Les pathologies tubaires peuvent avoir un impact important sur la santé reproductive de la femme.</p><h4><strong>Types de pathologies tubaires</strong> :</h4><ul>
+<li><strong>Salpingite (inflammation des trompes de Fallope)</strong> : Une infection des trompes, généralement causée par des infections sexuellement transmissibles comme <strong>Chlamydia</strong> ou <strong>Gonorrhée</strong>, mais aussi par des infections ascendantes comme les infections urinaires.</li>
+<li><strong>Obstruction tubaire</strong> : Les trompes peuvent se boucher en raison d'infections, de cicatrices post-chirurgicales ou de malformations congénitales, empêchant l'ovule d'atteindre l'utérus.</li>
+<li><strong>Grossesse ectopique</strong> : Se produit lorsque l'ovule fécondé s'implante à l'extérieur de l'utérus, souvent dans une trompe de Fallope, ce qui peut mettre la vie de la femme en danger.</li>
+<li><strong>Tumeurs tubaires</strong> : Des formations bénignes ou malignes peuvent se développer dans les trompes de Fallope, bien que cela soit relativement rare.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes et Facteurs de Risque des Pathologies Tubaires</h2></div><div class="info-text"><p><p>Les pathologies tubaires peuvent être causées par un large éventail de facteurs, allant des infections aux facteurs environnementaux ou hormonaux. Comprendre ces facteurs peut aider à mieux prévenir et gérer les troubles tubaires.</p><h4><strong>Facteurs de risque pour la salpingite et les infections tubaires</strong> :</h4><ul>
+<li><strong>Infections sexuellement transmissibles (IST)</strong> : Les infections comme la <strong>Chlamydia</strong> et la <strong>gonorrhée</strong> sont les principales causes d'inflammation des trompes de Fallope. Ces infections peuvent endommager les trompes et entraîner des complications telles que des adhérences ou des obstructions.</li>
+<li><strong>Interventions chirurgicales</strong> : Les chirurgies pelviennes, comme une césarienne ou une appendicectomie, peuvent augmenter le risque d'infection des trompes, en raison de cicatrices ou d'adhérences.</li>
+<li><strong>Tabagisme</strong> : Le tabac diminue la fertilité en affectant la fonction tubaire, en réduisant la motilité des trompes et en augmentant le risque d'infections.</li>
+<li><strong>Antécédents de maladies pelviennes inflammatoires (MPI)</strong> : Les antécédents de PID augmentent le risque de stérilité tubaire et de grossesse ectopique.</li>
+</ul><h4><strong>Facteurs de risque pour l'obstruction tubaire</strong> :</h4><ul>
+<li><strong>Endométriose</strong> : Cette maladie peut entraîner la formation de tissus anormaux autour des trompes, provoquant des obstructions.</li>
+<li><strong>Infections chroniques</strong> : Les infections récurrentes des trompes (salpingites) peuvent provoquer des adhérences et des obstructions permanentes.</li>
+<li><strong>Fibromes utérins</strong> : Ces tumeurs bénignes peuvent interférer avec l'anatomie des trompes, les rendant partiellement ou totalement obstruées.</li>
+</ul><h4><strong>Facteurs de risque pour la grossesse ectopique</strong> :</h4><ul>
+<li><strong>Infections pelviennes antérieures</strong> : Les infections des trompes de Fallope augmentent le risque de grossesse ectopique.</li>
+<li><strong>Chirurgies tubaires antérieures</strong> : Des interventions chirurgicales sur les trompes, comme une ligature tubaire ou une chirurgie pour enlever des fibromes, augmentent le risque de grossesse ectopique.</li>
+<li><strong>Utilisation de dispositifs intra-utérins (DIU)</strong> : Bien que les DIU soient généralement efficaces pour prévenir la grossesse, ils peuvent augmenter le risque de grossesse ectopique si une grossesse survient.</li>
+</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes et Signes des Pathologies Tubaires</h2></div><div class="info-text"><p><p>Les symptômes des pathologies tubaires varient en fonction de la nature de l'affection. Certaines conditions peuvent être silencieuses, tandis que d'autres présentent des symptômes plus évidents.</p><h4><strong>Symptômes de la salpingite (infection tubaire)</strong> :</h4><ul>
+<li><strong>Douleurs pelviennes ou abdominales basses</strong> : La douleur est souvent persistante et peut être aggravée par les rapports sexuels ou les mouvements.</li>
+<li><strong>Écoulements vaginaux anormaux</strong> : Souvent accompagnés d'odeurs désagréables, ils sont dus à l'infection.</li>
+<li><strong>Fièvre</strong> : Une salpingite aiguë peut s'accompagner de symptômes systémiques, y compris de la fièvre.</li>
+<li><strong>Douleurs lors des rapports sexuels</strong> (dyspareunie) : Les femmes peuvent ressentir des douleurs pendant ou après les relations sexuelles en raison de l'inflammation.</li>
+</ul><h4><strong>Symptômes de l'obstruction tubaire</strong> :</h4><ul>
+<li><strong>Infertilité</strong> : L'obstruction des trompes empêche l'ovule de rejoindre l'utérus, ce qui peut rendre la grossesse difficile.</li>
+<li><strong>Douleur pelvienne</strong> : En cas d’adhérences ou de blocage partiel, des douleurs pelviennes chroniques peuvent survenir.</li>
+</ul><h4><strong>Symptômes d'une grossesse ectopique</strong> :</h4><ul>
+<li><strong>Douleur pelvienne intense et soudaine</strong> : La douleur peut être localisée sur un côté de l’abdomen et est souvent aiguë.</li>
+<li><strong>Saignements vaginaux</strong> : De légers saignements peuvent accompagner la douleur.</li>
+<li><strong>Symptômes de choc</strong> : Si la trompe de Fallope se rompt, cela peut entraîner une hémorragie interne sévère, avec des symptômes de choc (hypotension, évanouissement, pâleur).</li>
+</ul><h4><strong>Symptômes de tumeurs tubaires</strong> :</h4><ul>
+<li><strong>Masse abdominale palpable</strong> : Les tumeurs bénignes ou malignes dans les trompes de Fallope peuvent parfois être palpables lors de l'examen.</li>
+<li><strong>Douleurs pelviennes persistantes</strong> : Certaines tumeurs peuvent causer des douleurs chroniques et des désagréments.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic des Pathologies Tubaires</h2></div><div class="info-text"><p><p>Le diagnostic des pathologies tubaires repose sur un ensemble de tests cliniques, d'examens d'imagerie et parfois de procédures diagnostiques invasives.</p><h4><strong>Méthodes diagnostiques courantes</strong> :</h4><ul>
+<li><strong>Examen clinique</strong> : Le médecin procède à un examen pelvien pour détecter les signes d'inflammation, de masses ou de douleurs.</li>
+<li><strong>Échographie pelvienne</strong> : Une échographie permet de visualiser les organes pelviens et peut détecter des anomalies dans les trompes de Fallope, comme des masses ou des fluides.</li>
+<li><strong>Hystérosalpingographie (HSG)</strong> : Ce test consiste à injecter un colorant dans l'utérus et les trompes pour détecter des obstructions ou des anomalies.</li>
+<li><strong>Laparoscopie</strong> : Si une pathologie est suspectée, une procédure chirurgicale mineure, la laparoscopie, permet de visualiser directement les trompes de Fallope et d’effectuer des prélèvements ou des traitements.</li>
+<li><strong>Test de grossesse</strong> : Pour exclure ou confirmer une grossesse ectopique, un test de grossesse sanguin ou urinaire est souvent réalisé, suivi par une échographie pour localiser l’embryon.</li>
+</ul><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements des Pathologies Tubaires</h2></div><div class="info-text"><p><p>Le traitement des pathologies tubaires dépend de la nature de l'affection et de sa gravité. Il peut inclure des traitements médicamenteux, des interventions chirurgicales ou des traitements de fertilité.</p><h4><strong>Traitement de la salpingite</strong> :</h4><ul>
+<li><strong>Antibiotiques</strong> : Les infections tubaires causées par des bactéries sont généralement traitées par des antibiotiques. Dans les cas graves, des antibiotiques intraveineux peuvent être nécessaires.</li>
+<li><strong>Chirurgie</strong> : Dans les cas graves de salpingite avec abcès ou obstruction, une chirurgie laparoscopique peut être nécessaire pour enlever l'abcès ou réparer les trompes.</li>
+</ul><h4><strong>Traitement de l'obstruction tubaire</strong> :</h4><ul>
+<li><strong>Chirurgie tubaire</strong> : En cas d'obstruction des trompes, une intervention chirurgicale peut être réalisée pour débloquer les trompes ou les réparer.</li>
+<li><strong>FIV (fécondation in vitro)</strong> : Si l'obstruction est sévère et ne peut pas être traitée chirurgicalement, une fécondation in vitro peut être envisagée pour contourner l'obstruction des trompes.</li>
+</ul><h4><strong>Traitement de la grossesse ectopique</strong> :</h4><ul>
+<li><strong>Médicaments</strong> : Si la grossesse ectopique est diagnostiquée tôt, un médicament</li>
+</ul><p>appelé <strong>méthotrexate</strong> peut être administré pour arrêter le développement de l'embryon.
+- <strong>Chirurgie</strong> : Si la grossesse ectopique est avancée ou si la trompe a éclaté, une intervention chirurgicale d'urgence est nécessaire pour enlever l'embryon et réparer les trompes.</p><h4><strong>Traitement des tumeurs tubaires</strong> :</h4><ul>
+<li><strong>Chirurgie</strong> : Les tumeurs tubaires bénignes ou malignes nécessitent souvent une intervention chirurgicale pour enlever la tumeur et préserver, si possible, la fonction tubaire.</li>
+<li><strong>Chimiothérapie ou radiothérapie</strong> : En cas de tumeur maligne, un traitement complémentaire, comme la chimiothérapie ou la radiothérapie, peut être nécessaire.</li>
+</ul><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> permet un accès facile à des consultations spécialisées dans la gestion des pathologies tubaires, assurant un suivi médical à distance grâce à la <strong>télémédecine</strong>.</p><h4><strong>1. Médecins spécialisés en gynécologie et chirurgie pelvienne</strong> :</h4><p>Les <strong><a href="https://wic-doctor.com/medecin/gynécologue---obstétricien.html">gynécologues</a></strong> et <strong>chirurgiens pelviens</strong> sont des experts dans le diagnostic et le traitement des pathologies tubaires.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations à distance</strong> via WIC-DOCTOR pour des diagnostics rapides et précis.</li>
+<li><strong>Prise en charge des infections et obstructions tubaires</strong>.</li>
+<li><strong>Suivi de la fertilité</strong> et gestion des problèmes reproductifs liés aux pathologies tubaires.</li>
+</ul><h4><strong>2. Centres spécialisés en infertilité et fécondation in vitro (FIV)</strong> :</h4><p>Les <strong>centres de fertilité</strong> peuvent offrir des traitements pour contourner les obstructions tubaires et d'autres problèmes de fertilité liés aux trompes.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations spécialisées</strong> pour les femmes ayant des problèmes de fertilité dus à des pathologies tubaires.</li>
+<li><strong>FIV et autres traitements de fertilité</strong> adaptés aux besoins individuels.</li>
+</ul><h4><strong>3. Télémédecine via WIC-DOCTOR</strong> :</h4><p>Les consultations à distance permettent aux patientes de recevoir un suivi médical spécialisé, des recommandations sur les traitements, et une prise en charge optimisée de leur santé reproductive.</p><ul>
+<li><strong>Services</strong> :</li>
+<li><strong>Consultations à distance</strong> pour évaluer les symptômes et poser un diagnostic.</li>
+<li><strong>Suivi des traitements et prescriptions électroniques</strong> pour un suivi continu de l'état de santé.</li>
+</ul><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>7. Conclusion</h2></div><div class="info-text"><p><p>Les <strong>pathologies tubaires</strong> sont des affections importantes qui affectent la santé reproductive des femmes. Grâce à des solutions modernes telles que le <strong>portail WIC-DOCTOR</strong> et la <strong>télémédecine</strong>, les patientes peuvent accéder à un diagnostic précoce et à un traitement personnalisé, assurant ainsi une gestion optimale de ces pathologies.</p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

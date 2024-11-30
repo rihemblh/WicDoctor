@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Mastectomie avec écartement des mamelons et reconstruction mammaire : Indications, Déroulement, Contre-indications et Lieux de soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la mastectomie avec écartement des mamelons et reconstruction mammaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications de la mastectomie avec écartement des mamelons et reconstruction mammaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement de la mastectomie avec écartement des mamelons et reconstruction mammaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications à la mastectomie avec écartement des mamelons et reconstruction mammaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour la mastectomie avec écartement des mamelons et reconstruction mammaire selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un lieu de soin adapté pour la mastectomie avec écartement des mamelons et reconstruction mammaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la mastectomie avec écartement des mamelons et reconstruction mammaire</h2></div><div class="info-text"><p><p>La <strong>mastectomie avec écartement des mamelons et reconstruction mammaire</strong> est une intervention chirurgicale complexe réalisée principalement dans le cadre du traitement du cancer du sein. Elle consiste à retirer le tissu mammaire tout en préservant les <strong>mamelles</strong> (mamelons) et les <strong>aréoles</strong>, lorsque cela est possible, pour réaliser une <strong>reconstruction mammaire</strong> immédiate ou différée. Cette approche vise à restaurer la symétrie du sein et à améliorer l'image corporelle du patient après une mastectomie.</p><p>La mastectomie avec écartement des mamelons est généralement indiquée lorsque le cancer du sein est localisé mais nécessite un retrait complet du sein, ou lorsque le patient choisit cette option pour des raisons esthétiques ou prophylactiques (comme dans le cas d’une mutation génétique, par exemple la mutation BRCA1 ou BRCA2). La <strong>reconstruction mammaire</strong> peut être réalisée par l'utilisation de <strong>prothèses mammaires</strong> ou à l’aide de <strong>tissus autologues</strong> (prélevés sur le corps du patient lui-même).</p><p>Cette procédure est effectuée sous <strong>anesthésie générale</strong> et nécessite un suivi médical rigoureux, avec des soins post-opératoires spécifiques pour optimiser la récupération et éviter les complications.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de la mastectomie avec écartement des mamelons et reconstruction mammaire</h2></div><div class="info-text"><p><p>La <strong>mastectomie avec écartement des mamelons et reconstruction mammaire</strong> est principalement indiquée dans les situations suivantes :</p><ul>
+<li>
+<p><strong>Cancer du sein localisé ou invasif</strong> : Lorsque le cancer du sein est localisé et qu’une ablation totale du tissu mammaire est nécessaire, mais où les <strong>mamelons</strong> et <strong>aréoles</strong> peuvent être préservés pour des raisons esthétiques ou fonctionnelles. Cela dépend de l'extension du cancer et de la taille de la tumeur par rapport à la glande mammaire.</p>
+</li>
+<li>
+<p><strong>Mastectomie prophylactique</strong> : Pour les femmes présentant un risque élevé de cancer du sein, comme celles porteuses de mutations génétiques (BRCA1 ou BRCA2), la mastectomie avec écartement des mamelons et reconstruction mammaire peut être réalisée de manière préventive pour réduire ce risque tout en conservant l’apparence naturelle du sein.</p>
+</li>
+<li>
+<p><strong>Reconstruction après mastectomie partielle</strong> : Dans certains cas où seule une partie du sein est retirée, une reconstruction mammaire avec préservation des mamelons peut être réalisée pour restaurer l'aspect esthétique du sein tout en offrant un résultat fonctionnel.</p>
+</li>
+<li>
+<p><strong>Révision post-chirurgicale après mastectomie classique</strong> : Certaines patientes qui ont subi une mastectomie classique sans reconstruction peuvent souhaiter une reconstruction mammaire avec écartement des mamelons pour améliorer l'apparence et restaurer la symétrie des seins.</p>
+</li>
+<li>
+<p><strong>Cancers précoces avec préservation de la peau et du mamelon</strong> : Pour les cancers détectés à un stade précoce, où la tumeur est localisée, et où il est possible de réaliser une <strong>mastectomie conservatrice</strong> avec un écartement des mamelons pour préserver le contour naturel du sein.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de la mastectomie avec écartement des mamelons et reconstruction mammaire</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention :</strong><br/>
+Avant la chirurgie, plusieurs examens seront réalisés pour déterminer l'étendue du cancer ou du risque génétique, tels que des <strong>analyses sanguines</strong>, des <strong>mamographies</strong>, des <strong>IRM mammaires</strong> ou des <strong>échographies</strong>. Ces examens permettent de planifier l'intervention et d'évaluer la possibilité de conserver les mamelons. Si la reconstruction mammaire est prévue, des consultations avec un <strong>chirurgien plasticien</strong> seront également nécessaires pour choisir la méthode la plus adaptée.</p><p>Le patient devra également suivre des consignes spécifiques, telles que <strong>cesser de prendre certains médicaments</strong> (par exemple, des anticoagulants) pour réduire les risques de complications liées à l’anesthésie.</p><p><strong>L'intervention chirurgicale :</strong><br/>
+La <strong>mastectomie avec écartement des mamelons</strong> et <strong>reconstruction mammaire</strong> se déroule en plusieurs étapes :</p><ol>
+<li>
+<p><strong>Anesthésie générale</strong> : La chirurgie se fait sous anesthésie générale. Le patient est placé en position allongée sur la table d'opération, avec un accès complet au sein à opérer.</p>
+</li>
+<li>
+<p><strong>Excision du tissu mammaire</strong> : Le chirurgien procède à l’ablation du tissu mammaire tout en préservant les <strong>mamelons</strong> et les <strong>aréoles</strong>, sauf dans les cas où ces derniers sont envahis par la tumeur. L’incision est généralement réalisée autour de l’aréole et sur le bas du sein.</p>
+</li>
+<li>
+<p><strong>Écartement des mamelons</strong> : Si les mamelons et les aréoles sont conservés, le chirurgien les « écarte » soigneusement pour assurer qu'ils restent en place et que la reconstruction mammaire puisse se faire de manière optimale.</p>
+</li>
+<li>
+<p><strong>Reconstruction mammaire</strong> : La reconstruction peut être réalisée à l’aide de <strong>prothèses mammaires</strong> (implants) ou en utilisant les <strong>tissus autologues</strong> (prélevés sur l'abdomen, les fesses ou le dos, par exemple). Dans certains cas, la reconstruction est immédiate, tandis que dans d’autres, elle peut être réalisée après une période de guérison de la mastectomie.</p>
+</li>
+<li>
+<p><strong>Vérification des résultats</strong> : Le chirurgien s’assure que la reconstruction est réussie et que l’apparence et la symétrie des seins sont respectées. Des drains peuvent être placés pour éviter l'accumulation de liquides.</p>
+</li>
+<li>
+<p><strong>Fermeture des incisions</strong> : Une fois la reconstruction terminée, l’incision est fermée avec des <strong>points de suture</strong>, et des pansements sont appliqués.</p>
+</li>
+</ol><p><strong>Soins post-opératoires :</strong><br/>
+Le patient est généralement hospitalisé pendant <strong>2 à 7 jours</strong>, selon la complexité de l'intervention et la méthode de reconstruction choisie. Des <strong>analgésiques</strong> seront administrés pour gérer la douleur, et des <strong>antibiotiques</strong> peuvent être prescrits pour prévenir les infections.</p><p>Les premiers jours post-opératoires nécessitent une surveillance stricte pour éviter les complications, telles que les infections ou l'accumulation de liquide (œdème). Des <strong>examens de suivi réguliers</strong> seront nécessaires pour s’assurer que la reconstruction se déroule correctement.</p><p>Le suivi inclut également une <strong>rééducation post-chirurgicale</strong>, notamment pour aider à récupérer la mobilité du bras et à éviter les complications liées à la cicatrisation.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications à la mastectomie avec écartement des mamelons et reconstruction mammaire</h2></div><div class="info-text"><p><p>Bien que cette chirurgie soit souvent bénéfique pour les patientes, il existe des contre-indications et des risques pour certaines d'entre elles :</p><ul>
+<li>
+<p><strong>Infections actives</strong> : Si une infection active est présente, particulièrement au niveau des seins ou du système immunitaire, l’intervention doit être différée jusqu’à la guérison complète de l’infection.</p>
+</li>
+<li>
+<p><strong>Cancers avancés</strong> : Dans certains cas, si le cancer est trop avancé ou si les <strong>mamelons</strong> sont affectés par la tumeur, il peut ne pas être possible de préserver l'aréole et le mamelon.</p>
+</li>
+<li>
+<p><strong>Troubles de la cicatrisation ou comorbidités graves</strong> : Les patientes présentant des problèmes de cicatrisation (comme le diabète mal contrôlé), ou ayant des <strong>pathologies graves</strong> (insuffisance cardiaque, troubles de la coagulation), peuvent être exclues de cette intervention en raison des risques accrus de complications.</p>
+</li>
+<li>
+<p><strong>Refus de la reconstruction mammaire</strong> : Certaines patientes ne souhaitent pas de reconstruction ou n'ont pas les indications nécessaires pour une reconstruction immédiate, ce qui rend la procédure inadaptée à leur situation.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour la mastectomie avec écartement des mamelons et reconstruction mammaire selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> propose des recommandations sur les établissements spécialisés dans la <strong>mastectomie avec écartement des mamelons</strong> et la <strong>reconstruction mammaire</strong> :</p><h4><strong>1. Hôpitaux spécialisés en oncologie et chirurgie mammaire</strong></h4><p>Les <strong>hôpitaux spécialisés en oncologie</strong> sont les établissements les plus</p><p>qualifiés pour réaliser cette intervention, grâce à leur expertise en traitement du cancer du sein et en chirurgie reconstructive. Ces centres disposent des technologies avancées nécessaires pour une prise en charge optimale.</p><h4><strong>2. Cliniques privées spécialisées en chirurgie plastique et oncologique</strong></h4><p>Certaines <strong>cliniques privées</strong> offrent des services personnalisés pour les patientes souhaitant une prise en charge plus intime ou moins complexe. Ces établissements disposent de <strong>chirurgiens plasticien spécialisés</strong> dans la reconstruction mammaire post-mastectomie.</p><h4><strong>3. Centres médicaux avec plateformes de soins en ligne</strong></h4><p>Le portail <strong>WIC-DOCTOR</strong> permet aux patientes de trouver des <strong>chirurgiens spécialisés</strong> et de prendre rendez-vous en ligne pour des consultations dans des centres experts en <strong>chirurgie mammaire</strong> et <strong>reconstruction</strong>.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un lieu de soin adapté pour la mastectomie avec écartement des mamelons et reconstruction mammaire</h2></div><div class="info-text"><p><p>La <strong>mastectomie avec écartement des mamelons et reconstruction mammaire</strong> est une procédure délicate qui nécessite des chirurgiens expérimentés et un suivi médical rigoureux. Le portail <strong>WIC-DOCTOR</strong> aide les patientes à trouver les <strong>meilleurs hôpitaux spécialisés</strong> et les <strong>chirurgiens plasticiens</strong> experts en <strong>reconstruction mammaire</strong> pour une prise en charge optimale.</p><p><strong></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>PET/CT Gated : Indications, Exécution, Contre-indications et Lieux de Soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Indications du PET/CT Gated<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Déroulement du PET/CT Gated<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Contre-indications du PET/CT Gated<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Lieux de Soins et Types de Soins pour le PET/CT Gated<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du PET/CT Gated</h2></div><div class="info-text"><p><p>Le <strong>PET/CT Gated</strong> (Tomographie par émission de positrons / Tomodensitométrie synchronisée avec l'électrocardiogramme) est une technique d'imagerie médicale avancée qui combine deux technologies d’imagerie : la tomographie par émission de positrons (PET) et la tomodensitométrie (CT), en l’associant à un <strong>ECG (électrocardiogramme)</strong> pour synchroniser les images obtenues avec les cycles cardiaques. Cette approche permet une meilleure précision dans le diagnostic, en particulier pour les pathologies cardiaques et oncologiques. Voici les principales indications pour un PET/CT Gated :</p><ul>
+<li>
+<p><strong>Évaluation de la fonction cardiaque</strong> : Le PET/CT Gated est largement utilisé pour évaluer la fonction myocardique, en particulier pour analyser la perfusion cardiaque, la viabilité myocardique, et détecter des zones ischémiques ou infarctus. C'est un outil crucial dans la gestion des patients présentant des maladies coronariennes complexes, notamment ceux qui sont candidats à des interventions comme la chirurgie cardiaque ou l'angioplastie.</p>
+</li>
+<li>
+<p><strong>Stades des maladies oncologiques</strong> : Ce test est aussi utilisé pour évaluer les stades des cancers, en particulier ceux du poumon, de la tête et du cou, et du sein, en détectant les zones de métastases et en analysant la réponse au traitement. Le PET/CT Gated permet d'obtenir des images précises du métabolisme cellulaire tumoral en corrélation avec la localisation anatomique des tumeurs.</p>
+</li>
+<li>
+<p><strong>Évaluation de l'efficacité des traitements oncologiques</strong> : Le PET/CT Gated est utilisé pour suivre les traitements anticancéreux, comme la chimiothérapie et la radiothérapie, afin de déterminer leur efficacité et de détecter toute rechute ou progression de la maladie.</p>
+</li>
+</ul></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement du PET/CT Gated</h2></div><div class="info-text"><p><p>Le <strong>PET/CT Gated</strong> combine l’imagerie par tomodensitométrie (CT) pour l’anatomie et par tomographie par émission de positrons (PET) pour la fonction. L’ajout du <strong>gating ECG</strong> (synchrocardiaque) permet de prendre en compte les mouvements du cœur pendant l’examen. Voici les étapes du déroulement de l'examen :</p><ol>
+<li><strong>Préparation avant l'examen</strong> :</li>
+<li><strong>Jeûne et restriction d'activités</strong> : Selon les indications, il est généralement conseillé de jeûner pendant 6 à 12 heures avant l’examen. Cette préparation est essentielle, en particulier pour garantir une absorption optimale du radiotraceur administré.</li>
+<li><strong>Hydratation</strong> : Le patient doit être bien hydraté avant l'examen, sauf contre-indication médicale.</li>
+<li>
+<p><strong>Arrêt de médicaments</strong> : Certains médicaments doivent être arrêtés quelques jours avant l'examen, notamment ceux qui peuvent interférer avec le métabolisme cardiaque ou tumoral (par exemple, les bêta-bloquants pour les tests cardiaques).</p>
+</li>
+<li>
+<p><strong>Administration du radiotraceur</strong> :</p>
+</li>
+<li>Un radiotraceur, souvent du <strong>fluorodésoxyglucose</strong> (FDG), est injecté par voie intraveineuse. Ce traceur est absorbé par les cellules ayant une activité métabolique élevée, comme les cellules tumorales ou les cellules cardiaques affectées.</li>
+<li>
+<p>Pour l’analyse cardiaque, l'injection se fait généralement 45 à 60 minutes avant l'examen pour permettre au radiotraceur de se distribuer dans le corps.</p>
+</li>
+<li>
+<p><strong>Réalisation de l'examen PET/CT</strong> :</p>
+</li>
+<li><strong>Positionnement du patient</strong> : Le patient est installé sur la table d'examen, généralement en position couchée, et un électrocardiogramme (ECG) est connecté pour synchroniser les images avec le cycle cardiaque.</li>
+<li><strong>Scan CT</strong> : La première étape de l'examen est réalisée par tomodensitométrie pour obtenir des images anatomiques détaillées de la région d’intérêt (cœur, poumon, etc.).</li>
+<li><strong>Scan PET</strong> : Ensuite, la tomographie par émission de positrons est réalisée pour capter les émissions du radiotraceur et produire des images fonctionnelles, mettant en évidence les zones d'activité métabolique.</li>
+<li>
+<p><strong>Gating ECG</strong> : Pendant l'examen, un capteur ECG synchronise les images PET avec les battements du cœur. Cela permet d'éviter la distorsion des images dues aux mouvements cardiaques, offrant ainsi des images plus nettes et précises.</p>
+</li>
+<li>
+<p><strong>Durée de l'examen</strong> :</p>
+</li>
+<li>
+<p>L’examen dure généralement entre 30 et 60 minutes, selon la zone à explorer et le type d'analyse (cardiaque ou oncologique). L'injection du radiotraceur et la préparation initiale peuvent ajouter un délai supplémentaire de 45 à 60 minutes avant que l’imagerie ne commence.</p>
+</li>
+<li>
+<p><strong>Post-examen</strong> :</p>
+</li>
+<li>Après l’examen, le patient peut généralement reprendre ses activités normales, sauf si des consignes particulières sont données par l’équipe médicale, notamment concernant l’élimination du radiotraceur.</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications du PET/CT Gated</h2></div><div class="info-text"><p><p>Bien que cette procédure soit relativement sûre, il existe certaines contre-indications ou précautions à prendre en compte :</p><ul>
+<li>
+<p><strong>Grossesse et allaitement</strong> : La <strong>radiation</strong> et l’injection de radiotraceur peuvent être contre-indiquées pendant la grossesse, sauf en cas d’absolue nécessité. Pour les femmes allaitantes, une période d’attente (souvent 24 heures) après l'examen est recommandée avant de reprendre l’allaitement.</p>
+</li>
+<li>
+<p><strong>Allergies au radiotraceur</strong> : Bien que rares, des réactions allergiques peuvent survenir en réponse au radiotraceur administré, comme des éruptions cutanées ou des difficultés respiratoires. Il est essentiel d’informer le médecin de toute allergie connue.</p>
+</li>
+<li>
+<p><strong>Mouvements involontaires</strong> : Les patients ayant des difficultés à rester immobiles pendant l’examen (en raison de douleurs, de tremblements ou d’autres troubles physiques) peuvent rencontrer des problèmes de qualité d’image. L'examen peut être difficile à réaliser dans ces conditions.</p>
+</li>
+</ul></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Types de Soins pour le PET/CT Gated</h2></div><div class="info-text"><p><p>Le <strong>PET/CT Gated</strong> est une procédure spécialisée qui nécessite des équipements de pointe et un suivi médical adapté. Voici les principaux lieux de soins où cette procédure peut être réalisée, en fonction des indications spécifiques du portail <strong>WIC-DOCTOR</strong> :</p><ol>
+<li><strong>Hôpitaux avec services de radiologie spécialisée</strong> :</li>
+<li>Les hôpitaux disposant d’un service de radiologie spécialisée sont les principaux lieux où le PET/CT Gated est effectué. Ces établissements sont équipés de machines de PET et de CT de dernière génération, avec une capacité de synchronisation ECG.</li>
+<li>
+<p>Les services d’oncologie, de cardiologie et de neurologie des hôpitaux de référence sont également en mesure d’utiliser cette technologie pour évaluer les patients atteints de cancers, de maladies cardiaques ou neurologiques.</p>
+</li>
+<li>
+<p><strong>Centres d'imagerie médicale et de médecine nucléaire</strong> :</p>
+</li>
+<li>
+<p>Certains centres privés spécialisés dans la médecine nucléaire et l’imagerie cardiaque ou oncologique proposent cette procédure avancée. Ces centres sont équipés des technologies nécessaires pour réaliser des scans PET/CT synchronisés avec un ECG.</p>
+</li>
+<li>
+<p><strong>Cliniques et centres spécialisés en cardiologie ou oncologie</strong> :</p>
+</li>
+<li>
+<p>Dans les centres spécialisés, en particulier en cardiologie et oncologie, le PET/CT Gated est souvent utilisé pour le suivi de patients présentant des pathologies cardiaques complexes ou des cancers métastatiques.</p>
+</li>
+<li>
+<p><strong>Centres de soins de médecine nucléaire</strong> :</p>
+</li>
+<li>
+<p>Les centres de médecine nucléaire, souvent affiliés à des hôpitaux ou à des cliniques spécialisées, réalisent également des PET/CT Gated pour évaluer la fonction cardiaque et surveiller les traitements oncologiques.</p>
+</li>
+<li>
+<p><strong>Suivi post-examen</strong> :</p>
+</li>
+<li>Après l'examen, un suivi médical est effectué pour interpréter les résultats et discuter des étapes suivantes avec le médecin référent, en fonction des résultats obtenus.</li>
+</ol><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>
