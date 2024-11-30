@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VQ6Y9SHVYS');
+</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="./assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="./assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="./assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="./assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="./assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="./assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+    <div class="container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+                    743 13 00 13</span></p>
+        </div>
+
+        <!-- Buttons -->
+
+        <div>
+            <div class="buttons">
+                <a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+                <a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+    <div class="container">
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="https://wic-doctor.com/">
+                <img class="logo-mb" src="assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+            </a>
+        </div>
+
+
+
+        <!-- Menu mobile -->
+        <div class="menu-mobile" id="menu-mobile">
+            <button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+            <ul>
+                <li><a href="https://wic-doctor.com/" >Accueil</a></li>
+                <li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+                <li><a href="#">Nos Solutions</a></li>
+                <li><a href="#">Nos Tarifs</a></li>
+                <li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+                <li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+                <li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+                <li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+                <li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+                <li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Navigation (visible uniquement sur desktop) -->
+        <nav>
+            <ul>
+                <li><a href="https://wic-doctor.com/" >Accueil</a></li>
+                <li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+                <li><a href="#">Nos Solutions</a></li>
+                <li><a href="#">Nos Tarifs</a></li>
+                <li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+                <li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+                <li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Extra Button -->
+        <div class="buttons">
+            <a href="#" class="btn-danger">Devenir Partenaire</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const hamburgerMenu = document.getElementById("hamburger-menu");
+        const menuMobile = document.getElementById("menu-mobile");
+        const closeMenuButton = document.getElementById("close-menu");
+
+        // Ouvrir le menu mobile en cliquant sur l'icône hamburger
+        hamburgerMenu.addEventListener("click", () => {
+            menuMobile.classList.add("active"); // Affiche le menu
+        });
+
+        // Fermer le menu mobile en cliquant sur le bouton "X"
+        closeMenuButton.addEventListener("click", () => {
+            menuMobile.classList.remove("active"); // Cache le menu
+        });
+    });
+    // Sélectionner tous les liens du menu
+    const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+    // Ajouter un écouteur d'événements pour chaque lien
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            // Supprimer la classe active de tous les liens
+            menuLinks.forEach(link => link.classList.remove('active'));
+
+            // Ajouter la classe active au lien cliqué
+            event.target.classList.add('active');
+        });
+    });
+    // Sélectionner tous les liens du menu desktop
+    const desktopLinks = document.querySelectorAll('nav ul li a');
+
+    // Ajouter un écouteur d'événements pour chaque lien
+    desktopLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            // Supprimer la classe active de tous les liens
+            desktopLinks.forEach(link => link.classList.remove('active'));
+
+            // Ajouter la classe active au lien cliqué
+            event.target.classList.add('active');
+        });
+    });
+</script>
+
+<section class="sptb section-bg" style="background-color: #f0f0f0;">
+    <div class="container">
+        <div class="section-title center-block text-center">
+            <h2>Intervention</h2>
+            <h4>Nous avons toujours été engagés à améliorer les soins de santé en soutenant la recherche,
+                l'innovation et le développement de nouvelles technologies médicales,
+                en les rendant rapidement accessibles à nos patients.</h4>
+        </div>
+        
+        <div class="button-container text-center" >
+            <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">A</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">B</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">C</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">D</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">E</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">F</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">G</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('I')"><button class="alphabet-button">I</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('L')"><button class="alphabet-button">L</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('M')"><button class="alphabet-button">M</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('P')"><button class="alphabet-button">P</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('R')"><button class="alphabet-button">R</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('S')"><button class="alphabet-button">S</button></a>
+            <a href="javascript:void(0)" onclick="scrollToSection('T')"><button class="alphabet-button">T</button></a>
+        </div>
+        
+        <div class="container">
+            <div class="section-title center-block text-center">
+                <h2></h2>
+            </div>
+            
+<div class="scrollable-content">
+<h1 id="A">A</h1>
+<a href="./diagnostic/Angiocardioscintigraphie-à-l'équilibre.html" style="color: black;"><p>Angiocardioscintigraphie À L'Équilibre</p></a>
+<a href="./diagnostic/Angiographie-Coronaire.html" style="color: black;"><p>Angiographie Coronaire</p></a>
+<a href="./diagnostic/Angiographie.html" style="color: black;"><p>Angiographie</p></a>
+<a href="./diagnostic/Aspiration-à-l'Aiguille-Fine.html" style="color: black;"><p>Aspiration À L'Aiguille Fine</p></a>
+<a href="./diagnostic/Angiocardioscintigraphie.html" style="color: black;"><p>Angiocardioscintigraphie</p></a>
+<h1 id="B">B</h1>
+<a href="./diagnostic/Biopsie-de-la-Prostate.html" style="color: black;"><p>Biopsie De La Prostate</p></a>
+<a href="./diagnostic/Biopsie-du-Pénis.html" style="color: black;"><p>Biopsie Du Pénis</p></a>
+<a href="./diagnostic/Biopsie-Prostatique-Échoguidée-à-l'Aiguille.html" style="color: black;"><p>Biopsie Prostatique Échoguidée À L'Aiguille</p></a>
+<a href="./diagnostic/biopsie-à-l'aiguille-avec-système-VABB.html" style="color: black;"><p>Biopsie À L'Aiguille Avec Système Vabb</p></a>
+<a href="./diagnostic/Biopsie-Rénale.html" style="color: black;"><p>Biopsie Rénale</p></a>
+<a href="./diagnostic/Biopsie-à-l'Aiguille.html" style="color: black;"><p>Biopsie À L'Aiguille</p></a>
+<h1 id="C">C</h1>
+<a href="./diagnostic/Cystoscopie-avec-un-Instrument-Flexible.html" style="color: black;"><p>Cystoscopie Avec Un Instrument Flexible</p></a>
+<a href="./diagnostic/Caryotypage-fœtal.html" style="color: black;"><p>Caryotypage Fœtal</p></a>
+<a href="./diagnostic/Centrage-IRM.html" style="color: black;"><p>Centrage Irm</p></a>
+<a href="./diagnostic/CT-de-Centrage.html" style="color: black;"><p>Ct De Centrage</p></a>
+<a href="./diagnostic/Coronarographie.html" style="color: black;"><p>Coronarographie</p></a>
+<a href="./diagnostic/Cartographie-des-nævus.html" style="color: black;"><p>Cartographie Des Nævus</p></a>
+<a href="./diagnostic/CT-Scan-du-Massif-Facial.html" style="color: black;"><p>Ct Scan Du Massif Facial</p></a>
+<a href="./diagnostic/Cathétérisme-Cardiaque.html" style="color: black;"><p>Cathétérisme Cardiaque</p></a>
+<h1 id="D">D</h1>
+<a href="./diagnostic/des-Tests-de-Chimie-du-Sang.html" style="color: black;"><p>Des Tests De Chimie Du Sang</p></a>
+<a href="./diagnostic/Dépistage-de-l.html" style="color: black;"><p>Dépistage De L</p></a>
+<a href="./diagnostic/dynamique-de-holter.html" style="color: black;"><p>Dynamique De Holter</p></a>
+<h1 id="E">E</h1>
+<a href="./diagnostic/Exercice-Prégreffe.html" style="color: black;"><p>Exercice Prégreffe</p></a>
+<a href="./diagnostic/Esophagogastroduodénoscopie.html" style="color: black;"><p>Esophagogastroduodénoscopie</p></a>
+<a href="./diagnostic/Examen-Urodynamique-Complet.html" style="color: black;"><p>Examen Urodynamique Complet</p></a>
+<a href="./diagnostic/Endoscopie-Nasale.html" style="color: black;"><p>Endoscopie Nasale</p></a>
+<a href="./diagnostic/Echocolordoppler-TSA-et-CT.html" style="color: black;"><p>Echocolordoppler Tsa Et Ct</p></a>
+<a href="./diagnostic/Eosinophiles.html" style="color: black;"><p>Eosinophiles</p></a>
+<a href="./diagnostic/echocardiogramme.html" style="color: black;"><p>Echocardiogramme</p></a>
+<a href="./diagnostic/Endoscopie-Digestive-Diagnostique.html" style="color: black;"><p>Endoscopie Digestive Diagnostique</p></a>
+<a href="./diagnostic/Entérographie-par-Résonance-Magnétique.html" style="color: black;"><p>Entérographie Par Résonance Magnétique</p></a>
+<h1 id="F">F</h1>
+<a href="./diagnostic/footer.html" style="color: black;"><p>Footer</p></a>
+<h1 id="G">G</h1>
+<a href="./diagnostic/Gastrostomie-Endoscopique-Percutanée.html" style="color: black;"><p>Gastrostomie Endoscopique Percutanée</p></a>
+<h1 id="I">I</h1>
+<a href="./diagnostic/IRM-Fœtale.html" style="color: black;"><p>Irm Fœtale</p></a>
+<a href="./diagnostic/IRM-Lymphatique.html" style="color: black;"><p>Irm Lymphatique</p></a>
+<a href="./diagnostic/IRM-Musculo.html" style="color: black;"><p>Irm Musculo</p></a>
+<a href="./diagnostic/Innervation-Adrenergique-Myocardique-par-SPECT-avec-le-Radiopharmaceutique-I.html" style="color: black;"><p>Innervation Adrenergique Myocardique Par Spect Avec Le Radiopharmaceutique I</p></a>
+<a href="./diagnostic/IRM-Mammaire.html" style="color: black;"><p>Irm Mammaire</p></a>
+<a href="./diagnostic/Indications-du-Diagnostic-de-la-Discopathie-Dégénérative.html" style="color: black;"><p>Indications Du Diagnostic De La Discopathie Dégénérative</p></a>
+<a href="./diagnostic/IRM-Pelvienne.html" style="color: black;"><p>Irm Pelvienne</p></a>
+<a href="./diagnostic/IRM-de-Centrage.html" style="color: black;"><p>Irm De Centrage</p></a>
+<a href="./diagnostic/IRM-Extravasculaire.html" style="color: black;"><p>Irm Extravasculaire</p></a>
+<a href="./diagnostic/Indications-du-Diagnostic-de-Hernie-Discale.html" style="color: black;"><p>Indications Du Diagnostic De Hernie Discale</p></a>
+<a href="./diagnostic/Indications-du-Diagnostic-de-la-Scoliose-chez-l.html" style="color: black;"><p>Indications Du Diagnostic De La Scoliose Chez L</p></a>
+<a href="./diagnostic/index.html" style="color: black;"><p>Index</p></a>
+<h1 id="L">L</h1>
+<a href="./diagnostic/La--Localisation-Préopératoire-du-Sein.html" style="color: black;"><p>La  Localisation Préopératoire Du Sein</p></a>
+<a href="./diagnostic/l'Échographie-Mammaire.html" style="color: black;"><p>L'Échographie Mammaire</p></a>
+<a href="./diagnostic/Lymphangiographie-au-Vert-d.html" style="color: black;"><p>Lymphangiographie Au Vert D</p></a>
+<a href="./diagnostic/l'Échographie-Transrectale-de-la-Prostate.html" style="color: black;"><p>L'Échographie Transrectale De La Prostate</p></a>
+<a href="./diagnostic/Lampe-de-Wood.html" style="color: black;"><p>Lampe De Wood</p></a>
+<a href="./diagnostic/la-Ligature-de-Varices-Œsophagiennes.html" style="color: black;"><p>La Ligature De Varices Œsophagiennes</p></a>
+<a href="./diagnostic/l'Échographie-Testiculaire.html" style="color: black;"><p>L'Échographie Testiculaire</p></a>
+<a href="./diagnostic/l'Échographie-Intravasculaire.html" style="color: black;"><p>L'Échographie Intravasculaire</p></a>
+<a href="./diagnostic/l'Échographie-Musculo-Squelettique.html" style="color: black;"><p>L'Échographie Musculo Squelettique</p></a>
+<h1 id="M">M</h1>
+<a href="./diagnostic/Mammographie.html" style="color: black;"><p>Mammographie</p></a>
+<a href="./diagnostic/Mise-en-place-et-remplacement-dune-atelle.html" style="color: black;"><p>Mise En Place Et Remplacement Dune Atelle</p></a>
+<a href="./diagnostic/mammaire.html" style="color: black;"><p>Mammaire</p></a>
+<h1 id="P">P</h1>
+<a href="./diagnostic/Prélèvement-Urétral-et-Test-de-Stamey.html" style="color: black;"><p>Prélèvement Urétral Et Test De Stamey</p></a>
+<a href="./diagnostic/PET.html" style="color: black;"><p>Pet</p></a>
+<a href="./diagnostic/Polipectomie.html" style="color: black;"><p>Polipectomie</p></a>
+<a href="./diagnostic/Pyélographie-Ascendante.html" style="color: black;"><p>Pyélographie Ascendante</p></a>
+<h1 id="R">R</h1>
+<a href="./diagnostic/Radiographie-de-la-Vessie-avec-Contexte.html" style="color: black;"><p>Radiographie De La Vessie Avec Contexte</p></a>
+<a href="./diagnostic/Radiographie-Musculo.html" style="color: black;"><p>Radiographie Musculo</p></a>
+<a href="./diagnostic/Résonance-Magnétique.html" style="color: black;"><p>Résonance Magnétique</p></a>
+<a href="./diagnostic/Radiographie-du-Thorax.html" style="color: black;"><p>Radiographie Du Thorax</p></a>
+<a href="./diagnostic/Radiothérapie-par-Radio.html" style="color: black;"><p>Radiothérapie Par Radio</p></a>
+<a href="./diagnostic/Radiographie.html" style="color: black;"><p>Radiographie</p></a>
+<a href="./diagnostic/Rhinomanométrie-et-Rhinométrie-Acoustique.html" style="color: black;"><p>Rhinomanométrie Et Rhinométrie Acoustique</p></a>
+<a href="./diagnostic/Radiographie-des-Membres-Inférieurs.html" style="color: black;"><p>Radiographie Des Membres Inférieurs</p></a>
+<a href="./diagnostic/Radiographie-des-Pieds-en-Charge.html" style="color: black;"><p>Radiographie Des Pieds En Charge</p></a>
+<h1 id="S">S</h1>
+<a href="./diagnostic/Scintigraphie-Lymphatique-et-Lymphoscintigraphie-Segmentaire.html" style="color: black;"><p>Scintigraphie Lymphatique Et Lymphoscintigraphie Segmentaire</p></a>
+<a href="./diagnostic/Spirométrie.html" style="color: black;"><p>Spirométrie</p></a>
+<a href="./diagnostic/Scintigraphie-des-Corticosurrénales.html" style="color: black;"><p>Scintigraphie Des Corticosurrénales</p></a>
+<a href="./diagnostic/Scintigraphie-du-Transit-Oesophago.html" style="color: black;"><p>Scintigraphie Du Transit Oesophago</p></a>
+<a href="./diagnostic/Scintigraphie-du-Foie.html" style="color: black;"><p>Scintigraphie Du Foie</p></a>
+<a href="./diagnostic/Scintigraphie-Osseuse.html" style="color: black;"><p>Scintigraphie Osseuse</p></a>
+<a href="./diagnostic/Scintigraphie-Hépatobiliaire-Séquentielle.html" style="color: black;"><p>Scintigraphie Hépatobiliaire Séquentielle</p></a>
+<a href="./diagnostic/Scintigraphie-Rénale-Séquentielle.html" style="color: black;"><p>Scintigraphie Rénale Séquentielle</p></a>
+<a href="./diagnostic/SPECT-Cérébrale.html" style="color: black;"><p>Spect Cérébrale</p></a>
+<a href="./diagnostic/Scintigraphie-Myocardique.html" style="color: black;"><p>Scintigraphie Myocardique</p></a>
+<a href="./diagnostic/Scintigraphie-Parathyroïdienne.html" style="color: black;"><p>Scintigraphie Parathyroïdienne</p></a>
+<a href="./diagnostic/Scintigraphie-Médullosurrénale.html" style="color: black;"><p>Scintigraphie Médullosurrénale</p></a>
+<a href="./diagnostic/Scintigraphie-Rénale.html" style="color: black;"><p>Scintigraphie Rénale</p></a>
+<a href="./diagnostic/Scintigraphie-de-Perfusion-Myocardique.html" style="color: black;"><p>Scintigraphie De Perfusion Myocardique</p></a>
+<a href="./diagnostic/Scintigraphie-Osseuse-ou-Articulaire-Segmentaire.html" style="color: black;"><p>Scintigraphie Osseuse Ou Articulaire Segmentaire</p></a>
+<a href="./diagnostic/SPECT-Rénal-avec-MIBI.html" style="color: black;"><p>Spect Rénal Avec Mibi</p></a>
+<a href="./diagnostic/Scanner-de-Centrage.html" style="color: black;"><p>Scanner De Centrage</p></a>
+<a href="./diagnostic/Scintigraphie-Osseuse-et-Articulaire-Polyphasique.html" style="color: black;"><p>Scintigraphie Osseuse Et Articulaire Polyphasique</p></a>
+<a href="./diagnostic/Scintigraphie-de-Perfusion-Pulmonaire.html" style="color: black;"><p>Scintigraphie De Perfusion Pulmonaire</p></a>
+<a href="./diagnostic/Scintigraphie-des-Glandes-Salivaires.html" style="color: black;"><p>Scintigraphie Des Glandes Salivaires</p></a>
+<h1 id="T">T</h1>
+<a href="./diagnostic/Test-PSA.html" style="color: black;"><p>Test Psa</p></a>
+<a href="./diagnostic/Test-de-Roll.html" style="color: black;"><p>Test De Roll</p></a>
+<a href="./diagnostic/TEP.html" style="color: black;"><p>Tep</p></a>
+<a href="./diagnostic/Tests-de-Potentiels-Évoqués.html" style="color: black;"><p>Tests De Potentiels Évoqués</p></a>
+<a href="./diagnostic/TEP-du-Métabolisme-du-Myocarde-avec-le-F18-FDG.html" style="color: black;"><p>Tep Du Métabolisme Du Myocarde Avec Le F18 Fdg</p></a>
+<a href="./diagnostic/TEP-Corps-Entier-avec-la-Choline.html" style="color: black;"><p>Tep Corps Entier Avec La Choline</p></a>
+<a href="./diagnostic/Téléradiographie-de-la-Colonne-Vertébrale.html" style="color: black;"><p>Téléradiographie De La Colonne Vertébrale</p></a>
+<a href="./diagnostic/Test-de-la-Provocation-des-Spasmes-à-l'Acétylcholine.html" style="color: black;"><p>Test De La Provocation Des Spasmes À L'Acétylcholine</p></a>
+<a href="./diagnostic/TEP-de-la-Quantité-d.html" style="color: black;"><p>Tep De La Quantité D</p></a>
+<a href="./diagnostic/TEP-Corps-Entier-avec-68Ga.html" style="color: black;"><p>Tep Corps Entier Avec 68Ga</p></a>
+<a href="./diagnostic/Tep-avec.html" style="color: black;"><p>Tep Avec</p></a>
+<a href="./diagnostic/Test-d'inclinaison.html" style="color: black;"><p>Test D'Inclinaison</p></a>
+<a href="./diagnostic/TEP-CT-pour-la-Radiothérapie.html" style="color: black;"><p>Tep Ct Pour La Radiothérapie</p></a>
+<a href="./diagnostic/Trichoscopie.html" style="color: black;"><p>Trichoscopie</p></a>
+<a href="./diagnostic/TEP-de-lammoniac.html" style="color: black;"><p>Tep De Lammoniac</p></a>
+<a href="./diagnostic/thyroide.html" style="color: black;"><p>Thyroide</p></a>
+<a href="./diagnostic/Tomographie-Assistée-par-Ordinateur.html" style="color: black;"><p>Tomographie Assistée Par Ordinateur</p></a>
+<a href="./diagnostic/Tests-Cardiopulmonaires.html" style="color: black;"><p>Tests Cardiopulmonaires</p></a>
+<a href="./diagnostic/TEP-du-Métabolisme-Cérébral-avec-le-Fluoro.html" style="color: black;"><p>Tep Du Métabolisme Cérébral Avec Le Fluoro</p></a>
+<a href="./diagnostic/Test-d'effort.html" style="color: black;"><p>Test D'Effort</p></a>
+<a href="./diagnostic/Test-de-l'acide-acétique.html" style="color: black;"><p>Test De L'Acide Acétique</p></a>
+<h1 id="U">U</h1>
+<a href="./diagnostic/Ultrason.html" style="color: black;"><p>Ultrason</p></a>
+<a href="./diagnostic/Uroflowmétrie-avec-Évaluation-du-Résidu-Post.html" style="color: black;"><p>Uroflowmétrie Avec Évaluation Du Résidu Post</p></a>
+<a href="./diagnostic/Urétrocystographie-Rétrograde-et-Mictionnelle-par-Rayons-X.html" style="color: black;"><p>Urétrocystographie Rétrograde Et Mictionnelle Par Rayons X</p></a>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    const scrollableContent = document.querySelector('.scrollable-content');
+    
+    if (section && scrollableContent) {
+        // Disable scroll on body and html to prevent scrolling the entire page
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+        
+        // Add a small offset to the scrollTop so the letter appears at the top
+        const offset = 520; // Adjust this value to fine-tune the position
+        scrollableContent.scrollTop = section.offsetTop - offset; // Scroll container directly
+        
+        // Re-enable scroll on body and html after the scroll is complete
+        setTimeout(() => {
+            document.body.style.overflow = 'auto';
+            document.documentElement.style.overflow = 'auto';
+        }, 500); // Adjust the timeout value to match the scroll duration
+    }
+}
+</script>
+
+
+
+
+<section>
+    <footer class="text-white footer-bg">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <p class="footer-title">À propos </p>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="./qui-sommes-nous.html">Qui sommes-nous ?</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Témoignages</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Mentions légales</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Politique de confidentialité</a>
+                            </li>
+                            <li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <p class="footer-title">Trouvez</p>
+                        <hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <div class="clearfix"></div>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:;">Professionnels de santé</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Pharmacies & Parapharmacies</a>
+                            </li>
+                            <li>
+                                <a href="./trouver-une-clinique.html">Cliniques</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Laboratoires</a>
+                            </li>
+                            <li>
+                                <a href="pathologies.html">Pathologies: diagnostique et intervention</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <p  class="footer-title">Ressources</p>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Journal Médical</a>
+                            </li>
+                            <!-- <li>
+                                <a href="javascript:;">Forum Médical</a>
+                            </li> -->
+                            <!-- <li>
+                                <a href="javascript:;">La technologie Médicale</a>
+                            </li> -->
+
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-12">
+                        <p class="footer-title">Support</p>
+                        <hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <div class="clearfix"></div>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="javascript:;">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contactez-nous</a>
+                            </li>
+                            
+                            <!-- <li>
+                                <a href="javascript:;">Support technique</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Réseaux Sociaux</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- 	<div class="col-lg-3 col-md-12">
+                        <h6>Contact</p>
+                        <hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+                        <ul class="list-unstyled mb-0 contact-footer">
+                            <li>
+                                <i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+                                94070, USA
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>+33 2 55 04 55 04
+                            </li>
+                            <li>
+                                <i class="fa fa-print"></i>+ 01 234 567 89
+                            </li>
+                        </ul>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="text-white p-0">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+                        Copyright © 2024 WIC DOCTOR All
+                        rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+    <div class="modal-dialog modal-lg modal-appoint" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+                    class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Your Name</label>
+                            <input class="form-control" placeholder="Enter Your Name" type="text">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Your Email</label>
+                            <input class="form-control" placeholder="Enter your Email" type="email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Your Number</label>
+                            <input class="form-control" placeholder="Enter your Phone Number" type="number">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Select Gender</label>
+                            <select class="form-control select2" name="user[hour]">
+                                <option value="">Male</option>
+                                <option value="0">Female</option>
+                                <option value="1">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="form-label">Select Date</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+                                    </div>
+                                </div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+                                    type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Select City</label>
+                            <select class="form-control form-select select2-show-search" name="city">
+                                <option selected value="0">Select City</option>
+                                <option value="1">Hyderabad</option>
+                                <option value="2">Mumbai</option>
+                                <option value="3">Delhi</option>
+                                <option value="4">Bangalore</option>
+                                <option value="5">Ahmedabad</option>
+                                <option value="6">Chennai</option>
+                                <option value="7">Kolkata</option>
+                                <option value="8">Lucknow</option>
+                                <option value="9">Jaipur</option>
+                                <option value="10">Bhopal</option>
+                                <option value="11">Visakhapatnam</option>
+                                <option value="12">Patna</option>
+                                <option value="13">Srinagar</option>
+                                <option value="14">Lucknow</option>
+                                <option value="15">Bhubaneswar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Select Hospital</label>
+                            <select class="form-control form-select select2-show-search" name="Hospital">
+                                <option selected value="0">Select Hospital</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Select Specialist</label>
+                            <select class="form-control form-select select2-show-search" name="Specialist">
+                                <option selected value="0">Select Specialist</option>
+                                <option value="1">Cardiologist</option>
+                                <option value="2">Neurosurgeon</option>
+                                <option value="3">Orthopaedic Surgeon</option>
+                                <option value="4">Oncologist</option>
+                                <option value="5">Neurologist</option>
+                                <option value="6">Gastroenterologist</option>
+                                <option value="7">ENT</option>
+                                <option value="8">Dentist</option>
+                                <option value="9">Psychiatrist</option>
+                                <option value="10">Urologist</option>
+                                <option value="11">Gynecologist</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Select Slot</label>
+                            <select class="form-control form-select select2-show-search" name="Slot">
+                                <option selected value="0">Select Hospital</option>
+                                <option value="1">morning</option>
+                                <option value="2">Afternoon</option>
+                                <option value="3">Evening</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="">
+                    <a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="./assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="./assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="./assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="./assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="./assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="./assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="./assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="./assets/plugins/counters/counterup.min.js"></script>
+<script src="./assets/plugins/counters/waypoints.min.js"></script>
+<script src="./assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="./assets/plugins/date-picker/spectrum.js"></script>
+<script src="./assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="./assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="./assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="./assets/plugins/select2/select2.full.min.js"></script>
+<script src="./assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="./assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="./assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="./assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="./assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="./assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="./assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="./assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="./assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="./assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="./assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="./assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

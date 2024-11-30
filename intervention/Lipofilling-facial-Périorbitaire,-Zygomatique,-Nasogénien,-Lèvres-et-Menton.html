@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Lipofilling facial : Périorbitaire, Zygomatique, Nasogénien, Lèvres et Menton – Indications, Déroulement, Contre-indications et Lieux de soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation du lipofilling facial<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications du lipofilling facial<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement du lipofilling facial<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications au lipofilling facial<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour le lipofilling facial selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un lieu de soin adapté pour le lipofilling facial<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation du lipofilling facial</h2></div><div class="info-text"><p><p>Le <strong>lipofilling facial</strong> est une technique de <strong>chirurgie esthétique</strong> qui consiste à injecter de la graisse autologue (provenant du propre corps du patient) dans des zones ciblées du visage pour restaurer ou améliorer le volume, redessiner les contours et améliorer l'apparence de certaines parties du visage. Cette procédure non invasive permet d'obtenir des résultats naturels, sans recours à des implants ou des produits de comblement synthétiques.</p><p>Le lipofilling facial est particulièrement utilisé pour traiter les zones <strong>périorbitales</strong> (autour des yeux), <strong>zygomatiques</strong> (les pommettes), <strong>nasogéniennes</strong> (les sillons nasogéniens), ainsi que <strong>les lèvres</strong> et le <strong>menton</strong>. En plus de l'augmentation du volume, il contribue à un <strong>rajeunissement</strong> global en apportant un effet de <strong>sculpture faciale</strong>.</p><p>Le lipofilling facial est une excellente solution pour les patients souhaitant un <strong>embellissement naturel</strong> et discret de leur visage, avec des résultats durables, car la graisse injectée se stabilise dans les tissus au fil du temps. </p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications du lipofilling facial</h2></div><div class="info-text"><p><p>Le lipofilling facial est indiqué pour plusieurs raisons esthétiques, notamment pour :</p><ul>
+<li>
+<p><strong>Réduire les rides et les plis du visage</strong> : Le lipofilling est couramment utilisé pour <strong>combler</strong> les <strong>sillons nasogéniens</strong> (plis qui se forment entre le nez et les lèvres), les <strong>rides du lion</strong>, ou pour atténuer l'apparition des <strong>cicatrices</strong> sur le visage.</p>
+</li>
+<li>
+<p><strong>Restauration du volume perdu</strong> : Avec le temps et à mesure que l'âge avance, les structures graisseuses du visage peuvent diminuer, entraînant un affaissement et une perte de volume. Le lipofilling est idéal pour restaurer le volume <strong>périorbital</strong>, <strong>zygomatique</strong>, ou encore <strong>nasogénien</strong>, et <strong>rafraîchir</strong> l'apparence du visage.</p>
+</li>
+<li>
+<p><strong>Rehausser les pommettes</strong> : Le <strong>lipofilling zygomatique</strong> consiste à injecter de la graisse dans la région des pommettes pour leur donner plus de volume et de projection, créant ainsi un visage plus harmonieux.</p>
+</li>
+<li>
+<p><strong>Augmentation du volume des lèvres</strong> : Le lipofilling peut être utilisé pour <strong>augmenter le volume</strong> des <strong>lèvres</strong> de manière plus naturelle que les produits de comblement classiques (acide hyaluronique).</p>
+</li>
+<li>
+<p><strong>Raffermir et redéfinir le contour du menton</strong> : Le lipofilling du <strong>menton</strong> permet de <strong>sculpter</strong> le bas du visage et d’obtenir une <strong>ligne mandibulaire</strong> plus marquée, pour un profil plus équilibré et harmonieux.</p>
+</li>
+<li>
+<p><strong>Réduire les cernes</strong> : Le <strong>lipofilling périorbitaire</strong> est idéal pour atténuer les cernes et les creux sous les yeux, en restaurant le volume perdu et en apportant un effet de <strong>rajeunissement</strong>.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement du lipofilling facial</h2></div><div class="info-text"><p><p>Le <strong>lipofilling facial</strong> est une procédure relativement simple, qui se déroule en plusieurs étapes :</p><p><strong>Préparation avant l'intervention</strong> :<br/>
+Lors de la consultation préalable, le chirurgien esthétique évalue les zones du visage à traiter et discute des attentes du patient. Il réalise également un <strong>bilan médical</strong> pour s'assurer que le patient est apte à subir l'intervention. Une <strong>échographie</strong> ou des examens préopératoires peuvent être nécessaires pour vérifier la santé générale du patient.</p><p><strong>L'intervention chirurgicale</strong> :<br/>
+L'intervention de lipofilling facial se fait sous <strong>anesthésie locale</strong> ou <strong>sédation légère</strong>, bien que l'anesthésie générale soit parfois recommandée en fonction des zones à traiter et de la durée de l'intervention. Le processus se déroule généralement en plusieurs étapes :</p><ol>
+<li>
+<p><strong>Prélevé de graisse</strong> : Le chirurgien effectue une <strong>liposuccion</strong> légère dans une zone du corps où il y a un excédent de graisse (généralement l'abdomen, les cuisses ou les hanches). La graisse est ensuite <strong>purifiée</strong> pour enlever les impuretés.</p>
+</li>
+<li>
+<p><strong>Injection de graisse</strong> : Une fois la graisse purifiée, elle est réinjectée dans les zones ciblées du visage (autour des yeux, les pommettes, les sillons nasogéniens, les lèvres, le menton) à l'aide de <strong>canules fines</strong> et précises. Le chirurgien s'assure que la graisse est répartie de manière homogène et naturelle pour éviter toute irrégularité.</p>
+</li>
+<li>
+<p><strong>Modelage et finition</strong> : Le chirurgien sculpte et ajuste le volume pour obtenir un résultat harmonieux et équilibré.</p>
+</li>
+<li>
+<p><strong>Sutures et récupération</strong> : Après l’injection, de petites incisions sont suturées, généralement avec des <strong>points résorbables</strong>. Le patient peut quitter la clinique le jour même ou après une courte surveillance. Des <strong>compresses froides</strong> sont souvent recommandées pour minimiser l'enflure.</p>
+</li>
+</ol><p><strong>Soins post-opératoires</strong> :<br/>
+Après l'opération, des <strong>ecchymoses</strong> (bleus) et un <strong>gonflement</strong> peuvent apparaître, mais ces effets sont temporaires et disparaissent généralement au bout de 7 à 10 jours. Il est conseillé d'éviter les efforts physiques intenses pendant 2 à 3 semaines après l'intervention. Les résultats finaux seront visibles après 3 à 6 mois, lorsque la graisse réinjectée se stabilise.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications au lipofilling facial</h2></div><div class="info-text"><p><p>Bien que le lipofilling facial soit une technique généralement sûre, il existe des contre-indications dans certains cas :</p><ul>
+<li>
+<p><strong>Insuffisance pondérale</strong> : Si le patient ne dispose pas d'une quantité suffisante de graisse pour le prélèvement, cette procédure peut ne pas être possible. Les patients minces peuvent envisager d'autres options comme les <strong>implants faciaux</strong> ou les <strong>injections d'acide hyaluronique</strong>.</p>
+</li>
+<li>
+<p><strong>Infections ou maladies de la peau</strong> : Les infections cutanées actives, ainsi que certaines affections de la peau, doivent être traitées avant de réaliser un lipofilling facial. En présence de <strong>troubles cutanés</strong> ou de <strong>cicatrices hypertrophiques</strong>, le chirurgien évalue la faisabilité de l'intervention.</p>
+</li>
+<li>
+<p><strong>Troubles de la coagulation</strong> : Les patients souffrant de troubles sanguins ou qui prennent des médicaments anticoagulants doivent informer leur chirurgien. Dans certains cas, l'intervention peut nécessiter un ajustement ou être reportée.</p>
+</li>
+<li>
+<p><strong>Antécédents de problèmes cardiaques ou pulmonaires graves</strong> : Les patients ayant des <strong>pathologies cardiaques</strong> ou <strong>respiratoires graves</strong> doivent faire l'objet d'une évaluation approfondie avant de subir un lipofilling facial.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour le lipofilling facial selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> propose une liste de centres et de cliniques spécialisés pour la réalisation du lipofilling facial, en fonction des besoins et des attentes des patients :</p><h4><strong>1. Cliniques de chirurgie esthétique spécialisées</strong></h4><p>Les <strong>cliniques spécialisées en chirurgie esthétique</strong> sont les établissements les plus courants pour réaliser un lipofilling facial. Elles disposent de <strong>chirurgiens plasticiens expérimentés</strong> et de technologies de pointe pour effectuer l'opération de manière sécurisée.</p><h4><strong>2. Hôpitaux spécialisés en chirurgie plastique</strong></h4><p>Les <strong>hôpitaux</strong> ou <strong>centres médicaux spécialisés en chirurgie plastique</strong> peuvent également être des options, notamment pour les patients ayant des besoins spécifiques ou des antécédents médicaux particuliers.</p><h4><strong>3. Chirurgiens plasticiens privés</strong></h4><p>Les <strong>chirurgiens plasticiens privés</strong> proposent des services personnalisés et peuvent effectuer des lipofillings faciaux dans des cadres plus intimes et privés, offrant une prise en charge complète.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un lieu de soin adapté pour le lipofilling facial</h2></div><div class="info-text"><p><p>Le <strong>lipofilling facial</strong> est une solution efficace pour redonner du volume et de la jeunesse au visage tout en conservant un résultat naturel. Grâce au portail <strong>WIC-DOCTOR</strong>, les patients peuvent trouver des **chirurgiens plasticiens qual</p><p>ifiés<strong> et des </strong>centres spécialisés** offrant des soins de qualité pour garantir des résultats optimaux et un suivi personnalisé après l'intervention.</p><p><strong></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

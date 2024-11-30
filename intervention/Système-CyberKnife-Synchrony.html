@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Système CyberKnife Synchrony : Indications, Déroulement, Bénéfices et Lieux de Soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation du Système CyberKnife Synchrony<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications du Système CyberKnife Synchrony<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement du Traitement avec le Système CyberKnife Synchrony<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Bénéfices du Système CyberKnife Synchrony<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et Types de Soins Disponibles pour le Système CyberKnife Synchrony via WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un Lieu de Soins Adapté pour le Système CyberKnife Synchrony<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation du Système CyberKnife Synchrony</h2></div><div class="info-text"><p><p>Le <strong>Système CyberKnife Synchrony</strong> est une technologie de pointe utilisée dans le traitement de divers types de <strong>cancers</strong> et de <strong>tumeurs</strong> grâce à la radiothérapie. Ce système utilise un <strong>rayonnement de haute précision</strong> pour cibler des lésions tumorales, offrant une alternative non invasive aux techniques traditionnelles telles que la chirurgie. </p><p>Ce système est particulièrement innovant car il est capable de <strong>suivre en temps réel</strong> les mouvements du patient, ce qui le rend particulièrement adapté pour le traitement des tumeurs dans des zones mobiles du corps, comme les <strong>poumons</strong>, <strong>le foie</strong> et les <strong>reins</strong>, tout en minimisant l'exposition des tissus sains aux radiations. Grâce à son <strong>système Synchrony</strong>, qui ajuste la délivrance de rayonnement en fonction des mouvements respiratoires, le <strong>CyberKnife</strong> assure une <strong>précision millimétrique</strong> même pendant les mouvements respiratoires.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications du Système CyberKnife Synchrony</h2></div><div class="info-text"><p><p>Le <strong>CyberKnife Synchrony</strong> est utilisé pour traiter plusieurs types de pathologies oncologiques et non oncologiques, notamment :</p><ul>
+<li>
+<p><strong>Cancers pulmonaires</strong> : Grâce à sa capacité à cibler précisément les tumeurs dans les poumons, même en présence de mouvements respiratoires, le CyberKnife est une option de choix pour les patients souffrant de <strong>cancer du poumon</strong> non opérable ou localisé.</p>
+</li>
+<li>
+<p><strong>Tumeurs hépatiques</strong> : Le <strong>CyberKnife</strong> est efficace dans le traitement des <strong>tumeurs du foie</strong>, en particulier celles localisées ou inaccessibles par chirurgie.</p>
+</li>
+<li>
+<p><strong>Tumeurs rénales</strong> : Le traitement des <strong>tumeurs rénales</strong> grâce à la radiothérapie ciblée est également possible avec le CyberKnife, surtout lorsqu'elles sont difficiles à atteindre par d'autres moyens.</p>
+</li>
+<li>
+<p><strong>Cancers de la tête et du cou</strong> : Utilisé pour traiter des tumeurs dans des zones sensibles comme la tête et le cou, le <strong>CyberKnife</strong> permet d’administrer des doses de radiothérapie élevées tout en minimisant les risques pour les structures environnantes.</p>
+</li>
+<li>
+<p><strong>Cancers de la prostate</strong> : Le <strong>Système CyberKnife Synchrony</strong> est également utilisé pour le traitement des <strong>tumeurs de la prostate</strong> grâce à sa précision et à sa capacité à suivre les mouvements du patient pendant le traitement.</p>
+</li>
+<li>
+<p><strong>Traitement de certaines tumeurs bénignes</strong> : Le <strong>CyberKnife</strong> peut être utilisé pour traiter des tumeurs bénignes ou des lésions non cancéreuses, comme certains types d'<strong>acouphènes</strong> ou de <strong>tumeurs cérébrales bénignes</strong>.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement du Traitement avec le Système CyberKnife Synchrony</h2></div><div class="info-text"><p><p>Le traitement avec le <strong>Système CyberKnife Synchrony</strong> se déroule en plusieurs étapes, toutes conçues pour garantir une précision maximale tout en réduisant l'impact sur les tissus sains environnants.</p><p><strong>1. Consultation et préparation initiale</strong> :<br/>
+Le processus commence par une consultation approfondie avec un <strong>oncologue radiothérapeute</strong>. Des <strong>examens d’imagerie</strong> (comme la <strong>scanner</strong> ou l’<strong>IRM</strong>) sont réalisés pour localiser précisément la tumeur et planifier le traitement. Un <strong>marquage corporel</strong> peut être effectué pour aider à guider les rayons de façon précise.</p><p><strong>2. Simulation et planification</strong> :<br/>
+Un scanner est réalisé pour obtenir des images détaillées de la zone à traiter. Ces images sont ensuite utilisées pour créer un <strong>plan de traitement personnalisé</strong>, permettant de déterminer le nombre de séances nécessaires et la meilleure manière de cibler la tumeur.</p><p><strong>3. Traitement avec le CyberKnife</strong> :<br/>
+Le patient est positionné sur une table de traitement, et un <strong>système de suivi en temps réel</strong> capte les mouvements respiratoires du patient à chaque inspiration et expiration. Le <strong>CyberKnife</strong> ajuste alors la trajectoire des rayons en fonction des mouvements du patient, assurant une <strong>précision millimétrique</strong>. Les rayons sont délivrés par un bras robotisé qui peut se déplacer dans toutes les directions, offrant ainsi un traitement ultra-précis.</p><p><strong>4. Durée du traitement</strong> :<br/>
+Le traitement est non invasif et dure généralement entre <strong>30 et 90 minutes</strong> par séance, en fonction de la taille et de la localisation de la tumeur. Plusieurs séances peuvent être nécessaires, généralement entre <strong>3 et 5 séances</strong> réparties sur plusieurs jours.</p><p><strong>5. Post-traitement</strong> :<br/>
+Après le traitement, le patient peut reprendre ses activités quotidiennes sans période de convalescence. Des <strong>consultations de suivi</strong> sont effectuées pour surveiller l’efficacité du traitement et détecter d’éventuels effets secondaires.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Bénéfices du Système CyberKnife Synchrony</h2></div><div class="info-text"><p><p>Le <strong>Système CyberKnife Synchrony</strong> présente plusieurs avantages par rapport aux traitements de radiothérapie traditionnels et à la chirurgie :</p><ul>
+<li>
+<p><strong>Précision extrême</strong> : Grâce à son système de suivi en temps réel, le CyberKnife délivre les rayons avec une <strong>précision millimétrique</strong>, même lorsque le patient respire ou bouge légèrement, ce qui est idéal pour les tumeurs dans des zones mobiles comme les poumons.</p>
+</li>
+<li>
+<p><strong>Traitement non invasif</strong> : Contrairement à la chirurgie, le <strong>CyberKnife</strong> est une méthode <strong>non invasive</strong>, ce qui signifie qu'il n'y a pas de coupe, pas de cicatrice et pas de temps de récupération. Cela réduit également les risques d'infection.</p>
+</li>
+<li>
+<p><strong>Moins d'effets secondaires</strong> : La capacité de cibler précisément les cellules tumorales permet de limiter les <strong>effets secondaires</strong> sur les tissus sains environnants, rendant le traitement plus tolérable.</p>
+</li>
+<li>
+<p><strong>Possibilité pour des tumeurs inopérables</strong> : Le <strong>CyberKnife</strong> peut traiter des tumeurs qui ne peuvent pas être opérées en raison de leur taille ou de leur emplacement, offrant une option thérapeutique pour des cas difficiles.</p>
+</li>
+<li>
+<p><strong>Récupération rapide</strong> : Les patients peuvent reprendre rapidement leurs activités normales après une séance de <strong>CyberKnife</strong>, sans nécessiter de repos prolongé ou de convalescence.</p>
+</li>
+</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et Types de Soins Disponibles pour le Système CyberKnife Synchrony via WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> permet aux patients de trouver facilement des <strong>centres de radiothérapie</strong> et des <strong>hôpitaux spécialisés</strong> disposant du <strong>Système CyberKnife Synchrony</strong>. Voici quelques lieux où ce traitement peut être effectué :</p><ol>
+<li>
+<p><strong>Cliniques de radiothérapie et centres spécialisés en oncologie</strong> :<br/>
+Les <strong>centres d’oncologie</strong> spécialisés offrent des traitements avec le <strong>CyberKnife</strong>, et disposent de l'équipement nécessaire pour administrer la radiothérapie de haute précision.</p>
+</li>
+<li>
+<p><strong>Hôpitaux universitaires et centres de recherche</strong> :<br/>
+De nombreux <strong>hôpitaux universitaires</strong> et <strong>centres de recherche</strong> sont équipés du <strong>CyberKnife Synchrony</strong> pour offrir une radiothérapie de pointe aux patients atteints de cancers difficiles à traiter.</p>
+</li>
+<li>
+<p><strong>Instituts de soins spécialisés</strong> :<br/>
+Certains <strong>instituts de soins</strong> spécialisés en <strong>cancer du poumon</strong>, <strong>cancer de la prostate</strong> ou <strong>tumeurs cérébrales</strong> offrent également le traitement avec le <strong>CyberKnife Synchrony</strong>.</p>
+</li>
+</ol><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un Lieu de Soins Adapté pour le Système CyberKnife Synchrony</h2></div><div class="info-text"><p><p>Le <strong>Système CyberKnife Synchrony</strong> est une méthode de radiothérapie révolutionnaire qui permet de traiter des tumeurs de manière ultra-précise et non invasive. Grâce à <strong>WIC-DOCTOR</strong>, vous pouvez facilement trouver des <strong>centres spécialisés</strong>, des <strong>hôpitaux</strong> et des <strong>cliniques</strong> offrant ce traitement de haute technologie, pour bénéficier d'un suivi personnalisé et d'une prise en charge de qualité.</p><p><strong></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

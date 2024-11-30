@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>TEP/CT du Flux Myocardique avec Ammoniac (13N-NH3) : Indications, Exécution, Contre-indications et Lieux de Soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Indications du TEP/CT du Flux Myocardique avec Ammoniac (13N-NH3)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Déroulement de l'Examen TEP/CT du Flux Myocardique avec Ammoniac (13N-NH3)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Contre-indications du TEP/CT du Flux Myocardique avec Ammoniac (13N-NH3)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Lieux et Types de Soins pour le TEP/CT du Flux Myocardique avec Ammoniac (13N-NH3)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du TEP/CT du Flux Myocardique avec Ammoniac (13N-NH3)</h2></div><div class="info-text"><p><p>Le <strong>TEP/CT du flux myocardique avec ammoniac (13N-NH3)</strong> est une technique d'imagerie avancée qui combine la tomographie par émission de positons (TEP) et la tomodensitométrie (CT) pour évaluer en temps réel la perfusion sanguine du <strong>myocarde</strong> (le muscle cardiaque). Cette approche est particulièrement utile pour le diagnostic et le suivi des maladies cardiovasculaires, notamment pour évaluer l'irrigation sanguine du cœur et détecter d'éventuelles anomalies. Les principales indications incluent :</p><ul>
+<li>
+<p><strong>Évaluation de la perfusion myocardique</strong> : Le TEP/CT avec <strong>ammoniac (13N-NH3)</strong> permet de mesurer la quantité de sang qui arrive au <strong>myocarde</strong>. Cette évaluation est cruciale pour diagnostiquer les <strong>dysfonctionnements cardiaques</strong>, la <strong>maladie coronarienne</strong> (y compris l'angine de poitrine), ainsi que pour la <strong>détection précoce</strong> des <strong>zones de non-perfusion</strong> cardiaque (comme celles résultant d'une <strong>ischémie myocardique</strong>).</p>
+</li>
+<li>
+<p><strong>Suivi des patients après un infarctus du myocarde</strong> : Cette technique est utilisée pour évaluer l'impact d’un <strong>infarctus du myocarde</strong> (crise cardiaque) sur le <strong>flux sanguin</strong> dans les <strong>zones endommagées</strong> du cœur, ce qui peut guider les décisions thérapeutiques, comme la revascularisation ou l'ajustement du traitement.</p>
+</li>
+<li>
+<p><strong>Évaluation de la fonction cardiaque chez les patients à risque</strong> : Elle est également indiquée pour les patients présentant des <strong>facteurs de risque cardiovasculaires</strong> (hypertension, diabète, hypercholestérolémie) afin de détecter précocement des signes d'ischémie myocardique, même en l'absence de symptômes cliniques évidents.</p>
+</li>
+<li>
+<p><strong>Évaluation préopératoire avant une chirurgie cardiaque</strong> : Avant des procédures chirurgicales complexes comme la <strong>chirurgie de pontage coronarien</strong> (CABG) ou la <strong>pose de stents</strong>, le <strong>TEP/CT avec ammoniac</strong> est utilisé pour évaluer la perfusion myocardique et déterminer si certaines zones du cœur sont suffisamment irriguées ou nécessitent un traitement.</p>
+</li>
+</ul></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen TEP/CT du Flux Myocardique avec Ammoniac (13N-NH3)</h2></div><div class="info-text"><p><p>Le <strong>TEP/CT du flux myocardique</strong> avec <strong>ammoniac (13N-NH3)</strong> est une procédure relativement simple mais précise, qui permet de mesurer la perfusion cardiaque en utilisant des isotopes radioactifs et des technologies d'imagerie avancées.</p><ol>
+<li><strong>Préparation</strong> :</li>
+<li><strong>Jeûne</strong> : Il est conseillé de rester à jeun pendant environ <strong>4 à 6 heures</strong> avant l'examen pour éviter les interférences avec l'absorption de l'isotope radioactif et assurer la qualité des images.</li>
+<li><strong>Hydratation</strong> : Boire suffisamment d'eau avant l'examen pour faciliter l'élimination de l'ammoniac (13N-NH3) après l'injection.</li>
+<li>
+<p><strong>Médicaments</strong> : Vous devez informer le médecin de tous les médicaments que vous prenez, notamment si vous prenez des <strong>médicaments contre l'hypertension</strong> ou des <strong>bêta-bloquants</strong>, car ceux-ci peuvent interférer avec les résultats de l'examen. Il est également important d'informer le professionnel de santé si vous êtes enceinte ou si vous allaitez.</p>
+</li>
+<li>
+<p><strong>Injection de l'Ammoniac (13N-NH3)</strong> :</p>
+</li>
+<li>Un <strong>radiopharmaceutique</strong>, l'<strong>ammoniac marqué au 13N</strong> (13N-NH3), est injecté par voie intraveineuse. Cet isotope est absorbé par le muscle cardiaque en fonction de la <strong>quantité de sang</strong> qui y circule, ce qui permet d'évaluer la <strong>perfusion myocardique</strong>.</li>
+<li>
+<p>L’ammoniac (13N-NH3) est utilisé car il est bien capté par le myocarde et permet une image claire de la circulation sanguine sans être trop affecté par la variabilité du débit sanguin instantané.</p>
+</li>
+<li>
+<p><strong>Acquisition des images</strong> :</p>
+</li>
+<li>Après l’injection du radiopharmaceutique, le patient est positionné sur la <strong>table d'examen TEP/CT</strong>. Le <strong>scanner CT</strong> effectue d'abord une série d'images <strong>structurales</strong> du cœur, puis le <strong>TEP</strong> capture les informations fonctionnelles liées à la <strong>perfusion sanguine</strong> myocardique.</li>
+<li>
+<p>Le scanner CT est utilisé pour localiser précisément les zones du cœur, tandis que le TEP visualise l’activité du flux sanguin dans ces zones, permettant ainsi de détecter des anomalies dans la circulation sanguine myocardique.</p>
+</li>
+<li>
+<p><strong>Durée de l'examen</strong> :</p>
+</li>
+<li>
+<p>L'examen prend généralement <strong>30 à 45 minutes</strong> en tout, bien que le temps nécessaire pour l’acquisition des images puisse varier en fonction de la complexité du cas.</p>
+</li>
+<li>
+<p><strong>Post-examen</strong> :</p>
+</li>
+<li>Après l'examen, vous pouvez reprendre vos activités habituelles, mais il est conseillé de boire beaucoup d'eau pour faciliter l'élimination de l'ammoniac et des produits radioactifs par les reins.</li>
+<li>Vous ne devez généralement pas attendre pour les résultats. Ceux-ci sont souvent envoyés à votre médecin dans les <strong>24 à 48 heures</strong>.</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications du TEP/CT du Flux Myocardique avec Ammoniac (13N-NH3)</h2></div><div class="info-text"><p><p>Bien que le <strong>TEP/CT du flux myocardique</strong> avec ammoniac soit généralement bien toléré, il existe certaines contre-indications et précautions à prendre en compte :</p><ul>
+<li><strong>Grossesse</strong> : En raison de l’utilisation d’un radiopharmaceutique, ce test est généralement <strong>contre-indiqué</strong> pendant la grossesse, sauf en cas de nécessité absolue. Il est important d'informer le médecin si vous êtes enceinte ou si vous suspectez une grossesse.</li>
+<li><strong>Allergies au radiopharmaceutique</strong> : Bien que les réactions allergiques aux radiopharmaceutiques soient rares, il est important de signaler toute <strong>réaction antérieure</strong> à des produits de contraste ou des isotopes radioactifs.</li>
+<li><strong>Problèmes rénaux</strong> : Si vous souffrez de <strong>problèmes rénaux</strong> graves, vous devez informer le médecin, car les produits radioactifs peuvent être éliminés par les reins. Un suivi particulier peut être requis.</li>
+<li><strong>Allergies à l'iode</strong> : Bien que le <strong>13N-NH3</strong> ne soit pas iodé, si vous avez des allergies sévères aux produits de contraste iodés utilisés dans d’autres examens, il est crucial de le signaler.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour le TEP/CT du Flux Myocardique avec Ammoniac (13N-NH3)</h2></div><div class="info-text"><p><p>Le <strong>TEP/CT du flux myocardique avec ammoniac (13N-NH3)</strong> est un examen hautement spécialisé qui nécessite des équipements de pointe et des compétences en médecine nucléaire et en imagerie cardiovasculaire. Voici les lieux de soins recommandés pour réaliser cet examen, en accord avec les <strong>indications</strong> sur <strong>le portail WIC-DOCTOR</strong> :</p><ol>
+<li><strong>Centres de médecine nucléaire</strong> :</li>
+<li>
+<p>Les <strong>centres de médecine nucléaire</strong> sont les principaux lieux où cet examen est effectué. Ces centres disposent de scanners <strong>TEP/CT</strong> de haute technologie et sont spécialisés dans la réalisation d'examens de perfusion myocardique à l'aide de radiopharmaceutiques.</p>
+</li>
+<li>
+<p><strong>Hôpitaux cardiovasculaires et cliniques spécialisées en cardiologie</strong> :</p>
+</li>
+<li>
+<p>Les <strong>hôpitaux spécialisés en cardiologie</strong> ou les <strong>cliniques de soins cardiaques</strong> sont les établissements où le <strong>TEP/CT myocardique</strong> avec ammoniac est couramment utilisé, en particulier pour les <strong>patients ayant des antécédents de maladies coronariennes</strong>, <strong>d'angine de poitrine</strong> ou d'<strong>infarctus du myocarde</strong>.</p>
+</li>
+<li>
+<p><strong>Centres de suivi post-infarctus</strong> :</p>
+</li>
+<li>
+<p>Les <strong>centres spécialisés dans le suivi des infarctus du myocarde</strong> ou des maladies cardiaques complexes offrent fréquemment ce type de test pour évaluer la <strong>revascularisation</strong> après un infarctus, détecter des <strong>zones de non-perfusion</strong> et évaluer la fonction du <strong>myocarde</strong> restant.</p>
+</li>
+<li>
+<p><strong>Cliniques privées et hôpitaux à équipement avancé</strong> :</p>
+</li>
+<li>Certaines <strong>cliniques privées</strong> disposant d’équipements spécialisés en <strong>imagerie médicale</strong> proposent le <strong>TEP/CT du flux myocardique</strong>, en particulier pour les <strong>patients à haut risque cardiovasculaire</strong> ou pour ceux qui nécessitent un suivi avancé de leur <strong>fonction cardiaque</strong>.</li>
+</ol><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

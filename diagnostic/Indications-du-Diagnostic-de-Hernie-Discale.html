@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>** Indications du Diagnostic de Hernie Discale (HDL)**</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">La hernie discale lombaire (HDL) est une pathologie fréquente qui survient lorsqu'un des disques intervertébraux se déplace ou se rompt, provoquant la compression des nerfs adjacents. Le diagnostic de cette affection est crucial pour déterminer le traitement le plus approprié. Voici les principales indications pour réaliser un diagnostic de hernie discale<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Déroulement du Diagnostic de Hernie Discale (HDL)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Contre-indications du Diagnostic de Hernie Discale (HDL)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Lieux de Soins pour le Diagnostic de Hernie Discale (HDL)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>La hernie discale lombaire (HDL) est une pathologie fréquente qui survient lorsqu'un des disques intervertébraux se déplace ou se rompt, provoquant la compression des nerfs adjacents. Le diagnostic de cette affection est crucial pour déterminer le traitement le plus approprié. Voici les principales indications pour réaliser un diagnostic de hernie discale</h2></div><div class="info-text"><p><ul>
+<li><strong>Douleurs dorsales ou lombaires persistantes</strong> : Si le patient souffre de douleurs lombaires aiguës ou chroniques, accompagnées de signes de compression nerveuse (engourdissements, picotements, ou faiblesse dans les jambes), un diagnostic de hernie discale peut être envisagé.</li>
+<li><strong>Symptômes neurologiques associés</strong> : La hernie discale peut provoquer des symptômes tels que des douleurs irradiant dans les jambes (sciatique), des troubles de la marche, ou des déficits moteurs et sensoriels dans les membres inférieurs.</li>
+<li><strong>Échec des traitements conservateurs</strong> : Si un patient présente des douleurs persistantes malgré des traitements médicaux non invasifs (médicaments, physiothérapie, etc.), un diagnostic précis par imagerie devient nécessaire pour envisager des solutions chirurgicales.</li>
+<li><strong>Antécédents de traumatismes</strong> : Une blessure traumatique à la colonne vertébrale (par exemple, un accident de voiture ou une chute) peut être à l'origine d'une hernie discale. Dans ce cas, un examen est recommandé pour évaluer l'étendue des lésions.</li>
+<li><strong>Examen de suivi chez les patients à risque</strong> : Les personnes ayant des facteurs de risque tels que l'obésité, une activité physique excessive ou un mode de vie sédentaire peuvent être plus susceptibles de développer une hernie discale et nécessiter un suivi.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement du Diagnostic de Hernie Discale (HDL)</h2></div><div class="info-text"><p><p>Le diagnostic d’une <strong>hernie discale</strong> se fait généralement à l’aide d’examens cliniques et d’imagerie médicale. Voici les étapes clés du processus diagnostique :</p><ol>
+<li><strong>Consultation médicale initiale</strong> :</li>
+<li><strong>Évaluation des symptômes</strong> : Le médecin commence par une anamnèse détaillée pour comprendre les symptômes, l’intensité de la douleur, et l’évolution des signes cliniques. Il évalue également les facteurs de risque et effectue un examen physique pour détecter des signes neurologiques tels que des réflexes diminués ou des déficits moteurs.</li>
+<li>
+<p><strong>Examen clinique</strong> : Un test clinique comme le test de Lasègue (tirer la jambe tendue pour vérifier la douleur sciatalgique) est effectué pour évaluer l'irritation du nerf sciatique et la possibilité d’une hernie discale.</p>
+</li>
+<li>
+<p><strong>Examen d'imagerie</strong> :</p>
+</li>
+<li><strong>Radiographie</strong> : Bien que la radiographie de la colonne vertébrale ne montre pas directement la hernie discale, elle peut être utile pour exclure d’autres causes de douleurs lombaires comme l’arthrose ou les fractures.</li>
+<li><strong>Imagerie par résonance magnétique (IRM)</strong> : L’IRM est le test de référence pour le diagnostic de la hernie discale. Elle permet de visualiser les disques intervertébraux et de détecter toute protrusion ou rupture de disque, ainsi que l’impact sur les nerfs.</li>
+<li><strong>Tomodensitométrie (CT scan)</strong> : En cas de contre-indication à l’IRM (par exemple, en cas de présence de prothèses métalliques), un scanner peut être utilisé pour obtenir des images détaillées de la colonne vertébrale. Toutefois, l’IRM reste plus précise pour le diagnostic des hernies discales.</li>
+<li>
+<p><strong>Myélographie</strong> : Il s’agit d’une technique moins courante, généralement réservée aux cas où l'IRM et la radiographie ne permettent pas d’obtenir un diagnostic clair. Elle consiste à injecter un produit de contraste dans la moelle épinière pour améliorer la visibilité des nerfs.</p>
+</li>
+<li>
+<p><strong>Tests électrophysiologiques</strong> :</p>
+</li>
+<li>
+<p>Dans certains cas, des tests tels que l’électromyographie (EMG) ou l’étude des potentiels évoqués peuvent être utilisés pour évaluer la fonction des nerfs et déterminer si une compression nerveuse est présente.</p>
+</li>
+<li>
+<p><strong>Durée du diagnostic</strong> :</p>
+</li>
+<li>
+<p>L’examen clinique et la consultation initiale peuvent durer entre 30 et 60 minutes. Les tests d’imagerie (IRM ou scanner) prennent généralement entre 30 et 60 minutes. Les résultats de l’IRM sont disponibles dans les 24 à 48 heures, tandis que les tests électrophysiologiques peuvent prendre quelques jours pour être traités.</p>
+</li>
+<li>
+<p><strong>Résultats et suivi</strong> :</p>
+</li>
+<li>Les résultats du diagnostic permettent de déterminer l’emplacement exact de la hernie discale et d'évaluer son impact sur les nerfs environnants. Selon les résultats, un traitement conservateur (physiothérapie, anti-inflammatoires, repos) ou une intervention chirurgicale peut être envisagé.</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications du Diagnostic de Hernie Discale (HDL)</h2></div><div class="info-text"><p><p>Bien que les examens pour diagnostiquer une hernie discale soient généralement sûrs, certaines précautions et contre-indications doivent être prises en compte :</p><ul>
+<li><strong>Contre-indications à l’IRM</strong> : Les patients porteurs de dispositifs métalliques non compatibles avec l'IRM (par exemple, des stimulateurs cardiaques ou des implants métalliques) ne peuvent pas subir cet examen. Dans ces cas, un scanner ou une myélographie peut être proposé.</li>
+<li><strong>Grossesse</strong> : Bien que les examens comme l'IRM ne présentent pas de risques pour le fœtus, les radiographies et les scanners impliquent des rayonnements qui sont déconseillés pendant la grossesse, sauf en cas d'urgence.</li>
+<li><strong>Allergie aux produits de contraste</strong> : Certaines personnes peuvent avoir des réactions allergiques aux produits de contraste utilisés lors de l’IRM ou du scanner. Il est important de prévenir le médecin de toute allergie connue.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins pour le Diagnostic de Hernie Discale (HDL)</h2></div><div class="info-text"><p><p>Le diagnostic de la hernie discale se fait principalement dans des établissements médicaux spécialisés en imagerie et en soins orthopédiques. Voici les principaux lieux où ce diagnostic peut être réalisé, selon les indications sur <strong>WIC-DOCTOR</strong> :</p><ol>
+<li><strong>Cliniques et Centres spécialisés en Orthopédie</strong> :</li>
+<li>
+<p>Les cliniques spécialisées en pathologies musculo-squelettiques ou en chirurgie orthopédique sont des lieux courants pour effectuer le diagnostic d’une hernie discale. Elles disposent d’équipements pour réaliser des IRM et des scanners, et peuvent offrir un suivi spécialisé pour le traitement des hernies discales.</p>
+</li>
+<li>
+<p><strong>Hôpitaux avec services de Radiologie</strong> :</p>
+</li>
+<li>
+<p>La plupart des hôpitaux disposent de services de radiologie qui incluent des équipements pour réaliser des IRM et des scanners. En fonction des résultats, un traitement conservateur ou chirurgical peut être mis en place. Les hôpitaux sont également capables de prendre en charge les cas complexes nécessitant une intervention chirurgicale.</p>
+</li>
+<li>
+<p><strong>Centres de Diagnostic Imagerie Médicale</strong> :</p>
+</li>
+<li>
+<p>Des centres spécialisés dans l’imagerie médicale, tels que les centres d’IRM et de scanner, sont équipés pour réaliser les examens nécessaires au diagnostic de la hernie discale. Ces centres sont souvent plus accessibles et peuvent offrir des rendez-vous rapides.</p>
+</li>
+<li>
+<p><strong>Cabinets de Médecins Spécialistes en Neurologie et Orthopédie</strong> :</p>
+</li>
+<li>
+<p>Les <a href="https://wic-doctor.com/medecin/neurologue.html">neurologues</a> et les orthopédistes spécialisés dans les troubles de la colonne vertébrale sont capables de diagnostiquer les hernies discales et d’interpréter les résultats des examens d’imagerie. Ils peuvent également assurer le suivi du traitement, que ce soit pour un traitement médical ou chirurgical.</p>
+</li>
+<li>
+<p><strong>Centres de Rééducation et Physiothérapie</strong> :</p>
+</li>
+<li>Bien que ces centres ne soient pas responsables du diagnostic primaire, une fois le diagnostic de hernie discale posé, des centres de rééducation peuvent offrir des thérapies physiques pour gérer la douleur et la mobilité. Dans certains cas, la rééducation est essentielle pour éviter ou retarder une intervention chirurgicale.</li>
+</ol><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

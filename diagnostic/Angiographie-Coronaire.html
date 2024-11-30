@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Angiographie Coronaire : Indications, Exécution, Contre-indications et Lieux de Soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Indications de l'Angiographie Coronaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Déroulement de l'Examen<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Contre-indications de l'Angiographie Coronaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Lieux et Types de Soins pour la Gestion de l'Angiographie Coronaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('I')"><button class="alphabet-button">H1: Angiographie Coronaire : Comprendre son Rôle dans le Diagnostic et le Traitement des Maladies Cardiaques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('J')"><button class="alphabet-button">H2: Quand l'Angiographie Coronaire est-elle Indiquée ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('K')"><button class="alphabet-button">H3: Diagnostic des maladies coronariennes et suivi post-infarctus<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('L')"><button class="alphabet-button">H2: Comment se déroule l'Examen d'Angiographie Coronaire ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('M')"><button class="alphabet-button">H3: Insertion du cathéter, injection du contraste et analyse des résultats<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('N')"><button class="alphabet-button">H2: Quelles sont les Contre-indications à l'Angiographie Coronaire ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('O')"><button class="alphabet-button">H3: Précautions à prendre avec les produits de contraste et les risques liés à l’examen<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('P')"><button class="alphabet-button">H2: Lieux de Soins et Suivi après l'Angiographie Coronaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('Q')"><button class="alphabet-button">H3: Où réaliser votre angiographie et obtenir un suivi médical ?<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'Angiographie Coronaire</h2></div><div class="info-text"><p><p>L'<strong>angiographie coronaire</strong> est un examen médical essentiel permettant de visualiser les artères coronaires du cœur afin de détecter des anomalies, notamment des rétrécissements ou des blocages. Cet examen est principalement utilisé pour :</p><ul>
+<li><strong>Diagnostic des maladies coronariennes (athérosclérose)</strong> : L’angiographie coronaire permet de visualiser les plaques d'athérome qui rétrécissent les artères coronaires et peuvent provoquer des douleurs thoraciques, des angines de poitrine, ou un infarctus du myocarde.</li>
+<li><strong>Évaluation de l'état des artères coronaires après un infarctus</strong> : Après un infarctus du myocarde, l'angiographie coronaire est utilisée pour évaluer l'étendue des lésions et déterminer s'il est nécessaire d'effectuer une angioplastie ou un pontage coronarien.</li>
+<li><strong>Préparation à une intervention cardiaque (angioplastie ou stenting)</strong> : Lorsque des blocages coronariens sont détectés, l'angiographie coronaire permet de planifier une intervention pour les traiter, notamment par la pose d'un stent ou l’angioplastie.</li>
+<li><strong>Évaluation de la fonction du cœur chez les patients à haut risque</strong> : L'angiographie coronaire est indiquée pour les patients présentant des facteurs de risque cardiovasculaire (hypertension, diabète, tabagisme, antécédents familiaux) qui ont des symptômes de maladies cardiaques ou des tests de stress anormaux.</li>
+<li><strong>Suivi après une intervention coronarienne</strong> : Après une angioplastie ou la pose de stents, une angiographie coronaire peut être réalisée pour évaluer la perméabilité des artères traitées et s'assurer qu'aucune nouvelle obstructions n'est apparue.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>L'<strong>angiographie coronaire</strong> est un examen invasif qui implique l'injection d'un produit de contraste iodé dans les artères coronaires, suivi de la prise d'images radiologiques (angioscintigraphie ou angiographie par cathéter). Voici les étapes principales :</p><ol>
+<li><strong>Préparation</strong> :</li>
+<li><strong>Consultation préalable</strong> : Avant l'examen, le patient consulte un cardiologue qui examine ses antécédents médicaux et effectue des tests pour évaluer sa santé cardiovasculaire. Il est important de vérifier la fonction rénale du patient car le produit de contraste utilisé dans l'angiographie est éliminé par les reins.</li>
+<li><strong>Jeûne</strong> : Le patient doit jeûner pendant environ 4 à 6 heures avant l'examen pour éviter des complications liées à l'anesthésie locale et à l'injection du produit de contraste.</li>
+<li>
+<p><strong>Arrêt de certains médicaments</strong> : Les médicaments anticoagulants et antiagrégants plaquettaires peuvent être arrêtés avant l'examen afin de réduire les risques de saignements pendant l'intervention.</p>
+</li>
+<li>
+<p><strong>Insertion du cathéter</strong> :</p>
+</li>
+<li>L'angiographie coronaire est réalisée sous anesthésie locale. Un petit cathéter est inséré généralement par voie fémorale (dans l'aine) ou radiale (au niveau du poignet), dans une artère, pour permettre l'accès au système vasculaire coronarien.</li>
+<li>
+<p>Le cathéter est guidé par <strong>imagerie en temps réel</strong> jusqu'aux artères coronaires où il sera utilisé pour injecter un produit de contraste iodé dans les vaisseaux.</p>
+</li>
+<li>
+<p><strong>Injection du produit de contraste</strong> :</p>
+</li>
+<li>
+<p>Le produit de contraste est injecté dans les artères coronaires. Le contraste permet de rendre visibles les artères coronaires et les plaques d'athérome ou autres anomalies vasculaires. Cela permet de visualiser en temps réel l'état de la circulation sanguine dans les artères coronaires.</p>
+</li>
+<li>
+<p><strong>Prise des images</strong> :</p>
+</li>
+<li>Des <strong>radiographies</strong> ou des <strong>images par tomodensitométrie (CT)</strong> ou <strong>IRM</strong> sont prises à l’aide d’un appareil spécialisé, permettant de visualiser les artères coronaires sous différents angles. Cela permet de repérer les zones de rétrécissement (sténoses) ou de blocages dans les artères.</li>
+<li>
+<p>L'examen dure généralement entre 30 à 60 minutes, selon la complexité et le nombre d'artères examinées.</p>
+</li>
+<li>
+<p><strong>Post-examen</strong> :</p>
+</li>
+<li>Une fois l'examen terminé, le patient est surveillé pendant quelques heures pour détecter d'éventuelles complications, telles que des saignements au niveau du site d'insertion du cathéter.</li>
+<li>
+<p>Le patient peut généralement reprendre ses activités normales après quelques heures de repos, mais il doit éviter de faire des efforts physiques importants pendant 24 heures.</p>
+</li>
+<li>
+<p><strong>Interprétation des résultats</strong> :</p>
+</li>
+<li>Les images obtenues lors de l’angiographie coronaire sont analysées par un radiologue ou un cardiologue spécialisé. Selon les résultats, des traitements comme l'<strong>angioplastie</strong>, la <strong>pose de stents</strong>, ou des recommandations concernant un pontage coronarien peuvent être envisagés.</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de l'Angiographie Coronaire</h2></div><div class="info-text"><p><p>Bien que l'<strong>angiographie coronaire</strong> soit une procédure courante et relativement sûre, il existe certaines contre-indications et précautions à prendre en compte :</p><ul>
+<li><strong>Grossesse</strong> : L'angiographie coronaire est contre-indiquée pendant la grossesse, sauf en cas d'urgence absolue, car elle utilise des rayonnements ionisants. Des alternatives sans radiations, comme l'IRM cardiaque, peuvent être envisagées.</li>
+<li><strong>Allergie au produit de contraste</strong> : Les patients allergiques aux produits de contraste iodés doivent en informer leur médecin. Des mesures préventives ou des produits alternatifs peuvent être utilisés.</li>
+<li><strong>Insuffisance rénale sévère</strong> : L'examen peut entraîner une surcharge rénale en raison de l'utilisation du produit de contraste. Les patients présentant une insuffisance rénale sévère doivent être évalués avant l'examen, et le suivi de la fonction rénale est essentiel après l'examen.</li>
+<li><strong>Troubles de la coagulation</strong> : Les patients ayant des troubles de la coagulation ou prenant des médicaments anticoagulants doivent être surveillés de près pendant l'examen pour éviter les saignements.</li>
+<li><strong>Hypotension sévère ou instabilité cardiaque</strong> : Les patients souffrant d'hypotension sévère ou de troubles cardiaques graves peuvent nécessiter une surveillance accrue pendant l'examen, et dans certains cas, l’angiographie peut être retardée.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour la Gestion de l'Angiographie Coronaire</h2></div><div class="info-text"><p><p>D’après les informations disponibles sur le portail <strong>WIC-DOCTOR</strong>, l'<strong>angiographie coronaire</strong> est réalisée dans des établissements spécialisés en cardiologie et médecine vasculaire. Voici les lieux typiques où cet examen est effectué :</p><ol>
+<li><strong>Hôpitaux et Cliniques de Cardiologie</strong> :</li>
+<li>
+<p>Les <strong>hôpitaux et cliniques spécialisées en cardiologie</strong> sont les principaux lieux où l'angiographie coronaire est réalisée. Ces établissements sont équipés de salles spécialisées pour l'angiographie (laboratoire de cathétérisme) et disposent d'un personnel expérimenté pour effectuer l'examen et intervenir si nécessaire.</p>
+</li>
+<li>
+<p><strong>Centres de Médecine Vasculaire</strong> :</p>
+</li>
+<li>
+<p>Les <strong>centres spécialisés en médecine vasculaire</strong> proposent également l'angiographie coronaire, souvent dans le cadre d'une prise en charge complète des maladies cardiaques, y compris des interventions comme l'angioplastie ou la pose de stents.</p>
+</li>
+<li>
+<p><strong>Hôpitaux Universitaires et Centres de Référence</strong> :</p>
+</li>
+<li>
+<p>Les <strong>hôpitaux universitaires</strong> sont des centres de référence pour les examens complexes comme l'angiographie coronaire. Ces établissements offrent une expertise pointue et disposent de technologies de pointe pour évaluer et traiter les maladies coronariennes.</p>
+</li>
+<li>
+<p><strong>Cliniques Privées Spécialisées en Cardiologie</strong> :</p>
+</li>
+<li>
+<p>Certaines <strong>cliniques privées</strong> offrent des services d'angiographie coronaire pour les patients à la recherche d'une prise en charge rapide et personnalisée. Ces cliniques sont souvent équipées de cathéterisation labs modernes et de dispositifs d'imagerie avancés.</p>
+</li>
+<li>
+<p><strong>Suivi Post-Examen</strong> :</p>
+</li>
+<li>Après l'angiographie coronaire, le suivi peut inclure des consultations avec un <strong>cardiologue</strong> ou un <strong>chirurgien vasculaire</strong> pour discuter des résultats et déterminer le traitement approprié, comme une angioplastie, un stenting, ou un pontage coronarien.</li>
+</ol><hr/></p></div></div></div><div class="container section-I" id="I"><div class="info-section"><div class="section-title center-block text-center"><h2>H1: Angiographie Coronaire : Comprendre son Rôle dans le Diagnostic et le Traitement des Maladies Cardiaques</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-J" id="J"><div class="info-section"><div class="section-title center-block text-center"><h2>H2: Quand l'Angiographie Coronaire est-elle Indiquée ?</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-K" id="K"><div class="info-section"><div class="section-title center-block text-center"><h2>H3: Diagnostic des maladies coronariennes et suivi post-infarctus</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-L" id="L"><div class="info-section"><div class="section-title center-block text-center"><h2>H2: Comment se déroule l'Examen d'Angiographie Coronaire ?</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-M" id="M"><div class="info-section"><div class="section-title center-block text-center"><h2>H3: Insertion du cathéter, injection du contraste et analyse des résultats</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-N" id="N"><div class="info-section"><div class="section-title center-block text-center"><h2>H2: Quelles sont les Contre-indications à l'Angiographie Coronaire ?</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-O" id="O"><div class="info-section"><div class="section-title center-block text-center"><h2>H3: Précautions à prendre avec les produits de contraste et les risques liés à l’examen</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-P" id="P"><div class="info-section"><div class="section-title center-block text-center"><h2>H2: Lieux de Soins et Suivi après l'Angiographie Coronaire</h2></div><div class="info-text"><p></p></div></div></div><div class="container section-Q" id="Q"><div class="info-section"><div class="section-title center-block text-center"><h2>H3: Où réaliser votre angiographie et obtenir un suivi médical ?</h2></div><div class="info-text"><p><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>

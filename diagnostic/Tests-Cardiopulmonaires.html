@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
+
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="../assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="../assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+<!-- Top Header -->
+<div class="header-top">
+	<div class="container">
+		<!-- Contact Info -->
+		<div class="contact-info">
+			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+					743 13 00 13</span></p>
+		</div>
+
+		<!-- Buttons -->
+
+		<div>
+			<div class="buttons">
+				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
+				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<!-- Main Header -->
+<div class="header-main">
+	<div class="container">
+		<!-- Hamburger Menu -->
+		<div class="hamburger-menu" id="hamburger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- Logo -->
+		<div class="logo">
+			<a href="https://wic-doctor.com/">
+				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+			</a>
+		</div>
+
+
+
+		<!-- Menu mobile -->
+		<div class="menu-mobile" id="menu-mobile">
+			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+			</ul>
+		</div>
+
+
+		<!-- Navigation (visible uniquement sur desktop) -->
+		<nav>
+			<ul>
+				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+				<li><a href="#">Nos Solutions</a></li>
+				<li><a href="#">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Extra Button -->
+		<div class="buttons">
+			<a href="#" class="btn-danger">Devenir Partenaire</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- JavaScript -->
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+		const hamburgerMenu = document.getElementById("hamburger-menu");
+		const menuMobile = document.getElementById("menu-mobile");
+		const closeMenuButton = document.getElementById("close-menu");
+
+		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+		hamburgerMenu.addEventListener("click", () => {
+			menuMobile.classList.add("active"); // Affiche le menu
+		});
+
+		// Fermer le menu mobile en cliquant sur le bouton "X"
+		closeMenuButton.addEventListener("click", () => {
+			menuMobile.classList.remove("active"); // Cache le menu
+		});
+	});
+	// Sélectionner tous les liens du menu
+	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	menuLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			menuLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+	// Sélectionner tous les liens du menu desktop
+	const desktopLinks = document.querySelectorAll('nav ul li a');
+
+	// Ajouter un écouteur d'événements pour chaque lien
+	desktopLinks.forEach(link => {
+		link.addEventListener('click', function (event) {
+			// Supprimer la classe active de tous les liens
+			desktopLinks.forEach(link => link.classList.remove('active'));
+
+			// Ajouter la classe active au lien cliqué
+			event.target.classList.add('active');
+		});
+	});
+</script>
+    <div>
+        <div class="bannerimg cover-image bg-politique">
+            <div class="header-text mb-0">
+                <div class="container">
+                    <div class="text-center text-white">
+                        <h1 class=""><h1>Tests Cardiopulmonaires : Indications, Exécution, Contre-indications et Lieux de Soins</h1></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subtitlee"><p></p></div>
+    </div>
+    <section class="sptb section-bg">
+        <div class="section-title center-block text-center">
+            <div class="button-container text-center">
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Indications des Tests Cardiopulmonaires<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Déroulement des Tests Cardiopulmonaires<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Contre-indications des Tests Cardiopulmonaires<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Lieux et Types de Soins pour les Tests Cardiopulmonaires(Références spécifiques à WIC-DOCTOR)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+            </div>
+        </div>
+        <div class="container">
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications des Tests Cardiopulmonaires</h2></div><div class="info-text"><p><p>Les <strong>tests cardiopulmonaires</strong> sont des examens diagnostiques utilisés pour évaluer la fonction du cœur et des poumons. Ces tests permettent de détecter, diagnostiquer et surveiller diverses conditions cardiaques et pulmonaires. Voici les principales indications pour ces tests :</p><ul>
+<li><strong>Diagnostic des maladies cardiaques</strong> : Les tests cardiopulmonaires sont utilisés pour détecter des affections telles que l’insuffisance cardiaque, la coronaropathie, l’angine de poitrine, les arythmies cardiaques et d’autres anomalies de la fonction cardiaque.</li>
+<li><strong>Évaluation de la fonction pulmonaire</strong> : Ces tests sont cruciaux pour diagnostiquer des pathologies pulmonaires telles que l’asthme, la bronchopneumopathie chronique obstructive (BPCO), la fibrose pulmonaire et d’autres troubles respiratoires.</li>
+<li><strong>Évaluation des capacités d’effort</strong> : Les tests cardiopulmonaires peuvent être utilisés pour mesurer la capacité d’un patient à réaliser des efforts physiques, ce qui est important dans le cadre de la rééducation cardiaque ou pour évaluer les risques cardiovasculaires.</li>
+<li><strong>Suivi des maladies chroniques</strong> : Ces tests sont également utilisés pour surveiller l’évolution de maladies chroniques affectant le cœur et les poumons, comme l’hypertension artérielle, les maladies pulmonaires chroniques ou après une chirurgie cardiaque ou pulmonaire.</li>
+<li><strong>Préparation à la chirurgie</strong> : Avant certaines interventions chirurgicales, en particulier chez les patients à risque, ces tests aident à évaluer la capacité cardiovasculaire et pulmonaire du patient pour déterminer s’il est apte à supporter l’anesthésie et l’intervention.</li>
+</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement des Tests Cardiopulmonaires</h2></div><div class="info-text"><p><p>Les tests cardiopulmonaires incluent divers examens, comme le <strong>test d'effort</strong>, la <strong>spirométrie</strong>, l'<strong>échocardiographie</strong>, la <strong>gasométrie sanguine</strong>, ou encore le <strong>monitoring cardiaque</strong>. Voici les étapes générales pour ces examens :</p><ol>
+<li><strong>Préparation</strong> :</li>
+<li><strong>Test d’effort</strong> : Avant de réaliser un test d’effort (comme un <strong>test d'effort sur tapis roulant</strong> ou sur vélo), le patient peut être invité à ne pas manger ou boire une certaine période avant l’examen. Il peut également être conseillé d’arrêter certains médicaments, comme les bêtabloquants, qui influencent la réponse cardiaque.</li>
+<li><strong>Spirométrie</strong> : Aucune préparation particulière n’est nécessaire à moins que le médecin ne recommande l'arrêt de médicaments inhalés avant le test pour une évaluation plus précise des fonctions pulmonaires.</li>
+<li>
+<p><strong>Echocardiographie</strong> : Ce test non invasif ne nécessite aucune préparation spéciale. Cependant, si l’échographie se fait par voie transœsophagienne, une sédation peut être nécessaire.</p>
+</li>
+<li>
+<p><strong>Prélèvement et Tests</strong> :</p>
+</li>
+<li><strong>Test d'effort</strong> : Le patient effectue un exercice physique modéré (marcher ou pédaler sur un vélo) sous surveillance médicale. L'objectif est d'observer la réponse cardiaque et respiratoire à l’effort. Des électrodes de surveillance sont placées sur la poitrine pour enregistrer l’électrocardiogramme (ECG) pendant l’effort.</li>
+<li><strong>Spirométrie</strong> : Le patient souffle dans un appareil (spiromètre) afin de mesurer les volumes et débits pulmonaires. Cela permet d’évaluer la capacité pulmonaire et d’aider à diagnostiquer des troubles respiratoires comme l'asthme ou la BPCO.</li>
+<li><strong>Échocardiographie</strong> : Cet examen utilise des ultrasons pour obtenir des images du cœur et évaluer sa fonction, sa structure et la circulation sanguine.</li>
+<li>
+<p><strong>Gasométrie sanguine</strong> : Ce test consiste à prélever du sang artériel pour mesurer les niveaux de gaz sanguins (oxygène, dioxyde de carbone) et évaluer la fonction respiratoire et l’équilibre acido-basique.</p>
+</li>
+<li>
+<p><strong>Analyse et Résultats</strong> :</p>
+</li>
+<li>
+<p>Après l'examen, les données sont analysées par le médecin, qui peut discuter des résultats avec le patient. Dans le cas des tests d’effort, les résultats peuvent être utilisés pour évaluer les réponses cardiaques à l’effort et identifier des anomalies. Pour les tests de fonction pulmonaire, les résultats aident à évaluer la capacité respiratoire et à diagnostiquer des pathologies spécifiques.</p>
+</li>
+<li>
+<p><strong>Durée de l'examen</strong> :</p>
+</li>
+<li><strong>Test d’effort</strong> : Environ 15 à 30 minutes, dont 5 à 10 minutes d’effort physique.</li>
+<li><strong>Spirométrie</strong> : L’examen dure généralement entre 5 et 10 minutes.</li>
+<li><strong>Échocardiographie</strong> : Cela dure environ 30 à 60 minutes, selon le type d’échographie pratiquée.</li>
+<li>
+<p><strong>Gasométrie sanguine</strong> : Le prélèvement sanguin prend quelques minutes, mais les résultats peuvent prendre plus de temps à être analysés.</p>
+</li>
+<li>
+<p><strong>Post-examen</strong> :</p>
+</li>
+<li>Les patients peuvent reprendre leurs activités normales après ces tests, sauf si le test d’effort a révélé des anomalies cardiaques nécessitant une attention immédiate. Après une échocardiographie, les patients peuvent généralement reprendre leurs activités sans restriction.</li>
+</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications des Tests Cardiopulmonaires</h2></div><div class="info-text"><p><p>Bien que les tests cardiopulmonaires soient généralement sûrs, certaines précautions et contre-indications doivent être considérées, notamment :
+- <strong>Test d’effort</strong> :
+  - Contre-indiqué en cas de <strong>malaise aigu</strong>, de <strong>crise cardiaque récente</strong>, d’<strong>insuffisance cardiaque décompensée</strong> ou d’autres conditions cardiaques sévères.
+  - Les patients ayant des <strong>problèmes respiratoires graves</strong> ou des <strong>artérites périphériques sévères</strong> peuvent aussi ne pas être éligibles pour cet examen.</p><ul>
+<li><strong>Spirométrie</strong> :</li>
+<li>En cas de <strong>crise d’asthme aiguë</strong> ou d’une <strong>infection pulmonaire active</strong>, le test peut être contre-indiqué. </li>
+<li>
+<p>Il est également déconseillé après une récente <strong>chirurgie thoracique</strong> ou une <strong>fracture des côtes</strong>.</p>
+</li>
+<li>
+<p><strong>Échocardiographie</strong> :</p>
+</li>
+<li>
+<p>La procédure est généralement sans risque, mais il peut y avoir des précautions chez les patients avec des troubles graves de la coagulation sanguine ou des antécédents de chirurgie cardiaque récente.</p>
+</li>
+<li>
+<p><strong>Gasométrie sanguine</strong> :</p>
+</li>
+<li>Il existe peu de contre-indications, mais la <strong>prise de sang artérielle</strong> peut être problématique chez les patients ayant des difficultés à accéder à des artères ou souffrant de troubles de la coagulation.</li>
+</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour les Tests Cardiopulmonaires(Références spécifiques à WIC-DOCTOR)</h2></div><div class="info-text"><p><p>Les tests cardiopulmonaires peuvent être réalisés dans différents établissements en fonction de l’indication médicale et du type de test requis. Voici les principaux lieux et types de soins pour ces tests, selon <strong>WIC-DOCTOR</strong> :</p><ol>
+<li><strong>Laboratoires de Biologie Médicale et Centres de Cardiologie</strong> :</li>
+<li>
+<p>Les tests cardiopulmonaires sont souvent réalisés dans des laboratoires spécialisés en <strong>biologie médicale</strong> ou dans des <strong>centres de cardiologie</strong>. Ces établissements offrent un accès à des équipements modernes pour effectuer des tests tels que les échocardiographies, les spirométries et les tests d’effort.</p>
+</li>
+<li>
+<p><strong>Cliniques et Hôpitaux Spécialisés en Cardiologie ou Pneumologie</strong> :</p>
+</li>
+<li>Les <strong>cliniques de cardiologie</strong> et les <strong>services hospitaliers spécialisés</strong> en pneumologie ou en cardiologie sont des lieux où ces tests peuvent être réalisés. Ces services sont souvent destinés à des patients ayant des antécédents cardiaques ou respiratoires.</li>
+<li>
+<p>Les hôpitaux de <strong>soins intensifs</strong> ou de <strong>rééducation cardiaque</strong> disposent également des équipements nécessaires pour ces tests, en particulier pour surveiller les patients après une chirurgie cardiaque ou pulmonaire.</p>
+</li>
+<li>
+<p><strong>Cabinets de Médecins <a href="https://wic-doctor.com/medecin/cardiologue.html">Cardiologues</a> et <a href="https://wic-doctor.com/medecin/pneumologue.html">Pneumologues</a></strong> :</p>
+</li>
+<li>
+<p>Un <strong>cardiologue</strong> ou un <strong>pneumologue</strong> peut prescrire ces tests, notamment pour évaluer la fonction cardiaque ou pulmonaire dans le cadre d'un suivi médical. Ils peuvent avoir des équipements pour réaliser des tests d’effort ou des spirométries de base.</p>
+</li>
+<li>
+<p><strong>Centres de Rééducation Cardiaque ou Pulmonaire</strong> :</p>
+</li>
+<li>
+<p>Les <strong>centres de rééducation cardiaque</strong> et les <strong>centres spécialisés en réadaptation pulmonaire</strong> sont des établissements qui proposent des tests cardiopulmonaires dans le cadre de la rééducation après un événement cardiaque majeur (infarctus, chirurgie cardiaque) ou pulmonaire (BPCO, asthme sévère).</p>
+</li>
+<li>
+<p><strong>Services à Domicile</strong> :</p>
+</li>
+<li>
+<p>Certains services médicaux offrent des tests simples comme la <strong>spirométrie</strong> ou la <strong>surveillance de la fonction cardiaque</strong> à domicile pour les patients qui ne peuvent se déplacer facilement, comme les personnes âgées ou celles en convalescence.</p>
+</li>
+<li>
+<p><strong>Suivi Médical</strong> :</p>
+</li>
+<li>Après la réalisation des tests, le médecin pourra orienter le patient vers un traitement ou une gestion spécifique selon les résultats. Un suivi peut inclure des médicaments, un suivi régulier des fonctions cardiaques et respiratoires, ou une rééducation adaptée.</li>
+</ol><hr/></p></div></div></div>  
+        </div>
+    </section>
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+            // Calculate the position with offset
+            const offset = 100; // Adjust this value as needed for desired offset
+            const sectionTop = section.offsetTop - offset;
+
+            // Scroll the page to the target position
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+
+
+
+
+
+<!--Footer Section-->
+<section>
+	<footer class="text-white footer-bg">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">À propos </p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+							</li>
+							<li>
+								<a href="javascript:;">Témoignages</a>
+							</li>
+
+							<li>
+								<a href="javascript:;">FAQ</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Trouvez</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:;">Professionnels de santé</a>
+							</li>
+							<li>
+								<a href="javascript:;">Pharmacies & Parapharmacies</a>
+							</li>
+							<li>
+								<a href="./trouver-une-clinique.html">Cliniques</a>
+							</li>
+							<li>
+								<a href="javascript:;">Laboratoires</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Ressources</p>
+						<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Forum Médical</a>
+							</li> -->
+							<!-- <li>
+								<a href="javascript:;">La technologie Médicale</a>
+							</li> -->
+
+						</ul>
+					</div>
+
+
+					<div class="col-lg-3 col-md-12">
+						<p class="footer-title">Les conditions</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<div class="clearfix"></div>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+									générales de vente en ligne</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+									d'utilisation</a>
+								</a>
+							</li>
+							<li>
+								<a
+									href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+									de confidentialité des données personnelles
+								</a>
+							</li>
+							<li>
+								<a href="#">Termes et licences d'utilisation
+								</a>
+							</li>
+							<li>
+								<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+							</li>
+							<!-- <li>
+								<a href="javascript:;">Support technique</a>
+							</li>
+							<li>
+								<a href="javascript:;">Réseaux Sociaux</a>
+							</li> -->
+						</ul>
+					</div>
+					<!-- 	<div class="col-lg-3 col-md-12">
+						<h6>Contact</p>
+						<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+						<ul class="list-unstyled mb-0 contact-footer">
+							<li>
+								<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+								94070, USA
+							</li>
+							<li>
+								<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>+33 2 55 04 55 04
+							</li>
+							<li>
+								<i class="fa fa-print"></i>+ 01 234 567 89
+							</li>
+						</ul>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<div class="text-white p-0">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+						Copyright © 2024 WIC DOCTOR All
+						rights reserved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</section>
+<!--Footer Section-->
+<!--Footer Section-->
+
+<!-- Popup Login-->
+<div class="modal" id="exampleModal">
+	<div class="modal-dialog modal-lg modal-appoint" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+					class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Name</label>
+							<input class="form-control" placeholder="Enter Your Name" type="text">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Email</label>
+							<input class="form-control" placeholder="Enter your Email" type="email">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Your Number</label>
+							<input class="form-control" placeholder="Enter your Phone Number" type="number">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Gender</label>
+							<select class="form-control select2" name="user[hour]">
+								<option value="">Male</option>
+								<option value="0">Female</option>
+								<option value="1">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="form-label">Select Date</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<div class="input-group-text">
+										<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+									</div>
+								</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+									type="text">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select City</label>
+							<select class="form-control form-select select2-show-search" name="city">
+								<option selected value="0">Select City</option>
+								<option value="1">Hyderabad</option>
+								<option value="2">Mumbai</option>
+								<option value="3">Delhi</option>
+								<option value="4">Bangalore</option>
+								<option value="5">Ahmedabad</option>
+								<option value="6">Chennai</option>
+								<option value="7">Kolkata</option>
+								<option value="8">Lucknow</option>
+								<option value="9">Jaipur</option>
+								<option value="10">Bhopal</option>
+								<option value="11">Visakhapatnam</option>
+								<option value="12">Patna</option>
+								<option value="13">Srinagar</option>
+								<option value="14">Lucknow</option>
+								<option value="15">Bhubaneswar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Hospital</label>
+							<select class="form-control form-select select2-show-search" name="Hospital">
+								<option selected value="0">Select Hospital</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Specialist</label>
+							<select class="form-control form-select select2-show-search" name="Specialist">
+								<option selected value="0">Select Specialist</option>
+								<option value="1">Cardiologist</option>
+								<option value="2">Neurosurgeon</option>
+								<option value="3">Orthopaedic Surgeon</option>
+								<option value="4">Oncologist</option>
+								<option value="5">Neurologist</option>
+								<option value="6">Gastroenterologist</option>
+								<option value="7">ENT</option>
+								<option value="8">Dentist</option>
+								<option value="9">Psychiatrist</option>
+								<option value="10">Urologist</option>
+								<option value="11">Gynecologist</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class="form-label">Select Slot</label>
+							<select class="form-control form-select select2-show-search" name="Slot">
+								<option selected value="0">Select Hospital</option>
+								<option value="1">morning</option>
+								<option value="2">Afternoon</option>
+								<option value="3">Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="">
+					<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Popup Login-->
+
+<!-- Back to top -->
+<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+<!-- JQuery js-->
+<script src="../assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--JQueryVehiclerkline Js-->
+<script src="../assets/js/jquery.sparkline.min.js"></script>
+
+<!-- Circle Progress Js-->
+<script src="../assets/js/circle-progress.min.js"></script>
+
+
+
+<!-- Star Rating Js-->
+<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+
+<!--Owl Carousel js -->
+<script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+<!--Horizontal Menu-->
+<script src="../assets/plugins/horizontal/horizontal.js"></script>
+
+<!--Counters -->
+<script src="../assets/plugins/counters/counterup.min.js"></script>
+<script src="../assets/plugins/counters/waypoints.min.js"></script>
+<script src="../assets/plugins/counters/numeric-counter.js"></script>
+
+<!-- Datepicker js -->
+<script src="../assets/plugins/date-picker/spectrum.js"></script>
+<script src="../assets/plugins/date-picker/jquery-ui.js"></script>
+<script src="../assets/plugins/date-picker/datepicker.js"></script>
+
+<!--JQuery TouchSwipe js-->
+<script src="../assets/js/jquery.touchSwipe.min.js"></script>
+
+<!--Select2 js -->
+<script src="../assets/plugins/select2/select2.full.min.js"></script>
+<script src="../assets/js/select2.js"></script>
+
+<!-- Cookie js -->
+<script src="../assets/plugins/cookie/jquery.ihavecookies.js"></script>
+<script src="../assets/plugins/cookie/cookie.js"></script>
+
+<!-- sticky Js-->
+<script src="../assets/js/sticky.js"></script>
+
+<!-- Swipe Js-->
+<script src="../assets/js/swipe.js"></script>
+
+<!--Owl-Carousel Js-->
+<script src="../assets/js/owl-carousel.js"></script>
+<!--Cryptojs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Typewritter Js-->
+<script src="../assets/js/typewritter.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/doctor.js"></script>
+
+<!--Dotcors-->
+<script src="../assets/js/recherche.js"></script>
+<!-- Theme-color js -->
+<script src="../assets/js/themeColors.js"></script>
+
+<!-- Custom Js-->
+<script src="../assets/js/custom.js"></script>
+
+
+<!-- switcher-custom js -->
+<script src="../assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>
