@@ -50,7 +50,7 @@ function createCarousel(data) {
 								  <div class="cat-item text-center">
 									  <a  onclick="SearchSpecialities(${item.id},'${JSON.parse(item.name).fr}')"></a>
 									  <div class="cat-imgs">
-										  <img alt="img" src="assets/iconfonts/Specialities/${item.icon}"
+										  <img alt="img" src="assets/images/icons/${item.icon}"
 											  class="svg-img">
 									  </div>
 									  <div class="cat-desc">
