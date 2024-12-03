@@ -465,7 +465,10 @@ if (sessionStorage.getItem("auth")) {
     const userName = Login.result[0].first_name.charAt(0) + Login.result[0].last_name.charAt(0); // Replace with the variable holding the user's first name
     console.log("userName: ", userName)
     const initial = userName.toUpperCase();
+    console.log("initial: ",initial)
+
     document.getElementById('userAvatar').textContent = initial;
+    console.log("document.getElementById('userAvatar').textContent: ",document.getElementById('userAvatar').textContent)
     document.getElementById('userAvatar').style.backgroundColor = getRandomColor();
   });
 }
