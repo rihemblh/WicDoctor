@@ -58,7 +58,7 @@ if (authData) {
 
     // Assuming the user's first name is in the result array
     const user = login.result[0]; // Get the first user object from the result array
-
+console.log("user: ",user)
     // Update the user name in the <h4> element
     const userNameElement = document.getElementById("user-name");
     userNameElement.textContent = `${user.first_name} ${user.last_name || ''}`; // Show first name and last name if available
