@@ -54,7 +54,7 @@ function encryptData(data) {
 const authData = sessionStorage.getItem("auth");
 if (authData) {
     const login = decryptData(authData);
-    console.log("Initial login data: ", JSON.stringify(login));
+    console.log("Initial login data: ", login);
 
     // Assuming the user's first name is in the result array
     const user = login.result[0]; // Get the first user object from the result array
