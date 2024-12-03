@@ -58,7 +58,7 @@ if (authData) {
 
     // Assuming the user's first name is in the result array
     const user = login.result[0]; // Get the first user object from the result array
-console.log("user: ",user)
+    console.log("user: ", user)
     // Update the user name in the <h4> element
     const userNameElement = document.getElementById("user-name");
     userNameElement.textContent = `${user.first_name} ${user.last_name || ''}`; // Show first name and last name if available
@@ -81,18 +81,18 @@ console.log("user: ",user)
     document.getElementById("groupe_sanguin").value = user.groupe_sanguin || '';
     document.getElementById("allergie").value = user.allergie || '';
     document.getElementById("date_naissance").value = user.date_naissance || '';
-    
+
     // Handle the insurance checkbox (CNAM and Assurance)
-    if ((user.matriculeCNSS !=""|| user.dateExpiration !="" )& (user.matriculeCNSS !=null|| user.dateExpiration !=null))  {
+    if ((user.matriculeCNSS != "" || user.dateExpiration != "") & (user.matriculeCNSS != null || user.dateExpiration != null)) {
         document.getElementById("cnam_checkbox").checked = true;
         document.getElementById("cnam_section").style.display = 'block'; // Show CNSS matricule field
     }
-     if ((user.assurance !="")& (user.assurance !=null)){ 
+    if ((user.assurance != "") & (user.assurance != null)) {
         document.getElementById("other_insurance_checkbox").checked = true;
         document.getElementById("other_insurance_section").style.display = 'block'; // Show assurance name field
     }
 
-   
+
 }
 
 
@@ -158,7 +158,7 @@ document.getElementById("updateProfileButton").addEventListener("click", async (
 
     const nomAssurance = document.getElementById("assurance").value;
     if (nomAssurance) updatedProfile.assurance = nomAssurance;
-console.log("updatedProfile: ",JSON.stringify(updatedProfile))
+    console.log("updatedProfile: ", JSON.stringify(updatedProfile))
     try {
         const response = await fetch(`https://wic-doctor.com:3004/update/patient/${patientId}`, {
             method: 'PUT',
