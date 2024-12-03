@@ -783,7 +783,7 @@
 				console.log("doctor to show: ", doctor)
 				const photo = doctor.doctor_photo || "doctor.png";
 				const name = getDoctorName(doctor.name);
-				const speciality = getDoctorSpec(doctor.specialities);
+				const speciality = getDoctorSpec(doctor.specialities,doctor.specialites);
 				const city = getDoctorName(doctor.ville);
 				const phone = doctor.phone_number || "Non spécifié";
 
