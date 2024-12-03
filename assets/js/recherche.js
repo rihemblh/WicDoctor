@@ -462,7 +462,7 @@ if (sessionStorage.getItem("auth")) {
   console.log("Donne login: ", Login)
   document.addEventListener('DOMContentLoaded', function () {
     console.log("Login.result[0]: ", Login.result[0])
-    const userName = Login.result[0].first_name.charAt(0) + Login.result[0].last_name.charAt(0); // Replace with the variable holding the user's first name
+    const userName = JSON.parse(Login.result[0].first_name).fr.charAt(0) + JSON.parse(Login.result[0].last_name).charAt(0); // Replace with the variable holding the user's first name
     console.log("userName: ", userName)
     const initial = userName.toUpperCase();
     console.log("initial: ",initial)
