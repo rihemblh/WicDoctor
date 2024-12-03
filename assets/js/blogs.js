@@ -5,7 +5,7 @@ try {
 	const response = await fetch(apiUrl);
 	const data = await response.json();
 	console.log("List blog: ",data)
-    const blogs = data.blogs
+    const blogs = data.data
     blogs.forEach(item => {
         if(item.titre == "Comment la télémédecine améliore l’accès aux soins dans les zones rurales")
             href='télémédecine-zones-rurales.html'

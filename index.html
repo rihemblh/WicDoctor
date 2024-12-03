@@ -68,9 +68,20 @@
 
 			<div>
 				<div class="buttons">
-					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
 						praticien?</a>
-					<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<a id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<!-- <li><a class="dropdown-item" href="settings.html">Paramètres</a></li> -->
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a>
 				</div>
 			</div>
 

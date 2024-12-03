@@ -453,6 +453,7 @@ function decryptData(cipherText) {
 }
 var Login
 if (sessionStorage.getItem("auth")) {
+  console.log("sessionStorage.getItem('auth'): ",sessionStorage.getItem("auth"))
 
   document.getElementById('SeConnecter').style.display = "none "
   document.getElementById('B2B').style.display = "none"
@@ -469,9 +470,13 @@ if (sessionStorage.getItem("auth")) {
   });
 }
 else {
+
   document.getElementById('SeConnecter').style.display = ""
   document.getElementById('B2B').style.display = ""
   document.getElementById('Login').style.setProperty("display", "none", "important");
+  document.getElementById('userDropdown').style.setProperty("display", "none", "important");
+
+  
 
 }
 function Deconexion() {
