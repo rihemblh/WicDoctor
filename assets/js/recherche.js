@@ -483,6 +483,7 @@ else {
 
 }
 function Deconexion() {
+  console.log("Login: ",Login)
   const requestOptions = {
     method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
     headers: {
