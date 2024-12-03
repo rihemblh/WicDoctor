@@ -59,11 +59,36 @@
 
 			<div>
 				<div class="buttons">
-					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-					<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			
+
 
 		</div>
 	</div>
@@ -80,7 +105,7 @@
 			<!-- Logo -->
 			<div class="logo">
 				<a href="https://wic-doctor.com/">
-					<img class="logo-mb" src="./../../../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+					<img class="logo-mb" src="assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
 				</a>
 			</div>
 
@@ -90,14 +115,15 @@
 			<div class="menu-mobile" id="menu-mobile">
 				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
 				<ul>
-					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
 					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-					<li><a href="#">Nos Solutions</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
 					<li><a href="#">Nos Tarifs</a></li>
 					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
 					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
 					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
 					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
 					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
 				</ul>
@@ -107,9 +133,9 @@
 			<!-- Navigation (visible uniquement sur desktop) -->
 			<nav>
 				<ul>
-					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
 					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-					<li><a href="#">Nos Solutions</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
 					<li><a href="#">Nos Tarifs</a></li>
 					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
 					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
@@ -123,7 +149,6 @@
 			</div>
 		</div>
 	</div>
-
 
 
 
@@ -786,7 +811,7 @@
 				console.log("doctor to show: ", doctor)
 				const photo = doctor.doctor_photo || "doctor.png";
 				const name = getDoctorName(doctor.name);
-				const speciality = getDoctorSpec(doctor.specialities);
+				const speciality = getDoctorSpec(doctor.specialities,doctor.specialites);
 				const city = getDoctorName(doctor.ville);
 				const phone = doctor.phone_number || "Non spécifié";
 
