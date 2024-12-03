@@ -2,15 +2,15 @@
 <html class="no-js" lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'G-VQ6Y9SHVYS');
-</script>
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
 	<meta charset="UTF-8">
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,85 +46,109 @@
 	</div>
 	<!--/Loader-->
 
-		<!-- Top Header -->
-		<div class="header-top">
-			<div class="container">
-				<!-- Contact Info -->
-				<div class="contact-info">
-					<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-							743 13 00 13</span></p>
-				</div>
-	
-				<!-- Buttons -->
-	
-				<div>
-					<div class="buttons">
-						<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
-							praticien?</a>
-						<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
 					</div>
 				</div>
-	
-	
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
+
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="#">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="#">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
+			<div class="buttons">
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-	
-		<!-- Main Header -->
-		<div class="header-main">
-			<div class="container">
-				<!-- Hamburger Menu -->
-				<div class="hamburger-menu" id="hamburger-menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<!-- Logo -->
-				<div class="logo">
-					<a href="https://wic-doctor.com/">
-						<img class="logo-mb" src="./../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-					</a>
-				</div>
-	
-	
-	
-				<!-- Menu mobile -->
-				<div class="menu-mobile" id="menu-mobile">
-					<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-					<ul>
-						<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
-						<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-						<li><a href="#etab">Nos Solutions</a></li>
-						<li><a href="#">Nos Tarifs</a></li>
-						<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
-						<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-						<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-						<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
-								professionnel?</a></li>
-						<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-						<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-					</ul>
-				</div>
-	
-	
-				<!-- Navigation (visible uniquement sur desktop) -->
-				<nav>
-					<ul>
-						<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
-						<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-						<li><a href="#etab">Nos Solutions</a></li>
-						<li><a href="#">Nos Tarifs</a></li>
-						<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
-						<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-						<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-					</ul>
-				</nav>
-	
-				<!-- Extra Button -->
-				<div class="buttons">
-					<a href="#" class="btn-danger">Devenir Partenaire</a>
-				</div>
-			</div>
-		</div>
+	</div>
 
 	<!--Sliders Section-->
 	<section>
@@ -324,8 +348,7 @@
 							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
 							<ul class="list-unstyled mb-0">
 								<li>
-									<a
-										href="https://wic-doctor.com/qui-sommes-nous.html">Qui
+									<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui
 										sommes-nous ?</a>
 								</li>
 								<li>
@@ -576,7 +599,7 @@
 		</div>
 	</div>
 	<!-- End Popup Login-->
-		<script src="./../assets/js/recherche.js"></script>
+	<script src="./../assets/js/recherche.js"></script>
 	<!--Cryptojs-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 
@@ -673,8 +696,8 @@
 		function buildApiUrl(params) {
 			const urlParams = new URLSearchParams();
 			//if (params.speciality_id) urlParams.append('speciality_id', params.speciality_id);
-		//	if (params.ville) urlParams.append('ville', params.ville);
-		//	if (params.pays) urlParams.append('pays', params.Adresse_exacte);
+			//	if (params.ville) urlParams.append('ville', params.ville);
+			//	if (params.pays) urlParams.append('pays', params.Adresse_exacte);
 			if (params.limit) urlParams.append('limit', params.limit);
 			urlParams.append('offset', params.offset);
 			console.log(`${apiBaseUrl}${urlParams.toString()}`)
@@ -709,9 +732,9 @@
 			}
 			return name; // Retourne false si ce n'est pas un JSON valide
 		}
-		function getDoctorSpec(name1,name2) {
-			console.log("*************************************************: ", name1,name2)
-			console.log("!name1: ",!name1)
+		function getDoctorSpec(name1, name2) {
+			console.log("*************************************************: ", name1, name2)
+			console.log("!name1: ", !name1)
 			if (!name1) {
 				return name2; // Retourne false si ce n'est pas un JSON valide
 
@@ -720,7 +743,7 @@
 			else if (JSON.stringify(name1).trim().startsWith('[') && JSON.stringify(name1).trim().endsWith(']')) {
 				console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame")
 				try {
-					
+
 					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name1[0].name).fr)
 					return JSON.parse(name1[0].name).fr; // Vérifiez si la clé 'fr' existe
 				} catch (error) {
@@ -738,9 +761,9 @@
 				console.log("doctor to show: ", doctor)
 				const photo = doctor.doctor_photo || "doctor.png";
 				const name = getDoctorName(doctor.name);
-			//	const speciality = getDoctorSpec(doctor.specialities);
+				//	const speciality = getDoctorSpec(doctor.specialities);
 				const city = getDoctorName(doctor.ville);
-                const adress = getDoctorName(doctor.Adresse_exacte);
+				const adress = getDoctorName(doctor.Adresse_exacte);
 
 				const phone = doctor.phone_number || "Non spécifié";
 
@@ -812,8 +835,8 @@
 		document.addEventListener("DOMContentLoaded", () => {
 			const initialParams = {
 				speciality_id: undefined,
-					ville: undefined,
-					pays: undefined,
+				ville: undefined,
+				pays: undefined,
 				limit: 10,
 				offset: 0
 			};
@@ -902,4 +925,3 @@
 </body>
 
 </html>
-
