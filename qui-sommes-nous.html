@@ -203,27 +203,29 @@
 	<!--/Section-->
 	<!-- Bannière -->
 	<div class="header-bar">
-		Vous cherchez un médecin ? <a href="#">Cliquez ici !</a>
+		Vous cherchez un médecin ? <a href="https://wic-doctor.com/">Cliquez ici !</a>
 	</div>
 	<style>
 		/* Bandeau supérieur */
 		.header-bar {
-			background-color: #1BA584;
+			background-color: #24a98a;
 			color: #fff;
 			text-align: center;
 			padding: 5px;
+			font-size: 16px;
 		}
 
 		.header-bar a {
 			color: #fff;
 			text-decoration: underline;
 			font-weight: bold;
+			font-size: 16px;
 		}
 
 		/* Section Héro */
 		.hero-section {
 			background-color: #F8F9FA;
-			padding: 50px 0;
+			padding: 0px 0px 50px 0px;
 		}
 
 		.hero-section .row {
@@ -235,13 +237,13 @@
 		.hero-section h1 {
 			color: #18167A;
 			font-weight: bold;
-			font-size: 2.5rem;
+			font-size: 48px;
 			text-align: center;
 		}
 
 		.hero-section h2 {
 			color: #18167A;
-			font-size: 1.5rem;
+			font-size: 45px;
 			font-weight: 400;
 		}
 
@@ -256,18 +258,27 @@
 		.description-section {
 			background-color: #F2F5FA;
 			padding: 40px;
-			text-align: center;
+			text-align: left;
 		}
 
 		.description-section h3 {
 			color: #18167A;
 			font-weight: bold;
-			margin-bottom: 20px;
+			font-size: 30px;
+		}
+
+		.sous-description-section {
+			font-size: 26px !important;
 		}
 
 		.description-section p {
-			color: #6c757d;
-			font-size: 1rem;
+			color: #18167A;
+			font-size: 19px;
+		}
+
+		.comment-ca-marche {
+			font-size: 24px !important;
+			color: #18167A;
 		}
 
 		/* Section comment ça marche */
@@ -278,13 +289,33 @@
 		}
 
 		.how-it-works h3 {
-			color: #D9534F;
+			color: #e60564;
 			font-weight: bold;
+			font-size: 40px !important;
 		}
 
 		.how-it-works img {
 			width: 100px;
 			margin-top: 20px;
+		}
+
+		.nous {
+			background-color: #d8e0eb;
+			padding: 45px;
+		}
+
+		.image-nous {
+			padding-top: 2%;
+		}
+
+		.bg-pq {
+			background-color: #fff !important;
+		}
+
+		.pq {
+			color: #e60564;
+			font-weight: bold;
+			font-size: 40px !important;
 		}
 
 		/* Responsivité pour mobile */
@@ -306,16 +337,19 @@
 	</style>
 	<!-- Section Héro -->
 	<section class="hero-section">
+
+		<div class="cover-image sptb nous">
+			<h1 class="">Nous sommes WIC Dr.</h1>
+		</div>
 		<div class="container">
-			<h1>Nous sommes WIC Dr.</h1>
 			<div class="row">
 				<!-- Texte à gauche -->
 				<div class="col-md-6">
-					
+
 					<h2>Accédez aux meilleurs soins, où que vous soyez, avec WIC Dr.</h2>
 				</div>
 				<!-- Image à droite -->
-				<div class="col-md-6 img-col">
+				<div class="col-md-6 img-col image-nous">
 					<img src="./assets/images/media/photos/wic-dr.jpeg" alt="Doctor Image">
 				</div>
 			</div>
@@ -324,37 +358,126 @@
 
 	<!-- Section Description -->
 	<section class="description-section">
-		<h3>Notre aventure commence ici</h3>
-		<p>
-			Une santé connectée : rapprocher médecins et patients efficacement.
-		</p>
-		<p>
-			Nous avons conçu un espace qui vous simplifie l'accès aux soins tout en vous garantissant un suivi médical
-			de qualité, où que vous soyez.
-			<br>
-			Notre mission est de rendre la santé accessible à tous en offrant une gamme complète de services en ligne.
-			<br>
-			Fini les déplacements de centaines de kilomètres et les files d’attentes interminables, avec WIC Doctor vous
-			pouvez consulter un médecin où que vous soyez.
-			<br>
-			Rejoignez-nous et découvrez une nouvelle façon de prendre soin de vous.
-		</p>
+		<div class="container">
+
+			<h3>Notre aventure commence ici</h3>
+			<p class="sous-description-section">
+				Une santé connectée : rapprocher médecins et patients efficacement.
+			</p>
+			<p>
+				Nous avons conçu un espace qui vous simplifie l'accès aux soins tout en
+				vous garantissant un suivi médical de qualité, où que vous soyez.
+				<br>
+				Notre mission est de rendre la santé accessible à tous en offrant une gamme
+				complète de services en ligne. Finis les déplacements de centaines de kilomètres et les files
+				d’attentes interminables, avec WIC Doctor vous pouvez consulter un médecin où que vous soyez.
+				<br>
+				Nos professionnels de santé partenaires s’engagent à vous fournir un
+				accompagnement personnalisé et à jour, afin de vous aider à mieux gérer votre bien-être au
+				quotidien. Ensemble, nous œuvrons pour une médecine moderne, accessible et en phase avec vos
+				besoins.
+				<br>
+				Rejoignez-nous et découvrez une nouvelle façon de prendre soin de
+				vous.
+			</p>
+		</div>
 	</section>
 
 	<!-- Section Comment ça marche -->
 	<section class="how-it-works">
 		<h3>Comment ça marche ?</h3>
-		<p>Obtenez un rendez-vous médical ou une téléconsultation en 3 clics !</p>
-		<img src="https://via.placeholder.com/100" alt="Icône Téléconsultation">
+		<p class="comment-ca-marche">Obtenez un rendez-vous médical ou une téléconsultation en 3 clics !</p>
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="mb-lg-0 mb-4">
+							<a class="qui-link" href="https://wic-doctor.com/register.html">
+								<div class="service-card text-center">
+									<div class="icon-bg box-shadow icon-service text-primary about  CreationCompte">
+
+									</div>
+									<div class="servic-data mt-3">
+										<h4 class="font-weight-semibold mb-2"><a class="qui-link"
+												href="https://wic-doctor.com/register.html">Créer un compte</a>
+										</h4>
+										<p class="text-muted mb-0">Créer votre compte pour pouvoir gérer vos rendez-vous
+											et
+											votre dossier médical en ligne.
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="mb-sm-0 mb-4">
+							<a class="qui-link" href="https://wic-doctor.com/">
+								<div class="service-card text-center">
+									<div class="icon-bg box-shadow icon-service text-secondary about  Recherche">
+									</div>
+									<div class="servic-data mt-3">
+										<h4 class="font-weight-semibold mb-2"><a class="qui-link"
+												href="https://wic-doctor.com/">Rechercher</a></h4>
+										<p class="text-muted mb-0">Recherchez le spécialiste le plus proche de chez
+											vous.
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="mb-sm-0 mb-4">
+							<a class="qui-link" href="https://wic-doctor.com/">
+								<div class="service-card text-center">
+									<div class="icon-bg box-shadow icon-service text-danger about  PriseRdv">
+									</div>
+									<div class="servic-data mt-3">
+										<h4 class="font-weight-semibold mb-2"><a class="qui-link"
+												href="https://wic-doctor.com/">Rendez-vous en ligne</a>
+										</h4>
+										<p class="text-muted mb-0">Consultez les disponibilités et réservez un
+											rendez-vous
+											en ligne.
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="">
+							<a class="qui-link" href="https://wic-doctor.com/">
+								<div class="service-card text-center">
+									<div class="icon-bg box-shadow icon-service text-success about  Suvi">
+									</div>
+									<div class="servic-data mt-3">
+										<h4 class="font-weight-semibold mb-2"><a class="qui-link" href="https://wic-doctor.com/">Suivi
+												médical</a>
+										</h4>
+										<p class="text-muted mb-0">Effectuez le suivi médical en ligne avec votre
+											médecin et
+											les différents laboratoires.
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 
-	<!-- Section Comment ça marche -->
-	<section class="how-it-works">
-		<h3>Comment ça marche ?</h3>
-		<p>Obtenez un rendez-vous médical ou une téléconsultation en 3 clics !</p>
-		<img src="https://via.placeholder.com/100" alt="Icône téléconsultation">
-	</section>
+
 
 	<!--Section-->
 	<section>
@@ -379,11 +502,11 @@
 	<!--/Section-->
 
 	<!--Section-->
-	<section class="sptb">
+	<section class="sptb bg-pq">
 		<div class="container">
 			<div class="section-title center-block text-center">
-				<h2>Pourquoi choisir WIC Doctor ?
-				</h2>
+				<h3 class="pq">Pourquoi choisir WIC Doctor ?
+				</h3>
 			</div>
 			<div class="row ">
 				<div class="col-md-6 col-lg-4 features">
@@ -480,31 +603,104 @@
 
 
 	<!-- Newsletter-->
-	<section class="sptb section-bg">
+	<section class="newsletter-section">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 col-xl-6 col-md-12">
-					<div class="sub-newsletter">
-						<h3 class="mb-2"><i class="fa fa-paper-plane-o me-2"></i> Inscrivez-vous à notre Journal Médical
-						</h3>
-						<p class="mb-0">Recevez les derniers conseils médicaux proposés par des spécialistes.
-							Votre email
-						</p>
-					</div>
+			<div class="row text-center">
+				<div class="col-12">
+					<h2 class="newsletter-title">
+						Inscrivez-vous à notre Journal Médical
+					</h2>
+					<p class="newsletter-subtitle">
+						Recevez les derniers conseils médicaux proposés par nos spécialistes.
+					</p>
 				</div>
-				<div class="col-lg-5 col-xl-6 col-md-12">
-					<div class="input-group sub-input mt-1">
-						<input type="text" class="form-control input-lg " placeholder="Enter your Email">
-						<div class="input-group-append ">
-							<button type="button" class="btn btn-primary btn-lg br-te-3  br-be-3">
-								S’inscrire
-							</button>
-						</div>
+			</div>
+			<div class="row justify-content-center mt-4">
+				<div class="col-md-8 col-lg-6">
+					<div class="input-group">
+						<input type="email" class="form-control email-input"
+							placeholder="Tapez votre adresse mail..." />
+						<button class="btn btn-success submit-btn envoyer-btn">Envoyer</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<style>
+		/* Section background */
+		.newsletter-section {
+			background: url("./assets/images/media/photos/newsletter.jpeg") no-repeat center center / cover;
+			padding: 120px 0;
+		}
+
+		.envoyer-btn {
+			padding: 3px 20px !important;
+		}
+
+		/* Text styles */
+		.newsletter-title {
+			font-size: 1.8rem;
+			font-weight: bold;
+			color: #18167A;
+			margin-bottom: 10px;
+		}
+
+		.newsletter-title .icon {
+			width: 30px;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+
+		.newsletter-subtitle {
+			font-size: 1rem;
+			color: #18167A;
+		}
+
+		/* Form styles */
+		.input-group {
+			display: flex;
+			align-items: center;
+		}
+
+		.email-input {
+			border: 2px solid #83D1C3;
+			border-right: none;
+			border-radius: 5px 0 0 5px;
+			padding: 10px 15px;
+			font-size: 1rem;
+			flex: 1;
+		}
+
+		.submit-btn {
+			background-color: #1BA584;
+			color: #fff;
+			border: 2px solid #1BA584;
+			border-radius: 0 5px 5px 0;
+			padding: 10px 20px;
+			font-size: 1rem;
+			cursor: pointer;
+		}
+
+		.submit-btn:hover {
+			background-color: #138f6e;
+			border-color: #138f6e;
+		}
+		.qui-link{
+			color: #18167A;
+		}
+
+		/* Responsive adjustments */
+		@media (max-width: 768px) {
+			.newsletter-title {
+				font-size: 1.5rem;
+			}
+
+			.newsletter-subtitle {
+				font-size: 0.9rem;
+			}
+		}
+	</style>
 	<!--/Newsletter-->
 
 	<!--Footer Section-->
