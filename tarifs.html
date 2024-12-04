@@ -37,8 +37,8 @@
 
 </head>
 
-
 <body>
+
 
 	<!--Loader-->
 	<div id="global-loader">
@@ -51,7 +51,7 @@
 		<div class="container">
 			<!-- Contact Info -->
 			<div class="contact-info">
-				<p>Nous sommes disponibles sur <span class="span-info">+216 26 311 777 / +33
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
 						743 13 00 13</span></p>
 			</div>
 
@@ -198,303 +198,312 @@
 		});
 	</script>
 
-	<!--Sliders Section-->
-
 
 
 	<!--/Section-->
-
-	<!--Section-->
-	<!-- <div class="sptb-sm">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-3 col-md-6">
-						<div class="card mb-xl-0">
-							<div class="card-body">
-								<div class="d-flex font-weight-semibold text-primary"><i class="fe fe-phone icon-style-circle ms-0 me-2"></i> <div class="mt-1">Contact</div></div>
-								<h6 class="font-weight-semibold2 mt-3 fs-16">+33 2 55 04 55 04</h6>
-								<P class="mb-0">Free Support!</P>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-md-6">
-						<div class="card mb-xl-0">
-							<div class="card-body">
-								<div class="d-flex font-weight-semibold text-primary"><i class="fe fe-clock icon-style-circle ms-0 me-2"></i> <div class="mt-1">Timings</div></div>
-								<h6 class="font-weight-semibold2 mt-3 fs-16">Mon-Sat(10:00-19:00)</h6>
-								<P class="mb-0">Working Hours!</P>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-md-6">
-						<div class="card mb-md-0">
-							<div class="card-body">
-								<div class="d-flex font-weight-semibold text-primary"><i class="fe fe-map-pin icon-style-circle ms-0 me-2"></i> <div class="mt-1">Location</div></div>
-								<h6 class="font-weight-semibold2 mt-3 fs-16">872 School Street</h6>
-								<P class="mb-0">New York, USA</P>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-md-6">
-						<div class="card mb-0">
-							<div class="card-body">
-								<div class="d-flex font-weight-semibold text-primary"><i class="fe fe-mail icon-style-circle ms-0 me-2"></i> <div class="mt-1">Email</div></div>
-								<h6 class="font-weight-semibold2 mt-3 fs-16">yourdomain@gmail.com</h6>
-								<P class="mb-0">Support Us!</P>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-	<!--Section-->
-
-
-
-	<!--Contact-->
-	<style>
-	
-
-		/* Header Section */
-		.header-contact {
-			text-align: center;
-			background-color: #fff;
-			padding: 20px;
-		}
-
-		.header-contact h1 {
-			color: #e60564;
-			font-size: 40px;
-			margin: 0;
-		}
-
-		.header-contact p {
-			font-size: 24px !important;
-    color: #18167A;
-		}
-
-		/* Contact Container */
-		.contact-container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			margin: auto;
-			max-width: 1200px;
-			background-color: #fff;
-			padding: 20px;
-			border-radius: 8px;
-		}
-
-		/* Contact Info */
-		.contact-info-con {
-			flex: 1;
-			min-width: 300px;
-			margin-right: 20px;
-		}
-
-		.contact-info-con ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-		}
-
-		.contact-info-con ul li {
-			margin: 10px 0;
-			color: #555;
-			font-size: 16px;
-		}
-
-		.contact-info-con ul li i {
-			color: #ff007f;
-			margin-right: 10px;
-		}
-
-		.contact-info-con ul li a {
-			color: #00c4cc;
-			text-decoration: none;
-		}
-
-		.contact-info-con ul li a:hover {
-			text-decoration: underline;
-		}
-
-		/* Contact Form */
-		.contact-form {
-			flex: 2;
-			min-width: 300px;
-		}
-
-		.contact-form form {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 10px;
-		}
-
-		.contact-form input,
-		.contact-form textarea,
-		.contact-form button {
-			width: calc(50% - 10px);
-			padding: 10px;
-			border: 1px solid #ddd;
-			border-radius: 5px;
-			font-size: 14px;
-			font-family: Arial, sans-serif;
-		}
-
-		.contact-form textarea {
-			width: 100%;
-			resize: none;
-		}
-
-		.contact-form button {
-			width: 100%;
-			background-color: #00c4cc;
-			color: #fff;
-			border: none;
-			cursor: pointer;
-			font-size: 16px;
-		}
-
-		.contact-form button:hover {
-			background-color: #009fa8;
-		}
-
-		/* Map Section */
-		.map {
-			width: 100%;
-			height: 300px;
-			margin-top: 20px;
-		}
-
-		iframe {
-			width: 100%;
-			height: 100%;
-			border: none;
-		}
-
-		/* Style pour aligner Name, Email, et Subject */
-		.form-row {
-			display: flex;
-			gap: 10px;
-			/* Espacement entre les champs */
-			width: 100%;
-		}
-
-		.form-row input {
-			flex: 1;
-			/* Chaque champ occupe une part égale de la ligne */
-			padding: 10px;
-			font-size: 14px;
-			border: 1px solid #ddd;
-			border-radius: 5px;
-		}
-
-		/* Style général pour le textarea */
-		textarea {
-			width: 100%;
-			padding: 10px;
-			font-size: 14px;
-			border: 1px solid #ddd;
-			border-radius: 5px;
-			resize: none;
-			margin-top: 10px;
-		}
-
-		/* Style général pour le bouton */
-		.button-con {
-			display: block;
-			width: 100%;
-			padding: 10px;
-			background-color: #00c4cc;
-			color: #fff;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 16px;
-			margin-top: 10px;
-		}
-
-		.button-con:hover {
-			background-color: #009fa8;
-		}
-		.icon{
-			color: #ff007f;
-
-		}
-		.section-title-contact{
-			padding: 0px 0px 0px 0px;
-		}
-	</style>
 	<!-- Bannière -->
 	<div class="header-bar">
 		Vous cherchez un médecin ? <a href="https://wic-doctor.com/">Cliquez ici !</a>
 	</div>
+	<style>
+
+	</style>
 	<!-- Section Héro -->
-	<section class="hero-section section-title-contact">
+	<section class="hero-section">
 
 		<div class="cover-image sptb nous">
-			<h1 class="">Contact</h1>
+			<h1 class="">Nous sommes WIC Dr.</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<!-- Texte à gauche -->
+				<div class="col-md-6">
+
+					<h2>Accédez aux meilleurs soins, où que vous soyez, avec WIC Dr.</h2>
+				</div>
+				<!-- Image à droite -->
+				<div class="col-md-6 img-col image-nous">
+					<img src="./assets/images/media/photos/wic-dr.jpeg" alt="Doctor Image">
+				</div>
+			</div>
 		</div>
 	</section>
+
+	<!-- Section Description -->
+	<section class="description-section">
+		<div class="container">
+
+			<h3>Notre aventure commence ici</h3>
+			<p class="sous-description-section">
+				Une santé connectée : rapprocher médecins et patients efficacement.
+			</p>
+			<p>
+				Nous avons conçu un espace qui vous simplifie l'accès aux soins tout en
+				vous garantissant un suivi médical de qualité, où que vous soyez.
+				<br>
+				Notre mission est de rendre la santé accessible à tous en offrant une gamme
+				complète de services en ligne. Finis les déplacements de centaines de kilomètres et les files
+				d’attente interminables, avec WIC Doctor vous pouvez consulter un médecin où que vous soyez.
+				<br>
+				Nos professionnels de santé partenaires s’engagent à vous fournir un
+				accompagnement personnalisé et à jour, afin de vous aider à mieux gérer votre bien-être au
+				quotidien. Ensemble, nous œuvrons pour une médecine moderne, accessible et en phase avec vos
+				besoins.
+				<br>
+				Rejoignez-nous et découvrez une nouvelle façon de prendre soin de
+				vous.
+			</p>
+		</div>
+	</section>
+
+	<!-- Section Comment ça marche -->
 	<section class="how-it-works">
 		<h3>Comment ça marche ?</h3>
 		<p class="comment-ca-marche">Obtenez un rendez-vous médical ou une téléconsultation en 3 clics !</p>
-	</section>
-	<section class="hero-section">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="mb-lg-0 mb-4">
+							<a class="qui-link" href="https://wic-doctor.com/register.html">
+								<div class="service-card text-center">
+									<div class="icon-bg box-shadow icon-service text-primary about  CreationCompte">
 
-		
-	
-		<div class="form-contact">
-			
-
-			<div class="contact-container">
-				<!-- Contact Information -->
-				<div class="contact-info-con">
-					<ul>
-						<li><i class="fas fa-map-marker-alt icon"></i> Immeuble Aicha - Avenue Hédi Nouira, 8000 Nabeul</li>
-						<li><i class="fas fa-phone icon"></i> +216 26 311 777</li>
-						<li><i class="fas fa-phone icon"></i> +216 26 311 722</li>
-						<li><i class="fas fa-envelope icon"></i> parteners@way-interactive-convergence.com</li>
-						<li><i class="fas fa-globe icon"></i> <a href="http://www.way-interactive-convergence.com"
-								target="_blank">way-interactive-convergence.com</a></li>
-					</ul>
-				</div>
-
-				<!-- Contact Form -->
-				<div class="contact-form">
-					<form action="#" method="post">
-						<div class="form-row">
-							<input type="text" name="name" placeholder="Name" required>
-							<input type="email" name="email" placeholder="Email Address" required>
-							<input type="text" name="subject" placeholder="Subject" required>
+									</div>
+									<div class="servic-data mt-3">
+										<h4 class="font-weight-semibold mb-2"><a class="qui-link"
+												href="https://wic-doctor.com/register.html">Créer un compte</a>
+										</h4>
+										<p class="text-muted mb-0">Créer votre compte pour pouvoir gérer vos rendez-vous
+											et
+											votre dossier médical en ligne.
+										</p>
+									</div>
+								</div>
+							</a>
 						</div>
-						<div class="form-row">
-
-							<textarea name="message" rows="5" placeholder="Type your message here..."
-								required></textarea>
-						</div>
-						<button class="button-con" type="submit">Send Message</button>
-					</form>
-
+					</div>
 				</div>
-
-			
-
-				<!-- FontAwesome for Icons -->
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-
-
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="mb-sm-0 mb-4">
+							<a class="qui-link" href="https://wic-doctor.com/">
+								<div class="service-card text-center">
+									<div class="icon-bg box-shadow icon-service text-secondary about  Recherche">
+									</div>
+									<div class="servic-data mt-3">
+										<h4 class="font-weight-semibold mb-2"><a class="qui-link"
+												href="https://wic-doctor.com/">Rechercher</a></h4>
+										<p class="text-muted mb-0">Recherchez le spécialiste le plus proche de chez
+											vous.
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="mb-sm-0 mb-4">
+							<a class="qui-link" href="https://wic-doctor.com/">
+								<div class="service-card text-center">
+									<div class="icon-bg box-shadow icon-service text-danger about  PriseRdv">
+									</div>
+									<div class="servic-data mt-3">
+										<h4 class="font-weight-semibold mb-2"><a class="qui-link"
+												href="https://wic-doctor.com/">Rendez-vous en ligne</a>
+										</h4>
+										<p class="text-muted mb-0">Consultez les disponibilités et réservez un
+											rendez-vous
+											en ligne.
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="">
+						<div class="">
+							<a class="qui-link" href="https://wic-doctor.com/">
+								<div class="service-card text-center">
+									<div class="icon-bg box-shadow icon-service text-success about  Suvi">
+									</div>
+									<div class="servic-data mt-3">
+										<h4 class="font-weight-semibold mb-2"><a class="qui-link" href="https://wic-doctor.com/">Suivi
+												médical</a>
+										</h4>
+										<p class="text-muted mb-0">Effectuez le suivi médical en ligne avec votre
+											médecin et
+											les différents laboratoires.
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-				<!-- Google Map -->
-				<div class="map">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2612.253866421425!2d6.213198277091608!3d49.10081747136598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794ddc95ca526cb%3A0xe249b0000d37e3a4!2s4%20Rue%20Marconi%2C%2057070%20Metz%2C%20France!5e0!3m2!1sfr!2stn!4v1731426326084!5m2!1sfr!2stn"
-						allowfullscreen="" loading="lazy"></iframe>
-				</div>
 		</div>
 	</section>
 
-	<!--/Contact-->
+
+
+
+	<!--Section-->
+	<section>
+		<div class="cover-image sptb backgroundcolor">
+			<div class="content-text mb-0">
+				<div class="container">
+					<div class="text-center text-white ">
+						<h2 class="mb-2 display-5" style="color: #18167A;">Prêt à prendre soin de votre santé en toute
+							simplicité ?
+						</h2>
+						<p style="color: #18167A;">Profitez de nos services en ligne dès maintenant.
+						</p>
+						<div class="mt-5">
+							<a href="https://wic-doctor.com/" class="btn btn-secondary btn-lg">Prendre rendez-vous
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/Section-->
+
+	<!--Section-->
+	<section class="sptb bg-pq">
+		<div class="container">
+			<div class="section-title center-block text-center">
+				<h3 class="pq">Pourquoi choisir WIC Doctor ?
+				</h3>
+			</div>
+			<div class="row ">
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card mb-0">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon bg-info mb-3 appel">
+
+								</div>
+								<h3>Accessibilité 24/7 </h3>
+								<p>Notre plateforme est disponible 24/7, vous permettant de consulter un médecin ou de
+									prendre un rendez-vous quand vous voulez.
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon  mb-3 Teleconsultaton">
+								</div>
+								<h3>Téléconsultation rapide et sécurisée</h3>
+								<p>Profitez de consultations en ligne avec des professionnels de santé qualifiés, sans
+									avoir à vous déplacer, et en toute sécurité.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg fea-icon  mb-3 PRDV">
+								</div>
+								<h3>Prise de rendez-vous simplifiée</h3>
+								<p>Trouvez le bon spécialiste et réservez votre créneau en quelques clics grâce à notre
+									système intuitif de prise de rendez-vous.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon mb-3 Journal">
+								</div>
+								<h3>Journal médical</h3>
+								<p>Accédez à des informations de qualité, des conseils santé et des articles
+									scientifiques fiables rédigés par nos spécialistes.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card mb-lg-0">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon mb-3 personalise">
+								</div>
+								<h3>Suivi personnalisé</h3>
+								<p>Bénéficiez d’un accompagnement rapproché grâce à un accès direct à votre dossier
+									médical et aux recommandations de nos médecins.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 features">
+					<div class="card mb-lg-0 mb-md-0">
+						<div class="card-body text-center">
+							<div class="feature">
+								<div class="fa-stack fa-lg  fea-icon mb-3 confidentialite">
+								</div>
+								<h3>Confidentialité garantie</h3>
+								<p>Nous assurons la protection de vos données personnelles et de votre dossier médical
+									avec des standards de sécurité élevés.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!--/Section-->
+
+
+
+
+	<!-- Newsletter-->
+	<section class="newsletter-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-12">
+					<h2 class="newsletter-title">
+						Inscrivez-vous à notre Journal Médical
+					</h2>
+					<p class="newsletter-subtitle">
+						Recevez les derniers conseils médicaux proposés par nos spécialistes.
+					</p>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-4">
+				<div class="col-md-8 col-lg-6">
+					<div class="input-group">
+						<input type="email" class="form-control email-input"
+							placeholder="Tapez votre adresse mail..." />
+						<button class="btn btn-success submit-btn envoyer-btn">Envoyer</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<style>
+		
+	</style>
+	<!--/Newsletter-->
 
 	<!--Footer Section-->
 	<section>
@@ -553,11 +562,11 @@
 									<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
 								</li>
 								<!-- <li>
-										<a href="javascript:;">Forum Médical</a>
-									</li> -->
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
 								<!-- <li>
-										<a href="javascript:;">La technologie Médicale</a>
-									</li> -->
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
 
 							</ul>
 						</div>
@@ -591,32 +600,32 @@
 									<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
 								</li>
 								<!-- <li>
-										<a href="javascript:;">Support technique</a>
-									</li>
-									<li>
-										<a href="javascript:;">Réseaux Sociaux</a>
-									</li> -->
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
 							</ul>
 						</div>
 						<!-- 	<div class="col-lg-3 col-md-12">
-								<h6>Contact</p>
-								<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
-								<ul class="list-unstyled mb-0 contact-footer">
-									<li>
-										<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
-										94070, USA
-									</li>
-									<li>
-										<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
-									</li>
-									<li>
-										<i class="fa fa-phone"></i>+33 2 55 04 55 04
-									</li>
-									<li>
-										<i class="fa fa-print"></i>+ 01 234 567 89
-									</li>
-								</ul>
-							</div> -->
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
 
 					</div>
 				</div>
@@ -638,6 +647,7 @@
 	<!-- Back to top -->
 	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+	<!-- JQuery js-->
 	<script src="assets/js/jquery.min.js"></script>
 
 	<!-- Bootstrap js -->
