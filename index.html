@@ -51,7 +51,7 @@
 	<!-- Header-main -->
 
 	<style>
-		
+
 	</style>
 
 
@@ -68,11 +68,36 @@
 
 			<div>
 				<div class="buttons">
-					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-					<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			
+
 
 		</div>
 	</div>
@@ -101,12 +126,13 @@
 				<ul>
 					<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
 					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-					<li><a href="#">Nos Solutions</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
 					<li><a href="#">Nos Tarifs</a></li>
 					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
 					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
 					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
 					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
 					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
 				</ul>
@@ -118,7 +144,7 @@
 				<ul>
 					<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
 					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-					<li><a href="#">Nos Solutions</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
 					<li><a href="#">Nos Tarifs</a></li>
 					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
 					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
@@ -303,166 +329,7 @@
 
 
 	<!--/Section-->
-	<!--Section-->
-	<section class="sptb section-bg">
-		<div class="container">
-			<div class="section-title center-block text-center">
-				<h2>Établissements</h2>
 
-			</div>
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="owl-carousel owl-carousel-icons2">
-						<div class="item">
-							<div class="card">
-								<div class="card-body">
-									<div class="cat-item text-center">
-										<div class="cat-imgs">
-											<img alt="img" src="assets/images/icons/pharmacie.png" class="svg-img">
-										</div>
-										<div class="cat-desc">
-											<h5 class="mb-1">Pharmacies</h5>
-										</div>
-									</div>
-								</div></a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="card">
-								<a href="#">
-
-									<div class="card-body">
-										<div class="cat-item text-center">
-											<div class="cat-imgs">
-												<img alt="img" src="assets/images/icons/centre-de-dialyse.png"
-													class="svg-img">
-											</div>
-											<div class="cat-desc">
-												<h5 class="mb-1">Centre de dialyse</h5>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="card">
-								<a href="#">
-
-									<div class="card-body">
-										<div class="cat-item text-center">
-											<div class="cat-imgs">
-												<img alt="img" src="assets/images/icons/ambulance.png" class="svg-img">
-											</div>
-											<div class="cat-desc">
-												<h5 class="mb-1">Ambulances Privées</h5>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="card">
-								<a href="./trouver-une-clinique.html">
-
-									<div class="card-body">
-										<div class="cat-item text-center">
-											<div class="cat-imgs">
-												<img alt="img" src="assets/images/icons/clinique.png" class="svg-img">
-											</div>
-											<div class="cat-desc">
-												<h5 class="mb-1">Cliniques</h5>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="card">
-								<a href="#">
-
-									<div class="card-body">
-										<div class="cat-item text-center">
-											<div class="cat-imgs">
-												<img alt="img" src="assets/images/icons/banque-de-sang.png"
-													class="svg-img">
-											</div>
-											<div class="cat-desc">
-												<h5 class="mb-1">Banque de sang</h5>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="card">
-								<a href="#">
-
-									<div class="card-body">
-										<div class="cat-item text-center">
-											<div class="cat-imgs">
-												<img alt="img" src="assets/images/icons/infirmier.png" class="svg-img">
-											</div>
-											<div class="cat-desc">
-												<h5 class="mb-1">Infirmerie privée</h5>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="card">
-								<a href="#">
-
-									<div class="card-body">
-										<div class="cat-item text-center">
-											<div class="cat-imgs">
-												<img alt="img" src="assets/images/icons/parapharmacie.png"
-													class="svg-img">
-											</div>
-											<div class="cat-desc">
-												<h5 class="mb-1">Para pharmacies</h5>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="card">
-								<a href="#">
-									<div class="card-body">
-										<div class="cat-item text-center">
-											<div class="cat-imgs">
-												<img alt="img" src="assets/images/icons/Hopital-et-clinique.png"
-													class="svg-img">
-											</div>
-											<div class="cat-desc">
-												<h5 class="mb-1">Hôpitaux</h5>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-
-			</div>
-
-		</div>
-	</section>
-
-	<!--/Section-->
 
 
 	<!--Section-->
@@ -566,7 +433,184 @@
 	</section>
 	<!--/Section-->
 
+	<!--Section-->
+	<section id="etab" class="sptb section-bg">
+		<div class="container">
+			<div class="section-title center-block text-center">
+				<h2>Établissements</h2>
 
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="owl-carousel owl-carousel-icons2">
+						<div class="item">
+							<div class="card">
+								<div class="card-body">
+									<div class="cat-item text-center">
+										<div class="cat-imgs">
+											<img alt="img" src="assets/images/icons/pharmacie.png" class="svg-img">
+										</div>
+										<div class="cat-desc">
+											<h5 class="mb-1">Pharmacies</h5>
+										</div>
+									</div>
+								</div></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="#">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/centre-de-dialyse.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Centre de dialyse</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="#">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/ambulance.png" class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Ambulances Privées</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="./trouver-une-clinique.html">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/clinique.png" class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Cliniques</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="#">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/banque-de-sang.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Banque de sang</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="card">
+								<a href="./Infirmerie/tous.html">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/infirmier.png" class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Infirmerie privée</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="./Vétérinaire/tous.html">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/vétérinaire.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Vétérinaires</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="#">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/parapharmacie.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Para pharmacies</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="#">
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/Hopital-et-clinique.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Hôpitaux</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</section>
+
+	<!--/Section-->
 
 
 	<!--Section-->

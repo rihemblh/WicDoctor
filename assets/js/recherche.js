@@ -453,6 +453,7 @@ function decryptData(cipherText) {
 }
 var Login
 if (sessionStorage.getItem("auth")) {
+  console.log("sessionStorage.getItem('auth'): ",sessionStorage.getItem("auth"))
 
   document.getElementById('SeConnecter').style.display = "none "
   document.getElementById('B2B').style.display = "none"
@@ -460,21 +461,29 @@ if (sessionStorage.getItem("auth")) {
   Login = decryptData(sessionStorage.getItem("auth"));
   console.log("Donne login: ", Login)
   document.addEventListener('DOMContentLoaded', function () {
-    console.log("Login.result[0]: ", Login.result[0])
-    const userName = Login.result[0].first_name.charAt(0) + Login.result[0].last_name.charAt(0); // Replace with the variable holding the user's first name
+    console.log("Login.result[0]: ", Login.result[0],JSON.parse(Login.result[0].first_name).fr.charAt(0),JSON.parse(Login.result[0].last_name).fr.charAt(0))
+    const userName = JSON.parse(Login.result[0].first_name).fr.charAt(0) + JSON.parse(Login.result[0].last_name).fr.charAt(0); // Replace with the variable holding the user's first name
     console.log("userName: ", userName)
     const initial = userName.toUpperCase();
+    console.log("initial: ",initial)
+
     document.getElementById('userAvatar').textContent = initial;
+    console.log("document.getElementById('userAvatar').textContent: ",document.getElementById('userAvatar').textContent)
     document.getElementById('userAvatar').style.backgroundColor = getRandomColor();
   });
 }
 else {
+
   document.getElementById('SeConnecter').style.display = ""
   document.getElementById('B2B').style.display = ""
   document.getElementById('Login').style.setProperty("display", "none", "important");
+  document.getElementById('userDropdown').style.setProperty("display", "none", "important");
+
+  
 
 }
 function Deconexion() {
+  console.log("Login: ",Login)
   const requestOptions = {
     method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
     headers: {

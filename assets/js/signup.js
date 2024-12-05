@@ -3,7 +3,12 @@ let valid
 console.log("phoneInputField: ", phoneInputField)
 document.getElementById('Register').addEventListener('submit', async function (event) {
     event.preventDefault(); // Prevent the default form submission
-
+    if (!validatePhoneNumber()) {
+        event.preventDefault();  // Empêche la soumission du formulaire
+        //alert("Le formulaire a été soumis avec succès !");
+        // Envoyer le formulaire ou exécuter une autre action ici
+        return;
+    }
     // Gather form data
     const name = this.name.value;
     const lastname = this.lastname.value;
@@ -26,7 +31,7 @@ document.getElementById('Register').addEventListener('submit', async function (e
         console.log("reponse:", data);
         if (response.ok) {
             alert(data.message || 'Inscription réussie! Vérifiez votre email pour confirmer.');
-            window.location.href = 'index.html'; // Redirect to index.html
+            //window.location.href = 'index.html'; // Redirect to index.html
         }
     } catch (error) {
         console.error('Erreur lors de l\'inscription:', error);
@@ -174,7 +179,7 @@ function validatePhoneNumber() {
     // Vérifier si la longueur du numéro est correcte après l'indicatif pays
     const phoneWithoutCode = phoneNumber.replace(`+${selectedCountryData.dialCode}`, '').replace(' ', '').trim();
 
-    if (phoneWithoutCode.length === selectedCountryData.validLength) {
+    if (phoneWithoutCode.length && phoneWithoutCode.length === selectedCountryData.validLength) {
         console.log("valid: ", phoneWithoutCode.length === selectedCountryData.validLength)
         valid = true;
     }
@@ -214,12 +219,8 @@ document.getElementById('Register').addEventListener('submit', function (event) 
             ;
         return;
     }
-
-    if (!validatePhoneNumber()) {
-        event.preventDefault();  // Empêche la soumission du formulaire
-        //alert("Le formulaire a été soumis avec succès !");
-        // Envoyer le formulaire ou exécuter une autre action ici
-    }
+console.log("!validatePhoneNumber():",!validatePhoneNumber())
+   
     // Validation du nom
     if (lastname.value.trim() === "" || lastname.value.length < 2 || lastname.value.length > 50) {
         event.preventDefault();  // Empêche la soumission du formulaire
