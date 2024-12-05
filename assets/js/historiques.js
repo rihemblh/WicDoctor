@@ -16,13 +16,14 @@ if (authData) {
     login = decryptData(authData);
     console.log("login: ", login)
     const patientId = login.result[0].id; // Assuming patient ID is stored in result[0]
-    const userFirstName = login.result[0].first_name || ''; // Get the first name
-    const userLastName = login.result[0].last_name || ''; // Get the last name
+    const userFirstName = JSON.parse(login.result[0].first_name).fr || ''; // Get the first name
+    const userLastName = JSON.parse(login.result[0].last_name).fr || ''; // Get the last name
     console.log("${userFirstName} ${userLastName}", `${userFirstName} ${userLastName}`)
     // Update the <h4> element dynamically with user's first and last name
     const userNameElement = document.getElementById("user-name");
     if (userNameElement) {
-        userNameElement.textContent = `${JSON.parse(user.first_name).fr} ${JSON.parse(user.last_name).fr || ''}`; // Show first name and last name if available
+        userNameElement.textContent = `${userFirstName} ${userLastName}`;
+
     }
     const requestOptions = {
         method: 'GET', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
