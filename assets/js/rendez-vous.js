@@ -99,8 +99,16 @@ function updateWeek() {
                 });
 
                 button.classList.add('disponible');
-                button.textContent = `${startTime} - ${endTime}`;
+                //button.textContent = `${startTime} - ${endTime}`;
+                button.textContent = `${startTime}`;
                 button.onclick = () => {
+                    // Supprimer la classe 'selected-slot' des autres boutons
+                    document.querySelectorAll('.btn.disponible').forEach(btn => {
+                        btn.classList.remove('selected-slot');
+                    });
+
+                    // Ajouter la classe au bouton actuellement cliqué
+                    button.classList.add('selected-slot');
                     document.getElementById("motifSelection").style.display = ""
                     selectedSlotStart = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${startTime}`;
                     selectedSlotEnd = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${endTime}`;
@@ -182,15 +190,15 @@ document.getElementById('previousDays').addEventListener('click', () => navigate
 var apiurl
 var requestOptions
 function ConfirmerRedezvous() {
-      /// Prevent the default action (navigation)
-   
-    
+    /// Prevent the default action (navigation)
+
+
     // Optionally, you can add a class to style it as disabled
     var link = document.getElementById('confirmRDV');
     link.classList.add('disabled');
-    
+
     motifSelect = document.getElementById('motifSelect').value;
-    console.log('sessionStorage.getItem("status"): ',sessionStorage.getItem("status"))
+    console.log('sessionStorage.getItem("status"): ', sessionStorage.getItem("status"))
     if (sessionStorage.getItem("status") == "add") {
         console.log("add")
         object = Object.assign(object, { "motif_id": motifSelect })
@@ -272,9 +280,9 @@ function ConfirmerRedezvous() {
     }
 
 }
-  // Fonction pour fermer la pop-up
-  function fermerPopup() {
+// Fonction pour fermer la pop-up
+function fermerPopup() {
     document.getElementById('popup').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
-  }
+}
 initializeWeek();
