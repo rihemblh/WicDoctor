@@ -115,10 +115,10 @@
 			<div class="menu-mobile" id="menu-mobile">
 				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
 				<ul>
-					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-					<li><a href="https://wic-doctor.com/qui-sommes-nous.html" class="active">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/">Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html" >WIC Dr.</a></li>
 					<li><a href="#etab">Nos Solutions</a></li>
-					<li><a href="#">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html"class="active">Nos Tarifs</a></li>
 					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
 					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
 					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
@@ -133,10 +133,10 @@
 			<!-- Navigation (visible uniquement sur desktop) -->
 			<nav>
 				<ul>
-					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-					<li><a href="https://wic-doctor.com/qui-sommes-nous.html" class="active">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/">Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
 					<li><a href="#etab">Nos Solutions</a></li>
-					<li><a href="#">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html" class="active">Nos Tarifs</a></li>
 					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
 					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
 					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
@@ -199,7 +199,217 @@
 	</script>
 
 
+	<style>
+		/* Section pricing */
+		/* Section pricing */
+		.pricing {
+			display: flex;
+			justify-content: center;
+			align-items: stretch;
+			/* Tous les blocs ont la même hauteur */
+			gap: 20px;
+			padding: 50px 20px;
+			box-shadow: none !important;
+		}
 
+		.plan {
+			display: flex;
+			flex-direction: column;
+			/* Contenu verticalement aligné */
+			width: 300px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+
+		/* Pack en vedette */
+		.plan.featured {
+			border: 2px solid #24a98a;
+			background-color: #24a98a;
+			transform: scale(1.05);
+		}
+
+		/* Titre du pack */
+		.plan h2 {
+			color: #333;
+			margin-bottom: 5px;
+			font-weight: 900;
+			font-size: 24px;
+			font-family: 'Roboto';
+			/* Espace réduit sous le titre */
+		}
+
+		/* Style général pour le prix */
+		.plan .price {
+			font-size: 2.8em;
+			/* Taille principale du prix */
+			font-weight: bold;
+			/* Texte gras pour le prix */
+			color: #e3007b;
+			/* Couleur rose vif */
+			line-height: 1;
+			/* Réduction de l'espacement vertical */
+			text-align: center;
+			/* Centrer */
+			margin: 10px 0;
+			/* Espacement autour */
+			display: flex;
+			/* Pour aligner les éléments horizontalement */
+			justify-content: center;
+			/* Centrer horizontalement */
+			align-items: flex-start;
+			/* Aligner les décimales en haut */
+		}
+
+		/* Style pour le symbole $ */
+		.plan .price .currency {
+			font-size: 60px;
+			/* Taille réduite pour le symbole $ */
+			vertical-align: top;
+			/* Aligner en haut */
+			margin-right: 5px;
+			/* Espacement avec le montant */
+			font-family: 'Raleway';
+			font-weight: 400;
+			color: #e60564;
+			/* Gras */
+
+
+		}
+
+		/* Style pour le montant principal */
+		.plan .price .main-price {
+			font-size: 60px;
+			/* Taille principale */
+			font-weight: 900;
+			/* Gras */
+			font-family: 'Raleway';
+			color: #e60564;
+		}
+
+		/* Style pour les décimales */
+		.plan .price .decimals {
+			font-size: 1em;
+			/* Taille plus petite pour les décimales */
+			vertical-align: top;
+			/* Aligner en haut */
+			margin-left: 2px;
+			color: #e60564;
+
+			/* Espacement avec le montant principal */
+		}
+
+		/* Texte additionnel sous le prix */
+		.plan .price-text {
+			font-size: 0.9em;
+			/* Taille réduite */
+			color: #666;
+			/* Couleur grise */
+			text-align: center;
+			/* Centré */
+			text-transform: uppercase;
+			/* Majuscules */
+			letter-spacing: 0.05em;
+			/* Espacement entre lettres */
+			margin-top: 5px;
+			/* Espacement avec le prix */
+		}
+
+		/* Ligne horizontale */
+		.plan hr {
+			border: 0;
+			border-top: 1px solid #ccc;
+			/* Ligne grise claire */
+			margin: 15px 0;
+			/* Espacement autour de la ligne */
+		}
+
+		/* Liste des fonctionnalités */
+		.plan ul {
+			list-style: none;
+			padding: 0;
+			margin: 20px 0 auto;
+			/* Place la liste au centre du contenu */
+		}
+
+		.plan ul li {
+			padding: 20px 10px 10px 20px;
+			border-bottom: 1px solid #eee;
+			font-size: 0.9em;
+			text-align: left;
+		}
+
+		.plan ul li:last-child {
+			border-bottom: none;
+		}
+
+		/* Bouton */
+		.plan button {
+			background-color: #e3007b;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 1em;
+			cursor: pointer;
+			margin-top: auto;
+			/* Aligne le bouton en bas */
+			transition: background-color 0.3s ease;
+		}
+
+		.plan button:hover {
+			background-color: #bf005e;
+		}
+
+		/* Sous-titre du plan */
+		.plan .subtitle {
+			font-size: 0.9em;
+			color: #777;
+			margin-bottom: 10px;
+		}
+
+		/* Ligne horizontale */
+		.plan hr {
+			border: 0;
+			border-top: 1px solid #ccc;
+			margin: 10px 0;
+		}
+
+		.recomended {
+			color: white !important;
+		}
+
+		.section-tarif {
+			padding: 0 !important;
+		}
+
+		.demo-section-1 {
+			color: white;
+			font-weight: 900;
+			font-size: 45px;
+		}
+
+		.demo-section-2 {
+			color: white;
+			font-weight: 400;
+			font-size: 35px;
+		}
+
+		.demo-btn {
+			background-color: #e3007b;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 1em;
+			cursor: pointer;
+			margin-top: auto;
+			transition: background-color 0.3s ease;
+		}
+	</style>
 	<!--/Section-->
 	<!-- Bannière -->
 	<div class="header-bar">
@@ -209,299 +419,116 @@
 
 	</style>
 	<!-- Section Héro -->
-	<section class="hero-section">
+	<section class="hero-section section-tarif">
 
 		<div class="cover-image sptb nous">
-			<h1 class="">Nous sommes WIC Dr.</h1>
+			<h1 class="">Découvrez nos Offres et Packs Personnalisés
+			</h1>
 		</div>
-		<div class="container">
-			<div class="row">
-				<!-- Texte à gauche -->
-				<div class="col-md-6">
 
-					<h2>Accédez aux meilleurs soins, où que vous soyez, avec WIC Dr.</h2>
-				</div>
-				<!-- Image à droite -->
-				<div class="col-md-6 img-col image-nous">
-					<img src="./assets/images/media/photos/wic-dr.jpeg" alt="Doctor Image">
-				</div>
-			</div>
-		</div>
 	</section>
 
 	<!-- Section Description -->
-	<section class="description-section">
-		<div class="container">
 
-			<h3>Notre aventure commence ici</h3>
-			<p class="sous-description-section">
-				Une santé connectée : rapprocher médecins et patients efficacement.
-			</p>
-			<p>
-				Nous avons conçu un espace qui vous simplifie l'accès aux soins tout en
-				vous garantissant un suivi médical de qualité, où que vous soyez.
-				<br>
-				Notre mission est de rendre la santé accessible à tous en offrant une gamme
-				complète de services en ligne. Finis les déplacements de centaines de kilomètres et les files
-				d’attente interminables, avec WIC Doctor vous pouvez consulter un médecin où que vous soyez.
-				<br>
-				Nos professionnels de santé partenaires s’engagent à vous fournir un
-				accompagnement personnalisé et à jour, afin de vous aider à mieux gérer votre bien-être au
-				quotidien. Ensemble, nous œuvrons pour une médecine moderne, accessible et en phase avec vos
-				besoins.
-				<br>
-				Rejoignez-nous et découvrez une nouvelle façon de prendre soin de
-				vous.
-			</p>
-		</div>
-	</section>
 
 	<!-- Section Comment ça marche -->
 	<section class="how-it-works">
-		<h3>Comment ça marche ?</h3>
-		<p class="comment-ca-marche">Obtenez un rendez-vous médical ou une téléconsultation en 3 clics !</p>
+		<h3>Des solutions adaptées pour simplifier la gestion de votre activité médicale
+		</h3>
+		<p class="comment-ca-marche">Chez WIC Doctor, nous avons conçu des offres innovantes pour répondre aux besoins
+			des professionnels de santé. Gestion simplifiée, visibilité accrue et outils performants : tout est réuni
+			pour booster votre activité.</p>
 		<div class="container">
-			<div class="row ">
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="">
-						<div class="mb-lg-0 mb-4">
-							<a class="qui-link" href="https://wic-doctor.com/register.html">
-								<div class="service-card text-center">
-									<div class="icon-bg box-shadow icon-service text-primary about  CreationCompte">
+			<section class="pricing">
+				<div class="plan">
+					<h2>Sérénité Santé</h2>
+					<p class="subtitle">Pour les débutants</p>
+					<hr>
+					<p class="price">
+						<span class="currency">$</span>
+						<span class="main-price">0</span>
+						<span class="decimals">00</span>
+					</p>
+					<p class="price-text">/par mois</p>
+					<ul>
+						<li>Agenda électronique</li>
+						<li>La prescription</li>
+						<li>Campagne SMS (1000 SMS)</li>
+						<li>Campagne SEO</li>
+						<li>Heures de communication gratuites</li>
+						<li>SMS gratuits émission/réception</li>
+						<li>SDA mobile français et tunisien</li>
+						<li>Remise sur le renouvellement de l'agenda</li>
+						<li>Hébergement et un nom de domaine et une adresse webmail sécurisée</li>
 
-									</div>
-									<div class="servic-data mt-3">
-										<h4 class="font-weight-semibold mb-2"><a class="qui-link"
-												href="https://wic-doctor.com/register.html">Créer un compte</a>
-										</h4>
-										<p class="text-muted mb-0">Créer votre compte pour pouvoir gérer vos rendez-vous
-											et
-											votre dossier médical en ligne.
-										</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
+					</ul>
+					<button>En savoir plus</button>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="">
-						<div class="mb-sm-0 mb-4">
-							<a class="qui-link" href="https://wic-doctor.com/">
-								<div class="service-card text-center">
-									<div class="icon-bg box-shadow icon-service text-secondary about  Recherche">
-									</div>
-									<div class="servic-data mt-3">
-										<h4 class="font-weight-semibold mb-2"><a class="qui-link"
-												href="https://wic-doctor.com/">Rechercher</a></h4>
-										<p class="text-muted mb-0">Recherchez le spécialiste le plus proche de chez
-											vous.
-										</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
+				<div class="plan featured">
+					<h2 class="recomended">Horizon Santé</h2>
+					<p class="subtitle recomended">Pour une seule cabinet</p>
+					<hr>
+					<p class="price">
+						<span class="currency recomended">$</span>
+						<span class="main-price recomended">9</span>
+						<span class="decimals recomended">99</span>
+					</p>
+					<p class="price-text recomended">/par mois</p>
+					<ul>
+						<li class="recomended">Pack Sérénité Santé</li>
+						<li class="recomended">Téléconsultation</li>
+						<li class="recomended">Télésecrétariat</li>
+						<li class="recomended">50GB of storage * unlimited Bandwitch</li>
+						<li class="recomended">Unlimited Data</li>
+					</ul>
+					<button>En savoir plus</button>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="">
-						<div class="mb-sm-0 mb-4">
-							<a class="qui-link" href="https://wic-doctor.com/">
-								<div class="service-card text-center">
-									<div class="icon-bg box-shadow icon-service text-danger about  PriseRdv">
-									</div>
-									<div class="servic-data mt-3">
-										<h4 class="font-weight-semibold mb-2"><a class="qui-link"
-												href="https://wic-doctor.com/">Rendez-vous en ligne</a>
-										</h4>
-										<p class="text-muted mb-0">Consultez les disponibilités et réservez un
-											rendez-vous
-											en ligne.
-										</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
+				<div class="plan">
+					<h2>Praticien Connecté</h2>
+					<p class="subtitle">Pour les branches</p>
+					<hr>
+					<p class="price">
+						<span class="currency">$</span>
+						<span class="main-price">19</span>
+						<span class="decimals">99</span>
+					</p>
+					<p class="price-text">/par mois</p>
+
+					<ul>
+						<li>Pack Sérénité Santé</li>
+						<li>Agenda et IA</li>
+						<li>Web RTC</li>
+						<li>Aid à la prescription</li>
+						<li>Service de Création de Site Web</li>
+
+					</ul>
+					<button>En savoir plus</button>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="">
-						<div class="">
-							<a class="qui-link" href="https://wic-doctor.com/">
-								<div class="service-card text-center">
-									<div class="icon-bg box-shadow icon-service text-success about  Suvi">
-									</div>
-									<div class="servic-data mt-3">
-										<h4 class="font-weight-semibold mb-2"><a class="qui-link" href="https://wic-doctor.com/">Suivi
-												médical</a>
-										</h4>
-										<p class="text-muted mb-0">Effectuez le suivi médical en ligne avec votre
-											médecin et
-											les différents laboratoires.
-										</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			</section>
 		</div>
 	</section>
-
-
-
-
-	<!--Section-->
-	<section>
-		<div class="cover-image sptb backgroundcolor">
-			<div class="content-text mb-0">
-				<div class="container">
-					<div class="text-center text-white ">
-						<h2 class="mb-2 display-5" style="color: #18167A;">Prêt à prendre soin de votre santé en toute
-							simplicité ?
-						</h2>
-						<p style="color: #18167A;">Profitez de nos services en ligne dès maintenant.
-						</p>
-						<div class="mt-5">
-							<a href="https://wic-doctor.com/" class="btn btn-secondary btn-lg">Prendre rendez-vous
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--/Section-->
-
-	<!--Section-->
-	<section class="sptb bg-pq">
-		<div class="container">
-			<div class="section-title center-block text-center">
-				<h3 class="pq">Pourquoi choisir WIC Doctor ?
-				</h3>
-			</div>
-			<div class="row ">
-				<div class="col-md-6 col-lg-4 features">
-					<div class="card mb-0">
-						<div class="card-body text-center">
-							<div class="feature">
-								<div class="fa-stack fa-lg  fea-icon bg-info mb-3 appel">
-
-								</div>
-								<h3>Accessibilité 24/7 </h3>
-								<p>Notre plateforme est disponible 24/7, vous permettant de consulter un médecin ou de
-									prendre un rendez-vous quand vous voulez.
-
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 features">
-					<div class="card">
-						<div class="card-body text-center">
-							<div class="feature">
-								<div class="fa-stack fa-lg  fea-icon  mb-3 Teleconsultaton">
-								</div>
-								<h3>Téléconsultation rapide et sécurisée</h3>
-								<p>Profitez de consultations en ligne avec des professionnels de santé qualifiés, sans
-									avoir à vous déplacer, et en toute sécurité.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 features">
-					<div class="card">
-						<div class="card-body text-center">
-							<div class="feature">
-								<div class="fa-stack fa-lg fea-icon  mb-3 PRDV">
-								</div>
-								<h3>Prise de rendez-vous simplifiée</h3>
-								<p>Trouvez le bon spécialiste et réservez votre créneau en quelques clics grâce à notre
-									système intuitif de prise de rendez-vous.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 features">
-					<div class="card">
-						<div class="card-body text-center">
-							<div class="feature">
-								<div class="fa-stack fa-lg  fea-icon mb-3 Journal">
-								</div>
-								<h3>Journal médical</h3>
-								<p>Accédez à des informations de qualité, des conseils santé et des articles
-									scientifiques fiables rédigés par nos spécialistes.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 features">
-					<div class="card mb-lg-0">
-						<div class="card-body text-center">
-							<div class="feature">
-								<div class="fa-stack fa-lg  fea-icon mb-3 personalise">
-								</div>
-								<h3>Suivi personnalisé</h3>
-								<p>Bénéficiez d’un accompagnement rapproché grâce à un accès direct à votre dossier
-									médical et aux recommandations de nos médecins.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 features">
-					<div class="card mb-lg-0 mb-md-0">
-						<div class="card-body text-center">
-							<div class="feature">
-								<div class="fa-stack fa-lg  fea-icon mb-3 confidentialite">
-								</div>
-								<h3>Confidentialité garantie</h3>
-								<p>Nous assurons la protection de vos données personnelles et de votre dossier médical
-									avec des standards de sécurité élevés.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-	<!--/Section-->
-
-
-
 
 	<!-- Newsletter-->
-	<section class="newsletter-section">
+	<section class="newsletter-section Tarif-demo">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-12">
-					<h2 class="newsletter-title">
-						Inscrivez-vous à notre Journal Médical
+					<h2 class="newsletter-title demo-section-2">
+						Pas sûr de quelle offre choisir ?
 					</h2>
-					<p class="newsletter-subtitle">
-						Recevez les derniers conseils médicaux proposés par nos spécialistes.
+					<p class="newsletter-subtitle demo-section-1">
+						Contactez-nous pour un conseil personnalisé..
 					</p>
-				</div>
-			</div>
-			<div class="row justify-content-center mt-4">
-				<div class="col-md-8 col-lg-6">
-					<div class="input-group">
-						<input type="email" class="form-control email-input"
-							placeholder="Tapez votre adresse mail..." />
-						<button class="btn btn-success submit-btn envoyer-btn">Envoyer</button>
-					</div>
+					<button class="demo-btn">Demander Demo</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
+
+
 	<style>
-		
+
 	</style>
 	<!--/Newsletter-->
 
