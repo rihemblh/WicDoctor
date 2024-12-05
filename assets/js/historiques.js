@@ -22,7 +22,7 @@ if (authData) {
     // Update the <h4> element dynamically with user's first and last name
     const userNameElement = document.getElementById("user-name");
     if (userNameElement) {
-        userNameElement.textContent = `${userFirstName} ${userLastName}`;
+        userNameElement.textContent = `${JSON.parse(user.first_name).fr} ${JSON.parse(user.last_name).fr || ''}`; // Show first name and last name if available
     }
     const requestOptions = {
         method: 'GET', // ou 'GET', 'PUT', 'DELETE' selon votre besoin

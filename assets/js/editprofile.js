@@ -61,11 +61,11 @@ if (authData) {
     console.log("user: ", user)
     // Update the user name in the <h4> element
     const userNameElement = document.getElementById("user-name");
-    userNameElement.textContent = `${user.first_name} ${user.last_name || ''}`; // Show first name and last name if available
+    userNameElement.textContent = `${JSON.parse(user.first_name).fr} ${JSON.parse(user.last_name).fr || ''}`; // Show first name and last name if available
 
     // Populate form fields with user data
-    document.getElementById("first_name").value = user.first_name || '';
-    document.getElementById("last_name").value = user.last_name || '';
+    document.getElementById("first_name").value = JSON.parse(user.first_name).fr || '';
+    document.getElementById("last_name").value = JSON.parse(user.last_name).fr  || '';
     document.getElementById("email").value = user.email || ''; // Use email for email field
     document.getElementById("phone_number").value = user.phone_number || '';
     document.getElementById("mobile_number").value = user.mobile_number || '';
