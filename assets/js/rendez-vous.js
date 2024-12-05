@@ -182,11 +182,13 @@ document.getElementById('previousDays').addEventListener('click', () => navigate
 var apiurl
 var requestOptions
 function ConfirmerRedezvous() {
-      // Get the button element
-      var button = document.getElementById('confirmRDV');
+      /// Prevent the default action (navigation)
+   
     
-      // Disable the button
-      button.disabled = true;
+    // Optionally, you can add a class to style it as disabled
+    var link = document.getElementById('confirmRDV');
+    link.classList.add('disabled');
+    
     motifSelect = document.getElementById('motifSelect').value;
     console.log('sessionStorage.getItem("status"): ',sessionStorage.getItem("status"))
     if (sessionStorage.getItem("status") == "add") {

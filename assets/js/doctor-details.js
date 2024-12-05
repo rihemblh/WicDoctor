@@ -202,7 +202,7 @@ document.getElementById("DoctorsDetails").innerHTML = document.getElementById("D
 						</div>
 						<div class="card-footer">
 							<div class="btn-list">
-								<a href="#" id="confirmRDV" class="btn btn-success icons" onclick="ConfirmerRedezvous()"><i
+								<a  id="confirmRDV" class="btn btn-success icons" onclick="ConfirmerRedezvous()"><i
 										class="icon icon-note me-1 book-visit" ></i> Confirmer</a>
 							
 							</div>
