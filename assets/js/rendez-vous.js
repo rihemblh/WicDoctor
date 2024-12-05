@@ -88,6 +88,15 @@ function updateWeek() {
             button.classList.add('btn');
 
             if (slot) {
+                const now = new Date(); // Date et heure actuelles
+
+                if (new Date(slot.start_at) < now) {
+                 // If no appointment, display 'Aucun créneau'
+                 button.classList.add('indsponible');
+                 button.textContent = '--';
+                 button.disabled = true;
+                }
+                else{
                 // If there's an available slot, show the time range
                 const startTime = new Date(slot.start_at).toLocaleTimeString('fr-FR', {
                     hour: '2-digit',
@@ -144,7 +153,7 @@ function updateWeek() {
                         { "doctor_id": Detailsdoctors.doctor_id }, { "clinic": "" }, { "doctor": JSON.parse(Detailsdoctors.name).fr }, { "address": "" })
                     console.log("object rendez-vous: ", object)
 
-                };
+                };}
             } else {
                 // If no appointment, display 'Aucun créneau'
                 button.classList.add('indsponible');
