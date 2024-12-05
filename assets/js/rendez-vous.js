@@ -182,6 +182,11 @@ document.getElementById('previousDays').addEventListener('click', () => navigate
 var apiurl
 var requestOptions
 function ConfirmerRedezvous() {
+      // Get the button element
+      var button = document.getElementById('confirmRDV');
+    
+      // Disable the button
+      button.disabled = true;
     motifSelect = document.getElementById('motifSelect').value;
     console.log('sessionStorage.getItem("status"): ',sessionStorage.getItem("status"))
     if (sessionStorage.getItem("status") == "add") {

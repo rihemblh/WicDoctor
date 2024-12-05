@@ -146,6 +146,11 @@ contactField.addEventListener('blur', () => {
 });
 // Ensure you include this script at the bottom of your HTML file
 document.getElementById('loginForm').addEventListener('submit', async function (event) {
+       // Get the button element
+       var button = document.getElementById('login');
+    
+       // Disable the button
+       button.disabled = true;
     event.preventDefault(); // Prevent the default form submission
 
     // Gather form data
