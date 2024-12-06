@@ -31,7 +31,7 @@ document.getElementById('Register').addEventListener('submit', async function (e
         console.log("reponse:", data);
         if (response.ok) {
             alert(data.message || 'Inscription réussie! Vérifiez votre email pour confirmer.');
-            //window.location.href = 'index.html'; // Redirect to index.html
+            window.location.href = 'login.html'; // Redirect to index.html
         }
     } catch (error) {
         console.error('Erreur lors de l\'inscription:', error);
@@ -205,6 +205,10 @@ function validatePhoneNumber() {
 // Ajouter un écouteur à la soumission du formulaire
 
 document.getElementById('Register').addEventListener('submit', function (event) {
+    var button = document.getElementById('inscription');
+
+    // Disable the button
+    button.disabled = true;
     // Récupérer les champs de saisie
     const name = document.querySelector('input[name="name"]');
     const lastname = document.querySelector('input[name="lastname"]');
@@ -219,8 +223,8 @@ document.getElementById('Register').addEventListener('submit', function (event) 
             ;
         return;
     }
-console.log("!validatePhoneNumber():",!validatePhoneNumber())
-   
+    console.log("!validatePhoneNumber():", !validatePhoneNumber())
+
     // Validation du nom
     if (lastname.value.trim() === "" || lastname.value.length < 2 || lastname.value.length > 50) {
         event.preventDefault();  // Empêche la soumission du formulaire
