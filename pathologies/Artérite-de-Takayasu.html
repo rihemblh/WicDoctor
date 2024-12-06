@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,33 +226,33 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>L'artérite de Takayasu est une vasculite inflammatoire des grandes artères. Cette maladie rare est également connue sous le nom de "maladie de l'aorte" et est caractérisée par une inflammation de l'aorte et de ses branches principales, entraînant un rétrécissement ou une occlusion des vaisseaux. Voici les principales caractéristiques :</p><p><strong>Infection des grandes artères</strong> :
-    La maladie cible généralement l'aorte et ses branches principales, ce qui peut perturber le flux sanguin vers les organes vitaux, notamment le cerveau, les reins et le cœur.  </p><p><strong>Progression lente de l'inflammation</strong> :
-    L'inflammation des artères se développe lentement au fil du temps, ce qui peut rendre le diagnostic difficile et entraîner des lésions irréversibles des artères si elle n'est pas traitée rapidement.  </p><p><strong>Symptômes variés</strong> :
-    Les symptômes peuvent varier d'un patient à l'autre et peuvent inclure de la fièvre, des douleurs musculaires, une fatigue intense et des symptômes liés à une mauvaise circulation sanguine.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>Les causes exactes de l'artérite de Takayasu sont encore inconnues, mais plusieurs facteurs ont été identifiés comme augmentant le risque de développer la maladie.  </p><p><strong>Réponse immunitaire anormale</strong> :
-    L'artérite de Takayasu est une maladie autoimmune où le système immunitaire attaque les parois des vaisseaux sanguins, entraînant une inflammation. </p><p><strong>Facteurs génétiques</strong> :
-    Bien que la cause exacte soit inconnue, des facteurs génétiques peuvent jouer un rôle, avec une prédisposition familiale observée chez certains patients.  </p><p><strong>Infections virales ou bactériennes</strong> :
-    Il est possible que certaines infections virales ou bactériennes déclenchent la réaction inflammatoire chez les individus prédisposés. </p><p><strong>Âge et sexe</strong> :
-    L'artérite de Takayasu affecte principalement les jeunes femmes, en particulier celles âgées de moins de 40 ans. Il est rare qu’elle survienne chez les hommes ou les personnes plus âgées. </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>Les symptômes de l'artérite de Takayasu sont souvent généraux et peuvent être confondus avec d'autres maladies, ce qui rend le diagnostic difficile. Ils peuvent inclure :</p><p><strong>Symptômes systémiques</strong> :
-    <strong>Fièvre, fatigue et perte de poids</strong> : Ces symptômes sont souvent présents au début de la maladie, accompagnés d'un sentiment général de malaise.  </p><p><strong>Douleurs musculaires et articulaires</strong> :
-    Les douleurs dans les muscles et les articulations sont fréquentes, en particulier dans les bras et les jambes.  </p><p><strong>Symptômes circulatoires</strong> :
-    <strong>Douleurs thoraciques, faiblesse, et sensation de froid dans les bras ou les jambes</strong> peuvent survenir si les artères principales sont rétrécies ou obstruées, ce qui diminue la circulation sanguine.  </p><p><strong>Hypertension</strong> :
-    La sténose des artères rénales ou de l'aorte peut provoquer une pression artérielle élevée, un signe précoce chez certains patients. </p><p><strong>Altération de la vision</strong> :
-    En raison d'une mauvaise circulation sanguine dans les artères rétiniennes, des troubles de la vision peuvent se développer.  </p><p><strong>Complications graves</strong> :
-    Des AVC, une insuffisance cardiaque ou rénale peuvent survenir en raison de la réduction du flux sanguin vers ces organes vitaux.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>Le diagnostic de l'artérite de Takayasu repose sur une combinaison d'examens cliniques, de tests de laboratoire et d'imagerie.  </p><p><strong>Examen clinique</strong> :
-    Un examen médical approfondi est essentiel pour identifier les signes d'une réduction du flux sanguin, tels que l'absence de pulsations dans les artères principales.  </p><p><strong>Tests sanguins</strong> :
-    Les tests sanguins montrent souvent une élévation des marqueurs inflammatoires tels que la vitesse de sédimentation des érythrocytes (ESR) et la protéine Créactive (CRP).  </p><p><strong>Imagerie médicale</strong> :
-    Des examens comme l'<strong>échographie Doppler</strong>, l'<strong>angiographie par tomodensitométrie (TDM)</strong> ou l'<strong>IRM</strong> sont utilisés pour évaluer la taille et la perméabilité des artères, en identifiant d'éventuelles sténoses ou obstructions.  </p><p><strong>Biopsie</strong> :
-    Dans certains cas, une biopsie des artères peut être effectuée pour confirmer le diagnostic en observant les signes d'inflammation.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>Le traitement de l'artérite de Takayasu est principalement axé sur la réduction de l'inflammation et la prévention des complications graves.  </p><p><strong>Corticostéroïdes</strong> :
-    Les corticostéroïdes, tels que la prednisone, sont utilisés pour réduire l'inflammation. Ce traitement est souvent débuté à forte dose et peut être progressivement réduit en fonction de la réponse du patient.  </p><p><strong>Immunosuppresseurs</strong> :
-    Si la réponse aux corticostéroïdes est insuffisante, des médicaments immunosuppresseurs comme le méthotrexate ou le mycophénolate mofétil peuvent être ajoutés pour contrôler l'inflammation.  </p><p><strong>Médicaments contre l'hypertension</strong> :
-    En cas d'hypertension artérielle, des médicaments antihypertenseurs peuvent être prescrits pour contrôler la pression sanguine.  </p><p><strong>Chirurgie</strong> :
-    Dans les cas graves où une sténose ou une occlusion importante des artères survient, une intervention chirurgicale peut être nécessaire pour rétablir le flux sanguin, comme une endartériectomie ou la mise en place d'un stent.  </p><p><strong>Suivi médical régulier</strong> :
-    Un suivi régulier est essentiel pour surveiller l'évolution de la maladie, ajuster les traitements et prévenir les complications.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les soins pour l'artérite de Takayasu sont dispensés par des spécialistes en médecine vasculaire, en cardiologie et en soins primaires.  </p><p><strong>Centres spécialisés en médecine vasculaire</strong> :
-    Les hôpitaux ou cliniques spécialisés dans les maladies vasculaires sont équipés pour gérer le diagnostic et le traitement de l'artérite de Takayasu.  </p><p><strong>Services de cardiologie</strong> :
-    Les <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a> jouent un rôle clé dans le suivi des complications cardiaques associées à la maladie, notamment en cas de sténose aortique ou d'hypertension sévère.  </p><p><strong>Médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a> et <a href="https://wic-doctor.com/medecin/pédiatre.html">pédiatres</a></strong> :
-    Le médecin généraliste peut être le premier point de contact pour diagnostiquer cette maladie et orienter le patient vers un spécialiste approprié.  </p><p><strong>Chirurgiens vasculaires</strong> :
-    En cas de besoin d'intervention chirurgicale, les chirurgiens vasculaires sont responsables de la gestion des procédures invasives pour restaurer le flux sanguin.  </p><p><strong>Consultations en soins d'urgence</strong> :
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>L'artérite de Takayasu est une vasculite inflammatoire des grandes artères. Cette maladie rare est également connue sous le nom de "maladie de l'aorte" et est caractérisée par une inflammation de l'aorte et de ses branches principales, entraînant un rétrécissement ou une occlusion des vaisseaux. Voici les principales caractéristiques :</p>Infection des grandes artères</strong> :
+    La maladie cible généralement l'aorte et ses branches principales, ce qui peut perturber le flux sanguin vers les organes vitaux, notamment le cerveau, les reins et le cœur.  </p>Progression lente de l'inflammation</strong> :
+    L'inflammation des artères se développe lentement au fil du temps, ce qui peut rendre le diagnostic difficile et entraîner des lésions irréversibles des artères si elle n'est pas traitée rapidement.  </p>Symptômes variés</strong> :
+    Les symptômes peuvent varier d'un patient à l'autre et peuvent inclure de la fièvre, des douleurs musculaires, une fatigue intense et des symptômes liés à une mauvaise circulation sanguine.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>Les causes exactes de l'artérite de Takayasu sont encore inconnues, mais plusieurs facteurs ont été identifiés comme augmentant le risque de développer la maladie.  </p>Réponse immunitaire anormale</strong> :
+    L'artérite de Takayasu est une maladie autoimmune où le système immunitaire attaque les parois des vaisseaux sanguins, entraînant une inflammation. </p>Facteurs génétiques</strong> :
+    Bien que la cause exacte soit inconnue, des facteurs génétiques peuvent jouer un rôle, avec une prédisposition familiale observée chez certains patients.  </p>Infections virales ou bactériennes</strong> :
+    Il est possible que certaines infections virales ou bactériennes déclenchent la réaction inflammatoire chez les individus prédisposés. </p>Âge et sexe</strong> :
+    L'artérite de Takayasu affecte principalement les jeunes femmes, en particulier celles âgées de moins de 40 ans. Il est rare qu’elle survienne chez les hommes ou les personnes plus âgées. </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>Les symptômes de l'artérite de Takayasu sont souvent généraux et peuvent être confondus avec d'autres maladies, ce qui rend le diagnostic difficile. Ils peuvent inclure :</p>Symptômes systémiques</strong> :
+    <strong>Fièvre, fatigue et perte de poids</strong> : Ces symptômes sont souvent présents au début de la maladie, accompagnés d'un sentiment général de malaise.  </p>Douleurs musculaires et articulaires</strong> :
+    Les douleurs dans les muscles et les articulations sont fréquentes, en particulier dans les bras et les jambes.  </p>Symptômes circulatoires</strong> :
+    <strong>Douleurs thoraciques, faiblesse, et sensation de froid dans les bras ou les jambes</strong> peuvent survenir si les artères principales sont rétrécies ou obstruées, ce qui diminue la circulation sanguine.  </p>Hypertension</strong> :
+    La sténose des artères rénales ou de l'aorte peut provoquer une pression artérielle élevée, un signe précoce chez certains patients. </p>Altération de la vision</strong> :
+    En raison d'une mauvaise circulation sanguine dans les artères rétiniennes, des troubles de la vision peuvent se développer.  </p>Complications graves</strong> :
+    Des AVC, une insuffisance cardiaque ou rénale peuvent survenir en raison de la réduction du flux sanguin vers ces organes vitaux.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>Le diagnostic de l'artérite de Takayasu repose sur une combinaison d'examens cliniques, de tests de laboratoire et d'imagerie.  </p>Examen clinique</strong> :
+    Un examen médical approfondi est essentiel pour identifier les signes d'une réduction du flux sanguin, tels que l'absence de pulsations dans les artères principales.  </p>Tests sanguins</strong> :
+    Les tests sanguins montrent souvent une élévation des marqueurs inflammatoires tels que la vitesse de sédimentation des érythrocytes (ESR) et la protéine Créactive (CRP).  </p>Imagerie médicale</strong> :
+    Des examens comme l'<strong>échographie Doppler</strong>, l'<strong>angiographie par tomodensitométrie (TDM)</strong> ou l'<strong>IRM</strong> sont utilisés pour évaluer la taille et la perméabilité des artères, en identifiant d'éventuelles sténoses ou obstructions.  </p>Biopsie</strong> :
+    Dans certains cas, une biopsie des artères peut être effectuée pour confirmer le diagnostic en observant les signes d'inflammation.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements de l'Artérite de Takayasu</h2></div><div class="info-text"><p><p>Le traitement de l'artérite de Takayasu est principalement axé sur la réduction de l'inflammation et la prévention des complications graves.  </p>Corticostéroïdes</strong> :
+    Les corticostéroïdes, tels que la prednisone, sont utilisés pour réduire l'inflammation. Ce traitement est souvent débuté à forte dose et peut être progressivement réduit en fonction de la réponse du patient.  </p>Immunosuppresseurs</strong> :
+    Si la réponse aux corticostéroïdes est insuffisante, des médicaments immunosuppresseurs comme le méthotrexate ou le mycophénolate mofétil peuvent être ajoutés pour contrôler l'inflammation.  </p>Médicaments contre l'hypertension</strong> :
+    En cas d'hypertension artérielle, des médicaments antihypertenseurs peuvent être prescrits pour contrôler la pression sanguine.  </p>Chirurgie</strong> :
+    Dans les cas graves où une sténose ou une occlusion importante des artères survient, une intervention chirurgicale peut être nécessaire pour rétablir le flux sanguin, comme une endartériectomie ou la mise en place d'un stent.  </p>Suivi médical régulier</strong> :
+    Un suivi régulier est essentiel pour surveiller l'évolution de la maladie, ajuster les traitements et prévenir les complications.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les soins pour l'artérite de Takayasu sont dispensés par des spécialistes en médecine vasculaire, en cardiologie et en soins primaires.  </p>Centres spécialisés en médecine vasculaire</strong> :
+    Les hôpitaux ou cliniques spécialisés dans les maladies vasculaires sont équipés pour gérer le diagnostic et le traitement de l'artérite de Takayasu.  </p>Services de cardiologie</strong> :
+    Les <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a> jouent un rôle clé dans le suivi des complications cardiaques associées à la maladie, notamment en cas de sténose aortique ou d'hypertension sévère.  </p>Médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a> et <a href="https://wic-doctor.com/medecin/pédiatre.html">pédiatres</a></strong> :
+    Le médecin généraliste peut être le premier point de contact pour diagnostiquer cette maladie et orienter le patient vers un spécialiste approprié.  </p>Chirurgiens vasculaires</strong> :
+    En cas de besoin d'intervention chirurgicale, les chirurgiens vasculaires sont responsables de la gestion des procédures invasives pour restaurer le flux sanguin.  </p>Consultations en soins d'urgence</strong> :
     Les services d'urgences sont impliqués dans la prise en charge des complications aigües, notamment les AVC ou l'insuffisance cardiaque.  </p><hr/></p></div></div></div><div class="container section-H" id="H"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>Ce format détaillé est conçu pour fournir un contenu exhaustif, optimisé pour le SEO et l'annotation pour l'IA, pour la gestion de l'artérite de Takayasu sur le portail WIC-DOCTOR.</p></p></div></div></div>  
         </div>
     </section>

@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,22 +226,22 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Ces calculs se caractérisent par une accumulation de cristaux dans le système urinaire, pouvant obstruer les voies urinaires et endommager les reins.  </p><p><strong>Formation de cristaux</strong> : Ces cristaux se composent souvent d’oxalate de calcium, d’urate, de cystine, ou de struvite.<br/>
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Ces calculs se caractérisent par une accumulation de cristaux dans le système urinaire, pouvant obstruer les voies urinaires et endommager les reins.  </p>Formation de cristaux</strong> : Ces cristaux se composent souvent d’oxalate de calcium, d’urate, de cystine, ou de struvite.<br/>
 <strong>Taille et localisation</strong> : La taille varie de quelques millimètres à plusieurs centimètres, et ils peuvent migrer, ce qui influe sur les symptômes ressentis.<br/>
-<strong>Risques d’obstruction</strong> : La présence de calculs dans l'uretère ou la vessie peut causer des douleurs aiguës et des complications, notamment des infections ou des lésions rénales.  </p><p><em>Annotation et Étiquetage pour l’IA</em> : inclure des balises de classification pour les types de calculs et localisations (rénal, urétéral, vésical), la taille des calculs et les complications possibles.  </p><p><em>SEO</em> : Optimiser les motsclés comme "calcul rénal", "symptômes des calculs urinaires", et "traitement des calculs vésicaux".  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Les calculs sont souvent dus à une concentration excessive de minéraux dans les urines. Les causes incluent :</p><p><strong>Hydratation insuffisante</strong> : Un faible apport hydrique augmente le risque de formation de cristaux.<br/>
+<strong>Risques d’obstruction</strong> : La présence de calculs dans l'uretère ou la vessie peut causer des douleurs aiguës et des complications, notamment des infections ou des lésions rénales.  </p><p><em>Annotation et Étiquetage pour l’IA</em> : inclure des balises de classification pour les types de calculs et localisations (rénal, urétéral, vésical), la taille des calculs et les complications possibles.  </p><p><em>SEO</em> : Optimiser les motsclés comme "calcul rénal", "symptômes des calculs urinaires", et "traitement des calculs vésicaux".  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Les calculs sont souvent dus à une concentration excessive de minéraux dans les urines. Les causes incluent :</p>Hydratation insuffisante</strong> : Un faible apport hydrique augmente le risque de formation de cristaux.<br/>
 <strong>Alimentation</strong> : Une alimentation riche en sodium, en protéines animales, ou en oxalate peut aggraver le risque.<br/>
 <strong>Antécédents familiaux</strong> : Une histoire familiale de calculs urinaires est un facteur de risque.<br/>
-<strong>Maladies métaboliques</strong> : Des conditions comme l’hyperparathyroïdie ou des désordres rénaux prédisposent à la formation de calculs.  </p><p><em>Annotation et Étiquetage pour l’IA</em> : Marquer les causes en fonction des niveaux de risque (élevé, modéré, faible), en ajoutant des détails sur les facteurs alimentaires et génétiques.  </p><p><em>SEO</em> : Motsclés tels que "causes des calculs rénaux", "facteurs de risque des calculs urinaires", et "calculs rénaux et alimentation".  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Les signes de la présence de calculs peuvent inclure :</p><p><strong>Douleurs aiguës et intermittentes</strong> : Souvent ressenties dans le bas du dos, l'abdomen ou les flancs, ces douleurs peuvent irradier vers l'aine.<br/>
+<strong>Maladies métaboliques</strong> : Des conditions comme l’hyperparathyroïdie ou des désordres rénaux prédisposent à la formation de calculs.  </p><p><em>Annotation et Étiquetage pour l’IA</em> : Marquer les causes en fonction des niveaux de risque (élevé, modéré, faible), en ajoutant des détails sur les facteurs alimentaires et génétiques.  </p><p><em>SEO</em> : Motsclés tels que "causes des calculs rénaux", "facteurs de risque des calculs urinaires", et "calculs rénaux et alimentation".  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Les signes de la présence de calculs peuvent inclure :</p>Douleurs aiguës et intermittentes</strong> : Souvent ressenties dans le bas du dos, l'abdomen ou les flancs, ces douleurs peuvent irradier vers l'aine.<br/>
 <strong>Troubles urinaires</strong> : Difficultés à uriner, urines troubles ou présence de sang dans les urines.<br/>
 <strong>Nausées et vomissements</strong> : Souvent liés aux douleurs intenses causées par les calculs.<br/>
-<strong>Fièvre et frissons</strong> : Indicateurs possibles d'infection due à une obstruction.  </p><p><em>Annotation et Étiquetage pour l’IA</em> : Codage des symptômes par gravité et localisation des douleurs, afin d'améliorer la précision des diagnostics IA.  </p><p><em>SEO</em> : Utiliser des expressions comme "symptômes de calculs rénaux" et "douleurs urinaires causées par les calculs".  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Le diagnostic implique plusieurs examens :</p><p><strong>Analyse d'urine</strong> : Permet de détecter les niveaux de minéraux susceptibles de former des calculs.<br/>
+<strong>Fièvre et frissons</strong> : Indicateurs possibles d'infection due à une obstruction.  </p><p><em>Annotation et Étiquetage pour l’IA</em> : Codage des symptômes par gravité et localisation des douleurs, afin d'améliorer la précision des diagnostics IA.  </p><p><em>SEO</em> : Utiliser des expressions comme "symptômes de calculs rénaux" et "douleurs urinaires causées par les calculs".  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Le diagnostic implique plusieurs examens :</p>Analyse d'urine</strong> : Permet de détecter les niveaux de minéraux susceptibles de former des calculs.<br/>
 <strong>Imagerie médicale</strong> : L’échographie, la radiographie et le scanner (CT) sont utilisés pour localiser et mesurer les calculs.<br/>
 <strong>Analyse des calculs</strong> : Lorsque possible, les calculs expulsés sont analysés pour déterminer leur composition.<br/>
-<strong>Bilan métabolique</strong> : Une évaluation de la fonction rénale peut être nécessaire pour identifier des troubles sousjacents.  </p><p><em>Annotation et Étiquetage pour l’IA</em> : Marquer les types d'examens (urine, imagerie, métabolique) et les méthodes de visualisation pour une IA de diagnostic.  </p><p><em>SEO</em> : Améliorer la visibilité avec "diagnostic des calculs urinaires", "scanner pour calculs rénaux" et "analyse des calculs urinaires".  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Les options de traitement varient selon la taille, la composition et l’emplacement des calculs.  </p><p><strong>Hydratation et gestion de la douleur</strong> :
+<strong>Bilan métabolique</strong> : Une évaluation de la fonction rénale peut être nécessaire pour identifier des troubles sousjacents.  </p><p><em>Annotation et Étiquetage pour l’IA</em> : Marquer les types d'examens (urine, imagerie, métabolique) et les méthodes de visualisation pour une IA de diagnostic.  </p><p><em>SEO</em> : Améliorer la visibilité avec "diagnostic des calculs urinaires", "scanner pour calculs rénaux" et "analyse des calculs urinaires".  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements des Calculs Rénaux, Urétéraux et Vésicaux</h2></div><div class="info-text"><p><p>Les options de traitement varient selon la taille, la composition et l’emplacement des calculs.  </p>Hydratation et gestion de la douleur</strong> :
     <strong>Hydratation intensive</strong> : Encourage l’expulsion des petits calculs.<br/>
-<strong>Analgésiques</strong> : Utilisés pour contrôler la douleur lors de l’expulsion.  </p><p><strong>Traitements médicaux</strong> :
+<strong>Analgésiques</strong> : Utilisés pour contrôler la douleur lors de l’expulsion.  </p>Traitements médicaux</strong> :
     <strong>Lithotritie extracorporelle</strong> : Les ondes de choc sont utilisées pour fragmenter les calculs.<br/>
-<strong>Médicaments spécifiques</strong> : Certains médicaments peuvent aider à dissoudre les calculs de cystine ou de struvite.  </p><p><strong>Chirurgie ou endoscopie</strong> :
+<strong>Médicaments spécifiques</strong> : Certains médicaments peuvent aider à dissoudre les calculs de cystine ou de struvite.  </p>Chirurgie ou endoscopie</strong> :
     <strong>Uréteroscopie</strong> : Utilisée pour extraire ou fragmenter les calculs dans l'uretère.<br/>
 <strong>Chirurgie percutanée</strong> : Indiquée pour les calculs de grande taille.  </p><p><em>Annotation et Étiquetage pour l’IA</em> : Étiqueter les options de traitement en fonction de la localisation et de la taille des calculs pour une assistance optimisée.  </p><p><em>SEO</em> : Maximiser l'efficacité SEO avec "traitement des calculs rénaux", "opération pour calcul urinaire" et "lithotritie pour calculs".  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p><strong>Néphrologues et<a href="https://wic-doctor.com/medecin/urologue.html"> urologues</a> spécialisés</strong> : Les spécialistes en calculs rénaux sont les principaux praticiens pour le diagnostic et le traitement.<br/>
 <strong>Cliniques d’imagerie médicale</strong> : Ces établissements proposent des examens d'imagerie avancés pour localiser les calculs.<br/>

@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -196,9 +232,9 @@
 <strong>Comportements inadaptés</strong> : La personne peut adopter des comportements étranges ou inappropriés en raison de la confusion mentale.  </p><p>Les épisodes de bouffée délirante sont souvent brusques et peuvent durer de quelques heures à quelques jours. Cependant, sans traitement, ces épisodes peuvent avoir des conséquences à long terme sur la santé mentale du patient.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de la Bouffée Délirante</h2></div><div class="info-text"><p><p>Les causes de la bouffée délirante peuvent être multiples, allant de troubles psychiatriques sousjacents à des facteurs médicaux ou environnementaux déclenchants.  </p><h5><strong>Causes fréquentes</strong> :</h5><p><strong>Troubles psychiatriques</strong> :
    <strong>Schizophrénie</strong> : La bouffée délirante peut être l'une des premières manifestations de la schizophrénie ou d'autres troubles psychotiques.<br/>
 <strong>Trouble bipolaire</strong> : Lors des phases maniaques du trouble bipolaire, des symptômes psychotiques, y compris des bouffées délirantes, peuvent apparaître.<br/>
-<strong>Dépression majeure</strong> : Parfois, une dépression sévère peut se manifester sous forme d'épisodes psychotiques, y compris des bouffées délirantes.  </p><p><strong>Consommation de substances</strong> :
+<strong>Dépression majeure</strong> : Parfois, une dépression sévère peut se manifester sous forme d'épisodes psychotiques, y compris des bouffées délirantes.  </p>Consommation de substances</strong> :
    <strong>Drogues et alcool</strong> : L'abus de substances telles que la cocaïne, les amphétamines ou l'alcool peut entraîner des symptômes psychotiques.<br/>
-<strong>Médicaments</strong> : Certains médicaments, en particulier ceux qui affectent le système nerveux, peuvent déclencher des épisodes délirants chez certaines personnes.  </p><p><strong>Facteurs médicaux</strong> :
+<strong>Médicaments</strong> : Certains médicaments, en particulier ceux qui affectent le système nerveux, peuvent déclencher des épisodes délirants chez certaines personnes.  </p>Facteurs médicaux</strong> :
    <strong>Infections cérébrales</strong> : Des infections du cerveau (comme une méningite ou un abcès cérébral) peuvent provoquer des symptômes délirants.<br/>
 <strong>Troubles métaboliques ou endocriniens</strong> : Des déséquilibres hormonaux ou des problèmes de foie ou de reins peuvent affecter la pensée et provoquer des troubles psychotiques.<br/>
 <strong>Traumatismes crâniens</strong> : Les lésions cérébrales traumatiques peuvent être un facteur déclenchant de la bouffée délirante.  </p><h5><strong>Facteurs de risque</strong> :</h5><p><strong>Antécédents familiaux de troubles psychotiques</strong> : Avoir un parent proche souffrant de schizophrénie ou de troubles bipolaires augmente le risque.<br/>
@@ -213,7 +249,7 @@
  <strong>Évaluations psychologiques</strong> : Des tests de pensée et de perception peuvent être utilisés pour observer les distorsions dans la perception de la réalité.<br/>
 <strong>Tests complémentaires</strong> : Des examens de sang, des imageries cérébrales (IRM, scanner) ou des analyses pour détecter des infections ou des anomalies cérébrales.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements de la Bouffée Délirante</h2></div><div class="info-text"><p><p>La prise en charge des bouffées délirantes implique souvent une combinaison de traitements pharmacologiques et psychothérapeutiques, en fonction de la cause sousjacente et de la sévérité de l'épisode.  </p><h5><strong>Traitements principaux</strong> :</h5><p><strong>Antipsychotiques</strong> : Les antipsychotiques sont les médicaments de choix pour traiter les épisodes délirants. Ils agissent en régulant les neurotransmetteurs du cerveau, comme la dopamine, impliqués dans les symptômes psychotiques.<br/>
 <strong>Antipsychotiques atypiques</strong> : Moins d’effets secondaires que les antipsychotiques classiques, souvent prescrits pour les bouffées délirantes liées à la schizophrénie ou aux troubles bipolaires.<br/>
-<strong>Antipsychotiques classiques</strong> : Utilisés pour des symptômes plus graves ou résistants aux autres traitements.  </p><p><strong>Stabilisateurs de l’humeur</strong> : Dans le cadre des troubles bipolaires, des médicaments comme le lithium ou certains anticonvulsivants peuvent être prescrits pour prévenir de nouveaux épisodes psychotiques.  </p><p><strong>Thérapie cognitive et comportementale (TCC)</strong> : Cette approche permet au patient de mieux comprendre et contrôler ses pensées délirantes, et de gérer le stress et l’anxiété qui accompagnent souvent ces épisodes.  </p><p><strong>Hospitalisation</strong> : Dans les cas graves ou lorsque la sécurité du patient est en jeu, une hospitalisation peut être nécessaire pour une surveillance étroite et un traitement intensif.  </p><h5><strong>Prise en charge à distance via WIC-DOCTOR</strong> :</h5><p>Des services comme <strong>WIC-DOCTOR</strong> permettent une prise en charge rapide et suivie de la bouffée délirante, en offrant des consultations à distance avec des <a href="https://wic-doctor.com/medecin/psychiatre.html">psychiatres</a> et des <a href="https://wic-doctor.com/medecin/psychologue.html">psychologues</a>.  </p><p><strong>Consultations en ligne</strong> : Les patients peuvent être suivis régulièrement par un professionnel qualifié, même à distance, pour ajuster leur traitement et gérer les épisodes de manière plus efficace.<br/>
+<strong>Antipsychotiques classiques</strong> : Utilisés pour des symptômes plus graves ou résistants aux autres traitements.  </p>Stabilisateurs de l’humeur</strong> : Dans le cadre des troubles bipolaires, des médicaments comme le lithium ou certains anticonvulsivants peuvent être prescrits pour prévenir de nouveaux épisodes psychotiques.  </p>Thérapie cognitive et comportementale (TCC)</strong> : Cette approche permet au patient de mieux comprendre et contrôler ses pensées délirantes, et de gérer le stress et l’anxiété qui accompagnent souvent ces épisodes.  </p>Hospitalisation</strong> : Dans les cas graves ou lorsque la sécurité du patient est en jeu, une hospitalisation peut être nécessaire pour une surveillance étroite et un traitement intensif.  </p><h5><strong>Prise en charge à distance via WIC-DOCTOR</strong> :</h5><p>Des services comme <strong>WIC-DOCTOR</strong> permettent une prise en charge rapide et suivie de la bouffée délirante, en offrant des consultations à distance avec des <a href="https://wic-doctor.com/medecin/psychiatre.html">psychiatres</a> et des <a href="https://wic-doctor.com/medecin/psychologue.html">psychologues</a>.  </p>Consultations en ligne</strong> : Les patients peuvent être suivis régulièrement par un professionnel qualifié, même à distance, pour ajuster leur traitement et gérer les épisodes de manière plus efficace.<br/>
 <strong>Suivi à distance</strong> : Les plateformes de télémédecine comme WIC-DOCTOR permettent un suivi personnalisé et un soutien continu, notamment pour les patients dans des zones rurales ou ayant des difficultés à se déplacer.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>La <strong>bouffée délirante</strong> est un épisode psychotique grave qui nécessite une intervention rapide et appropriée. Grâce à des traitements médicamenteux, un suivi psychologique et des soins personnalisés, les patients peuvent se remettre de ces épisodes et retrouver une vie fonctionnelle. La télémédecine, avec des services comme <strong>WIC-DOCTOR</strong>, offre des moyens modernes et accessibles pour diagnostiquer, traiter et suivre l’évolution des bouffées délirantes, contribuant ainsi à une gestion efficace de cette affection.</p></p></div></div></div>  
         </div>
     </section>

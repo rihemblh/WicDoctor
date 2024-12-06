@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,64 +222,45 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation du traitement Rimage®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications du Rimage®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement du traitement Rimage®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Bénéfices du Rimage®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et Types de Soins Disponibles pour Rimage® via WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un Lieu de Soins Adapté pour le Rimage®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation du traitement Rimage®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications du Rimage®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement du traitement Rimage®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Bénéfices du Rimage®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et Types de Soins Disponibles pour Rimage® via WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation du traitement Rimage®</h2></div><div class="info-text"><p><p>Le <strong>Rimage®</strong> est une méthode innovante non invasive utilisée pour <strong>réjuvenation et régénération cutanée</strong>. Ce traitement repose sur des <strong>technologies de pointe</strong> qui stimulent la production de collagène et d’élastine dans la peau, permettant ainsi de lutter contre les signes du vieillissement, tels que les <strong>rides</strong>, le <strong>relâchement cutané</strong> ou encore les <strong>cicatrices</strong>. Utilisé en <strong>médecine esthétique</strong>, il est idéal pour les personnes recherchant des résultats naturels et efficaces sans avoir recours à des interventions chirurgicales invasives.</p><p>Grâce à son action ciblée, le <strong>Rimage®</strong> peut être appliqué sur plusieurs zones du visage et du corps, y compris le <strong>visage</strong>, le <strong>cou</strong>, les <strong>mains</strong> ou encore <strong>l'intérieur des bras</strong>, permettant ainsi d'obtenir des résultats visibles après quelques séances. Ce traitement est particulièrement apprécié pour son absence de douleur et de période de récupération, ce qui en fait une solution de choix pour les patients recherchant une alternative plus douce aux traitements traditionnels.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications du Rimage®</h2></div><div class="info-text"><p><p>Le <strong>Rimage®</strong> est indiqué pour traiter diverses préoccupations esthétiques de la peau, notamment :</p><ul>
-<li>
-<p><strong>Rides et ridules</strong> : Le Rimage® est efficace pour <strong>réduire les rides</strong> du visage, notamment autour des yeux, de la bouche et du front, en stimulant la production de collagène et en rendant la peau plus ferme et élastique.</p>
-</li>
-<li>
-<p><strong>Relâchement cutané</strong> : Le traitement est idéal pour lutter contre le <strong>relâchement cutané</strong>, en particulier sur les zones du visage, du cou et des mains. Il aide à tonifier et raffermir la peau en favorisant sa régénération.</p>
-</li>
-<li>
-<p><strong>Cicatrices</strong> : Le Rimage® peut être utilisé pour <strong>améliorer l’apparence des cicatrices</strong>, en particulier celles liées à l’acné ou à une blessure, en favorisant la réparation cellulaire et en réduisant les signes visibles.</p>
-</li>
-<li>
-<p><strong>Teint irrégulier et imperfections</strong> : Ce traitement permet de <strong>uniformiser le teint</strong>, réduire les <strong>imperfections cutanées</strong> et apporter un éclat naturel à la peau.</p>
-</li>
-<li>
-<p><strong>Vergetures</strong> : Le Rimage® peut également être appliqué pour traiter les <strong>vergetures</strong>, en améliorant l'élasticité de la peau et en atténuant l’apparence des marques.</p>
-</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement du traitement Rimage®</h2></div><div class="info-text"><p><p>Le traitement <strong>Rimage®</strong> est simple, rapide et non invasif, ce qui en fait une option très prisée pour ceux qui souhaitent améliorer leur apparence sans subir de chirurgie.</p><p><strong>1. Consultation préalable</strong> :<br/>
-Avant de commencer le traitement, une <strong>consultation pré-opératoire</strong> est effectuée pour évaluer les besoins spécifiques du patient. Le professionnel de santé réalise un diagnostic personnalisé et explique les résultats attendus.</p><p><strong>2. Application du traitement</strong> :<br/>
-Le <strong>Rimage®</strong> est généralement administré à l’aide d’un <strong>appareil spécifique</strong> qui délivre des impulsions électriques ou des micro-courants à faible intensité, selon les besoins du patient. Ces impulsions stimulent les cellules de la peau et favorisent la <strong>régénération des tissus</strong>, en particulier la production de <strong>collagène</strong> et <strong>d’élastine</strong>.</p><ul>
-<li>L'application se fait de manière ciblée sur les zones à traiter.</li>
-<li>Un <strong>gel conducteur</strong> est appliqué sur la peau pour faciliter la transmission des impulsions.</li>
-</ul><p><strong>3. Durée et fréquence des séances</strong> :<br/>
-Les séances de <strong>Rimage®</strong> durent généralement entre <strong>20 et 45 minutes</strong>, en fonction de la zone à traiter. Pour des résultats optimaux, une série de <strong>3 à 5 séances</strong> peut être recommandée, espacées de 1 à 2 semaines. Un entretien peut être effectué après quelques mois pour maintenir les résultats.</p><p><strong>4. Aucune douleur</strong> :<br/>
-Le traitement est <strong>indolore</strong> et non invasif. Les patients peuvent ressentir des <strong>picotements légers</strong> ou des <strong>chaleurs agréables</strong> pendant la séance, mais aucune douleur majeure n’est rapportée.</p><p><strong>5. Pas de temps d’arrêt</strong> :<br/>
-Aucune période de récupération n’est nécessaire après le traitement. Les patients peuvent reprendre immédiatement leurs activités quotidiennes, ce qui rend le <strong>Rimage®</strong> idéal pour les personnes ayant un emploi du temps chargé.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Bénéfices du Rimage®</h2></div><div class="info-text"><p><p>Le traitement <strong>Rimage®</strong> offre plusieurs avantages :</p><ul>
-<li>
-<p><strong>Rajeunissement de la peau</strong> : Le principal bénéfice de Rimage® est de <strong>raffermir</strong> la peau, de <strong>réduire les rides</strong> et de redonner un aspect plus <strong>jeune et tonique</strong> au visage et au corps.</p>
-</li>
-<li>
-<p><strong>Amélioration de la texture de la peau</strong> : Ce traitement aide à améliorer la <strong>texture</strong> de la peau, la rendant plus <strong>lisse</strong>, <strong>uniforme</strong> et éclatante.</p>
-</li>
-<li>
-<p><strong>Réduction des cicatrices et des imperfections</strong> : Le Rimage® est particulièrement efficace pour <strong>atténuer les cicatrices</strong> dues à l’acné ou à des blessures superficielles.</p>
-</li>
-<li>
-<p><strong>Aucun risque, pas de chirurgie</strong> : Contrairement aux traitements invasifs comme les injections ou la chirurgie esthétique, le Rimage® est une méthode <strong>sans risque</strong>, avec des <strong>effets secondaires limités</strong> et <strong>aucune période de convalescence</strong>.</p>
-</li>
-<li>
-<p><strong>Résultats naturels et durables</strong> : Les effets du traitement sont progressifs et <strong>naturels</strong>, avec des résultats visibles dès la première séance et un <strong>effet durable</strong> après plusieurs séances.</p>
-</li>
-</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et Types de Soins Disponibles pour Rimage® via WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> met à disposition une liste des <strong>cliniques spécialisées</strong> et des <strong>professionnels de santé</strong> qualifiés pour effectuer le traitement <strong>Rimage®</strong> :</p><ol>
-<li>
-<p><strong>Cliniques de médecine esthétique</strong> :<br/>
-Les <strong>cliniques spécialisées en soins esthétiques</strong> sont les lieux idéaux pour recevoir un traitement Rimage®, car elles disposent des équipements dernier cri et offrent un suivi personnalisé.</p>
-</li>
-<li>
-<p><strong>Centres de soins anti-âge</strong> :<br/>
-Certains <strong>centres anti-âge</strong> intègrent le Rimage® dans leurs protocoles pour les patients souhaitant traiter les signes de vieillissement cutané, notamment les rides et le relâchement de la peau.</p>
-</li>
-<li>
-<p><strong><a href="https://wic-doctor.com/medecin/dermatologue.html">Dermatologues</a> et praticiens esthétiques</strong> :<br/>
-Les <strong><a href="https://wic-doctor.com/medecin/dermatologue.html">dermatologues</a></strong> et les <strong>praticiens esthétiques</strong> offrent des soins de régénération de la peau avec le Rimage®, garantissant des traitements adaptés à chaque type de peau et besoin.</p>
-</li>
-</ol><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un Lieu de Soins Adapté pour le Rimage®</h2></div><div class="info-text"><p><p>Le <strong>Rimage®</strong> est un traitement moderne et efficace pour améliorer l’apparence de la peau, réduire les rides, et restaurer l’élasticité cutanée. En choisissant un <strong>professionnel qualifié via WIC-DOCTOR</strong>, vous pouvez bénéficier de soins personnalisés et de résultats durables, tout en profitant d'une méthode non invasive, sans douleur et sans période de convalescence.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation du traitement Rimage®</h2></div><div class="info-text"><p><p>Le <strong>Rimage®</strong> est une méthode innovante non invasive utilisée pour <strong>réjuvenation et régénération cutanée</strong>. Ce traitement repose sur des <strong>technologies de pointe</strong> qui stimulent la production de collagène et d’élastine dans la peau, permettant ainsi de lutter contre les signes du vieillissement, tels que les <strong>rides</strong>, le <strong>relâchement cutané</strong> ou encore les <strong>cicatrices</strong>. Utilisé en <strong>médecine esthétique</strong>, il est idéal pour les personnes recherchant des résultats naturels et efficaces sans avoir recours à des interventions chirurgicales invasives.<br/>
+Grâce à son action ciblée, le <strong>Rimage®</strong> peut être appliqué sur plusieurs zones du visage et du corps, y compris le <strong>visage</strong>, le <strong>cou</strong>, les <strong>mains</strong> ou encore <strong>l'intérieur des bras</strong>, permettant ainsi d'obtenir des résultats visibles après quelques séances. Ce traitement est particulièrement apprécié pour son absence de douleur et de période de récupération, ce qui en fait une solution de choix pour les patients recherchant une alternative plus douce aux traitements traditionnels.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du Rimage®</h2></div><div class="info-text"><p><p>Le <strong>Rimage®</strong> est indiqué pour traiter diverses préoccupations esthétiques de la peau, notamment :<br/>
+<strong>Rides et ridules</strong> : Le Rimage® est efficace pour <strong>réduire les rides</strong> du visage, notamment autour des yeux, de la bouche et du front, en stimulant la production de collagène et en rendant la peau plus ferme et élastique.<br/>
+<strong>Relâchement cutané</strong> : Le traitement est idéal pour lutter contre le <strong>relâchement cutané</strong>, en particulier sur les zones du visage, du cou et des mains. Il aide à tonifier et raffermir la peau en favorisant sa régénération.<br/>
+<strong>Cicatrices</strong> : Le Rimage® peut être utilisé pour <strong>améliorer l’apparence des cicatrices</strong>, en particulier celles liées à l’acné ou à une blessure, en favorisant la réparation cellulaire et en réduisant les signes visibles.<br/>
+<strong>Teint irrégulier et imperfections</strong> : Ce traitement permet de <strong>uniformiser le teint</strong>, réduire les <strong>imperfections cutanées</strong> et apporter un éclat naturel à la peau.<br/>
+<strong>Vergetures</strong> : Le Rimage® peut également être appliqué pour traiter les <strong>vergetures</strong>, en améliorant l'élasticité de la peau et en atténuant l’apparence des marques.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement du traitement Rimage®</h2></div><div class="info-text"><p><p>Le traitement <strong>Rimage®</strong> est simple, rapide et non invasif, ce qui en fait une option très prisée pour ceux qui souhaitent améliorer leur apparence sans subir de chirurgie.<br/>
+<strong>1. Consultation préalable</strong> :<br/>
+Avant de commencer le traitement, une <strong>consultation pré-opératoire</strong> est effectuée pour évaluer les besoins spécifiques du patient. Le professionnel de santé réalise un diagnostic personnalisé et explique les résultats attendus.<br/>
+<strong>2. Application du traitement</strong> :<br/>
+Le <strong>Rimage®</strong> est généralement administré à l’aide d’un <strong>appareil spécifique</strong> qui délivre des impulsions électriques ou des micro-courants à faible intensité, selon les besoins du patient. Ces impulsions stimulent les cellules de la peau et favorisent la <strong>régénération des tissus</strong>, en particulier la production de <strong>collagène</strong> et <strong>d’élastine</strong>.<br/>
+L'application se fait de manière ciblée sur les zones à traiter.  Un <strong>gel conducteur</strong> est appliqué sur la peau pour faciliter la transmission des impulsions.<br/>
+<strong>3. Durée et fréquence des séances</strong> :<br/>
+Les séances de <strong>Rimage®</strong> durent généralement entre <strong>20 et 45 minutes</strong>, en fonction de la zone à traiter. Pour des résultats optimaux, une série de <strong>3 à 5 séances</strong> peut être recommandée, espacées de 1 à 2 semaines. Un entretien peut être effectué après quelques mois pour maintenir les résultats.<br/>
+<strong>4. Aucune douleur</strong> :<br/>
+Le traitement est <strong>indolore</strong> et non invasif. Les patients peuvent ressentir des <strong>picotements légers</strong> ou des <strong>chaleurs agréables</strong> pendant la séance, mais aucune douleur majeure n’est rapportée.<br/>
+<strong>5. Pas de temps d’arrêt</strong> :<br/>
+Aucune période de récupération n’est nécessaire après le traitement. Les patients peuvent reprendre immédiatement leurs activités quotidiennes, ce qui rend le <strong>Rimage®</strong> idéal pour les personnes ayant un emploi du temps chargé.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Bénéfices du Rimage®</h2></div><div class="info-text"><p><p>Le traitement <strong>Rimage®</strong> offre plusieurs avantages :<br/>
+<strong>Rajeunissement de la peau</strong> : Le principal bénéfice de Rimage® est de <strong>raffermir</strong> la peau, de <strong>réduire les rides</strong> et de redonner un aspect plus <strong>jeune et tonique</strong> au visage et au corps.<br/>
+<strong>Amélioration de la texture de la peau</strong> : Ce traitement aide à améliorer la <strong>texture</strong> de la peau, la rendant plus <strong>lisse</strong>, <strong>uniforme</strong> et éclatante.<br/>
+<strong>Réduction des cicatrices et des imperfections</strong> : Le Rimage® est particulièrement efficace pour <strong>atténuer les cicatrices</strong> dues à l’acné ou à des blessures superficielles.<br/>
+<strong>Aucun risque, pas de chirurgie</strong> : Contrairement aux traitements invasifs comme les injections ou la chirurgie esthétique, le Rimage® est une méthode <strong>sans risque</strong>, avec des <strong>effets secondaires limités</strong> et <strong>aucune période de convalescence</strong>.<br/>
+<strong>Résultats naturels et durables</strong> : Les effets du traitement sont progressifs et <strong>naturels</strong>, avec des résultats visibles dès la première séance et un <strong>effet durable</strong> après plusieurs séances.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles pour Rimage® via WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> met à disposition une liste des <strong>cliniques spécialisées</strong> et des <strong>professionnels de santé</strong> qualifiés pour effectuer le traitement <strong>Rimage®</strong> :<br/>
+1. <strong>Cliniques de médecine esthétique</strong> :<br/>
+Les <strong>cliniques spécialisées en soins esthétiques</strong> sont les lieux idéaux pour recevoir un traitement Rimage®, car elles disposent des équipements dernier cri et offrent un suivi personnalisé.<br/>
+2. <strong>Centres de soins anti-âge</strong> :<br/>
+Certains <strong>centres anti-âge</strong> intègrent le Rimage® dans leurs protocoles pour les patients souhaitant traiter les signes de vieillissement cutané, notamment les rides et le relâchement de la peau.<br/>
+3. <strong><a href="https://wic-doctor.com/medecin/dermatologue.html">Dermatologues</a> et praticiens esthétiques</strong> :<br/>
+Les <strong><a href="https://wic-doctor.com/medecin/dermatologue.html">dermatologues</a></strong> et les <strong>praticiens esthétiques</strong> offrent des soins de régénération de la peau avec le Rimage®, garantissant des traitements adaptés à chaque type de peau et besoin.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>Le <strong>Rimage®</strong> est un traitement moderne et efficace pour améliorer l’apparence de la peau, réduire les rides, et restaurer l’élasticité cutanée. En choisissant un <strong>professionnel qualifié via WIC-DOCTOR</strong>, vous pouvez bénéficier de soins personnalisés et de résultats durables, tout en profitant d'une méthode non invasive, sans douleur et sans période de convalescence.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

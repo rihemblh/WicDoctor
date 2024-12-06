@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,38 +226,38 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Angiome Hépatique : Caractéristiques, Causes, Diagnostic et Options de Traitement</h2></div><div class="info-text"><p><p>Un angiome hépatique est une malformation bénigne des vaisseaux sanguins dans le foie. Il s'agit d'une anomalie fréquente, généralement asymptomatique, et souvent découverte de manière fortuite lors d'examens médicaux réalisés pour d'autres raisons. Bien que la plupart des angiomes hépatiques ne nécessitent pas de traitement, certains peuvent entraîner des complications, notamment en cas de rupture.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>Les angiomes hépatiques sont caractérisés par :</p><p><strong>Localisation et taille</strong> : Ces anomalies se trouvent principalement dans le foie, souvent dans les lobes droit ou gauche. Ils peuvent être uniques ou multiples et varient en taille. Les angiomes peuvent être petits (quelques millimètres) ou atteindre plusieurs centimètres de diamètre.<br/>
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Angiome Hépatique : Caractéristiques, Causes, Diagnostic et Options de Traitement</h2></div><div class="info-text"><p><p>Un angiome hépatique est une malformation bénigne des vaisseaux sanguins dans le foie. Il s'agit d'une anomalie fréquente, généralement asymptomatique, et souvent découverte de manière fortuite lors d'examens médicaux réalisés pour d'autres raisons. Bien que la plupart des angiomes hépatiques ne nécessitent pas de traitement, certains peuvent entraîner des complications, notamment en cas de rupture.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>Les angiomes hépatiques sont caractérisés par :</p>Localisation et taille</strong> : Ces anomalies se trouvent principalement dans le foie, souvent dans les lobes droit ou gauche. Ils peuvent être uniques ou multiples et varient en taille. Les angiomes peuvent être petits (quelques millimètres) ou atteindre plusieurs centimètres de diamètre.<br/>
 <strong>Bénignité</strong> : Les angiomes hépatiques sont des malformations vasculaires bénignes, ce qui signifie qu'ils ne sont généralement pas cancerogènes et ne se propagent pas à d'autres parties du corps.<br/>
 <strong>Asymptomatique</strong> : La majorité des patients ne présentent pas de symptômes, et les angiomes sont souvent découverts de manière aléatoire lors de tests d'imagerie, comme l'échographie abdominale ou la tomodensitométrie (CT).<br/>
-<strong>Symptômes (dans les cas rares)</strong> : Si l'angiome est de grande taille ou subit une rupture, des symptômes peuvent apparaître, tels que des douleurs abdominales, des nausées ou des signes de saignement interne.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>Les causes exactes des angiomes hépatiques ne sont pas toujours bien comprises, mais plusieurs facteurs peuvent y contribuer :</p><p><strong>Facteurs congénitaux</strong> :
+<strong>Symptômes (dans les cas rares)</strong> : Si l'angiome est de grande taille ou subit une rupture, des symptômes peuvent apparaître, tels que des douleurs abdominales, des nausées ou des signes de saignement interne.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>Les causes exactes des angiomes hépatiques ne sont pas toujours bien comprises, mais plusieurs facteurs peuvent y contribuer :</p>Facteurs congénitaux</strong> :
     Les angiomes hépatiques sont souvent présents dès les naissances (congénitales). Ils résultent d'un développement anormal des vaisseaux sanguins dans le foie pendant la grossesse.<br/>
 <strong>Hormones</strong> :
     Les femmes enceintes ou prenant des contraceptifs hormonaux peuvent avoir un risque accru de développer des angiomes hépatiques en raison des effets des hormones, notamment les œstrogènes, sur la croissance des vaisseaux sanguins.<br/>
 <strong>Génétique</strong> :
     Il existe une certaine prédisposition génétique, bien que les angiomes hépatiques ne soient pas systématiquement héréditaires.<br/>
 <strong>Facteurs environnementaux</strong> :
-    Bien que les facteurs environnementaux ne soient pas clairement établis, des influences comme les infections ou certaines anomalies du développement vasculaire peuvent jouer un rôle dans la formation d'angiomes.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>Dans la majorité des cas, les angiomes hépatiques ne présentent pas de symptômes. Toutefois, lorsque des symptômes se manifestent, ils incluent :</p><p><strong>Douleurs abdominales</strong> :
+    Bien que les facteurs environnementaux ne soient pas clairement établis, des influences comme les infections ou certaines anomalies du développement vasculaire peuvent jouer un rôle dans la formation d'angiomes.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>Dans la majorité des cas, les angiomes hépatiques ne présentent pas de symptômes. Toutefois, lorsque des symptômes se manifestent, ils incluent :</p>Douleurs abdominales</strong> :
     Les douleurs peuvent être localisées dans la partie supérieure droite de l'abdomen, où le foie est situé.<br/>
 <strong>Nausées et vomissements</strong> :
     Ces symptômes peuvent survenir si l'angiome est gros ou s'il se rompt.<br/>
 <strong>Signes de rupture</strong> :
     La rupture d'un angiome hépatique peut entraîner une hémorragie interne, avec des signes tels que des douleurs abdominales sévères, des vertiges, une chute de la pression artérielle, voire un choc.
  <strong>Jaunisse (rare)</strong> :
-    Dans de rares cas, un angiome hépatique peut provoquer une obstruction des voies biliaires, entraînant une jaunisse.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>Le diagnostic des angiomes hépatiques repose sur des examens d'imagerie. Voici les principales méthodes utilisées :</p><p><strong>Échographie abdominale</strong> :
+    Dans de rares cas, un angiome hépatique peut provoquer une obstruction des voies biliaires, entraînant une jaunisse.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>Le diagnostic des angiomes hépatiques repose sur des examens d'imagerie. Voici les principales méthodes utilisées :</p>Échographie abdominale</strong> :
     L'échographie est la méthode de diagnostic la plus courante et la moins invasive. Elle permet de visualiser la forme et la taille de l'angiome hépatique.<br/>
 <strong>Tomodensitométrie (CT)</strong> :
     La CT abdominale peut fournir des images plus détaillées, permettant de mieux évaluer la taille et la localisation de l'angiome, ainsi que de détecter d'éventuelles complications.<br/>
 <strong>Imagerie par résonance magnétique (IRM)</strong> :
     L'IRM est une option pour obtenir des images détaillées du foie et de ses vaisseaux sanguins, particulièrement utile si l'angiome est complexe ou s'il existe des préoccupations concernant une possible rupture ou une croissance anormale.<br/>
 <strong>Angiographie</strong> :
-    L'angiographie est parfois utilisée pour observer directement les vaisseaux sanguins et évaluer le réseau vasculaire du foie. Elle est particulièrement utile dans les cas où des interventions chirurgicales ou endovasculaires sont envisagées.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>La plupart des angiomes hépatiques ne nécessitent aucun traitement. Cependant, dans les cas où des symptômes apparaissent ou lorsqu'il existe un risque de rupture, les options suivantes peuvent être envisagées :</p><p><strong>Surveillance</strong> :
+    L'angiographie est parfois utilisée pour observer directement les vaisseaux sanguins et évaluer le réseau vasculaire du foie. Elle est particulièrement utile dans les cas où des interventions chirurgicales ou endovasculaires sont envisagées.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements des Angiomes Hépatiques</h2></div><div class="info-text"><p><p>La plupart des angiomes hépatiques ne nécessitent aucun traitement. Cependant, dans les cas où des symptômes apparaissent ou lorsqu'il existe un risque de rupture, les options suivantes peuvent être envisagées :</p>Surveillance</strong> :
     Dans la plupart des cas, aucun traitement spécifique n'est nécessaire. Un suivi régulier avec des examens d'imagerie permet de s'assurer que l'angiome ne se développe pas ou ne cause pas de complications.<br/>
 <strong>Chirurgie</strong> :
     Si l'angiome est volumineux, douloureux, ou présente un risque de rupture, une intervention chirurgicale peut être nécessaire. La chirurgie peut consister en une résection de la tumeur vasculaire.<br/>
 <strong>Embolisation</strong> :
     Dans certains cas, une procédure d'embolisation est pratiquée pour bloquer l'approvisionnement sanguin de l'angiome, réduisant ainsi sa taille ou prévenant la rupture.<br/>
 <strong>Traitement des complications</strong> :
-    Si une rupture se produit, une intervention d'urgence est nécessaire pour arrêter le saignement et stabiliser l'état du patient.  </p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les soins pour les angiomes hépatiques peuvent être fournis par divers types de structures médicales, incluant :</p><p><strong>Cliniques de gastroentérologie et d'hépatogastroentérologie</strong> :
+    Si une rupture se produit, une intervention d'urgence est nécessaire pour arrêter le saignement et stabiliser l'état du patient.  </p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les soins pour les angiomes hépatiques peuvent être fournis par divers types de structures médicales, incluant :</p>Cliniques de gastroentérologie et d'hépatogastroentérologie</strong> :
     Ces cliniques spécialisées disposent de <a href="https://wic-doctor.com/medecin/gastro-entérologue.html">gastroentérologues</a> et de spécialistes du foie pour gérer le diagnostic et la surveillance des angiomes hépatiques.<br/>
 <strong>Hôpitaux universitaires et centres spécialisés en chirurgie hépatique</strong> :
     Les hôpitaux disposant de services de chirurgie hépatique et d'hépatogastroentérologie sont bien équipés pour traiter les complications des angiomes hépatiques, y compris les interventions chirurgicales ou d'embolisation.<br/>

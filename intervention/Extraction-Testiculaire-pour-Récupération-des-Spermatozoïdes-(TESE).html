@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,30 +222,25 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de l'extraction testiculaire pour récupération des spermatozoïdes (TESE)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications de l'extraction testiculaire pour récupération des spermatozoïdes (TESE)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement de la procédure d'extraction testiculaire pour récupération des spermatozoïdes (TESE)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications à l'extraction testiculaire pour récupération des spermatozoïdes (TESE)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour l'extraction testiculaire pour récupération des spermatozoïdes (TESE) selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un lieu de soin adapté pour l'extraction testiculaire pour récupération des spermatozoïdes (TESE)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de l'extraction testiculaire pour récupération des spermatozoïdes (TESE)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications de l'extraction testiculaire pour récupération des spermatozoïdes (TESE)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement de la procédure d'extraction testiculaire pour récupération des spermatozoïdes (TESE)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Contre-indications à l'extraction testiculaire pour récupération des spermatozoïdes (TESE)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et types de soins disponibles pour l'extraction testiculaire pour récupération des spermatozoïdes (TESE) selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de l'extraction testiculaire pour récupération des spermatozoïdes (TESE)</h2></div><div class="info-text"><p><p>L'<strong>extraction testiculaire pour récupération des spermatozoïdes (TESE)</strong> est une procédure chirurgicale utilisée pour prélever des spermatozoïdes directement à partir des <strong>testicules</strong>, principalement dans les cas où un homme présente une <strong>azoospermie</strong> (absence de spermatozoïdes dans le sperme). Ce traitement est souvent indiqué pour les hommes souffrant d'infertilité liée à des problèmes de production de spermatozoïdes ou pour ceux ayant subi une vasectomie et souhaitant récupérer des spermatozoïdes pour une fécondation in vitro (FIV).</p><p>La TESE permet de prélever des tissus testiculaires contenant des spermatozoïdes immatures ou matures, qui peuvent ensuite être utilisés pour des <strong>techniques de reproduction assistée</strong>, telles que la <strong>fécondation in vitro (FIV)</strong> ou l'<strong>injection intracytoplasmique de spermatozoïdes (ICSI)</strong>. Cette procédure est souvent réalisée en cas d'échec des autres méthodes de collecte de spermatozoïdes ou lorsque des problèmes hormonaux ou anatomiques empêchent une collecte normale.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de l'extraction testiculaire pour récupération des spermatozoïdes (TESE)</h2></div><div class="info-text"><p><p>La procédure TESE est indiquée dans les situations suivantes :</p><ul>
-<li><strong>Azoospermie obstructive</strong> : Lorsqu'il existe une obstruction dans les canaux déférents, empêchant le passage des spermatozoïdes vers le sperme, la TESE permet de récupérer des spermatozoïdes directement dans les testicules.</li>
-<li><strong>Azoospermie non obstructive</strong> : Dans ce cas, l'absence de spermatozoïdes résulte d'un problème de production dans les testicules. La TESE permet d’extraire des tissus testiculaires afin de trouver des spermatozoïdes viables.</li>
-<li><strong>Échec de la collecte par spermogramme ou aspiration</strong> : Lorsque des tentatives de collecte de spermatozoïdes par d'autres moyens (comme l’aspiration ou la récupération de spermatozoïdes dans l'éjaculat) échouent.</li>
-<li><strong>Infertilité masculine suite à une vasectomie</strong> : La TESE peut être réalisée chez les hommes ayant subi une vasectomie et souhaitant récupérer des spermatozoïdes pour une fécondation in vitro (FIV).</li>
-<li><strong>Mauvaise qualité du sperme</strong> : Dans certains cas d’infertilité masculine sévère, où la qualité du sperme est insuffisante pour une fécondation naturelle ou une FIV classique.</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de la procédure d'extraction testiculaire pour récupération des spermatozoïdes (TESE)</h2></div><div class="info-text"><p><p><strong>Préparation avant l’intervention</strong> :<br/>
-Avant l'extraction testiculaire, une consultation avec un <strong>urologue spécialisé en infertilité</strong> ou un <strong>médecin en médecine de la reproduction</strong> est nécessaire. Des <strong>examens médicaux préalables</strong>, tels qu'une <strong>échographie scrotale</strong> et une <strong>analyses hormonales</strong>, peuvent être réalisés pour évaluer la fonction testiculaire et la présence de spermatozoïdes dans le tissu testiculaire. Il est également conseillé d'arrêter certains médicaments, notamment ceux qui affectent la coagulation sanguine, avant la procédure.</p><p><strong>L’intervention chirurgicale</strong> :<br/>
-- <strong>Anesthésie</strong> : L'extraction testiculaire est généralement réalisée sous <strong>anesthésie locale</strong> ou <strong>sédation consciente</strong>, bien que dans certains cas, une <strong>anesthésie générale</strong> puisse être utilisée, notamment si l'extraction implique plusieurs sites de prélèvement.
-- <strong>Procédure</strong> : L'urologue réalise une petite <strong>incision dans le scrotum</strong> pour accéder aux testicules. Ensuite, un prélèvement de tissu testiculaire est effectué à l'aide de <strong>pinces fines</strong> ou d'une <strong>biopsie testiculaire</strong>. Si des spermatozoïdes sont présents, ils sont extraits et examinés pour leur viabilité. Dans certains cas, un <strong>prélèvement multiple</strong> peut être effectué dans différentes zones du testicule pour maximiser les chances de succès.
-- <strong>Durée de l’intervention</strong> : La procédure dure généralement entre <strong>30 minutes et 1 heure</strong>, selon la complexité du cas.</p><p><strong>Soins post-opératoires</strong> :<br/>
-Après la procédure, des <strong>analyses de contrôle</strong>, comme un <strong>examen histologique</strong> du tissu prélevé, seront réalisées pour vérifier la présence de spermatozoïdes. Le patient doit suivre les conseils de son médecin pour minimiser le risque d'infection et favoriser la récupération :
-- Repos pendant quelques jours après la procédure.
-- Éviter les activités physiques intenses pendant environ <strong>2 à 4 semaines</strong>.
-- Surveillance régulière pour vérifier la cicatrisation de l'incision.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications à l'extraction testiculaire pour récupération des spermatozoïdes (TESE)</h2></div><div class="info-text"><p><p>Bien que l'extraction testiculaire soit une intervention relativement sûre, il existe des contre-indications à prendre en compte :</p><ul>
-<li><strong>Problèmes de santé généraux graves</strong> : Les patients souffrant de troubles cardiaques, d'infections graves, ou d'autres maladies chroniques doivent consulter un spécialiste avant d'envisager cette procédure.</li>
-<li><strong>Problèmes d'anatomie testiculaire</strong> : Certaines anomalies anatomiques majeures, comme l'absence totale de testicules ou un <strong>testicule non fonctionnel</strong>, peuvent rendre l'intervention inefficace.</li>
-<li><strong>Cancer des testicules ou autres maladies malignes</strong> : Les patients ayant des antécédents de <strong>cancer testiculaire</strong> ou d'autres types de cancer nécessitent une évaluation approfondie avant d'envisager une TESE.</li>
-<li><strong>Infections ou inflammations testiculaires</strong> : Si l'homme présente une infection active dans les testicules, la procédure est généralement reportée jusqu'à guérison complète.</li>
-</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour l'extraction testiculaire pour récupération des spermatozoïdes (TESE) selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>L'extraction testiculaire pour récupération des spermatozoïdes (TESE) peut être réalisée dans plusieurs types d'établissements médicaux spécialisés. Voici les principales options disponibles :</p><h4><strong>1. Cliniques de médecine de la reproduction et centres spécialisés en infertilité masculine</strong></h4><p>Les <strong>cliniques spécialisées en fertilité</strong> et les <strong>centres de reproduction assistée</strong> disposent de l'expertise et de l'équipement nécessaires pour réaliser une TESE de manière sécuritaire et efficace. Ces établissements sont équipés pour la gestion de l'infertilité masculine, de la <strong>collecte des spermatozoïdes</strong> à la <strong>fécondation in vitro</strong>.</p><h4><strong>2. Hôpitaux spécialisés en chirurgie urologique</strong></h4><p>Les <strong>hôpitaux spécialisés en chirurgie urologique</strong> ou en <strong>chirurgie de l'infertilité masculine</strong> sont également des lieux courants pour la TESE. Ces établissements ont l'expérience nécessaire pour effectuer des interventions sur les testicules et offrent un suivi post-opératoire complet, avec des analyses et des traitements complémentaires.</p><h4><strong>3. Centres médicaux avec plateformes de soins en ligne</strong></h4><p>Des plateformes comme <strong>WIC-DOCTOR</strong> permettent aux patients de consulter des avis sur des <strong>centres spécialisés</strong> en TESE, de comparer les prix, de vérifier les qualifications des médecins, et de prendre rendez-vous en ligne avec un professionnel qualifié.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un lieu de soin adapté pour l'extraction testiculaire pour récupération des spermatozoïdes (TESE)</h2></div><div class="info-text"><p><p>L'extraction testiculaire pour récupération des spermatozoïdes (TESE) est une intervention délicate qui nécessite une expertise médicale avancée. Il est essentiel de choisir un établissement certifié et équipé, disposant d'une équipe spécialisée dans l'infertilité masculine et la reproduction assistée, pour garantir les meilleurs résultats. Le portail <strong>WIC-DOCTOR</strong> offre une plateforme pour aider les patients à trouver les centres spécialisés dans la TESE et à accéder à un suivi de qualité tout au long du processus.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de l'extraction testiculaire pour récupération des spermatozoïdes (TESE)</h2></div><div class="info-text"><p><p>L'<strong>extraction testiculaire pour récupération des spermatozoïdes (TESE)</strong> est une procédure chirurgicale utilisée pour prélever des spermatozoïdes directement à partir des <strong>testicules</strong>, principalement dans les cas où un homme présente une <strong>azoospermie</strong> (absence de spermatozoïdes dans le sperme). Ce traitement est souvent indiqué pour les hommes souffrant d'infertilité liée à des problèmes de production de spermatozoïdes ou pour ceux ayant subi une vasectomie et souhaitant récupérer des spermatozoïdes pour une fécondation in vitro (FIV).<br/>
+La TESE permet de prélever des tissus testiculaires contenant des spermatozoïdes immatures ou matures, qui peuvent ensuite être utilisés pour des <strong>techniques de reproduction assistée</strong>, telles que la <strong>fécondation in vitro (FIV)</strong> ou l'<strong>injection intracytoplasmique de spermatozoïdes (ICSI)</strong>. Cette procédure est souvent réalisée en cas d'échec des autres méthodes de collecte de spermatozoïdes ou lorsque des problèmes hormonaux ou anatomiques empêchent une collecte normale.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'extraction testiculaire pour récupération des spermatozoïdes (TESE)</h2></div><div class="info-text"><p><p>La procédure TESE est indiquée dans les situations suivantes :<br/>
+<strong>Azoospermie obstructive</strong> : Lorsqu'il existe une obstruction dans les canaux déférents, empêchant le passage des spermatozoïdes vers le sperme, la TESE permet de récupérer des spermatozoïdes directement dans les testicules.  <strong>Azoospermie non obstructive</strong> : Dans ce cas, l'absence de spermatozoïdes résulte d'un problème de production dans les testicules. La TESE permet d’extraire des tissus testiculaires afin de trouver des spermatozoïdes viables.  <strong>Échec de la collecte par spermogramme ou aspiration</strong> : Lorsque des tentatives de collecte de spermatozoïdes par d'autres moyens (comme l’aspiration ou la récupération de spermatozoïdes dans l'éjaculat) échouent.  <strong>Infertilité masculine suite à une vasectomie</strong> : La TESE peut être réalisée chez les hommes ayant subi une vasectomie et souhaitant récupérer des spermatozoïdes pour une fécondation in vitro (FIV).  <strong>Mauvaise qualité du sperme</strong> : Dans certains cas d’infertilité masculine sévère, où la qualité du sperme est insuffisante pour une fécondation naturelle ou une FIV classique.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de la procédure d'extraction testiculaire pour récupération des spermatozoïdes (TESE)</h2></div><div class="info-text"><p><p><strong>Préparation avant l’intervention</strong> :<br/>
+Avant l'extraction testiculaire, une consultation avec un <strong>urologue spécialisé en infertilité</strong> ou un <strong>médecin en médecine de la reproduction</strong> est nécessaire. Des <strong>examens médicaux préalables</strong>, tels qu'une <strong>échographie scrotale</strong> et une <strong>analyses hormonales</strong>, peuvent être réalisés pour évaluer la fonction testiculaire et la présence de spermatozoïdes dans le tissu testiculaire. Il est également conseillé d'arrêter certains médicaments, notamment ceux qui affectent la coagulation sanguine, avant la procédure.<br/>
+<strong>L’intervention chirurgicale</strong> :<br/>
+<strong>Anesthésie</strong> : L'extraction testiculaire est généralement réalisée sous <strong>anesthésie locale</strong> ou <strong>sédation consciente</strong>, bien que dans certains cas, une <strong>anesthésie générale</strong> puisse être utilisée, notamment si l'extraction implique plusieurs sites de prélèvement.  <strong>Procédure</strong> : L'urologue réalise une petite <strong>incision dans le scrotum</strong> pour accéder aux testicules. Ensuite, un prélèvement de tissu testiculaire est effectué à l'aide de <strong>pinces fines</strong> ou d'une <strong>biopsie testiculaire</strong>. Si des spermatozoïdes sont présents, ils sont extraits et examinés pour leur viabilité. Dans certains cas, un <strong>prélèvement multiple</strong> peut être effectué dans différentes zones du testicule pour maximiser les chances de succès.  <strong>Durée de l’intervention</strong> : La procédure dure généralement entre <strong>30 minutes et 1 heure</strong>, selon la complexité du cas.<br/>
+<strong>Soins post-opératoires</strong> :<br/>
+Après la procédure, des <strong>analyses de contrôle</strong>, comme un <strong>examen histologique</strong> du tissu prélevé, seront réalisées pour vérifier la présence de spermatozoïdes. Le patient doit suivre les conseils de son médecin pour minimiser le risque d'infection et favoriser la récupération :  - Repos pendant quelques jours après la procédure.  - Éviter les activités physiques intenses pendant environ <strong>2 à 4 semaines</strong>.  - Surveillance régulière pour vérifier la cicatrisation de l'incision.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications à l'extraction testiculaire pour récupération des spermatozoïdes (TESE)</h2></div><div class="info-text"><p><p>Bien que l'extraction testiculaire soit une intervention relativement sûre, il existe des contre-indications à prendre en compte :<br/>
+<strong>Problèmes de santé généraux graves</strong> : Les patients souffrant de troubles cardiaques, d'infections graves, ou d'autres maladies chroniques doivent consulter un spécialiste avant d'envisager cette procédure.  <strong>Problèmes d'anatomie testiculaire</strong> : Certaines anomalies anatomiques majeures, comme l'absence totale de testicules ou un <strong>testicule non fonctionnel</strong>, peuvent rendre l'intervention inefficace.  <strong>Cancer des testicules ou autres maladies malignes</strong> : Les patients ayant des antécédents de <strong>cancer testiculaire</strong> ou d'autres types de cancer nécessitent une évaluation approfondie avant d'envisager une TESE.  <strong>Infections ou inflammations testiculaires</strong> : Si l'homme présente une infection active dans les testicules, la procédure est généralement reportée jusqu'à guérison complète.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et types de soins disponibles pour l'extraction testiculaire pour récupération des spermatozoïdes (TESE) selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>L'extraction testiculaire pour récupération des spermatozoïdes (TESE) peut être réalisée dans plusieurs types d'établissements médicaux spécialisés. Voici les principales options disponibles :  </p><h4><strong>Cliniques de médecine de la reproduction et centres spécialisés en infertilité masculine</strong></h4><p>Les <strong>cliniques spécialisées en fertilité</strong> et les <strong>centres de reproduction assistée</strong> disposent de l'expertise et de l'équipement nécessaires pour réaliser une TESE de manière sécuritaire et efficace. Ces établissements sont équipés pour la gestion de l'infertilité masculine, de la <strong>collecte des spermatozoïdes</strong> à la <strong>fécondation in vitro</strong>.  </p><h4><strong>Hôpitaux spécialisés en chirurgie urologique</strong></h4><p>Les <strong>hôpitaux spécialisés en chirurgie urologique</strong> ou en <strong>chirurgie de l'infertilité masculine</strong> sont également des lieux courants pour la TESE. Ces établissements ont l'expérience nécessaire pour effectuer des interventions sur les testicules et offrent un suivi post-opératoire complet, avec des analyses et des traitements complémentaires.  </p><h4><strong>Centres médicaux avec plateformes de soins en ligne</strong></h4><p>Des plateformes comme <strong>WIC-DOCTOR</strong> permettent aux patients de consulter des avis sur des <strong>centres spécialisés</strong> en TESE, de comparer les prix, de vérifier les qualifications des médecins, et de prendre rendez-vous en ligne avec un professionnel qualifié.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>L'extraction testiculaire pour récupération des spermatozoïdes (TESE) est une intervention délicate qui nécessite une expertise médicale avancée. Il est essentiel de choisir un établissement certifié et équipé, disposant d'une équipe spécialisée dans l'infertilité masculine et la reproduction assistée, pour garantir les meilleurs résultats. Le portail <strong>WIC-DOCTOR</strong> offre une plateforme pour aider les patients à trouver les centres spécialisés dans la TESE et à accéder à un suivi de qualité tout au long du processus.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

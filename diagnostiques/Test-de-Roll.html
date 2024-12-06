@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,71 +226,40 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du Test de Roll</h2></div><div class="info-text"><p><p>Le <strong>test de Roll</strong>, également connu sous le nom de <strong>test de l'inclinaison latérale</strong>, est utilisé principalement dans le domaine de l'oto-rhino-laryngologie (ORL) pour évaluer les troubles de l'équilibre, notamment en cas de <strong>vertiges</strong> et de <strong>troubles vestibulaires</strong>. Ce test est essentiel pour diagnostiquer certaines formes de vertiges positionnels bénins, tels que le <strong>vertige positionnel paroxystique bénin</strong> (VPPB), une des causes les plus courantes de vertiges. Voici les principales indications pour le test de Roll :
-- <strong>Diagnostic des vertiges positionnels</strong> : Il est utilisé pour diagnostiquer des vertiges liés à des troubles du système vestibulaire, notamment le VPPB, qui se manifeste par des épisodes de vertiges déclenchés par des changements de position de la tête.
-- <strong>Évaluation des troubles vestibulaires</strong> : Il aide à identifier les troubles du système vestibulaire qui régule l'équilibre, en particulier lorsque les symptômes sont aggravés par certains mouvements de la tête.
-- <strong>Suivi post-traumatique</strong> : Après un traumatisme crânien ou un accident, ce test permet de vérifier si des lésions vestibulaires ont entraîné des perturbations de l'équilibre.
-- <strong>Exploration des causes de vertiges inexpliquées</strong> : Lorsque les vertiges sont d'origine inconnue, le test de Roll peut aider à identifier une origine vestibulaire.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement du Test de Roll</h2></div><div class="info-text"><p><p>Le test de Roll est réalisé dans un environnement médical sous surveillance spécialisée. Voici les étapes principales du test :
-1. <strong>Préparation</strong> :
-   - <strong>Consultation initiale</strong> : Avant le test, un examen clinique est effectué pour évaluer les symptômes du patient. Le médecin ou l’ORL s'assure qu'il n'y a pas de contre-indications spécifiques au test.
-   - <strong>Aucune préparation spécifique</strong> : Le test ne nécessite pas de préparation particulière. Il peut être effectué directement lors d'une consultation.</p><ol>
-<li><strong>Exécution du Test</strong> :</li>
-<li><strong>Positionnement du patient</strong> : Le patient est allongé sur une table d'examen, avec la tête légèrement inclinée de 30° par rapport à l'horizontale. Cela permet de simuler un changement rapide de position et d’évaluer la réponse du système vestibulaire.</li>
-<li><strong>Rotation de la tête</strong> : Le médecin ou l'ORL effectue des rotations rapides de la tête du patient à droite et à gauche. Chaque mouvement est effectué pendant quelques secondes pour observer la réponse vestibulaire.</li>
-<li><strong>Observation des symptômes</strong> : Pendant le test, le médecin surveille les mouvements des yeux (nystagmus) et les symptômes du patient (vertige, désorientation) pour identifier si un VPPB ou un trouble vestibulaire est en cause.</li>
-<li>
-<p><strong>Réactions cliniques</strong> : Si des vertiges ou un nystagmus (mouvement involontaire des yeux) se produisent lors des rotations, cela suggère la présence d’un trouble vestibulaire, comme le VPPB.</p>
-</li>
-<li>
-<p><strong>Durée du Test</strong> :</p>
-</li>
-<li>
-<p>Le test dure généralement entre <strong>5 et 10 minutes</strong>. Il est rapide et simple, mais les résultats doivent être soigneusement interprétés par un professionnel qualifié.</p>
-</li>
-<li>
-<p><strong>Post-examen</strong> :</p>
-</li>
-<li><strong>Suivi immédiat</strong> : Après le test, le patient peut ressentir de légers vertiges ou une désorientation. Ces symptômes sont généralement temporaires et disparaissent en quelques minutes.</li>
-<li><strong>Reprise des activités normales</strong> : En l'absence de complications, le patient peut reprendre ses activités normales après le test. Cependant, si des symptômes persistent, un suivi médical peut être nécessaire.</li>
-</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications du Test de Roll</h2></div><div class="info-text"><p><p>Bien que le test de Roll soit généralement sûr, il comporte certaines contre-indications et précautions :
-- <strong>Problèmes cervicaux</strong> : Les patients ayant des problèmes de cou, comme des douleurs cervicales aiguës ou des hernies discales, doivent éviter ce test, car les rotations de la tête peuvent aggraver la douleur.
-- <strong>Traumatisme crânien récent</strong> : Les patients ayant subi un traumatisme crânien récent devraient éviter ce test, car il pourrait aggraver les symptômes.
-- <strong>Troubles cardiaques graves</strong> : Les patients souffrant de troubles cardiaques sévères (comme des arythmies) doivent informer leur médecin, car le test pourrait entraîner une gêne.
-- <strong>Femmes enceintes</strong> : Bien que généralement sûr, il est recommandé aux femmes enceintes de consulter leur médecin avant de réaliser le test, surtout si elles souffrent de vertiges, afin d'évaluer si ce test est approprié.
-- <strong>Instabilité neurologique</strong> : Les patients souffrant de troubles neurologiques graves (comme des accidents vasculaires cérébraux récents ou des troubles graves du système nerveux) devraient éviter le test de Roll.</p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour le Test de Roll(Références spécifiques à WIC-DOCTOR)</h2></div><div class="info-text"><p><p>Le test de Roll est principalement réalisé par des <strong>spécialistes ORL</strong> et nécessite des lieux de soins spécifiques. Voici les principaux lieux et types de soins associés à ce test, selon <strong>WIC-DOCTOR</strong> :</p><ol>
-<li><strong>Cabinets de Médecins ORL</strong> :</li>
-<li>
-<p>Les <strong>médecins spécialisés en oto-rhino-laryngologie</strong> (ORL) sont les professionnels de santé qui réalisent ce test. Ils sont formés pour interpréter les résultats du test et établir un diagnostic de troubles vestibulaires.</p>
-</li>
-<li>
-<p><strong>Centres spécialisés en rééducation vestibulaire</strong> :</p>
-</li>
-<li>
-<p>Dans certains centres de rééducation vestibulaire, ce test est utilisé dans le cadre d’un programme de diagnostic et de réadaptation pour les patients souffrant de vertiges chroniques ou de troubles de l'équilibre.</p>
-</li>
-<li>
-<p><strong>Hôpitaux et Cliniques de Médecine Spécialisée</strong> :</p>
-</li>
-<li>
-<p>Les hôpitaux ou cliniques disposant de services de neurologie, de médecine interne ou de médecine ORL peuvent réaliser ce test pour identifier les troubles de l’équilibre et traiter des pathologies comme le VPPB.</p>
-</li>
-<li>
-<p><strong>Services d'Urgence Vestibulaire</strong> :</p>
-</li>
-<li>
-<p>Certains établissements médicaux disposent de services d’urgence spécialisés dans les vertiges et troubles vestibulaires. Ce test peut être effectué dans des situations d’urgence où les vertiges sont soudains et nécessitent une évaluation immédiate.</p>
-</li>
-<li>
-<p><strong>Consultations en Ambulatoire</strong> :</p>
-</li>
-<li>
-<p>Le test de Roll peut être effectué en consultation ambulatoire chez un spécialiste ORL. Les résultats sont généralement rapidement disponibles et permettent une gestion immédiate des troubles.</p>
-</li>
-<li>
-<p><strong>Suivi Médical après le Test</strong> :</p>
-</li>
-<li>Après le test, un suivi peut être nécessaire, surtout si des troubles vestibulaires sont diagnostiqués. Le médecin peut recommander des traitements comme des <strong>exercices de rééducation vestibulaire</strong>, des médicaments contre le vertige ou des ajustements de traitement en fonction des résultats.</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du Test de Roll</h2></div><div class="info-text"><p><p>Le <strong>test de Roll</strong>, également connu sous le nom de <strong>test de l'inclinaison latérale</strong>, est utilisé principalement dans le domaine de l'<a href="https://wic-doctor.com/medecin/orl-et-stomatologue.html">oto-rhino-laryngologie</a> (ORL) pour évaluer les troubles de l'équilibre, notamment en cas de <strong>vertiges</strong> et de <strong>troubles vestibulaires</strong>. Ce test est essentiel pour diagnostiquer certaines formes de vertiges positionnels bénins, tels que le <strong>vertige positionnel paroxystique bénin</strong> (VPPB), une des causes les plus courantes de vertiges. Voici les principales indications pour le test de Roll :<br/>
+<strong>Diagnostic des vertiges positionnels</strong> : Il est utilisé pour diagnostiquer des vertiges liés à des troubles du système vestibulaire, notamment le VPPB, qui se manifeste par des épisodes de vertiges déclenchés par des changements de position de la tête.<br/>
+<strong>Évaluation des troubles vestibulaires</strong> : Il aide à identifier les troubles du système vestibulaire qui régule l'équilibre, en particulier lorsque les symptômes sont aggravés par certains mouvements de la tête.<br/>
+<strong>Suivi post-traumatique</strong> : Après un traumatisme crânien ou un accident, ce test permet de vérifier si des lésions vestibulaires ont entraîné des perturbations de l'équilibre.<br/>
+<strong>Exploration des causes de vertiges inexpliquées</strong> : Lorsque les vertiges sont d'origine inconnue, le test de Roll peut aider à identifier une origine vestibulaire.    ---</p></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement du Test de Roll</h2></div><div class="info-text"><p><p>Le test de Roll est réalisé dans un environnement médical sous surveillance spécialisée. Voici les étapes principales du test :  1. <strong>Préparation</strong> :   <br/>
+<strong>Consultation initiale</strong> : Avant le test, un examen clinique est effectué pour évaluer les symptômes du patient. Le médecin ou l’ORL s'assure qu'il n'y a pas de contre-indications spécifiques au test.   <br/>
+<strong>Aucune préparation spécifique</strong> : Le test ne nécessite pas de préparation particulière. Il peut être effectué directement lors d'une consultation.<br/>
+2. <strong>Exécution du Test</strong> :   <br/>
+<strong>Positionnement du patient</strong> : Le patient est allongé sur une table d'examen, avec la tête légèrement inclinée de 30° par rapport à l'horizontale. Cela permet de simuler un changement rapide de position et d’évaluer la réponse du système vestibulaire.   <br/>
+<strong>Rotation de la tête</strong> : Le médecin ou l'ORL effectue des rotations rapides de la tête du patient à droite et à gauche. Chaque mouvement est effectué pendant quelques secondes pour observer la réponse vestibulaire.   <br/>
+<strong>Observation des symptômes</strong> : Pendant le test, le médecin surveille les mouvements des yeux (nystagmus) et les symptômes du patient (vertige, désorientation) pour identifier si un VPPB ou un trouble vestibulaire est en cause.   <br/>
+<strong>Réactions cliniques</strong> : Si des vertiges ou un nystagmus (mouvement involontaire des yeux) se produisent lors des rotations, cela suggère la présence d’un trouble vestibulaire, comme le VPPB.<br/>
+3. <strong>Durée du Test</strong> :<br/>
+-Le test dure généralement entre <strong>5 et 10 minutes</strong>. Il est rapide et simple, mais les résultats doivent être soigneusement interprétés par un professionnel qualifié.<br/>
+4. <strong>Post-examen</strong> :   <br/>
+<strong>Suivi immédiat</strong> : Après le test, le patient peut ressentir de légers vertiges ou une désorientation. Ces symptômes sont généralement temporaires et disparaissent en quelques minutes.   <br/>
+<strong>Reprise des activités normales</strong> : En l'absence de complications, le patient peut reprendre ses activités normales après le test. Cependant, si des symptômes persistent, un suivi médical peut être nécessaire.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications du Test de Roll</h2></div><div class="info-text"><p><p>Bien que le test de Roll soit généralement sûr, il comporte certaines contre-indications et précautions :<br/>
+<strong>Problèmes cervicaux</strong> : Les patients ayant des problèmes de cou, comme des douleurs cervicales aiguës ou des hernies discales, doivent éviter ce test, car les rotations de la tête peuvent aggraver la douleur.<br/>
+<strong>Traumatisme crânien récent</strong> : Les patients ayant subi un traumatisme crânien récent devraient éviter ce test, car il pourrait aggraver les symptômes.<br/>
+<strong>Troubles cardiaques graves</strong> : Les patients souffrant de troubles cardiaques sévères (comme des arythmies) doivent informer leur médecin, car le test pourrait entraîner une gêne.<br/>
+<strong>Femmes enceintes</strong> : Bien que généralement sûr, il est recommandé aux femmes enceintes de consulter leur médecin avant de réaliser le test, surtout si elles souffrent de vertiges, afin d'évaluer si ce test est approprié.<br/>
+<strong>Instabilité neurologique</strong> : Les patients souffrant de troubles neurologiques graves (comme des accidents vasculaires cérébraux récents ou des troubles graves du système nerveux) devraient éviter le test de Roll.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour le Test de Roll(Références spécifiques à WIC-DOCTOR)</h2></div><div class="info-text"><p><p>Le test de Roll est principalement réalisé par des <strong>spécialistes ORL</strong> et nécessite des lieux de soins spécifiques. Voici les principaux lieux et types de soins associés à ce test, selon <strong>WIC-DOCTOR</strong> :<br/>
+1. <strong>Cabinets de Médecins ORL</strong> :<br/>
+-Les <strong>médecins spécialisés en <a href="https://wic-doctor.com/medecin/orl-et-stomatologue.html">oto-rhino-laryngologie</a></strong> (ORL) sont les professionnels de santé qui réalisent ce test. Ils sont formés pour interpréter les résultats du test et établir un diagnostic de troubles vestibulaires.<br/>
+2. <strong>Centres spécialisés en rééducation vestibulaire</strong> :<br/>
+-Dans certains centres de rééducation vestibulaire, ce test est utilisé dans le cadre d’un programme de diagnostic et de réadaptation pour les patients souffrant de vertiges chroniques ou de troubles de l'équilibre.<br/>
+3. <strong>Hôpitaux et Cliniques de Médecine Spécialisée</strong> :<br/>
+-Les hôpitaux ou cliniques disposant de services de neurologie, de médecine interne ou de médecine ORL peuvent réaliser ce test pour identifier les troubles de l’équilibre et traiter des pathologies comme le VPPB.<br/>
+4. <strong>Services d'Urgence Vestibulaire</strong> :<br/>
+-Certains établissements médicaux disposent de services d’urgence spécialisés dans les vertiges et troubles vestibulaires. Ce test peut être effectué dans des situations d’urgence où les vertiges sont soudains et nécessitent une évaluation immédiate.<br/>
+5. <strong>Consultations en Ambulatoire</strong> :<br/>
+-Le test de Roll peut être effectué en consultation ambulatoire chez un spécialiste ORL. Les résultats sont généralement rapidement disponibles et permettent une gestion immédiate des troubles.<br/>
+6. <strong>Suivi Médical après le Test</strong> :<br/>
+-Après le test, un suivi peut être nécessaire, surtout si des troubles vestibulaires sont diagnostiqués. Le médecin peut recommander des traitements comme des <strong>exercices de rééducation vestibulaire</strong>, des médicaments contre le vertige ou des ajustements de traitement en fonction des résultats.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

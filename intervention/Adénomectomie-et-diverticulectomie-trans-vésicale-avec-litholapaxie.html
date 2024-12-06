@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,31 +222,29 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications de l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement de la procédure d'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications à l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un lieu de soin adapté pour l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications de l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement de la procédure d'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Contre-indications à l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et types de soins disponibles pour l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</h2></div><div class="info-text"><p><p>L’<strong>adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</strong> est une procédure chirurgicale complexe réalisée pour traiter des pathologies urologiques impliquant l'hypertrophie bénigne de la prostate (adénome prostatique), des diverticules vésicaux et des calculs urinaires. Cette intervention combine plusieurs techniques pour retirer une <strong>tumeur bénigne de la prostate</strong> (adénome), éliminer un <strong>diverticule de la vessie</strong> et fragmenter les <strong>calculs urinaires</strong> par <strong>litholapaxie</strong>.</p><p>Réalisée sous <strong>anesthésie générale</strong>, cette chirurgie trans-vésicale vise à résoudre des problèmes urinaires graves, notamment ceux qui affectent la miction et la qualité de vie du patient.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</h2></div><div class="info-text"><p><p>L’adénomectomie et diverticulectomie trans-vésicale avec litholapaxie est indiquée dans les cas suivants :</p><ul>
-<li><strong>Hypertrophie bénigne de la prostate (HBP) avec adénome prostatique</strong> : Lorsque l’adénome prostatique entraîne des symptômes sévères comme l'obstruction urinaire, la rétention urinaire, les infections urinaires récurrentes, ou l'incapacité de vider complètement la vessie.</li>
-<li><strong>Diverticule vésical</strong> : Un diverticule est une poche anormale dans la paroi de la vessie qui peut se remplir d'urine et devenir infectée. Cette intervention est pratiquée lorsque le diverticule cause des infections urinaires récurrentes, des douleurs pelviennes, ou une obstruction urinaire.</li>
-<li><strong>Calculs urinaires (litholapaxie)</strong> : Les calculs présents dans la vessie ou les voies urinaires inférieures, souvent associés à un diverticule, sont retirés ou fragmentés par <strong>litholapaxie</strong>, une technique qui utilise un laser ou des ondes de choc pour réduire les calculs en petites particules éliminées ensuite par voie naturelle.</li>
-<li><strong>Symptômes urinaires sévères</strong> : Lorsque la combinaison de l’adénome prostatique, du diverticule et des calculs génère des symptômes significatifs, impactant la qualité de vie du patient.</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de la procédure d'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention :</strong>
-Avant l’intervention, une série d’examens sont réalisés, notamment des <strong>analyses de sang</strong>, des <strong>échographies</strong>, et des <strong>urographies</strong> pour évaluer l’état des voies urinaires, la taille de la prostate et la présence éventuelle de calculs. Un <strong>cystoscanner</strong> ou une <strong>cystoscopie</strong> peut être utilisé pour évaluer la présence de diverticules dans la vessie et leur taille.</p><p>Le patient doit également <strong>cesser de prendre certains médicaments</strong>, notamment les anticoagulants, plusieurs jours avant la procédure pour réduire le risque de saignement.</p><p><strong>L'intervention chirurgicale :</strong>
-L’adénomectomie et diverticulectomie trans-vésicale avec litholapaxie se déroule généralement en plusieurs étapes :</p><ol>
-<li><strong>Incision transvésicale</strong> : L’intervention commence par une incision dans la <strong>vessie</strong>, généralement à l'aide d'un <strong>cystoscope</strong> ou d’une incision plus large, selon la complexité des structures à traiter.</li>
-<li><strong>Retrait de l’adénome prostatique</strong> : Le <strong>tissu bénin</strong> de la prostate (adénome) est enlevé pour soulager l’obstruction des voies urinaires. Cette étape peut se faire à l'aide d'un <strong>laser ou d'un bistouri électrique</strong>.</li>
-<li><strong>Élimination des diverticules</strong> : Les diverticules présents dans la paroi de la vessie sont retirés ou rétrécis pour améliorer la fonction vésicale et éviter les infections urinaires récurrentes.</li>
-<li><strong>Litholapaxie (fragmentation des calculs)</strong> : Si des <strong>calculs urinaires</strong> sont présents, la <strong>litholapaxie</strong> est réalisée en fragmentant les calculs à l’aide d’un <strong>laser ou d’ultrasons</strong>, permettant ainsi leur élimination par voie urinaire naturelle.</li>
-<li><strong>Sutures et récupération</strong> : Après avoir effectué ces étapes, l'incision est suturée et un <strong>cathéter</strong> peut être placé dans la vessie pour permettre l'élimination de l’urine et éviter les complications post-opératoires.</li>
-</ol><p>La durée totale de l'intervention varie de <strong>2 à 4 heures</strong> en fonction de la complexité et de l'étendue des pathologies traitées.</p><p><strong>Soins post-opératoires :</strong>
-Le patient est généralement hospitalisé pendant <strong>2 à 3 jours</strong> après l’intervention, selon son état général et l’évolution de la récupération. Des <strong>analyses de contrôle</strong> (échographies, analyses urinaires, etc.) seront réalisées pour s’assurer que la vessie et la prostate fonctionnent correctement et que les calculs ont été complètement éliminés.</p><p>Une surveillance attentive est nécessaire pour prévenir les infections urinaires et autres complications. Des <strong>antibiotiques</strong> et des <strong>analgésiques</strong> peuvent être administrés pour faciliter la récupération.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications à l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</h2></div><div class="info-text"><p><p>Certaines situations peuvent rendre cette intervention risquée ou inappropriée :</p><ul>
-<li><strong>Infections urinaires actives</strong> : En cas d'infection urinaire sévère ou non contrôlée, l’intervention peut être retardée jusqu’à ce que l’infection soit traitée.</li>
-<li><strong>Troubles de la coagulation</strong> : Les patients présentant des troubles de la coagulation ou qui prennent des anticoagulants à long terme doivent être soigneusement évalués avant l’intervention.</li>
-<li><strong>Cancer prostatique ou vésical avancé</strong> : Cette intervention est généralement contre-indiquée en cas de cancer avancé de la prostate ou de la vessie, car elle pourrait ne pas être suffisante pour traiter la maladie de manière adéquate.</li>
-<li><strong>Comorbidités graves</strong> : Les patients présentant des comorbidités graves telles qu’une <strong>insuffisance cardiaque</strong>, une <strong>insuffisance rénale avancée</strong>, ou une <strong>maladie pulmonaire sévère</strong> peuvent avoir un risque accru lors de cette intervention.</li>
-<li><strong>Pathologies vasculaires sévères</strong> : Les patients ayant des troubles vasculaires graves peuvent présenter un risque de complications lors de l’intervention.</li>
-</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> recommande plusieurs types d’établissements pour réaliser l’adénomectomie et diverticulectomie trans-vésicale avec litholapaxie, en fonction de la complexité de l’intervention.</p><h4><strong>1. Hôpitaux spécialisés en chirurgie urologique</strong></h4><p>Les <strong>hôpitaux spécialisés en urologie</strong> sont les établissements les plus courants pour réaliser cette intervention, notamment pour les cas complexes ou lorsque la chirurgie ouverte est nécessaire. Ces hôpitaux sont équipés de <strong>salles d’opération modernes</strong>, d’un personnel qualifié et de technologies avancées pour effectuer les interventions, y compris la litholapaxie, en toute sécurité.</p><h4><strong>2. Cliniques privées de chirurgie urologique</strong></h4><p>Certaines <strong>cliniques privées spécialisées en urologie</strong> peuvent offrir des soins adaptés pour des cas moins complexes, notamment pour les adénomes prostatiques bénins ou les calculs urinaires simples. Elles sont bien équipées pour réaliser des interventions moins invasives, telles que la <strong>cystoscopie</strong>, la <strong>litholapaxie</strong> et la <strong>résection prostatique</strong>.</p><h4><strong>3. Centres médicaux avec plateformes de soins en ligne</strong></h4><p>Le portail <strong>WIC-DOCTOR</strong> permet de trouver des <strong>chirurgiens spécialisés en urologie</strong>, des <strong>centres médicaux certifiés</strong></p><p>et des <strong>cliniques partenaires</strong>, permettant ainsi aux patients de prendre des rendez-vous en ligne, d’obtenir des avis d’experts et de consulter les options de soins disponibles selon leurs besoins.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un lieu de soin adapté pour l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</h2></div><div class="info-text"><p><p>L'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie est une intervention délicate nécessitant des chirurgiens expérimentés et des équipements modernes. Grâce au portail <strong>WIC-DOCTOR</strong>, les patients peuvent trouver des établissements spécialisés offrant des soins de qualité, adaptés à leur situation médicale, et un suivi personnalisé pour garantir la meilleure prise en charge possible.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</h2></div><div class="info-text"><p><p>L’<strong>adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</strong> est une procédure chirurgicale complexe réalisée pour traiter des pathologies urologiques impliquant l'hypertrophie bénigne de la prostate (adénome prostatique), des diverticules vésicaux et des calculs urinaires. Cette intervention combine plusieurs techniques pour retirer une <strong>tumeur bénigne de la prostate</strong> (adénome), éliminer un <strong>diverticule de la vessie</strong> et fragmenter les <strong>calculs urinaires</strong> par <strong>litholapaxie</strong>.<br/>
+Réalisée sous <strong>anesthésie générale</strong>, cette chirurgie trans-vésicale vise à résoudre des problèmes urinaires graves, notamment ceux qui affectent la miction et la qualité de vie du patient.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</h2></div><div class="info-text"><p><p>L’adénomectomie et diverticulectomie trans-vésicale avec litholapaxie est indiquée dans les cas suivants :<br/>
+<strong>Hypertrophie bénigne de la prostate (HBP) avec adénome prostatique</strong> : Lorsque l’adénome prostatique entraîne des symptômes sévères comme l'obstruction urinaire, la rétention urinaire, les infections urinaires récurrentes, ou l'incapacité de vider complètement la vessie.  <strong>Diverticule vésical</strong> : Un diverticule est une poche anormale dans la paroi de la vessie qui peut se remplir d'urine et devenir infectée. Cette intervention est pratiquée lorsque le diverticule cause des infections urinaires récurrentes, des douleurs pelviennes, ou une obstruction urinaire.  <strong>Calculs urinaires (litholapaxie)</strong> : Les calculs présents dans la vessie ou les voies urinaires inférieures, souvent associés à un diverticule, sont retirés ou fragmentés par <strong>litholapaxie</strong>, une technique qui utilise un laser ou des ondes de choc pour réduire les calculs en petites particules éliminées ensuite par voie naturelle.  <strong>Symptômes urinaires sévères</strong> : Lorsque la combinaison de l’adénome prostatique, du diverticule et des calculs génère des symptômes significatifs, impactant la qualité de vie du patient.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de la procédure d'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention :</strong>
+Avant l’intervention, une série d’examens sont réalisés, notamment des <strong>analyses de sang</strong>, des <strong>échographies</strong>, et des <strong>urographies</strong> pour évaluer l’état des voies urinaires, la taille de la prostate et la présence éventuelle de calculs. Un <strong>cystoscanner</strong> ou une <strong>cystoscopie</strong> peut être utilisé pour évaluer la présence de diverticules dans la vessie et leur taille.<br/>
+Le patient doit également <strong>cesser de prendre certains médicaments</strong>, notamment les anticoagulants, plusieurs jours avant la procédure pour réduire le risque de saignement.<br/>
+<strong>L'intervention chirurgicale :</strong>
+L’adénomectomie et diverticulectomie trans-vésicale avec litholapaxie se déroule généralement en plusieurs étapes :<br/>
+1. <strong>Incision transvésicale</strong> : L’intervention commence par une incision dans la <strong>vessie</strong>, généralement à l'aide d'un <strong>cystoscope</strong> ou d’une incision plus large, selon la complexité des structures à traiter.  2. <strong>Retrait de l’adénome prostatique</strong> : Le <strong>tissu bénin</strong> de la prostate (adénome) est enlevé pour soulager l’obstruction des voies urinaires. Cette étape peut se faire à l'aide d'un <strong>laser ou d'un bistouri électrique</strong>.  3. <strong>Élimination des diverticules</strong> : Les diverticules présents dans la paroi de la vessie sont retirés ou rétrécis pour améliorer la fonction vésicale et éviter les infections urinaires récurrentes.  4. <strong>Litholapaxie (fragmentation des calculs)</strong> : Si des <strong>calculs urinaires</strong> sont présents, la <strong>litholapaxie</strong> est réalisée en fragmentant les calculs à l’aide d’un <strong>laser ou d’ultrasons</strong>, permettant ainsi leur élimination par voie urinaire naturelle.  5. <strong>Sutures et récupération</strong> : Après avoir effectué ces étapes, l'incision est suturée et un <strong>cathéter</strong> peut être placé dans la vessie pour permettre l'élimination de l’urine et éviter les complications post-opératoires.<br/>
+La durée totale de l'intervention varie de <strong>2 à 4 heures</strong> en fonction de la complexité et de l'étendue des pathologies traitées.<br/>
+<strong>Soins post-opératoires :</strong>
+Le patient est généralement hospitalisé pendant <strong>2 à 3 jours</strong> après l’intervention, selon son état général et l’évolution de la récupération. Des <strong>analyses de contrôle</strong> (échographies, analyses urinaires, etc.) seront réalisées pour s’assurer que la vessie et la prostate fonctionnent correctement et que les calculs ont été complètement éliminés.<br/>
+Une surveillance attentive est nécessaire pour prévenir les infections urinaires et autres complications. Des <strong>antibiotiques</strong> et des <strong>analgésiques</strong> peuvent être administrés pour faciliter la récupération.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications à l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie</h2></div><div class="info-text"><p><p>Certaines situations peuvent rendre cette intervention risquée ou inappropriée :<br/>
+<strong>Infections urinaires actives</strong> : En cas d'infection urinaire sévère ou non contrôlée, l’intervention peut être retardée jusqu’à ce que l’infection soit traitée.  <strong>Troubles de la coagulation</strong> : Les patients présentant des troubles de la coagulation ou qui prennent des anticoagulants à long terme doivent être soigneusement évalués avant l’intervention.  <strong>Cancer prostatique ou vésical avancé</strong> : Cette intervention est généralement contre-indiquée en cas de cancer avancé de la prostate ou de la vessie, car elle pourrait ne pas être suffisante pour traiter la maladie de manière adéquate.  <strong>Comorbidités graves</strong> : Les patients présentant des comorbidités graves telles qu’une <strong>insuffisance cardiaque</strong>, une <strong>insuffisance rénale avancée</strong>, ou une <strong>maladie pulmonaire sévère</strong> peuvent avoir un risque accru lors de cette intervention.  <strong>Pathologies vasculaires sévères</strong> : Les patients ayant des troubles vasculaires graves peuvent présenter un risque de complications lors de l’intervention.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et types de soins disponibles pour l'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> recommande plusieurs types d’établissements pour réaliser l’adénomectomie et diverticulectomie trans-vésicale avec litholapaxie, en fonction de la complexité de l’intervention.  </p><h4><strong>Hôpitaux spécialisés en chirurgie urologique</strong></h4><p>Les <strong>hôpitaux spécialisés en urologie</strong> sont les établissements les plus courants pour réaliser cette intervention, notamment pour les cas complexes ou lorsque la chirurgie ouverte est nécessaire. Ces hôpitaux sont équipés de <strong>salles d’opération modernes</strong>, d’un personnel qualifié et de technologies avancées pour effectuer les interventions, y compris la litholapaxie, en toute sécurité.  </p><h4><strong>Cliniques privées de chirurgie urologique</strong></h4><p>Certaines <strong>cliniques privées spécialisées en urologie</strong> peuvent offrir des soins adaptés pour des cas moins complexes, notamment pour les adénomes prostatiques bénins ou les calculs urinaires simples. Elles sont bien équipées pour réaliser des interventions moins invasives, telles que la <strong>cystoscopie</strong>, la <strong>litholapaxie</strong> et la <strong>résection prostatique</strong>.  </p><h4><strong>Centres médicaux avec plateformes de soins en ligne</strong></h4><p>Le portail <strong>WIC-DOCTOR</strong> permet de trouver des <strong>chirurgiens spécialisés en urologie</strong>, des <strong>centres médicaux certifiés</strong></p><p>et des <strong>cliniques partenaires</strong>, permettant ainsi aux patients de prendre des rendez-vous en ligne, d’obtenir des avis d’experts et de consulter les options de soins disponibles selon leurs besoins.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>L'adénomectomie et diverticulectomie trans-vésicale avec litholapaxie est une intervention délicate nécessitant des chirurgiens expérimentés et des équipements modernes. Grâce au portail <strong>WIC-DOCTOR</strong>, les patients peuvent trouver des établissements spécialisés offrant des soins de qualité, adaptés à leur situation médicale, et un suivi personnalisé pour garantir la meilleure prise en charge possible.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

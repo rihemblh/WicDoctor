@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,28 +222,26 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la cystectomie radicale avec création de voies urinaires intestinales<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications de la cystectomie radicale avec voies urinaires intestinales orthotopiques et hétérotopiques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement de la procédure de cystectomie radicale avec reconstruction urinaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications à la cystectomie radicale avec voies urinaires intestinales<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour la cystectomie radicale avec voies urinaires intestinales selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un établissement adapté pour la cystectomie radicale avec voies urinaires intestinales<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la cystectomie radicale avec création de voies urinaires intestinales<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications de la cystectomie radicale avec voies urinaires intestinales orthotopiques et hétérotopiques<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement de la procédure de cystectomie radicale avec reconstruction urinaire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Contre-indications à la cystectomie radicale avec voies urinaires intestinales<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et types de soins disponibles pour la cystectomie radicale avec voies urinaires intestinales selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la cystectomie radicale avec création de voies urinaires intestinales</h2></div><div class="info-text"><p><p>La <strong>cystectomie radicale</strong> est une intervention chirurgicale majeure qui consiste à retirer la <strong>vessie</strong> en raison de tumeurs malignes, de pathologies graves ou de lésions irréparables. Dans les cas où une ablation totale de la vessie est nécessaire, des solutions doivent être mises en place pour permettre la continuité de la fonction urinaire. C’est dans ce cadre que sont réalisées des reconstructions urinaires, telles que la création de <strong>voies urinaires intestinales orthotopiques</strong> (néo-vessie) ou <strong>hétérotopiques</strong>.</p><p>La <strong>néo-vessie</strong> (voie urinaire orthotopique) utilise une portion de l'intestin pour créer une nouvelle vessie, qui est positionnée dans la cavité pelvienne à la place de l’ancienne vessie, et permet au patient de mictionner de manière plus ou moins naturelle. Les voies urinaires <strong>hétérotopiques</strong>, quant à elles, impliquent la création d'une poche urinaire qui est reliée à un conduit externe, comme un cathéter ou un stoma.</p><p>Cette intervention complexe nécessite une prise en charge spécialisée avant, pendant et après la chirurgie. Les patients doivent être bien informés des différentes options disponibles, des avantages et des inconvénients de chaque type de reconstruction urinaire, ainsi que des risques associés.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de la cystectomie radicale avec voies urinaires intestinales orthotopiques et hétérotopiques</h2></div><div class="info-text"><p><p>La cystectomie radicale avec reconstruction urinaire est indiquée dans plusieurs situations, principalement pour les patients atteints de <strong>cancer de la vessie</strong> avancé ou d’autres pathologies graves :</p><ul>
-<li><strong>Cancer de la vessie</strong> : La principale indication pour la cystectomie radicale avec création de voies urinaires intestinales est la présence d'un cancer invasif de la vessie qui ne peut être contrôlé par des traitements moins invasifs.</li>
-<li><strong>Cystite interstitielle grave</strong> : Lorsque les traitements médicaux échouent, cette pathologie peut nécessiter une cystectomie radicale pour soulager la douleur chronique et améliorer la qualité de vie.</li>
-<li><strong>Malformations congénitales ou anomalies structurelles graves</strong> : Certains patients souffrant de malformations congénitales de la vessie ou de lésions traumatiques sévères peuvent avoir besoin de cette chirurgie.</li>
-<li><strong>Infections récurrentes graves ou complications chroniques</strong> : Des infections récurrentes non contrôlables, des calculs urinaires chroniques ou des problèmes de fonction urinaire peuvent justifier cette intervention.</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de la procédure de cystectomie radicale avec reconstruction urinaire</h2></div><div class="info-text"><p><p><strong>Préparation avant l’intervention :</strong>
-- <strong>Consultations préopératoires</strong> : Avant la chirurgie, les patients doivent rencontrer plusieurs spécialistes, tels que des<a href="https://wic-doctor.com/medecin/urologue.html"> urologues</a>, des chirurgiens digestifs et des oncologues, pour discuter de l'option de reconstruction urinaire et des différentes alternatives. Des examens d’imagerie comme la <strong>CT-scan</strong> ou l'<strong>IRM</strong> sont utilisés pour évaluer l’état de la vessie, des organes voisins et de l'abdomen.
-- <strong>Planification de la reconstruction urinaire</strong> : Le type de reconstruction urinaire (orthotopique ou hétérotopique) est choisi en fonction des conditions médicales du patient, de son âge, de son état de santé général et de ses préférences personnelles.</p><p><strong>L’intervention chirurgicale :</strong>
-- La cystectomie radicale est réalisée sous anesthésie générale. La <strong>vessie</strong> est retirée en totalité, en prenant soin de préserver les structures environnantes si possible. L'intestin est ensuite réutilisé pour créer une <strong>néo-vessie</strong> (reconstruction orthotopique) ou une <strong>poche urinaire</strong> qui sera reliée à un <strong>stoma</strong> ou un conduit externe (reconstruction hétérotopique).
-- La création d'une <strong>néo-vessie</strong> permet au patient de mictionner de manière naturelle, tandis que les <strong>voies urinaires hétérotopiques</strong> nécessitent un cathéter ou une poche externe pour recueillir l'urine.
-- La durée de l'intervention varie, mais elle dure généralement entre <strong>4 et 6 heures</strong> en fonction de la complexité de la chirurgie.</p><p><strong>Soins post-opératoires :</strong>
-- Après l’intervention, le patient reste hospitalisé pendant plusieurs jours pour surveiller l'évolution et s'assurer que la reconstruction urinaire fonctionne correctement. Des examens de suivi, comme une <strong>urografie</strong> ou une <strong>cytoscopie</strong>, peuvent être réalisés pour vérifier l'intégrité des nouvelles voies urinaires.
-- Le patient devra suivre un protocole de rééducation pour apprendre à gérer la néo-vessie ou les voies urinaires hétérotopiques. La récupération complète peut prendre plusieurs mois.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications à la cystectomie radicale avec voies urinaires intestinales</h2></div><div class="info-text"><p><p>Certaines conditions peuvent rendre cette intervention risquée ou inappropriée pour certains patients :</p><ul>
-<li><strong>Infections urinaires chroniques ou troubles de la miction</strong> : Les patients souffrant de graves infections urinaires ou de troubles qui rendent la miction difficile ou impossible peuvent ne pas être de bons candidats à la néo-vessie.</li>
-<li><strong>Problèmes digestifs graves</strong> : La reconstruction urinaire utilisant l’intestin peut ne pas être possible chez les patients ayant des antécédents de maladies digestives sévères, comme les <strong>maladies inflammatoires chroniques de l’intestin</strong>.</li>
-<li><strong>Mauvais état général de santé</strong> : Les patients souffrant de comorbidités graves, comme des maladies cardiaques, pulmonaires ou hépatiques avancées, peuvent être exclus de l’intervention en raison des risques associés à une chirurgie majeure.</li>
-<li><strong>Anomalies anatomiques complexes</strong> : Certaines anomalies anatomiques ou des lésions de la région pelvienne peuvent compliquer la reconstruction urinaire.</li>
-</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour la cystectomie radicale avec voies urinaires intestinales selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Sur le portail <strong>WIC-DOCTOR</strong>, vous pouvez trouver des informations sur les <strong>centres spécialisés</strong> dans la cystectomie radicale et la reconstruction urinaire. Voici les principaux types de soins disponibles :</p><h4><strong>1. Hôpitaux et centres oncologiques spécialisés</strong></h4><p>Les <strong>hôpitaux spécialisés</strong> en <strong>urologie</strong> et en <strong>oncologie</strong> sont les établissements les plus fréquents où cette intervention est réalisée. Ces hôpitaux sont équipés des technologies et des ressources nécessaires pour effectuer une cystectomie radicale, avec des options de reconstruction urinaire personnalisées, et disposent de <strong>chirurgiens spécialisés</strong> dans cette procédure complexe.</p><h4><strong>2. Cliniques spécialisées en urologie et chirurgie digestive</strong></h4><p>Certaines <strong>cliniques privées</strong> offrent des services spécialisés dans la chirurgie de la vessie et la reconstruction des voies urinaires. Ces cliniques sont souvent dotées d’équipes multidisciplinaires pour garantir un suivi médical optimal avant et après la chirurgie.</p><h4><strong>3. Centres médicaux avec plateformes de soins en ligne</strong></h4><p>Des plateformes comme <strong>WIC-DOCTOR</strong> permettent aux patients de consulter des <strong>spécialistes en urologie</strong> et d'obtenir des informations détaillées sur les centres médicaux capables de réaliser cette intervention. Ces plateformes permettent aussi de vérifier les avis des patients, comparer les prix et prendre rendez-vous avec des médecins qualifiés.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un établissement adapté pour la cystectomie radicale avec voies urinaires intestinales</h2></div><div class="info-text"><p><p>La cystectomie radicale avec reconstruction urinaire est une intervention délicate qui nécessite des compétences chirurgicales spécialisées et une équipe multidisciplinaire. Le choix de l’<strong>établissement médical</strong> est crucial pour garantir la réussite de l’intervention et la qualité du suivi post-opératoire. Le portail <strong>WIC-DOCTOR</strong> offre un outil pratique pour trouver des <strong>centres certifiés</strong> spécialisés dans cette procédure.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la cystectomie radicale avec création de voies urinaires intestinales</h2></div><div class="info-text"><p><p>La <strong>cystectomie radicale</strong> est une intervention chirurgicale majeure qui consiste à retirer la <strong>vessie</strong> en raison de tumeurs malignes, de pathologies graves ou de lésions irréparables. Dans les cas où une ablation totale de la vessie est nécessaire, des solutions doivent être mises en place pour permettre la continuité de la fonction urinaire. C’est dans ce cadre que sont réalisées des reconstructions urinaires, telles que la création de <strong>voies urinaires intestinales orthotopiques</strong> (néo-vessie) ou <strong>hétérotopiques</strong>.<br/>
+La <strong>néo-vessie</strong> (voie urinaire orthotopique) utilise une portion de l'intestin pour créer une nouvelle vessie, qui est positionnée dans la cavité pelvienne à la place de l’ancienne vessie, et permet au patient de mictionner de manière plus ou moins naturelle. Les voies urinaires <strong>hétérotopiques</strong>, quant à elles, impliquent la création d'une poche urinaire qui est reliée à un conduit externe, comme un cathéter ou un stoma.<br/>
+Cette intervention complexe nécessite une prise en charge spécialisée avant, pendant et après la chirurgie. Les patients doivent être bien informés des différentes options disponibles, des avantages et des inconvénients de chaque type de reconstruction urinaire, ainsi que des risques associés.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la cystectomie radicale avec voies urinaires intestinales orthotopiques et hétérotopiques</h2></div><div class="info-text"><p><p>La cystectomie radicale avec reconstruction urinaire est indiquée dans plusieurs situations, principalement pour les patients atteints de <strong>cancer de la vessie</strong> avancé ou d’autres pathologies graves :<br/>
+<strong>Cancer de la vessie</strong> : La principale indication pour la cystectomie radicale avec création de voies urinaires intestinales est la présence d'un cancer invasif de la vessie qui ne peut être contrôlé par des traitements moins invasifs.  <strong>Cystite interstitielle grave</strong> : Lorsque les traitements médicaux échouent, cette pathologie peut nécessiter une cystectomie radicale pour soulager la douleur chronique et améliorer la qualité de vie.  <strong>Malformations congénitales ou anomalies structurelles graves</strong> : Certains patients souffrant de malformations congénitales de la vessie ou de lésions traumatiques sévères peuvent avoir besoin de cette chirurgie.  <strong>Infections récurrentes graves ou complications chroniques</strong> : Des infections récurrentes non contrôlables, des calculs urinaires chroniques ou des problèmes de fonction urinaire peuvent justifier cette intervention.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de la procédure de cystectomie radicale avec reconstruction urinaire</h2></div><div class="info-text"><p><p><strong>Préparation avant l’intervention :</strong>
+<strong>Consultations préopératoires</strong> : Avant la chirurgie, les patients doivent rencontrer plusieurs spécialistes, tels que des<a href="https://wic-doctor.com/medecin/urologue.html"> urologues</a>, des chirurgiens digestifs et des oncologues, pour discuter de l'option de reconstruction urinaire et des différentes alternatives. Des examens d’imagerie comme la <strong>CT-scan</strong> ou l'<strong>IRM</strong> sont utilisés pour évaluer l’état de la vessie, des organes voisins et de l'abdomen.  <strong>Planification de la reconstruction urinaire</strong> : Le type de reconstruction urinaire (orthotopique ou hétérotopique) est choisi en fonction des conditions médicales du patient, de son âge, de son état de santé général et de ses préférences personnelles.<br/>
+<strong>L’intervention chirurgicale :</strong>
+- La cystectomie radicale est réalisée sous anesthésie générale. La <strong>vessie</strong> est retirée en totalité, en prenant soin de préserver les structures environnantes si possible. L'intestin est ensuite réutilisé pour créer une <strong>néo-vessie</strong> (reconstruction orthotopique) ou une <strong>poche urinaire</strong> qui sera reliée à un <strong>stoma</strong> ou un conduit externe (reconstruction hétérotopique).  - La création d'une <strong>néo-vessie</strong> permet au patient de mictionner de manière naturelle, tandis que les <strong>voies urinaires hétérotopiques</strong> nécessitent un cathéter ou une poche externe pour recueillir l'urine.  - La durée de l'intervention varie, mais elle dure généralement entre <strong>4 et 6 heures</strong> en fonction de la complexité de la chirurgie.<br/>
+<strong>Soins post-opératoires :</strong>
+- Après l’intervention, le patient reste hospitalisé pendant plusieurs jours pour surveiller l'évolution et s'assurer que la reconstruction urinaire fonctionne correctement. Des examens de suivi, comme une <strong>urografie</strong> ou une <strong>cytoscopie</strong>, peuvent être réalisés pour vérifier l'intégrité des nouvelles voies urinaires.  - Le patient devra suivre un protocole de rééducation pour apprendre à gérer la néo-vessie ou les voies urinaires hétérotopiques. La récupération complète peut prendre plusieurs mois.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications à la cystectomie radicale avec voies urinaires intestinales</h2></div><div class="info-text"><p><p>Certaines conditions peuvent rendre cette intervention risquée ou inappropriée pour certains patients :<br/>
+<strong>Infections urinaires chroniques ou troubles de la miction</strong> : Les patients souffrant de graves infections urinaires ou de troubles qui rendent la miction difficile ou impossible peuvent ne pas être de bons candidats à la néo-vessie.  <strong>Problèmes digestifs graves</strong> : La reconstruction urinaire utilisant l’intestin peut ne pas être possible chez les patients ayant des antécédents de maladies digestives sévères, comme les <strong>maladies inflammatoires chroniques de l’intestin</strong>.  <strong>Mauvais état général de santé</strong> : Les patients souffrant de comorbidités graves, comme des maladies cardiaques, pulmonaires ou hépatiques avancées, peuvent être exclus de l’intervention en raison des risques associés à une chirurgie majeure.  <strong>Anomalies anatomiques complexes</strong> : Certaines anomalies anatomiques ou des lésions de la région pelvienne peuvent compliquer la reconstruction urinaire.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et types de soins disponibles pour la cystectomie radicale avec voies urinaires intestinales selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Sur le portail <strong>WIC-DOCTOR</strong>, vous pouvez trouver des informations sur les <strong>centres spécialisés</strong> dans la cystectomie radicale et la reconstruction urinaire. Voici les principaux types de soins disponibles :  </p><h4><strong>Hôpitaux et centres oncologiques spécialisés</strong></h4><p>Les <strong>hôpitaux spécialisés</strong> en <strong>urologie</strong> et en <strong>oncologie</strong> sont les établissements les plus fréquents où cette intervention est réalisée. Ces hôpitaux sont équipés des technologies et des ressources nécessaires pour effectuer une cystectomie radicale, avec des options de reconstruction urinaire personnalisées, et disposent de <strong>chirurgiens spécialisés</strong> dans cette procédure complexe.  </p><h4><strong>Cliniques spécialisées en urologie et chirurgie digestive</strong></h4><p>Certaines <strong>cliniques privées</strong> offrent des services spécialisés dans la chirurgie de la vessie et la reconstruction des voies urinaires. Ces cliniques sont souvent dotées d’équipes multidisciplinaires pour garantir un suivi médical optimal avant et après la chirurgie.  </p><h4><strong>Centres médicaux avec plateformes de soins en ligne</strong></h4><p>Des plateformes comme <strong>WIC-DOCTOR</strong> permettent aux patients de consulter des <strong>spécialistes en urologie</strong> et d'obtenir des informations détaillées sur les centres médicaux capables de réaliser cette intervention. Ces plateformes permettent aussi de vérifier les avis des patients, comparer les prix et prendre rendez-vous avec des médecins qualifiés.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>La cystectomie radicale avec reconstruction urinaire est une intervention délicate qui nécessite des compétences chirurgicales spécialisées et une équipe multidisciplinaire. Le choix de l’<strong>établissement médical</strong> est crucial pour garantir la réussite de l’intervention et la qualité du suivi post-opératoire. Le portail <strong>WIC-DOCTOR</strong> offre un outil pratique pour trouver des <strong>centres certifiés</strong> spécialisés dans cette procédure.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

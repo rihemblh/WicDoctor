@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,78 +226,41 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la Cystoscopie avec un Instrument Flexible</h2></div><div class="info-text"><p><p>La <strong>cystoscopie avec un instrument flexible</strong> est une procédure endoscopique permettant d’examiner directement l’intérieur de la vessie et de l'urètre. Elle utilise un cystoscope flexible (un tube mince et flexible muni d’une caméra et d’une lumière) pour visualiser les muqueuses et les parois de la vessie, permettant ainsi de diagnostiquer et traiter diverses pathologies du système urinaire. Voici les principales indications pour cet examen :</p><ul>
-<li><strong>Diagnostic des infections urinaires récurrentes</strong> : La cystoscopie peut être utilisée pour identifier des anomalies dans la vessie, l'urètre ou la prostate, qui peuvent être responsables d'infections urinaires fréquentes ou résistantes aux traitements.</li>
-<li><strong>Examen des symptômes urinaires</strong> : Elle est souvent utilisée pour explorer des symptômes comme des douleurs abdominales basses, des difficultés à uriner, des hématuries (présence de sang dans les urines) ou des fuites urinaires inexpliquées.</li>
-<li><strong>Pathologies de la vessie</strong> : Cette procédure permet de détecter des anomalies telles que des calculs vésicaux, des tumeurs, des polypes, des inflammations ou des infections chroniques de la vessie (cystites).</li>
-<li><strong>Surveillance des tumeurs de la vessie</strong> : Les patients ayant des antécédents de cancer de la vessie ou ayant reçu un diagnostic de tumeur bénigne peuvent bénéficier d'une cystoscopie régulière pour surveiller l’évolution de ces pathologies.</li>
-<li><strong>Diagnostic des troubles urinaires fonctionnels</strong> : Elle est également utilisée pour évaluer des troubles fonctionnels comme l'incontinence urinaire, les obstructions urinaires ou les malformations congénitales de la vessie et de l'urètre.</li>
-<li><strong>Suivi post-opératoire</strong> : Après une intervention chirurgicale sur la vessie ou l'urètre (comme une prostatectomie), la cystoscopie permet de vérifier l’état de la zone opérée et d’identifier d’éventuelles complications comme les sténoses ou les résidus de tissu.</li>
-</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>La cystoscopie flexible est généralement réalisée en ambulatoire dans un cadre médical. L'examen est peu invasif, bien que certains patients puissent éprouver un inconfort. Voici les étapes principales de l'examen :</p><ol>
-<li><strong>Préparation</strong> :</li>
-<li><strong>Anesthésie locale</strong> : La procédure est réalisée sous anesthésie locale, généralement administrée sous forme de gel anesthésique appliqué dans l'urètre pour minimiser la douleur. Cette anesthésie peut engourdir la zone de l’urètre et de la vessie pendant l'examen.</li>
-<li><strong>Jeûne</strong> : Aucun jeûne strict n'est généralement requis, mais il peut être conseillé de ne pas manger ou boire de liquides juste avant l'examen si une sédation est prévue.</li>
-<li>
-<p><strong>Ingestion de liquide</strong> : Dans certains cas, le médecin peut demander au patient de boire beaucoup de liquide avant l'examen pour remplir la vessie, ce qui permet d’améliorer la visibilité lors de l'examen.</p>
-</li>
-<li>
-<p><strong>Réalisation de la cystoscopie</strong> :</p>
-</li>
-<li><strong>Introduction du cystoscope</strong> : Le cystoscope flexible est inséré doucement dans l’urètre, puis guidé jusqu’à la vessie. Grâce à la flexibilité de l’instrument, le médecin peut ajuster son angle pour obtenir une vue détaillée des parois de la vessie et de l'urètre.</li>
-<li><strong>Examen visuel et enregistrement</strong> : Une caméra située à l'extrémité du cystoscope permet de transmettre des images en temps réel sur un écran. Le médecin peut ainsi visualiser les tissus internes et repérer toute anomalie, comme des tumeurs, des calculs ou des inflammations. Si nécessaire, des biopsies peuvent être réalisées ou des petites interventions (comme le retrait de polypes) effectuées pendant la procédure.</li>
-<li>
-<p><strong>Utilisation de liquide</strong> : Un liquide stérile (souvent de l'eau ou une solution saline) est parfois injecté dans la vessie pour faciliter la visualisation et nettoyer la zone examinée.</p>
-</li>
-<li>
-<p><strong>Durée de l'examen</strong> :</p>
-</li>
-<li>
-<p>La cystoscopie avec un instrument flexible est un examen relativement rapide, généralement d'une durée de 10 à 20 minutes.</p>
-</li>
-<li>
-<p><strong>Post-examen</strong> :</p>
-</li>
-<li>Après l'examen, le patient peut ressentir une légère gêne ou une sensation de brûlure en urinant, mais cela disparaît généralement en quelques heures. Il est conseillé de boire beaucoup d'eau après l'examen pour faciliter l’élimination de tout résidu de produit anesthésique et réduire le risque d’infection.</li>
-<li>Dans certains cas, un suivi post-opératoire peut être recommandé, notamment si des biopsies ont été réalisées ou si des anomalies ont été détectées.</li>
-</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de la Cystoscopie avec un Instrument Flexible</h2></div><div class="info-text"><p><p>Bien que la cystoscopie flexible soit une procédure relativement sûre, elle n’est pas sans risques et comporte certaines contre-indications et précautions :</p><ul>
-<li><strong>Infections urinaires actives</strong> : En cas d'infection urinaire aiguë ou de prostatite, la cystoscopie est généralement contre-indiquée jusqu'à ce que l’infection soit traitée. Cela peut rendre l'examen plus difficile et augmenter le risque de propagation de l’infection.</li>
-<li><strong>Obstruction de l’urètre</strong> : Si l’urètre est obstrué par un calcul, une tumeur ou une malformation, la procédure peut être plus difficile à réaliser et peut nécessiter une intervention préalable.</li>
-<li><strong>Troubles de la coagulation</strong> : Les patients ayant des troubles de la coagulation (par exemple, ceux sous anticoagulants) doivent informer leur médecin, car il peut y avoir un risque accru de saignement pendant ou après la procédure.</li>
-<li><strong>Grossesse</strong> : Bien que la cystoscopie avec un instrument flexible soit généralement considérée comme sûre, elle est pratiquée avec prudence chez les femmes enceintes, notamment durant le premier trimestre, en raison de la manipulation d'instruments à proximité des organes reproducteurs.</li>
-</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins pour la Réalisation d’une Cystoscopie avec un Instrument Flexible</h2></div><div class="info-text"><p><p>La cystoscopie flexible est réalisée dans des environnements médicaux spécialisés. Voici les principaux lieux où l’examen peut être effectué, selon les indications sur le portail <strong>WIC-DOCTOR</strong> :</p><ol>
-<li><strong>Cliniques Urologiques</strong> :</li>
-<li>
-<p>Les cliniques spécialisées en urologie sont les principaux lieux pour réaliser des cystoscopies. Ces établissements disposent des équipements nécessaires pour effectuer des examens approfondis et fournir des résultats de haute qualité, notamment en cas de suspicion de pathologies urinaires graves ou chroniques.</p>
-</li>
-<li>
-<p><strong>Hôpitaux et Centres Médicaux</strong> :</p>
-</li>
-<li>
-<p>Dans les hôpitaux, notamment les services d’urologie ou de médecine interne, la cystoscopie flexible est pratiquée pour le diagnostic et le traitement des troubles urinaires. Les hôpitaux peuvent également être impliqués dans des cas nécessitant des interventions plus complexes ou un suivi après des biopsies.</p>
-</li>
-<li>
-<p><strong>Cabinets de Médecins<a href="https://wic-doctor.com/medecin/urologue.html"><a href="https://wic-doctor.com/medecin/urologue.html"> urologues</a></a></strong> :</p>
-</li>
-<li>
-<p>De nombreux<a href="https://wic-doctor.com/medecin/urologue.html"> urologues</a> exercent dans des cabinets privés ou des centres de santé spécialisés dans les maladies de l'appareil urinaire. Ces lieux peuvent proposer la cystoscopie dans le cadre d’un diagnostic ou d’un suivi régulier, notamment pour les patients souffrant d’infections urinaires récurrentes ou de troubles fonctionnels.</p>
-</li>
-<li>
-<p><strong>Centres de Santé Spécialisés</strong> :</p>
-</li>
-<li>
-<p>Certains centres de santé spécialisés, en particulier ceux qui se concentrent sur les soins ambulatoires, proposent des cystoscopies pour le diagnostic et la surveillance des troubles urinaires chroniques ou des pathologies bénignes de la vessie.</p>
-</li>
-<li>
-<p><strong>Services d'Urgences</strong> :</p>
-</li>
-<li>
-<p>En cas de saignement urinaire sévère, de rétention urinaire ou d’autres urgences urologiques, les services d’urgence des hôpitaux peuvent réaliser des cystoscopies d’urgence pour identifier rapidement la cause du problème et prendre les mesures nécessaires.</p>
-</li>
-<li>
-<p><strong>Suivi Médical Après la Cystoscopie</strong> :</p>
-</li>
-<li>Après l'examen, les résultats sont généralement examinés par un urologue, qui peut recommander un traitement complémentaire (médicaments, chirurgie) ou un suivi pour surveiller l'évolution de la pathologie identifiée. Des consultations régulières peuvent être nécessaires en fonction des résultats.</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la Cystoscopie avec un Instrument Flexible</h2></div><div class="info-text"><p><p>La <strong>cystoscopie avec un instrument flexible</strong> est une procédure endoscopique permettant d’examiner directement l’intérieur de la vessie et de l'urètre. Elle utilise un cystoscope flexible (un tube mince et flexible muni d’une caméra et d’une lumière) pour visualiser les muqueuses et les parois de la vessie, permettant ainsi de diagnostiquer et traiter diverses pathologies du système urinaire. Voici les principales indications pour cet examen :<br/>
+<strong>Diagnostic des infections urinaires récurrentes</strong> : La cystoscopie peut être utilisée pour identifier des anomalies dans la vessie, l'urètre ou la prostate, qui peuvent être responsables d'infections urinaires fréquentes ou résistantes aux traitements.<br/>
+<strong>Examen des symptômes urinaires</strong> : Elle est souvent utilisée pour explorer des symptômes comme des douleurs abdominales basses, des difficultés à uriner, des hématuries (présence de sang dans les urines) ou des fuites urinaires inexpliquées.<br/>
+<strong>Pathologies de la vessie</strong> : Cette procédure permet de détecter des anomalies telles que des calculs vésicaux, des tumeurs, des polypes, des inflammations ou des infections chroniques de la vessie (cystites).<br/>
+<strong>Surveillance des tumeurs de la vessie</strong> : Les patients ayant des antécédents de cancer de la vessie ou ayant reçu un diagnostic de tumeur bénigne peuvent bénéficier d'une cystoscopie régulière pour surveiller l’évolution de ces pathologies.<br/>
+<strong>Diagnostic des troubles urinaires fonctionnels</strong> : Elle est également utilisée pour évaluer des troubles fonctionnels comme l'incontinence urinaire, les obstructions urinaires ou les malformations congénitales de la vessie et de l'urètre.<br/>
+<strong>Suivi post-opératoire</strong> : Après une intervention chirurgicale sur la vessie ou l'urètre (comme une prostatectomie), la cystoscopie permet de vérifier l’état de la zone opérée et d’identifier d’éventuelles complications comme les sténoses ou les résidus de tissu.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>La cystoscopie flexible est généralement réalisée en ambulatoire dans un cadre médical. L'examen est peu invasif, bien que certains patients puissent éprouver un inconfort. Voici les étapes principales de l'examen :<br/>
+1. <strong>Préparation</strong> :   <br/>
+<strong>Anesthésie locale</strong> : La procédure est réalisée sous anesthésie locale, généralement administrée sous forme de gel anesthésique appliqué dans l'urètre pour minimiser la douleur. Cette anesthésie peut engourdir la zone de l’urètre et de la vessie pendant l'examen.   <br/>
+<strong>Jeûne</strong> : Aucun jeûne strict n'est généralement requis, mais il peut être conseillé de ne pas manger ou boire de liquides juste avant l'examen si une sédation est prévue.   <br/>
+<strong>Ingestion de liquide</strong> : Dans certains cas, le médecin peut demander au patient de boire beaucoup de liquide avant l'examen pour remplir la vessie, ce qui permet d’améliorer la visibilité lors de l'examen.<br/>
+2. <strong>Réalisation de la cystoscopie</strong> :   <br/>
+<strong>Introduction du cystoscope</strong> : Le cystoscope flexible est inséré doucement dans l’urètre, puis guidé jusqu’à la vessie. Grâce à la flexibilité de l’instrument, le médecin peut ajuster son angle pour obtenir une vue détaillée des parois de la vessie et de l'urètre.   <br/>
+<strong>Examen visuel et enregistrement</strong> : Une caméra située à l'extrémité du cystoscope permet de transmettre des images en temps réel sur un écran. Le médecin peut ainsi visualiser les tissus internes et repérer toute anomalie, comme des tumeurs, des calculs ou des inflammations. Si nécessaire, des biopsies peuvent être réalisées ou des petites interventions (comme le retrait de polypes) effectuées pendant la procédure.   <br/>
+<strong>Utilisation de liquide</strong> : Un liquide stérile (souvent de l'eau ou une solution saline) est parfois injecté dans la vessie pour faciliter la visualisation et nettoyer la zone examinée.<br/>
+3. <strong>Durée de l'examen</strong> :<br/>
+-La cystoscopie avec un instrument flexible est un examen relativement rapide, généralement d'une durée de 10 à 20 minutes.<br/>
+4. <strong>Post-examen</strong> :<br/>
+-Après l'examen, le patient peut ressentir une légère gêne ou une sensation de brûlure en urinant, mais cela disparaît généralement en quelques heures. Il est conseillé de boire beaucoup d'eau après l'examen pour faciliter l’élimination de tout résidu de produit anesthésique et réduire le risque d’infection.     - Dans certains cas, un suivi post-opératoire peut être recommandé, notamment si des biopsies ont été réalisées ou si des anomalies ont été détectées.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de la Cystoscopie avec un Instrument Flexible</h2></div><div class="info-text"><p><p>Bien que la cystoscopie flexible soit une procédure relativement sûre, elle n’est pas sans risques et comporte certaines contre-indications et précautions :<br/>
+<strong>Infections urinaires actives</strong> : En cas d'infection urinaire aiguë ou de prostatite, la cystoscopie est généralement contre-indiquée jusqu'à ce que l’infection soit traitée. Cela peut rendre l'examen plus difficile et augmenter le risque de propagation de l’infection.<br/>
+<strong>Obstruction de l’urètre</strong> : Si l’urètre est obstrué par un calcul, une tumeur ou une malformation, la procédure peut être plus difficile à réaliser et peut nécessiter une intervention préalable.<br/>
+<strong>Troubles de la coagulation</strong> : Les patients ayant des troubles de la coagulation (par exemple, ceux sous anticoagulants) doivent informer leur médecin, car il peut y avoir un risque accru de saignement pendant ou après la procédure.<br/>
+<strong>Grossesse</strong> : Bien que la cystoscopie avec un instrument flexible soit généralement considérée comme sûre, elle est pratiquée avec prudence chez les femmes enceintes, notamment durant le premier trimestre, en raison de la manipulation d'instruments à proximité des organes reproducteurs.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins pour la Réalisation d’une Cystoscopie avec un Instrument Flexible</h2></div><div class="info-text"><p><p>La cystoscopie flexible est réalisée dans des environnements médicaux spécialisés. Voici les principaux lieux où l’examen peut être effectué, selon les indications sur le portail <strong>WIC-DOCTOR</strong> :<br/>
+1. <strong>Cliniques Urologiques</strong> :<br/>
+-Les cliniques spécialisées en urologie sont les principaux lieux pour réaliser des cystoscopies. Ces établissements disposent des équipements nécessaires pour effectuer des examens approfondis et fournir des résultats de haute qualité, notamment en cas de suspicion de pathologies urinaires graves ou chroniques.   <br/>
+2. <strong>Hôpitaux et Centres Médicaux</strong> :<br/>
+-Dans les hôpitaux, notamment les services d’urologie ou de médecine interne, la cystoscopie flexible est pratiquée pour le diagnostic et le traitement des troubles urinaires. Les hôpitaux peuvent également être impliqués dans des cas nécessitant des interventions plus complexes ou un suivi après des biopsies.<br/>
+3. <strong>Cabinets de Médecins<a href="https://wic-doctor.com/medecin/urologue.html"><a href="https://wic-doctor.com/medecin/urologue.html"> urologues</a></a></strong> :<br/>
+-De nombreux<a href="https://wic-doctor.com/medecin/urologue.html"> urologues</a> exercent dans des cabinets privés ou des centres de santé spécialisés dans les maladies de l'appareil urinaire. Ces lieux peuvent proposer la cystoscopie dans le cadre d’un diagnostic ou d’un suivi régulier, notamment pour les patients souffrant d’infections urinaires récurrentes ou de troubles fonctionnels.<br/>
+4. <strong>Centres de Santé Spécialisés</strong> :<br/>
+-Certains centres de santé spécialisés, en particulier ceux qui se concentrent sur les soins ambulatoires, proposent des cystoscopies pour le diagnostic et la surveillance des troubles urinaires chroniques ou des pathologies bénignes de la vessie.<br/>
+5. <strong>Services d'Urgences</strong> :<br/>
+-En cas de saignement urinaire sévère, de rétention urinaire ou d’autres urgences urologiques, les services d’urgence des hôpitaux peuvent réaliser des cystoscopies d’urgence pour identifier rapidement la cause du problème et prendre les mesures nécessaires.<br/>
+6. <strong>Suivi Médical Après la Cystoscopie</strong> :<br/>
+-Après l'examen, les résultats sont généralement examinés par un urologue, qui peut recommander un traitement complémentaire (médicaments, chirurgie) ou un suivi pour surveiller l'évolution de la pathologie identifiée. Des consultations régulières peuvent être nécessaires en fonction des résultats.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

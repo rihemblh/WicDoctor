@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,78 +226,41 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la Radiographie</h2></div><div class="info-text"><p><p>La radiographie est un examen d'imagerie médicale qui utilise des rayons X pour obtenir des images de l'intérieur du corps, principalement pour diagnostiquer et surveiller certaines pathologies. Les principales indications incluent :</p><ul>
-<li><strong>Fractures et traumatismes</strong> : La radiographie est couramment utilisée pour détecter des fractures osseuses, des luxations, des entorses et autres traumatismes physiques.</li>
-<li><strong>Pathologies pulmonaires</strong> : Elle permet d'identifier des affections pulmonaires comme la pneumonie, la tuberculose, les tumeurs ou des infections respiratoires.</li>
-<li><strong>Affections articulaires et osseuses</strong> : Elle est utilisée pour diagnostiquer des maladies articulaires (arthrite, arthrose), surveiller les prothèses et implants, ou observer l'évolution de maladies osseuses comme l'ostéoporose.</li>
-<li><strong>Pathologies abdominales</strong> : La radiographie abdominale peut être utilisée pour détecter des obstructions intestinales, des calculs rénaux, des anomalies du système digestif.</li>
-<li><strong>Examen dentaire</strong> : Les radiographies dentaires sont utilisées pour vérifier la santé des dents, détecter des caries, des infections ou des anomalies structurelles.</li>
-<li><strong>Suivi médical post-opératoire</strong> : Elle permet de contrôler l’état des implants (prothèses de hanche, genou, etc.), des fractures en guérison, ou d’autres interventions chirurgicales.</li>
-</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>L'examen de radiographie est rapide, non invasif, et généralement indolore. Voici les étapes principales :</p><ol>
-<li><strong>Préparation</strong> :</li>
-<li><strong>Vêtements</strong> : Vous devrez retirer tous les objets métalliques (bijoux, ceintures, etc.) et peut-être changer pour un tablier d'examen radiologique.</li>
-<li><strong>Information préalable</strong> : Si vous êtes enceinte ou suspectez une grossesse, il est crucial d'en informer le radiologue, car les rayons X peuvent être contre-indiqués pendant cette période, sauf en cas d'urgence.</li>
-<li>
-<p><strong>Positionnement</strong> : Vous serez positionné de manière optimale en fonction de la zone à examiner (debout, allongé ou assis) pour obtenir les meilleures images.</p>
-</li>
-<li>
-<p><strong>Prélèvement d'images</strong> :</p>
-</li>
-<li><strong>Exposition aux rayons X</strong> : Un faisceau de rayons X est dirigé sur la zone concernée, capté par un détecteur numérique ou une plaque spéciale, générant des images.</li>
-<li><strong>Capture des radiographies</strong> : Une ou plusieurs images seront prises selon la zone à examiner et le type de pathologie à diagnostiquer.</li>
-<li>
-<p><strong>Durée</strong> : L'examen dure généralement de 5 à 15 minutes.</p>
-</li>
-<li>
-<p><strong>Interprétation</strong> :</p>
-</li>
-<li>
-<p>Les radiographies sont envoyées à un radiologue qui analyse les images et rédige un rapport médical pour le médecin prescripteur. Ce rapport permet de poser un diagnostic et de définir un plan de traitement.</p>
-</li>
-<li>
-<p><strong>Post-examen</strong> :</p>
-</li>
-<li>Après la radiographie, vous pouvez reprendre immédiatement vos activités normales. Aucun soin particulier n'est requis après l'examen, sauf en cas de nécessité d'un traitement immédiat basé sur les résultats.</li>
-</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de la Radiographie</h2></div><div class="info-text"><p><p>Bien que la radiographie soit un examen sûr, certaines précautions doivent être prises :</p><ul>
-<li><strong>Grossesse</strong> : L'exposition aux rayons X est généralement déconseillée pendant la grossesse, surtout durant le premier trimestre, sauf si cela est absolument nécessaire pour diagnostiquer une pathologie grave.</li>
-<li><strong>Exposition répétée aux rayons X</strong> : Une exposition fréquente aux rayons X doit être évitée, sauf en cas de nécessité médicale. Une accumulation d'expositions peut avoir des effets secondaires à long terme.</li>
-<li><strong>Allergies au produit de contraste</strong> : Certains examens radiologiques nécessitent l'injection d'un produit de contraste. Si vous êtes allergique à ces produits, il est essentiel d'en informer le radiologue avant l'examen.</li>
-<li><strong>Problèmes de mobilité</strong> : Si vous avez des difficultés à rester immobile pendant l'examen, cela peut compromettre la qualité des images. Le radiologue peut ajuster l'examen en fonction de votre situation.</li>
-</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour la Gestion de la Radiographie selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail WIC-DOCTOR recommande plusieurs lieux adaptés pour réaliser une radiographie, en fonction des indications cliniques, de la situation du patient et des équipements disponibles. Voici les principaux lieux où l'examen peut être effectué :</p><ol>
-<li><strong>Laboratoires de Biologie Médicale</strong> :</li>
-<li>
-<p>Certains laboratoires de biologie médicale peuvent disposer d'équipements radiologiques pour réaliser des radiographies, notamment pour les bilans de santé et le suivi des pathologies osseuses. Ces établissements sont souvent affiliés à des hôpitaux ou à des cliniques.</p>
-</li>
-<li>
-<p><strong>Cabinets Médicaux Partenaires</strong> :</p>
-</li>
-<li>
-<p>Les médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a> affiliés à WIC-DOCTOR peuvent prescrire des radiographies et vous orienter vers des centres spécialisés ou des cabinets médicaux équipés de matériel radiologique. Ces cabinets sont particulièrement utiles pour des examens de routine ou des suivis post-opératoires.</p>
-</li>
-<li>
-<p><strong>Cliniques et Hôpitaux</strong> :</p>
-</li>
-<li>Les hôpitaux et cliniques, en particulier ceux affiliés à WIC-DOCTOR, sont des lieux fréquents pour effectuer des radiographies. Ils disposent de services d'imagerie médicale où des radiographies spécialisées (comme les radiographies thoraciques, osseuses ou abdominales) peuvent être réalisées en cas d'urgence ou de suivi médical.</li>
-<li>
-<p>En cas d’urgence, les services de radiologie d'un hôpital peuvent fournir des résultats rapides pour diagnostiquer des fractures, des infections ou des anomalies graves.</p>
-</li>
-<li>
-<p><strong>Centres de Santé Spécialisés</strong> :</p>
-</li>
-<li>
-<p>Certains centres médicaux spécialisés dans les pathologies pulmonaires, articulaires ou osseuses, recommandés par WIC-DOCTOR, offrent des services de radiologie pour diagnostiquer et suivre des affections comme les maladies pulmonaires chroniques, les fractures osseuses ou l'arthrose.</p>
-</li>
-<li>
-<p><strong>Radiographie à Domicile</strong> :</p>
-</li>
-<li>
-<p>Pour les patients ayant des difficultés de déplacement, notamment les personnes âgées ou alitées, certains services de radiographie à domicile sont disponibles via des partenariats avec WIC-DOCTOR. Ces services peuvent être pratiques pour réaliser des radiographies dans le confort de la maison, tout en garantissant des diagnostics de qualité.</p>
-</li>
-<li>
-<p><strong>Suivi Médical après Radiographie</strong> :</p>
-</li>
-<li>Une fois la radiographie réalisée et les résultats obtenus, un suivi médical peut être recommandé en fonction des résultats. Cela peut inclure des traitements médicaux (médicaments, kinésithérapie, chirurgie) ou des examens complémentaires pour approfondir le diagnostic.</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la Radiographie</h2></div><div class="info-text"><p><p>La radiographie est un examen d'imagerie médicale qui utilise des rayons X pour obtenir des images de l'intérieur du corps, principalement pour diagnostiquer et surveiller certaines pathologies. Les principales indications incluent :<br/>
+<strong>Fractures et traumatismes</strong> : La radiographie est couramment utilisée pour détecter des fractures osseuses, des luxations, des entorses et autres traumatismes physiques.<br/>
+<strong>Pathologies pulmonaires</strong> : Elle permet d'identifier des affections pulmonaires comme la pneumonie, la tuberculose, les tumeurs ou des infections respiratoires.<br/>
+<strong>Affections articulaires et osseuses</strong> : Elle est utilisée pour diagnostiquer des maladies articulaires (arthrite, arthrose), surveiller les prothèses et implants, ou observer l'évolution de maladies osseuses comme l'ostéoporose.<br/>
+<strong>Pathologies abdominales</strong> : La radiographie abdominale peut être utilisée pour détecter des obstructions intestinales, des calculs rénaux, des anomalies du système digestif.<br/>
+<strong>Examen dentaire</strong> : Les radiographies dentaires sont utilisées pour vérifier la santé des dents, détecter des caries, des infections ou des anomalies structurelles.<br/>
+<strong>Suivi médical post-opératoire</strong> : Elle permet de contrôler l’état des implants (prothèses de hanche, genou, etc.), des fractures en guérison, ou d’autres interventions chirurgicales.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>L'examen de radiographie est rapide, non invasif, et généralement indolore. Voici les étapes principales :<br/>
+1. <strong>Préparation</strong> :   <br/>
+<strong>Vêtements</strong> : Vous devrez retirer tous les objets métalliques (bijoux, ceintures, etc.) et peut-être changer pour un tablier d'examen radiologique.   <br/>
+<strong>Information préalable</strong> : Si vous êtes enceinte ou suspectez une grossesse, il est crucial d'en informer le radiologue, car les rayons X peuvent être contre-indiqués pendant cette période, sauf en cas d'urgence.   <br/>
+<strong>Positionnement</strong> : Vous serez positionné de manière optimale en fonction de la zone à examiner (debout, allongé ou assis) pour obtenir les meilleures images.<br/>
+2. <strong>Prélèvement d'images</strong> :   <br/>
+<strong>Exposition aux rayons X</strong> : Un faisceau de rayons X est dirigé sur la zone concernée, capté par un détecteur numérique ou une plaque spéciale, générant des images.   <br/>
+<strong>Capture des radiographies</strong> : Une ou plusieurs images seront prises selon la zone à examiner et le type de pathologie à diagnostiquer.   <br/>
+<strong>Durée</strong> : L'examen dure généralement de 5 à 15 minutes.<br/>
+3. <strong>Interprétation</strong> :<br/>
+-Les radiographies sont envoyées à un radiologue qui analyse les images et rédige un rapport médical pour le médecin prescripteur. Ce rapport permet de poser un diagnostic et de définir un plan de traitement.<br/>
+4. <strong>Post-examen</strong> :<br/>
+-Après la radiographie, vous pouvez reprendre immédiatement vos activités normales. Aucun soin particulier n'est requis après l'examen, sauf en cas de nécessité d'un traitement immédiat basé sur les résultats.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de la Radiographie</h2></div><div class="info-text"><p><p>Bien que la radiographie soit un examen sûr, certaines précautions doivent être prises :<br/>
+<strong>Grossesse</strong> : L'exposition aux rayons X est généralement déconseillée pendant la grossesse, surtout durant le premier trimestre, sauf si cela est absolument nécessaire pour diagnostiquer une pathologie grave.<br/>
+<strong>Exposition répétée aux rayons X</strong> : Une exposition fréquente aux rayons X doit être évitée, sauf en cas de nécessité médicale. Une accumulation d'expositions peut avoir des effets secondaires à long terme.<br/>
+<strong>Allergies au produit de contraste</strong> : Certains examens radiologiques nécessitent l'injection d'un produit de contraste. Si vous êtes allergique à ces produits, il est essentiel d'en informer le radiologue avant l'examen.<br/>
+<strong>Problèmes de mobilité</strong> : Si vous avez des difficultés à rester immobile pendant l'examen, cela peut compromettre la qualité des images. Le radiologue peut ajuster l'examen en fonction de votre situation.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour la Gestion de la Radiographie selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail WIC-DOCTOR recommande plusieurs lieux adaptés pour réaliser une radiographie, en fonction des indications cliniques, de la situation du patient et des équipements disponibles. Voici les principaux lieux où l'examen peut être effectué :<br/>
+1. <strong>Laboratoires de Biologie Médicale</strong> :<br/>
+-Certains laboratoires de biologie médicale peuvent disposer d'équipements radiologiques pour réaliser des radiographies, notamment pour les bilans de santé et le suivi des pathologies osseuses. Ces établissements sont souvent affiliés à des hôpitaux ou à des cliniques.<br/>
+2. <strong>Cabinets Médicaux Partenaires</strong> :<br/>
+-Les médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a> affiliés à WIC-DOCTOR peuvent prescrire des radiographies et vous orienter vers des centres spécialisés ou des cabinets médicaux équipés de matériel radiologique. Ces cabinets sont particulièrement utiles pour des examens de routine ou des suivis post-opératoires.<br/>
+3. <strong>Cliniques et Hôpitaux</strong> :<br/>
+-Les hôpitaux et cliniques, en particulier ceux affiliés à WIC-DOCTOR, sont des lieux fréquents pour effectuer des radiographies. Ils disposent de services d'imagerie médicale où des radiographies spécialisées (comme les radiographies thoraciques, osseuses ou abdominales) peuvent être réalisées en cas d'urgence ou de suivi médical.     - En cas d’urgence, les services de radiologie d'un hôpital peuvent fournir des résultats rapides pour diagnostiquer des fractures, des infections ou des anomalies graves.<br/>
+4. <strong>Centres de Santé Spécialisés</strong> :<br/>
+-Certains centres médicaux spécialisés dans les pathologies pulmonaires, articulaires ou osseuses, recommandés par WIC-DOCTOR, offrent des services de radiologie pour diagnostiquer et suivre des affections comme les maladies pulmonaires chroniques, les fractures osseuses ou l'arthrose.<br/>
+5. <strong>Radiographie à Domicile</strong> :<br/>
+-Pour les patients ayant des difficultés de déplacement, notamment les personnes âgées ou alitées, certains services de radiographie à domicile sont disponibles via des partenariats avec WIC-DOCTOR. Ces services peuvent être pratiques pour réaliser des radiographies dans le confort de la maison, tout en garantissant des diagnostics de qualité.<br/>
+6. <strong>Suivi Médical après Radiographie</strong> :<br/>
+-Une fois la radiographie réalisée et les résultats obtenus, un suivi médical peut être recommandé en fonction des résultats. Cela peut inclure des traitements médicaux (médicaments, kinésithérapie, chirurgie) ou des examens complémentaires pour approfondir le diagnostic.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

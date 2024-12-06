@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,35 +222,26 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la dialyse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications de la dialyse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement de la procédure de dialyse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications à la dialyse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour la dialyse selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un lieu de soin adapté pour la dialyse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la dialyse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications de la dialyse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement de la procédure de dialyse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Contre-indications à la dialyse<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et types de soins disponibles pour la dialyse selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la dialyse</h2></div><div class="info-text"><p><p>La <strong>dialyse</strong> est une procédure médicale qui permet de remplacer partiellement ou complètement les fonctions rénales lorsque les reins ne sont plus capables de filtrer correctement les déchets et l'excès de liquide du corps. Elle est principalement utilisée chez les patients souffrant d'<strong>insuffisance rénale terminale</strong> ou en cas d'<strong>insuffisance rénale aiguë</strong>.</p><p>Il existe deux principaux types de dialyse : la <strong>dialyse hémo</strong>dialyse et la <strong>dialyse péritonéale</strong>. Ces traitements permettent de maintenir l’équilibre chimique et hydrique du corps, essentiel à la vie. En fonction de la condition du patient et de ses préférences, l’un ou l’autre type de dialyse pourra être choisi.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de la dialyse</h2></div><div class="info-text"><p><p>La dialyse est indiquée dans les situations suivantes :</p><ul>
-<li><strong>Insuffisance rénale terminale</strong> : Lorsque les reins fonctionnent à moins de 10-15 % de leur capacité, rendant l'élimination des déchets et des liquides corporels insuffisante, la dialyse devient nécessaire pour maintenir la vie.</li>
-<li><strong>Insuffisance rénale aiguë</strong> : Parfois, une insuffisance rénale aiguë peut être réversible, mais dans certains cas, un traitement de dialyse temporaire est nécessaire jusqu'à ce que la fonction rénale se rétablisse.</li>
-<li><strong>Équilibre électrolytique perturbé</strong> : Lorsque des déséquilibres graves en électrolytes (potassium, sodium, calcium) ne peuvent être corrigés autrement.</li>
-<li><strong>Accumulation de toxines</strong> : En cas d’accumulation importante de toxines dans le sang, comme l’urée ou la créatinine, la dialyse peut être utilisée pour éliminer ces substances.</li>
-<li><strong>Œdème (accumulation de liquide)</strong> : En cas d’œdème massif dû à la rétention d'eau dans l’organisme que les reins ne parviennent pas à éliminer.</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de la procédure de dialyse</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention :</strong>
-Avant de commencer un traitement de dialyse, le patient subit plusieurs <strong>examens médicaux</strong> pour évaluer la fonction rénale et déterminer la méthode de dialyse la plus appropriée. Cela inclut des <strong>analyses de sang</strong>, une <strong>échographie rénale</strong>, et des <strong>bilan cardiaque</strong> si nécessaire. Le patient doit aussi recevoir des conseils sur les changements à apporter à son alimentation et à son mode de vie pendant le traitement.</p><p><strong>Types de dialyse :</strong></p><ol>
-<li><strong>Hémodialyse</strong> :</li>
-<li>L'hémodialyse est la forme de dialyse la plus courante. Elle consiste à faire passer le sang du patient à travers une <strong>machine à dialyse</strong>, qui filtre les déchets et l'excès de liquide avant de renvoyer le sang purifié dans le corps.</li>
-<li>
-<p>Le patient subit des séances de <strong>dialyse 3 fois par semaine</strong>, chaque séance durant environ 4 heures. Le traitement est généralement réalisé dans un <strong>centre de dialyse</strong> ou un <strong>hôpital</strong>.</p>
-</li>
-<li>
-<p><strong>Dialyse péritonéale</strong> :</p>
-</li>
-<li>La dialyse péritonéale consiste à injecter une solution de dialyse dans la cavité abdominale, où elle absorbe les déchets et l'excès de liquide avant d'être évacuée du corps. Ce traitement peut être effectué à domicile, ce qui permet une plus grande autonomie au patient.</li>
-<li>Il existe deux formes de dialyse péritonéale : la <strong>dialyse péritonéale continue ambulatoire (DPCA)</strong> et la <strong>dialyse péritonéale automatisée (DPA)</strong>.</li>
-</ol><p><strong>Soins post-intervention :</strong>
-Après chaque séance de dialyse, le patient peut ressentir de la fatigue ou des douleurs au niveau de l’accès vasculaire (pour l'hémodialyse) ou de la cavité abdominale (pour la dialyse péritonéale). Des contrôles médicaux réguliers sont nécessaires pour ajuster le traitement et prévenir les complications. Le suivi clinique comprend des <strong>analyses sanguines</strong> et des <strong>consultations régulières</strong> avec le néphrologue.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications à la dialyse</h2></div><div class="info-text"><p><p>Bien que la dialyse soit essentielle dans le traitement de l’insuffisance rénale, certaines contre-indications et précautions sont à prendre en compte :</p><ul>
-<li><strong>Problèmes vasculaires graves</strong> : Pour l'hémodialyse, des vaisseaux sanguins en bon état sont nécessaires pour insérer les aiguilles. Les patients avec des troubles vasculaires importants ou une <strong>insuffisance cardiaque sévère</strong> peuvent rencontrer des difficultés.</li>
-<li><strong>Infections abdominales chroniques</strong> : En cas d'infection persistante dans la cavité abdominale, la dialyse péritonéale peut être contre-indiquée.</li>
-<li><strong>Déficits de l’immunité</strong> : Les patients immunodéprimés peuvent être plus susceptibles aux infections liées à la dialyse péritonéale, notamment les infections abdominales.</li>
-<li><strong>Problèmes psychiatriques ou cognitifs</strong> : Pour la dialyse péritonéale à domicile, les patients doivent être capables de gérer leur traitement de manière autonome. Des problèmes cognitifs peuvent rendre ce traitement inadapté.</li>
-</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour la dialyse selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Sur le portail <strong>WIC-DOCTOR</strong>, vous pouvez trouver des informations sur les <strong>établissements spécialisés</strong> dans la dialyse. Les principales options de soins incluent :</p><h4><strong>1. Centres de dialyse spécialisés</strong></h4><p>Les <strong>centres de dialyse</strong> sont des établissements où les patients reçoivent des traitements réguliers d’hémodialyse. Ces centres sont équipés des technologies nécessaires pour réaliser des séances de dialyse dans les meilleures conditions de sécurité et de confort. Ils offrent un suivi médical personnalisé avec des <strong>néphrologues</strong>, des <strong>infirmiers spécialisés</strong> et du personnel soignant.</p><h4><strong>2. Hôpitaux et cliniques de néphrologie</strong></h4><p>Les <strong>hôpitaux</strong> et les <strong>cliniques spécialisées en néphrologie</strong> offrent des services complets de traitement de l’insuffisance rénale, y compris la dialyse. Ces établissements sont équipés de <strong>machines de dialyse</strong> et proposent des soins intensifs en cas de complications. Ils peuvent également prendre en charge les patients nécessitant une transplantation rénale.</p><h4><strong>3. Soins à domicile (Dialyse péritonéale)</strong></h4><p>Pour les patients éligibles, certaines <strong>cliniques de néphrologie</strong> et des <strong>services à domicile</strong> offrent la possibilité de réaliser des séances de dialyse péritonéale chez soi. Cette option permet de plus grande flexibilité pour le patient, qui peut effectuer son traitement selon un horaire personnalisé.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un lieu de soin adapté pour la dialyse</h2></div><div class="info-text"><p><p>La dialyse est un traitement vital pour les patients souffrant d’insuffisance rénale avancée. Il est essentiel de choisir un <strong>établissement spécialisé</strong> et certifié pour garantir la sécurité et l’efficacité du traitement. Le portail <strong>WIC-DOCTOR</strong> permet aux patients de trouver des centres de dialyse adaptés à leurs besoins, de comparer les prix, et de prendre rendez-vous avec des professionnels qualifiés.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la dialyse</h2></div><div class="info-text"><p><p>La <strong>dialyse</strong> est une procédure médicale qui permet de remplacer partiellement ou complètement les fonctions rénales lorsque les reins ne sont plus capables de filtrer correctement les déchets et l'excès de liquide du corps. Elle est principalement utilisée chez les patients souffrant d'<strong>insuffisance rénale terminale</strong> ou en cas d'<strong>insuffisance rénale aiguë</strong>.<br/>
+Il existe deux principaux types de dialyse : la <strong>dialyse hémo</strong>dialyse et la <strong>dialyse péritonéale</strong>. Ces traitements permettent de maintenir l’équilibre chimique et hydrique du corps, essentiel à la vie. En fonction de la condition du patient et de ses préférences, l’un ou l’autre type de dialyse pourra être choisi.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la dialyse</h2></div><div class="info-text"><p><p>La dialyse est indiquée dans les situations suivantes :<br/>
+<strong>Insuffisance rénale terminale</strong> : Lorsque les reins fonctionnent à moins de 10-15 % de leur capacité, rendant l'élimination des déchets et des liquides corporels insuffisante, la dialyse devient nécessaire pour maintenir la vie.  <strong>Insuffisance rénale aiguë</strong> : Parfois, une insuffisance rénale aiguë peut être réversible, mais dans certains cas, un traitement de dialyse temporaire est nécessaire jusqu'à ce que la fonction rénale se rétablisse.  <strong>Équilibre électrolytique perturbé</strong> : Lorsque des déséquilibres graves en électrolytes (potassium, sodium, calcium) ne peuvent être corrigés autrement.  <strong>Accumulation de toxines</strong> : En cas d’accumulation importante de toxines dans le sang, comme l’urée ou la créatinine, la dialyse peut être utilisée pour éliminer ces substances.  <strong>Œdème (accumulation de liquide)</strong> : En cas d’œdème massif dû à la rétention d'eau dans l’organisme que les reins ne parviennent pas à éliminer.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de la procédure de dialyse</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention :</strong>
+Avant de commencer un traitement de dialyse, le patient subit plusieurs <strong>examens médicaux</strong> pour évaluer la fonction rénale et déterminer la méthode de dialyse la plus appropriée. Cela inclut des <strong>analyses de sang</strong>, une <strong>échographie rénale</strong>, et des <strong>bilan cardiaque</strong> si nécessaire. Le patient doit aussi recevoir des conseils sur les changements à apporter à son alimentation et à son mode de vie pendant le traitement.<br/>
+<strong>Types de dialyse :</strong><br/>
+1. <strong>Hémodialyse</strong> :     - L'hémodialyse est la forme de dialyse la plus courante. Elle consiste à faire passer le sang du patient à travers une <strong>machine à dialyse</strong>, qui filtre les déchets et l'excès de liquide avant de renvoyer le sang purifié dans le corps.     - Le patient subit des séances de <strong>dialyse 3 fois par semaine</strong>, chaque séance durant environ 4 heures. Le traitement est généralement réalisé dans un <strong>centre de dialyse</strong> ou un <strong>hôpital</strong>.<br/>
+2. <strong>Dialyse péritonéale</strong> :     - La dialyse péritonéale consiste à injecter une solution de dialyse dans la cavité abdominale, où elle absorbe les déchets et l'excès de liquide avant d'être évacuée du corps. Ce traitement peut être effectué à domicile, ce qui permet une plus grande autonomie au patient.     - Il existe deux formes de dialyse péritonéale : la <strong>dialyse péritonéale continue ambulatoire (DPCA)</strong> et la <strong>dialyse péritonéale automatisée (DPA)</strong>.<br/>
+<strong>Soins post-intervention :</strong>
+Après chaque séance de dialyse, le patient peut ressentir de la fatigue ou des douleurs au niveau de l’accès vasculaire (pour l'hémodialyse) ou de la cavité abdominale (pour la dialyse péritonéale). Des contrôles médicaux réguliers sont nécessaires pour ajuster le traitement et prévenir les complications. Le suivi clinique comprend des <strong>analyses sanguines</strong> et des <strong>consultations régulières</strong> avec le néphrologue.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications à la dialyse</h2></div><div class="info-text"><p><p>Bien que la dialyse soit essentielle dans le traitement de l’insuffisance rénale, certaines contre-indications et précautions sont à prendre en compte :<br/>
+<strong>Problèmes vasculaires graves</strong> : Pour l'hémodialyse, des vaisseaux sanguins en bon état sont nécessaires pour insérer les aiguilles. Les patients avec des troubles vasculaires importants ou une <strong>insuffisance cardiaque sévère</strong> peuvent rencontrer des difficultés.  <strong>Infections abdominales chroniques</strong> : En cas d'infection persistante dans la cavité abdominale, la dialyse péritonéale peut être contre-indiquée.  <strong>Déficits de l’immunité</strong> : Les patients immunodéprimés peuvent être plus susceptibles aux infections liées à la dialyse péritonéale, notamment les infections abdominales.  <strong>Problèmes psychiatriques ou cognitifs</strong> : Pour la dialyse péritonéale à domicile, les patients doivent être capables de gérer leur traitement de manière autonome. Des problèmes cognitifs peuvent rendre ce traitement inadapté.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et types de soins disponibles pour la dialyse selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Sur le portail <strong>WIC-DOCTOR</strong>, vous pouvez trouver des informations sur les <strong>établissements spécialisés</strong> dans la dialyse. Les principales options de soins incluent :  </p><h4><strong>Centres de dialyse spécialisés</strong></h4><p>Les <strong>centres de dialyse</strong> sont des établissements où les patients reçoivent des traitements réguliers d’hémodialyse. Ces centres sont équipés des technologies nécessaires pour réaliser des séances de dialyse dans les meilleures conditions de sécurité et de confort. Ils offrent un suivi médical personnalisé avec des <strong>néphrologues</strong>, des <strong>infirmiers spécialisés</strong> et du personnel soignant.  </p><h4><strong>Hôpitaux et cliniques de néphrologie</strong></h4><p>Les <strong>hôpitaux</strong> et les <strong>cliniques spécialisées en néphrologie</strong> offrent des services complets de traitement de l’insuffisance rénale, y compris la dialyse. Ces établissements sont équipés de <strong>machines de dialyse</strong> et proposent des soins intensifs en cas de complications. Ils peuvent également prendre en charge les patients nécessitant une transplantation rénale.  </p><h4><strong>Soins à domicile (Dialyse péritonéale)</strong></h4><p>Pour les patients éligibles, certaines <strong>cliniques de néphrologie</strong> et des <strong>services à domicile</strong> offrent la possibilité de réaliser des séances de dialyse péritonéale chez soi. Cette option permet de plus grande flexibilité pour le patient, qui peut effectuer son traitement selon un horaire personnalisé.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>La dialyse est un traitement vital pour les patients souffrant d’insuffisance rénale avancée. Il est essentiel de choisir un <strong>établissement spécialisé</strong> et certifié pour garantir la sécurité et l’efficacité du traitement. Le portail <strong>WIC-DOCTOR</strong> permet aux patients de trouver des centres de dialyse adaptés à leurs besoins, de comparer les prix, et de prendre rendez-vous avec des professionnels qualifiés.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

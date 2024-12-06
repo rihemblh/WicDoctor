@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,66 +226,37 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la Radiographie des Pieds en Charge</h2></div><div class="info-text"><p><p>La radiographie des pieds en charge est un examen d’imagerie médicale spécifique qui permet d’obtenir des images des os du pied lorsqu’il est en position de poids, c’est-à-dire lorsque le patient est debout ou en position chargée. Cet examen est essentiel pour évaluer les anomalies structurelles ou fonctionnelles du pied sous pression et est fréquemment utilisé dans le diagnostic de diverses pathologies du pied et de l'articulation du cheville. Voici les principales indications :</p><ul>
-<li><strong>Pathologies orthopédiques du pied</strong> : La radiographie des pieds en charge est particulièrement utile pour diagnostiquer les déformations osseuses du pied, telles que les hallux valgus (oignons), les orteils en marteau, ou les pieds plats.</li>
-<li><strong>Fractures et traumatismes osseux</strong> : Cet examen permet de détecter les fractures, les fissures ou les fractures de stress dans les os du pied, notamment les métatarses, les phalanges et les os du tarse, qui peuvent ne pas être visibles en position allongée.</li>
-<li><strong>Arthrose de l'articulation du pied et de la cheville</strong> : L’examen permet d’évaluer les signes d’usure des articulations du pied, en particulier chez les patients présentant des douleurs chroniques, comme dans le cas de l’arthrose du gros orteil ou de l’articulation subtalaire.</li>
-<li><strong>Évaluation des anomalies fonctionnelles</strong> : Les radiographies des pieds en charge permettent de visualiser les anomalies biomécaniques sous charge, telles que les déviations de la voûte plantaire, l’affaissement du pied (pied plat) ou les pieds creux.</li>
-<li><strong>Suivi post-chirurgical</strong> : Pour les patients ayant subi une intervention chirurgicale au pied, la radiographie en charge permet de vérifier la position des implants, la guérison des fractures ou le succès d'une correction chirurgicale (par exemple, chirurgie de l’hallux valgus).</li>
-<li><strong>Douleurs chroniques et inconfort</strong> : En cas de douleurs persistantes dans le pied (souvent au niveau de la plante du pied, des articulations ou du talon), cet examen peut aider à identifier des conditions sous-jacentes telles que la fasciite plantaire, les épines calcanéennes ou d’autres problèmes structurels.</li>
-</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>La radiographie des pieds en charge est un examen relativement simple qui dure généralement de 10 à 20 minutes. Voici les étapes principales de l'examen :</p><ol>
-<li><strong>Préparation</strong> :</li>
-<li><strong>Vêtements et accessoires</strong> : Le patient devra retirer ses chaussures et ses chaussettes. Il est conseillé de ne pas porter de bijoux métalliques ou d’accessoires qui pourraient interférer avec l'examen.</li>
-<li><strong>Positionnement spécifique</strong> : Contrairement à une radiographie classique, la radiographie des pieds en charge nécessite que le patient soit debout ou dans une position où son poids repose sur ses pieds (souvent en appui sur une plaque spécifique qui capte la pression).</li>
-<li>
-<p><strong>Contexte médical</strong> : Le professionnel de santé devra être informé de toute suspicion de grossesse, bien que la radiographie des pieds ne nécessite pas de produit de contraste et que le risque pour un fœtus soit généralement faible dans ce type d’examen.</p>
-</li>
-<li>
-<p><strong>Examen radiographique</strong> :</p>
-</li>
-<li><strong>Positionnement en charge</strong> : Le patient sera placé debout, les pieds légèrement écartés, en appui sur la plaque radiographique. La position peut varier selon l’indication clinique (par exemple, vue de face, vue latérale, ou vue oblique).</li>
-<li><strong>Capture des images</strong> : Plusieurs vues seront prises sous différentes angles pour évaluer l’alignement et la structure du pied. Ces radiographies permettront de visualiser les os du pied sous la pression du poids corporel, afin d’évaluer les déformations ou les anomalies mécaniques.</li>
-<li>
-<p><strong>Examen rapide</strong> : L’examen est généralement très rapide, mais le technicien peut demander au patient de maintenir une position pendant quelques secondes pour s'assurer d'obtenir des images de qualité.</p>
-</li>
-<li>
-<p><strong>Post-examen</strong> :</p>
-</li>
-<li><strong>Analyse des images</strong> : Les radiographies seront envoyées à un radiologue pour analyse. Le radiologue interprétera les images et rédigera un rapport qui sera envoyé au médecin prescripteur.</li>
-<li><strong>Retour aux activités habituelles</strong> : Aucune précaution particulière n’est requise après l'examen. Le patient peut reprendre ses activités normales immédiatement.</li>
-</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de la Radiographie des Pieds en Charge</h2></div><div class="info-text"><p><p>Bien que la radiographie des pieds en charge soit généralement un examen sans danger, certaines précautions et contre-indications doivent être prises en compte :</p><ul>
-<li><strong>Grossesse</strong> : Comme pour toute procédure impliquant des rayons X, il est essentiel de signaler une grossesse ou la possibilité d'une grossesse. Si l'examen est absolument nécessaire, des mesures spécifiques seront prises pour minimiser l’exposition aux radiations.</li>
-<li><strong>Douleurs sévères ou impossibilité de se tenir debout</strong> : Si un patient éprouve des douleurs sévères ou ne peut pas se tenir debout en raison d'une blessure aiguë (fracture, entorse), l'examen pourrait nécessiter un autre type de positionnement ou d’approche, voire être contre-indiqué en cas d'impossibilité de supporter son poids.</li>
-<li><strong>Prothèses ou implants métalliques</strong> : Les prothèses de pied ou les implants métalliques peuvent interférer avec la clarté des images radiographiques. Dans ce cas, d'autres modalités d'imagerie, comme l'IRM ou le scanner, peuvent être recommandées.</li>
-</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour la Gestion de la Radiographie des Pieds en Charge selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Selon les indications spécifiques de <strong>WIC-DOCTOR</strong>, voici les principaux lieux où une radiographie des pieds en charge peut être réalisée en fonction des circonstances cliniques et des équipements disponibles :</p><ol>
-<li><strong>Centres d’Imagerie Médicale Spécialisés</strong> :</li>
-<li>
-<p>Les centres spécialisés en radiologie et en imagerie musculosquelettique sont les lieux principaux pour réaliser des radiographies des pieds en charge. Ces centres disposent des équipements nécessaires pour réaliser des examens sous pression, avec des plaques radiographiques adaptées à l'examen en position debout.</p>
-</li>
-<li>
-<p><strong>Hôpitaux et Cliniques Orthopédiques</strong> :</p>
-</li>
-<li>Les hôpitaux et cliniques spécialisés en orthopédie disposent souvent d’un service de radiologie où ce type d’examen peut être réalisé. Cela est particulièrement pertinent pour les patients souffrant de pathologies complexes comme l’hallux valgus, les déformations du pied ou après une intervention chirurgicale.</li>
-<li>
-<p>En cas d’urgence, comme un traumatisme ou une fracture aiguë, une radiographie des pieds en charge peut également être réalisée dans le service d'urgence.</p>
-</li>
-<li>
-<p><strong>Cabinets d’Orthopédistes et de Podologues</strong> :</p>
-</li>
-<li>
-<p>Les orthopédistes et podologues peuvent prescrire une radiographie des pieds en charge pour évaluer des pathologies comme les déformations du pied, les douleurs chroniques ou les troubles mécaniques. Certains cabinets d’orthopédie ou de podologie sont équipés pour réaliser ce type de radiographie sur place.</p>
-</li>
-<li>
-<p><strong>Centres de Rééducation et de Suivi Post-Chirurgical</strong> :</p>
-</li>
-<li>
-<p>Pour les patients ayant subi une intervention chirurgicale du pied (par exemple, correction d’un hallux valgus ou prothèse de cheville), la radiographie des pieds en charge est un moyen efficace de suivre l’évolution et de vérifier l’efficacité de l’intervention.</p>
-</li>
-<li>
-<p><strong>Services de Suivi Médical Post-Examen</strong> :</p>
-</li>
-<li>Une fois les résultats de la radiographie obtenus, le médecin traitant, l'orthopédiste ou le podologue pourra recommander un traitement adapté en fonction des résultats (orthèses plantaires, interventions chirurgicales, rééducation fonctionnelle, etc.).</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la Radiographie des Pieds en Charge</h2></div><div class="info-text"><p><p>La radiographie des pieds en charge est un examen d’imagerie médicale spécifique qui permet d’obtenir des images des os du pied lorsqu’il est en position de poids, c’est-à-dire lorsque le patient est debout ou en position chargée. Cet examen est essentiel pour évaluer les anomalies structurelles ou fonctionnelles du pied sous pression et est fréquemment utilisé dans le diagnostic de diverses pathologies du pied et de l'articulation du cheville. Voici les principales indications :<br/>
+<strong>Pathologies orthopédiques du pied</strong> : La radiographie des pieds en charge est particulièrement utile pour diagnostiquer les déformations osseuses du pied, telles que les hallux valgus (oignons), les orteils en marteau, ou les pieds plats.<br/>
+<strong>Fractures et traumatismes osseux</strong> : Cet examen permet de détecter les fractures, les fissures ou les fractures de stress dans les os du pied, notamment les métatarses, les phalanges et les os du tarse, qui peuvent ne pas être visibles en position allongée.<br/>
+<strong>Arthrose de l'articulation du pied et de la cheville</strong> : L’examen permet d’évaluer les signes d’usure des articulations du pied, en particulier chez les patients présentant des douleurs chroniques, comme dans le cas de l’arthrose du gros orteil ou de l’articulation subtalaire.<br/>
+<strong>Évaluation des anomalies fonctionnelles</strong> : Les radiographies des pieds en charge permettent de visualiser les anomalies biomécaniques sous charge, telles que les déviations de la voûte plantaire, l’affaissement du pied (pied plat) ou les pieds creux.<br/>
+<strong>Suivi post-chirurgical</strong> : Pour les patients ayant subi une intervention chirurgicale au pied, la radiographie en charge permet de vérifier la position des implants, la guérison des fractures ou le succès d'une correction chirurgicale (par exemple, chirurgie de l’hallux valgus).<br/>
+<strong>Douleurs chroniques et inconfort</strong> : En cas de douleurs persistantes dans le pied (souvent au niveau de la plante du pied, des articulations ou du talon), cet examen peut aider à identifier des conditions sous-jacentes telles que la fasciite plantaire, les épines calcanéennes ou d’autres problèmes structurels.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>La radiographie des pieds en charge est un examen relativement simple qui dure généralement de 10 à 20 minutes. Voici les étapes principales de l'examen :<br/>
+1. <strong>Préparation</strong> :   <br/>
+<strong>Vêtements et accessoires</strong> : Le patient devra retirer ses chaussures et ses chaussettes. Il est conseillé de ne pas porter de bijoux métalliques ou d’accessoires qui pourraient interférer avec l'examen.   <br/>
+<strong>Positionnement spécifique</strong> : Contrairement à une radiographie classique, la radiographie des pieds en charge nécessite que le patient soit debout ou dans une position où son poids repose sur ses pieds (souvent en appui sur une plaque spécifique qui capte la pression).   <br/>
+<strong>Contexte médical</strong> : Le professionnel de santé devra être informé de toute suspicion de grossesse, bien que la radiographie des pieds ne nécessite pas de produit de contraste et que le risque pour un fœtus soit généralement faible dans ce type d’examen.<br/>
+2. <strong>Examen radiographique</strong> :   <br/>
+<strong>Positionnement en charge</strong> : Le patient sera placé debout, les pieds légèrement écartés, en appui sur la plaque radiographique. La position peut varier selon l’indication clinique (par exemple, vue de face, vue latérale, ou vue oblique).   <br/>
+<strong>Capture des images</strong> : Plusieurs vues seront prises sous différentes angles pour évaluer l’alignement et la structure du pied. Ces radiographies permettront de visualiser les os du pied sous la pression du poids corporel, afin d’évaluer les déformations ou les anomalies mécaniques.   <br/>
+<strong>Examen rapide</strong> : L’examen est généralement très rapide, mais le technicien peut demander au patient de maintenir une position pendant quelques secondes pour s'assurer d'obtenir des images de qualité.<br/>
+3. <strong>Post-examen</strong> :   <br/>
+<strong>Analyse des images</strong> : Les radiographies seront envoyées à un radiologue pour analyse. Le radiologue interprétera les images et rédigera un rapport qui sera envoyé au médecin prescripteur.   <br/>
+<strong>Retour aux activités habituelles</strong> : Aucune précaution particulière n’est requise après l'examen. Le patient peut reprendre ses activités normales immédiatement.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de la Radiographie des Pieds en Charge</h2></div><div class="info-text"><p><p>Bien que la radiographie des pieds en charge soit généralement un examen sans danger, certaines précautions et contre-indications doivent être prises en compte :<br/>
+<strong>Grossesse</strong> : Comme pour toute procédure impliquant des rayons X, il est essentiel de signaler une grossesse ou la possibilité d'une grossesse. Si l'examen est absolument nécessaire, des mesures spécifiques seront prises pour minimiser l’exposition aux radiations.<br/>
+<strong>Douleurs sévères ou impossibilité de se tenir debout</strong> : Si un patient éprouve des douleurs sévères ou ne peut pas se tenir debout en raison d'une blessure aiguë (fracture, entorse), l'examen pourrait nécessiter un autre type de positionnement ou d’approche, voire être contre-indiqué en cas d'impossibilité de supporter son poids.<br/>
+<strong>Prothèses ou implants métalliques</strong> : Les prothèses de pied ou les implants métalliques peuvent interférer avec la clarté des images radiographiques. Dans ce cas, d'autres modalités d'imagerie, comme l'IRM ou le scanner, peuvent être recommandées.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour la Gestion de la Radiographie des Pieds en Charge selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Selon les indications spécifiques de <strong>WIC-DOCTOR</strong>, voici les principaux lieux où une radiographie des pieds en charge peut être réalisée en fonction des circonstances cliniques et des équipements disponibles :<br/>
+1. <strong>Centres d’Imagerie Médicale Spécialisés</strong> :<br/>
+-Les centres spécialisés en radiologie et en imagerie musculosquelettique sont les lieux principaux pour réaliser des radiographies des pieds en charge. Ces centres disposent des équipements nécessaires pour réaliser des examens sous pression, avec des plaques radiographiques adaptées à l'examen en position debout.   <br/>
+2. <strong>Hôpitaux et Cliniques Orthopédiques</strong> :<br/>
+-Les hôpitaux et cliniques spécialisés en orthopédie disposent souvent d’un service de radiologie où ce type d’examen peut être réalisé. Cela est particulièrement pertinent pour les patients souffrant de pathologies complexes comme l’hallux valgus, les déformations du pied ou après une intervention chirurgicale.     - En cas d’urgence, comme un traumatisme ou une fracture aiguë, une radiographie des pieds en charge peut également être réalisée dans le service d'urgence.<br/>
+3. <strong>Cabinets d’Orthopédistes et de Podologues</strong> :<br/>
+-Les orthopédistes et podologues peuvent prescrire une radiographie des pieds en charge pour évaluer des pathologies comme les déformations du pied, les douleurs chroniques ou les troubles mécaniques. Certains cabinets d’orthopédie ou de podologie sont équipés pour réaliser ce type de radiographie sur place.<br/>
+4. <strong>Centres de Rééducation et de Suivi Post-Chirurgical</strong> :<br/>
+-Pour les patients ayant subi une intervention chirurgicale du pied (par exemple, correction d’un hallux valgus ou prothèse de cheville), la radiographie des pieds en charge est un moyen efficace de suivre l’évolution et de vérifier l’efficacité de l’intervention.<br/>
+5. <strong>Services de Suivi Médical Post-Examen</strong> :<br/>
+-Une fois les résultats de la radiographie obtenus, le médecin traitant, l'orthopédiste ou le podologue pourra recommander un traitement adapté en fonction des résultats (orthèses plantaires, interventions chirurgicales, rééducation fonctionnelle, etc.).  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

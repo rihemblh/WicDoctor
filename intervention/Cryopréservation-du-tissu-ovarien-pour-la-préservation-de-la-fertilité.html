@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,25 +222,23 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la cryopréservation du tissu ovarien<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications de la cryopréservation du tissu ovarien<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement de la procédure de cryopréservation du tissu ovarien<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications à la cryopréservation du tissu ovarien<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour la cryopréservation du tissu ovarien selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un établissement adapté pour la cryopréservation du tissu ovarien<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la cryopréservation du tissu ovarien<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications de la cryopréservation du tissu ovarien<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement de la procédure de cryopréservation du tissu ovarien<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Contre-indications à la cryopréservation du tissu ovarien<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et types de soins disponibles pour la cryopréservation du tissu ovarien selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la cryopréservation du tissu ovarien</h2></div><div class="info-text"><p><p>La <strong>cryopréservation du tissu ovarien</strong> est une technique avancée de préservation de la fertilité qui consiste à prélever et congeler une partie du tissu ovarien afin de préserver les ovocytes pour une utilisation future. Cette méthode est souvent choisie par les femmes dont la fertilité pourrait être compromise, en particulier avant des traitements médicaux lourds comme la chimiothérapie ou la radiothérapie, ou en raison de maladies génétiques ou de pathologies affectant les ovaires. Contrairement à la cryopréservation des ovocytes, qui nécessite la stimulation ovarienne, la cryopréservation du tissu ovarien permet de préserver la fertilité même chez les femmes qui n'ont pas une réserve ovarienne suffisante ou qui sont trop jeunes pour subir une stimulation hormonale.</p><p>Cette procédure nécessite des compétences spécialisées, car elle implique la conservation de fragments de tissu ovarien, qui pourront être réimplantés ou utilisés pour obtenir des ovocytes dans le futur.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de la cryopréservation du tissu ovarien</h2></div><div class="info-text"><p><p>La cryopréservation du tissu ovarien est indiquée dans plusieurs situations spécifiques, notamment :</p><ul>
-<li><strong>Fertilité préservée avant un traitement médical agressif</strong> : Pour les femmes devant suivre un traitement comme la chimiothérapie ou la radiothérapie, qui peut affecter la fonction ovarienne, la cryopréservation du tissu ovarien est une option pour préserver la fertilité.</li>
-<li><strong>Pathologies ovariennes</strong> : Les femmes souffrant de maladies comme l'<strong>endométriose</strong>, des <strong>kystes ovariens</strong> ou des <strong>troubles hormonaux</strong> qui affectent la fertilité peuvent bénéficier de cette technique pour conserver des tissus sains.</li>
-<li><strong>Problèmes de réserve ovarienne faible</strong> : Les femmes ayant une faible réserve ovarienne, notamment en raison de l’âge ou de conditions médicales, peuvent se tourner vers la cryopréservation du tissu ovarien si la stimulation ovarienne pour la récolte d'ovocytes est trop risquée ou inefficace.</li>
-<li><strong>Préservation de la fertilité chez les jeunes filles et adolescentes</strong> : La cryopréservation du tissu ovarien peut être la seule option viable pour les jeunes filles et adolescentes qui ne peuvent pas bénéficier d’une stimulation ovarienne avant de subir un traitement médical risquant d’altérer leur fertilité.</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de la procédure de cryopréservation du tissu ovarien</h2></div><div class="info-text"><p><p><strong>Préparation avant l’intervention :</strong>
-- <strong>Consultation initiale</strong> : Le processus commence par une <strong>consultation avec un spécialiste en fertilité</strong> ou un <strong>oncologue</strong>, où la patiente est informée des options de traitement. Un bilan de fertilité, comprenant des analyses hormonales et une échographie, est effectué pour évaluer la santé ovarienne.
-- <strong>Prélèvement du tissu ovarien</strong> : La procédure commence par une <strong>intervention chirurgicale</strong> sous anesthésie générale. Le chirurgien prélève des fragments du tissu ovarien (souvent de l'ovaire externe, où se trouvent les follicules) par une petite incision abdominale ou parfois par laparoscopie.
-- <strong>Congélation du tissu ovarien</strong> : Une fois le tissu prélevé, il est traité et congelé à une température très basse (-196°C) pour être stocké dans des <strong>containers cryogéniques</strong> jusqu'à ce qu'il soit nécessaire pour une future utilisation.</p><p><strong>Soins post-opératoires :</strong>
-- Après la chirurgie, la patiente est surveillée en salle de réveil, puis peut rentrer chez elle après quelques heures de récupération. Un suivi médical est prévu pour vérifier la cicatrisation et évaluer les éventuels effets secondaires de l'intervention. En fonction des circonstances, la patiente peut reprendre une vie normale après quelques jours de repos.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications à la cryopréservation du tissu ovarien</h2></div><div class="info-text"><p><p>Certaines conditions médicales peuvent rendre la cryopréservation du tissu ovarien moins appropriée ou risquée :</p><ul>
-<li><strong>Problèmes de santé généraux graves</strong> : Les femmes souffrant de maladies graves non traitées, telles que des infections actives ou des troubles de la coagulation, peuvent ne pas être candidates à la cryopréservation.</li>
-<li><strong>Réserve ovarienne extrêmement faible</strong> : Si la patiente présente une réserve ovarienne très faible (par exemple, si ses ovaires ne contiennent presque plus de follicules), cette technique peut être inefficace, car il y aurait peu de tissu à prélever.</li>
-<li><strong>Échec des traitements préalables</strong> : Si la patiente a déjà subi plusieurs traitements médicaux ou chirurgicaux affectant ses ovaires et que les chances de récupération ovarienne sont faibles, la cryopréservation du tissu ovarien peut ne pas être une option viable.</li>
-<li><strong>Grossesse en cours</strong> : Cette procédure est généralement déconseillée aux femmes enceintes ou en période d'allaitement, car elle comporte des risques pour la santé de la mère et du fœtus.</li>
-</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour la cryopréservation du tissu ovarien selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> vous aide à trouver des établissements spécialisés dans la cryopréservation du tissu ovarien, en vous fournissant des informations sur des centres de fertilité et des hôpitaux bien équipés pour effectuer cette procédure. Voici les principaux types de soins disponibles :</p><h4><strong>1. Cliniques de fertilité et centres spécialisés en médecine reproductive</strong></h4><p>Les <strong>cliniques de fertilité</strong> et les <strong>centres spécialisés en médecine reproductive</strong> sont les principaux lieux où la cryopréservation du tissu ovarien est réalisée. Ces établissements disposent des équipements et des technologies nécessaires pour effectuer cette intervention chirurgicale, gérer la cryoconservation du tissu ovarien, et assurer un suivi adapté après la procédure. Vous pouvez trouver ces cliniques via le portail WIC-DOCTOR et consulter les avis des patients pour choisir l’établissement le plus adapté.</p><h4><strong>2. Hôpitaux universitaires et centres de recherche en fertilité</strong></h4><p>Les <strong>hôpitaux universitaires</strong> et les <strong>centres de recherche</strong> en fertilité offrent également la cryopréservation du tissu ovarien, souvent dans le cadre de programmes de recherche ou d’études cliniques. Ces centres sont à la pointe de la technologie et offrent un accompagnement médical complet pour la préservation de la fertilité avant des traitements médicaux lourds.</p><h4><strong>3. Plateformes de téléconsultation et suivi à distance via WIC-DOCTOR</strong></h4><p>Les patientes peuvent également accéder à des <strong>téléconsultations</strong> avec des <strong>spécialistes en fertilité</strong> via WIC-DOCTOR, afin de recevoir des conseils sur la cryopréservation du tissu ovarien et être orientées vers un établissement adapté. Ces consultations en ligne permettent aux patientes de poser des questions, de recevoir des orientations sur la procédure et de planifier leur traitement de manière pratique.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un établissement adapté pour la cryopréservation du tissu ovarien</h2></div><div class="info-text"><p><p>La cryopréservation du tissu ovarien est une procédure complexe nécessitant une expertise de pointe et des équipements spécialisés. Il est crucial de choisir un <strong>centre de fertilité</strong> ou un <strong>hôpital spécialisé</strong> pour garantir la sécurité et l'efficacité de l’intervention. Grâce à <strong>WIC-DOCTOR</strong>, vous pouvez trouver facilement des établissements certifiés et consulter des avis de patients pour vous assurer de recevoir des soins de qualité pour la préservation de votre fertilité.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la cryopréservation du tissu ovarien</h2></div><div class="info-text"><p><p>La <strong>cryopréservation du tissu ovarien</strong> est une technique avancée de préservation de la fertilité qui consiste à prélever et congeler une partie du tissu ovarien afin de préserver les ovocytes pour une utilisation future. Cette méthode est souvent choisie par les femmes dont la fertilité pourrait être compromise, en particulier avant des traitements médicaux lourds comme la chimiothérapie ou la radiothérapie, ou en raison de maladies génétiques ou de pathologies affectant les ovaires. Contrairement à la cryopréservation des ovocytes, qui nécessite la stimulation ovarienne, la cryopréservation du tissu ovarien permet de préserver la fertilité même chez les femmes qui n'ont pas une réserve ovarienne suffisante ou qui sont trop jeunes pour subir une stimulation hormonale.<br/>
+Cette procédure nécessite des compétences spécialisées, car elle implique la conservation de fragments de tissu ovarien, qui pourront être réimplantés ou utilisés pour obtenir des ovocytes dans le futur.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la cryopréservation du tissu ovarien</h2></div><div class="info-text"><p><p>La cryopréservation du tissu ovarien est indiquée dans plusieurs situations spécifiques, notamment :<br/>
+<strong>Fertilité préservée avant un traitement médical agressif</strong> : Pour les femmes devant suivre un traitement comme la chimiothérapie ou la radiothérapie, qui peut affecter la fonction ovarienne, la cryopréservation du tissu ovarien est une option pour préserver la fertilité.  <strong>Pathologies ovariennes</strong> : Les femmes souffrant de maladies comme l'<strong>endométriose</strong>, des <strong>kystes ovariens</strong> ou des <strong>troubles hormonaux</strong> qui affectent la fertilité peuvent bénéficier de cette technique pour conserver des tissus sains.  <strong>Problèmes de réserve ovarienne faible</strong> : Les femmes ayant une faible réserve ovarienne, notamment en raison de l’âge ou de conditions médicales, peuvent se tourner vers la cryopréservation du tissu ovarien si la stimulation ovarienne pour la récolte d'ovocytes est trop risquée ou inefficace.  <strong>Préservation de la fertilité chez les jeunes filles et adolescentes</strong> : La cryopréservation du tissu ovarien peut être la seule option viable pour les jeunes filles et adolescentes qui ne peuvent pas bénéficier d’une stimulation ovarienne avant de subir un traitement médical risquant d’altérer leur fertilité.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de la procédure de cryopréservation du tissu ovarien</h2></div><div class="info-text"><p><p><strong>Préparation avant l’intervention :</strong>
+<strong>Consultation initiale</strong> : Le processus commence par une <strong>consultation avec un spécialiste en fertilité</strong> ou un <strong>oncologue</strong>, où la patiente est informée des options de traitement. Un bilan de fertilité, comprenant des analyses hormonales et une échographie, est effectué pour évaluer la santé ovarienne.  <strong>Prélèvement du tissu ovarien</strong> : La procédure commence par une <strong>intervention chirurgicale</strong> sous anesthésie générale. Le chirurgien prélève des fragments du tissu ovarien (souvent de l'ovaire externe, où se trouvent les follicules) par une petite incision abdominale ou parfois par laparoscopie.  <strong>Congélation du tissu ovarien</strong> : Une fois le tissu prélevé, il est traité et congelé à une température très basse (-196°C) pour être stocké dans des <strong>containers cryogéniques</strong> jusqu'à ce qu'il soit nécessaire pour une future utilisation.<br/>
+<strong>Soins post-opératoires :</strong>
+- Après la chirurgie, la patiente est surveillée en salle de réveil, puis peut rentrer chez elle après quelques heures de récupération. Un suivi médical est prévu pour vérifier la cicatrisation et évaluer les éventuels effets secondaires de l'intervention. En fonction des circonstances, la patiente peut reprendre une vie normale après quelques jours de repos.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications à la cryopréservation du tissu ovarien</h2></div><div class="info-text"><p><p>Certaines conditions médicales peuvent rendre la cryopréservation du tissu ovarien moins appropriée ou risquée :<br/>
+<strong>Problèmes de santé généraux graves</strong> : Les femmes souffrant de maladies graves non traitées, telles que des infections actives ou des troubles de la coagulation, peuvent ne pas être candidates à la cryopréservation.  <strong>Réserve ovarienne extrêmement faible</strong> : Si la patiente présente une réserve ovarienne très faible (par exemple, si ses ovaires ne contiennent presque plus de follicules), cette technique peut être inefficace, car il y aurait peu de tissu à prélever.  <strong>Échec des traitements préalables</strong> : Si la patiente a déjà subi plusieurs traitements médicaux ou chirurgicaux affectant ses ovaires et que les chances de récupération ovarienne sont faibles, la cryopréservation du tissu ovarien peut ne pas être une option viable.  <strong>Grossesse en cours</strong> : Cette procédure est généralement déconseillée aux femmes enceintes ou en période d'allaitement, car elle comporte des risques pour la santé de la mère et du fœtus.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et types de soins disponibles pour la cryopréservation du tissu ovarien selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> vous aide à trouver des établissements spécialisés dans la cryopréservation du tissu ovarien, en vous fournissant des informations sur des centres de fertilité et des hôpitaux bien équipés pour effectuer cette procédure. Voici les principaux types de soins disponibles :  </p><h4><strong>Cliniques de fertilité et centres spécialisés en médecine reproductive</strong></h4><p>Les <strong>cliniques de fertilité</strong> et les <strong>centres spécialisés en médecine reproductive</strong> sont les principaux lieux où la cryopréservation du tissu ovarien est réalisée. Ces établissements disposent des équipements et des technologies nécessaires pour effectuer cette intervention chirurgicale, gérer la cryoconservation du tissu ovarien, et assurer un suivi adapté après la procédure. Vous pouvez trouver ces cliniques via le portail WIC-DOCTOR et consulter les avis des patients pour choisir l’établissement le plus adapté.  </p><h4><strong>Hôpitaux universitaires et centres de recherche en fertilité</strong></h4><p>Les <strong>hôpitaux universitaires</strong> et les <strong>centres de recherche</strong> en fertilité offrent également la cryopréservation du tissu ovarien, souvent dans le cadre de programmes de recherche ou d’études cliniques. Ces centres sont à la pointe de la technologie et offrent un accompagnement médical complet pour la préservation de la fertilité avant des traitements médicaux lourds.  </p><h4><strong>Plateformes de téléconsultation et suivi à distance via WIC-DOCTOR</strong></h4><p>Les patientes peuvent également accéder à des <strong>téléconsultations</strong> avec des <strong>spécialistes en fertilité</strong> via WIC-DOCTOR, afin de recevoir des conseils sur la cryopréservation du tissu ovarien et être orientées vers un établissement adapté. Ces consultations en ligne permettent aux patientes de poser des questions, de recevoir des orientations sur la procédure et de planifier leur traitement de manière pratique.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>La cryopréservation du tissu ovarien est une procédure complexe nécessitant une expertise de pointe et des équipements spécialisés. Il est crucial de choisir un <strong>centre de fertilité</strong> ou un <strong>hôpital spécialisé</strong> pour garantir la sécurité et l'efficacité de l’intervention. Grâce à <strong>WIC-DOCTOR</strong>, vous pouvez trouver facilement des établissements certifiés et consulter des avis de patients pour vous assurer de recevoir des soins de qualité pour la préservation de votre fertilité.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

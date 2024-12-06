@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,61 +222,38 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la Microterapia®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications de la Microterapia®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement de la Microterapia®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications à la Microterapia®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour la Microterapia® selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un lieu de soin adapté pour la Microterapia®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de la Microterapia®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications de la Microterapia®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement de la Microterapia®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Contre-indications à la Microterapia®<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et types de soins disponibles pour la Microterapia® selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la Microterapia®</h2></div><div class="info-text"><p><p>La <strong>Microterapia®</strong> est une technique innovante et non invasive qui utilise des <strong>micro-impulsions électriques</strong> pour traiter diverses pathologies esthétiques et fonctionnelles. Cette méthode révolutionnaire est utilisée dans des domaines variés, notamment en <strong>médecine esthétique</strong>, en <strong>rééducation fonctionnelle</strong> et dans le <strong>soulagement de la douleur</strong>. En stimulant les tissus avec des impulsions de faible intensité, la Microterapia® favorise la régénération cellulaire, la réduction de l'inflammation et améliore la circulation sanguine.</p><p>Elle est particulièrement efficace pour traiter des affections telles que les <strong>rides</strong>, les <strong>vergetures</strong>, les <strong>cicatrices</strong> ou encore certaines <strong>douleurs chroniques</strong> liées à des pathologies musculosquelettiques. Grâce à son action douce et ciblée, la Microterapia® offre une alternative naturelle et sans risque aux traitements plus invasifs.</p><p>La <strong>Microterapia®</strong> est généralement administrée sous forme de séances en clinique, par des <strong>professionnels de santé</strong> formés, qui ajustent la fréquence et l'intensité des impulsions électriques en fonction des besoins spécifiques de chaque patient.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de la Microterapia®</h2></div><div class="info-text"><p><p>La Microterapia® est indiquée dans plusieurs contextes thérapeutiques et esthétiques, notamment :</p><ul>
-<li>
-<p><strong>Rides et relâchement cutané</strong> : Grâce à ses effets de stimulation cellulaire, la Microterapia® aide à <strong>réduire les rides</strong> et à <strong>raffermir la peau</strong> en stimulant la production de collagène et d’élastine. Elle est idéale pour les soins du <strong>visage</strong> et du <strong>cou</strong>.</p>
-</li>
-<li>
-<p><strong>Vergetures</strong> : La Microterapia® permet de traiter les <strong>vergetures</strong> en favorisant la régénération des tissus affectés, en réduisant leur apparence et en améliorant l'élasticité de la peau.</p>
-</li>
-<li>
-<p><strong>Cicatrices</strong> : En activant les processus de guérison et de régénération, la Microterapia® peut réduire l'apparence des <strong>cicatrices</strong>, qu’elles soient dues à une chirurgie, un accident ou de l’acné.</p>
-</li>
-<li>
-<p><strong>Douleurs chroniques</strong> : La Microterapia® est également utilisée dans la <strong>rééducation fonctionnelle</strong>, notamment pour <strong>soulager les douleurs musculaires</strong> ou <strong>articulaires</strong>, en particulier dans le cadre de pathologies comme les tendinites, l'arthrite, ou les douleurs post-opératoires.</p>
-</li>
-<li>
-<p><strong>Cellulite</strong> : En améliorant la circulation sanguine et lymphatique, la Microterapia® peut être efficace pour <strong>réduire l'apparence de la cellulite</strong>, notamment sur les cuisses, les hanches et le ventre.</p>
-</li>
-<li>
-<p><strong>Rééducation fonctionnelle</strong> : Elle est aussi utilisée dans le cadre de la <strong>rééducation musculaire</strong> après une blessure ou une chirurgie, en favorisant la <strong>récupération des muscles</strong> et en réduisant l’inflammation.</p>
-</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de la Microterapia®</h2></div><div class="info-text"><p><p><strong>Préparation avant la séance :</strong><br/>
-La Microterapia® ne nécessite généralement pas de préparation complexe. Le patient doit se rendre à son rendez-vous avec la peau propre et démaquillée. Une évaluation préalable est réalisée par le praticien pour identifier la zone à traiter et déterminer le nombre de séances nécessaires en fonction des besoins individuels du patient.</p><p><strong>Le déroulement de la séance :</strong></p><ol>
-<li>
-<p><strong>Application d'un gel conducteur</strong> : Un <strong>gel conducteur</strong> est appliqué sur la zone à traiter pour permettre une meilleure transmission des micro-impulsions électriques.</p>
-</li>
-<li>
-<p><strong>Micro-impulsions électriques</strong> : À l’aide d’un appareil spécifique, des <strong>impulsions électriques de faible intensité</strong> sont envoyées à travers la peau. Ces impulsions stimulent les cellules, favorisant la <strong>réparation des tissus</strong>, la <strong>réduction de l’inflammation</strong>, et la <strong>production de collagène</strong>.</p>
-</li>
-<li>
-<p><strong>Durée de la séance</strong> : Chaque séance dure généralement entre <strong>20 et 40 minutes</strong>, selon la zone traitée et la problématique à résoudre. </p>
-</li>
-<li>
-<p><strong>Aucune douleur majeure</strong> : La Microterapia® est une technique peu invasive, et les patients ressentent souvent des sensations légères, comme des <strong>picotements</strong> ou des <strong>légers chatouillements</strong>.</p>
-</li>
-</ol><p><strong>Soins post-séance :</strong><br/>
-Aucune période de récupération n'est nécessaire après une séance de Microterapia®. Les patients peuvent reprendre leurs activités normales immédiatement. Cependant, il est recommandé d'éviter l'exposition directe au soleil pendant les heures suivant le traitement et de boire beaucoup d'eau pour favoriser la détoxification naturelle du corps.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications à la Microterapia®</h2></div><div class="info-text"><p><p>Bien que la <strong>Microterapia®</strong> soit une méthode sûre et bien tolérée, elle comporte certaines contre-indications pour certains patients :</p><ul>
-<li>
-<p><strong>Femmes enceintes</strong> : L’utilisation de la Microterapia® est déconseillée pendant la grossesse en raison des effets inconnus sur le fœtus.</p>
-</li>
-<li>
-<p><strong>Pacemakers et dispositifs médicaux implantés</strong> : Les personnes portant des <strong>pacemakers</strong> ou tout autre dispositif médical implanté doivent éviter ce type de traitement en raison du risque d'interférences électriques.</p>
-</li>
-<li>
-<p><strong>Peau irritée ou lésée</strong> : Les patients présentant des <strong>plaies ouvertes</strong>, des <strong>infections cutanées</strong> ou des <strong>affections de la peau</strong> doivent attendre la guérison complète avant de débuter la Microterapia®.</p>
-</li>
-<li>
-<p><strong>Pathologies cardiaques graves</strong> : Les personnes souffrant de <strong>troubles cardiaques graves</strong> doivent consulter un médecin avant d’envisager cette méthode.</p>
-</li>
-<li>
-<p><strong>Antécédents de convulsions</strong> : Les patients ayant des antécédents de <strong>troubles neurologiques</strong> ou de <strong>convulsions</strong> doivent éviter ce traitement, sauf avis médical favorable.</p>
-</li>
-</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour la Microterapia® selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> fournit une liste de <strong>cliniques</strong> et de <strong>centres de médecine esthétique</strong> où la <strong>Microterapia®</strong> peut être réalisée sous la supervision de professionnels de santé qualifiés.</p><h4><strong>1. Cliniques spécialisées en médecine esthétique</strong></h4><p>Les <strong>cliniques spécialisées en soins esthétiques</strong> sont les lieux idéaux pour la Microterapia®. Ces centres sont équipés des technologies les plus récentes et offrent un suivi personnalisé pour chaque patient.</p><h4><strong>2. Spécialistes en dermatologie et rééducation fonctionnelle</strong></h4><p>Les <strong><a href="https://wic-doctor.com/medecin/dermatologue.html">dermatologues</a></strong> et les <strong>médecins spécialisés en rééducation</strong> proposent également des traitements de Microterapia® pour diverses indications, comme la réduction des cicatrices, la gestion de la douleur ou la rééducation musculaire.</p><h4><strong>3. Centres de rééducation musculaire</strong></h4><p>Pour les personnes souffrant de douleurs chroniques ou en convalescence après une blessure, certains <strong>centres de rééducation fonctionnelle</strong> intègrent la Microterapia® dans leur programme de réhabilitation.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un lieu de soin adapté pour la Microterapia®</h2></div><div class="info-text"><p><p>La <strong>Microterapia®</strong> est une méthode efficace et peu invasive qui permet de traiter de nombreuses pathologies esthétiques et fonctionnelles. Grâce au portail <strong>WIC-DOCTOR</strong>, les patients peuvent facilement trouver des <strong>cliniques spécialisées</strong>, des <strong><a href="https://wic-doctor.com/medecin/dermatologue.html">dermatologues</a></strong>, ou des <strong>centres de rééducation fonctionnelle</strong> pour bénéficier d'un traitement personnalisé, adapté à leurs besoins.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de la Microterapia®</h2></div><div class="info-text"><p><p>La <strong>Microterapia®</strong> est une technique innovante et non invasive qui utilise des <strong>micro-impulsions électriques</strong> pour traiter diverses pathologies esthétiques et fonctionnelles. Cette méthode révolutionnaire est utilisée dans des domaines variés, notamment en <strong>médecine esthétique</strong>, en <strong>rééducation fonctionnelle</strong> et dans le <strong>soulagement de la douleur</strong>. En stimulant les tissus avec des impulsions de faible intensité, la Microterapia® favorise la régénération cellulaire, la réduction de l'inflammation et améliore la circulation sanguine.<br/>
+Elle est particulièrement efficace pour traiter des affections telles que les <strong>rides</strong>, les <strong>vergetures</strong>, les <strong>cicatrices</strong> ou encore certaines <strong>douleurs chroniques</strong> liées à des pathologies musculosquelettiques. Grâce à son action douce et ciblée, la Microterapia® offre une alternative naturelle et sans risque aux traitements plus invasifs.<br/>
+La <strong>Microterapia®</strong> est généralement administrée sous forme de séances en clinique, par des <strong>professionnels de santé</strong> formés, qui ajustent la fréquence et l'intensité des impulsions électriques en fonction des besoins spécifiques de chaque patient.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la Microterapia®</h2></div><div class="info-text"><p><p>La Microterapia® est indiquée dans plusieurs contextes thérapeutiques et esthétiques, notamment :<br/>
+<strong>Rides et relâchement cutané</strong> : Grâce à ses effets de stimulation cellulaire, la Microterapia® aide à <strong>réduire les rides</strong> et à <strong>raffermir la peau</strong> en stimulant la production de collagène et d’élastine. Elle est idéale pour les soins du <strong>visage</strong> et du <strong>cou</strong>.  <br/>
+<strong>Vergetures</strong> : La Microterapia® permet de traiter les <strong>vergetures</strong> en favorisant la régénération des tissus affectés, en réduisant leur apparence et en améliorant l'élasticité de la peau.<br/>
+<strong>Cicatrices</strong> : En activant les processus de guérison et de régénération, la Microterapia® peut réduire l'apparence des <strong>cicatrices</strong>, qu’elles soient dues à une chirurgie, un accident ou de l’acné.<br/>
+<strong>Douleurs chroniques</strong> : La Microterapia® est également utilisée dans la <strong>rééducation fonctionnelle</strong>, notamment pour <strong>soulager les douleurs musculaires</strong> ou <strong>articulaires</strong>, en particulier dans le cadre de pathologies comme les tendinites, l'arthrite, ou les douleurs post-opératoires.<br/>
+<strong>Cellulite</strong> : En améliorant la circulation sanguine et lymphatique, la Microterapia® peut être efficace pour <strong>réduire l'apparence de la cellulite</strong>, notamment sur les cuisses, les hanches et le ventre.<br/>
+<strong>Rééducation fonctionnelle</strong> : Elle est aussi utilisée dans le cadre de la <strong>rééducation musculaire</strong> après une blessure ou une chirurgie, en favorisant la <strong>récupération des muscles</strong> et en réduisant l’inflammation.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de la Microterapia®</h2></div><div class="info-text"><p><p><strong>Préparation avant la séance :</strong><br/>
+La Microterapia® ne nécessite généralement pas de préparation complexe. Le patient doit se rendre à son rendez-vous avec la peau propre et démaquillée. Une évaluation préalable est réalisée par le praticien pour identifier la zone à traiter et déterminer le nombre de séances nécessaires en fonction des besoins individuels du patient.<br/>
+<strong>Le déroulement de la séance :</strong><br/>
+1. <strong>Application d'un gel conducteur</strong> : Un <strong>gel conducteur</strong> est appliqué sur la zone à traiter pour permettre une meilleure transmission des micro-impulsions électriques.   <br/>
+2. <strong>Micro-impulsions électriques</strong> : À l’aide d’un appareil spécifique, des <strong>impulsions électriques de faible intensité</strong> sont envoyées à travers la peau. Ces impulsions stimulent les cellules, favorisant la <strong>réparation des tissus</strong>, la <strong>réduction de l’inflammation</strong>, et la <strong>production de collagène</strong>.<br/>
+3. <strong>Durée de la séance</strong> : Chaque séance dure généralement entre <strong>20 et 40 minutes</strong>, selon la zone traitée et la problématique à résoudre. <br/>
+4. <strong>Aucune douleur majeure</strong> : La Microterapia® est une technique peu invasive, et les patients ressentent souvent des sensations légères, comme des <strong>picotements</strong> ou des <strong>légers chatouillements</strong>.<br/>
+<strong>Soins post-séance :</strong><br/>
+Aucune période de récupération n'est nécessaire après une séance de Microterapia®. Les patients peuvent reprendre leurs activités normales immédiatement. Cependant, il est recommandé d'éviter l'exposition directe au soleil pendant les heures suivant le traitement et de boire beaucoup d'eau pour favoriser la détoxification naturelle du corps.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications à la Microterapia®</h2></div><div class="info-text"><p><p>Bien que la <strong>Microterapia®</strong> soit une méthode sûre et bien tolérée, elle comporte certaines contre-indications pour certains patients :<br/>
+<strong>Femmes enceintes</strong> : L’utilisation de la Microterapia® est déconseillée pendant la grossesse en raison des effets inconnus sur le fœtus.  <br/>
+<strong>Pacemakers et dispositifs médicaux implantés</strong> : Les personnes portant des <strong>pacemakers</strong> ou tout autre dispositif médical implanté doivent éviter ce type de traitement en raison du risque d'interférences électriques.<br/>
+<strong>Peau irritée ou lésée</strong> : Les patients présentant des <strong>plaies ouvertes</strong>, des <strong>infections cutanées</strong> ou des <strong>affections de la peau</strong> doivent attendre la guérison complète avant de débuter la Microterapia®.<br/>
+<strong>Pathologies cardiaques graves</strong> : Les personnes souffrant de <strong>troubles cardiaques graves</strong> doivent consulter un médecin avant d’envisager cette méthode.<br/>
+<strong>Antécédents de convulsions</strong> : Les patients ayant des antécédents de <strong>troubles neurologiques</strong> ou de <strong>convulsions</strong> doivent éviter ce traitement, sauf avis médical favorable.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et types de soins disponibles pour la Microterapia® selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> fournit une liste de <strong>cliniques</strong> et de <strong>centres de médecine esthétique</strong> où la <strong>Microterapia®</strong> peut être réalisée sous la supervision de professionnels de santé qualifiés.  </p><h4><strong>Cliniques spécialisées en médecine esthétique</strong></h4><p>Les <strong>cliniques spécialisées en soins esthétiques</strong> sont les lieux idéaux pour la Microterapia®. Ces centres sont équipés des technologies les plus récentes et offrent un suivi personnalisé pour chaque patient.  </p><h4><strong>Spécialistes en dermatologie et rééducation fonctionnelle</strong></h4><p>Les <strong><a href="https://wic-doctor.com/medecin/dermatologue.html">dermatologues</a></strong> et les <strong>médecins spécialisés en rééducation</strong> proposent également des traitements de Microterapia® pour diverses indications, comme la réduction des cicatrices, la gestion de la douleur ou la rééducation musculaire.  </p><h4><strong>Centres de rééducation musculaire</strong></h4><p>Pour les personnes souffrant de douleurs chroniques ou en convalescence après une blessure, certains <strong>centres de rééducation fonctionnelle</strong> intègrent la Microterapia® dans leur programme de réhabilitation.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>La <strong>Microterapia®</strong> est une méthode efficace et peu invasive qui permet de traiter de nombreuses pathologies esthétiques et fonctionnelles. Grâce au portail <strong>WIC-DOCTOR</strong>, les patients peuvent facilement trouver des <strong>cliniques spécialisées</strong>, des <strong><a href="https://wic-doctor.com/medecin/dermatologue.html">dermatologues</a></strong>, ou des <strong>centres de rééducation fonctionnelle</strong> pour bénéficier d'un traitement personnalisé, adapté à leurs besoins.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

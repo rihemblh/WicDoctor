@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,33 +226,33 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Les angiomes caverneux se distinguent par plusieurs caractéristiques :</p><p><strong>Structure</strong> : Un angiome caverneux est constitué de vaisseaux sanguins dilatés qui forment des cavités (ou "cavernes") remplies de sang, souvent de forme irrégulière. Ces cavités peuvent varier en taille.<br/>
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Les angiomes caverneux se distinguent par plusieurs caractéristiques :</p>Structure</strong> : Un angiome caverneux est constitué de vaisseaux sanguins dilatés qui forment des cavités (ou "cavernes") remplies de sang, souvent de forme irrégulière. Ces cavités peuvent varier en taille.<br/>
 <strong>Localisation</strong> : Bien que ces angiomes puissent apparaître dans tout le corps, ils sont le plus fréquemment retrouvés dans le cerveau, le foie et parfois les muscles. Les angiomes caverneux cérébraux sont particulièrement préoccupants en raison de leur localisation et de leur potentiel à provoquer des symptômes neurologiques.<br/>
-<strong>Bénignité</strong> : Ces malformations sont généralement bénignes, ce qui signifie qu'elles ne sont pas cancéreuses et ne se propagent pas à d'autres parties du corps. Cependant, elles peuvent entraîner des saignements ou des pressions sur les structures environnantes, ce qui justifie parfois un traitement.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Les causes exactes des angiomes caverneux restent floues, mais plusieurs facteurs peuvent être impliqués :</p><p><strong>Facteurs génétiques</strong> :
+<strong>Bénignité</strong> : Ces malformations sont généralement bénignes, ce qui signifie qu'elles ne sont pas cancéreuses et ne se propagent pas à d'autres parties du corps. Cependant, elles peuvent entraîner des saignements ou des pressions sur les structures environnantes, ce qui justifie parfois un traitement.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Les causes exactes des angiomes caverneux restent floues, mais plusieurs facteurs peuvent être impliqués :</p>Facteurs génétiques</strong> :
     Les angiomes caverneux sont parfois associés à des prédispositions génétiques, et peuvent apparaître chez les membres d'une même famille, indiquant une transmission héréditaire. Dans certains cas, des syndromes génétiques comme la <strong>malformation de RenduOslerWeber</strong> peuvent être impliqués.<br/>
 <strong>Anomalies vasculaires</strong> :
     Les angiomes caverneux résultent de la croissance anormale des vaisseaux sanguins. Ce phénomène est généralement congénital, c'est à dire qu'il se forme dès la naissance, bien que la malformation ne soit pas toujours détectée immédiatement.<br/>
 <strong>Facteurs environnementaux</strong> :
-    Il n'existe pas de preuves solides que des facteurs environnementaux (tels que l'exposition à des toxines ou des infections) jouent un rôle majeur dans la formation des angiomes caverneux.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Les angiomes caverneux sont souvent asymptomatiques, surtout lorsqu'ils sont petits ou localisés dans des zones qui n'affectent pas directement les fonctions corporelles. Cependant, lorsqu'ils sont plus volumineux ou situés dans des zones critiques (par exemple, le cerveau), ils peuvent provoquer des symptômes significatifs :</p><p><strong>Douleurs neurologiques</strong> (pour les angiomes caverneux cérébraux) :
+    Il n'existe pas de preuves solides que des facteurs environnementaux (tels que l'exposition à des toxines ou des infections) jouent un rôle majeur dans la formation des angiomes caverneux.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Les angiomes caverneux sont souvent asymptomatiques, surtout lorsqu'ils sont petits ou localisés dans des zones qui n'affectent pas directement les fonctions corporelles. Cependant, lorsqu'ils sont plus volumineux ou situés dans des zones critiques (par exemple, le cerveau), ils peuvent provoquer des symptômes significatifs :</p>Douleurs neurologiques</strong> (pour les angiomes caverneux cérébraux) :
     Les angiomes caverneux dans le cerveau peuvent provoquer des céphalées (maux de tête), des convulsions, des troubles de la vision, ou des symptômes neurologiques focalisés (par exemple, des troubles moteurs ou sensoriels localisés).<br/>
 <strong>Saignements</strong> :
     Les cavités remplies de sang dans les angiomes caverneux peuvent se rompre, entraînant des saignements internes. Dans les cas cérébraux, cela peut entraîner un accident vasculaire cérébral (AVC) ou des symptômes plus graves comme des pertes de conscience ou des déficits neurologiques.
  <strong>Symptômes digestifs (pour les angiomes hépatiques)</strong> :
     Lorsqu'un angiome caverneux se forme dans le foie, des symptômes comme la douleur abdominale, les nausées ou une distension abdominale peuvent se manifester.<br/>
 <strong>Éruption cutanée (rarement)</strong> :
-    Un angiome caverneux cutané peut se présenter sous forme de lésions rouges ou bleues à la surface de la peau, bien que ce type d'angiome soit moins fréquent.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Le diagnostic des angiomes caverneux repose principalement sur des examens d'imagerie, permettant de localiser la malformation et de déterminer sa taille et son impact. Les méthodes les plus courantes incluent :</p><p><strong>Imagerie par résonance magnétique (IRM)</strong> :
+    Un angiome caverneux cutané peut se présenter sous forme de lésions rouges ou bleues à la surface de la peau, bien que ce type d'angiome soit moins fréquent.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Le diagnostic des angiomes caverneux repose principalement sur des examens d'imagerie, permettant de localiser la malformation et de déterminer sa taille et son impact. Les méthodes les plus courantes incluent :</p>Imagerie par résonance magnétique (IRM)</strong> :
     L'IRM est particulièrement utile pour diagnostiquer les angiomes caverneux cérébraux, car elle permet de visualiser les cavités remplies de sang et de détecter les éventuels saignements ou complications.<br/>
 <strong>Tomodensitométrie (CT)</strong> :
     La CT est également utilisée pour examiner les angiomes caverneux, notamment dans les zones abdominales et cérébrales. Elle peut être particulièrement utile pour identifier les saignements associés aux angiomes.<br/>
 <strong>Angiographie</strong> :
-    L'angiographie permet de visualiser directement les vaisseaux sanguins affectés et peut être utilisée pour mieux comprendre l'architecture des angiomes, en particulier avant une intervention chirurgicale ou endovasculaire.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Le traitement des angiomes caverneux dépend de leur taille, de leur localisation et de la présence de complications telles que des saignements. Les options comprennent :</p><p><strong>Observation</strong> :
+    L'angiographie permet de visualiser directement les vaisseaux sanguins affectés et peut être utilisée pour mieux comprendre l'architecture des angiomes, en particulier avant une intervention chirurgicale ou endovasculaire.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements des Angiomes Caverneux</h2></div><div class="info-text"><p><p>Le traitement des angiomes caverneux dépend de leur taille, de leur localisation et de la présence de complications telles que des saignements. Les options comprennent :</p>Observation</strong> :
     Si l'angiome est asymptomatique et ne présente pas de risque de complications, une surveillance régulière est souvent suffisante. Des examens d'imagerie périodiques permettent de suivre l'évolution de l'angiome.<br/>
 <strong>Chirurgie</strong> :
     Lorsque l'angiome caverneux provoque des symptômes ou des complications graves, une intervention chirurgicale peut être nécessaire. Cette intervention vise à enlever l'angiome ou à réparer les vaisseaux sanguins affectés.<br/>
 <strong>Embolisation</strong> :
     Dans certains cas, une procédure d'embolisation peut être utilisée pour bloquer l'approvisionnement sanguin de l'angiome, réduisant ainsi son risque de saignement ou de croissance.<br/>
 <strong>Traitement des complications</strong> :
-    En cas de rupture de l'angiome, un traitement d'urgence est essentiel pour arrêter le saignement et prévenir des dommages supplémentaires. Cela peut inclure la chirurgie, l'embolisation ou un traitement médical pour stabiliser l'état du patient.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WICDOCTOR</h2></div><div class="info-text"><p><p>Les soins pour les angiomes caverneux peuvent être fournis par divers types de structures médicales :</p><p><strong>Cliniques spécialisées en neurologie et en chirurgie vasculaire</strong> :
+    En cas de rupture de l'angiome, un traitement d'urgence est essentiel pour arrêter le saignement et prévenir des dommages supplémentaires. Cela peut inclure la chirurgie, l'embolisation ou un traitement médical pour stabiliser l'état du patient.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WICDOCTOR</h2></div><div class="info-text"><p><p>Les soins pour les angiomes caverneux peuvent être fournis par divers types de structures médicales :</p>Cliniques spécialisées en neurologie et en chirurgie vasculaire</strong> :
     Les angiomes caverneux cérébraux nécessitent des soins spécialisés, souvent fournis dans des cliniques de neurologie ou des unités de neurochirurgie, où des <a href="https://wic-doctor.com/medecin/neurochirurgien.html">neurochirurgiens</a> expérimentés peuvent traiter la malformation.<br/>
 <strong>Hôpitaux et centres spécialisés en chirurgie vasculaire</strong> :
     Les angiomes hépatiques et les angiomes dans d'autres régions du corps peuvent être traités dans des hôpitaux disposant de services de chirurgie vasculaire, permettant une gestion optimale des complications.<br/>

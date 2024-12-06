@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,59 +222,39 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de l'Opération de Wheat<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications de l'Opération de Wheat<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement de l'Opération de Wheat<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications à l'Opération de Wheat<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et Types de Soins Disponibles pour l'Opération de Wheat selon le Portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un Lieu de Soins Adapté pour l'Opération de Wheat<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation de l'Opération de Wheat<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications de l'Opération de Wheat<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement de l'Opération de Wheat<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Contre-indications à l'Opération de Wheat<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et Types de Soins Disponibles pour l'Opération de Wheat selon le Portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de l'Opération de Wheat</h2></div><div class="info-text"><p><p>L'<strong>opération de Wheat</strong> est une intervention chirurgicale principalement réalisée pour traiter les <strong>troubles cardiaques liés à l'athérosclérose</strong>, notamment les <strong>rétrécissements coronariens</strong> sévères. Cette chirurgie est une <strong>procédure de dérivation coronarienne</strong> visant à améliorer l’approvisionnement en sang du cœur lorsqu'une ou plusieurs artères coronaires sont obstruées. Elle consiste en la <strong>création de nouvelles voies de circulation sanguine</strong>, permettant de contourner les zones bouchées et d’améliorer ainsi l'irrigation cardiaque.</p><p>Le nom de l'opération fait référence à son inventeur, le <strong>Dr. Wheat</strong>, qui a développé cette procédure dans les années 1970 pour traiter les patients souffrant de <strong>maladies coronariennes</strong> avancées. Ce type de chirurgie est souvent effectué chez les patients souffrant d'<strong>angine de poitrine sévère</strong>, d'<strong>infarctus du myocarde</strong> récurrent, ou en préparation à un <strong>transplantation cardiaque</strong>.</p><p>L’opération de Wheat se fait généralement sous <strong>anesthésie générale</strong> et nécessite une <strong>chirurgie ouverte</strong> du thorax, bien que certaines variantes de la procédure plus récentes incluent des techniques moins invasives, comme la chirurgie par <strong>robotique</strong> ou <strong>chirurgie mini-invasive</strong>.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de l'Opération de Wheat</h2></div><div class="info-text"><p><p>L'opération de Wheat est généralement indiquée dans les cas suivants :</p><ul>
-<li>
-<p><strong>Rétrécissement coronarien sévère</strong> : L'athérosclérose peut provoquer des rétrécissements ou des obstructions dans les artères coronaires, réduisant l'approvisionnement en sang du cœur. Lorsque ces rétrécissements sont graves et que les autres traitements, comme les <strong>médicaments</strong> ou les <strong>stents coronariens</strong>, ne sont pas efficaces, l'opération de Wheat est envisagée pour créer de nouvelles voies pour l'irrigation sanguine du cœur.</p>
-</li>
-<li>
-<p><strong>Angine de poitrine réfractaire</strong> : Les patients souffrant d'angine de poitrine sévère et réfractaire, dont les symptômes ne répondent pas aux médicaments ou aux interventions moins invasives, peuvent bénéficier de l'opération de Wheat pour soulager les douleurs thoraciques et améliorer la qualité de vie.</p>
-</li>
-<li>
-<p><strong>Infarctus du myocarde récurrent</strong> : Pour les patients ayant des antécédents de crise cardiaque et souffrant de nouveaux épisodes dus à une mauvaise circulation sanguine, l'opération de Wheat permet de réduire le risque d'autres infarctus et de renforcer la fonction cardiaque.</p>
-</li>
-<li>
-<p><strong>Maladies coronariennes complexes</strong> : Lorsque plusieurs artères coronaires sont affectées et qu'il n'est pas possible de poser des stents ou d'autres dispositifs, l'opération de Wheat offre une solution plus durable et efficace pour rétablir une bonne circulation sanguine.</p>
-</li>
-<li>
-<p><strong>Préparation à une transplantation cardiaque</strong> : Dans certains cas, l’opération de Wheat peut être réalisée comme mesure temporaire pour améliorer la fonction cardiaque en attendant une greffe de cœur.</p>
-</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de l'Opération de Wheat</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention :</strong><br/>
-Avant l'opération, une série d'examens diagnostiques est réalisée pour évaluer l'état des artères coronaires et la fonction cardiaque. Ces examens incluent une <strong>échocardiographie</strong>, une <strong>angiographie coronarienne</strong>, des <strong>analyses sanguines</strong>, et parfois une <strong>tomodensitométrie (scanner)</strong> ou une <strong>IRM cardiaque</strong> pour localiser précisément les obstructions coronariennes. </p><p>Le patient devra arrêter de prendre certains médicaments, notamment les <strong>anticoagulants</strong>, avant l'intervention pour limiter les risques de saignement.</p><p><strong>L’intervention chirurgicale :</strong><br/>
-L’opération de Wheat se déroule généralement en plusieurs étapes, incluant une chirurgie cardiaque ouverte classique ou une approche plus moderne via des techniques mini-invasives :</p><ol>
-<li>
-<p><strong>Anesthésie générale</strong> : L’opération est réalisée sous <strong>anesthésie générale</strong>. Le patient est placé en position dorsale sur la table d’opération, et des électrodes sont placées pour surveiller l'activité cardiaque.</p>
-</li>
-<li>
-<p><strong>Incision thoracique</strong> : Une incision est réalisée au niveau du <strong>sternum</strong> pour accéder au cœur. Cette incision permet au chirurgien de soulever la poitrine et d'accéder aux artères coronaires obstruées.</p>
-</li>
-<li>
-<p><strong>Dérivation coronarienne</strong> : Le chirurgien prélève des <strong>greffons</strong> (généralement une portion de la veine saphène ou de l'artère mammaire interne) pour créer un <strong>pont</strong> entre l'artère coronarienne bouchée et une partie saine de l'artère, permettant au sang de contourner l’obstruction. Dans l'opération de Wheat, cette étape peut impliquer la reconstruction de plusieurs ponts coronariens, selon l'étendue des obstructions.</p>
-</li>
-<li>
-<p><strong>Vérification du flux sanguin</strong> : Une fois les greffons placés, le chirurgien vérifie l'intégrité du pontage en contrôlant le flux sanguin et en s'assurant que la circulation est rétablie.</p>
-</li>
-<li>
-<p><strong>Fermeture et surveillance post-opératoire</strong> : Une fois le pontage coronarien effectué, le thorax est refermé avec des <strong>points de suture</strong> et des <strong>agraffes</strong>. Le patient est ensuite transféré en <strong>soins intensifs</strong> pour une surveillance étroite pendant les premières heures.</p>
-</li>
-</ol><p><strong>Soins post-opératoires :</strong><br/>
-Après l’opération, le patient reste hospitalisé pendant <strong>7 à 10 jours</strong>, selon l’évolution de sa récupération. Pendant ce temps, il reçoit des <strong>analgésiques</strong> pour soulager la douleur et des <strong>antibiotiques</strong> pour prévenir les infections. Une surveillance continue de la fonction cardiaque est nécessaire pour vérifier que le pontage fonctionne correctement.</p><p>Des <strong>examens de suivi</strong> (comme des échocardiographies et des tests d’effort) seront réalisés pour suivre la récupération et s’assurer qu’aucune complication n’apparait. Le patient pourra commencer une <strong>rééducation cardiaque</strong> pour renforcer le cœur et améliorer sa condition physique.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications à l'Opération de Wheat</h2></div><div class="info-text"><p><p>Bien que l’opération de Wheat soit très efficace, elle présente des contre-indications et des risques potentiels pour certains patients :</p><ul>
-<li>
-<p><strong>Infections actives</strong> : Toute infection active, notamment dans la région thoracique ou cardiaque, doit être traitée avant d’envisager cette chirurgie.</p>
-</li>
-<li>
-<p><strong>Maladies cardiaques trop avancées</strong> : Si le cœur est trop endommagé ou si l'insuffisance cardiaque est trop grave, l'opération de Wheat pourrait ne pas être indiquée.</p>
-</li>
-<li>
-<p><strong>Comorbidités graves</strong> : Les patients souffrant de <strong>troubles de la coagulation</strong>, d'une <strong>insuffisance rénale</strong> ou de <strong>pathologies pulmonaires sévères</strong> doivent être soigneusement évalués, car ces conditions peuvent augmenter les risques de complications.</p>
-</li>
-<li>
-<p><strong>Arteries non opérables</strong> : Si les obstructions coronariennes sont trop diffuses ou complexes pour être contournées par un pontage, la chirurgie de Wheat peut ne pas être réalisable.</p>
-</li>
-</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et Types de Soins Disponibles pour l'Opération de Wheat selon le Portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> propose des informations sur les établissements spécialisés pour réaliser l’opération de Wheat :</p><h4><strong>1. Hôpitaux spécialisés en chirurgie cardiaque</strong></h4><p>Les <strong>hôpitaux spécialisés en chirurgie cardiaque</strong> sont les établissements de choix pour la réalisation de l'opération de Wheat. Ces hôpitaux disposent d'une expertise avancée en chirurgie cardiaque, d'une équipe de <strong>chirurgiens cardiaques</strong> qualifiés et de technologies modernes pour la gestion des complications post-opératoires.</p><h4><strong>2. Cliniques privées spécialisées en cardiologie</strong></h4><p>Certaines <strong>cliniques privées</strong> offrent des soins personnalisés et spécialisés dans la chirurgie cardiaque. Ces établissements sont souvent dotés de technologies avancées et d'un environnement plus intime, ce qui peut être un choix pour les patients recherchant une prise en charge plus individualisée.</p><h4><strong>3. Centres médicaux avec plateformes de soins en ligne</strong></h4><p>Le portail <strong>WIC-DOCTOR</strong> permet aux patients de prendre rendez-vous en ligne avec des <strong>chirurgiens cardiaques spécialisés</strong> et de trouver des établissements certifiés pour l’opération de Wheat, facilitant l'accès aux soins spécialisés.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un Lieu de Soins Adapté pour l'Opération de Wheat</h2></div><div class="info-text"><p><p>L'opération de Wheat est une intervention cardiaque avancée nécessitant une expertise spécialisée et un suivi post-opératoire rigoureux. Grâce au portail <strong>WIC-DOCTOR</strong>, les patients peuvent accéder facilement à des <strong>hôpitaux spécialisés</strong>, des <strong>cliniques privées</strong>, et des <strong>chirurgiens cardiaques expérimentés</strong>, garantissant ainsi une prise en charge optimale et sécurisée.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation de l'Opération de Wheat</h2></div><div class="info-text"><p><p>L'<strong>opération de Wheat</strong> est une intervention chirurgicale principalement réalisée pour traiter les <strong>troubles cardiaques liés à l'athérosclérose</strong>, notamment les <strong>rétrécissements coronariens</strong> sévères. Cette chirurgie est une <strong>procédure de dérivation coronarienne</strong> visant à améliorer l’approvisionnement en sang du cœur lorsqu'une ou plusieurs artères coronaires sont obstruées. Elle consiste en la <strong>création de nouvelles voies de circulation sanguine</strong>, permettant de contourner les zones bouchées et d’améliorer ainsi l'irrigation cardiaque.<br/>
+Le nom de l'opération fait référence à son inventeur, le <strong>Dr. Wheat</strong>, qui a développé cette procédure dans les années 1970 pour traiter les patients souffrant de <strong>maladies coronariennes</strong> avancées. Ce type de chirurgie est souvent effectué chez les patients souffrant d'<strong>angine de poitrine sévère</strong>, d'<strong>infarctus du myocarde</strong> récurrent, ou en préparation à un <strong>transplantation cardiaque</strong>.<br/>
+L’opération de Wheat se fait généralement sous <strong>anesthésie générale</strong> et nécessite une <strong>chirurgie ouverte</strong> du thorax, bien que certaines variantes de la procédure plus récentes incluent des techniques moins invasives, comme la chirurgie par <strong>robotique</strong> ou <strong>chirurgie mini-invasive</strong>.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'Opération de Wheat</h2></div><div class="info-text"><p><p>L'opération de Wheat est généralement indiquée dans les cas suivants :<br/>
+<strong>Rétrécissement coronarien sévère</strong> : L'athérosclérose peut provoquer des rétrécissements ou des obstructions dans les artères coronaires, réduisant l'approvisionnement en sang du cœur. Lorsque ces rétrécissements sont graves et que les autres traitements, comme les <strong>médicaments</strong> ou les <strong>stents coronariens</strong>, ne sont pas efficaces, l'opération de Wheat est envisagée pour créer de nouvelles voies pour l'irrigation sanguine du cœur.<br/>
+<strong>Angine de poitrine réfractaire</strong> : Les patients souffrant d'angine de poitrine sévère et réfractaire, dont les symptômes ne répondent pas aux médicaments ou aux interventions moins invasives, peuvent bénéficier de l'opération de Wheat pour soulager les douleurs thoraciques et améliorer la qualité de vie.<br/>
+<strong>Infarctus du myocarde récurrent</strong> : Pour les patients ayant des antécédents de crise cardiaque et souffrant de nouveaux épisodes dus à une mauvaise circulation sanguine, l'opération de Wheat permet de réduire le risque d'autres infarctus et de renforcer la fonction cardiaque.<br/>
+<strong>Maladies coronariennes complexes</strong> : Lorsque plusieurs artères coronaires sont affectées et qu'il n'est pas possible de poser des stents ou d'autres dispositifs, l'opération de Wheat offre une solution plus durable et efficace pour rétablir une bonne circulation sanguine.<br/>
+<strong>Préparation à une transplantation cardiaque</strong> : Dans certains cas, l’opération de Wheat peut être réalisée comme mesure temporaire pour améliorer la fonction cardiaque en attendant une greffe de cœur.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Opération de Wheat</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention :</strong><br/>
+Avant l'opération, une série d'examens diagnostiques est réalisée pour évaluer l'état des artères coronaires et la fonction cardiaque. Ces examens incluent une <strong>échocardiographie</strong>, une <strong>angiographie coronarienne</strong>, des <strong>analyses sanguines</strong>, et parfois une <strong>tomodensitométrie (scanner)</strong> ou une <strong>IRM cardiaque</strong> pour localiser précisément les obstructions coronariennes. </p><p>Le patient devra arrêter de prendre certains médicaments, notamment les <strong>anticoagulants</strong>, avant l'intervention pour limiter les risques de saignement.<br/>
+<strong>L’intervention chirurgicale :</strong><br/>
+L’opération de Wheat se déroule généralement en plusieurs étapes, incluant une chirurgie cardiaque ouverte classique ou une approche plus moderne via des techniques mini-invasives :<br/>
+1. <strong>Anesthésie générale</strong> : L’opération est réalisée sous <strong>anesthésie générale</strong>. Le patient est placé en position dorsale sur la table d’opération, et des électrodes sont placées pour surveiller l'activité cardiaque.<br/>
+2. <strong>Incision thoracique</strong> : Une incision est réalisée au niveau du <strong>sternum</strong> pour accéder au cœur. Cette incision permet au chirurgien de soulever la poitrine et d'accéder aux artères coronaires obstruées.<br/>
+3. <strong>Dérivation coronarienne</strong> : Le chirurgien prélève des <strong>greffons</strong> (généralement une portion de la veine saphène ou de l'artère mammaire interne) pour créer un <strong>pont</strong> entre l'artère coronarienne bouchée et une partie saine de l'artère, permettant au sang de contourner l’obstruction. Dans l'opération de Wheat, cette étape peut impliquer la reconstruction de plusieurs ponts coronariens, selon l'étendue des obstructions.<br/>
+4. <strong>Vérification du flux sanguin</strong> : Une fois les greffons placés, le chirurgien vérifie l'intégrité du pontage en contrôlant le flux sanguin et en s'assurant que la circulation est rétablie.<br/>
+5. <strong>Fermeture et surveillance post-opératoire</strong> : Une fois le pontage coronarien effectué, le thorax est refermé avec des <strong>points de suture</strong> et des <strong>agraffes</strong>. Le patient est ensuite transféré en <strong>soins intensifs</strong> pour une surveillance étroite pendant les premières heures.<br/>
+<strong>Soins post-opératoires :</strong><br/>
+Après l’opération, le patient reste hospitalisé pendant <strong>7 à 10 jours</strong>, selon l’évolution de sa récupération. Pendant ce temps, il reçoit des <strong>analgésiques</strong> pour soulager la douleur et des <strong>antibiotiques</strong> pour prévenir les infections. Une surveillance continue de la fonction cardiaque est nécessaire pour vérifier que le pontage fonctionne correctement.<br/>
+Des <strong>examens de suivi</strong> (comme des échocardiographies et des tests d’effort) seront réalisés pour suivre la récupération et s’assurer qu’aucune complication n’apparait. Le patient pourra commencer une <strong>rééducation cardiaque</strong> pour renforcer le cœur et améliorer sa condition physique.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications à l'Opération de Wheat</h2></div><div class="info-text"><p><p>Bien que l’opération de Wheat soit très efficace, elle présente des contre-indications et des risques potentiels pour certains patients :<br/>
+<strong>Infections actives</strong> : Toute infection active, notamment dans la région thoracique ou cardiaque, doit être traitée avant d’envisager cette chirurgie.<br/>
+<strong>Maladies cardiaques trop avancées</strong> : Si le cœur est trop endommagé ou si l'insuffisance cardiaque est trop grave, l'opération de Wheat pourrait ne pas être indiquée.<br/>
+<strong>Comorbidités graves</strong> : Les patients souffrant de <strong>troubles de la coagulation</strong>, d'une <strong>insuffisance rénale</strong> ou de <strong>pathologies pulmonaires sévères</strong> doivent être soigneusement évalués, car ces conditions peuvent augmenter les risques de complications.<br/>
+<strong>Arteries non opérables</strong> : Si les obstructions coronariennes sont trop diffuses ou complexes pour être contournées par un pontage, la chirurgie de Wheat peut ne pas être réalisable.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles pour l'Opération de Wheat selon le Portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail <strong>WIC-DOCTOR</strong> propose des informations sur les établissements spécialisés pour réaliser l’opération de Wheat :  </p><h4><strong>Hôpitaux spécialisés en chirurgie cardiaque</strong></h4><p>Les <strong>hôpitaux spécialisés en chirurgie cardiaque</strong> sont les établissements de choix pour la réalisation de l'opération de Wheat. Ces hôpitaux disposent d'une expertise avancée en chirurgie cardiaque, d'une équipe de <strong>chirurgiens cardiaques</strong> qualifiés et de technologies modernes pour la gestion des complications post-opératoires.  </p><h4><strong>Cliniques privées spécialisées en cardiologie</strong></h4><p>Certaines <strong>cliniques privées</strong> offrent des soins personnalisés et spécialisés dans la chirurgie cardiaque. Ces établissements sont souvent dotés de technologies avancées et d'un environnement plus intime, ce qui peut être un choix pour les patients recherchant une prise en charge plus individualisée.  </p><h4><strong>Centres médicaux avec plateformes de soins en ligne</strong></h4><p>Le portail <strong>WIC-DOCTOR</strong> permet aux patients de prendre rendez-vous en ligne avec des <strong>chirurgiens cardiaques spécialisés</strong> et de trouver des établissements certifiés pour l’opération de Wheat, facilitant l'accès aux soins spécialisés.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>L'opération de Wheat est une intervention cardiaque avancée nécessitant une expertise spécialisée et un suivi post-opératoire rigoureux. Grâce au portail <strong>WIC-DOCTOR</strong>, les patients peuvent accéder facilement à des <strong>hôpitaux spécialisés</strong>, des <strong>cliniques privées</strong>, et des <strong>chirurgiens cardiaques expérimentés</strong>, garantissant ainsi une prise en charge optimale et sécurisée.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

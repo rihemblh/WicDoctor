@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,53 +226,33 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'IRM Mammaire</h2></div><div class="info-text"><p><p>L'IRM mammaire est un examen d'imagerie avancé utilisé pour l'évaluation des seins, particulièrement dans le cadre de certaines pathologies complexes ou de suivi médical. Cette technique est souvent utilisée en complément d'autres examens comme la mammographie ou l'échographie mammaire. Parmi les principales indications de l'IRM mammaire, on retrouve :</p><ul>
-<li><strong>Diagnostic du cancer du sein</strong> : L'IRM mammaire est particulièrement utile pour détecter des tumeurs mammaires, en particulier chez les femmes à haut risque de cancer du sein (antécédents familiaux, mutations génétiques, etc.). Elle permet d’évaluer la taille et l'étendue des tumeurs.</li>
-<li><strong>Suivi des traitements</strong> : Après une chirurgie mammaire ou un traitement du cancer du sein (radiothérapie, chimiothérapie), l'IRM permet de surveiller l’évolution des lésions résiduelles et d’évaluer l’efficacité du traitement.</li>
-<li><strong>Évaluation des implants mammaires</strong> : L'IRM est utilisée pour surveiller l'intégrité des implants mammaires, en particulier pour détecter des ruptures ou des fuites de silicone.</li>
-<li><strong>Investigation des anomalies mammaires</strong> : Lorsque les résultats de la mammographie ou de l'échographie ne sont pas concluants, l'IRM mammaire peut fournir des informations plus précises sur des anomalies détectées dans le sein.</li>
-<li><strong>Évaluation des lésions bénignes complexes</strong> : Certaines anomalies bénignes, comme les kystes ou les fibroadenomes, peuvent être mieux caractérisées par IRM, notamment lorsqu'elles présentent des caractéristiques difficiles à analyser par d'autres techniques d'imagerie.</li>
-</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen IRM Mammaire</h2></div><div class="info-text"><p><p>L'IRM mammaire est réalisée avec un appareil d'IRM spécifique et nécessite une préparation particulière pour assurer la qualité des images obtenues. Voici les étapes principales de l'examen :</p><ol>
-<li><strong>Préparation de la patiente</strong> :</li>
-<li><strong>Aucune préparation alimentaire nécessaire</strong> : Contrairement à d’autres examens d’imagerie, l'IRM mammaire ne nécessite pas de préparation particulière en termes de jeûne ou de régime alimentaire. Toutefois, il est conseillé de porter des vêtements sans métal et d'éviter les déodorants, les crèmes ou les parfums qui pourraient interférer avec l’examen.</li>
-<li><strong>Injections de produit de contraste</strong> : Dans certains cas, un produit de contraste à base de gadolinium peut être injecté pour améliorer la visibilité des structures mammaires et détecter d’éventuelles anomalies tumorales. Si vous avez une allergie au gadolinium, il est important de le signaler à l’équipe médicale.</li>
-<li>
-<p><strong>Explication de l'examen</strong> : Le radiologue ou technicien expliquera le déroulement de l'examen. Il est essentiel que la patiente reste immobile pendant toute la durée de l'IRM pour garantir la qualité des images.</p>
-</li>
-<li>
-<p><strong>Exécution de l'examen</strong> :</p>
-</li>
-<li><strong>Positionnement de la patiente</strong> : La patiente est allongée sur une table d’examen, généralement sur le ventre, de manière à ce que les seins puissent être placés dans des supports spécialement conçus pour l'IRM. L'examen dure environ 20 à 30 minutes.</li>
-<li><strong>Scans successifs</strong> : Pendant l'examen, l'IRM prendra plusieurs images à travers différentes coupes du sein. La patiente doit rester immobile tout au long du processus. Les images sont créées en utilisant des champs magnétiques et des ondes radio, et le produit de contraste, s'il est utilisé, aidera à mieux distinguer les tissus.</li>
-<li>
-<p><strong>Séquences dynamiques</strong> : Parfois, des images dynamiques seront prises après l'injection du contraste pour observer comment le produit se diffuse dans les tissus mammaires et détecter des anomalies tumorales.</p>
-</li>
-<li>
-<p><strong>Post-examen</strong> :</p>
-</li>
-<li><strong>Reprise des activités normales</strong> : L'IRM mammaire est un examen non invasif qui ne nécessite aucune période de récupération, sauf si une réaction allergique au produit de contraste est survenue.</li>
-<li><strong>Interprétation des résultats</strong> : Après l'examen, les images sont envoyées à un radiologue spécialisé, qui analysera les résultats et rédigera un rapport détaillant les observations. Ce rapport sera ensuite envoyé au médecin référent, qui discutera des prochaines étapes avec la patiente.</li>
-</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de l'IRM Mammaire</h2></div><div class="info-text"><p><p>L'IRM mammaire est généralement sûre, mais il existe certaines contre-indications et précautions à prendre en compte avant l'examen :</p><ul>
-<li><strong>Implants métalliques ou dispositifs médicaux</strong> : Les personnes portant des implants métalliques, comme un pacemaker, des prothèses métalliques, ou tout autre dispositif électronique (comme une pompe d'insuline) doivent en informer leur médecin, car l'IRM peut interférer avec ces dispositifs. </li>
-<li><strong>Allergie au gadolinium</strong> : Si un produit de contraste est utilisé, il est important de prévenir le radiologue de toute allergie ou réaction antérieure au gadolinium.</li>
-<li><strong>Grossesse</strong> : Bien que l'IRM ne soit généralement pas dangereuse, elle est souvent évitée pendant la grossesse, surtout durant le premier trimestre, à moins que l'examen soit absolument nécessaire.</li>
-<li><strong>Claustrophobie</strong> : Certaines patientes peuvent éprouver de l'anxiété en raison de l’espace confiné de l'appareil d'IRM. Dans ces cas, des mesures spéciales peuvent être prises pour aider la patiente à se détendre (sédation légère, séances d'accompagnement).</li>
-</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Suivi Après l'IRM Mammaire</h2></div><div class="info-text"><p><p>L'IRM mammaire est réalisée dans des <strong>services spécialisés de radiologie</strong> dans les hôpitaux, cliniques et centres d’imagerie médicale. Selon les indications spécifiques sur le portail <strong>WIC-DOCTOR</strong>, voici les principaux lieux où cet examen peut être effectué :</p><ol>
-<li><strong>Centres Spécialisés en Radiologie Mammaire</strong> :</li>
-<li>
-<p>Ces centres disposent de technologies d'imagerie avancée, dont des appareils d'IRM adaptés pour les examens mammaires. Ils sont particulièrement recommandés pour les femmes présentant des risques élevés de cancer du sein ou celles nécessitant un suivi post-traitement.</p>
-</li>
-<li>
-<p><strong>Hôpitaux et Cliniques de Chirurgie Mammaire</strong> :</p>
-</li>
-<li>
-<p>Les hôpitaux avec des départements spécialisés en chirurgie mammaire ou en oncologie mammaire peuvent réaliser cet examen pour des patientes présentant des anomalies cliniques ou diagnostiquées antérieurement. Ils offrent un environnement où le suivi et la prise en charge des pathologies mammaires peuvent être intégrés.</p>
-</li>
-<li>
-<p><strong>Suivi Médical Post-Examen</strong> :</p>
-</li>
-<li>Après l’IRM, un radiologue spécialisé interprétera les résultats et les enverra au médecin référent (oncologue, gynécologue, chirurgien, etc.). Si des anomalies sont détectées, des examens complémentaires ou des traitements supplémentaires seront proposés. Le suivi pourra inclure des consultations en chirurgie, des bilans complémentaires (biopsies, échographies) ou des interventions chirurgicales si nécessaire.</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'IRM Mammaire</h2></div><div class="info-text"><p><p>L'IRM mammaire est un examen d'imagerie avancé utilisé pour l'évaluation des seins, particulièrement dans le cadre de certaines pathologies complexes ou de suivi médical. Cette technique est souvent utilisée en complément d'autres examens comme la mammographie ou l'échographie mammaire. Parmi les principales indications de l'IRM mammaire, on retrouve :<br/>
+<strong>Diagnostic du cancer du sein</strong> : L'IRM mammaire est particulièrement utile pour détecter des tumeurs mammaires, en particulier chez les femmes à haut risque de cancer du sein (antécédents familiaux, mutations génétiques, etc.). Elle permet d’évaluer la taille et l'étendue des tumeurs.<br/>
+<strong>Suivi des traitements</strong> : Après une chirurgie mammaire ou un traitement du cancer du sein (radiothérapie, chimiothérapie), l'IRM permet de surveiller l’évolution des lésions résiduelles et d’évaluer l’efficacité du traitement.<br/>
+<strong>Évaluation des implants mammaires</strong> : L'IRM est utilisée pour surveiller l'intégrité des implants mammaires, en particulier pour détecter des ruptures ou des fuites de silicone.<br/>
+<strong>Investigation des anomalies mammaires</strong> : Lorsque les résultats de la mammographie ou de l'échographie ne sont pas concluants, l'IRM mammaire peut fournir des informations plus précises sur des anomalies détectées dans le sein.<br/>
+<strong>Évaluation des lésions bénignes complexes</strong> : Certaines anomalies bénignes, comme les kystes ou les fibroadenomes, peuvent être mieux caractérisées par IRM, notamment lorsqu'elles présentent des caractéristiques difficiles à analyser par d'autres techniques d'imagerie.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen IRM Mammaire</h2></div><div class="info-text"><p><p>L'IRM mammaire est réalisée avec un appareil d'IRM spécifique et nécessite une préparation particulière pour assurer la qualité des images obtenues. Voici les étapes principales de l'examen :<br/>
+1. <strong>Préparation de la patiente</strong> :   <br/>
+<strong>Aucune préparation alimentaire nécessaire</strong> : Contrairement à d’autres examens d’imagerie, l'IRM mammaire ne nécessite pas de préparation particulière en termes de jeûne ou de régime alimentaire. Toutefois, il est conseillé de porter des vêtements sans métal et d'éviter les déodorants, les crèmes ou les parfums qui pourraient interférer avec l’examen.   <br/>
+<strong>Injections de produit de contraste</strong> : Dans certains cas, un produit de contraste à base de gadolinium peut être injecté pour améliorer la visibilité des structures mammaires et détecter d’éventuelles anomalies tumorales. Si vous avez une allergie au gadolinium, il est important de le signaler à l’équipe médicale.   <br/>
+<strong>Explication de l'examen</strong> : Le radiologue ou technicien expliquera le déroulement de l'examen. Il est essentiel que la patiente reste immobile pendant toute la durée de l'IRM pour garantir la qualité des images.<br/>
+2. <strong>Exécution de l'examen</strong> :   <br/>
+<strong>Positionnement de la patiente</strong> : La patiente est allongée sur une table d’examen, généralement sur le ventre, de manière à ce que les seins puissent être placés dans des supports spécialement conçus pour l'IRM. L'examen dure environ 20 à 30 minutes.   <br/>
+<strong>Scans successifs</strong> : Pendant l'examen, l'IRM prendra plusieurs images à travers différentes coupes du sein. La patiente doit rester immobile tout au long du processus. Les images sont créées en utilisant des champs magnétiques et des ondes radio, et le produit de contraste, s'il est utilisé, aidera à mieux distinguer les tissus.   <br/>
+<strong>Séquences dynamiques</strong> : Parfois, des images dynamiques seront prises après l'injection du contraste pour observer comment le produit se diffuse dans les tissus mammaires et détecter des anomalies tumorales.<br/>
+3. <strong>Post-examen</strong> :   <br/>
+<strong>Reprise des activités normales</strong> : L'IRM mammaire est un examen non invasif qui ne nécessite aucune période de récupération, sauf si une réaction allergique au produit de contraste est survenue.   <br/>
+<strong>Interprétation des résultats</strong> : Après l'examen, les images sont envoyées à un radiologue spécialisé, qui analysera les résultats et rédigera un rapport détaillant les observations. Ce rapport sera ensuite envoyé au médecin référent, qui discutera des prochaines étapes avec la patiente.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de l'IRM Mammaire</h2></div><div class="info-text"><p><p>L'IRM mammaire est généralement sûre, mais il existe certaines contre-indications et précautions à prendre en compte avant l'examen :<br/>
+<strong>Implants métalliques ou dispositifs médicaux</strong> : Les personnes portant des implants métalliques, comme un pacemaker, des prothèses métalliques, ou tout autre dispositif électronique (comme une pompe d'insuline) doivent en informer leur médecin, car l'IRM peut interférer avec ces dispositifs. 
+<strong>Allergie au gadolinium</strong> : Si un produit de contraste est utilisé, il est important de prévenir le radiologue de toute allergie ou réaction antérieure au gadolinium.<br/>
+<strong>Grossesse</strong> : Bien que l'IRM ne soit généralement pas dangereuse, elle est souvent évitée pendant la grossesse, surtout durant le premier trimestre, à moins que l'examen soit absolument nécessaire.<br/>
+<strong>Claustrophobie</strong> : Certaines patientes peuvent éprouver de l'anxiété en raison de l’espace confiné de l'appareil d'IRM. Dans ces cas, des mesures spéciales peuvent être prises pour aider la patiente à se détendre (sédation légère, séances d'accompagnement).  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Suivi Après l'IRM Mammaire</h2></div><div class="info-text"><p><p>L'IRM mammaire est réalisée dans des <strong>services spécialisés de radiologie</strong> dans les hôpitaux, cliniques et centres d’imagerie médicale. Selon les indications spécifiques sur le portail <strong>WIC-DOCTOR</strong>, voici les principaux lieux où cet examen peut être effectué :<br/>
+1. <strong>Centres Spécialisés en Radiologie Mammaire</strong> :<br/>
+-Ces centres disposent de technologies d'imagerie avancée, dont des appareils d'IRM adaptés pour les examens mammaires. Ils sont particulièrement recommandés pour les femmes présentant des risques élevés de cancer du sein ou celles nécessitant un suivi post-traitement.<br/>
+2. <strong>Hôpitaux et Cliniques de Chirurgie Mammaire</strong> :<br/>
+-Les hôpitaux avec des départements spécialisés en chirurgie mammaire ou en oncologie mammaire peuvent réaliser cet examen pour des patientes présentant des anomalies cliniques ou diagnostiquées antérieurement. Ils offrent un environnement où le suivi et la prise en charge des pathologies mammaires peuvent être intégrés.<br/>
+3. <strong>Suivi Médical Post-Examen</strong> :<br/>
+-Après l’IRM, un radiologue spécialisé interprétera les résultats et les enverra au médecin référent (oncologue, gynécologue, chirurgien, etc.). Si des anomalies sont détectées, des examens complémentaires ou des traitements supplémentaires seront proposés. Le suivi pourra inclure des consultations en chirurgie, des bilans complémentaires (biopsies, échographies) ou des interventions chirurgicales si nécessaire.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

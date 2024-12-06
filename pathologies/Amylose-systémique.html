@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,26 +226,26 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques de l'Amylose Systémique</h2></div><div class="info-text"><p><p>L'amylose systémique se caractérise par l’accumulation de protéines amyloïdes dans les tissus, qui forment des dépôts solides et insolubles, entraînant des lésions et un dysfonctionnement des organes affectés. Cette accumulation peut se produire de manière diffuse ou localisée dans divers organes, modifiant leur fonctionnement normal.</p><p><strong>Amylose AL (légère)</strong> : Cette forme est généralement liée à un plasma cellulaire anormal dans la moelle osseuse qui produit des chaînes légères d’immunoglobulines. Elle est fréquemment associée à des cancers comme le myélome multiple.<br/>
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques de l'Amylose Systémique</h2></div><div class="info-text"><p><p>L'amylose systémique se caractérise par l’accumulation de protéines amyloïdes dans les tissus, qui forment des dépôts solides et insolubles, entraînant des lésions et un dysfonctionnement des organes affectés. Cette accumulation peut se produire de manière diffuse ou localisée dans divers organes, modifiant leur fonctionnement normal.</p>Amylose AL (légère)</strong> : Cette forme est généralement liée à un plasma cellulaire anormal dans la moelle osseuse qui produit des chaînes légères d’immunoglobulines. Elle est fréquemment associée à des cancers comme le myélome multiple.<br/>
 <strong>Amylose AA (secondaire)</strong> : Cette forme est souvent liée à une inflammation chronique ou à des maladies autoimmunes comme la polyarthrite rhumatoïde ou la tuberculose.<br/>
-<strong>Amylose ATTR (familiale)</strong> : Il s'agit d'une forme héréditaire, causée par une mutation génétique, généralement dans la protéine transthyretine, ce qui conduit à des dépôts amyloïdes dans des organes tels que le cœur ou les nerfs.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Amylose Systémique</h2></div><div class="info-text"><p><p>Les principales causes et facteurs de risque incluent :</p><p><strong>Amylose AL (légère)</strong> : Elle est causée par une production anormale de chaînes légères d’immunoglobulines, souvent associée à des cancers hématologiques tels que le myélome multiple.<br/>
+<strong>Amylose ATTR (familiale)</strong> : Il s'agit d'une forme héréditaire, causée par une mutation génétique, généralement dans la protéine transthyretine, ce qui conduit à des dépôts amyloïdes dans des organes tels que le cœur ou les nerfs.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Amylose Systémique</h2></div><div class="info-text"><p><p>Les principales causes et facteurs de risque incluent :</p>Amylose AL (légère)</strong> : Elle est causée par une production anormale de chaînes légères d’immunoglobulines, souvent associée à des cancers hématologiques tels que le myélome multiple.<br/>
 <strong>Amylose AA (secondaire)</strong> : Cette forme survient souvent chez les patients souffrant de maladies inflammatoires chroniques, notamment la polyarthrite rhumatoïde, les maladies inflammatoires de l’intestin, et les infections chroniques.<br/>
 <strong>Amylose ATTR (familiale)</strong> : Elle résulte d'une mutation génétique dans le gène codant pour la transthyretine. Cette forme peut être transmise par héritage autosomique dominant.<br/>
-<strong>Facteurs environnementaux</strong> : Bien que les formes héréditaires soient les plus courantes, des facteurs externes tels que des infections chroniques ou des maladies inflammatoires peuvent contribuer à l'apparition de l'amylose AA.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Amylose Systémique</h2></div><div class="info-text"><p><p>Les symptômes varient en fonction des organes affectés et du type d’amylose :</p><p><strong>Problèmes cardiaques</strong> : Insuffisance cardiaque, arythmies, et difficultés à pomper le sang.
+<strong>Facteurs environnementaux</strong> : Bien que les formes héréditaires soient les plus courantes, des facteurs externes tels que des infections chroniques ou des maladies inflammatoires peuvent contribuer à l'apparition de l'amylose AA.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Amylose Systémique</h2></div><div class="info-text"><p><p>Les symptômes varient en fonction des organes affectés et du type d’amylose :</p>Problèmes cardiaques</strong> : Insuffisance cardiaque, arythmies, et difficultés à pomper le sang.
  <strong>Problèmes rénaux</strong> : Insuffisance rénale, oedème, protéines dans l’urine.<br/>
 <strong>Neuropathies</strong> : Engourdissements, douleurs, et perte de fonction des nerfs périphériques.<br/>
 <strong>Symptômes généraux</strong> : Perte de poids, fatigue chronique, douleurs articulaires, et difficultés respiratoires.<br/>
-<strong>Problèmes hépatiques</strong> : Hépatomégalie (augmentation du volume du foie) et troubles du métabolisme hépatique.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Amylose Systémique</h2></div><div class="info-text"><p><p>Le diagnostic de l'amylose systémique nécessite une évaluation complète, qui peut inclure :</p><p><strong>Biopsie des tissus affectés</strong> : La biopsie de tissus tels que la peau, les reins, le foie, ou le cœur permet de confirmer la présence de dépôts amyloïdes.<br/>
+<strong>Problèmes hépatiques</strong> : Hépatomégalie (augmentation du volume du foie) et troubles du métabolisme hépatique.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Amylose Systémique</h2></div><div class="info-text"><p><p>Le diagnostic de l'amylose systémique nécessite une évaluation complète, qui peut inclure :</p>Biopsie des tissus affectés</strong> : La biopsie de tissus tels que la peau, les reins, le foie, ou le cœur permet de confirmer la présence de dépôts amyloïdes.<br/>
 <strong>Tests sanguins et urinaires</strong> : Des tests de fonction rénale et des tests pour détecter les protéines amyloïdes dans le sang et l'urine.<br/>
 <strong>Imagerie</strong> : L'échocardiographie et l'IRM peuvent être utilisées pour évaluer l'impact sur les organes internes, notamment le cœur.<br/>
 <strong>Analyse génétique</strong> : Dans le cas de l'amylose ATTR, des tests génétiques sont réalisés pour identifier les mutations du gène de la transthyretine.<br/>
-<strong>Examen clinique</strong> : Les signes cliniques d’insuffisance organique, tels que l’hypertension ou l'œdème, sont des indicateurs importants.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements Associés à l'Amylose Systémique</h2></div><div class="info-text"><p><p>Le traitement de l'amylose systémique dépend de son type et de la gravité des symptômes. Les options thérapeutiques incluent :</p><p><strong>Traitement de la cause sousjacente</strong> :
+<strong>Examen clinique</strong> : Les signes cliniques d’insuffisance organique, tels que l’hypertension ou l'œdème, sont des indicateurs importants.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements Associés à l'Amylose Systémique</h2></div><div class="info-text"><p><p>Le traitement de l'amylose systémique dépend de son type et de la gravité des symptômes. Les options thérapeutiques incluent :</p>Traitement de la cause sousjacente</strong> :
     Pour l'amylose AL, la chimiothérapie ou la greffe de cellules souches peut être utilisée pour traiter les cancers sousjacents comme le myélome multiple.<br/>
     Pour l'amylose AA, traiter l’inflammation ou la maladie inflammatoire sousjacente est essentiel.<br/>
-    Pour l'amylose ATTR, les traitements peuvent inclure des médicaments qui stabilisent la transthyretine (comme le tafamidis) et la transplantation hépatique pour les formes héréditaires.  </p><p><strong>Symptomatique</strong> :
+    Pour l'amylose ATTR, les traitements peuvent inclure des médicaments qui stabilisent la transthyretine (comme le tafamidis) et la transplantation hépatique pour les formes héréditaires.  </p>Symptomatique</strong> :
     Médicaments pour contrôler les symptômes cardiaques, rénaux, et neurologiques, tels que les médicaments pour l’insuffisance cardiaque ou les agents immunosuppresseurs.<br/>
 <strong>Traitements de soutien</strong> : Les dialyses peuvent être nécessaires en cas d’insuffisance rénale avancée, et des traitements neurologiques peuvent être envisagés pour les neuropathies.<br/>
-<strong>Transplantation d’organes</strong> : Dans les cas sévères d’amylose ATTR, une transplantation du cœur ou du foie peut être envisagée pour restaurer la fonction organique.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Sur <strong>WIC-DOCTOR</strong>, les patients peuvent accéder à des soins spécialisés pour l'amylose systémique dans les établissements suivants :</p><p><strong>Médecins spécialisés</strong> : <a href="https://wic-doctor.com/medecin/endocrinologue.html">Endocrinologues</a>, <a href="https://wic-doctor.com/medecin/hématologue.html">hématologues</a>, néphrologues, <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a>, et <a href="https://wic-doctor.com/medecin/neurologue.html">neurologues</a> spécialisés dans le traitement des troubles amyloïdes.<br/>
+<strong>Transplantation d’organes</strong> : Dans les cas sévères d’amylose ATTR, une transplantation du cœur ou du foie peut être envisagée pour restaurer la fonction organique.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Sur <strong>WIC-DOCTOR</strong>, les patients peuvent accéder à des soins spécialisés pour l'amylose systémique dans les établissements suivants :</p>Médecins spécialisés</strong> : <a href="https://wic-doctor.com/medecin/endocrinologue.html">Endocrinologues</a>, <a href="https://wic-doctor.com/medecin/hématologue.html">hématologues</a>, néphrologues, <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a>, et <a href="https://wic-doctor.com/medecin/neurologue.html">neurologues</a> spécialisés dans le traitement des troubles amyloïdes.<br/>
 <strong>Cliniques et hôpitaux</strong> : Hôpitaux disposant de services spécialisés en maladies rares, en traitements oncologiques et en soins de transplantation.<br/>
 <strong>Services de transplantation</strong> : Centres spécialisés dans la transplantation cardiaque, hépatique, et rénale, pour les formes graves d'amylose.<br/>
 <strong>Soutien génétique</strong> : Conseils génétiques pour les patients atteints d’amylose ATTR familiale.  </p><hr/></p></div></div></div><div class="container section-I" id="I"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>Cette version détaillée est conçue pour fournir des informations complètes sur l'amylose systémique tout en optimisant la visibilité SEO et l'efficacité pour l'annotation IA dans le portail <strong>WIC-DOCTOR</strong>.</p></p></div></div></div>  
