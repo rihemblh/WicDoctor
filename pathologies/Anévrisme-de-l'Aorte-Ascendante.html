@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,9 +226,9 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques des Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>Les anévrismes de l'aorte ascendante se caractérisent par une expansion anormale de la paroi de l'aorte dans la partie ascendante, qui peut être progressive et asymptomatique jusqu'à sa rupture. Ils sont souvent découverts lors d'examens de routine ou lorsqu'un patient présente des symptômes cardiaques non spécifiques.  </p><p>Les principales caractéristiques des anévrismes de l'aorte ascendante incluent :</p><p><strong>Rupture ou dissection de l'aorte ascendante</strong> : Complication grave pouvant être fatale si elle n'est pas traitée en urgence.<br/>
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques des Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>Les anévrismes de l'aorte ascendante se caractérisent par une expansion anormale de la paroi de l'aorte dans la partie ascendante, qui peut être progressive et asymptomatique jusqu'à sa rupture. Ils sont souvent découverts lors d'examens de routine ou lorsqu'un patient présente des symptômes cardiaques non spécifiques.  </p><p>Les principales caractéristiques des anévrismes de l'aorte ascendante incluent :</p>Rupture ou dissection de l'aorte ascendante</strong> : Complication grave pouvant être fatale si elle n'est pas traitée en urgence.<br/>
 <strong>Croissance lente</strong> : La dilatation de l'aorte ascendante se fait souvent de manière insidieuse.<br/>
-<strong>Asymptomatique au début</strong> : Les symptômes n'apparaissent généralement que lorsque l'anévrisme devient volumineux ou lorsqu'il y a une rupture imminente.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>L'anévrisme de l'aorte ascendante peut résulter de plusieurs facteurs de risque et de conditions sousjacentes qui affaiblissent la paroi de l'aorte. Parmi les principales causes et facteurs de risque, on retrouve :</p><p><strong>Hypertension artérielle</strong> :
+<strong>Asymptomatique au début</strong> : Les symptômes n'apparaissent généralement que lorsque l'anévrisme devient volumineux ou lorsqu'il y a une rupture imminente.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>L'anévrisme de l'aorte ascendante peut résulter de plusieurs facteurs de risque et de conditions sousjacentes qui affaiblissent la paroi de l'aorte. Parmi les principales causes et facteurs de risque, on retrouve :</p>Hypertension artérielle</strong> :
     L'élévation chronique de la pression artérielle peut augmenter la tension sur la paroi de l'aorte, favorisant la formation d'un anévrisme.<br/>
 <strong>Athérosclérose</strong> :
     L'accumulation de plaque graisseuse dans les artères fragilise les parois de l'aorte et peut entraîner une dilatation.<br/>
@@ -203,7 +239,7 @@
 <strong>Antécédents familiaux</strong> :
     Les antécédents familiaux d'anévrisme aortique ou de maladies génétiques connexes augmentent les risques.<br/>
 <strong>Tabagisme</strong> :
-    Le tabagisme est un facteur aggravant de l'athérosclérose et de l'hypertension, augmentant ainsi la probabilité d'un anévrisme.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>L'anévrisme de l'aorte ascendante est souvent asymptomatique au début, ce qui rend son diagnostic difficile sans imagerie. Cependant, au fur et à mesure que l'anévrisme grossit ou en cas de complications, plusieurs symptômes peuvent apparaître :</p><p><strong>Douleur thoracique ou dorsale</strong> :
+    Le tabagisme est un facteur aggravant de l'athérosclérose et de l'hypertension, augmentant ainsi la probabilité d'un anévrisme.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>L'anévrisme de l'aorte ascendante est souvent asymptomatique au début, ce qui rend son diagnostic difficile sans imagerie. Cependant, au fur et à mesure que l'anévrisme grossit ou en cas de complications, plusieurs symptômes peuvent apparaître :</p>Douleur thoracique ou dorsale</strong> :
     La douleur peut être diffuse, ressentie dans la poitrine, l'abdomen ou le dos. La douleur est souvent sévère et peut irradier vers les épaules ou la nuque.<br/>
 <strong>Essoufflement</strong> :
     En raison de l'impact de l'anévrisme sur le cœur et les vaisseaux sanguins, les patients peuvent éprouver un essoufflement ou une sensation de fatigue excessive.<br/>
@@ -212,14 +248,14 @@
 <strong>Syncope ou évanouissement</strong> :
     Une perte de conscience soudaine peut survenir en cas de dissection aortique ou d'une rupture imminente.<br/>
 <strong>Symptômes d'insuffisance cardiaque</strong> :
-    Les patients peuvent développer des symptômes d'insuffisance cardiaque, tels que des gonflements des jambes ou une prise de poids soudaine.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>Le diagnostic des anévrismes de l'aorte ascendante repose principalement sur des tests d'imagerie et un examen clinique. Les options de diagnostic comprennent :</p><p><strong>Échocardiogramme</strong> :
+    Les patients peuvent développer des symptômes d'insuffisance cardiaque, tels que des gonflements des jambes ou une prise de poids soudaine.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic des Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>Le diagnostic des anévrismes de l'aorte ascendante repose principalement sur des tests d'imagerie et un examen clinique. Les options de diagnostic comprennent :</p>Échocardiogramme</strong> :
     Un échocardiogramme permet de visualiser l'aorte et de mesurer la taille de l'anévrisme.
  <strong>Tomodensitométrie (CT scan)</strong> :
     Le scanner est utilisé pour obtenir des images détaillées de l'aorte, permettant de localiser l'anévrisme et de mesurer sa taille.
  <strong>Imagerie par résonance magnétique (IRM)</strong> :
     L'IRM peut fournir des images précises de l'aorte, permettant de visualiser la structure et la taille de l'anévrisme.
  <strong>Angiographie</strong> :
-    Ce test utilise des rayons X et un colorant spécial pour visualiser les vaisseaux sanguins et déterminer l'étendue de l'anévrisme.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements Associés aux Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>Les traitements pour l'anévrisme de l'aorte ascendante varient en fonction de la taille et de la localisation de l'anévrisme, ainsi que des risques de complications. Les options de traitement incluent :</p><p><strong>Suivi régulier</strong> :
+    Ce test utilise des rayons X et un colorant spécial pour visualiser les vaisseaux sanguins et déterminer l'étendue de l'anévrisme.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements Associés aux Anévrismes de l'Aorte Ascendante</h2></div><div class="info-text"><p><p>Les traitements pour l'anévrisme de l'aorte ascendante varient en fonction de la taille et de la localisation de l'anévrisme, ainsi que des risques de complications. Les options de traitement incluent :</p>Suivi régulier</strong> :
     Les petits anévrismes peuvent être suivis régulièrement par des examens d'imagerie pour évaluer leur progression.<br/>
 <strong>Contrôle de l'hypertension et des facteurs de risque</strong> :
     Les médicaments antihypertenseurs, comme les bêtabloquants, sont utilisés pour réduire la pression sanguine et ralentir la croissance de l'anévrisme.<br/>
@@ -228,7 +264,7 @@
 <strong>Chirurgie endovasculaire (stent)</strong> :
     Dans certains cas, un stent endovasculaire peut être placé dans l'aorte pour renforcer la paroi et prévenir une rupture.<br/>
 <strong>Médicaments</strong> :
-    Des médicaments anticoagulants peuvent être prescrits pour réduire les risques de formation de caillots dans l'aorte dilatée.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les patients atteints d'un anévrisme de l'aorte ascendante doivent être pris en charge par des équipes médicales spécialisées. Les lieux de soins comprennent :</p><p><strong>Centres de chirurgie cardiaque</strong> :
+    Des médicaments anticoagulants peuvent être prescrits pour réduire les risques de formation de caillots dans l'aorte dilatée.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les patients atteints d'un anévrisme de l'aorte ascendante doivent être pris en charge par des équipes médicales spécialisées. Les lieux de soins comprennent :</p>Centres de chirurgie cardiaque</strong> :
     Les cliniques et hôpitaux spécialisés en chirurgie cardiaque disposent des ressources nécessaires pour effectuer une chirurgie de remplacement aortique.
  <strong><a href="https://wic-doctor.com/medecin/cardiologue.html">Cardiologues</a></strong> :
     Les <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a> sont responsables du suivi des patients et de l'ajustement des traitements médicaux, en particulier pour la gestion des facteurs de risque.

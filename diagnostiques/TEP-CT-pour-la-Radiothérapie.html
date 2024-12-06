@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,93 +226,40 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du TEP/CT pour la Radiothérapie</h2></div><div class="info-text"><p><p>Le <strong>TEP/CT pour la radiothérapie</strong> combine la tomographie par émission de positons (TEP) et la tomodensitométrie (CT) pour fournir des images détaillées du corps tout en mesurant l'activité métabolique des tissus. Cette technique est principalement utilisée dans le cadre du <strong>traitement du cancer</strong>, afin d'améliorer la précision du ciblage de la radiothérapie. Elle permet d'identifier et de localiser avec une grande précision les <strong>zones tumorales</strong> et d’évaluer leur métabolisme, optimisant ainsi l'efficacité des traitements tout en minimisant les dommages aux tissus sains. Voici les principales indications de cet examen dans le cadre de la radiothérapie :</p><ul>
-<li>
-<p><strong>Planification du traitement en radiothérapie</strong> : Le <strong>TEP/CT pour la radiothérapie</strong> est utilisé pour la <strong>planification précise des traitements de radiothérapie</strong>, notamment en oncologie. Grâce aux images détaillées et à la cartographie du métabolisme, les radiothérapeutes peuvent localiser les <strong>tumeurs</strong> avec une grande précision et ajuster les doses de radiation en fonction de la taille, de la forme et de l'activité métabolique des tumeurs.</p>
-</li>
-<li>
-<p><strong>Évaluation du stade du cancer</strong> : Avant de débuter un traitement de radiothérapie, le TEP/CT permet de <strong>stagier le cancer</strong> en évaluant l’étendue de la tumeur et en recherchant des <strong>métastases</strong> ou des zones à risque dans le corps. Cela est essentiel pour déterminer la stratégie de traitement la plus appropriée.</p>
-</li>
-<li>
-<p><strong>Suivi du traitement de radiothérapie</strong> : Pendant et après les sessions de radiothérapie, ce test est utilisé pour évaluer l'efficacité du traitement en mesurant les changements dans l'activité métabolique des cellules tumorales. Une réduction de l'activité métabolique après plusieurs séances de radiothérapie indique généralement une <strong>réponse favorable</strong> au traitement.</p>
-</li>
-<li>
-<p><strong>Radiothérapie de précision</strong> : L’une des principales raisons d'utiliser le TEP/CT dans le cadre de la radiothérapie est d’atteindre des <strong>objectifs thérapeutiques plus ciblés</strong>. Cela permet de délivrer une <strong>dose plus élevée de radiation</strong> dans la zone tumorale tout en préservant les tissus sains environnants.</p>
-</li>
-</ul></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen TEP/CT pour la Radiothérapie</h2></div><div class="info-text"><p><p>Le <strong>TEP/CT pour la radiothérapie</strong> suit un protocole spécifique afin d'obtenir des informations précises sur la tumeur et son métabolisme avant, pendant ou après le traitement. Voici les étapes principales de cet examen :</p><ol>
-<li><strong>Préparation</strong> :</li>
-<li><strong>Jeûne</strong> : En général, le patient devra <strong>être à jeun</strong> pendant environ <strong>6 heures</strong> avant l'examen, afin de garantir que les cellules tumorales absorbent correctement le <strong>radiotraceur</strong> (FDG) et que les résultats ne soient pas perturbés par la présence de nourriture dans le système digestif.</li>
-<li><strong>Hydratation</strong> : Il est recommandé de boire <strong>beaucoup d'eau</strong> avant l'examen pour faciliter l'élimination du radiotraceur et assurer une bonne hydratation des tissus.</li>
-<li><strong>Médicaments</strong> : Si vous prenez des médicaments, il est important de les <strong>signaler à votre médecin</strong>, car certains peuvent interférer avec l'examen.</li>
-<li>
-<p><strong>Réduction de l'anxiété</strong> : Dans certains cas, le patient peut être invité à <strong>rester immobile</strong> pendant une période prolongée. Des techniques de relaxation ou des conseils peuvent être proposés pour minimiser l'anxiété pendant l'examen.</p>
-</li>
-<li>
-<p><strong>Injection du radiotraceur FDG</strong> :</p>
-</li>
-<li>Un <strong>radiopharmaceutique</strong> marqué au fluor-18, le <strong>fluorodésoxyglucose (FDG)</strong>, est injecté par voie intraveineuse. Ce produit est absorbé par les cellules tumorales qui présentent un <strong>métabolisme du glucose plus élevé</strong>, ce qui les rend visibles par la caméra <strong>TEP</strong>.</li>
-<li>
-<p>Après l’injection, une période d’attente de <strong>30 à 60 minutes</strong> est nécessaire pour que le radiotraceur se distribue dans le corps et se fixe sur les zones métaboliquement actives, comme les tumeurs.</p>
-</li>
-<li>
-<p><strong>Acquisition des images</strong> :</p>
-</li>
-<li>L’examen commence par une <strong>tomodensitométrie (CT)</strong> de la zone à traiter, afin de capturer des images anatomiques précises du corps. Cette étape permet de définir les <strong>structures anatomiques</strong>.</li>
-<li>Ensuite, la caméra <strong>TEP</strong> capture les images métaboliques, montrant les zones d'accumulation de FDG et indiquant les <strong>zones tumorales</strong> ou d'inflammation. Ce processus dure généralement <strong>20 à 30 minutes</strong>.</li>
-<li>
-<p>Le <strong>TEP/CT</strong> permet de combiner les images fonctionnelles (TEP) et structurelles (CT) dans un même examen, fournissant une vision complète de la tumeur.</p>
-</li>
-<li>
-<p><strong>Durée de l'examen</strong> :</p>
-</li>
-<li>
-<p>La durée totale de l'examen est d'environ <strong>60 à 90 minutes</strong>, incluant le temps de préparation et l'attente pour l’injection du radiotraceur.</p>
-</li>
-<li>
-<p><strong>Post-examen</strong> :</p>
-</li>
-<li>Après l'examen, le patient peut reprendre ses activités habituelles. Il est recommandé de boire beaucoup d'eau pour éliminer rapidement le radiotraceur de l’organisme.</li>
-</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications du TEP/CT pour la Radiothérapie</h2></div><div class="info-text"><p><p>Bien que le <strong>TEP/CT pour la radiothérapie</strong> soit généralement sûr, il existe quelques contre-indications et précautions à prendre en compte :</p><ul>
-<li>
-<p><strong>Grossesse</strong> : L'examen est contre-indiqué pendant la <strong>grossesse</strong> en raison de l’utilisation de <strong>radiations</strong> et de produits radioactifs. Si vous êtes enceinte ou si vous allaitez, informez-en votre médecin.</p>
-</li>
-<li>
-<p><strong>Allergies aux radiopharmaceutiques</strong> : Certaines personnes peuvent avoir des réactions allergiques aux radiotraceurs. Si vous avez déjà présenté une réaction allergique à un produit de contraste ou à un radiopharmaceutique, il est important de le signaler avant l’examen.</p>
-</li>
-<li>
-<p><strong>Problèmes rénaux</strong> : En raison de l'élimination du radiotraceur par les reins, les personnes souffrant de <strong>problèmes rénaux</strong> graves devront être suivies de près.</p>
-</li>
-<li>
-<p><strong>Diabète</strong> : Les patients diabétiques doivent être particulièrement vigilants, car <strong>les niveaux de glucose sanguin élevés</strong> peuvent interférer avec la captation du radiotraceur FDG, faussant ainsi les résultats.</p>
-</li>
-</ul></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour le TEP/CT pour la Radiothérapie</h2></div><div class="info-text"><p><p>Le <strong>TEP/CT pour la radiothérapie</strong> est un examen complexe qui nécessite des équipements spécialisés. Voici les principaux lieux où cet examen peut être réalisé, en fonction des indications sur le <strong>portail WIC-DOCTOR</strong> :</p><ol>
-<li><strong>Centres de médecine nucléaire</strong> :</li>
-<li>
-<p>Les <strong>centres de médecine nucléaire</strong> sont les lieux principaux où le TEP/CT est effectué. Ces centres disposent d’équipements TEP/CT de dernière génération et d’une expertise en imagerie médicale pour la planification et le suivi de traitements de radiothérapie.</p>
-</li>
-<li>
-<p><strong>Hôpitaux oncologiques spécialisés</strong> :</p>
-</li>
-<li>
-<p>Les <strong>hôpitaux</strong> et <strong>centres spécialisés en oncologie</strong> utilisent régulièrement cette technologie pour aider à <strong>planifier</strong> et à <strong>suivre</strong> les traitements de radiothérapie, notamment pour les cancers du <strong>sein</strong>, de <strong>la prostate</strong>, <strong>des poumons</strong>, et <strong>digestifs</strong>.</p>
-</li>
-<li>
-<p><strong>Cliniques et établissements privés de radiothérapie</strong> :</p>
-</li>
-<li>
-<p>Certaines <strong>cliniques privées</strong> et <strong>établissements de soins spécialisés</strong> en radiothérapie proposent le TEP/CT dans le cadre de leur offre de <strong>soins de radiothérapie de précision</strong>.</p>
-</li>
-<li>
-<p><strong>Centres de recherche et d’essais cliniques</strong> :</p>
-</li>
-<li>
-<p>Le <strong>TEP/CT pour la radiothérapie</strong> est également utilisé dans des <strong>centres de recherche</strong> ou lors d’<strong>essais cliniques</strong> visant à optimiser les traitements anticancéreux, en particulier dans le cadre de la radiothérapie ciblée.</p>
-</li>
-<li>
-<p><strong>Consultations spécialisées en radiothérapie</strong> :</p>
-</li>
-<li>Ce test est souvent prescrit par un <strong>radiothérapeute</strong> dans le cadre d'une consultation pour déterminer le plan de traitement le plus approprié, en fonction de l’anatomie et de la localisation de la tumeur.</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du TEP/CT pour la Radiothérapie</h2></div><div class="info-text"><p><p>Le <strong>TEP/CT pour la radiothérapie</strong> combine la tomographie par émission de positons (TEP) et la tomodensitométrie (CT) pour fournir des images détaillées du corps tout en mesurant l'activité métabolique des tissus. Cette technique est principalement utilisée dans le cadre du <strong>traitement du cancer</strong>, afin d'améliorer la précision du ciblage de la radiothérapie. Elle permet d'identifier et de localiser avec une grande précision les <strong>zones tumorales</strong> et d’évaluer leur métabolisme, optimisant ainsi l'efficacité des traitements tout en minimisant les dommages aux tissus sains. Voici les principales indications de cet examen dans le cadre de la radiothérapie :<br/>
+<strong>Planification du traitement en radiothérapie</strong> : Le <strong>TEP/CT pour la radiothérapie</strong> est utilisé pour la <strong>planification précise des traitements de radiothérapie</strong>, notamment en oncologie. Grâce aux images détaillées et à la cartographie du métabolisme, les radiothérapeutes peuvent localiser les <strong>tumeurs</strong> avec une grande précision et ajuster les doses de radiation en fonction de la taille, de la forme et de l'activité métabolique des tumeurs.<br/>
+<strong>Évaluation du stade du cancer</strong> : Avant de débuter un traitement de radiothérapie, le TEP/CT permet de <strong>stagier le cancer</strong> en évaluant l’étendue de la tumeur et en recherchant des <strong>métastases</strong> ou des zones à risque dans le corps. Cela est essentiel pour déterminer la stratégie de traitement la plus appropriée.<br/>
+<strong>Suivi du traitement de radiothérapie</strong> : Pendant et après les sessions de radiothérapie, ce test est utilisé pour évaluer l'efficacité du traitement en mesurant les changements dans l'activité métabolique des cellules tumorales. Une réduction de l'activité métabolique après plusieurs séances de radiothérapie indique généralement une <strong>réponse favorable</strong> au traitement.<br/>
+<strong>Radiothérapie de précision</strong> : L’une des principales raisons d'utiliser le TEP/CT dans le cadre de la radiothérapie est d’atteindre des <strong>objectifs thérapeutiques plus ciblés</strong>. Cela permet de délivrer une <strong>dose plus élevée de radiation</strong> dans la zone tumorale tout en préservant les tissus sains environnants.<br/>
+<strong>Évaluation de la récidive tumorale</strong> : Le <strong>TEP/CT</strong> est aussi très utile pour <strong>détecter les récidives tumorales</strong> après une première série de traitements. En mesurant la consommation de glucose par les cellules tumorales, le TEP/CT permet de détecter les zones de récidive qui peuvent être difficiles à voir par d'autres techniques d'imagerie.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen TEP/CT pour la Radiothérapie</h2></div><div class="info-text"><p><p>Le <strong>TEP/CT pour la radiothérapie</strong> suit un protocole spécifique afin d'obtenir des informations précises sur la tumeur et son métabolisme avant, pendant ou après le traitement. Voici les étapes principales de cet examen :<br/>
+1. <strong>Préparation</strong> :   <br/>
+<strong>Jeûne</strong> : En général, le patient devra <strong>être à jeun</strong> pendant environ <strong>6 heures</strong> avant l'examen, afin de garantir que les cellules tumorales absorbent correctement le <strong>radiotraceur</strong> (FDG) et que les résultats ne soient pas perturbés par la présence de nourriture dans le système digestif.   <br/>
+<strong>Hydratation</strong> : Il est recommandé de boire <strong>beaucoup d'eau</strong> avant l'examen pour faciliter l'élimination du radiotraceur et assurer une bonne hydratation des tissus.   <br/>
+<strong>Médicaments</strong> : Si vous prenez des médicaments, il est important de les <strong>signaler à votre médecin</strong>, car certains peuvent interférer avec l'examen.   <br/>
+<strong>Réduction de l'anxiété</strong> : Dans certains cas, le patient peut être invité à <strong>rester immobile</strong> pendant une période prolongée. Des techniques de relaxation ou des conseils peuvent être proposés pour minimiser l'anxiété pendant l'examen.<br/>
+2. <strong>Injection du radiotraceur FDG</strong> :<br/>
+-Un <strong>radiopharmaceutique</strong> marqué au fluor-18, le <strong>fluorodésoxyglucose (FDG)</strong>, est injecté par voie intraveineuse. Ce produit est absorbé par les cellules tumorales qui présentent un <strong>métabolisme du glucose plus élevé</strong>, ce qui les rend visibles par la caméra <strong>TEP</strong>.     - Après l’injection, une période d’attente de <strong>30 à 60 minutes</strong> est nécessaire pour que le radiotraceur se distribue dans le corps et se fixe sur les zones métaboliquement actives, comme les tumeurs.<br/>
+3. <strong>Acquisition des images</strong> :<br/>
+-L’examen commence par une <strong>tomodensitométrie (CT)</strong> de la zone à traiter, afin de capturer des images anatomiques précises du corps. Cette étape permet de définir les <strong>structures anatomiques</strong>.     - Ensuite, la caméra <strong>TEP</strong> capture les images métaboliques, montrant les zones d'accumulation de FDG et indiquant les <strong>zones tumorales</strong> ou d'inflammation. Ce processus dure généralement <strong>20 à 30 minutes</strong>.     - Le <strong>TEP/CT</strong> permet de combiner les images fonctionnelles (TEP) et structurelles (CT) dans un même examen, fournissant une vision complète de la tumeur.<br/>
+4. <strong>Durée de l'examen</strong> :<br/>
+-La durée totale de l'examen est d'environ <strong>60 à 90 minutes</strong>, incluant le temps de préparation et l'attente pour l’injection du radiotraceur.<br/>
+5. <strong>Post-examen</strong> :<br/>
+-Après l'examen, le patient peut reprendre ses activités habituelles. Il est recommandé de boire beaucoup d'eau pour éliminer rapidement le radiotraceur de l’organisme.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications du TEP/CT pour la Radiothérapie</h2></div><div class="info-text"><p><p>Bien que le <strong>TEP/CT pour la radiothérapie</strong> soit généralement sûr, il existe quelques contre-indications et précautions à prendre en compte :<br/>
+<strong>Grossesse</strong> : L'examen est contre-indiqué pendant la <strong>grossesse</strong> en raison de l’utilisation de <strong>radiations</strong> et de produits radioactifs. Si vous êtes enceinte ou si vous allaitez, informez-en votre médecin.  <br/>
+<strong>Allergies aux radiopharmaceutiques</strong> : Certaines personnes peuvent avoir des réactions allergiques aux radiotraceurs. Si vous avez déjà présenté une réaction allergique à un produit de contraste ou à un radiopharmaceutique, il est important de le signaler avant l’examen.<br/>
+<strong>Problèmes rénaux</strong> : En raison de l'élimination du radiotraceur par les reins, les personnes souffrant de <strong>problèmes rénaux</strong> graves devront être suivies de près.<br/>
+<strong>Diabète</strong> : Les patients diabétiques doivent être particulièrement vigilants, car <strong>les niveaux de glucose sanguin élevés</strong> peuvent interférer avec la captation du radiotraceur FDG, faussant ainsi les résultats.<br/>
+<strong>Enfants</strong> : Le <strong>TEP/CT</strong> est généralement réservé aux adultes, bien qu'il puisse être réalisé chez les enfants dans certains cas spécifiques, sous la supervision de spécialistes.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour le TEP/CT pour la Radiothérapie</h2></div><div class="info-text"><p><p>Le <strong>TEP/CT pour la radiothérapie</strong> est un examen complexe qui nécessite des équipements spécialisés. Voici les principaux lieux où cet examen peut être réalisé, en fonction des indications sur le <strong>portail WIC-DOCTOR</strong> :<br/>
+1. <strong>Centres de médecine nucléaire</strong> :<br/>
+-Les <strong>centres de médecine nucléaire</strong> sont les lieux principaux où le TEP/CT est effectué. Ces centres disposent d’équipements TEP/CT de dernière génération et d’une expertise en imagerie médicale pour la planification et le suivi de traitements de radiothérapie.<br/>
+2. <strong>Hôpitaux oncologiques spécialisés</strong> :<br/>
+-Les <strong>hôpitaux</strong> et <strong>centres spécialisés en oncologie</strong> utilisent régulièrement cette technologie pour aider à <strong>planifier</strong> et à <strong>suivre</strong> les traitements de radiothérapie, notamment pour les cancers du <strong>sein</strong>, de <strong>la prostate</strong>, <strong>des poumons</strong>, et <strong>digestifs</strong>.<br/>
+3. <strong>Cliniques et établissements privés de radiothérapie</strong> :<br/>
+-Certaines <strong>cliniques privées</strong> et <strong>établissements de soins spécialisés</strong> en radiothérapie proposent le TEP/CT dans le cadre de leur offre de <strong>soins de radiothérapie de précision</strong>.<br/>
+4. <strong>Centres de recherche et d’essais cliniques</strong> :<br/>
+-Le <strong>TEP/CT pour la radiothérapie</strong> est également utilisé dans des <strong>centres de recherche</strong> ou lors d’<strong>essais cliniques</strong> visant à optimiser les traitements anticancéreux, en particulier dans le cadre de la radiothérapie ciblée.<br/>
+5. <strong>Consultations spécialisées en radiothérapie</strong> :<br/>
+-Ce test est souvent prescrit par un <strong>radiothérapeute</strong> dans le cadre d'une consultation pour déterminer le plan de traitement le plus approprié, en fonction de l’anatomie et de la localisation de la tumeur.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

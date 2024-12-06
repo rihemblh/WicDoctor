@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,64 +226,34 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications des Études Urodynamiques Pression-Débit</h2></div><div class="info-text"><p><p>Les <strong>études urodynamiques pression-débit</strong> sont essentielles pour le diagnostic des troubles urinaires. Elles permettent de mesurer la pression à l’intérieur de la vessie et du système urinaire pendant le remplissage et la miction, afin de mieux comprendre la fonction de la vessie et de l’urètre. Voici les principales indications selon le portail WIC-DOCTOR :</p><ul>
-<li><strong>Incontinence urinaire</strong> : Diagnostic des causes sous-jacentes de l'incontinence, qu'elle soit par urgenturie, par effort ou mixte.</li>
-<li><strong>Dysfonctionnement mictionnel</strong> : Lors de symptômes comme des douleurs, une difficulté à uriner, ou une vidange incomplète de la vessie.</li>
-<li><strong>Syndrome de vessie neurogène</strong> : Evaluation des troubles urinaires chez les patients ayant des pathologies neurologiques (sclérose en plaques, lésions médullaires).</li>
-<li><strong>Obstruction urétrale</strong> : Détection d’une éventuelle obstruction du bas appareil urinaire, fréquente dans les troubles bénins de la prostate chez les hommes.</li>
-<li><strong>Troubles de la miction chez les patients âgés</strong> : Lors de l’apparition de symptômes urinaires, pour distinguer entre les diverses pathologies.</li>
-<li><strong>Préparation à une intervention chirurgicale</strong> : Examen avant certaines chirurgies urologiques pour évaluer la fonction de la vessie, particulièrement pour les procédures de prostatectomie ou autres chirurgies pelviennes.</li>
-</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>L’étude urodynamique pression-débit est réalisée en plusieurs étapes, généralement dans un cadre hospitalier ou spécialisé en urologie :</p><ol>
-<li><strong>Préparation</strong> :</li>
-<li><strong>Hydratation</strong> : Le patient devra boire une quantité modérée de liquide avant l’examen pour simuler un remplissage naturel de la vessie.</li>
-<li><strong>Médicaments</strong> : Le médecin devra être informé de tout traitement médicamenteux qui pourrait affecter la fonction vésicale.</li>
-<li>
-<p><strong>Douleur ou inconfort</strong> : Bien que l'examen soit généralement bien toléré, il peut causer un léger inconfort au moment de l'insertion des cathéters.</p>
-</li>
-<li>
-<p><strong>Procédure</strong> :</p>
-</li>
-<li>Des cathéters sont insérés dans l'urètre et la vessie pour mesurer la pression interne de la vessie et de l’urètre pendant la miction.</li>
-<li>La vessie est remplie de liquide stérile et la pression est mesurée à différents moments (remplissage et miction).</li>
-<li>
-<p>Le patient est invité à uriner dans un dispositif de mesure pour évaluer le débit urinaire et détecter toute anomalie dans la fonction de la vessie.</p>
-</li>
-<li>
-<p><strong>Durée de l'examen</strong> :</p>
-</li>
-<li>
-<p>La procédure prend généralement <strong>30 à 60 minutes</strong>.</p>
-</li>
-<li>
-<p><strong>Post-examen</strong> :</p>
-</li>
-<li>Après l'examen, un léger inconfort peut persister pendant quelques heures. Le patient peut reprendre ses activités normales, sauf indication contraire du médecin.</li>
-</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications des Études Urodynamiques Pression-Débit</h2></div><div class="info-text"><p><p>Bien que l'examen soit généralement sans danger, certaines contre-indications existent :</p><ul>
-<li><strong>Infections urinaires actives</strong> : L’examen ne doit pas être effectué en présence d’une infection urinaire non traitée.</li>
-<li><strong>Grossesse</strong> : En raison des risques potentiels pour la grossesse, l’examen est évité sauf en cas de nécessité absolue.</li>
-<li><strong>Troubles de la coagulation</strong> : Les patients sous anticoagulants ou présentant des troubles de la coagulation doivent informer leur médecin pour ajuster les mesures de précaution.</li>
-</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Suivi Après l’Étude Urodynamique Pression-Débit</h2></div><div class="info-text"><p><p>Les <strong>études urodynamiques pression-débit</strong> sont réalisées principalement dans des <strong>centres spécialisés en urologie</strong>. Voici les lieux de soins recommandés, selon les indications sur WIC-DOCTOR :</p><ol>
-<li><strong>Cliniques et Hôpitaux Spécialisés en Urologie</strong> :</li>
-<li>
-<p>Ces établissements, généralement équipés de services d'urologie, sont les plus courants pour effectuer l’examen. Ils disposent des équipements nécessaires pour réaliser des études urodynamiques complètes et peuvent assurer un suivi post-examen immédiat.</p>
-</li>
-<li>
-<p><strong>Centres Spécialisés en Médecine Pelvienne et Rééducation</strong> :</p>
-</li>
-<li>
-<p>Certains <strong>centres spécialisés en rééducation pelvienne</strong> ou en <strong>médecine fonctionnelle du bas appareil urinaire</strong> proposent cet examen pour diagnostiquer des troubles comme l’incontinence, la rétention urinaire ou les troubles de la miction, en particulier dans le cadre de pathologies neurologiques ou après une chirurgie pelvienne.</p>
-</li>
-<li>
-<p><strong>Suivi à Distance (via WIC-DOCTOR)</strong> :</p>
-</li>
-<li>
-<p>Selon la plateforme WIC-DOCTOR, certains services de <strong>télémédecine</strong> et de <strong>suivi à distance</strong> peuvent être utilisés pour la consultation des résultats et la gestion des traitements, notamment dans les cas de suivi pour l'incontinence ou après un traitement chirurgical.</p>
-</li>
-<li>
-<p><strong>Suivi Médical Après l’Examen</strong> :</p>
-</li>
-<li>Après l'examen, le suivi sera effectué en fonction des résultats obtenus. Cela peut inclure un traitement médicamenteux, une rééducation pelvienne ou une intervention chirurgicale en fonction des indications. Les patients peuvent consulter leur médecin traitant ou un spécialiste en urologie pour planifier le traitement le plus approprié en fonction des résultats de l’étude.</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications des Études Urodynamiques Pression-Débit</h2></div><div class="info-text"><p><p>Les <strong>études urodynamiques pression-débit</strong> sont essentielles pour le diagnostic des troubles urinaires. Elles permettent de mesurer la pression à l’intérieur de la vessie et du système urinaire pendant le remplissage et la miction, afin de mieux comprendre la fonction de la vessie et de l’urètre. Voici les principales indications selon le portail WIC-DOCTOR :<br/>
+<strong>Incontinence urinaire</strong> : Diagnostic des causes sous-jacentes de l'incontinence, qu'elle soit par urgenturie, par effort ou mixte.<br/>
+<strong>Dysfonctionnement mictionnel</strong> : Lors de symptômes comme des douleurs, une difficulté à uriner, ou une vidange incomplète de la vessie.<br/>
+<strong>Syndrome de vessie neurogène</strong> : Evaluation des troubles urinaires chez les patients ayant des pathologies neurologiques (sclérose en plaques, lésions médullaires).<br/>
+<strong>Obstruction urétrale</strong> : Détection d’une éventuelle obstruction du bas appareil urinaire, fréquente dans les troubles bénins de la prostate chez les hommes.<br/>
+<strong>Troubles de la miction chez les patients âgés</strong> : Lors de l’apparition de symptômes urinaires, pour distinguer entre les diverses pathologies.<br/>
+<strong>Préparation à une intervention chirurgicale</strong> : Examen avant certaines chirurgies urologiques pour évaluer la fonction de la vessie, particulièrement pour les procédures de prostatectomie ou autres chirurgies pelviennes.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen</h2></div><div class="info-text"><p><p>L’étude urodynamique pression-débit est réalisée en plusieurs étapes, généralement dans un cadre hospitalier ou spécialisé en urologie :<br/>
+1. <strong>Préparation</strong> :   <br/>
+<strong>Hydratation</strong> : Le patient devra boire une quantité modérée de liquide avant l’examen pour simuler un remplissage naturel de la vessie.   <br/>
+<strong>Médicaments</strong> : Le médecin devra être informé de tout traitement médicamenteux qui pourrait affecter la fonction vésicale.   <br/>
+<strong>Douleur ou inconfort</strong> : Bien que l'examen soit généralement bien toléré, il peut causer un léger inconfort au moment de l'insertion des cathéters.<br/>
+2. <strong>Procédure</strong> :<br/>
+-Des cathéters sont insérés dans l'urètre et la vessie pour mesurer la pression interne de la vessie et de l’urètre pendant la miction.     - La vessie est remplie de liquide stérile et la pression est mesurée à différents moments (remplissage et miction).     - Le patient est invité à uriner dans un dispositif de mesure pour évaluer le débit urinaire et détecter toute anomalie dans la fonction de la vessie.<br/>
+3. <strong>Durée de l'examen</strong> :<br/>
+-La procédure prend généralement <strong>30 à 60 minutes</strong>.<br/>
+4. <strong>Post-examen</strong> :<br/>
+-Après l'examen, un léger inconfort peut persister pendant quelques heures. Le patient peut reprendre ses activités normales, sauf indication contraire du médecin.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications des Études Urodynamiques Pression-Débit</h2></div><div class="info-text"><p><p>Bien que l'examen soit généralement sans danger, certaines contre-indications existent :<br/>
+<strong>Infections urinaires actives</strong> : L’examen ne doit pas être effectué en présence d’une infection urinaire non traitée.<br/>
+<strong>Grossesse</strong> : En raison des risques potentiels pour la grossesse, l’examen est évité sauf en cas de nécessité absolue.<br/>
+<strong>Troubles de la coagulation</strong> : Les patients sous anticoagulants ou présentant des troubles de la coagulation doivent informer leur médecin pour ajuster les mesures de précaution.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Suivi Après l’Étude Urodynamique Pression-Débit</h2></div><div class="info-text"><p><p>Les <strong>études urodynamiques pression-débit</strong> sont réalisées principalement dans des <strong>centres spécialisés en urologie</strong>. Voici les lieux de soins recommandés, selon les indications sur WIC-DOCTOR :<br/>
+1. <strong>Cliniques et Hôpitaux Spécialisés en Urologie</strong> :<br/>
+-Ces établissements, généralement équipés de services d'urologie, sont les plus courants pour effectuer l’examen. Ils disposent des équipements nécessaires pour réaliser des études urodynamiques complètes et peuvent assurer un suivi post-examen immédiat.<br/>
+2. <strong>Centres Spécialisés en Médecine Pelvienne et Rééducation</strong> :<br/>
+-Certains <strong>centres spécialisés en rééducation pelvienne</strong> ou en <strong>médecine fonctionnelle du bas appareil urinaire</strong> proposent cet examen pour diagnostiquer des troubles comme l’incontinence, la rétention urinaire ou les troubles de la miction, en particulier dans le cadre de pathologies neurologiques ou après une chirurgie pelvienne.<br/>
+3. <strong>Suivi à Distance (via WIC-DOCTOR)</strong> :<br/>
+-Selon la plateforme WIC-DOCTOR, certains services de <strong>télémédecine</strong> et de <strong>suivi à distance</strong> peuvent être utilisés pour la consultation des résultats et la gestion des traitements, notamment dans les cas de suivi pour l'incontinence ou après un traitement chirurgical.<br/>
+4. <strong>Suivi Médical Après l’Examen</strong> :<br/>
+-Après l'examen, le suivi sera effectué en fonction des résultats obtenus. Cela peut inclure un traitement médicamenteux, une rééducation pelvienne ou une intervention chirurgicale en fonction des indications. Les patients peuvent consulter leur médecin traitant ou un spécialiste en urologie pour planifier le traitement le plus approprié en fonction des résultats de l’étude.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

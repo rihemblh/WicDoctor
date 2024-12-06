@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,61 +222,37 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Risques et Complications du Traitement Percutané Échoguidé<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et Types de Soins Disponibles via WIC-DOCTOR pour le Traitement Percutané Échoguidé de la Tendinopathie Calcifiante<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un Lieu de Soins Adapté via WIC-DOCTOR pour le Traitement Percutané Échoguidé de la Tendinopathie Calcifiante<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Risques et Complications du Traitement Percutané Échoguidé<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et Types de Soins Disponibles via WIC-DOCTOR pour le Traitement Percutané Échoguidé de la Tendinopathie Calcifiante<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante</h2></div><div class="info-text"><p><p>La <strong>tendinopathie calcifiante</strong> est une affection courante dans laquelle des dépôts de calcium se forment dans les tendons, souvent au niveau de l'épaule. Ces calcifications peuvent entraîner une douleur intense et limiter la mobilité de l'articulation. Le <strong>traitement percutané échoguidé</strong> est une technique moderne et non invasive qui permet de traiter cette pathologie de manière ciblée et précise en utilisant l'échographie pour localiser et traiter les calcifications sans chirurgie.</p><p>Grâce à l'échographie, ce traitement permet d'effectuer une <strong>aspiration</strong> ou <strong>fragmentation</strong> des calcifications de façon plus précise et moins invasive qu'une intervention chirurgicale, avec un temps de récupération rapide et des résultats efficaces.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante</h2></div><div class="info-text"><p><p>Le <strong>traitement percutané échoguidé</strong> est recommandé dans les situations suivantes :</p><ul>
-<li>
-<p><strong>Douleur persistante</strong> : Lorsque la douleur due à la tendinopathie calcifiante devient intense et invalidante, ce traitement permet de réduire ou éliminer la douleur en ciblant précisément les calcifications responsables.</p>
-</li>
-<li>
-<p><strong>Échec des traitements conservateurs</strong> : Si les traitements classiques comme les médicaments, la physiothérapie ou les infiltrations n'ont pas suffi à soulager la douleur, le traitement échoguidé peut offrir une solution efficace.</p>
-</li>
-<li>
-<p><strong>Limitation de la mobilité</strong> : Lorsque les calcifications affectent la mobilité de l'articulation, le traitement percutané échoguidé peut aider à restaurer la fonction articulaire en éliminant ou réduisant les dépôts de calcium.</p>
-</li>
-<li>
-<p><strong>Calcifications profondes ou volumineuses</strong> : Ce traitement est particulièrement adapté pour retirer des calcifications importantes qui ne sont pas accessibles par d'autres méthodes.</p>
-</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante</h2></div><div class="info-text"><p><p>Le <strong>déroulement</strong> du traitement percutané échoguidé de la tendinopathie calcifiante suit plusieurs étapes clés, garantissant précision et sécurité :</p><ol>
-<li>
-<p><strong>Consultation initiale et diagnostic</strong><br/>
-   Le médecin commence par un examen clinique et prescrit une <strong>échographie</strong> pour localiser précisément les calcifications. Cette image permet de visualiser la taille et la position exacte des dépôts de calcium.</p>
-</li>
-<li>
-<p><strong>Préparation de la zone à traiter</strong><br/>
-   La zone concernée est désinfectée et une anesthésie locale est administrée pour minimiser la douleur. Le patient est positionné en fonction de la zone à traiter, souvent allongé ou assis.</p>
-</li>
-<li>
-<p><strong>Injection échoguidée</strong><br/>
-   Sous guidage échographique, une fine aiguille est insérée dans le tendon pour <strong>aspirer</strong> ou <strong>fragmenter</strong> les calcifications. Cette méthode précise permet de ne traiter que la zone calcifiée sans endommager les tissus voisins.</p>
-</li>
-<li>
-<p><strong>Contrôle post-interventionnel</strong><br/>
-   Après la procédure, une échographie de contrôle peut être effectuée pour s'assurer de l'élimination complète des calcifications. Si nécessaire, une nouvelle procédure peut être réalisée.</p>
-</li>
-<li>
-<p><strong>Suivi et rééducation</strong><br/>
-   Après le traitement, des séances de rééducation fonctionnelle peuvent être recommandées pour restaurer la mobilité de l'articulation et prévenir toute récidive.</p>
-</li>
-</ol><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Risques et Complications du Traitement Percutané Échoguidé</h2></div><div class="info-text"><p><p>Le traitement percutané échoguidé présente des avantages, mais il existe quelques risques à prendre en compte :</p><ul>
-<li>
-<p><strong>Infection</strong> : Bien que rare, une infection peut survenir à l'endroit où l'aiguille a pénétré. Des mesures d'hygiène rigoureuses sont prises pour limiter ce risque.</p>
-</li>
-<li>
-<p><strong>Saignement</strong> : De légers saignements peuvent survenir, mais ils sont généralement temporaires et contrôlés.</p>
-</li>
-<li>
-<p><strong>Douleur post-intervention</strong> : Après la procédure, certains patients peuvent ressentir un inconfort ou une douleur légère, mais cela disparaît généralement après quelques jours.</p>
-</li>
-<li>
-<p><strong>Récidive des calcifications</strong> : Bien que l'élimination des calcifications soit souvent efficace, il est possible que des dépôts de calcium réapparaissent avec le temps, nécessitant des traitements supplémentaires.</p>
-</li>
-<li>
-<p><strong>Lésions tendineuses</strong> : Très rares, des lésions aux tendons voisins peuvent se produire si le traitement n'est pas effectué avec une grande précision.</p>
-</li>
-</ul><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et Types de Soins Disponibles via WIC-DOCTOR pour le Traitement Percutané Échoguidé de la Tendinopathie Calcifiante</h2></div><div class="info-text"><p><p>Le traitement percutané échoguidé de la <strong>tendinopathie calcifiante</strong> peut être effectué dans des établissements spécialisés accessibles via la plateforme <strong>WIC-DOCTOR</strong>, qui met en relation les patients avec des professionnels qualifiés.</p><h5><strong>1. Cabinets médicaux spécialisés en échographie et orthopédie</strong></h5><p>Les <strong>médecins spécialistes</strong> dans le traitement des tendinopathies calcifiantes utilisent des équipements d’échographie de dernière génération pour guider l'aiguille avec une précision maximale. Ces professionnels sont formés pour intervenir dans des cas de calcifications complexes.</p><h4><strong>2. Cliniques spécialisées en rééducation et orthopédie</strong></h4><p>Les <strong>cliniques et centres spécialisés</strong> offrent une prise en charge complète, incluant le traitement percutané échoguidé de la tendinopathie calcifiante ainsi que des services de <strong>rééducation fonctionnelle</strong> pour aider à la récupération après le traitement.</p><h4><strong>3. Recherche de soins sur WIC-DOCTOR</strong></h4><p>Grâce à <strong>WIC-DOCTOR</strong>, vous pouvez trouver facilement des <strong>médecins spécialisés</strong> en tendinopathie calcifiante dans votre région, prendre rendez-vous et consulter les avis d'autres patients. WIC-DOCTOR offre également la possibilité de rechercher des <strong>cliniques spécialisées</strong> offrant cette procédure innovante.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un Lieu de Soins Adapté via WIC-DOCTOR pour le Traitement Percutané Échoguidé de la Tendinopathie Calcifiante</h2></div><div class="info-text"><p><p>Le <strong>traitement percutané échoguidé</strong> est une méthode efficace et minimement invasive pour traiter les <strong>tendinopathies calcifiantes</strong>. Grâce à <strong>WIC-DOCTOR</strong>, il est désormais plus facile de trouver des <strong>médecins spécialisés</strong> et des <strong>centres de soins</strong> qualifiés, offrant des solutions adaptées à vos besoins pour un traitement optimal.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante</h2></div><div class="info-text"><p><p>La <strong>tendinopathie calcifiante</strong> est une affection courante dans laquelle des dépôts de calcium se forment dans les tendons, souvent au niveau de l'épaule. Ces calcifications peuvent entraîner une douleur intense et limiter la mobilité de l'articulation. Le <strong>traitement percutané échoguidé</strong> est une technique moderne et non invasive qui permet de traiter cette pathologie de manière ciblée et précise en utilisant l'échographie pour localiser et traiter les calcifications sans chirurgie.<br/>
+Grâce à l'échographie, ce traitement permet d'effectuer une <strong>aspiration</strong> ou <strong>fragmentation</strong> des calcifications de façon plus précise et moins invasive qu'une intervention chirurgicale, avec un temps de récupération rapide et des résultats efficaces.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante</h2></div><div class="info-text"><p><p>Le <strong>traitement percutané échoguidé</strong> est recommandé dans les situations suivantes :<br/>
+<strong>Douleur persistante</strong> : Lorsque la douleur due à la tendinopathie calcifiante devient intense et invalidante, ce traitement permet de réduire ou éliminer la douleur en ciblant précisément les calcifications responsables.  <br/>
+<strong>Échec des traitements conservateurs</strong> : Si les traitements classiques comme les médicaments, la physiothérapie ou les infiltrations n'ont pas suffi à soulager la douleur, le traitement échoguidé peut offrir une solution efficace.<br/>
+<strong>Limitation de la mobilité</strong> : Lorsque les calcifications affectent la mobilité de l'articulation, le traitement percutané échoguidé peut aider à restaurer la fonction articulaire en éliminant ou réduisant les dépôts de calcium.<br/>
+<strong>Calcifications profondes ou volumineuses</strong> : Ce traitement est particulièrement adapté pour retirer des calcifications importantes qui ne sont pas accessibles par d'autres méthodes.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement du Traitement Percutané Échoguidé de la Tendinopathie Calcifiante</h2></div><div class="info-text"><p><p>Le <strong>déroulement</strong> du traitement percutané échoguidé de la tendinopathie calcifiante suit plusieurs étapes clés, garantissant précision et sécurité :<br/>
+1. <strong>Consultation initiale et diagnostic</strong><br/>
+   Le médecin commence par un examen clinique et prescrit une <strong>échographie</strong> pour localiser précisément les calcifications. Cette image permet de visualiser la taille et la position exacte des dépôts de calcium.<br/>
+2. <strong>Préparation de la zone à traiter</strong><br/>
+   La zone concernée est désinfectée et une anesthésie locale est administrée pour minimiser la douleur. Le patient est positionné en fonction de la zone à traiter, souvent allongé ou assis.<br/>
+3. <strong>Injection échoguidée</strong><br/>
+   Sous guidage échographique, une fine aiguille est insérée dans le tendon pour <strong>aspirer</strong> ou <strong>fragmenter</strong> les calcifications. Cette méthode précise permet de ne traiter que la zone calcifiée sans endommager les tissus voisins.<br/>
+4. <strong>Contrôle post-interventionnel</strong><br/>
+   Après la procédure, une échographie de contrôle peut être effectuée pour s'assurer de l'élimination complète des calcifications. Si nécessaire, une nouvelle procédure peut être réalisée.<br/>
+5. <strong>Suivi et rééducation</strong><br/>
+   Après le traitement, des séances de rééducation fonctionnelle peuvent être recommandées pour restaurer la mobilité de l'articulation et prévenir toute récidive.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Risques et Complications du Traitement Percutané Échoguidé</h2></div><div class="info-text"><p><p>Le traitement percutané échoguidé présente des avantages, mais il existe quelques risques à prendre en compte :<br/>
+<strong>Infection</strong> : Bien que rare, une infection peut survenir à l'endroit où l'aiguille a pénétré. Des mesures d'hygiène rigoureuses sont prises pour limiter ce risque.<br/>
+<strong>Saignement</strong> : De légers saignements peuvent survenir, mais ils sont généralement temporaires et contrôlés.<br/>
+<strong>Douleur post-intervention</strong> : Après la procédure, certains patients peuvent ressentir un inconfort ou une douleur légère, mais cela disparaît généralement après quelques jours.<br/>
+<strong>Récidive des calcifications</strong> : Bien que l'élimination des calcifications soit souvent efficace, il est possible que des dépôts de calcium réapparaissent avec le temps, nécessitant des traitements supplémentaires.<br/>
+<strong>Lésions tendineuses</strong> : Très rares, des lésions aux tendons voisins peuvent se produire si le traitement n'est pas effectué avec une grande précision.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles via WIC-DOCTOR pour le Traitement Percutané Échoguidé de la Tendinopathie Calcifiante</h2></div><div class="info-text"><p><p>Le traitement percutané échoguidé de la <strong>tendinopathie calcifiante</strong> peut être effectué dans des établissements spécialisés accessibles via la plateforme <strong>WIC-DOCTOR</strong>, qui met en relation les patients avec des professionnels qualifiés.  </p><h5><strong>Cabinets médicaux spécialisés en échographie et orthopédie</strong></h5><p>Les <strong>médecins spécialistes</strong> dans le traitement des tendinopathies calcifiantes utilisent des équipements d’échographie de dernière génération pour guider l'aiguille avec une précision maximale. Ces professionnels sont formés pour intervenir dans des cas de calcifications complexes.  </p><h4><strong>Cliniques spécialisées en rééducation et orthopédie</strong></h4><p>Les <strong>cliniques et centres spécialisés</strong> offrent une prise en charge complète, incluant le traitement percutané échoguidé de la tendinopathie calcifiante ainsi que des services de <strong>rééducation fonctionnelle</strong> pour aider à la récupération après le traitement.  </p><h4><strong>Recherche de soins sur WIC-DOCTOR</strong></h4><p>Grâce à <strong>WIC-DOCTOR</strong>, vous pouvez trouver facilement des <strong>médecins spécialisés</strong> en tendinopathie calcifiante dans votre région, prendre rendez-vous et consulter les avis d'autres patients. WIC-DOCTOR offre également la possibilité de rechercher des <strong>cliniques spécialisées</strong> offrant cette procédure innovante.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>Le <strong>traitement percutané échoguidé</strong> est une méthode efficace et minimement invasive pour traiter les <strong>tendinopathies calcifiantes</strong>. Grâce à <strong>WIC-DOCTOR</strong>, il est désormais plus facile de trouver des <strong>médecins spécialisés</strong> et des <strong>centres de soins</strong> qualifiés, offrant des solutions adaptées à vos besoins pour un traitement optimal.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -206,11 +242,11 @@
 <strong>Endoscopie</strong> : Bien que rarement réalisée pendant la grossesse, une endoscopie peut être envisagée si les symptômes sont sévères ou si un diagnostic plus précis est nécessaire.  </p><p>Le <strong>portail WIC-DOCTOR</strong> permet aux femmes enceintes d’accéder à des consultations à distance avec des spécialistes en gastroentérologie, facilitant le diagnostic et le suivi de la gastrite chronique tout au long de la grossesse.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements de la Gastrite Chronique</h2></div><div class="info-text"><p><p>Le traitement de la gastrite chronique pendant la grossesse doit être adapté pour éviter toute complication pour la mère et le fœtus.   La gestion de cette affection inclut des approches médicamenteuses et des changements alimentaires et comportementaux.  </p><h5><strong>Options thérapeutiques pour la gastrite chronique</strong> :</h5><p><strong>Médicaments</strong> : Certains médicaments peuvent être utilisés pour traiter la gastrite, comme les antiacides ou les inhibiteurs de la pompe à protons (IPP).   Toutefois, la prescription de médicaments pendant la grossesse doit être soigneusement supervisée pour éviter des effets secondaires pour le fœtus.<br/>
 <strong>Antibiotiques pour <em>Helicobacter pylori</em></strong> : Si l'infection à <em>Helicobacter pylori</em> est confirmée, un traitement antibiotique peut être recommandé, bien que certains antibiotiques soient contre-indiqués pendant la grossesse.<br/>
 <strong>Modifications alimentaires</strong> : Une alimentation riche en fibres et faible en aliments acides ou épicés peut réduire l'irritation de l'estomac et aider à contrôler les symptômes.<br/>
-<strong>Gestion du stress</strong> : Des techniques de relaxation, comme la méditation ou le yoga prénatal, peuvent aider à réduire le stress et, par conséquent, à apaiser les symptômes de la gastrite.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> facilite l'accès aux soins gastroentérologiques pendant la grossesse, en offrant des consultations à distance et un suivi médical personnalisé.  </p><h5><strong><a href="https://wic-doctor.com/medecin/gastro-entérologue.html">Gastroentérologues</a> spécialisés en soins prénatals</strong></h5><p>Les <strong><a href="https://wic-doctor.com/medecin/gastro-entérologue.html">gastroentérologues</a></strong> peuvent diagnostiquer et traiter la gastrite chronique en tenant compte des particularités liées à la grossesse.  </p><p><strong>Services</strong> :<br/>
+<strong>Gestion du stress</strong> : Des techniques de relaxation, comme la méditation ou le yoga prénatal, peuvent aider à réduire le stress et, par conséquent, à apaiser les symptômes de la gastrite.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> facilite l'accès aux soins gastroentérologiques pendant la grossesse, en offrant des consultations à distance et un suivi médical personnalisé.  </p><h5><strong><a href="https://wic-doctor.com/medecin/gastro-entérologue.html">Gastroentérologues</a> spécialisés en soins prénatals</strong></h5><p>Les <strong><a href="https://wic-doctor.com/medecin/gastro-entérologue.html">gastroentérologues</a></strong> peuvent diagnostiquer et traiter la gastrite chronique en tenant compte des particularités liées à la grossesse.  </p>Services</strong> :<br/>
 <strong>Évaluation des symptômes digestifs</strong>.<br/>
-<strong>Prescriptions de traitements sûrs pendant la grossesse</strong>.  </p><h5><strong>Obstétriciens et cliniciens prénataux</strong></h5><p>Les <strong>obstétriciens</strong> peuvent surveiller l’évolution de la gastrite au cours de la grossesse, en collaboration avec des <a href="https://wic-doctor.com/medecin/gastro-entérologue.html">gastroentérologues</a>, pour minimiser les risques pour la mère et le bébé.  </p><p><strong>Services</strong> :<br/>
+<strong>Prescriptions de traitements sûrs pendant la grossesse</strong>.  </p><h5><strong>Obstétriciens et cliniciens prénataux</strong></h5><p>Les <strong>obstétriciens</strong> peuvent surveiller l’évolution de la gastrite au cours de la grossesse, en collaboration avec des <a href="https://wic-doctor.com/medecin/gastro-entérologue.html">gastroentérologues</a>, pour minimiser les risques pour la mère et le bébé.  </p>Services</strong> :<br/>
 <strong>Suivi prénatal de la gastrite</strong> et gestion des symptômes.<br/>
-<strong>Recommandations nutritionnelles et comportementales</strong> adaptées à la grossesse.  </p><h5><strong>Télémédecine via WIC-DOCTOR</strong></h5><p>Grâce à <strong>WIC-DOCTOR</strong>, les femmes enceintes peuvent bénéficier de <strong>consultations à distance</strong> avec des spécialistes pour le diagnostic, le suivi et l'ajustement des traitements de la gastrite chronique.  </p><p><strong>Services</strong> :<br/>
+<strong>Recommandations nutritionnelles et comportementales</strong> adaptées à la grossesse.  </p><h5><strong>Télémédecine via WIC-DOCTOR</strong></h5><p>Grâce à <strong>WIC-DOCTOR</strong>, les femmes enceintes peuvent bénéficier de <strong>consultations à distance</strong> avec des spécialistes pour le diagnostic, le suivi et l'ajustement des traitements de la gastrite chronique.  </p>Services</strong> :<br/>
 <strong>Consultations à distance</strong> pour la gestion des symptômes.<br/>
 <strong>Suivi médical continu</strong> pour une prise en charge optimale de la gastrite pendant la grossesse.  </p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>Le <strong>diagnostic et la gestion de la gastrite chronique</strong> pendant la grossesse sont essentiels pour assurer la santé de la mère et du fœtus.   Une détection précoce et un traitement adapté, avec l'intégration de la <strong>télémédecine</strong> via le <strong>portail WIC-DOCTOR</strong>, permettent de mieux gérer cette pathologie tout en minimisant les risques.   Une approche globale incluant des conseils nutritionnels, médicaux et psychologiques peut améliorer considérablement la qualité de vie des femmes enceintes souffrant de gastrite chronique.  </p></p></div></div></div>  
         </div>

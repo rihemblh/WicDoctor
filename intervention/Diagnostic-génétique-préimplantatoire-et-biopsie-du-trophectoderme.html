@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,40 +222,30 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation du diagnostic génétique préimplantatoire et de la biopsie du trophectoderme<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">1. Indications du diagnostic génétique préimplantatoire (DGP)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">2. Déroulement du diagnostic génétique préimplantatoire et de la biopsie du trophectoderme<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">3. Contre-indications et risques du diagnostic génétique préimplantatoire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour le diagnostic génétique préimplantatoire selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">5. Conclusion : Choisir un établissement adapté pour le diagnostic génétique préimplantatoire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction : Présentation du diagnostic génétique préimplantatoire et de la biopsie du trophectoderme<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Indications du diagnostic génétique préimplantatoire (DGP)<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Déroulement du diagnostic génétique préimplantatoire et de la biopsie du trophectoderme<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Contre-indications et risques du diagnostic génétique préimplantatoire<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Lieux et types de soins disponibles pour le diagnostic génétique préimplantatoire selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation du diagnostic génétique préimplantatoire et de la biopsie du trophectoderme</h2></div><div class="info-text"><p><p>Le <strong>diagnostic génétique préimplantatoire (DGP)</strong> est une technique utilisée lors des cycles de <strong>fécondation in vitro (FIV)</strong> pour détecter des anomalies génétiques chez les embryons avant leur transfert dans l'utérus. Il permet de sélectionner des embryons sains, réduisant ainsi le risque de transmission de maladies génétiques héréditaires. La <strong>biopsie du trophectoderme</strong> est une procédure clé du DGP, où une petite portion de cellules provenant du trophectoderme (la couche externe de l’embryon) est prélevée pour effectuer l’analyse génétique. Cette méthode est généralement réalisée sur des embryons au stade de <strong>blastocyste</strong> (5-6 jours après la fécondation).</p><p>Cette approche est particulièrement bénéfique pour les couples porteurs de maladies génétiques rares ou pour les femmes ayant des antécédents de fausses couches ou de maladies chromosomiques, comme la trisomie 21.</p><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications du diagnostic génétique préimplantatoire (DGP)</h2></div><div class="info-text"><p><p>Le DGP et la biopsie du trophectoderme sont recommandés dans les situations suivantes :</p><ul>
-<li><strong>Antécédents de maladies génétiques héréditaires</strong> : Le DGP est souvent recommandé pour les couples porteurs d'une mutation génétique, comme dans le cas de la <strong>drépanocytose</strong>, de la <strong>myopathie de Duchenne</strong>, ou de la <strong>cystose fibrose</strong>.</li>
-<li><strong>Problèmes de fertilité récurrents ou fausses couches répétées</strong> : Les couples ayant des antécédents de fausses couches à répétition ou d'échecs de FIV peuvent bénéficier du DGP pour éviter de transférer des embryons avec des anomalies génétiques.</li>
-<li><strong>Femmes de plus de 38 ans</strong> : L'âge maternel avancé est associé à un risque accru d'anomalies chromosomiques (comme la trisomie 21), et le DGP permet de sélectionner des embryons génétiquement normaux avant l'implantation.</li>
-<li><strong>Couples ayant déjà un enfant atteint d’une maladie génétique</strong> : Le DGP peut être proposé pour les couples qui ont un enfant atteint d'une maladie génétique héréditaire, afin de réduire le risque de récurrence.</li>
-<li><strong>Portage de mutations chromosomiques équilibrées</strong> : Dans certains cas, les parents peuvent être porteurs de <strong>translocations chromosomiques équilibrées</strong> (sans symptômes), mais ces anomalies peuvent être transmises à l'enfant avec un risque accru de malformations ou de retards de développement. Le DGP permet de détecter ces anomalies.</li>
-</ul><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement du diagnostic génétique préimplantatoire et de la biopsie du trophectoderme</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention :</strong>
-Le processus de DGP commence généralement par une <strong>fécondation in vitro (FIV)</strong>, où les ovocytes sont fécondés en laboratoire. Avant cela, des examens médicaux sont effectués pour évaluer la fertilité des deux partenaires, comme des bilans hormonaux et des analyses génétiques. </p><p><strong>Étapes du DGP et de la biopsie du trophectoderme :</strong></p><ol>
-<li>
-<p><strong>Stimulation ovarienne et collecte des ovocytes</strong> : La première étape consiste à stimuler les ovaires de la femme avec des médicaments hormonaux pour favoriser la production de plusieurs ovocytes. Ceux-ci sont récoltés par <strong>ponction ovarienne</strong> sous anesthésie locale ou générale.</p>
-</li>
-<li>
-<p><strong>Fécondation et culture embryonnaire</strong> : Les ovocytes récoltés sont ensuite fécondés avec les spermatozoïdes du partenaire ou d'un donneur. Les embryons sont cultivés pendant 5 à 6 jours jusqu'à ce qu'ils atteignent le stade de <strong>blastocyste</strong>.</p>
-</li>
-<li>
-<p><strong>Biopsie du trophectoderme</strong> : À ce stade, une petite portion de cellules est prélevée sur le trophectoderme de chaque embryon. Ces cellules sont extraites sans endommager l'embryon. La biopsie est réalisée sous microscope, et le prélèvement est très minutieux pour préserver la viabilité des embryons.</p>
-</li>
-<li>
-<p><strong>Analyse génétique des cellules prélevées</strong> : Les cellules biopsiées sont envoyées à un laboratoire spécialisé pour une analyse génétique approfondie. Cette analyse permet de détecter des anomalies chromosomiques (comme la trisomie 21, la monosomie X, etc.) ou des mutations génétiques spécifiques.</p>
-</li>
-<li>
-<p><strong>Sélection des embryons sains</strong> : En fonction des résultats de l'analyse, les embryons non porteurs de l'anomalie génétique ciblée sont sélectionnés pour le transfert dans l'utérus de la mère.</p>
-</li>
-</ol><p><strong>Soins post-intervention :</strong>
-Après le prélèvement des cellules pour la biopsie du trophectoderme, l'embryon est conservé en <strong>cryoconservation</strong> en attendant les résultats des tests génétiques. Une fois les embryons sains identifiés, un ou plusieurs sont transférés dans l'utérus de la mère.</p><p>Le transfert d’embryons peut se faire quelques jours après la biopsie, et une <strong>surveillance de grossesse</strong> est mise en place après la procédure. Le taux de grossesse est suivi à l’aide de tests de <strong>bêta-hCG</strong> et d’échographies.</p><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications et risques du diagnostic génétique préimplantatoire</h2></div><div class="info-text"><p><p>Bien que le DGP et la biopsie du trophectoderme soient des procédés sûrs, certaines contre-indications ou précautions sont à prendre en compte :</p><ul>
-<li><strong>Échecs répétés de FIV</strong> : Si un couple a déjà rencontré plusieurs échecs de FIV, les chances de succès du DGP peuvent être réduites.</li>
-<li><strong>Risques de l'anesthésie et de la ponction ovarienne</strong> : La ponction ovarienne, bien que relativement sûre, comporte des risques tels que des saignements, des infections ou des lésions des ovaires.</li>
-<li><strong>Échecs de biopsie</strong> : Bien que rares, il existe un petit risque que l’embryon subisse des dommages lors de la biopsie. Les embryons peuvent également ne pas avoir suffisamment de cellules viables après la biopsie.</li>
-<li><strong>Absence de grossesse après le transfert</strong> : Malgré la sélection d'embryons sains, la grossesse n'est pas garantie après le transfert.</li>
-</ul><p>Le DGP est également une procédure coûteuse et peut ne pas être disponible dans tous les centres de fertilité.</p><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour le diagnostic génétique préimplantatoire selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Sur le portail <strong>WIC-DOCTOR</strong>, plusieurs établissements spécialisés proposent des services de <strong>FIV avec diagnostic génétique préimplantatoire</strong> et <strong>biopsie du trophectoderme</strong>. Les options de soins incluent :</p><h4><strong>1. Centres de FIV spécialisés en génétique</strong></h4><p>Les <strong>centres de FIV spécialisés</strong> en <strong>génétique</strong> sont des établissements qui offrent une prise en charge complète des traitements de fertilité avec DGP. Ces centres disposent de laboratoires de génétique pour effectuer les analyses des embryons, ainsi que des technologies avancées comme la <strong>biopsie du trophectoderme</strong> et la <strong>congélation des embryons</strong>.</p><h4><strong>2. Cliniques de fertilité et laboratoires d'analyses génétiques</strong></h4><p>Certains <strong>laboratoires d’analyses génétiques</strong> et <strong>cliniques de fertilité</strong> offrent également des services de DGP, notamment pour des couples à risque de transmettre des maladies génétiques. Ces établissements travaillent en étroite collaboration avec des généticiens spécialisés pour effectuer les analyses et fournir des conseils personnalisés.</p><h4><strong>3. Plateformes de soins en ligne (WIC-DOCTOR)</strong></h4><p>Sur le portail <strong>WIC-DOCTOR</strong>, il est possible de rechercher des <strong>centres de fertilité</strong> qui offrent des services de <strong>diagnostic génétique préimplantatoire</strong>. La plateforme permet de consulter des avis de patients, de comparer les prix, et de prendre rendez-vous avec des spécialistes qualifiés pour cette procédure.</p><p><strong></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un établissement adapté pour le diagnostic génétique préimplantatoire</h2></div><div class="info-text"><p><p>Le <strong>diagnostic génétique préimplantatoire</strong> et la <strong>biopsie du trophectoderme</strong> sont des procédés avancés et sûrs permettant d'augmenter les chances de succès de la grossesse tout en réduisant le risque de transmission de maladies génétiques. Il est essentiel de choisir un établissement de fertilité <strong>certifié</strong> et doté d'une équipe spécialisée pour garantir la sécurité et l’efficacité de la procédure. Le portail <strong>WIC-DOCTOR</strong> offre des outils précieux pour aider les patients à trouver le centre spécialisé en DGP et à obtenir un suivi personnalisé pour cette procédure.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction : Présentation du diagnostic génétique préimplantatoire et de la biopsie du trophectoderme</h2></div><div class="info-text"><p><p>Le <strong>diagnostic génétique préimplantatoire (DGP)</strong> est une technique utilisée lors des cycles de <strong>fécondation in vitro (FIV)</strong> pour détecter des anomalies génétiques chez les embryons avant leur transfert dans l'utérus. Il permet de sélectionner des embryons sains, réduisant ainsi le risque de transmission de maladies génétiques héréditaires. La <strong>biopsie du trophectoderme</strong> est une procédure clé du DGP, où une petite portion de cellules provenant du trophectoderme (la couche externe de l’embryon) est prélevée pour effectuer l’analyse génétique. Cette méthode est généralement réalisée sur des embryons au stade de <strong>blastocyste</strong> (5-6 jours après la fécondation).<br/>
+Cette approche est particulièrement bénéfique pour les couples porteurs de maladies génétiques rares ou pour les femmes ayant des antécédents de fausses couches ou de maladies chromosomiques, comme la trisomie 21.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du diagnostic génétique préimplantatoire (DGP)</h2></div><div class="info-text"><p><p>Le DGP et la biopsie du trophectoderme sont recommandés dans les situations suivantes :<br/>
+<strong>Antécédents de maladies génétiques héréditaires</strong> : Le DGP est souvent recommandé pour les couples porteurs d'une mutation génétique, comme dans le cas de la <strong>drépanocytose</strong>, de la <strong>myopathie de Duchenne</strong>, ou de la <strong>cystose fibrose</strong>.  <strong>Problèmes de fertilité récurrents ou fausses couches répétées</strong> : Les couples ayant des antécédents de fausses couches à répétition ou d'échecs de FIV peuvent bénéficier du DGP pour éviter de transférer des embryons avec des anomalies génétiques.  <strong>Femmes de plus de 38 ans</strong> : L'âge maternel avancé est associé à un risque accru d'anomalies chromosomiques (comme la trisomie 21), et le DGP permet de sélectionner des embryons génétiquement normaux avant l'implantation.  <strong>Couples ayant déjà un enfant atteint d’une maladie génétique</strong> : Le DGP peut être proposé pour les couples qui ont un enfant atteint d'une maladie génétique héréditaire, afin de réduire le risque de récurrence.  <strong>Portage de mutations chromosomiques équilibrées</strong> : Dans certains cas, les parents peuvent être porteurs de <strong>translocations chromosomiques équilibrées</strong> (sans symptômes), mais ces anomalies peuvent être transmises à l'enfant avec un risque accru de malformations ou de retards de développement. Le DGP permet de détecter ces anomalies.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement du diagnostic génétique préimplantatoire et de la biopsie du trophectoderme</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention :</strong>
+Le processus de DGP commence généralement par une <strong>fécondation in vitro (FIV)</strong>, où les ovocytes sont fécondés en laboratoire. Avant cela, des examens médicaux sont effectués pour évaluer la fertilité des deux partenaires, comme des bilans hormonaux et des analyses génétiques. </p>Étapes du DGP et de la biopsie du trophectoderme :</strong><br/>
+1. <strong>Stimulation ovarienne et collecte des ovocytes</strong> : La première étape consiste à stimuler les ovaires de la femme avec des médicaments hormonaux pour favoriser la production de plusieurs ovocytes. Ceux-ci sont récoltés par <strong>ponction ovarienne</strong> sous anesthésie locale ou générale.   <br/>
+2. <strong>Fécondation et culture embryonnaire</strong> : Les ovocytes récoltés sont ensuite fécondés avec les spermatozoïdes du partenaire ou d'un donneur. Les embryons sont cultivés pendant 5 à 6 jours jusqu'à ce qu'ils atteignent le stade de <strong>blastocyste</strong>.<br/>
+3. <strong>Biopsie du trophectoderme</strong> : À ce stade, une petite portion de cellules est prélevée sur le trophectoderme de chaque embryon. Ces cellules sont extraites sans endommager l'embryon. La biopsie est réalisée sous microscope, et le prélèvement est très minutieux pour préserver la viabilité des embryons.<br/>
+4. <strong>Analyse génétique des cellules prélevées</strong> : Les cellules biopsiées sont envoyées à un laboratoire spécialisé pour une analyse génétique approfondie. Cette analyse permet de détecter des anomalies chromosomiques (comme la trisomie 21, la monosomie X, etc.) ou des mutations génétiques spécifiques.<br/>
+5. <strong>Sélection des embryons sains</strong> : En fonction des résultats de l'analyse, les embryons non porteurs de l'anomalie génétique ciblée sont sélectionnés pour le transfert dans l'utérus de la mère.<br/>
+<strong>Soins post-intervention :</strong>
+Après le prélèvement des cellules pour la biopsie du trophectoderme, l'embryon est conservé en <strong>cryoconservation</strong> en attendant les résultats des tests génétiques. Une fois les embryons sains identifiés, un ou plusieurs sont transférés dans l'utérus de la mère.<br/>
+Le transfert d’embryons peut se faire quelques jours après la biopsie, et une <strong>surveillance de grossesse</strong> est mise en place après la procédure. Le taux de grossesse est suivi à l’aide de tests de <strong>bêta-hCG</strong> et d’échographies.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications et risques du diagnostic génétique préimplantatoire</h2></div><div class="info-text"><p><p>Bien que le DGP et la biopsie du trophectoderme soient des procédés sûrs, certaines contre-indications ou précautions sont à prendre en compte :<br/>
+<strong>Échecs répétés de FIV</strong> : Si un couple a déjà rencontré plusieurs échecs de FIV, les chances de succès du DGP peuvent être réduites.  <strong>Risques de l'anesthésie et de la ponction ovarienne</strong> : La ponction ovarienne, bien que relativement sûre, comporte des risques tels que des saignements, des infections ou des lésions des ovaires.  <strong>Échecs de biopsie</strong> : Bien que rares, il existe un petit risque que l’embryon subisse des dommages lors de la biopsie. Les embryons peuvent également ne pas avoir suffisamment de cellules viables après la biopsie.  <strong>Absence de grossesse après le transfert</strong> : Malgré la sélection d'embryons sains, la grossesse n'est pas garantie après le transfert.<br/>
+Le DGP est également une procédure coûteuse et peut ne pas être disponible dans tous les centres de fertilité.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et types de soins disponibles pour le diagnostic génétique préimplantatoire selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Sur le portail <strong>WIC-DOCTOR</strong>, plusieurs établissements spécialisés proposent des services de <strong>FIV avec diagnostic génétique préimplantatoire</strong> et <strong>biopsie du trophectoderme</strong>. Les options de soins incluent :  </p><h4><strong>Centres de FIV spécialisés en génétique</strong></h4><p>Les <strong>centres de FIV spécialisés</strong> en <strong>génétique</strong> sont des établissements qui offrent une prise en charge complète des traitements de fertilité avec DGP. Ces centres disposent de laboratoires de génétique pour effectuer les analyses des embryons, ainsi que des technologies avancées comme la <strong>biopsie du trophectoderme</strong> et la <strong>congélation des embryons</strong>.  </p><h4><strong>Cliniques de fertilité et laboratoires d'analyses génétiques</strong></h4><p>Certains <strong>laboratoires d’analyses génétiques</strong> et <strong>cliniques de fertilité</strong> offrent également des services de DGP, notamment pour des couples à risque de transmettre des maladies génétiques. Ces établissements travaillent en étroite collaboration avec des généticiens spécialisés pour effectuer les analyses et fournir des conseils personnalisés.  </p><h4><strong>Plateformes de soins en ligne (WIC-DOCTOR)</strong></h4><p>Sur le portail <strong>WIC-DOCTOR</strong>, il est possible de rechercher des <strong>centres de fertilité</strong> qui offrent des services de <strong>diagnostic génétique préimplantatoire</strong>. La plateforme permet de consulter des avis de patients, de comparer les prix, et de prendre rendez-vous avec des spécialistes qualifiés pour cette procédure.<br/>
+</p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>Le <strong>diagnostic génétique préimplantatoire</strong> et la <strong>biopsie du trophectoderme</strong> sont des procédés avancés et sûrs permettant d'augmenter les chances de succès de la grossesse tout en réduisant le risque de transmission de maladies génétiques. Il est essentiel de choisir un établissement de fertilité <strong>certifié</strong> et doté d'une équipe spécialisée pour garantir la sécurité et l’efficacité de la procédure. Le portail <strong>WIC-DOCTOR</strong> offre des outils précieux pour aider les patients à trouver le centre spécialisé en DGP et à obtenir un suivi personnalisé pour cette procédure.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

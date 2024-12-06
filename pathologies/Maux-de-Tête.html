@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,7 +226,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Qu'est-ce que les Maux de Tête ?</h2></div><div class="info-text"><p><p>Les <strong>maux de tête</strong> sont des douleurs ou des inconforts ressentis dans la région de la tête, du cuir chevelu ou du cou. Cette pathologie est extrêmement fréquente et peut avoir de nombreuses causes, allant de stress ou de tension à des pathologies plus complexes comme la migraine, les infections ou des troubles neurologiques.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Maux de Tête</h2></div><div class="info-text"><p><h5><strong>Causes Principales des Maux de Tête</strong></h5><p>Les maux de tête peuvent avoir des causes variées, souvent liées à des facteurs physiques, psychologiques ou environnementaux.  </p><p><strong>Tension musculaire</strong> : Le stress, l'anxiété, ou des postures inappropriées peuvent provoquer une tension musculaire dans le cou et la tête, entraînant des maux de tête de tension.<br/>
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Qu'est-ce que les Maux de Tête ?</h2></div><div class="info-text"><p><p>Les <strong>maux de tête</strong> sont des douleurs ou des inconforts ressentis dans la région de la tête, du cuir chevelu ou du cou. Cette pathologie est extrêmement fréquente et peut avoir de nombreuses causes, allant de stress ou de tension à des pathologies plus complexes comme la migraine, les infections ou des troubles neurologiques.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque des Maux de Tête</h2></div><div class="info-text"><p><h5><strong>Causes Principales des Maux de Tête</strong></h5><p>Les maux de tête peuvent avoir des causes variées, souvent liées à des facteurs physiques, psychologiques ou environnementaux.  </p>Tension musculaire</strong> : Le stress, l'anxiété, ou des postures inappropriées peuvent provoquer une tension musculaire dans le cou et la tête, entraînant des maux de tête de tension.<br/>
 <strong>Migraine</strong> : Une maladie neurologique caractérisée par des douleurs sévères souvent unilatérales, accompagnées de symptômes tels que des nausées, des vomissements et une hypersensibilité à la lumière ou au bruit.<br/>
 <strong>Céphalées de sinusite</strong> : Une inflammation des sinus peut entraîner une douleur dans la tête, souvent localisée autour du front, des joues et des yeux.<br/>
 <strong>Traumatismes crâniens</strong> : Des blessures à la tête, comme des commotions cérébrales, peuvent provoquer des maux de tête.<br/>
@@ -200,7 +236,7 @@
 <strong>Sommeil insuffisant ou irrégulier</strong> : Le manque de sommeil ou une qualité de sommeil dégradée est un facteur aggravant.<br/>
 <strong>Problèmes de vue non corrigés</strong> : La fatigue oculaire, causée par une mauvaise correction visuelle ou l’utilisation excessive d’écrans, peut être un facteur de risque.<br/>
 <strong>Alimentation</strong> : Certains aliments, comme le chocolat, le fromage, ou les aliments contenant de la caféine, peuvent déclencher des migraines chez certaines personnes.<br/>
-<strong>Exposition à des stimuli</strong> : Les lumières vives, le bruit fort ou des odeurs peuvent également déclencher des maux de tête chez les personnes sensibles.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Maux de Tête</h2></div><div class="info-text"><p><p>Les symptômes des maux de tête varient en fonction du type de douleur, mais les signes les plus courants incluent :  </p><p><strong>Douleur localisée ou diffuse</strong> : La douleur peut être aiguë, sourde ou lancinante, localisée sur une partie de la tête ou répartie sur toute la région crânienne.<br/>
+<strong>Exposition à des stimuli</strong> : Les lumières vives, le bruit fort ou des odeurs peuvent également déclencher des maux de tête chez les personnes sensibles.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes des Maux de Tête</h2></div><div class="info-text"><p><p>Les symptômes des maux de tête varient en fonction du type de douleur, mais les signes les plus courants incluent :  </p>Douleur localisée ou diffuse</strong> : La douleur peut être aiguë, sourde ou lancinante, localisée sur une partie de la tête ou répartie sur toute la région crânienne.<br/>
 <strong>Sensibilité accrue</strong> : Sensibilité à la lumière (photophobie) et au bruit (sonophobie), en particulier dans le cas des migraines.<br/>
 <strong>Nausées et vomissements</strong> : Ces symptômes sont fréquents lors des crises de migraine.<br/>
 <strong>Troubles de la vision</strong> : Certaines personnes peuvent éprouver des troubles visuels (auras) avant un mal de tête intense.<br/>
@@ -212,14 +248,14 @@
 <strong><a href="https://wic-doctor.com/medecin/neurologue.html">Neurologues</a></strong> : En cas de migraines récurrentes ou de céphalées sévères, le neurologue est spécialisé dans le traitement des pathologies nerveuses.<br/>
 <strong>Ostéopathes et kinésithérapeutes</strong> : Ils peuvent intervenir pour traiter les maux de tête liés à des tensions musculaires ou à des problèmes de posture.<br/>
 <strong><a href="https://wic-doctor.com/medecin/ophtalmologiste.html">Ophtalmologistes</a></strong> : Si la douleur est liée à des problèmes visuels, un examen de la vue est recommandé pour diagnostiquer d'éventuels troubles de la vision.<br/>
-<strong><a href="https://wic-doctor.com/medecin/psychiatre.html">Psychiatres</a> et <a href="https://wic-doctor.com/medecin/psychologue.html">psychologues</a></strong> : Pour les maux de tête liés à l’anxiété ou au stress, l’accompagnement psychologique ou une prise en charge psychiatrique peut être nécessaire.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Prise en Charge via WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> propose des services de <strong>télémédecine</strong> pour la gestion des <strong>maux de tête</strong>. Les patients peuvent bénéficier de :  </p><p><strong>Consultations à distance</strong> avec des <strong>médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a></strong>, des <strong><a href="https://wic-doctor.com/medecin/neurologue.html">neurologues</a></strong> ou des <strong>kinésithérapeutes</strong> pour un diagnostic rapide et une gestion des symptômes.<br/>
+<strong><a href="https://wic-doctor.com/medecin/psychiatre.html">Psychiatres</a> et <a href="https://wic-doctor.com/medecin/psychologue.html">psychologues</a></strong> : Pour les maux de tête liés à l’anxiété ou au stress, l’accompagnement psychologique ou une prise en charge psychiatrique peut être nécessaire.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Prise en Charge via WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> propose des services de <strong>télémédecine</strong> pour la gestion des <strong>maux de tête</strong>. Les patients peuvent bénéficier de :  </p>Consultations à distance</strong> avec des <strong>médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a></strong>, des <strong><a href="https://wic-doctor.com/medecin/neurologue.html">neurologues</a></strong> ou des <strong>kinésithérapeutes</strong> pour un diagnostic rapide et une gestion des symptômes.<br/>
 <strong>Suivi personnalisé</strong> : Après un diagnostic à distance, des consultations de suivi permettent de suivre l’évolution des symptômes, d'ajuster les traitements ou de réévaluer les causes sous-jacentes.<br/>
 <strong>Conseils pour la gestion du stress et du sommeil</strong> : Des consultations en ligne avec des <a href="https://wic-doctor.com/medecin/psychologue.html">psychologues</a> ou des <a href="https://wic-doctor.com/medecin/psychiatre.html">psychiatres</a> sont disponibles pour gérer les facteurs de stress ou d’anxiété qui peuvent aggraver les maux de tête.<br/>
-<strong>Référence vers des spécialistes</strong> : Si nécessaire, le portail permet de diriger les patients vers des <strong>spécialistes</strong> pour des examens plus approfondis ou des traitements spécifiques.  </p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement des Maux de Tête</h2></div><div class="info-text"><p><p>Le traitement des maux de tête dépend de leur cause sous-jacente :  </p><p><strong>Analgésiques</strong> : Les médicaments antidouleur peuvent être prescrits pour soulager la douleur aiguë des maux de tête.<br/>
+<strong>Référence vers des spécialistes</strong> : Si nécessaire, le portail permet de diriger les patients vers des <strong>spécialistes</strong> pour des examens plus approfondis ou des traitements spécifiques.  </p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement des Maux de Tête</h2></div><div class="info-text"><p><p>Le traitement des maux de tête dépend de leur cause sous-jacente :  </p>Analgésiques</strong> : Les médicaments antidouleur peuvent être prescrits pour soulager la douleur aiguë des maux de tête.<br/>
 <strong>Traitements spécifiques pour la migraine</strong> : Les médicaments vasoconstricteurs ou les médicaments préventifs peuvent être utilisés pour traiter les crises de migraine.<br/>
 <strong>Relaxation et gestion du stress</strong> : Des techniques de relaxation, de méditation ou de yoga peuvent aider à réduire la tension musculaire et l’anxiété.<br/>
 <strong>Correction de la posture</strong> : Si les maux de tête sont causés par des problèmes de posture ou des tensions musculaires, des séances de kinésithérapie ou d’ostéopathie peuvent être nécessaires.<br/>
-<strong>Modifications du mode de vie</strong> : L'amélioration du sommeil, l’adoption d’une alimentation équilibrée, et la gestion du stress sont des approches essentielles pour la prévention des maux de tête récurrents.  </p><hr/></p></div></div></div><div class="container section-H" id="H"><div class="info-section"><div class="section-title center-block text-center"><h2>Télémédecine avec WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> offre des consultations de <strong>télémédecine</strong> pour aider à diagnostiquer et traiter les maux de tête, que ce soit pour des douleurs occasionnelles ou des problèmes plus chroniques. Grâce à la <strong>télémédecine</strong>, les patients peuvent :  </p><p><strong>Consulter à distance</strong> des médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a>, <a href="https://wic-doctor.com/medecin/neurologue.html">neurologues</a>, ou <a href="https://wic-doctor.com/medecin/psychologue.html">psychologues</a> pour un diagnostic rapide et précis.<br/>
+<strong>Modifications du mode de vie</strong> : L'amélioration du sommeil, l’adoption d’une alimentation équilibrée, et la gestion du stress sont des approches essentielles pour la prévention des maux de tête récurrents.  </p><hr/></p></div></div></div><div class="container section-H" id="H"><div class="info-section"><div class="section-title center-block text-center"><h2>Télémédecine avec WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> offre des consultations de <strong>télémédecine</strong> pour aider à diagnostiquer et traiter les maux de tête, que ce soit pour des douleurs occasionnelles ou des problèmes plus chroniques. Grâce à la <strong>télémédecine</strong>, les patients peuvent :  </p>Consulter à distance</strong> des médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a>, <a href="https://wic-doctor.com/medecin/neurologue.html">neurologues</a>, ou <a href="https://wic-doctor.com/medecin/psychologue.html">psychologues</a> pour un diagnostic rapide et précis.<br/>
 <strong>Recevoir un suivi personnalisé</strong> pour gérer les symptômes à long terme. 
  <strong>Accéder à des conseils pratiques</strong> pour soulager les maux de tête et adopter des habitudes de vie favorables à la prévention. </p><hr/></p></div></div></div><div class="container section-I" id="I"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion : Une Prise en Charge Efficace avec WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les <strong>maux de tête</strong> peuvent être gênants, mais ils sont généralement traitables. Grâce aux services de <strong>télémédecine</strong> de <strong>WIC-DOCTOR</strong>, les patients peuvent obtenir des conseils, un diagnostic précis et un traitement adapté pour gérer efficacement leurs symptômes, que ce soit pour des crises aiguës ou des douleurs chroniques.</p></p></div></div></div>  
         </div>

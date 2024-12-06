@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -207,11 +243,11 @@
 <strong>Amniocentèse</strong> : Une amniocentèse peut être pratiquée pour examiner les gènes responsables de l'hyperplasie congénitale des glandes surrénales (HCGS) et détecter les anomalies génétiques liées au syndrome de Cushing.  </p><p>Le <strong>portail WIC-DOCTOR</strong> permet aux parents de bénéficier d’une consultation spécialisée à distance pour examiner les résultats des tests prénataux et fournir des recommandations adaptées.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements du Syndrome de Cushing</h2></div><div class="info-text"><p><p>Le traitement du syndrome de Cushing dépend de la cause sous-jacente de la maladie.   L’objectif principal est de réduire les niveaux de cortisol et d’éviter les complications graves, telles que l’hypertension, les problèmes métaboliques et les troubles du développement.  </p><h5><strong>Options thérapeutiques pour le syndrome de Cushing</strong> :</h5><p><strong>Chirurgie</strong> : Si le syndrome de Cushing est causé par une tumeur des glandes surrénales, la chirurgie pour retirer la tumeur peut être nécessaire.<br/>
 <strong>Médicaments</strong> : Des médicaments peuvent être prescrits pour inhiber la production de cortisol, en particulier dans les cas où une chirurgie n’est pas possible.<br/>
 <strong>Traitement de l'hyperplasie congénitale des glandes surrénales</strong> : Les enfants atteints d'HCGS reçoivent généralement des traitements hormonaux pour remplacer les hormones déficientes et contrôler la production excessive de cortisol.<br/>
-<strong>Gestion des complications</strong> : Le traitement comprend également des médicaments pour contrôler l’hypertension, l’hyperglycémie et les autres symptômes métaboliques.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> permet une prise en charge médicale optimale, avec un suivi à distance via la télémédecine.   Les parents peuvent accéder à des consultations spécialisées pour obtenir un diagnostic rapide et un traitement approprié.  </p><h5><strong>Médecins spécialisés en endocrinologie pédiatrique</strong></h5><p>Les <strong><a href="https://wic-doctor.com/medecin/endocrinologue.html">endocrinologues</a> pédiatriques</strong> sont des experts dans la gestion des troubles hormonaux et du métabolisme chez les enfants.  </p><p><strong>Services</strong> :<br/>
+<strong>Gestion des complications</strong> : Le traitement comprend également des médicaments pour contrôler l’hypertension, l’hyperglycémie et les autres symptômes métaboliques.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> permet une prise en charge médicale optimale, avec un suivi à distance via la télémédecine.   Les parents peuvent accéder à des consultations spécialisées pour obtenir un diagnostic rapide et un traitement approprié.  </p><h5><strong>Médecins spécialisés en endocrinologie pédiatrique</strong></h5><p>Les <strong><a href="https://wic-doctor.com/medecin/endocrinologue.html">endocrinologues</a> pédiatriques</strong> sont des experts dans la gestion des troubles hormonaux et du métabolisme chez les enfants.  </p>Services</strong> :<br/>
 <strong>Évaluation des niveaux hormonaux</strong> pour diagnostiquer le syndrome de Cushing.<br/>
-<strong>Prescriptions de traitements adaptés</strong> pour réduire les niveaux de cortisol et contrôler les symptômes.  </p><h5><strong>Centres spécialisés en maladies rares et endocriniennes</strong></h5><p>Les <strong>centres spécialisés</strong> dans les maladies rares offrent une expertise dans la gestion du syndrome de Cushing, en particulier pour les formes congénitales et celles liées à des tumeurs des glandes surrénales.  </p><p><strong>Services</strong> :<br/>
+<strong>Prescriptions de traitements adaptés</strong> pour réduire les niveaux de cortisol et contrôler les symptômes.  </p><h5><strong>Centres spécialisés en maladies rares et endocriniennes</strong></h5><p>Les <strong>centres spécialisés</strong> dans les maladies rares offrent une expertise dans la gestion du syndrome de Cushing, en particulier pour les formes congénitales et celles liées à des tumeurs des glandes surrénales.  </p>Services</strong> :<br/>
 <strong>Suivi régulier des niveaux hormonaux</strong> et de la croissance des enfants affectés.<br/>
-<strong>Soutien pour la gestion des traitements chirurgicaux ou médicamenteux</strong>.  </p><h5><strong>Télémédecine via WIC-DOCTOR</strong></h5><p>Grâce à la télémédecine, <strong>WIC-DOCTOR</strong> permet aux parents de suivre l'évolution de la maladie de leur enfant et de discuter des traitements possibles avec des spécialistes.  </p><p><strong>Services</strong> :<br/>
+<strong>Soutien pour la gestion des traitements chirurgicaux ou médicamenteux</strong>.  </p><h5><strong>Télémédecine via WIC-DOCTOR</strong></h5><p>Grâce à la télémédecine, <strong>WIC-DOCTOR</strong> permet aux parents de suivre l'évolution de la maladie de leur enfant et de discuter des traitements possibles avec des spécialistes.  </p>Services</strong> :<br/>
 <strong>Consultations à distance</strong> avec des <a href="https://wic-doctor.com/medecin/endocrinologue.html">endocrinologues</a> et des <a href="https://wic-doctor.com/medecin/pédiatre.html">pédiatres</a> spécialisés.<br/>
 <strong>Suivi personnalisé</strong> de l’évolution des symptômes et des traitements.<br/>
 <strong>Accès à des conseils de gestion quotidienne</strong> pour les parents.  </p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>Le <strong>diagnostic prénatal du syndrome de Cushing</strong> est crucial pour une prise en charge rapide et efficace.   Grâce à des <strong>services de télémédecine</strong> comme ceux proposés par <strong>WIC-DOCTOR</strong>, les parents peuvent obtenir des conseils d'experts à chaque étape, qu'il s'agisse de diagnostics prénataux ou de traitements après la naissance.   Une gestion précoce et ciblée du syndrome permet de réduire les risques de complications à long terme et d'améliorer la qualité de vie des enfants et des adultes concernés.  </p></p></div></div></div>  

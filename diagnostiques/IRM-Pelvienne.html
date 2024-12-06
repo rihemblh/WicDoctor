@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,66 +226,37 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'IRM Pelvienne</h2></div><div class="info-text"><p><p>L'IRM pelvienne est une technique d'imagerie médicale non invasive qui permet d’obtenir des images détaillées des structures situées dans la région pelvienne, notamment les organes reproducteurs, le système urinaire, ainsi que les tissus et muscles environnants. Elle est particulièrement utile pour diagnostiquer et suivre une variété de pathologies dans cette zone du corps. Les principales indications de l'IRM pelvienne incluent :</p><ul>
-<li><strong>Pathologies gynécologiques</strong> : L'IRM pelvienne est fréquemment utilisée pour évaluer des conditions telles que les fibromes utérins, les kystes ovariens, l'endométriose, les anomalies congénitales des organes reproducteurs et les cancers gynécologiques (cancer de l'utérus, des ovaires, du col de l'utérus).</li>
-<li><strong>Pathologies urologiques</strong> : Elle est utilisée pour diagnostiquer des troubles liés à la vessie, à la prostate, aux reins et aux voies urinaires, notamment en cas de suspicion de cancers de la prostate, de calculs rénaux, ou d'affections de la vessie.</li>
-<li><strong>Évaluation des organes reproducteurs féminins et masculins</strong> : L'IRM pelvienne permet d'examiner les organes reproducteurs féminins (utérus, ovaires, trompes) et masculins (prostate, vésicules séminales) pour des problèmes d'infertilité, d'infections chroniques ou de tumeurs.</li>
-<li><strong>Maladies inflammatoires pelviennes</strong> : L'IRM pelvienne est également utile pour évaluer des affections inflammatoires comme les infections pelviennes, les infections urinaires chroniques ou les maladies inflammatoires pelviennes (MIP).</li>
-<li><strong>Suivi post-chirurgical et évaluation des traitements</strong> : L'IRM est utilisée pour le suivi des interventions chirurgicales pelviennes, qu'il s'agisse d'une hystérectomie, d'une prostatectomie ou d'une chirurgie liée à un cancer.</li>
-</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen IRM Pelvienne</h2></div><div class="info-text"><p><p>L'IRM pelvienne est un examen indolore qui permet de visualiser avec précision les structures pelviennes. Voici les étapes principales du déroulement de cet examen :</p><ol>
-<li><strong>Préparation du patient</strong> :</li>
-<li><strong>Préparation spécifique pour l'IRM pelvienne</strong> : Contrairement à d'autres examens, une préparation particulière est parfois requise, comme le remplissage de la vessie pour améliorer la visibilité des organes pelviens. Parfois, on demande au patient de boire de l'eau avant l'examen et d'éviter de vider sa vessie jusqu'à l'examen.</li>
-<li><strong>Retrait des objets métalliques</strong> : Comme pour toute IRM, il est impératif de retirer les objets métalliques tels que les bijoux, montres, piercings et autres accessoires, car le champ magnétique de l'IRM peut les affecter.</li>
-<li>
-<p><strong>Injections de produit de contraste</strong> : Dans certains cas, un produit de contraste à base de gadolinium peut être injecté par voie intraveineuse pour améliorer la qualité des images et permettre de mieux visualiser certaines structures (comme les tumeurs, les masses ou les anomalies vasculaires).</p>
-</li>
-<li>
-<p><strong>Exécution de l'examen</strong> :</p>
-</li>
-<li><strong>Positionnement du patient</strong> : Le patient est allongé sur la table d’examen, généralement en position couchée sur le dos. La région pelvienne est ensuite placée dans le scanner à champ magnétique. Le patient devra rester immobile pendant toute la durée de l'examen.</li>
-<li><strong>Prise d'images</strong> : L’IRM utilise un champ magnétique puissant et des ondes radio pour produire des images des tissus internes. Selon les zones à examiner, l’appareil peut être réglé pour prendre plusieurs types d’images (séquences T1, T2, images en coupe transversale, sagittale, etc.) de la région pelvienne.</li>
-<li>
-<p><strong>Durée de l'examen</strong> : L'examen dure en général entre 20 à 30 minutes, en fonction de la complexité du cas et du nombre d'images à prendre.</p>
-</li>
-<li>
-<p><strong>Post-examen</strong> :</p>
-</li>
-<li><strong>Reprise des activités normales</strong> : Une fois l'examen terminé, le patient peut reprendre immédiatement ses activités habituelles, sauf si un sédatif a été administré avant l'examen.</li>
-<li><strong>Analyse des résultats</strong> : Les images obtenues sont envoyées à un radiologue spécialisé en imagerie pelvienne qui analyse les données. Le radiologue rédige un rapport détaillé qui est ensuite envoyé au médecin prescripteur pour établir un diagnostic et discuter des options thérapeutiques si nécessaire.</li>
-</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de l'IRM Pelvienne</h2></div><div class="info-text"><p><p>L'IRM pelvienne est généralement un examen sûr, mais certaines précautions ou contre-indications doivent être prises en compte, notamment :</p><ul>
-<li><strong>Implants métalliques ou dispositifs médicaux</strong> : Les patients portant des implants métalliques non compatibles avec l'IRM (prothèses articulaires, stimulateurs cardiaques, clips cérébraux) ne doivent pas passer d'IRM, sauf si les implants sont spécifiquement conçus pour être compatibles.</li>
-<li><strong>Allergie au produit de contraste</strong> : Si vous êtes allergique au gadolinium (utilisé comme produit de contraste pour améliorer la qualité des images), il est important d'en informer le radiologue avant l'examen.</li>
-<li><strong>Grossesse</strong> : L'IRM est généralement évitée pendant la grossesse, surtout au premier trimestre, sauf en cas de nécessité absolue. Le médecin pourra évaluer le rapport bénéfice/risque de l'examen dans ce cas.</li>
-<li><strong>Claustrophobie</strong> : L'IRM nécessite de rester immobile dans un espace clos. Les personnes souffrant de claustrophobie peuvent ressentir de l'anxiété. Des solutions comme des sédatifs légers ou l'usage de machines IRM ouvertes peuvent être proposées pour les patients claustrophobes.</li>
-</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Suivi Après l'IRM Pelvienne</h2></div><div class="info-text"><p><p>L'IRM pelvienne est réalisée dans des établissements de santé spécialisés en imagerie médicale. En fonction des indications spécifiques sur le portail <strong>WIC-DOCTOR</strong>, voici les principaux lieux où ces examens peuvent être effectués :</p><ol>
-<li><strong>Centres de Radiologie</strong> :</li>
-<li>
-<p>Les centres spécialisés en radiologie disposent d’équipements d’IRM permettant de réaliser des examens pelviens dans des conditions optimales. Ces centres sont capables d’effectuer des examens de routine comme la détection de fibromes utérins, de kystes ovariens ou d'autres pathologies pelviennes.</p>
-</li>
-<li>
-<p><strong>Hôpitaux et Cliniques Gynécologiques/Urologiques</strong> :</p>
-</li>
-<li>Les hôpitaux avec des services de gynécologie, d'urologie ou d'oncologie utilisent fréquemment l'IRM pelvienne pour diagnostiquer les cancers pelviens, les anomalies des organes reproducteurs et les pathologies urinaires.</li>
-<li>
-<p>Ces hôpitaux peuvent aussi assurer le suivi post-chirurgical des patientes après une intervention pelvienne (ex. : hystérectomie).</p>
-</li>
-<li>
-<p><strong>Cliniques et Centres d'Imagerie Médicale</strong> :</p>
-</li>
-<li>
-<p>Les cliniques spécialisées dans l'imagerie médicale offrent des services d'IRM pelvienne pour le diagnostic et le suivi de diverses pathologies pelviennes. Ces centres sont souvent associés à des cabinets de spécialistes en gynécologie ou urologie.</p>
-</li>
-<li>
-<p><strong>Centres de Médecine de la Fertilité</strong> :</p>
-</li>
-<li>
-<p>Les cliniques de fertilité utilisent l'IRM pelvienne pour évaluer l'état des organes reproducteurs chez les femmes souffrant de troubles de la fertilité. Cela permet de détecter des conditions comme l'endométriose, les fibromes ou des anomalies utérines.</p>
-</li>
-<li>
-<p><strong>Suivi Médical</strong> :</p>
-</li>
-<li>Après l'examen, les résultats de l'IRM pelvienne sont analysés par le radiologue. Le médecin prescripteur discute des résultats avec le patient et détermine les prochaines étapes, qu'il s'agisse d'un traitement médical, d'une intervention chirurgicale ou d'un suivi clinique.</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de l'IRM Pelvienne</h2></div><div class="info-text"><p><p>L'IRM pelvienne est une technique d'imagerie médicale non invasive qui permet d’obtenir des images détaillées des structures situées dans la région pelvienne, notamment les organes reproducteurs, le système urinaire, ainsi que les tissus et muscles environnants. Elle est particulièrement utile pour diagnostiquer et suivre une variété de pathologies dans cette zone du corps. Les principales indications de l'IRM pelvienne incluent :<br/>
+<strong>Pathologies gynécologiques</strong> : L'IRM pelvienne est fréquemment utilisée pour évaluer des conditions telles que les fibromes utérins, les kystes ovariens, l'endométriose, les anomalies congénitales des organes reproducteurs et les cancers gynécologiques (cancer de l'utérus, des ovaires, du col de l'utérus).<br/>
+<strong>Pathologies urologiques</strong> : Elle est utilisée pour diagnostiquer des troubles liés à la vessie, à la prostate, aux reins et aux voies urinaires, notamment en cas de suspicion de cancers de la prostate, de calculs rénaux, ou d'affections de la vessie.<br/>
+<strong>Évaluation des organes reproducteurs féminins et masculins</strong> : L'IRM pelvienne permet d'examiner les organes reproducteurs féminins (utérus, ovaires, trompes) et masculins (prostate, vésicules séminales) pour des problèmes d'infertilité, d'infections chroniques ou de tumeurs.<br/>
+<strong>Maladies inflammatoires pelviennes</strong> : L'IRM pelvienne est également utile pour évaluer des affections inflammatoires comme les infections pelviennes, les infections urinaires chroniques ou les maladies inflammatoires pelviennes (MIP).<br/>
+<strong>Suivi post-chirurgical et évaluation des traitements</strong> : L'IRM est utilisée pour le suivi des interventions chirurgicales pelviennes, qu'il s'agisse d'une hystérectomie, d'une prostatectomie ou d'une chirurgie liée à un cancer.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen IRM Pelvienne</h2></div><div class="info-text"><p><p>L'IRM pelvienne est un examen indolore qui permet de visualiser avec précision les structures pelviennes. Voici les étapes principales du déroulement de cet examen :<br/>
+1. <strong>Préparation du patient</strong> :   <br/>
+<strong>Préparation spécifique pour l'IRM pelvienne</strong> : Contrairement à d'autres examens, une préparation particulière est parfois requise, comme le remplissage de la vessie pour améliorer la visibilité des organes pelviens. Parfois, on demande au patient de boire de l'eau avant l'examen et d'éviter de vider sa vessie jusqu'à l'examen.   <br/>
+<strong>Retrait des objets métalliques</strong> : Comme pour toute IRM, il est impératif de retirer les objets métalliques tels que les bijoux, montres, piercings et autres accessoires, car le champ magnétique de l'IRM peut les affecter.   <br/>
+<strong>Injections de produit de contraste</strong> : Dans certains cas, un produit de contraste à base de gadolinium peut être injecté par voie intraveineuse pour améliorer la qualité des images et permettre de mieux visualiser certaines structures (comme les tumeurs, les masses ou les anomalies vasculaires).<br/>
+2. <strong>Exécution de l'examen</strong> :   <br/>
+<strong>Positionnement du patient</strong> : Le patient est allongé sur la table d’examen, généralement en position couchée sur le dos. La région pelvienne est ensuite placée dans le scanner à champ magnétique. Le patient devra rester immobile pendant toute la durée de l'examen.   <br/>
+<strong>Prise d'images</strong> : L’IRM utilise un champ magnétique puissant et des ondes radio pour produire des images des tissus internes. Selon les zones à examiner, l’appareil peut être réglé pour prendre plusieurs types d’images (séquences T1, T2, images en coupe transversale, sagittale, etc.) de la région pelvienne.   <br/>
+<strong>Durée de l'examen</strong> : L'examen dure en général entre 20 à 30 minutes, en fonction de la complexité du cas et du nombre d'images à prendre.<br/>
+3. <strong>Post-examen</strong> :   <br/>
+<strong>Reprise des activités normales</strong> : Une fois l'examen terminé, le patient peut reprendre immédiatement ses activités habituelles, sauf si un sédatif a été administré avant l'examen.   <br/>
+<strong>Analyse des résultats</strong> : Les images obtenues sont envoyées à un radiologue spécialisé en imagerie pelvienne qui analyse les données. Le radiologue rédige un rapport détaillé qui est ensuite envoyé au médecin prescripteur pour établir un diagnostic et discuter des options thérapeutiques si nécessaire.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications de l'IRM Pelvienne</h2></div><div class="info-text"><p><p>L'IRM pelvienne est généralement un examen sûr, mais certaines précautions ou contre-indications doivent être prises en compte, notamment :<br/>
+<strong>Implants métalliques ou dispositifs médicaux</strong> : Les patients portant des implants métalliques non compatibles avec l'IRM (prothèses articulaires, stimulateurs cardiaques, clips cérébraux) ne doivent pas passer d'IRM, sauf si les implants sont spécifiquement conçus pour être compatibles.<br/>
+<strong>Allergie au produit de contraste</strong> : Si vous êtes allergique au gadolinium (utilisé comme produit de contraste pour améliorer la qualité des images), il est important d'en informer le radiologue avant l'examen.<br/>
+<strong>Grossesse</strong> : L'IRM est généralement évitée pendant la grossesse, surtout au premier trimestre, sauf en cas de nécessité absolue. Le médecin pourra évaluer le rapport bénéfice/risque de l'examen dans ce cas.<br/>
+<strong>Claustrophobie</strong> : L'IRM nécessite de rester immobile dans un espace clos. Les personnes souffrant de claustrophobie peuvent ressentir de l'anxiété. Des solutions comme des sédatifs légers ou l'usage de machines IRM ouvertes peuvent être proposées pour les patients claustrophobes.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux de Soins et Suivi Après l'IRM Pelvienne</h2></div><div class="info-text"><p><p>L'IRM pelvienne est réalisée dans des établissements de santé spécialisés en imagerie médicale. En fonction des indications spécifiques sur le portail <strong>WIC-DOCTOR</strong>, voici les principaux lieux où ces examens peuvent être effectués :<br/>
+1. <strong>Centres de Radiologie</strong> :<br/>
+-Les centres spécialisés en radiologie disposent d’équipements d’IRM permettant de réaliser des examens pelviens dans des conditions optimales. Ces centres sont capables d’effectuer des examens de routine comme la détection de fibromes utérins, de kystes ovariens ou d'autres pathologies pelviennes.<br/>
+2. <strong>Hôpitaux et Cliniques Gynécologiques/Urologiques</strong> :<br/>
+-Les hôpitaux avec des services de gynécologie, d'urologie ou d'oncologie utilisent fréquemment l'IRM pelvienne pour diagnostiquer les cancers pelviens, les anomalies des organes reproducteurs et les pathologies urinaires.     - Ces hôpitaux peuvent aussi assurer le suivi post-chirurgical des patientes après une intervention pelvienne (ex. : hystérectomie).<br/>
+3. <strong>Cliniques et Centres d'Imagerie Médicale</strong> :<br/>
+-Les cliniques spécialisées dans l'imagerie médicale offrent des services d'IRM pelvienne pour le diagnostic et le suivi de diverses pathologies pelviennes. Ces centres sont souvent associés à des cabinets de spécialistes en gynécologie ou urologie.<br/>
+4. <strong>Centres de Médecine de la Fertilité</strong> :<br/>
+-Les cliniques de fertilité utilisent l'IRM pelvienne pour évaluer l'état des organes reproducteurs chez les femmes souffrant de troubles de la fertilité. Cela permet de détecter des conditions comme l'endométriose, les fibromes ou des anomalies utérines.<br/>
+5. <strong>Suivi Médical</strong> :<br/>
+-Après l'examen, les résultats de l'IRM pelvienne sont analysés par le radiologue. Le médecin prescripteur discute des résultats avec le patient et détermine les prochaines étapes, qu'il s'agisse d'un traitement médical, d'une intervention chirurgicale ou d'un suivi clinique.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

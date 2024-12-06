@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,76 +226,37 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du TEP Corps Entier avec 68Ga-DOTA-Peptide</h2></div><div class="info-text"><p><p>Le <strong>TEP corps entier avec 68Ga-DOTA-Peptide</strong> est une technique de tomographie par émission de positrons (TEP) qui utilise un traceur radiopharmaceutique spécifique, le <strong>68Ga-DOTA-peptide</strong>. Ce traceur est un composé marqué au gallium-68, qui se lie à des récepteurs spécifiques situés sur certaines cellules tumorales, notamment celles des <strong>tumeurs neuroendocrines</strong>. Voici les principales indications de cet examen :</p><ul>
-<li><strong>Détection des tumeurs neuroendocrines (TNE)</strong> : Le <strong>68Ga-DOTA-peptide</strong> cible les récepteurs <strong>somatostatinergiques</strong> présents sur de nombreuses tumeurs neuroendocrines, comme les tumeurs carcinoïdes, les insulinomes ou les gastrinomes. Ce TEP permet de <strong>localiser</strong> ces tumeurs, qu’elles soient primaires ou métastatiques.</li>
-<li><strong>Évaluation du stade des tumeurs neuroendocrines</strong> : Le TEP avec <strong>68Ga-DOTA-peptide</strong> est également utilisé pour <strong>stager</strong> les tumeurs neuroendocrines en déterminant leur taille, leur localisation et l’éventuelle présence de métastases dans le corps entier.</li>
-<li><strong>Suivi post-thérapeutique des tumeurs neuroendocrines</strong> : Après une <strong>chirurgie</strong>, une <strong>radiothérapie</strong> ou un <strong>traitement à base de somatostatine</strong>, cet examen permet de vérifier l’éventuelle récurrence de la tumeur et d’évaluer la réponse au traitement.</li>
-<li><strong>Evaluation des tumeurs associées à des syndromes de néoplasie endocrinienne multiple (NEM)</strong> : Le TEP avec <strong>68Ga-DOTA-peptide</strong> est utilisé dans le suivi de patients atteints de <strong>syndromes de néoplasie endocrinienne multiple</strong>, notamment pour surveiller les tumeurs cachées dans le corps entier.</li>
-</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen TEP Corps Entier avec 68Ga-DOTA-Peptide</h2></div><div class="info-text"><p><p>Le <strong>TEP corps entier avec 68Ga-DOTA-peptide</strong> permet de visualiser l’activité des cellules tumorales sur l’ensemble du corps. Voici les étapes principales de l'examen :</p><ol>
-<li><strong>Préparation</strong> :</li>
-<li><strong>Jeûne</strong> : Avant l'examen, il est généralement conseillé de <strong>jeûner</strong> pendant environ <strong>4 à 6 heures</strong> pour maximiser l'absorption du traceur et réduire l'interférence de l'alimentation.</li>
-<li><strong>Médicaments</strong> : Il est essentiel d'informer l'équipe soignante si vous prenez des médicaments, en particulier des médicaments qui peuvent affecter le métabolisme des récepteurs somatostatinergiques.</li>
-<li>
-<p><strong>Hydratation</strong> : Vous devez boire beaucoup d'eau avant l'examen pour favoriser l'élimination du traceur par les reins après l'injection.</p>
-</li>
-<li>
-<p><strong>Injection du traceur radiopharmaceutique</strong> :</p>
-</li>
-<li>Une injection intraveineuse de <strong>68Ga-DOTA-peptide</strong> est administrée. Ce traceur est rapidement capté par les récepteurs sur les cellules tumorales, ce qui permet de les visualiser lors de l’examen.</li>
-<li>
-<p>Après l'injection, une période d'attente de <strong>45 à 60 minutes</strong> est généralement requise pour permettre au traceur de se distribuer et de se lier aux cellules tumorales.</p>
-</li>
-<li>
-<p><strong>Passage à l'appareil de TEP</strong> :</p>
-</li>
-<li>Le patient est allongé sur une table de TEP, et l’appareil effectue une série de scans pour capturer les images de l’activité du traceur dans tout le corps.</li>
-<li>
-<p>L’examen se déroule sur <strong>le corps entier</strong>, avec une visualisation des organes et des tissus pour identifier les zones d’activité anormale liées aux tumeurs neuroendocrines.</p>
-</li>
-<li>
-<p><strong>Durée de l'examen</strong> :</p>
-</li>
-<li>
-<p>Le TEP avec <strong>68Ga-DOTA-peptide</strong> prend généralement entre <strong>30 et 45 minutes</strong> pour l’acquisition des images après l’injection du traceur, mais la durée totale de l’examen peut aller jusqu’à <strong>1 à 2 heures</strong> en fonction des zones à explorer et du nombre de scans à réaliser.</p>
-</li>
-<li>
-<p><strong>Post-examen</strong> :</p>
-</li>
-<li>Après l'examen, vous pouvez reprendre immédiatement vos activités habituelles.</li>
-<li>Il est important de continuer à boire de l’eau après l'examen pour aider à l’élimination du traceur par les reins.</li>
-</ol><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications du TEP Corps Entier avec 68Ga-DOTA-Peptide</h2></div><div class="info-text"><p><p>Bien que le <strong>TEP corps entier avec 68Ga-DOTA-peptide</strong> soit un examen sûr et non invasif, certaines contre-indications et précautions doivent être prises en compte :</p><ul>
-<li><strong>Grossesse et allaitement</strong> : Comme pour tout examen impliquant une substance radioactive, il est essentiel d’informer le radiologue si vous êtes enceinte ou allaitez. L'exposition aux radiations est déconseillée pendant ces périodes, sauf dans des situations où les bénéfices l'emportent sur les risques.</li>
-<li><strong>Allergies aux substances injectées</strong> : Si vous avez des antécédents d'allergies graves à un produit injectable, il est important d'en parler à votre médecin avant l'examen.</li>
-<li><strong>Insuffisance rénale sévère</strong> : En raison de l'élimination du traceur par les reins, les patients présentant une insuffisance rénale sévère doivent être évalués pour savoir s'ils peuvent subir l'examen en toute sécurité.</li>
-<li><strong>Problèmes de mobilité ou d'anxiété</strong> : Si vous avez des difficultés à rester immobile pendant l'examen ou si vous êtes sujet à l'anxiété liée aux examens, il est important de le signaler à l'équipe soignante.</li>
-</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour le TEP Corps Entier avec 68Ga-DOTA-Peptide</h2></div><div class="info-text"><p><p>Le <strong>TEP avec 68Ga-DOTA-peptide</strong> est un examen de haute technologie qui est réalisé dans des centres spécialisés disposant d'équipements avancés. Voici les lieux et types de soins recommandés pour cet examen, en fonction des indications spécifiques sur <strong>le portail WIC-DOCTOR</strong> :</p><ol>
-<li><strong>Centres d’Imagerie Médicale et d’Imagerie Nucléaire</strong> :</li>
-<li>
-<p>Les <strong>centres d’imagerie médicale spécialisés</strong> dans la médecine nucléaire sont les principaux lieux où cet examen est réalisé. Ces centres possèdent des équipements dédiés à l’administration de traceurs radiopharmaceutiques et à la réalisation de TEP corps entier.</p>
-</li>
-<li>
-<p><strong>Hôpitaux avec Service de Médecine Nucléaire</strong> :</p>
-</li>
-<li>
-<p>Les <strong>hôpitaux</strong> ayant un service de <strong>médecine nucléaire</strong> effectuent couramment ce type d'examen, notamment pour les patients atteints de <strong>tumeurs neuroendocrines</strong>. Les résultats de l'examen permettent de mieux gérer le traitement des tumeurs, qu'il s'agisse de <strong>chirurgie</strong>, de <strong>radiothérapie</strong> ou de <strong>chimiothérapie</strong>.</p>
-</li>
-<li>
-<p><strong>Cliniques Spécialisées en Oncologie et Pathologies Neuroendocrines</strong> :</p>
-</li>
-<li>
-<p>Dans les <strong>cliniques spécialisées en oncologie</strong> ou en <strong>médecine nucléaire</strong>, cet examen est couramment proposé pour le suivi des patients ayant des <strong>tumeurs neuroendocrines</strong>. Ces cliniques disposent souvent de dispositifs modernes pour effectuer des TEP avec traceurs spécialisés comme le <strong>68Ga-DOTA-peptide</strong>.</p>
-</li>
-<li>
-<p><strong>Centres de Recherche Médicale et Essais Cliniques</strong> :</p>
-</li>
-<li>
-<p>Certains <strong>centres de recherche</strong> ou <strong>hôpitaux universitaires</strong> réalisent ce type de TEP dans le cadre de la recherche clinique. Ce type de suivi est précieux pour les études sur l’évolution des tumeurs neuroendocrines et les nouveaux traitements expérimentaux.</p>
-</li>
-<li>
-<p><strong>Centres de Médecine Prédictive et Préventive</strong> :</p>
-</li>
-<li>Pour les patients à risque ou dans un cadre de <strong>médecine préventive</strong>, certains <strong>centres de médecine prédictive</strong> peuvent proposer ce type d’examen pour dépister des tumeurs neuroendocrines avant qu’elles ne deviennent symptomatiques.</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications du TEP Corps Entier avec 68Ga-DOTA-Peptide</h2></div><div class="info-text"><p><p>Le <strong>TEP corps entier avec 68Ga-DOTA-Peptide</strong> est une technique de tomographie par émission de positrons (TEP) qui utilise un traceur radiopharmaceutique spécifique, le <strong>68Ga-DOTA-peptide</strong>. Ce traceur est un composé marqué au gallium-68, qui se lie à des récepteurs spécifiques situés sur certaines cellules tumorales, notamment celles des <strong>tumeurs neuroendocrines</strong>. Voici les principales indications de cet examen :<br/>
+<strong>Détection des tumeurs neuroendocrines (TNE)</strong> : Le <strong>68Ga-DOTA-peptide</strong> cible les récepteurs <strong>somatostatinergiques</strong> présents sur de nombreuses tumeurs neuroendocrines, comme les tumeurs carcinoïdes, les insulinomes ou les gastrinomes. Ce TEP permet de <strong>localiser</strong> ces tumeurs, qu’elles soient primaires ou métastatiques.<br/>
+<strong>Évaluation du stade des tumeurs neuroendocrines</strong> : Le TEP avec <strong>68Ga-DOTA-peptide</strong> est également utilisé pour <strong>stager</strong> les tumeurs neuroendocrines en déterminant leur taille, leur localisation et l’éventuelle présence de métastases dans le corps entier.<br/>
+<strong>Suivi post-thérapeutique des tumeurs neuroendocrines</strong> : Après une <strong>chirurgie</strong>, une <strong>radiothérapie</strong> ou un <strong>traitement à base de somatostatine</strong>, cet examen permet de vérifier l’éventuelle récurrence de la tumeur et d’évaluer la réponse au traitement.<br/>
+<strong>Evaluation des tumeurs associées à des syndromes de néoplasie endocrinienne multiple (NEM)</strong> : Le TEP avec <strong>68Ga-DOTA-peptide</strong> est utilisé dans le suivi de patients atteints de <strong>syndromes de néoplasie endocrinienne multiple</strong>, notamment pour surveiller les tumeurs cachées dans le corps entier.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de l'Examen TEP Corps Entier avec 68Ga-DOTA-Peptide</h2></div><div class="info-text"><p><p>Le <strong>TEP corps entier avec 68Ga-DOTA-peptide</strong> permet de visualiser l’activité des cellules tumorales sur l’ensemble du corps. Voici les étapes principales de l'examen :<br/>
+1. <strong>Préparation</strong> :   <br/>
+<strong>Jeûne</strong> : Avant l'examen, il est généralement conseillé de <strong>jeûner</strong> pendant environ <strong>4 à 6 heures</strong> pour maximiser l'absorption du traceur et réduire l'interférence de l'alimentation.   <br/>
+<strong>Médicaments</strong> : Il est essentiel d'informer l'équipe soignante si vous prenez des médicaments, en particulier des médicaments qui peuvent affecter le métabolisme des récepteurs somatostatinergiques.   <br/>
+<strong>Hydratation</strong> : Vous devez boire beaucoup d'eau avant l'examen pour favoriser l'élimination du traceur par les reins après l'injection.<br/>
+2. <strong>Injection du traceur radiopharmaceutique</strong> :<br/>
+-Une injection intraveineuse de <strong>68Ga-DOTA-peptide</strong> est administrée. Ce traceur est rapidement capté par les récepteurs sur les cellules tumorales, ce qui permet de les visualiser lors de l’examen.     - Après l'injection, une période d'attente de <strong>45 à 60 minutes</strong> est généralement requise pour permettre au traceur de se distribuer et de se lier aux cellules tumorales.<br/>
+3. <strong>Passage à l'appareil de TEP</strong> :<br/>
+-Le patient est allongé sur une table de TEP, et l’appareil effectue une série de scans pour capturer les images de l’activité du traceur dans tout le corps.     - L’examen se déroule sur <strong>le corps entier</strong>, avec une visualisation des organes et des tissus pour identifier les zones d’activité anormale liées aux tumeurs neuroendocrines.<br/>
+4. <strong>Durée de l'examen</strong> :<br/>
+-Le TEP avec <strong>68Ga-DOTA-peptide</strong> prend généralement entre <strong>30 et 45 minutes</strong> pour l’acquisition des images après l’injection du traceur, mais la durée totale de l’examen peut aller jusqu’à <strong>1 à 2 heures</strong> en fonction des zones à explorer et du nombre de scans à réaliser.<br/>
+5. <strong>Post-examen</strong> :<br/>
+-Après l'examen, vous pouvez reprendre immédiatement vos activités habituelles.     - Il est important de continuer à boire de l’eau après l'examen pour aider à l’élimination du traceur par les reins.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications du TEP Corps Entier avec 68Ga-DOTA-Peptide</h2></div><div class="info-text"><p><p>Bien que le <strong>TEP corps entier avec 68Ga-DOTA-peptide</strong> soit un examen sûr et non invasif, certaines contre-indications et précautions doivent être prises en compte :<br/>
+<strong>Grossesse et allaitement</strong> : Comme pour tout examen impliquant une substance radioactive, il est essentiel d’informer le radiologue si vous êtes enceinte ou allaitez. L'exposition aux radiations est déconseillée pendant ces périodes, sauf dans des situations où les bénéfices l'emportent sur les risques.<br/>
+<strong>Allergies aux substances injectées</strong> : Si vous avez des antécédents d'allergies graves à un produit injectable, il est important d'en parler à votre médecin avant l'examen.<br/>
+<strong>Insuffisance rénale sévère</strong> : En raison de l'élimination du traceur par les reins, les patients présentant une insuffisance rénale sévère doivent être évalués pour savoir s'ils peuvent subir l'examen en toute sécurité.<br/>
+<strong>Problèmes de mobilité ou d'anxiété</strong> : Si vous avez des difficultés à rester immobile pendant l'examen ou si vous êtes sujet à l'anxiété liée aux examens, il est important de le signaler à l'équipe soignante.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour le TEP Corps Entier avec 68Ga-DOTA-Peptide</h2></div><div class="info-text"><p><p>Le <strong>TEP avec 68Ga-DOTA-peptide</strong> est un examen de haute technologie qui est réalisé dans des centres spécialisés disposant d'équipements avancés. Voici les lieux et types de soins recommandés pour cet examen, en fonction des indications spécifiques sur <strong>le portail WIC-DOCTOR</strong> :<br/>
+1. <strong>Centres d’Imagerie Médicale et d’Imagerie Nucléaire</strong> :<br/>
+-Les <strong>centres d’imagerie médicale spécialisés</strong> dans la médecine nucléaire sont les principaux lieux où cet examen est réalisé. Ces centres possèdent des équipements dédiés à l’administration de traceurs radiopharmaceutiques et à la réalisation de TEP corps entier.<br/>
+2. <strong>Hôpitaux avec Service de Médecine Nucléaire</strong> :<br/>
+-Les <strong>hôpitaux</strong> ayant un service de <strong>médecine nucléaire</strong> effectuent couramment ce type d'examen, notamment pour les patients atteints de <strong>tumeurs neuroendocrines</strong>. Les résultats de l'examen permettent de mieux gérer le traitement des tumeurs, qu'il s'agisse de <strong>chirurgie</strong>, de <strong>radiothérapie</strong> ou de <strong>chimiothérapie</strong>.<br/>
+3. <strong>Cliniques Spécialisées en Oncologie et Pathologies Neuroendocrines</strong> :<br/>
+-Dans les <strong>cliniques spécialisées en oncologie</strong> ou en <strong>médecine nucléaire</strong>, cet examen est couramment proposé pour le suivi des patients ayant des <strong>tumeurs neuroendocrines</strong>. Ces cliniques disposent souvent de dispositifs modernes pour effectuer des TEP avec traceurs spécialisés comme le <strong>68Ga-DOTA-peptide</strong>.<br/>
+4. <strong>Centres de Recherche Médicale et Essais Cliniques</strong> :<br/>
+-Certains <strong>centres de recherche</strong> ou <strong>hôpitaux universitaires</strong> réalisent ce type de TEP dans le cadre de la recherche clinique. Ce type de suivi est précieux pour les études sur l’évolution des tumeurs neuroendocrines et les nouveaux traitements expérimentaux.<br/>
+5. <strong>Centres de Médecine Prédictive et Préventive</strong> :<br/>
+-Pour les patients à risque ou dans un cadre de <strong>médecine préventive</strong>, certains <strong>centres de médecine prédictive</strong> peuvent proposer ce type d’examen pour dépister des tumeurs neuroendocrines avant qu’elles ne deviennent symptomatiques.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

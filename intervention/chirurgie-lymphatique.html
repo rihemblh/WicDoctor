@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -186,46 +222,29 @@
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">1. Indications de la chirurgie lymphatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">2. Déroulement de la procédure de chirurgie lymphatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">3. Contre-indications à la chirurgie lymphatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">4. Lieux et types de soins disponibles pour la chirurgie lymphatique selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">5. Conclusion : Choisir un lieu de soin adapté pour la chirurgie lymphatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Indications de la chirurgie lymphatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Déroulement de la procédure de chirurgie lymphatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Contre-indications à la chirurgie lymphatique<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Lieux et types de soins disponibles pour la chirurgie lymphatique selon le portail WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>1. Indications de la chirurgie lymphatique</h2></div><div class="info-text"><p><p>La chirurgie lymphatique est indiquée dans les situations suivantes :</p><ul>
-<li><strong>Lymphœdème primaire ou secondaire</strong> : Lorsque le système lymphatique ne fonctionne pas correctement, entraînant une accumulation de liquide dans les tissus, ce qui provoque des gonflements, des douleurs et des infections fréquentes. Le lymphœdème peut être congénital (primaire) ou survenir après un traitement médical, comme une chirurgie ou une radiothérapie pour un cancer (secondaire).</li>
-<li><strong>Malformations lymphatiques</strong> : Certaines personnes naissent avec des anomalies du système lymphatique, ce qui peut entraîner une accumulation anormale de liquide lymphatique. La chirurgie permet de traiter ces malformations et d'améliorer la fonction lymphatique.</li>
-<li><strong>Infections chroniques ou récidivantes</strong> : Les infections récurrentes dues à un dysfonctionnement lymphatique peuvent nécessiter une intervention chirurgicale pour restaurer l'écoulement lymphatique et prévenir les complications.</li>
-<li><strong>Traitement des complications après cancer</strong> : Après des traitements pour un cancer, comme une ablation de ganglions lymphatiques, des problèmes lymphatiques peuvent survenir, nécessitant des interventions chirurgicales pour restaurer ou contourner les voies lymphatiques endommagées.</li>
-<li><strong>Douleurs et incapacités fonctionnelles</strong> : En cas d'œdème lymphatique sévère accompagné de douleurs chroniques ou de limitation de la mobilité, la chirurgie peut être envisagée pour soulager ces symptômes.</li>
-</ul><p><strong></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Déroulement de la procédure de chirurgie lymphatique</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention</strong> : Avant la chirurgie lymphatique, le patient suit une consultation préopératoire détaillée. Celle-ci inclut des examens physiques, des échographies lymphatiques, voire des imageries par résonance magnétique (IRM) ou un scanner pour évaluer l'étendue de l'affection lymphatique. Des analyses de sang et un bilan de santé général sont également réalisés pour évaluer les risques associés à l'anesthésie. Selon la complexité de l'intervention, un jeûne de 6 à 8 heures peut être demandé avant l'opération.</p><p><strong>L'intervention chirurgicale</strong> :
-- <strong>Anesthésie générale ou locale</strong> : La chirurgie lymphatique peut se réaliser sous anesthésie générale ou locale, en fonction de la nature et de l'étendue de l'intervention. Des techniques de sédation peuvent également être utilisées pour assurer le confort du patient.
-- <strong>Procédures spécifiques</strong> : La chirurgie lymphatique peut inclure différentes techniques, selon la pathologie et la localisation du problème :
-  - <strong>Pontage lymphatique</strong> : Cette technique consiste à créer une nouvelle voie pour le liquide lymphatique en contournant les canaux lymphatiques bloqués ou endommagés.
-  - <strong>Transfert de ganglions lymphatiques</strong> : Dans le cas de lymphœdème secondaire (par exemple après une ablation de ganglions lors d'une chirurgie cancéreuse), des ganglions lymphatiques sains peuvent être transférés d'une autre partie du corps vers la zone affectée.
-  - <strong>Dénervation des ganglions lymphatiques</strong> : Lorsque le système lymphatique est endommagé de façon irréversible, une décompression et une réorganisation des vaisseaux lymphatiques peuvent être réalisées pour favoriser un meilleur drainage lymphatique.
-  - <strong>Réduction de l'œdème</strong> : Dans certains cas, des procédures spécifiques permettent de retirer une partie du tissu affecté par l'œdème afin de réduire le volume des membres et d’améliorer la fonction.</p><p><strong>Durée de l’intervention</strong> : La durée de l'intervention varie en fonction de la technique choisie et de la complexité du cas. En moyenne, la chirurgie lymphatique dure entre 2 et 4 heures.</p><p><strong>Soins post-opératoires</strong> : Après l'intervention, le patient est surveillé en salle de réveil pendant quelques heures. La douleur post-chirurgicale est généralement bien contrôlée avec des analgésiques. Un suivi médical est essentiel pour vérifier l'efficacité de la chirurgie et prévenir toute complication. Des séances de kinésithérapie et de drainage lymphatique peuvent être recommandées pour aider à la récupération et à l'amélioration du drainage lymphatique. Un suivi à long terme est souvent nécessaire pour évaluer les résultats de l'intervention et prévenir une récidive du lymphœdème.</p><p><strong></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Contre-indications à la chirurgie lymphatique</h2></div><div class="info-text"><p><p>Certaines conditions peuvent rendre la chirurgie lymphatique contre-indiquée ou risquée, notamment :</p><ul>
-<li><strong>Infections actives</strong> : Si une infection est présente dans la région affectée par le lymphœdème ou les ganglions lymphatiques, la chirurgie doit être reportée jusqu'à ce que l'infection soit traitée.</li>
-<li><strong>Mauvaise condition physique générale</strong> : Les patients présentant des maladies chroniques non contrôlées, comme des maladies cardiaques graves, des troubles de la coagulation ou une insuffisance rénale, doivent suivre un protocole spécifique avant l'opération.</li>
-<li><strong>Absence de bénéfice fonctionnel significatif</strong> : Si l'œdème lymphatique est léger et ne cause pas de douleurs ou de dysfonctionnements graves, une approche non chirurgicale (comme le drainage lymphatique manuel ou la compression) peut être privilégiée.</li>
-<li><strong>Cancer en activité</strong> : Si un patient présente un cancer actif dans la zone de traitement, la chirurgie lymphatique peut être contre-indiquée, car cela pourrait compliquer la gestion de la maladie sous-jacente.</li>
-<li><strong>Grossesse</strong> : Bien que certaines chirurgies lymphatiques puissent être réalisées pendant la grossesse, cela dépend du cas spécifique et des risques pour la mère et le fœtus.</li>
-</ul><p><strong></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Lieux et types de soins disponibles pour la chirurgie lymphatique selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail WIC-DOCTOR recommande plusieurs types d'établissements pour la réalisation de la chirurgie lymphatique, en fonction de la complexité du cas et des besoins spécifiques du patient. Voici les principaux lieux où cette intervention peut être réalisée :</p><ol>
-<li>
-<p><strong>Centres spécialisés en chirurgie vasculaire et lymphatique</strong><br/>
-Les centres spécialisés en chirurgie vasculaire et lymphatique sont les lieux de référence pour le traitement des affections du système lymphatique. Ces établissements sont équipés pour effectuer des interventions complexes, telles que le pontage lymphatique et le transfert de ganglions lymphatiques, et disposent d’une équipe multidisciplinaire pour un suivi post-opératoire optimal.</p>
-</li>
-<li>
-<p><strong>Hôpitaux universitaires et centres de recherche</strong><br/>
-Les hôpitaux universitaires et les centres de recherche sont souvent à la pointe des techniques chirurgicales et des traitements novateurs en lymphologie. Ces établissements offrent des soins de haute qualité pour les cas les plus complexes et participent à la recherche clinique sur les troubles lymphatiques.</p>
-</li>
-<li>
-<p><strong>Cliniques privées spécialisées en chirurgie lymphatique</strong><br/>
-Les cliniques privées peuvent également offrir des soins de qualité pour les interventions moins complexes. Elles permettent une prise en charge plus personnalisée, avec un environnement plus intime et moins de délais pour la prise en charge des patients.</p>
-</li>
-<li>
-<p><strong>Plateformes de soins en ligne pour mise en relation</strong><br/>
-Le portail WIC-DOCTOR permet aux patients de consulter des chirurgiens spécialisés dans la chirurgie lymphatique via des plateformes en ligne. Ces plateformes facilitent la recherche de spécialistes et d'établissements certifiés pour garantir une prise en charge optimale.</p>
-</li>
-</ol><p><strong></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Conclusion : Choisir un lieu de soin adapté pour la chirurgie lymphatique</h2></div><div class="info-text"><p><p>La chirurgie lymphatique est une option thérapeutique efficace pour traiter les affections du système lymphatique, notamment le lymphœdème, les malformations lymphatiques et les complications liées au cancer. Il est essentiel de choisir un établissement spécialisé et certifié, disposant de chirurgiens expérimentés dans ce domaine et offrant des soins post-opératoires adaptés. Le portail WIC-DOCTOR offre des informations détaillées pour orienter les patients vers les meilleurs centres de soins spécialisés en chirurgie lymphatique.</p><p><strong></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Indications de la chirurgie lymphatique</h2></div><div class="info-text"><p><p>La chirurgie lymphatique est indiquée dans les situations suivantes :<br/>
+<strong>Lymphœdème primaire ou secondaire</strong> : Lorsque le système lymphatique ne fonctionne pas correctement, entraînant une accumulation de liquide dans les tissus, ce qui provoque des gonflements, des douleurs et des infections fréquentes. Le lymphœdème peut être congénital (primaire) ou survenir après un traitement médical, comme une chirurgie ou une radiothérapie pour un cancer (secondaire).  <strong>Malformations lymphatiques</strong> : Certaines personnes naissent avec des anomalies du système lymphatique, ce qui peut entraîner une accumulation anormale de liquide lymphatique. La chirurgie permet de traiter ces malformations et d'améliorer la fonction lymphatique.  <strong>Infections chroniques ou récidivantes</strong> : Les infections récurrentes dues à un dysfonctionnement lymphatique peuvent nécessiter une intervention chirurgicale pour restaurer l'écoulement lymphatique et prévenir les complications.  <strong>Traitement des complications après cancer</strong> : Après des traitements pour un cancer, comme une ablation de ganglions lymphatiques, des problèmes lymphatiques peuvent survenir, nécessitant des interventions chirurgicales pour restaurer ou contourner les voies lymphatiques endommagées.  <strong>Douleurs et incapacités fonctionnelles</strong> : En cas d'œdème lymphatique sévère accompagné de douleurs chroniques ou de limitation de la mobilité, la chirurgie peut être envisagée pour soulager ces symptômes.<br/>
+</p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Déroulement de la procédure de chirurgie lymphatique</h2></div><div class="info-text"><p><p><strong>Préparation avant l'intervention</strong> : Avant la chirurgie lymphatique, le patient suit une consultation préopératoire détaillée. Celle-ci inclut des examens physiques, des échographies lymphatiques, voire des imageries par résonance magnétique (IRM) ou un scanner pour évaluer l'étendue de l'affection lymphatique. Des analyses de sang et un bilan de santé général sont également réalisés pour évaluer les risques associés à l'anesthésie. Selon la complexité de l'intervention, un jeûne de 6 à 8 heures peut être demandé avant l'opération.<br/>
+<strong>L'intervention chirurgicale</strong> :  <strong>Anesthésie générale ou locale</strong> : La chirurgie lymphatique peut se réaliser sous anesthésie générale ou locale, en fonction de la nature et de l'étendue de l'intervention. Des techniques de sédation peuvent également être utilisées pour assurer le confort du patient.  <strong>Procédures spécifiques</strong> : La chirurgie lymphatique peut inclure différentes techniques, selon la pathologie et la localisation du problème :    <strong>Pontage lymphatique</strong> : Cette technique consiste à créer une nouvelle voie pour le liquide lymphatique en contournant les canaux lymphatiques bloqués ou endommagés.    <strong>Transfert de ganglions lymphatiques</strong> : Dans le cas de lymphœdème secondaire (par exemple après une ablation de ganglions lors d'une chirurgie cancéreuse), des ganglions lymphatiques sains peuvent être transférés d'une autre partie du corps vers la zone affectée.    <strong>Dénervation des ganglions lymphatiques</strong> : Lorsque le système lymphatique est endommagé de façon irréversible, une décompression et une réorganisation des vaisseaux lymphatiques peuvent être réalisées pour favoriser un meilleur drainage lymphatique.    <strong>Réduction de l'œdème</strong> : Dans certains cas, des procédures spécifiques permettent de retirer une partie du tissu affecté par l'œdème afin de réduire le volume des membres et d’améliorer la fonction.<br/>
+<strong>Durée de l’intervention</strong> : La durée de l'intervention varie en fonction de la technique choisie et de la complexité du cas. En moyenne, la chirurgie lymphatique dure entre 2 et 4 heures.<br/>
+<strong>Soins post-opératoires</strong> : Après l'intervention, le patient est surveillé en salle de réveil pendant quelques heures. La douleur post-chirurgicale est généralement bien contrôlée avec des analgésiques. Un suivi médical est essentiel pour vérifier l'efficacité de la chirurgie et prévenir toute complication. Des séances de kinésithérapie et de drainage lymphatique peuvent être recommandées pour aider à la récupération et à l'amélioration du drainage lymphatique. Un suivi à long terme est souvent nécessaire pour évaluer les résultats de l'intervention et prévenir une récidive du lymphœdème.<br/>
+</p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Contre-indications à la chirurgie lymphatique</h2></div><div class="info-text"><p><p>Certaines conditions peuvent rendre la chirurgie lymphatique contre-indiquée ou risquée, notamment :<br/>
+<strong>Infections actives</strong> : Si une infection est présente dans la région affectée par le lymphœdème ou les ganglions lymphatiques, la chirurgie doit être reportée jusqu'à ce que l'infection soit traitée.  <strong>Mauvaise condition physique générale</strong> : Les patients présentant des maladies chroniques non contrôlées, comme des maladies cardiaques graves, des troubles de la coagulation ou une insuffisance rénale, doivent suivre un protocole spécifique avant l'opération.  <strong>Absence de bénéfice fonctionnel significatif</strong> : Si l'œdème lymphatique est léger et ne cause pas de douleurs ou de dysfonctionnements graves, une approche non chirurgicale (comme le drainage lymphatique manuel ou la compression) peut être privilégiée.  <strong>Cancer en activité</strong> : Si un patient présente un cancer actif dans la zone de traitement, la chirurgie lymphatique peut être contre-indiquée, car cela pourrait compliquer la gestion de la maladie sous-jacente.  <strong>Grossesse</strong> : Bien que certaines chirurgies lymphatiques puissent être réalisées pendant la grossesse, cela dépend du cas spécifique et des risques pour la mère et le fœtus.<br/>
+</p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et types de soins disponibles pour la chirurgie lymphatique selon le portail WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le portail WIC-DOCTOR recommande plusieurs types d'établissements pour la réalisation de la chirurgie lymphatique, en fonction de la complexité du cas et des besoins spécifiques du patient. Voici les principaux lieux où cette intervention peut être réalisée :<br/>
+1. <strong>Centres spécialisés en chirurgie vasculaire et lymphatique</strong><br/>
+Les centres spécialisés en chirurgie vasculaire et lymphatique sont les lieux de référence pour le traitement des affections du système lymphatique. Ces établissements sont équipés pour effectuer des interventions complexes, telles que le pontage lymphatique et le transfert de ganglions lymphatiques, et disposent d’une équipe multidisciplinaire pour un suivi post-opératoire optimal.<br/>
+2. <strong>Hôpitaux universitaires et centres de recherche</strong><br/>
+Les hôpitaux universitaires et les centres de recherche sont souvent à la pointe des techniques chirurgicales et des traitements novateurs en lymphologie. Ces établissements offrent des soins de haute qualité pour les cas les plus complexes et participent à la recherche clinique sur les troubles lymphatiques.<br/>
+3. <strong>Cliniques privées spécialisées en chirurgie lymphatique</strong><br/>
+Les cliniques privées peuvent également offrir des soins de qualité pour les interventions moins complexes. Elles permettent une prise en charge plus personnalisée, avec un environnement plus intime et moins de délais pour la prise en charge des patients.<br/>
+4. <strong>Plateformes de soins en ligne pour mise en relation</strong><br/>
+Le portail WIC-DOCTOR permet aux patients de consulter des chirurgiens spécialisés dans la chirurgie lymphatique via des plateformes en ligne. Ces plateformes facilitent la recherche de spécialistes et d'établissements certifiés pour garantir une prise en charge optimale.<br/>
+</p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>La chirurgie lymphatique est une option thérapeutique efficace pour traiter les affections du système lymphatique, notamment le lymphœdème, les malformations lymphatiques et les complications liées au cancer. Il est essentiel de choisir un établissement spécialisé et certifié, disposant de chirurgiens expérimentés dans ce domaine et offrant des soins post-opératoires adaptés. Le portail WIC-DOCTOR offre des informations détaillées pour orienter les patients vers les meilleurs centres de soins spécialisés en chirurgie lymphatique.<br/>
+</p></div></div></div>  
         </div>
     </section>
     <script>

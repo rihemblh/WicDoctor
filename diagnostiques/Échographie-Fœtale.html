@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,35 +226,46 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>**Indications de l’Échographie Fœtale et Études de Vélocimétrie Doppler Maternelle et Fœtale</h2></div><div class="info-text"><p><p>L’échographie fœtale combinée avec la vélocimétrie Doppler est un examen essentiel pour surveiller la santé du fœtus et de la mère pendant la grossesse. Cet examen permet d’évaluer la circulation sanguine dans les principaux vaisseaux maternels et fœtaux, d’identifier d’éventuelles complications vasculaires et de suivre la croissance et le bien-être fœtal. La vélocimétrie Doppler permet de mesurer la vitesse et la direction du flux sanguin, ce qui est crucial pour détecter des anomalies du développement fœtal ou des risques pour la grossesse.</p><p>Les principales indications de cette échographie spécialisée sont :</p><p><strong>1. Surveillance de la croissance fœtale :</strong><br/>
-- <strong>Retard de croissance intra-utérin (RCIU)</strong> : Si le fœtus présente un retard de croissance, l’échographie Doppler permet de mesurer les flux sanguins dans les vaisseaux fœtaux (comme l'artère ombilicale, l'artère cérébrale moyenne et la veine cave inférieure) pour évaluer le bien-être fœtal et identifier d’éventuelles restrictions de croissance.
-- <strong>Suivi de grossesse à risque</strong> : Les femmes enceintes présentant des facteurs de risque tels que l’hypertension, le diabète gestationnel, ou des antécédents de complications obstétricales (comme des pré-éclampsies ou des avortements spontanés à répétition) nécessitent souvent un suivi plus étroit avec échographie et Doppler pour prévenir des complications.</p><p><strong>2. Suivi des anomalies vasculaires fœtales et maternelles :</strong><br/>
-- <strong>Prise en charge des anomalies vasculaires fœtales</strong> : L’échographie Doppler est utilisée pour détecter des anomalies dans les vaisseaux fœtaux, telles que des malformations des artères ombilicales ou un mauvais fonctionnement du placenta. Elle permet de vérifier si l’approvisionnement en oxygène et en nutriments du fœtus est suffisant.
-- <strong>Hypertension artérielle maternelle et pré-éclampsie</strong> : L’évaluation des flux sanguins dans l’utérus et la circulation placentaire permet de détecter des signes précoces d’hypertension maternelle et de pré-éclampsie, deux complications qui peuvent mettre en péril la santé de la mère et du fœtus.</p><p><strong>3. Surveillance de la circulation placentaire et utérine :</strong><br/>
-- <strong>Vélocimétrie Doppler de l'artère utérine</strong> : L’évaluation du flux sanguin dans l’artère utérine est particulièrement utile pour diagnostiquer des troubles de la perfusion placentaire, comme l’insuffisance placentaire, qui peut conduire à des complications telles que la pré-éclampsie ou la restriction de croissance fœtale.
-- <strong>Mesure du flux sanguin dans le cordon ombilical</strong> : Le Doppler permet d’évaluer la circulation dans le cordon ombilical, afin de vérifier que le fœtus reçoit suffisamment d'oxygène et de nutriments.</p><p><strong>4. Anomalies fœtales et complications de grossesse :</strong><br/>
-- <strong>Suivi des grossesses multiples</strong> : Dans les cas de grossesses gémellaires ou multiples, la vélocimétrie Doppler permet de suivre le bien-être de chaque fœtus individuellement et d’identifier des complications spécifiques, telles que le syndrome transfuseur-transfusé chez les jumeaux.
-- <strong>Syndrome de l’hypoxie fœtale</strong> : L’hypoxie fœtale (manque d’oxygène) peut être détectée par une altération des flux sanguins dans l’artère ombilicale et les vaisseaux cérébraux. L'échographie Doppler permet de suivre l'évolution de l'oxygénation du fœtus.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>**Déroulement de l'Examen</h2></div><div class="info-text"><p><p>L’échographie fœtale avec étude de vélocimétrie Doppler est un examen non invasif qui nécessite une préparation simple. Voici les étapes principales du déroulement de l'examen :</p><p><strong>1. Préparation :</strong><br/>
-- <strong>Aucune préparation spéciale requise</strong> : La patiente n'a généralement pas besoin de préparation préalable spécifique avant une échographie Doppler. Cependant, il peut être conseillé de boire de l’eau pour mieux visualiser le fœtus si l’examen doit inclure une échographie transabdominale.
-- <strong>Vêtements confortables</strong> : La patiente doit être à l'aise et porter des vêtements qui facilitent l'accès à l'abdomen.</p><p><strong>2. Exécution de l'examen :</strong><br/>
-- <strong>Application du gel conducteur</strong> : Comme pour une échographie classique, un gel conducteur est appliqué sur l'abdomen pour permettre la transmission des ondes ultrasonores.
-- <strong>Examen en mode Doppler</strong> : Le médecin utilise la sonde pour capturer les images en temps réel de la circulation sanguine fœtale et maternelle. Les flux sanguins sont mesurés dans les artères ombilicales, l’artère cérébrale moyenne du fœtus, les artères utérines et la veine ombilicale.
-- <strong>Évaluation des vaisseaux et des flux sanguins</strong> : À l’aide de la technologie Doppler, le médecin peut observer la vitesse, la direction et l'intensité des flux sanguins dans les vaisseaux fœtaux et maternels, ce qui permet d'identifier d'éventuelles anomalies.</p><p><strong>3. Durée de l'examen :</strong><br/>
-L'examen dure généralement entre 30 et 45 minutes, selon la complexité du cas et la nécessité de prendre des mesures détaillées des flux sanguins.</p><p><strong>4. Post-examen :</strong><br/>
-- <strong>Retour à la normale</strong> : La patiente peut reprendre ses activités normales immédiatement après l'examen.
-- <strong>Analyse des résultats</strong> : Les résultats de l'échographie Doppler sont analysés par le médecin qui les interprète pour détecter des anomalies dans la circulation sanguine fœtale et maternelle. En fonction des résultats, un suivi supplémentaire ou un traitement peut être recommandé.</p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>**Contre-indications de l'Échographie Doppler Fœtale</h2></div><div class="info-text"><p><p>L’échographie Doppler fœtale est un examen sûr et généralement bien toléré. Cependant, certaines contre-indications et précautions doivent être prises en compte :</p><ul>
-<li><strong>Infections de la peau ou plaies ouvertes</strong> : Si la patiente présente une infection ou des plaies ouvertes sur l’abdomen, il peut être nécessaire de reporter l’examen.</li>
-<li><strong>Tumeurs ou masses abdominales</strong> : Dans de rares cas, des masses abdominales importantes peuvent gêner l'accès à la zone d'examen, bien que cela soit généralement résolu par l'orientation de la sonde.</li>
-<li><strong>Sensibilité à l'examen</strong> : Certaines patientes peuvent ressentir une gêne pendant l'examen, notamment en cas de pression importante sur l'abdomen.</li>
-</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour l'Échographie Fœtale et Doppler</h2></div><div class="info-text"><p><p>L’échographie fœtale et les études de vélocimétrie Doppler sont réalisées dans des établissements spécialisés en obstétrique et en médecine fœtale. Selon les indications de <strong>WIC-DOCTOR</strong>, voici les principaux lieux où ces examens peuvent être réalisés :</p><p><strong>1. Hôpitaux et Cliniques Obstétriques :</strong><br/>
-Les hôpitaux et les cliniques avec des services spécialisés en obstétrique et médecine fœtale sont les lieux les plus fréquents pour réaliser cet examen. Ces établissements disposent d’un équipement moderne pour effectuer des échographies Doppler et de spécialistes qualifiés pour analyser les résultats.</p><p><strong>2. Cabinets d’Obstétriciens et <a href="https://wic-doctor.com/medecin/gynécologue---obstétricien.html">Gynécologues</a> :</strong><br/>
-Les obstétriciens en cabinet privé peuvent prescrire des échographies Doppler fœtales et gérer le suivi des grossesses à risque. Certains cabinets sont équipés pour réaliser des échographies et des Dopplers en consultation.</p><p><strong>3. Centres de Médecine Fœtale et Suivi Prénatal :</strong><br/>
-Les centres spécialisés en médecine fœtale et en suivi prénatal proposent des échographies de haute précision, y compris l’échographie Doppler, pour suivre les grossesses à risque ou surveiller des pathologies particulières du fœtus.</p><p><strong>4. Services d’Urgences Obstétricales et Maternité :</strong><br/>
-Les urgences obstétricales des hôpitaux peuvent utiliser l’échographie Doppler en cas de complications aiguës, telles que des signes de pré-éclampsie, des souffrances fœtales ou des anomalies du rythme cardiaque fœtal.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Hypothèses de Diagnostic et Suivi Médical</h2></div><div class="info-text"><p><p>Les résultats de l’échographie Doppler peuvent orienter vers plusieurs hypothèses diagnostiques qui guideront le suivi médical :</p><ul>
-<li><strong>Insuffisance placentaire</strong> : Si des anomalies de la circulation placentaire sont détectées, un suivi plus fréquent avec des échographies Doppler peut être recommandé pour surveiller la santé du fœtus et la croissance.</li>
-<li>** Retard de croissance fœtale (RCIU)** : Un retard de croissance fœtale peut entraîner un suivi plus étroit, avec une surveillance accrue de la circulation sanguine et des évaluations régulières de l'état du fœtus.</li>
-<li><strong>Complications maternelles</strong> : L’échographie Doppler peut aussi permettre de diagnostiquer des complications comme la pré-éclampsie ou des troubles hypertensifs de la grossesse, nécessitant un traitement spécifique.</li>
-</ul><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>**Indications de l’Échographie Fœtale et Études de Vélocimétrie Doppler Maternelle et Fœtale</h2></div><div class="info-text"><p><p>L’échographie fœtale combinée avec la vélocimétrie Doppler est un examen essentiel pour surveiller la santé du fœtus et de la mère pendant la grossesse. Cet examen permet d’évaluer la circulation sanguine dans les principaux vaisseaux maternels et fœtaux, d’identifier d’éventuelles complications vasculaires et de suivre la croissance et le bien-être fœtal. La vélocimétrie Doppler permet de mesurer la vitesse et la direction du flux sanguin, ce qui est crucial pour détecter des anomalies du développement fœtal ou des risques pour la grossesse.<br/>
+Les principales indications de cette échographie spécialisée sont :<br/>
+<strong>1. Surveillance de la croissance fœtale :</strong><br/>
+<strong>Retard de croissance intra-utérin (RCIU)</strong> : Si le fœtus présente un retard de croissance, l’échographie Doppler permet de mesurer les flux sanguins dans les vaisseaux fœtaux (comme l'artère ombilicale, l'artère cérébrale moyenne et la veine cave inférieure) pour évaluer le bien-être fœtal et identifier d’éventuelles restrictions de croissance.<br/>
+<strong>Suivi de grossesse à risque</strong> : Les femmes enceintes présentant des facteurs de risque tels que l’hypertension, le diabète gestationnel, ou des antécédents de complications obstétricales (comme des pré-éclampsies ou des avortements spontanés à répétition) nécessitent souvent un suivi plus étroit avec échographie et Doppler pour prévenir des complications.<br/>
+<strong>2. Suivi des anomalies vasculaires fœtales et maternelles :</strong><br/>
+<strong>Prise en charge des anomalies vasculaires fœtales</strong> : L’échographie Doppler est utilisée pour détecter des anomalies dans les vaisseaux fœtaux, telles que des malformations des artères ombilicales ou un mauvais fonctionnement du placenta. Elle permet de vérifier si l’approvisionnement en oxygène et en nutriments du fœtus est suffisant.<br/>
+<strong>Hypertension artérielle maternelle et pré-éclampsie</strong> : L’évaluation des flux sanguins dans l’utérus et la circulation placentaire permet de détecter des signes précoces d’hypertension maternelle et de pré-éclampsie, deux complications qui peuvent mettre en péril la santé de la mère et du fœtus.<br/>
+<strong>3. Surveillance de la circulation placentaire et utérine :</strong><br/>
+<strong>Vélocimétrie Doppler de l'artère utérine</strong> : L’évaluation du flux sanguin dans l’artère utérine est particulièrement utile pour diagnostiquer des troubles de la perfusion placentaire, comme l’insuffisance placentaire, qui peut conduire à des complications telles que la pré-éclampsie ou la restriction de croissance fœtale.<br/>
+<strong>Mesure du flux sanguin dans le cordon ombilical</strong> : Le Doppler permet d’évaluer la circulation dans le cordon ombilical, afin de vérifier que le fœtus reçoit suffisamment d'oxygène et de nutriments.<br/>
+<strong>4. Anomalies fœtales et complications de grossesse :</strong><br/>
+<strong>Suivi des grossesses multiples</strong> : Dans les cas de grossesses gémellaires ou multiples, la vélocimétrie Doppler permet de suivre le bien-être de chaque fœtus individuellement et d’identifier des complications spécifiques, telles que le syndrome transfuseur-transfusé chez les jumeaux.<br/>
+<strong>Syndrome de l’hypoxie fœtale</strong> : L’hypoxie fœtale (manque d’oxygène) peut être détectée par une altération des flux sanguins dans l’artère ombilicale et les vaisseaux cérébraux. L'échographie Doppler permet de suivre l'évolution de l'oxygénation du fœtus.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>**Déroulement de l'Examen</h2></div><div class="info-text"><p><p>L’échographie fœtale avec étude de vélocimétrie Doppler est un examen non invasif qui nécessite une préparation simple. Voici les étapes principales du déroulement de l'examen :<br/>
+<strong>1. Préparation :</strong><br/>
+<strong>Aucune préparation spéciale requise</strong> : La patiente n'a généralement pas besoin de préparation préalable spécifique avant une échographie Doppler. Cependant, il peut être conseillé de boire de l’eau pour mieux visualiser le fœtus si l’examen doit inclure une échographie transabdominale.<br/>
+<strong>Vêtements confortables</strong> : La patiente doit être à l'aise et porter des vêtements qui facilitent l'accès à l'abdomen.<br/>
+<strong>2. Exécution de l'examen :</strong><br/>
+<strong>Application du gel conducteur</strong> : Comme pour une échographie classique, un gel conducteur est appliqué sur l'abdomen pour permettre la transmission des ondes ultrasonores.<br/>
+<strong>Examen en mode Doppler</strong> : Le médecin utilise la sonde pour capturer les images en temps réel de la circulation sanguine fœtale et maternelle. Les flux sanguins sont mesurés dans les artères ombilicales, l’artère cérébrale moyenne du fœtus, les artères utérines et la veine ombilicale.<br/>
+<strong>Évaluation des vaisseaux et des flux sanguins</strong> : À l’aide de la technologie Doppler, le médecin peut observer la vitesse, la direction et l'intensité des flux sanguins dans les vaisseaux fœtaux et maternels, ce qui permet d'identifier d'éventuelles anomalies.<br/>
+<strong>3. Durée de l'examen :</strong><br/>
+L'examen dure généralement entre 30 et 45 minutes, selon la complexité du cas et la nécessité de prendre des mesures détaillées des flux sanguins.<br/>
+<strong>4. Post-examen :</strong><br/>
+<strong>Retour à la normale</strong> : La patiente peut reprendre ses activités normales immédiatement après l'examen.<br/>
+<strong>Analyse des résultats</strong> : Les résultats de l'échographie Doppler sont analysés par le médecin qui les interprète pour détecter des anomalies dans la circulation sanguine fœtale et maternelle. En fonction des résultats, un suivi supplémentaire ou un traitement peut être recommandé.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>**Contre-indications de l'Échographie Doppler Fœtale</h2></div><div class="info-text"><p><p>L’échographie Doppler fœtale est un examen sûr et généralement bien toléré. Cependant, certaines contre-indications et précautions doivent être prises en compte :<br/>
+<strong>Infections de la peau ou plaies ouvertes</strong> : Si la patiente présente une infection ou des plaies ouvertes sur l’abdomen, il peut être nécessaire de reporter l’examen.<br/>
+<strong>Tumeurs ou masses abdominales</strong> : Dans de rares cas, des masses abdominales importantes peuvent gêner l'accès à la zone d'examen, bien que cela soit généralement résolu par l'orientation de la sonde.<br/>
+<strong>Sensibilité à l'examen</strong> : Certaines patientes peuvent ressentir une gêne pendant l'examen, notamment en cas de pression importante sur l'abdomen.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins pour l'Échographie Fœtale et Doppler</h2></div><div class="info-text"><p><p>L’échographie fœtale et les études de vélocimétrie Doppler sont réalisées dans des établissements spécialisés en obstétrique et en médecine fœtale. Selon les indications de <strong>WIC-DOCTOR</strong>, voici les principaux lieux où ces examens peuvent être réalisés :<br/>
+<strong>1. Hôpitaux et Cliniques Obstétriques :</strong><br/>
+Les hôpitaux et les cliniques avec des services spécialisés en obstétrique et médecine fœtale sont les lieux les plus fréquents pour réaliser cet examen. Ces établissements disposent d’un équipement moderne pour effectuer des échographies Doppler et de spécialistes qualifiés pour analyser les résultats.<br/>
+<strong>2. Cabinets d’Obstétriciens et <a href="https://wic-doctor.com/medecin/gynécologue---obstétricien.html">Gynécologues</a> :</strong><br/>
+Les obstétriciens en cabinet privé peuvent prescrire des échographies Doppler fœtales et gérer le suivi des grossesses à risque. Certains cabinets sont équipés pour réaliser des échographies et des Dopplers en consultation.<br/>
+<strong>3. Centres de Médecine Fœtale et Suivi Prénatal :</strong><br/>
+Les centres spécialisés en médecine fœtale et en suivi prénatal proposent des échographies de haute précision, y compris l’échographie Doppler, pour suivre les grossesses à risque ou surveiller des pathologies particulières du fœtus.<br/>
+<strong>4. Services d’Urgences Obstétricales et Maternité :</strong><br/>
+Les urgences obstétricales des hôpitaux peuvent utiliser l’échographie Doppler en cas de complications aiguës, telles que des signes de pré-éclampsie, des souffrances fœtales ou des anomalies du rythme cardiaque fœtal.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Hypothèses de Diagnostic et Suivi Médical</h2></div><div class="info-text"><p><p>Les résultats de l’échographie Doppler peuvent orienter vers plusieurs hypothèses diagnostiques qui guideront le suivi médical :<br/>
+<strong>Insuffisance placentaire</strong> : Si des anomalies de la circulation placentaire sont détectées, un suivi plus fréquent avec des échographies Doppler peut être recommandé pour surveiller la santé du fœtus et la croissance.<br/>
+<strong> Retard de croissance fœtale (RCIU)</strong> : Un retard de croissance fœtale peut entraîner un suivi plus étroit, avec une surveillance accrue de la circulation sanguine et des évaluations régulières de l'état du fœtus.<br/>
+<strong>Complications maternelles</strong> : L’échographie Doppler peut aussi permettre de diagnostiquer des complications comme la pré-éclampsie ou des troubles hypertensifs de la grossesse, nécessitant un traitement spécifique.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>

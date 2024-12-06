@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -190,32 +226,32 @@
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>L'artérite à cellules géantes affecte principalement les personnes âgées de plus de 50 ans. Elle se caractérise par une inflammation des parois des artères, en particulier les artères temporales, mais peut également toucher d'autres vaisseaux sanguins.  </p><p><strong>Inflammation des artères</strong> :
-    L'inflammation de la paroi artérielle entraîne un rétrécissement du vaisseau, réduisant ainsi le flux sanguin. Cela peut provoquer des douleurs et des symptômes graves.  </p><p><strong>Cellules géantes</strong> :
-    Des cellules géantes (cellules multinucléées) sont visibles dans la paroi des artères enflammées, d'où le nom de "cellules géantes". Ces cellules sont des marqueurs de l'inflammation dans la maladie.  </p><p><strong>Complications possibles</strong> :
-    Si elle n'est pas prise en charge, l'artérite à cellules géantes peut provoquer des complications sévères comme la perte de vision d'un œil ou des accidents vasculaires cérébraux.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>Les causes exactes de l'artérite à cellules géantes ne sont pas complètement comprises, mais plusieurs facteurs de risque et hypothèses ont été identifiés.  </p><p><strong>Réponse immunitaire anormale</strong> :
-    On pense que l'artérite à cellules géantes est une maladie autoimmune, où le système immunitaire attaque les parois des artères.  </p><p><strong>Facteurs génétiques</strong> :
-    Des antécédents familiaux d'artérite à cellules géantes ou d'autres maladies inflammatoires peuvent augmenter le risque de développer cette maladie.  </p><p><strong>Âge avancé</strong> :
-    L'incidence de l'artérite à cellules géantes augmente avec l'âge, principalement chez les personnes de plus de 50 ans.  </p><p><strong>Genre</strong> :
-    La maladie est plus fréquente chez les femmes que chez les hommes.  </p><p><strong>Facteurs environnementaux</strong> :
-    Bien que les facteurs environnementaux exacts restent inconnus, des infections virales ou bactériennes pourraient déclencher la réponse inflammatoire dans les artères.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>Les symptômes de l'artérite à cellules géantes peuvent être variés et évoluer rapidement. Ils comprennent souvent :</p><p><strong>Douleur et sensibilité au niveau des tempes</strong> :
-    La douleur dans les artères temporales (zones sur les côtés de la tête) est souvent l'un des premiers symptômes. Cette douleur peut être intense et exacerbée par la pression.  </p><p><strong>Maux de tête sévères</strong> :
-    Des céphalées persistantes, souvent décrites comme pulsatile ou intense, sont fréquentes.  </p><p><strong>Problèmes de vision</strong> :
-    La perte de vision d'un œil, généralement unilatérale, est une complication grave et fréquente de l'artérite à cellules géantes, liée à une ischémie des artères rétiniennes.  </p><p><strong>Fatigue et fièvre</strong> :
-    Les patients peuvent se sentir très fatigués et présenter une légère fièvre, souvent accompagnée de symptômes de malaise général.  </p><p><strong>Douleurs musculaires et articulaires</strong> :
-    Les douleurs dans les muscles, en particulier dans les épaules et les hanches, sont courantes dans cette pathologie.  </p><p><strong>Perte de poids involontaire</strong> :
-    Une perte de poids inexpliquée peut être un symptôme de l'inflammation systémique associée à la maladie.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>Le diagnostic de l'artérite à cellules géantes repose sur une combinaison d'examens cliniques, de tests sanguins et d'examens d'imagerie.  </p><p><strong>Examen clinique</strong> :
-    Un médecin recherche des signes cliniques comme une douleur et une sensibilité au niveau des artères temporales, des symptômes de la vision, et un examen physique pour évaluer l'inflammation.  </p><p><strong>Tests sanguins</strong> :
-    Des analyses de laboratoire montrent souvent une élévation des marqueurs inflammatoires tels que la vitesse de sédimentation des érythrocytes (ESR) et la protéine Créactive (CRP), qui sont typiquement élevées dans cette maladie.  </p><p><strong>Biopsie de l'artère temporale</strong> :
-    La biopsie de l'artère temporale est un test diagnostic clé qui permet d'examiner les cellules géantes dans la paroi des artères.  </p><p><strong>Imagerie médicale</strong> :
-    Des examens comme l'IRM ou l'échographie peuvent être utilisés pour évaluer l'inflammation des artères et détecter des complications telles que l'atteinte de la rétine.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>Le traitement de l'artérite à cellules géantes nécessite une prise en charge rapide pour éviter des complications graves comme la cécité ou les AVC.  </p><p><strong>Corticostéroïdes</strong> :
-    Le traitement de première intention consiste généralement à administrer des corticostéroïdes, comme la prednisone, pour réduire l'inflammation. Ce traitement peut être administré par voie orale ou intraveineuse, selon la gravité.  </p><p><strong>Immunosuppresseurs</strong> :
-    Dans les cas réfractaires ou compliqués, des médicaments immunosuppresseurs tels que le méthotrexate ou les anticorps monoclonaux peuvent être utilisés pour contrôler l'inflammation.  </p><p><strong>Suivi médical régulier</strong> :
-    Un suivi médical est essentiel pour surveiller l'efficacité du traitement, ajuster les doses de corticostéroïdes et surveiller les effets secondaires des médicaments, notamment l'ostéoporose et l'hypertension.  </p><p><strong>Traitement de la perte de vision</strong> :
-    Si la perte de vision survient, des interventions médicales urgentes, comme des perfusions de méthylprednisolone, peuvent être nécessaires pour prévenir des dommages permanents.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les soins pour l'artérite à cellules géantes sont dispensés par des spécialistes en médecine vasculaire, en ophtalmologie et en soins primaires.  </p><p><strong>Centres spécialisés en médecine vasculaire</strong> :
-    Les hôpitaux ou cliniques spécialisés dans les maladies vasculaires sont équipés pour gérer le diagnostic et le traitement de l'artérite à cellules géantes.  </p><p><strong>Clinique d'ophtalmologie</strong> :
-    En cas de perte de vision, une consultation ophtalmologique urgente est essentielle pour évaluer et traiter les complications rétiniennes.  </p><p><strong>Médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a> et <a href="https://wic-doctor.com/medecin/pédiatre.html">pédiatres</a></strong> :
-    Le médecin généraliste peut être le premier point de contact pour diagnostiquer cette maladie et orienter le patient vers un spécialiste approprié.  </p><p><strong>Hospitals et services d'urgences</strong> :
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>L'artérite à cellules géantes affecte principalement les personnes âgées de plus de 50 ans. Elle se caractérise par une inflammation des parois des artères, en particulier les artères temporales, mais peut également toucher d'autres vaisseaux sanguins.  </p>Inflammation des artères</strong> :
+    L'inflammation de la paroi artérielle entraîne un rétrécissement du vaisseau, réduisant ainsi le flux sanguin. Cela peut provoquer des douleurs et des symptômes graves.  </p>Cellules géantes</strong> :
+    Des cellules géantes (cellules multinucléées) sont visibles dans la paroi des artères enflammées, d'où le nom de "cellules géantes". Ces cellules sont des marqueurs de l'inflammation dans la maladie.  </p>Complications possibles</strong> :
+    Si elle n'est pas prise en charge, l'artérite à cellules géantes peut provoquer des complications sévères comme la perte de vision d'un œil ou des accidents vasculaires cérébraux.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>Les causes exactes de l'artérite à cellules géantes ne sont pas complètement comprises, mais plusieurs facteurs de risque et hypothèses ont été identifiés.  </p>Réponse immunitaire anormale</strong> :
+    On pense que l'artérite à cellules géantes est une maladie autoimmune, où le système immunitaire attaque les parois des artères.  </p>Facteurs génétiques</strong> :
+    Des antécédents familiaux d'artérite à cellules géantes ou d'autres maladies inflammatoires peuvent augmenter le risque de développer cette maladie.  </p>Âge avancé</strong> :
+    L'incidence de l'artérite à cellules géantes augmente avec l'âge, principalement chez les personnes de plus de 50 ans.  </p>Genre</strong> :
+    La maladie est plus fréquente chez les femmes que chez les hommes.  </p>Facteurs environnementaux</strong> :
+    Bien que les facteurs environnementaux exacts restent inconnus, des infections virales ou bactériennes pourraient déclencher la réponse inflammatoire dans les artères.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>Les symptômes de l'artérite à cellules géantes peuvent être variés et évoluer rapidement. Ils comprennent souvent :</p>Douleur et sensibilité au niveau des tempes</strong> :
+    La douleur dans les artères temporales (zones sur les côtés de la tête) est souvent l'un des premiers symptômes. Cette douleur peut être intense et exacerbée par la pression.  </p>Maux de tête sévères</strong> :
+    Des céphalées persistantes, souvent décrites comme pulsatile ou intense, sont fréquentes.  </p>Problèmes de vision</strong> :
+    La perte de vision d'un œil, généralement unilatérale, est une complication grave et fréquente de l'artérite à cellules géantes, liée à une ischémie des artères rétiniennes.  </p>Fatigue et fièvre</strong> :
+    Les patients peuvent se sentir très fatigués et présenter une légère fièvre, souvent accompagnée de symptômes de malaise général.  </p>Douleurs musculaires et articulaires</strong> :
+    Les douleurs dans les muscles, en particulier dans les épaules et les hanches, sont courantes dans cette pathologie.  </p>Perte de poids involontaire</strong> :
+    Une perte de poids inexpliquée peut être un symptôme de l'inflammation systémique associée à la maladie.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>Le diagnostic de l'artérite à cellules géantes repose sur une combinaison d'examens cliniques, de tests sanguins et d'examens d'imagerie.  </p>Examen clinique</strong> :
+    Un médecin recherche des signes cliniques comme une douleur et une sensibilité au niveau des artères temporales, des symptômes de la vision, et un examen physique pour évaluer l'inflammation.  </p>Tests sanguins</strong> :
+    Des analyses de laboratoire montrent souvent une élévation des marqueurs inflammatoires tels que la vitesse de sédimentation des érythrocytes (ESR) et la protéine Créactive (CRP), qui sont typiquement élevées dans cette maladie.  </p>Biopsie de l'artère temporale</strong> :
+    La biopsie de l'artère temporale est un test diagnostic clé qui permet d'examiner les cellules géantes dans la paroi des artères.  </p>Imagerie médicale</strong> :
+    Des examens comme l'IRM ou l'échographie peuvent être utilisés pour évaluer l'inflammation des artères et détecter des complications telles que l'atteinte de la rétine.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements de l'Artérite à Cellules Géantes</h2></div><div class="info-text"><p><p>Le traitement de l'artérite à cellules géantes nécessite une prise en charge rapide pour éviter des complications graves comme la cécité ou les AVC.  </p>Corticostéroïdes</strong> :
+    Le traitement de première intention consiste généralement à administrer des corticostéroïdes, comme la prednisone, pour réduire l'inflammation. Ce traitement peut être administré par voie orale ou intraveineuse, selon la gravité.  </p>Immunosuppresseurs</strong> :
+    Dans les cas réfractaires ou compliqués, des médicaments immunosuppresseurs tels que le méthotrexate ou les anticorps monoclonaux peuvent être utilisés pour contrôler l'inflammation.  </p>Suivi médical régulier</strong> :
+    Un suivi médical est essentiel pour surveiller l'efficacité du traitement, ajuster les doses de corticostéroïdes et surveiller les effets secondaires des médicaments, notamment l'ostéoporose et l'hypertension.  </p>Traitement de la perte de vision</strong> :
+    Si la perte de vision survient, des interventions médicales urgentes, comme des perfusions de méthylprednisolone, peuvent être nécessaires pour prévenir des dommages permanents.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>Les soins pour l'artérite à cellules géantes sont dispensés par des spécialistes en médecine vasculaire, en ophtalmologie et en soins primaires.  </p>Centres spécialisés en médecine vasculaire</strong> :
+    Les hôpitaux ou cliniques spécialisés dans les maladies vasculaires sont équipés pour gérer le diagnostic et le traitement de l'artérite à cellules géantes.  </p>Clinique d'ophtalmologie</strong> :
+    En cas de perte de vision, une consultation ophtalmologique urgente est essentielle pour évaluer et traiter les complications rétiniennes.  </p>Médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a> et <a href="https://wic-doctor.com/medecin/pédiatre.html">pédiatres</a></strong> :
+    Le médecin généraliste peut être le premier point de contact pour diagnostiquer cette maladie et orienter le patient vers un spécialiste approprié.  </p>Hospitals et services d'urgences</strong> :
     Les hôpitaux peuvent être impliqués dans le traitement des cas sévères nécessitant des corticostéroïdes intraveineux ou des interventions d'urgence pour la gestion de la perte de vision.  </p><hr/></p></div></div></div><div class="container section-H" id="H"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>Ce format détaillé est conçu pour fournir un contenu exhaustif, optimisé pour le SEO et l'annotation pour l'IA, pour la gestion de l'artérite à cellules géantes sur le portail WIC-DOCTOR.</p></p></div></div></div>  
         </div>
     </section>
