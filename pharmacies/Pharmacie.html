@@ -736,7 +736,7 @@
 
 			doctors.forEach(doctor => {
 				console.log("doctor to show: ", doctor)
-				const photo = doctor.doctor_photo || "doctor.png";
+				const photo = doctor.doctor_photo || "pharmacie.png";
 				const name = getDoctorName(doctor.name);
 			//	const speciality = getDoctorSpec(doctor.specialities);
 				const city = getDoctorName(doctor.Governorate);
@@ -752,7 +752,7 @@
                     <div class="item-card9-img">
                         <div class="item-card9-imgs">
                             <a href="#" onclick="GetDetailsDoctor('${encryptedData}')" id="doctorDetails"></a>
-                            <img alt="img" class="cover-image" src="./../assets/images/media/doctors/${photo}">
+                            <img alt="img" class="cover-image" src="./../assets/images/icons/${photo}">
                         </div>
                     </div>
                     <div class="card border-0 mb-0">
