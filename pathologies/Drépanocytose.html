@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -181,63 +217,48 @@
                 </div>
             </div>
         </div>
-        <div class="subtitlee"><p><p>La <strong>drépanocytose</strong> est une maladie génétique du sang qui affecte la forme et la fonction des globules rouges. Ces derniers, au lieu d’être ronds et flexibles, prennent une forme de faucille (ou de croissant), ce qui peut obstruer la circulation sanguine et entraîner des douleurs et des complications graves. Bien que cette pathologie soit principalement observée chez les personnes d'ascendance africaine, elle peut toucher également d'autres populations. Grâce au <strong>portail WIC-DOCTOR</strong>, les patients atteints de drépanocytose peuvent bénéficier d’un suivi médical à distance, de conseils sur la gestion de la douleur et des traitements spécifiques adaptés à leurs besoins.</p><hr/></p></div>
+        <div class="subtitlee"><p></p></div>
     </div>
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Suivi médical à distance et spécialisés<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de la Drépanocytose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Suivi médical à distance et spécialisés<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('J')"><button class="alphabet-button">Conclusion<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de la Drépanocytose</h2></div><div class="info-text"><p><p>La drépanocytose est une maladie génétique récessive qui modifie la structure de l'hémoglobine, la protéine présente dans les globules rouges et responsable du transport de l'oxygène. Cette mutation génétique provoque la formation de <strong>globules rouges en forme de faucille</strong> (d’où le nom "drépanocytose"), qui sont rigides et se bloquent facilement dans les petits vaisseaux sanguins. Cela peut entraîner des crises douloureuses, des infections fréquentes, des anémies chroniques, et d’autres complications potentiellement graves.</p><p>Les personnes atteintes de la drépanocytose héritent de deux copies du gène défectueux, une de chaque parent. Lorsqu'une personne n'hérite que d'une seule copie défectueuse, elle est porteuse de la <strong>sickle cell trait</strong> (trait drépanocytaire), mais ne manifeste généralement pas les symptômes.</p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de la Drépanocytose</h2></div><div class="info-text"><p><p>Les symptômes de la drépanocytose varient d’une personne à l’autre et peuvent être plus ou moins graves. Cependant, certains symptômes récurrents incluent :</p><ul>
-<li><strong>Crises de douleur</strong> : Les douleurs sont l'un des symptômes les plus caractéristiques de la drépanocytose. Ces crises, appelées "crises vaso-occlusives", surviennent lorsque les globules rouges en forme de faucille bloquent la circulation sanguine dans les vaisseaux, provoquant une douleur intense, généralement dans les os, les articulations, la poitrine, ou l'abdomen.</li>
-<li><strong>Anémie chronique</strong> : Les globules rouges en forme de faucille ont une durée de vie plus courte que les globules rouges normaux, ce qui peut entraîner une anémie (baisse du nombre de globules rouges dans le sang).</li>
-<li><strong>Fatigue</strong> : La faible quantité d'oxygène transportée par le sang peut provoquer une sensation constante de fatigue.</li>
-<li><strong>Infections fréquentes</strong> : La drépanocytose affaiblit le système immunitaire, ce qui rend les personnes atteintes plus susceptibles aux infections, en particulier la pneumonie.</li>
-<li><strong>Jaunisse</strong> : En raison de la destruction rapide des globules rouges, un excès de bilirubine peut s'accumuler, provoquant une coloration jaunâtre de la peau et des yeux.</li>
-<li><strong>Retard de croissance chez les enfants</strong> : Les enfants atteints peuvent présenter un retard de croissance dû à l’anémie.</li>
-<li><strong>Dégâts organiques</strong> : Si la circulation sanguine est fréquemment obstruée, cela peut entraîner des lésions aux organes vitaux comme les reins, le foie, ou le cœur.</li>
-</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de la Drépanocytose</h2></div><div class="info-text"><p><h4><strong>Causes de la Drépanocytose</strong> :</h4><p>La drépanocytose est causée par une mutation génétique affectant l'hémoglobine, la protéine responsable du transport de l'oxygène dans les globules rouges. Cette mutation entraîne la production d'une forme anormale d’hémoglobine, appelée <strong>hémoglobine S</strong> (HbS), qui se déforme sous certaines conditions (manque d'oxygène, déshydratation, etc.) et forme des globules rouges en forme de faucille.</p><p>Les individus doivent hériter de cette mutation génétique de leurs deux parents pour développer la drépanocytose. Ceux qui héritent de la mutation d'un seul parent sont des porteurs sains (trait drépanocytaire), et ne souffrent généralement pas de symptômes.</p><h4><strong>Facteurs de Risque</strong> :</h4><ol>
-<li><strong>Origine ethnique</strong> : La drépanocytose est plus fréquente chez les personnes d'origine africaine, mais elle peut également toucher les populations d’Asie, du Moyen-Orient, et de Méditerranée.</li>
-<li><strong>Antécédents familiaux</strong> : Les personnes ayant un parent ou un frère/sœur atteint de drépanocytose ou porteuses du trait drépanocytaire ont un risque accru d’être porteuses ou affectées par la maladie.</li>
-<li><strong>Vivre dans des zones à forte prévalence</strong> : La maladie est plus fréquente dans certaines régions où le paludisme est ou a été endémique, car l'hémoglobine S offre une certaine protection contre cette infection parasitaire.</li>
-</ol><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de la Drépanocytose</h2></div><div class="info-text"><p><p>Les complications de la drépanocytose peuvent être graves et affecter plusieurs organes du corps. Parmi les complications possibles, on trouve :</p><ol>
-<li><strong>Accidents vasculaires cérébraux (AVC)</strong> : La drépanocytose augmente le risque d'accident vasculaire cérébral, en particulier chez les jeunes enfants.</li>
-<li><strong>Endommagement des organes vitaux</strong> : Les reins, le cœur, et les poumons peuvent être endommagés à cause de la mauvaise circulation sanguine et des crises répétées.</li>
-<li><strong>Syndrome thoracique aigu</strong> : Cette complication, qui se manifeste par une douleur thoracique intense, une difficulté à respirer et une hypoxie (manque d'oxygène dans le sang), est souvent causée par des infections pulmonaires ou des crises vaso-occlusives dans les poumons.</li>
-<li><strong>Ulcères de jambe</strong> : Les obstructions répétées dans les vaisseaux sanguins des jambes peuvent entraîner des ulcères chroniques.</li>
-<li><strong>Développement anormal des os et des articulations</strong> : La circulation sanguine défectueuse peut nuire à la croissance des os et des articulations.</li>
-<li><strong>Infections graves</strong> : La splénomégalie (augmentation de la taille de la rate) et la dégradation de la rate augmentent le risque d'infections graves, notamment par des bactéries comme <strong>Streptococcus pneumoniae</strong>.</li>
-</ol><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de la Drépanocytose</h2></div><div class="info-text"><p><p>Le diagnostic de la drépanocytose est confirmé par des tests sanguins. Les principaux tests utilisés comprennent :</p><ol>
-<li><strong>Frottis sanguin</strong> : Un frottis sanguin permet d’observer les globules rouges sous un microscope et de vérifier s'ils ont la forme caractéristique de faucille.</li>
-<li><strong>Test de l'hémoglobine S</strong> : Ce test permet de détecter la présence de l'hémoglobine S, la forme anormale de l'hémoglobine responsable de la drépanocytose.</li>
-<li><strong>Électrophorèse de l'hémoglobine</strong> : Cette analyse permet de séparer les différentes formes d’hémoglobine et de détecter la présence d'hémoglobine S dans le sang.</li>
-<li><strong>Test génétique</strong> : Un test génétique peut être utilisé pour confirmer la mutation génétique responsable de la drépanocytose, en particulier dans les cas où le diagnostic n'est pas évident.</li>
-</ol><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de la Drépanocytose</h2></div><div class="info-text"><p><h4><strong>Traitements Médicamenteux</strong> :</h4><ol>
-<li><strong>Hydroxyurée</strong> : Ce médicament peut réduire la fréquence des crises de douleur et améliorer la production de globules rouges normaux.</li>
-<li><strong>Antalgiques</strong> : Les analgésiques puissants, y compris les opioïdes, peuvent être nécessaires pour gérer la douleur intense lors des crises vaso-occlusives.</li>
-<li><strong>Antibiotiques</strong> : Les patients atteints de drépanocytose reçoivent souvent des antibiotiques pour prévenir les infections bactériennes, en particulier en cas de splénomégalie.</li>
-<li><strong>Transfusions sanguines</strong> : Les transfusions peuvent être utilisées pour traiter l'anémie sévère et améliorer la circulation sanguine.</li>
-<li><strong>Érythropoïétine</strong> : Ce traitement peut être utilisé pour stimuler la production de globules rouges.</li>
-</ol><h4><strong>Traitements non médicamenteux</strong> :</h4><ol>
-<li><strong>Hydratation</strong> : Les patients sont encouragés à boire beaucoup de liquides pour éviter la déshydratation, ce qui peut provoquer des crises.</li>
-<li><strong>Chirurgie</strong> : Dans certains cas, une ablation de la rate (splénectomie) peut être nécessaire pour traiter certaines complications de la drépanocytose, comme les infections répétées.</li>
-<li><strong>Greffe de cellules souches</strong> : La greffe de cellules souches hématopoïétiques (greffe de moelle osseuse) peut offrir une solution potentielle de guérison pour certains patients, bien que ce soit une option complexe et risquée.</li>
-</ol><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi médical à distance et spécialisés</h2></div><div class="info-text"><p><p>Le suivi médical pour la drépanocytose nécessite une surveillance continue des symptômes, notamment des crises de douleur et des infections.</p><p>Grâce à des plateformes comme <strong>WIC-DOCTOR</strong>, les patients peuvent bénéficier d'un suivi à distance personnalisé. Cela comprend :</p><ol>
-<li><strong>Consultations virtuelles</strong> : Le portail permet aux patients d’accéder à des consultations en ligne avec des spécialistes en hématologie ou en médecine interne, afin de suivre l'évolution de leur état de santé et ajuster les traitements.</li>
-<li><strong>Suivi régulier avec des spécialistes</strong> :</li>
-<li><strong><a href="https://wic-doctor.com/medecin/hématologue.html">Hématologues</a></strong> : Des consultations avec un hématologue sont essentielles pour le diagnostic et le traitement des crises et des complications liées à la drépanocytose.</li>
-<li><strong><a href="https://wic-doctor.com/medecin/pneumologue.html">Pneumologues</a></strong> : Si des complications pulmonaires se manifestent, comme le syndrome thoracique aigu, un suivi avec un pneumologue est crucial.</li>
-<li>
-<p><strong><a href="https://wic-doctor.com/medecin/cardiologue.html">Cardiologues</a> et néphrologues</strong> : En cas de complications affectant le cœur ou les reins, ces spécialistes peuvent être impliqués dans la gestion des patients.</p>
-</li>
-<li>
-<p><strong>Cliniques spécialisées et hôpitaux</strong> :</p>
-</li>
-<li>De nombreux <strong>hôpitaux universitaires</strong> et <strong>centres de soins spécialisés</strong> en hématologie offrent des traitements avancés pour la drépanocytose.</li>
-<li>Les <strong>centres spécialisés en médecine génétique</strong> proposent des conseils sur la gestion des risques de transmission de la maladie.</li>
-</ol><p>Le suivi médical dans des <strong>cliniques spécialisées</strong> permet une gestion plus efficace des crises et des complications liées à cette pathologie.</p><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de la Drépanocytose</h2></div><div class="info-text"><p><p>La drépanocytose est une maladie génétique récessive qui modifie la structure de l'hémoglobine, la protéine présente dans les globules rouges et responsable du transport de l'oxygène.   Cette mutation génétique provoque la formation de <strong>globules rouges en forme de faucille</strong>(d’où le nom "drépanocytose"), qui sont rigides et se bloquent facilement dans les petits vaisseaux sanguins.   Cela peut entraîner des crises douloureuses, des infections fréquentes, des anémies chroniques, et d’autres complications potentiellement graves.  </p><p>Les personnes atteintes de la drépanocytose héritent de deux copies du gène défectueux, une de chaque parent.   Lorsqu'une personne n'hérite que d'une seule copie défectueuse, elle est porteuse de la <strong>sickle cell trait</strong>(trait drépanocytaire), mais ne manifeste généralement pas les symptômes.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de la Drépanocytose</h2></div><div class="info-text"><p><p>Les symptômes de la drépanocytose varient d’une personne à l’autre et peuvent être plus ou moins graves.   Cependant, certains symptômes récurrents incluent :<br/>
+<strong>Crises de douleur</strong>: Les douleurs sont l'un des symptômes les plus caractéristiques de la drépanocytose.   Ces crises, appelées "crises vaso-occlusives", surviennent lorsque les globules rouges en forme de faucille bloquent la circulation sanguine dans les vaisseaux, provoquant une douleur intense, généralement dans les os, les articulations, la poitrine, ou l'abdomen.<br/>
+<strong>Anémie chronique</strong>: Les globules rouges en forme de faucille ont une durée de vie plus courte que les globules rouges normaux, ce qui peut entraîner une anémie (baisse du nombre de globules rouges dans le sang).<br/>
+<strong>Fatigue</strong>: La faible quantité d'oxygène transportée par le sang peut provoquer une sensation constante de fatigue.<br/>
+<strong>Infections fréquentes</strong>: La drépanocytose affaiblit le système immunitaire, ce qui rend les personnes atteintes plus susceptibles aux infections, en particulier la pneumonie.<br/>
+<strong>Jaunisse</strong>: En raison de la destruction rapide des globules rouges, un excès de bilirubine peut s'accumuler, provoquant une coloration jaunâtre de la peau et des yeux.<br/>
+<strong>Retard de croissance chez les enfants</strong>: Les enfants atteints peuvent présenter un retard de croissance dû à l’anémie.<br/>
+<strong>Dégâts organiques</strong>: Si la circulation sanguine est fréquemment obstruée, cela peut entraîner des lésions aux organes vitaux comme les reins, le foie, ou le cœur.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de la Drépanocytose</h2></div><div class="info-text"><p><h4><strong>Causes de la Drépanocytose</strong>:  La drépanocytose est causée par une mutation génétique affectant l'hémoglobine, la protéine responsable du transport de l'oxygène dans les globules rouges.   Cette mutation entraîne la production d'une forme anormale d’hémoglobine, appelée <strong>hémoglobine S</strong>(HbS), qui se déforme sous certaines conditions (manque d'oxygène, déshydratation, etc.  ) et forme des globules rouges en forme de faucille.</h4><p>Les individus doivent hériter de cette mutation génétique de leurs deux parents pour développer la drépanocytose.   Ceux qui héritent de la mutation d'un seul parent sont des porteurs sains (trait drépanocytaire), et ne souffrent généralement pas de symptômes.  </p><h4><strong>Facteurs de Risque</strong>:</h4><p><strong>Origine ethnique</strong>: La drépanocytose est plus fréquente chez les personnes d'origine africaine, mais elle peut également toucher les populations d’Asie, du Moyen-Orient, et de Méditerranée.<br/>
+<strong>Antécédents familiaux</strong>: Les personnes ayant un parent ou un frère/sœur atteint de drépanocytose ou porteuses du trait drépanocytaire ont un risque accru d’être porteuses ou affectées par la maladie.<br/>
+<strong>Vivre dans des zones à forte prévalence</strong>: La maladie est plus fréquente dans certaines régions où le paludisme est ou a été endémique, car l'hémoglobine S offre une certaine protection contre cette infection parasitaire.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de la Drépanocytose</h2></div><div class="info-text"><p><p>Les complications de la drépanocytose peuvent être graves et affecter plusieurs organes du corps.   Parmi les complications possibles, on trouve :<br/>
+<strong>Accidents vasculaires cérébraux (AVC)</strong>: La drépanocytose augmente le risque d'accident vasculaire cérébral, en particulier chez les jeunes enfants.<br/>
+<strong>Endommagement des organes vitaux</strong>: Les reins, le cœur, et les poumons peuvent être endommagés à cause de la mauvaise circulation sanguine et des crises répétées.<br/>
+<strong>Syndrome thoracique aigu</strong>: Cette complication, qui se manifeste par une douleur thoracique intense, une difficulté à respirer et une hypoxie (manque d'oxygène dans le sang), est souvent causée par des infections pulmonaires ou des crises vaso-occlusives dans les poumons.<br/>
+<strong>Ulcères de jambe</strong>: Les obstructions répétées dans les vaisseaux sanguins des jambes peuvent entraîner des ulcères chroniques.<br/>
+<strong>Développement anormal des os et des articulations</strong>: La circulation sanguine défectueuse peut nuire à la croissance des os et des articulations.<br/>
+<strong>Infections graves</strong>: La splénomégalie (augmentation de la taille de la rate) et la dégradation de la rate augmentent le risque d'infections graves, notamment par des bactéries comme <strong>Streptococcus pneumoniae</strong>.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de la Drépanocytose</h2></div><div class="info-text"><p><p>Le diagnostic de la drépanocytose est confirmé par des tests sanguins.   Les principaux tests utilisés comprennent :<br/>
+<strong>Frottis sanguin</strong>: Un frottis sanguin permet d’observer les globules rouges sous un microscope et de vérifier s'ils ont la forme caractéristique de faucille.<br/>
+<strong>Test de l'hémoglobine S</strong>: Ce test permet de détecter la présence de l'hémoglobine S, la forme anormale de l'hémoglobine responsable de la drépanocytose.<br/>
+<strong>Électrophorèse de l'hémoglobine</strong>: Cette analyse permet de séparer les différentes formes d’hémoglobine et de détecter la présence d'hémoglobine S dans le sang.<br/>
+<strong>Test génétique</strong>: Un test génétique peut être utilisé pour confirmer la mutation génétique responsable de la drépanocytose, en particulier dans les cas où le diagnostic n'est pas évident.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de la Drépanocytose</h2></div><div class="info-text"><p><h4><strong>Traitements Médicamenteux</strong>:</h4><p><strong>Hydroxyurée</strong>: Ce médicament peut réduire la fréquence des crises de douleur et améliorer la production de globules rouges normaux.<br/>
+<strong>Antalgiques</strong>: Les analgésiques puissants, y compris les opioïdes, peuvent être nécessaires pour gérer la douleur intense lors des crises vaso-occlusives.<br/>
+<strong>Antibiotiques</strong>: Les patients atteints de drépanocytose reçoivent souvent des antibiotiques pour prévenir les infections bactériennes, en particulier en cas de splénomégalie.<br/>
+<strong>Transfusions sanguines</strong>: Les transfusions peuvent être utilisées pour traiter l'anémie sévère et améliorer la circulation sanguine.<br/>
+<strong>Érythropoïétine</strong>: Ce traitement peut être utilisé pour stimuler la production de globules rouges.  </p><h4><strong>Traitements non médicamenteux</strong>:</h4><p><strong>Hydratation</strong>: Les patients sont encouragés à boire beaucoup de liquides pour éviter la déshydratation, ce qui peut provoquer des crises.<br/>
+<strong>Chirurgie</strong>: Dans certains cas, une ablation de la rate (splénectomie) peut être nécessaire pour traiter certaines complications de la drépanocytose, comme les infections répétées.<br/>
+<strong>Greffe de cellules souches</strong>: La greffe de cellules souches hématopoïétiques (greffe de moelle osseuse) peut offrir une solution potentielle de guérison pour certains patients, bien que ce soit une option complexe et risquée.  </p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi médical à distance et spécialisés</h2></div><div class="info-text"><p><p>Le suivi médical pour la drépanocytose nécessite une surveillance continue des symptômes, notamment des crises de douleur et des infections.  </p><p>Grâce à des plateformes comme <strong>WIC-DOCTOR</strong>, les patients peuvent bénéficier d'un suivi à distance personnalisé.   Cela comprend :  </p>Consultations virtuelles</strong>: Le portail permet aux patients d’accéder à des consultations en ligne avec des spécialistes en hématologie ou en médecine interne, afin de suivre l'évolution de leur état de santé et ajuster les traitements.<br/>
+<strong>Suivi régulier avec des spécialistes</strong>:  </p><a href="https://wic-doctor.com/medecin/hématologue.html">Hématologues</a></strong>: Des consultations avec un hématologue sont essentielles pour le diagnostic et le traitement des crises et des complications liées à la drépanocytose.<br/>
+<strong><a href="https://wic-doctor.com/medecin/pneumologue.html">Pneumologues</a></strong>: Si des complications pulmonaires se manifestent, comme le syndrome thoracique aigu, un suivi avec un pneumologue est crucial.<br/>
+<strong><a href="https://wic-doctor.com/medecin/cardiologue.html">Cardiologues</a> et néphrologues</strong>: En cas de complications affectant le cœur ou les reins, ces spécialistes peuvent être impliqués dans la gestion des patients.  </p>Cliniques spécialisées et hôpitaux</strong>:<br/>
+   - De nombreux <strong>hôpitaux universitaires</strong>et <strong>centres de soins spécialisés</strong>en hématologie offrent des traitements avancés pour la drépanocytose.<br/>
+   - Les <strong>centres spécialisés en médecine génétique</strong>proposent des conseils sur la gestion des risques de transmission de la maladie.  </p><p>Le suivi médical dans des <strong>cliniques spécialisées</strong>permet une gestion plus efficace des crises et des complications liées à cette pathologie.  </p></p></div></div></div><div class="container section-J" id="J"><div class="info-section"><div class="section-title center-block text-center"><h2>Conclusion</h2></div><div class="info-text"><p><p>La drépanocytose est une maladie complexe nécessitant une prise en charge adaptée et continue. Grâce aux innovations technologiques comme WIC-DOCTOR, les patients peuvent désormais accéder à des consultations spécialisées à distance, bénéficier d’un suivi médical personnalisé et optimiser la gestion de leur condition au quotidien. Ces solutions modernes permettent de réduire les complications, d’améliorer la qualité de vie et de rapprocher les patients des spécialistes, même dans les régions éloignées. En combinant expertise médicale et télémédecine, WIC-DOCTOR ouvre la voie à une prise en charge plus accessible et efficace de la drépanocytose.<br/>
+    - Lien vers des pages sur les <strong>traitements de l’anémie</strong> et les <strong>traitements de la douleur chronique</strong>.<br/>
+    - Lien vers des ressources sur les <strong>programmes de prévention génétique</strong> et les <strong>consultations à distance</strong>.  </p></p></div></div></div>  
         </div>
     </section>
     <script>
