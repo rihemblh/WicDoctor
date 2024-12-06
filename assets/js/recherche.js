@@ -504,7 +504,7 @@ function Deconexion() {
       sessionStorage.removeItem('auth');
       sessionStorage.removeItem('rendezvous');
 
-      window.location.href = 'index.html'; // Rediriger vers la page 2
+      window.location.href = 'https://wic-doctor.com/'; // Rediriger vers la page 2
     })
     .catch(error => {
       console.error('Erreur :', error);
