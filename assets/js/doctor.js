@@ -48,7 +48,7 @@ function createCarousel(data) {
 						  <div class="card">
 							  <div class="card-body">
 								  <div class="cat-item text-center">
-									  <a  onclick="SearchSpecialities(${item.id},'${JSON.parse(item.name).fr}')"></a>
+									  <a href=""  onclick="SearchSpecialities(${item.id},'${JSON.parse(item.name).fr}')"></a>
 									  <div class="cat-imgs">
 										  <img alt="img" src="assets/images/icons/${item.icon}"
 											  class="svg-img">
@@ -147,7 +147,7 @@ async function fetchCarouselData2() {
 									</div>
 									<div class="item-card2">
 								<small class="text-muted">${JSON.parse(item.specialities[0].name).fr || ""}</small>
-								<a class="text-dark"  onclick="GetDetailsDoctor('${encryptedData}')">
+								<a href="" class="text-dark"  onclick="GetDetailsDoctor('${encryptedData}')">
 									<h4 class="font-weight-semibold mt-1 mb-1">Dr ${JSON.parse(item.name).fr}
 										<i class="ion-checkmark-circled  text-success fs-14 ms-1"></i>
 									</h4>

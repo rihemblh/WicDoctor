@@ -5072,6 +5072,35 @@ input[type=submit].btn-block {
     display: inline-flex;
     vertical-align: middle;
 }
+.form-group.col-xl-4.col-lg-3.col-md-12.mb-0.location {
+    position: relative;
+}
+
+#suggestions {
+    display: none; /* Par défaut, masqué */
+    position: absolute;
+    top: 100%; /* Juste en dessous de l'input */
+    left: 0;
+    width: 100%; /* Prend la largeur de l'input */
+    z-index: 9999; /* Priorité haute pour être visible */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#suggestions li:hover {
+    background-color: #f0f0f0;
+}
 
 .btn-group-vertical>.btn {
     position: relative;
