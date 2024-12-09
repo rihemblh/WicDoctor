@@ -70,7 +70,7 @@ fetch('https://wic-doctor.com:3004/specialties')
     selectclinic.appendChild(optgroupclinic);
 
   });
-fetch('https://wic-doctor.com:3004/getvilles')
+/* fetch('https://wic-doctor.com:3004/getvilles')
   .then(response => {
     if (!response.ok) {
       throw new Error('Erreur lors de la récupération des catégories');
@@ -133,6 +133,47 @@ fetch('https://wic-doctor.com:3004/getvilles')
 
     // Ajouter l'<optgroup> au <select>
     selectclinic.appendChild(optgroupclinic);
+  }); */
+  document.addEventListener('DOMContentLoaded', () => {
+    const data = [
+      {"ville":"{\"fr\":\"Ariana\"}"},{"ville":"{\"fr\":\"Béja\"}"},{"ville":"{\"fr\":\"Ben Arous\"}"},{"ville":"{\"fr\":\"Bizerte\"}"},
+      {"ville":"{\"fr\":\"Gabès\"}"},{"ville":"{\"fr\":\"Gafsa\"}"},{"ville":"{\"fr\":\"Jendouba\"}"},{"ville":"{\"fr\":\"Kairouan\"}"},
+      {"ville":"{\"fr\":\"Kasserine\"}"},{"ville":"{\"fr\":\"Kébili\"}"},{"ville":"{\"fr\":\"Le Kef\"}"},{"ville":"{\"fr\":\"Mahdia\"}"},
+      {"ville":"{\"fr\":\"La Manouba\"}"},{"ville":"{\"fr\":\"Médenine\"}"},{"ville":"{\"fr\":\"Monastir\"}"},{"ville":"{\"fr\":\"Nabeul\"}"},
+      {"ville":"{\"fr\":\"Sfax\"}"},{"ville":"{\"fr\":\"Sidi Bouzid\"}"},{"ville":"{\"fr\":\"Siliana\"}"},{"ville":"{\"fr\":\"Sousse\"}"},
+      {"ville":"{\"fr\":\"Tataouine\"}"},{"ville":"{\"fr\":\"Tozeur\"}"},{"ville":"{\"fr\":\"Tunis\"}"},{"ville":"{\"fr\":\"Zaghouan\"}"}
+    ];
+  
+    // Fonction pour remplir un select
+    const populateSelect = (selectId) => {
+      const select = document.getElementById(selectId);
+      const optgroup = document.createElement('optgroup');
+      optgroup.label = "";
+  
+      // Ajouter l'option par défaut
+      const defaultOption = document.createElement('option');
+      defaultOption.value = '';
+      defaultOption.textContent = 'Veuillez sélectionner une option...';
+      defaultOption.disabled = true; // Désactive l'option pour ne pas la rendre sélectionnable
+      defaultOption.selected = true; // Rend cette option sélectionnée par défaut
+      optgroup.appendChild(defaultOption);
+  
+      // Ajouter les villes
+      data.forEach(item => {
+        const option = document.createElement('option');
+        let value = JSON.parse(item.ville);
+        option.value = JSON.stringify(value);
+        option.textContent = value.fr;
+        optgroup.appendChild(option);
+      });
+  
+      // Ajouter l'<optgroup> au <select>
+      select.appendChild(optgroup);
+    };
+  
+    // Remplir les deux sélecteurs
+    populateSelect('dynamicSelectVille');
+    populateSelect('dynamicSelectVilleClinic');
   });
 fetch('https://wic-doctor.com:3004/getpays')
   .then(response => {
