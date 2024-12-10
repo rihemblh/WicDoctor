@@ -48,7 +48,7 @@ function createCarousel(data) {
 						  <div class="card">
 							  <div class="card-body">
 								  <div class="cat-item text-center">
-									  <a href=""  onclick="SearchSpecialities(${item.id},'${JSON.parse(item.name).fr}')"></a>
+									  <a  onclick="SearchSpecialities(${item.id},'${JSON.parse(item.name).fr}')"></a>
 									  <div class="cat-imgs">
 										  <img alt="img" src="assets/images/icons/${item.icon}"
 											  class="svg-img">

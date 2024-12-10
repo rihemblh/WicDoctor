@@ -274,7 +274,7 @@ fetch('https://dashboard.wic-doctor.com/paypal/payment', requestOptionsPayment)
     return response.json(); // Analyser la réponse JSON
 })
 .then(data => {
-    console.log('Réponse de l\'API :', data);
+   /*  console.log('Réponse de l\'API :', data);
 
     if (data.message == "Rendez-vous inséré avec succès") {
         document.getElementById('popup').style.display = 'block';
@@ -283,7 +283,7 @@ fetch('https://dashboard.wic-doctor.com/paypal/payment', requestOptionsPayment)
         sessionStorage.removeItem("rendezvousClinic")
         window.location.href = 'profil.html'; // Rediriger vers la page 2
 
-    }
+    } */
 })
 //payment
 
