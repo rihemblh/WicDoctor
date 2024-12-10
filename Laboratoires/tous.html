@@ -759,7 +759,7 @@
 
 			doctors.forEach(doctor => {
 				console.log("doctor to show: ", doctor)
-				const photo = doctor.doctor_photo || "Hopital-et-clinique.png";
+				const photo = doctor.doctor_photo || "centre-de-dialyse.png";
 				const name = getDoctorName(doctor.name);
 				//	const speciality = getDoctorSpec(doctor.specialities);
 				const city = getDoctorName(doctor.ville);
@@ -784,11 +784,7 @@
                                 <a href="#"  class="text-dark">
                                     <h4 class="font-weight-bold mt-1 mb-1"> ${name}</h4>
                                 </a>
-                                  <div class="item-card9-desc mb-0 mt-2">
-									                                                                        <span class="me-4 d-inline-block">${secteur}</span>
-
-                                                                     
-                                </div>
+                                 
                                 <div class="item-card9-desc mb-0 mt-2">
 									                                                                        <span class="me-4 d-inline-block"><i class="fa fa-map-marker text-muted me-1"></i>${adress}</span>
 
