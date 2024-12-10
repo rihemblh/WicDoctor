@@ -37,7 +37,7 @@ document.getElementById('updateProfileButton').addEventListener('click', functio
     e.preventDefault();
     validateProfileForm();
     if (document.getElementById('warning-message').style.display === 'none') {
-        alert('Profil mis à jour avec succès !');
+      //  alert('Profil mis à jour avec succès !');
         // Ici, ajouter la logique pour envoyer les données au serveur si nécessaire
     }
 });
@@ -53,6 +53,7 @@ function encryptData(data) {
 // Decrypt and retrieve user data from session storage
 const authData = sessionStorage.getItem("auth");
 if (authData) {
+    console.log("authData: ",authData)
     const login = decryptData(authData);
     console.log("Initial login data: ", login);
 
@@ -80,7 +81,7 @@ if (authData) {
     document.getElementById("assurance").value = user.assurance || '';
     document.getElementById("groupe_sanguin").value = user.groupe_sanguin || '';
     document.getElementById("allergie").value = user.allergie || '';
-    document.getElementById("date_naissance").value = user.date_naissance || '';
+    document.getElementById("date_naissance").value = new Date(user.date_naissance).toISOString().split('T')[0] || '';
 
     // Handle the insurance checkbox (CNAM and Assurance)
     if ((user.matriculeCNSS != "" || user.dateExpiration != "") & (user.matriculeCNSS != null || user.dateExpiration != null)) {
@@ -170,7 +171,12 @@ document.getElementById("updateProfileButton").addEventListener("click", async (
 
         const result = await response.json();
         if (response.ok) {
+            console.log("response: ",response,result)
+
             alert(result.message);
+            console.log('`{"fr":${updatedProfile.firstName}}`: ',`{"fr":${updatedProfile.first_name}}`,updatedProfile.first_name)
+            updatedProfile.first_name=`{"fr":"${updatedProfile.first_name}"}`
+            updatedProfile.last_name=`{"fr":"${updatedProfile.last_name}"}`
 
             // Update session storage with new profile data
             login.result[0] = {
@@ -181,7 +187,7 @@ document.getElementById("updateProfileButton").addEventListener("click", async (
             // Re-encrypt and store the updated data in sessionStorage
             const updatedAuthData = encryptData(login);
             sessionStorage.setItem("auth", updatedAuthData);
-
+console.log("")
             console.log("Session storage updated with: ", login);
             location.reload();
         } else {
