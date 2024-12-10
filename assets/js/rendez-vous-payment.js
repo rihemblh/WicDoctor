@@ -91,69 +91,70 @@ function updateWeek() {
                 const now = new Date(); // Date et heure actuelles
 
                 if (new Date(slot.start_at) < now) {
-                 // If no appointment, display 'Aucun créneau'
-                 button.classList.add('indsponible');
-                 button.textContent = '--';
-                 button.disabled = true;
+                    // If no appointment, display 'Aucun créneau'
+                    button.classList.add('indsponible');
+                    button.textContent = '--';
+                    button.disabled = true;
                 }
-                else{
-                // If there's an available slot, show the time range
-                const startTime = new Date(slot.start_at).toLocaleTimeString('fr-FR', {
-                    hour: '2-digit',
-                    minute: '2-digit'
-                });
-                const endTime = new Date(slot.end_at).toLocaleTimeString('fr-FR', {
-                    hour: '2-digit',
-                    minute: '2-digit'
-                });
-
-                button.classList.add('disponible');
-                //button.textContent = `${startTime} - ${endTime}`;
-                button.textContent = `${startTime}`;
-                button.onclick = () => {
-                    // Supprimer la classe 'selected-slot' des autres boutons
-                    document.querySelectorAll('.btn.disponible').forEach(btn => {
-                        btn.classList.remove('selected-slot');
+                else {
+                    // If there's an available slot, show the time range
+                    const startTime = new Date(slot.start_at).toLocaleTimeString('fr-FR', {
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                    const endTime = new Date(slot.end_at).toLocaleTimeString('fr-FR', {
+                        hour: '2-digit',
+                        minute: '2-digit'
                     });
 
-                    // Ajouter la classe au bouton actuellement cliqué
-                    button.classList.add('selected-slot');
-                    document.getElementById("motifSelection").style.display = ""
-                    selectedSlotStart = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${startTime}`;
-                    selectedSlotEnd = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${endTime}`;
+                    button.classList.add('disponible');
+                    //button.textContent = `${startTime} - ${endTime}`;
+                    button.textContent = `${startTime}`;
+                    button.onclick = () => {
+                        // Supprimer la classe 'selected-slot' des autres boutons
+                        document.querySelectorAll('.btn.disponible').forEach(btn => {
+                            btn.classList.remove('selected-slot');
+                        });
 
-                    const inputString = "mardi 15/10 à 10:00-11:00";
+                        // Ajouter la classe au bouton actuellement cliqué
+                        button.classList.add('selected-slot');
+                        document.getElementById("motifSelection").style.display = ""
+                        selectedSlotStart = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${startTime}`;
+                        selectedSlotEnd = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${endTime}`;
 
-                    // Define the year
-                    const currentDate = new Date();
-                    const year = currentDate.getFullYear();
+                        const inputString = "mardi 15/10 à 10:00-11:00";
 
-                    // Parse the input string
-                    const [dayMonth, time] = selectedSlotStart.split(" à "); // Split by " à "
-                    const [jour, month] = dayMonth.split(" ")[1].split("/"); // Get the day and month
+                        // Define the year
+                        const currentDate = new Date();
+                        const year = currentDate.getFullYear();
 
-                    // Format the output
-                    const formattedDateStart = `${year}-${month.padStart(2, '0')}-${jour.padStart(2, '0')} ${time}`;
+                        // Parse the input string
+                        const [dayMonth, time] = selectedSlotStart.split(" à "); // Split by " à "
+                        const [jour, month] = dayMonth.split(" ")[1].split("/"); // Get the day and month
 
-                    // Log the formatted date
-                    console.log(formattedDateStart); // Output: "2024-10-15 10:00"
+                        // Format the output
+                        const formattedDateStart = `${year}-${month.padStart(2, '0')}-${jour.padStart(2, '0')} ${time}`;
+
+                        // Log the formatted date
+                        console.log(formattedDateStart); // Output: "2024-10-15 10:00"
 
 
-                    // Parse the input string
-                    const [dayMonth2, time2] = selectedSlotEnd.split(" à "); // Split by " à "
-                    const [jour2, month2] = dayMonth2.split(" ")[1].split("/"); // Get the day and month
+                        // Parse the input string
+                        const [dayMonth2, time2] = selectedSlotEnd.split(" à "); // Split by " à "
+                        const [jour2, month2] = dayMonth2.split(" ")[1].split("/"); // Get the day and month
 
-                    // Format the output
-                    const formattedDateEnd = `${year}-${month2.padStart(2, '0')}-${jour2.padStart(2, '0')} ${time2}`;
+                        // Format the output
+                        const formattedDateEnd = `${year}-${month2.padStart(2, '0')}-${jour2.padStart(2, '0')} ${time2}`;
 
-                    // Log the formatted date
-                    console.log(formattedDateEnd); // Output: "2024-10-15 10:00"
+                        // Log the formatted date
+                        console.log(formattedDateEnd); // Output: "2024-10-15 10:00"
 
-                    object = Object.assign({ "appointment_at": formattedDateStart }, { "ends_at": formattedDateEnd }, { "start_at": formattedDateStart },
-                        { "doctor_id": Detailsdoctors.doctor_id }, { "clinic": "" }, { "doctor": JSON.parse(Detailsdoctors.name).fr }, { "address": "" })
-                    console.log("object rendez-vous: ", object)
+                        object = Object.assign({ "appointment_at": formattedDateStart }, { "ends_at": formattedDateEnd }, { "start_at": formattedDateStart },
+                            { "doctor_id": Detailsdoctors.doctor_id }, { "clinic": "" }, { "doctor": JSON.parse(Detailsdoctors.name).fr }, { "address": "" })
+                        console.log("object rendez-vous: ", object)
 
-                };}
+                    };
+                }
             } else {
                 // If no appointment, display 'Aucun créneau'
                 button.classList.add('indsponible');
@@ -251,41 +252,35 @@ function ConfirmerRedezvous() {
                 body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
             }
         }
-         
-//payement
-payementobject=Object.assign({
-    "description": "Payment for test"},
-    {"amount": 50.00},
-    {"user_id": data.result[0].id},
-    {"payment_method_id": 5}
-  )
-requestOptionsPayment = {
-    method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
-   
-    body: JSON.stringify(payementobject) // Convertir l'objet en chaîne JSON
-};
-// Appeler l'API
-fetch('https://dashboard.wic-doctor.com/paypal/payment', requestOptionsPayment)
-.then(response => {
 
-    if (!response.ok) {
-        throw new Error('Erreur lors de l\'envoi des données');
-    }
-    return response.json(); // Analyser la réponse JSON
-})
-.then(data => {
-   /*  console.log('Réponse de l\'API :', data);
+        //payement 10-12-2024
+        payementobject = Object.assign({
+            "description": "Payment for test"
+        },
+            { "amount": 50.00 },
+            { "user_id": data.result[0].id },
+            { "payment_method_id": 5 }
+        )
+        requestOptionsPayment = {
+            method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
 
-    if (data.message == "Rendez-vous inséré avec succès") {
-        document.getElementById('popup').style.display = 'block';
-        document.getElementById('overlay').style.display = 'block';
-        alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email pour plus de détails.\n\nMerci de votre confiance !");
-        sessionStorage.removeItem("rendezvousClinic")
-        window.location.href = 'profil.html'; // Rediriger vers la page 2
+            body: JSON.stringify(payementobject) // Convertir l'objet en chaîne JSON
+        };
+        // Appeler l'API
+        fetch('https://dashboard.wic-doctor.com/paypal/payment', requestOptionsPayment)
+            .then(response => {
 
-    } */
-})
-//payment
+                if (!response.ok) {
+                    throw new Error('Erreur lors de l\'envoi des données');
+                }
+                return response.json(); // Analyser la réponse JSON
+            })
+            .then(data => {
+                console.log('Réponse de l\'API :', data);
+
+                
+            })
+        //payment 10-12-2024
 
         // Appeler l'API
         fetch(apiurl, requestOptions)
