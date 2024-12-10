@@ -1,4 +1,5 @@
 // Ensure you include this script at the bottom of your HTML file
+
 let valid
 console.log("phoneInputField: ", phoneInputField)
 document.getElementById('Register').addEventListener('submit', async function (event) {
@@ -45,6 +46,7 @@ document.getElementById('Register').addEventListener('submit', async function (e
 var iti
 var phoneInputField
 document.addEventListener("DOMContentLoaded", function () {
+
     var phoneInput = document.querySelector("#phone");
     phoneInputField = document.getElementById("phone");
     console.log("phoneInput: ", phoneInput, "phoneInputField: ", phoneInputField)
@@ -67,6 +69,35 @@ document.addEventListener("DOMContentLoaded", function () {
         const dialCode = itiInstance.getSelectedCountryData().dialCode;
         contactField.value = `+${dialCode} `;
     });
+    const contactFieldname = document.getElementById('name');
+const contactFieldlast = document.getElementById('lastname')
+const contactFieldtel = document.getElementById('phone');
+const contactFieldemail = document.getElementById('mail');
+;
+contactFieldname.addEventListener('input', () => {
+    var button = document.getElementById('inscription');
+
+    // Disable the button
+    button.disabled = false;
+})
+contactFieldlast.addEventListener('input', () => {
+    var button = document.getElementById('inscription');
+
+    // Disable the button
+    button.disabled = false;
+})
+contactFieldemail.addEventListener('input', () => {
+    var button = document.getElementById('inscription');
+
+    // Disable the button
+    button.disabled = false;
+})
+contactFieldtel.addEventListener('input', () => {
+    var button = document.getElementById('inscription');
+
+    // Disable the button
+    button.disabled = false;
+})
 });
 // Affiche une erreur visuelle
 function showError(message) {
