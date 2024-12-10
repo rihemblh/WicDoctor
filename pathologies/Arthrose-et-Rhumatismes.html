@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,7 +41,7 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
@@ -55,122 +55,149 @@
 					743 13 00 13</span></p>
 		</div>
 
-		<!-- Buttons -->
+			<!-- Buttons -->
 
-		<div>
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
+
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -181,75 +208,59 @@
                 </div>
             </div>
         </div>
-        <div class="subtitlee"><p><p><strong>L'arthrose</strong> et les <strong>rhumatismes</strong> sont des pathologies courantes affectant le système musculosquelettique, souvent responsables de douleurs et de limitations fonctionnelles importantes. L'arthrose est une maladie dégénérative des articulations, tandis que le terme "rhumatismes" regroupe un ensemble de troubles affectant les articulations, les muscles, les tendons et les ligaments, incluant des affections inflammatoires et non inflammatoires. Le suivi médical adapté, notamment à distance via <strong>WIC-DOCTOR</strong>, peut aider les patients à mieux gérer leur condition et à améliorer leur qualité de vie.</p></p></div>
+        <div class="subtitlee"><p></p></div>
     </div>
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Présentation de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Symptômes de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Causes et Facteurs de Risque de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Complications de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Diagnostic de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Traitement de l'Arthrose et des Rhumatismes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p><strong>L'arthrose</strong> survient lorsqu'il y a une dégradation du cartilage qui recouvre les articulations, entraînant des douleurs et une réduction de la mobilité. Les articulations les plus souvent touchées sont les genoux, les hanches et les mains. Cette pathologie est généralement liée au vieillissement, mais elle peut aussi résulter d'une blessure ou de facteurs génétiques.</p><p>Les <strong>rhumatismes</strong>, quant à eux, désignent un ensemble de troubles inflammatoires et dégénératifs des articulations. Ces affections peuvent être auto-immunes, comme la polyarthrite rhumatoïde, ou simplement dues à une usure progressive, comme dans le cas de l'arthrose. Certaines formes de rhumatismes, comme la goutte, sont également liées à des troubles métaboliques.</p></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p>Les symptômes varient selon la pathologie et son évolution, mais ils incluent généralement :</p><ul>
-<li><strong>Douleurs articulaires</strong> : Les douleurs peuvent être plus marquées après un effort ou au réveil, et peuvent s'aggraver au fil du temps.</li>
-<li><strong>Raideur articulaire</strong> : Une sensation de raideur, particulièrement le matin, est fréquente. La mobilité peut être limitée.</li>
-<li><strong>Enflure et chaleur</strong> : Les rhumatismes inflammatoires comme la polyarthrite rhumatoïde peuvent provoquer une enflure des articulations, souvent accompagnée de chaleur.</li>
-<li><strong>Déformation articulaire</strong> : Dans les formes avancées d'arthrose, les articulations peuvent se déformer, rendant les mouvements encore plus difficiles.</li>
-<li><strong>Fatigue et perte de force</strong> : La fatigue générale est souvent présente, notamment dans les formes inflammatoires de rhumatismes.</li>
-<li><strong>Crépitations</strong> : Un bruit de "grincement" ou de "crépitement" peut être entendu lorsque les articulations touchées bougent, particulièrement dans le cas de l'arthrose.</li>
-</ul></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p><strong>Arthrose</strong> :<br/>
-L'arthrose est principalement liée à l'usure du cartilage articulaire, mais plusieurs facteurs augmentent le risque d'apparition de cette pathologie, notamment :</p><ol>
-<li><strong>Âge</strong> : Le vieillissement est le principal facteur de risque de l'arthrose.</li>
-<li><strong>Obésité</strong> : L'excès de poids exerce une pression supplémentaire sur les articulations portantes (comme les genoux), accélérant l'usure du cartilage.</li>
-<li><strong>Antécédents familiaux</strong> : Des facteurs génétiques peuvent augmenter la susceptibilité à développer de l'arthrose.</li>
-<li><strong>Blessures articulaires</strong> : Les traumatismes passés, comme des fractures ou des entorses, peuvent entraîner une arthrose prématurée.</li>
-<li><strong>Surcharge articulaire</strong> : Certaines professions ou activités sportives sollicitées de manière excessive peuvent favoriser l'usure du cartilage.</li>
-</ol><p><strong>Rhumatismes</strong> :<br/>
-Les causes des rhumatismes varient selon le type de trouble. Parmi les facteurs de risque communs :</p><ol>
-<li><strong>Génétique</strong> : Certaines formes de rhumatismes, comme la polyarthrite rhumatoïde, ont une forte composante génétique.</li>
-<li><strong>Infections</strong> : Les rhumatismes infectieux peuvent être provoqués par des infections bactériennes ou virales.</li>
-<li><strong>Troubles métaboliques</strong> : Des affections comme la goutte, causée par des niveaux excessifs d'acide urique, sont des formes courantes de rhumatismes.</li>
-<li><strong>Tabagisme</strong> : Le tabac peut aggraver certaines formes de rhumatismes inflammatoires, comme la polyarthrite rhumatoïde.</li>
-<li><strong>Sédentarité</strong> : Le manque d'activité physique et l'obésité sont des facteurs de risque pour de nombreuses pathologies rhumatismales.</li>
-</ol></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p>Si elles ne sont pas traitées efficacement, ces pathologies peuvent entraîner des complications graves :</p><ul>
-<li><strong>Diminution de la mobilité</strong> : L'arthrose peut progressivement limiter la capacité à se déplacer, nécessitant l'usage d'aides à la mobilité comme des cannes ou des fauteuils roulants.</li>
-<li><strong>Déformation articulaire</strong> : L'arthrose avancée peut entraîner des déformations visibles des articulations, comme les nodules d'Heberden aux mains.</li>
-<li><strong>Amputations</strong> : Dans les cas de rhumatismes inflammatoires graves (comme dans la polyarthrite rhumatoïde), la déformation articulaire peut entraîner des incapacités sévères et, dans les cas extrêmes, des amputations.</li>
-<li><strong>Atteinte d'organes</strong> : Certaines formes de rhumatismes, comme la polyarthrite rhumatoïde, peuvent toucher des organes internes, augmentant le risque de maladies cardiaques, pulmonaires ou rénales.</li>
-</ul></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p>Le diagnostic de ces pathologies repose sur une évaluation clinique et des tests diagnostiques appropriés :</p><ol>
-<li><strong>Examen clinique</strong> : Le médecin évalue les douleurs, la mobilité et la présence d'inflammations dans les articulations.</li>
-<li><strong>Radiographies</strong> : Des radiographies permettent d'observer l'état du cartilage et la présence d'éventuelles déformations ou d'ostéophytes (excroissances osseuses).</li>
-<li><strong>Tests sanguins</strong> : Les tests comme la vitesse de sédimentation, le facteur rhumatoïde ou les anticorps anti-CCP permettent de diagnostiquer certains types de rhumatismes inflammatoires.</li>
-<li><strong>Imagerie par résonance magnétique (IRM)</strong> : L'IRM permet de mieux visualiser les tissus mous et l'état des cartilages.</li>
-</ol></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p>Les traitements visent à soulager les symptômes, améliorer la fonction articulaire et prévenir la progression de la maladie.</p><ol>
-<li><strong>Modifications du mode de vie</strong> :</li>
-<li><strong>Exercice physique</strong> : La pratique d'exercices modérés, comme la natation ou la marche, est recommandée pour renforcer les muscles et maintenir la mobilité articulaire.</li>
-<li><strong>Régime alimentaire</strong> : Une alimentation équilibrée peut aider à contrôler le poids et à réduire l'inflammation, surtout pour les rhumatismes inflammatoires.</li>
-<li>
-<p><strong>Gestion du stress</strong> : Le stress peut exacerber les symptômes des rhumatismes inflammatoires, et des techniques de relaxation peuvent être bénéfiques.</p>
-</li>
-<li>
-<p><strong>Médicaments</strong> :</p>
-</li>
-<li><strong>Antalgiques et anti-inflammatoires</strong> : Les analgésiques comme le paracétamol ou les AINS (anti-inflammatoires non stéroïdiens) sont souvent utilisés pour soulager la douleur.</li>
-<li><strong>Médicaments modificateurs de la maladie</strong> : Dans les rhumatismes inflammatoires comme la polyarthrite rhumatoïde, des médicaments comme le méthotrexate ou des biothérapies peuvent être prescrits pour ralentir la progression de la maladie.</li>
-<li>
-<p><strong>Corticostéroïdes</strong> : Les injections de corticoïdes peuvent réduire l'inflammation dans les articulations touchées.</p>
-</li>
-<li>
-<p><strong>Chirurgie</strong> :</p>
-</li>
-<li><strong>Prothèses articulaires</strong> : Dans les cas d'arthrose sévère, une prothèse (comme pour les genoux ou les hanches) peut être envisagée pour remplacer l'articulation endommagée.</li>
-<li>
-<p><strong>Chirurgie reconstructive</strong> : Certaines déformations sévères des articulations peuvent nécessiter une intervention pour restaurer la fonction articulaire.</p>
-</li>
-<li>
-<p><strong>Suivi à distance avec WIC-DOCTOR</strong> :</p>
-</li>
-<li><strong>Consultations à distance</strong> : Grâce à la télémédecine via <strong>WIC-DOCTOR</strong>, les patients peuvent suivre l'évolution de leur condition et adapter leur traitement en temps réel avec l'aide de professionnels de santé.</li>
-<li><strong>Suivi de l'observance thérapeutique</strong> : Les patients peuvent être accompagnés pour s'assurer qu'ils respectent leurs traitements et modifient leur mode de vie de manière efficace.</li>
-<li><strong>Rééducation physique à distance</strong> : Des programmes de rééducation adaptés peuvent être suivis à distance, permettant aux patients de s'exercer en toute sécurité et sous surveillance.</li>
-</ol></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction</h2></div><div class="info-text"><p><p><strong>L'arthrose</strong>    et les <strong>rhumatismes</strong>    sont des pathologies courantes affectant le système musculosquelettique, souvent responsables de douleurs et de limitations fonctionnelles importantes. L'arthrose est une maladie dégénérative des articulations, tandis que le terme "rhumatismes" regroupe un ensemble de troubles affectant les articulations, les muscles, les tendons et les ligaments, incluant des affections inflammatoires et non inflammatoires. Le suivi médical adapté, notamment à distance via <strong>WIC-DOCTOR</strong>    , peut aider les patients à mieux gérer leur condition et à améliorer leur qualité de vie.  </p></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p><strong>L'arthrose</strong>    survient lorsqu'il y a une dégradation du cartilage qui recouvre les articulations, entraînant des douleurs et une réduction de la mobilité. Les articulations les plus souvent touchées sont les genoux, les hanches et les mains. Cette pathologie est généralement liée au vieillissement, mais elle peut aussi résulter d'une blessure ou de facteurs génétiques.<br/>
+Les <strong>rhumatismes</strong>    , quant à eux, désignent un ensemble de troubles inflammatoires et dégénératifs des articulations. Ces affections peuvent être auto-immunes, comme la polyarthrite rhumatoïde, ou simplement dues à une usure progressive, comme dans le cas de l'arthrose. Certaines formes de rhumatismes, comme la goutte, sont également liées à des troubles métaboliques.  </p></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p>Les symptômes varient selon la pathologie et son évolution, mais ils incluent généralement :<br/>
+<strong>Douleurs articulaires</strong>    : Les douleurs peuvent être plus marquées après un effort ou au réveil, et peuvent s'aggraver au fil du temps.<br/>
+<strong>Raideur articulaire</strong>    : Une sensation de raideur, particulièrement le matin, est fréquente. La mobilité peut être limitée.<br/>
+<strong>Enflure et chaleur</strong>    : Les rhumatismes inflammatoires comme la polyarthrite rhumatoïde peuvent provoquer une enflure des articulations, souvent accompagnée de chaleur.<br/>
+<strong>Déformation articulaire</strong>    : Dans les formes avancées d'arthrose, les articulations peuvent se déformer, rendant les mouvements encore plus difficiles.<br/>
+<strong>Fatigue et perte de force</strong>    : La fatigue générale est souvent présente, notamment dans les formes inflammatoires de rhumatismes.<br/>
+<strong>Crépitations</strong>    : Un bruit de "grincement" ou de "crépitement" peut être entendu lorsque les articulations touchées bougent, particulièrement dans le cas de l'arthrose.  </p></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p><strong>Arthrose</strong>    :<br/>
+L'arthrose est principalement liée à l'usure du cartilage articulaire, mais plusieurs facteurs augmentent le risque d'apparition de cette pathologie, notamment :<br/>
+1. <strong>Âge</strong>    : Le vieillissement est le principal facteur de risque de l'arthrose.<br/>
+2. <strong>Obésité</strong>    : L'excès de poids exerce une pression supplémentaire sur les articulations portantes (comme les genoux), accélérant l'usure du cartilage.<br/>
+3. <strong>Antécédents familiaux</strong>    : Des facteurs génétiques peuvent augmenter la susceptibilité à développer de l'arthrose.<br/>
+4. <strong>Blessures articulaires</strong>    : Les traumatismes passés, comme des fractures ou des entorses, peuvent entraîner une arthrose prématurée.<br/>
+5. <strong>Surcharge articulaire</strong>    : Certaines professions ou activités sportives sollicitées de manière excessive peuvent favoriser l'usure du cartilage.<br/>
+<strong>Rhumatismes</strong>    :<br/>
+Les causes des rhumatismes varient selon le type de trouble. Parmi les facteurs de risque communs :<br/>
+1. <strong>Génétique</strong>    : Certaines formes de rhumatismes, comme la polyarthrite rhumatoïde, ont une forte composante génétique.<br/>
+2. <strong>Infections</strong>    : Les rhumatismes infectieux peuvent être provoqués par des infections bactériennes ou virales.<br/>
+3. <strong>Troubles métaboliques</strong>    : Des affections comme la goutte, causée par des niveaux excessifs d'acide urique, sont des formes courantes de rhumatismes.<br/>
+4. <strong>Tabagisme</strong>    : Le tabac peut aggraver certaines formes de rhumatismes inflammatoires, comme la polyarthrite rhumatoïde.<br/>
+5. <strong>Sédentarité</strong>    : Le manque d'activité physique et l'obésité sont des facteurs de risque pour de nombreuses pathologies rhumatismales.  </p></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p>Si elles ne sont pas traitées efficacement, ces pathologies peuvent entraîner des complications graves :<br/>
+<strong>Diminution de la mobilité</strong>    : L'arthrose peut progressivement limiter la capacité à se déplacer, nécessitant l'usage d'aides à la mobilité comme des cannes ou des fauteuils roulants.<br/>
+<strong>Déformation articulaire</strong>    : L'arthrose avancée peut entraîner des déformations visibles des articulations, comme les nodules d'Heberden aux mains.<br/>
+<strong>Amputations</strong>    : Dans les cas de rhumatismes inflammatoires graves (comme dans la polyarthrite rhumatoïde), la déformation articulaire peut entraîner des incapacités sévères et, dans les cas extrêmes, des amputations.<br/>
+<strong>Atteinte d'organes</strong>    : Certaines formes de rhumatismes, comme la polyarthrite rhumatoïde, peuvent toucher des organes internes, augmentant le risque de maladies cardiaques, pulmonaires ou rénales.  </p></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p>Le diagnostic de ces pathologies repose sur une évaluation clinique et des tests diagnostiques appropriés :<br/>
+1. <strong>Examen clinique</strong>    : Le médecin évalue les douleurs, la mobilité et la présence d'inflammations dans les articulations.<br/>
+2. <strong>Radiographies</strong>    : Des radiographies permettent d'observer l'état du cartilage et la présence d'éventuelles déformations ou d'ostéophytes (excroissances osseuses).<br/>
+3. <strong>Tests sanguins</strong>    : Les tests comme la vitesse de sédimentation, le facteur rhumatoïde ou les anticorps anti-CCP permettent de diagnostiquer certains types de rhumatismes inflammatoires.<br/>
+4. <strong>Imagerie par résonance magnétique (IRM)</strong>    : L'IRM permet de mieux visualiser les tissus mous et l'état des cartilages.  </p></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de l'Arthrose et des Rhumatismes</h2></div><div class="info-text"><p><p>Les traitements visent à soulager les symptômes, améliorer la fonction articulaire et prévenir la progression de la maladie.<br/>
+1. <strong>Modifications du mode de vie</strong>    :<br/>
+<strong>Exercice physique</strong>    : La pratique d'exercices modérés, comme la natation ou la marche, est recommandée pour renforcer les muscles et maintenir la mobilité articulaire.<br/>
+<strong>Régime alimentaire</strong>    : Une alimentation équilibrée peut aider à contrôler le poids et à réduire l'inflammation, surtout pour les rhumatismes inflammatoires.<br/>
+<strong>Gestion du stress</strong>    : Le stress peut exacerber les symptômes des rhumatismes inflammatoires, et des techniques de relaxation peuvent être bénéfiques.<br/>
+2. <strong>Médicaments</strong>    :<br/>
+<strong>Antalgiques et anti-inflammatoires</strong>    : Les analgésiques comme le paracétamol ou les AINS (anti-inflammatoires non stéroïdiens) sont souvent utilisés pour soulager la douleur.<br/>
+<strong>Médicaments modificateurs de la maladie</strong>    : Dans les rhumatismes inflammatoires comme la polyarthrite rhumatoïde, des médicaments comme le méthotrexate ou des biothérapies peuvent être prescrits pour ralentir la progression de la maladie.<br/>
+<strong>Corticostéroïdes</strong>    : Les injections de corticoïdes peuvent réduire l'inflammation dans les articulations touchées.<br/>
+3. <strong>Chirurgie</strong>    :<br/>
+<strong>Prothèses articulaires</strong>    : Dans les cas d'arthrose sévère, une prothèse (comme pour les genoux ou les hanches) peut être envisagée pour remplacer l'articulation endommagée.<br/>
+<strong>Chirurgie reconstructive</strong>    : Certaines déformations sévères des articulations peuvent nécessiter une intervention pour restaurer la fonction articulaire.<br/>
+4. <strong>Suivi à distance avec WIC-DOCTOR</strong>    :<br/>
+<strong>Consultations à distance</strong>    : Grâce à la télémédecine via <strong>WIC-DOCTOR</strong>    , les patients peuvent suivre l'évolution de leur condition et adapter leur traitement en temps réel avec l'aide de professionnels de santé.<br/>
+<strong>Suivi de l'observance thérapeutique</strong>    : Les patients peuvent être accompagnés pour s'assurer qu'ils respectent leurs traitements et modifient leur mode de vie de manière efficace.<br/>
+<strong>Rééducation physique à distance</strong>    : Des programmes de rééducation adaptés peuvent être suivis à distance, permettant aux patients de s'exercer en toute sécurité et sous surveillance.  </p></p></div></div></div>  
         </div>
     </section>
     <script>
