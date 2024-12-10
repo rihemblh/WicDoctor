@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,172 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
-
-
-
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
-
-
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
-
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
-	</div>
-</div>
 
 
 
 
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
+
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
 		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
 
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
 
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
 		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
+	</script>
 
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -181,66 +217,51 @@
                 </div>
             </div>
         </div>
-        <div class="subtitlee"><p><p>L'<strong>artérite des jambes</strong>, également connue sous le nom de <strong>maladie artérielle périphérique (MAP)</strong>, est un trouble circulatoire dans lequel les artères des jambes se rétrécissent ou se bouchent en raison de l'accumulation de plaques de graisse, de cholestérol et d'autres substances. Cela limite l'approvisionnement en sang et en oxygène dans les muscles et les tissus des jambes, entraînant divers symptômes. Cette pathologie est un indicateur important de maladies cardiaques, car elle peut affecter les artères coronaires et d'autres vaisseaux sanguins. Grâce à la <strong>télémédecine</strong> via <strong>WIC-DOCTOR</strong>, les patients peuvent bénéficier d'un suivi à distance, permettant de mieux gérer leur condition et de réduire les risques de complications graves.</p></p></div>
+        <div class="subtitlee"><p></p></div>
     </div>
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Présentation de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Symptômes de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Complications de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Diagnostic de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitement de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Présentation de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Symptômes de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Causes et Facteurs de Risque de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Complications de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Diagnostic de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Traitement de l'Artérite des Jambes<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>L'artérite des jambes survient lorsque les artères des membres inférieurs, principalement les jambes, sont obstruées ou rétrécies par des plaques de matières graisseuses (athérosclérose). Ce rétrécissement empêche le sang de circuler correctement, ce qui peut causer des douleurs et des lésions des tissus. Ce trouble est souvent lié à des facteurs de risque tels que l'hypertension, le diabète, le tabagisme et une alimentation riche en graisses saturées.</p></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>Les symptômes de l'artérite des jambes peuvent être variés et se développent progressivement. Les signes les plus courants comprennent :
-- <strong>Claudication intermittente</strong> : Douleur ou crampe dans les jambes, surtout lors de la marche ou d'une activité physique, qui disparaît au repos. Cela est dû à un manque d'oxygène dans les muscles.
-- <strong>Douleur au repos</strong> : La douleur dans les jambes peut devenir persistante, même au repos, en particulier la nuit.
-- <strong>Refroidissement des pieds et des jambes</strong> : Les jambes affectées peuvent sembler plus froides au toucher, en raison de la mauvaise circulation sanguine.
-- <strong>Changements de couleur de la peau</strong> : Les pieds et les jambes peuvent devenir pâles ou bleuâtres, et la peau peut devenir brillante ou amincie.
-- <strong>Perte de cheveux sur les jambes</strong> : Le manque de circulation sanguine peut provoquer la chute des poils sur les membres affectés.
-- <strong>Ulcères ou plaies qui guérissent lentement</strong> : Les blessures ou les plaies sur les jambes peuvent avoir du mal à guérir en raison de la circulation sanguine insuffisante.</p></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>L'artérite des jambes est généralement causée par l'accumulation de plaques (athérosclérose) qui obstruent les artères. Les principaux facteurs de risque comprennent :
-1. <strong>Tabagisme</strong> : Le tabac est un facteur majeur dans la formation des plaques d'athérosclérose et dans la réduction de la circulation sanguine.
-2. <strong>Hypertension artérielle</strong> : Une pression artérielle élevée augmente le stress sur les parois des vaisseaux sanguins, contribuant à leur durcissement et leur rétrécissement.
-3. <strong>Diabète</strong> : Les niveaux élevés de sucre dans le sang endommagent les vaisseaux sanguins et accélèrent l'athérosclérose.
-4. <strong>Hypercholestérolémie</strong> : Des niveaux élevés de cholestérol LDL (mauvais cholestérol) augmentent le risque d'athérosclérose.
-5. <strong>Âge</strong> : Le risque d'artérite des jambes augmente avec l'âge, en particulier après 50 ans.
-6. <strong>Antécédents familiaux</strong> : Des antécédents de maladies cardiovasculaires ou de diabète dans la famille augmentent le risque.
-7. <strong>Sédentarité et mauvaise alimentation</strong> : Un mode de vie inactif, ainsi qu’une alimentation riche en graisses saturées, favorisent la formation de plaques d'athérosclérose.</p></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>L'artérite des jambes peut entraîner de graves complications si elle n'est pas traitée, notamment :
-- <strong>Amputations</strong> : L'absence de circulation sanguine adéquate peut entraîner des infections graves et des nécroses des tissus, nécessitant parfois une amputation des membres affectés.
-- <strong>Accidents vasculaires cérébraux (AVC)</strong> : L’athérosclérose dans les jambes peut également affecter les artères coronaires, augmentant le risque de crise cardiaque ou d'AVC.
-- <strong>Maux de cœur et insuffisance cardiaque</strong> : Les plaques dans les artères des jambes peuvent être un indicateur de maladies cardiaques sous-jacentes.</p></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>Le diagnostic de l'artérite des jambes repose sur une combinaison d'examens cliniques et de tests diagnostiques :
-1. <strong>Examen physique</strong> : Le médecin vérifie les signes de mauvaise circulation, tels que la température de la peau, la couleur et la présence d'ulcères.
-2. <strong>Indice de pression systolique (IPS)</strong> : Ce test mesure la pression sanguine aux chevilles et aux bras pour déterminer la gravité du rétrécissement des artères.
-3. <strong>Échographie Doppler</strong> : Un test non invasif qui permet de visualiser le flux sanguin dans les artères et de détecter les obstructions.
-4. <strong>Angiographie</strong> : Un examen plus invasif qui consiste à injecter un produit de contraste dans les artères pour en observer le flux sanguin via des radiographies ou des scanners.</p></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>Le traitement de l'artérite des jambes vise à améliorer la circulation sanguine, réduire les symptômes et prévenir les complications. Les options incluent :</p><ol>
-<li><strong>Modifications du mode de vie</strong> :</li>
-<li><strong>Arrêter de fumer</strong> : Cesser le tabac est essentiel pour réduire le risque de progression de la maladie.</li>
-<li><strong>Contrôle du diabète</strong> : Maintenir une glycémie normale pour éviter les dommages aux vaisseaux sanguins.</li>
-<li><strong>Exercice physique</strong> : Marcher régulièrement permet de stimuler la circulation sanguine et d'améliorer les symptômes de claudication intermittente.</li>
-<li>
-<p><strong>Régime alimentaire</strong> : Une alimentation saine, pauvre en graisses saturées et riche en fruits, légumes et fibres, aide à contrôler le cholestérol et la pression artérielle.</p>
-</li>
-<li>
-<p><strong>Médicaments</strong> :</p>
-</li>
-<li><strong>Médicaments antiagrégants plaquettaires</strong> (comme l'aspirine ou le clopidogrel) pour prévenir la formation de caillots sanguins.</li>
-<li><strong>Statines</strong> : Ces médicaments aident à réduire le taux de cholestérol et à prévenir la formation de plaques dans les artères.</li>
-<li>
-<p><strong>Médicaments pour la douleur</strong> : Pour soulager les douleurs liées à la claudication intermittente.</p>
-</li>
-<li>
-<p><strong>Chirurgie et interventions</strong> :</p>
-</li>
-<li><strong>Angioplastie et pose de stent</strong> : Ces procédures permettent d'ouvrir les artères rétrécies et d'améliorer la circulation sanguine.</li>
-<li><strong>Pontage</strong> : Dans les cas graves, un pontage peut être nécessaire pour contourner une artère obstruée en utilisant une section d'une autre veine ou artère.</li>
-<li>
-<p><strong>Amputation</strong> : Dans les cas extrêmes, une amputation peut être nécessaire en cas de gangrène avancée.</p>
-</li>
-<li>
-<p><strong>Suivi à distance avec WIC-DOCTOR</strong> :</p>
-</li>
-<li><strong>Consultations virtuelles</strong> : Le portail <strong>WIC-DOCTOR</strong> permet aux patients de suivre l'évolution de leur maladie et d'obtenir des conseils personnalisés via des <strong>consultations à distance</strong>.</li>
-<li><strong>Suivi de l'observance thérapeutique</strong> : Les médecins peuvent suivre l'observance du traitement médicamenteux et les changements de mode de vie via des outils numériques.</li>
-<li><strong>Programmes de rééducation</strong> : Des programmes de rééducation physique peuvent être suivis à distance, permettant aux patients de s'exercer en toute sécurité.</li>
-</ol><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction</h2></div><div class="info-text"><p><p>L'<strong>artérite des jambes</strong>    , également connue sous le nom de <strong>maladie artérielle périphérique (MAP)</strong>    , est un trouble circulatoire dans lequel les artères des jambes se rétrécissent ou se bouchent en raison de l'accumulation de plaques de graisse, de cholestérol et d'autres substances. Cela limite l'approvisionnement en sang et en oxygène dans les muscles et les tissus des jambes, entraînant divers symptômes. Cette pathologie est un indicateur important de maladies cardiaques, car elle peut affecter les artères coronaires et d'autres vaisseaux sanguins. Grâce à la <strong>télémédecine</strong>    via <strong>WIC-DOCTOR</strong>    , les patients peuvent bénéficier d'un suivi à distance, permettant de mieux gérer leur condition et de réduire les risques de complications graves.  </p></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>L'artérite des jambes survient lorsque les artères des membres inférieurs, principalement les jambes, sont obstruées ou rétrécies par des plaques de matières graisseuses (athérosclérose). Ce rétrécissement empêche le sang de circuler correctement, ce qui peut causer des douleurs et des lésions des tissus. Ce trouble est souvent lié à des facteurs de risque tels que l'hypertension, le diabète, le tabagisme et une alimentation riche en graisses saturées.  </p></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>Les symptômes de l'artérite des jambes peuvent être variés et se développent progressivement. Les signes les plus courants comprennent :<br/>
+<strong>Claudication intermittente</strong>    : Douleur ou crampe dans les jambes, surtout lors de la marche ou d'une activité physique, qui disparaît au repos. Cela est dû à un manque d'oxygène dans les muscles.<br/>
+<strong>Douleur au repos</strong>    : La douleur dans les jambes peut devenir persistante, même au repos, en particulier la nuit.<br/>
+<strong>Refroidissement des pieds et des jambes</strong>    : Les jambes affectées peuvent sembler plus froides au toucher, en raison de la mauvaise circulation sanguine.<br/>
+<strong>Changements de couleur de la peau</strong>    : Les pieds et les jambes peuvent devenir pâles ou bleuâtres, et la peau peut devenir brillante ou amincie.<br/>
+<strong>Perte de cheveux sur les jambes</strong>    : Le manque de circulation sanguine peut provoquer la chute des poils sur les membres affectés.<br/>
+<strong>Ulcères ou plaies qui guérissent lentement</strong>    : Les blessures ou les plaies sur les jambes peuvent avoir du mal à guérir en raison de la circulation sanguine insuffisante.  </p></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>L'artérite des jambes est généralement causée par l'accumulation de plaques (athérosclérose) qui obstruent les artères. Les principaux facteurs de risque comprennent :  1. <strong>Tabagisme</strong>    : Le tabac est un facteur majeur dans la formation des plaques d'athérosclérose et dans la réduction de la circulation sanguine.<br/>
+2. <strong>Hypertension artérielle</strong>    : Une pression artérielle élevée augmente le stress sur les parois des vaisseaux sanguins, contribuant à leur durcissement et leur rétrécissement.<br/>
+3. <strong>Diabète</strong>    : Les niveaux élevés de sucre dans le sang endommagent les vaisseaux sanguins et accélèrent l'athérosclérose.<br/>
+4. <strong>Hypercholestérolémie</strong>    : Des niveaux élevés de cholestérol LDL (mauvais cholestérol) augmentent le risque d'athérosclérose.<br/>
+5. <strong>Âge</strong>    : Le risque d'artérite des jambes augmente avec l'âge, en particulier après 50 ans.<br/>
+6. <strong>Antécédents familiaux</strong>    : Des antécédents de maladies cardiovasculaires ou de diabète dans la famille augmentent le risque.<br/>
+7. <strong>Sédentarité et mauvaise alimentation</strong>    : Un mode de vie inactif, ainsi qu’une alimentation riche en graisses saturées, favorisent la formation de plaques d'athérosclérose.  </p></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>L'artérite des jambes peut entraîner de graves complications si elle n'est pas traitée, notamment :<br/>
+<strong>Amputations</strong>    : L'absence de circulation sanguine adéquate peut entraîner des infections graves et des nécroses des tissus, nécessitant parfois une amputation des membres affectés.<br/>
+<strong>Accidents vasculaires cérébraux (AVC)</strong>    : L’athérosclérose dans les jambes peut également affecter les artères coronaires, augmentant le risque de crise cardiaque ou d'AVC.<br/>
+<strong>Maux de cœur et insuffisance cardiaque</strong>    : Les plaques dans les artères des jambes peuvent être un indicateur de maladies cardiaques sous-jacentes.  </p></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>Le diagnostic de l'artérite des jambes repose sur une combinaison d'examens cliniques et de tests diagnostiques :  1. <strong>Examen physique</strong>    : Le médecin vérifie les signes de mauvaise circulation, tels que la température de la peau, la couleur et la présence d'ulcères.<br/>
+2. <strong>Indice de pression systolique (IPS)</strong>    : Ce test mesure la pression sanguine aux chevilles et aux bras pour déterminer la gravité du rétrécissement des artères.<br/>
+3. <strong>Échographie Doppler</strong>    : Un test non invasif qui permet de visualiser le flux sanguin dans les artères et de détecter les obstructions.<br/>
+4. <strong>Angiographie</strong>    : Un examen plus invasif qui consiste à injecter un produit de contraste dans les artères pour en observer le flux sanguin via des radiographies ou des scanners.  </p></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de l'Artérite des Jambes</h2></div><div class="info-text"><p><p>Le traitement de l'artérite des jambes vise à améliorer la circulation sanguine, réduire les symptômes et prévenir les complications. Les options incluent :<br/>
+1. <strong>Modifications du mode de vie</strong>    :<br/>
+<strong>Arrêter de fumer</strong>    : Cesser le tabac est essentiel pour réduire le risque de progression de la maladie.<br/>
+<strong>Contrôle du diabète</strong>    : Maintenir une glycémie normale pour éviter les dommages aux vaisseaux sanguins.<br/>
+<strong>Exercice physique</strong>    : Marcher régulièrement permet de stimuler la circulation sanguine et d'améliorer les symptômes de claudication intermittente.<br/>
+<strong>Régime alimentaire</strong>    : Une alimentation saine, pauvre en graisses saturées et riche en fruits, légumes et fibres, aide à contrôler le cholestérol et la pression artérielle.<br/>
+2. <strong>Médicaments</strong>    :<br/>
+<strong>Médicaments antiagrégants plaquettaires</strong>    (comme l'aspirine ou le clopidogrel) pour prévenir la formation de caillots sanguins.<br/>
+<strong>Statines</strong>    : Ces médicaments aident à réduire le taux de cholestérol et à prévenir la formation de plaques dans les artères.<br/>
+<strong>Médicaments pour la douleur</strong>    : Pour soulager les douleurs liées à la claudication intermittente.<br/>
+3. <strong>Chirurgie et interventions</strong>    :<br/>
+<strong>Angioplastie et pose de stent</strong>    : Ces procédures permettent d'ouvrir les artères rétrécies et d'améliorer la circulation sanguine.<br/>
+<strong>Pontage</strong>    : Dans les cas graves, un pontage peut être nécessaire pour contourner une artère obstruée en utilisant une section d'une autre veine ou artère.<br/>
+<strong>Amputation</strong>    : Dans les cas extrêmes, une amputation peut être nécessaire en cas de gangrène avancée.<br/>
+4. <strong>Suivi à distance avec WIC-DOCTOR</strong>    :<br/>
+<strong>Consultations virtuelles</strong>    : Le portail <strong>WIC-DOCTOR</strong>    permet aux patients de suivre l'évolution de leur maladie et d'obtenir des conseils personnalisés via des <strong>consultations à distance</strong>    .<br/>
+<strong>Suivi de l'observance thérapeutique</strong>    : Les médecins peuvent suivre l'observance du traitement médicamenteux et les changements de mode de vie via des outils numériques.<br/>
+<strong>Programmes de rééducation</strong>    : Des programmes de rééducation physique peuvent être suivis à distance, permettant aux patients de s'exercer en toute sécurité.  </p></p></div></div></div>  
         </div>
     </section>
     <script>
