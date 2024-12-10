@@ -97,9 +97,20 @@ function validatePhoneNumber() {
 
 }
 const contactField = document.getElementById('email');
-let itiInstance;
+const contactFieldPwd = document.getElementById('password');
 
+let itiInstance;
+contactFieldPwd.addEventListener('input', () => {
+    var button = document.getElementById('login');
+    
+    // Disable the button
+    button.disabled = false;
+})
 contactField.addEventListener('input', () => {
+    var button = document.getElementById('login');
+    
+    // Disable the button
+    button.disabled = false;
     const value = contactField.value.trim();
 console.log("value: ",value)
     // Vérifie si l'entrée ressemble à un numéro de téléphone (+ ou chiffres uniquement)
