@@ -147,7 +147,7 @@ async function fetchCarouselData2() {
 									</div>
 									<div class="item-card2">
 								<small class="text-muted">${JSON.parse(item.specialities[0].name).fr || ""}</small>
-								<a href="" class="text-dark"  onclick="GetDetailsDoctor('${encryptedData}')">
+								<a  class="text-dark"  onclick="GetDetailsDoctor('${encryptedData}')">
 									<h4 class="font-weight-semibold mt-1 mb-1">Dr ${JSON.parse(item.name).fr}
 										<i class="ion-checkmark-circled  text-success fs-14 ms-1"></i>
 									</h4>
