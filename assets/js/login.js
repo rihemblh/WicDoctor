@@ -66,33 +66,33 @@ function validatePhoneNumber() {
     const phoneNumber = phoneInputField = document.getElementById('email').value;
 
     const isValid = itiInstance.isValidNumber();
-     selectedCountryData = itiInstance.getSelectedCountryData();
+    selectedCountryData = itiInstance.getSelectedCountryData();
 
     console.log("Numéro complet :", phoneNumber || "Vide");
     console.log("Est valide :", isValid);
     console.log("Pays sélectionné :", JSON.stringify(selectedCountryData));
 
     selectedCountryData = addValidLengthToCountry(selectedCountryData);
-        // Vérifier si la longueur du numéro est correcte après l'indicatif pays
-        const phoneWithoutCode = phoneNumber.replace(`+${selectedCountryData.dialCode}`, '').replace(' ', '').trim();
-        
-        if (phoneWithoutCode.length === selectedCountryData.validLength) {
-            console.log("valid: ",phoneWithoutCode.length === selectedCountryData.validLength)
-            valid = true;
-        }
-        else {
-            valid = false
-        }
-        if (!valid) {
-            console.log('valid: ',valid)
-           document.getElementById("error-phone").style.display="block"
-            return false;
-        }
-        else{
-            document.getElementById("error-phone").style.display="none"
-            return true;
+    // Vérifier si la longueur du numéro est correcte après l'indicatif pays
+    const phoneWithoutCode = phoneNumber.replace(`+${selectedCountryData.dialCode}`, '').replace(' ', '').trim();
 
-        }
+    if (phoneWithoutCode.length === selectedCountryData.validLength) {
+        console.log("valid: ", phoneWithoutCode.length === selectedCountryData.validLength)
+        valid = true;
+    }
+    else {
+        valid = false
+    }
+    if (!valid) {
+        console.log('valid: ', valid)
+        document.getElementById("error-phone").style.display = "block"
+        return false;
+    }
+    else {
+        document.getElementById("error-phone").style.display = "none"
+        return true;
+
+    }
 
 
 }
@@ -102,19 +102,19 @@ const contactFieldPwd = document.getElementById('password');
 let itiInstance;
 contactFieldPwd.addEventListener('input', () => {
     var button = document.getElementById('login');
-    
+
     // Disable the button
     button.disabled = false;
 })
 contactField.addEventListener('input', () => {
     var button = document.getElementById('login');
-    
+
     // Disable the button
     button.disabled = false;
     const value = contactField.value.trim();
-console.log("value: ",value)
+    console.log("value: ", value)
     // Vérifie si l'entrée ressemble à un numéro de téléphone (+ ou chiffres uniquement)
-    console.log("/^[+0-9]/.test(value)&& contactField.type === 'email': ",contactField.type === 'email')
+    console.log("/^[+0-9]/.test(value)&& contactField.type === 'email': ", contactField.type === 'email')
     if (/^[+0-9]/.test(value) && contactField.type === 'email') {
         console.log("/^[+0-9]/.test(value) && contactField.type === 'email'")
         // Convertir le champ en input type="tel"
@@ -125,65 +125,65 @@ console.log("value: ",value)
             initialCountry: 'tn',
             geoIpLookup: (callback) => {
                 fetch("https://ipinfo.io")
-                .then((response) => response.json())
+                    .then((response) => response.json())
                     .then((data) => callback(data.country))
                     .catch(() => callback('tn'));
             },
             utilsScript: "./utils.js", // Remplacez `path/to/` par le chemin correct vers votre fichier utils.js
             loadUtilsOnInit: true, // Nouvelle méthode pour charger les utilitaires
 
-                    });
-                    contactField.value = "+216";
-                      // Mettre à jour la valeur du champ quand le pays change
-     contactField.addEventListener("countrychange", function () {
-        const dialCode = itiInstance.getSelectedCountryData().dialCode;
-        contactField.value = `+${dialCode} `;
-    });
+        });
+        contactField.value = "+216";
+        // Mettre à jour la valeur du champ quand le pays change
+        contactField.addEventListener("countrychange", function () {
+            const dialCode = itiInstance.getSelectedCountryData().dialCode;
+            contactField.value = `+${dialCode} `;
+        });
 
     }
     if (contactField.value.trim() === '' && itiInstance) {
         contactField.type = 'email';
-        
+
         itiInstance.destroy(); // Supprime l'instance ITI
         itiInstance = null;
     }
-   
+
 });
 
 // Optionnel : Réinitialiser le champ si l'utilisateur supprime tout
 contactField.addEventListener('blur', () => {
-    console.log("contactField.value.trim() === '': ",contactField.value.trim() === '')
-   
+    console.log("contactField.value.trim() === '': ", contactField.value.trim() === '')
+
 });
 // Ensure you include this script at the bottom of your HTML file
 document.getElementById('loginForm').addEventListener('submit', async function (event) {
-       // Get the button element
-       var button = document.getElementById('login');
-    
-       // Disable the button
-       button.disabled = true;
+    // Get the button element
+    var button = document.getElementById('login');
+
+    // Disable the button
+    button.disabled = true;
     event.preventDefault(); // Prevent the default form submission
 
     // Gather form data
     const email = this.email.value;
-  
+
     const password = this.password.value;
     const contactField = document.getElementById('email');
     const value = contactField.value.trim();
-console.log("email: ",email,"password : ",password)
- // Vérifie si l'entrée ressemble à un numéro de téléphone (+ ou chiffres uniquement)
- console.log("/^[+0-9]/.test(value) && contactField.type === 'email': ",contactField.type === 'email')
- let objauth
- if (/^[+0-9]/.test(value)) { 
-    objauth=Object.assign({password:password},{phone_number:email})
-    validatePhoneNumber()
- }
- else{
-    objauth=Object.assign({password:password},{email:email})
+    console.log("email: ", email, "password : ", password)
+    // Vérifie si l'entrée ressemble à un numéro de téléphone (+ ou chiffres uniquement)
+    console.log("/^[+0-9]/.test(value) && contactField.type === 'email': ", contactField.type === 'email')
+    let objauth
+    if (/^[+0-9]/.test(value)) {
+        objauth = Object.assign({ password: password }, { phone_number: email })
+        validatePhoneNumber()
+    }
+    else {
+        objauth = Object.assign({ password: password }, { email: email })
 
- }
- 
- console.log("objauth: ",objauth)
+    }
+
+    console.log("objauth: ", objauth)
     // Validate form data
     if (!email || !password) {
         alert('Tous les champs sont requis.');
@@ -201,8 +201,12 @@ console.log("email: ",email,"password : ",password)
         });
 
         const data = await response.json();
+        var button = document.getElementById('login');
 
+        // Disable the button
+        button.disabled = false;
         if (response.ok) {
+           
             console.log("data:", data)
             // Store the token in local storage or session storage
             const encryptedData = encryptData(data);
@@ -294,6 +298,7 @@ console.log("email: ",email,"password : ",password)
             alert(data.error || 'Une erreur est survenue. Veuillez réessayer.');
         }
     } catch (error) {
+       
         console.error('Erreur lors de la connexion:', error);
         alert('Une erreur est survenue. Veuillez réessayer.');
     }
