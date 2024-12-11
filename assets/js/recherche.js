@@ -5,7 +5,7 @@ const secretKeyrech = "maCleSecrete";
 function encryptData(data) {
   return CryptoJS.AES.encrypt(JSON.stringify(data), secretKeyrech).toString();
 }
-
+/*11-12-2024*/
 // Fonction pour décrypter
 function decryptData(cipherText) {
   const bytes = CryptoJS.AES.decrypt(cipherText, secretKeyrech);
