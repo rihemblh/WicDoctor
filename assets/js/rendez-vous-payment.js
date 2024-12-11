@@ -262,9 +262,11 @@ function ConfirmerRedezvous() {
             { "payment_method_id": 5 }
         )
         requestOptionsPayment = {
-            method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
+            method: 'POST', 
+            credentials: 'include', // Nécessaire pour les cookies/sessions
 
             body: JSON.stringify(payementobject) // Convertir l'objet en chaîne JSON
+            
         };
         // Appeler l'API
         fetch('https://dashboard.wic-doctor.com/paypal/payment', requestOptionsPayment)
@@ -278,7 +280,7 @@ function ConfirmerRedezvous() {
             .then(data => {
                 console.log('Réponse de l\'API :', data);
 
-                
+
             })
         //payment 10-12-2024
 
