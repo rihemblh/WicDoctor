@@ -211,7 +211,9 @@
         });
     });
 </script>
-
+<div class="header-bar">
+    Vous cherchez un médecin ? <a href="https://wic-doctor.com/">Cliquez ici !</a>
+</div>
 <section class="sptb section-bg" style="background-color: #f0f0f0;">
     <div class="container">
         <div class="section-title center-block text-center">
@@ -242,13 +244,46 @@
             <a href="javascript:void(0)" onclick="scrollToSection('U')"><button class="alphabet-button">U</button></a>
             <a href="javascript:void(0)" onclick="scrollToSection('V')"><button class="alphabet-button">V</button></a>
         </div>
-        
+        <div class="search-bar text-center" style="margin: 20px 0;">
+            <input type="text" id="searchInput" placeholder="Rechercher une intervention..." style="padding: 10px; width: 80%; max-width: 500px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+		<script>
+			document.getElementById('searchInput').addEventListener('input', function () {
+				const filter = this.value.toLowerCase();
+				const pathologyList = document.getElementById('pathologyList');
+				const items = pathologyList.children;
+		
+				let currentHeader = null;
+		
+				for (let i = 0; i < items.length; i++) {
+					const item = items[i];
+		
+					if (item.tagName === 'H1') {
+						// Track the current header
+						currentHeader = item;
+						item.style.display = 'none'; // Default: Hide the header
+					} else if (item.tagName === 'A') {
+						const pathologyName = item.textContent || item.innerText;
+		
+						if (pathologyName.toLowerCase().indexOf(filter) > -1) {
+							item.style.display = ''; // Show matching pathologies
+							if (currentHeader) {
+								currentHeader.style.display = ''; // Show the header if any pathology matches
+							}
+						} else {
+							item.style.display = 'none'; // Hide non-matching pathologies
+						}
+					}
+				}
+			});
+		</script>
         <div class="container">
             <div class="section-title center-block text-center">
                 <h2></h2>
             </div>
             
             <div class="scrollable-content">
+                <div id="pathologyList">
                 <h1 id="A">A</h1>
                 <a href="./intervention/Angioplastie-carotidienne.html" style="color: black;"><p>Angioplastie Carotidienne</p></a>
                 <a href="./intervention/Approche-antérieure-pour-le-remplacement-de-la-hanche.html" style="color: black;"><p>Approche Antérieure Pour Le Remplacement De La Hanche</p></a>
@@ -449,7 +484,8 @@
                 <a href="./intervention/Uréterorénoscopie-avec-Lithotritie-(URS).html" style="color: black;"><p>Uréterorénoscopie Avec Lithotritie (Urs)</p></a>
                 <h1 id="V">V</h1>
                 <a href="./intervention/Varicocélectomie-par-Voie-Inguinale-ou-Sous-Inguinale.html" style="color: black;"><p>Varicocélectomie Par Voie Inguinale Ou Sous Inguinale</p></a>
-                </div>
+            </div>    
+            </div>
                 
 </div>
 </div>
@@ -466,7 +502,7 @@ function scrollToSection(sectionId) {
         document.documentElement.style.overflow = 'hidden';
         
         // Add a small offset to the scrollTop so the letter appears at the top
-        const offset = 430; // Adjust this value to fine-tune the position
+        const offset = 500; // Adjust this value to fine-tune the position
         scrollableContent.scrollTop = section.offsetTop - offset; // Scroll container directly
         
         // Re-enable scroll on body and html after the scroll is complete
