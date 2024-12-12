@@ -31,14 +31,21 @@ document.getElementById('Register').addEventListener('submit', async function (e
             },
             body: JSON.stringify({ name, lastname, email, phone }),
         });
+        var button = document.getElementById('inscription');
 
+        // Disable the button
+        button.disabled = false;
         const data = response;
         console.log("reponse:", data);
         if (response.ok) {
             alert(data.message || 'Inscription réussie! Vérifiez votre email pour confirmer.');
-            window.location.href = 'login.html'; // Redirect to index.html
+           // window.location.href = 'login.html'; // Redirect to index.html
         }
     } catch (error) {
+        var button = document.getElementById('inscription');
+
+        // Disable the button
+        button.disabled = false;
         console.error('Erreur lors de l\'inscription:', error);
         alert('Une erreur est survenue. Veuillez réessayer.');
     }

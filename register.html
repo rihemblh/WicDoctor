@@ -374,9 +374,38 @@
 									<input type="email" name="mail" id="mail">
 									<label for="mail">Adresse mail</label>
 								</div>
+								<style>
+									/* État désactivé avec animation de chargement */
+									.btn-load:disabled {
+										color: white;
+										position: relative;
+										cursor: not-allowed;
+									}
 
+									.btn-load:disabled::after {
+										content: '';
+										position: absolute;
+										left: 50%;
+										top: 50%;
+										width: 20px;
+										height: 20px;
+										margin-left: -10px;
+										margin-top: -10px;
+										border: 3px solid white;
+										border-radius: 50%;
+										border-top-color: #007bff;
+										animation: spin 1s linear infinite;
+									}
+
+									/* Animation de rotation */
+									@keyframes spin {
+										to {
+											transform: rotate(360deg);
+										}
+									}
+								</style>
 								<div class="submit">
-									<button type="submit" id="inscription" class="btn btn-primary btn-block">Créer un compte</button>
+									<button type="submit" id="inscription" class="btn btn-primary btn-block btn-load">Créer un compte</button>
 								</div>
 
 								<br>
