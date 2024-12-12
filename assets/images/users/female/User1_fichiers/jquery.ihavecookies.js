@@ -1,7 +1,6 @@
 /*!
  * ihavecookies - jQuery plugin for displaying cookie/privacy message
  *
- * Copyright (c) 2018 Ketan Mistry (https://iamketan.com.au)
  *
  * Licensed under the MIT license:
  *   http://www.opensource.org/licenses/mit-license.php

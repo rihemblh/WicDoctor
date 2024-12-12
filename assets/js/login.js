@@ -206,7 +206,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
         // Disable the button
         button.disabled = false;
         if (response.ok) {
-           
+
             console.log("data:", data)
             // Store the token in local storage or session storage
             const encryptedData = encryptData(data);
@@ -227,31 +227,58 @@ document.getElementById('loginForm').addEventListener('submit', async function (
                     },
                     body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
                 };
-                // Appeler l'API
-                fetch("https://wic-doctor.com:3004/ajouterrendezvous", requestOptions)
-                    .then(response => {
+                if (sessionStorage.getItem("rdv")) {
+                    if (sessionStorage.getItem("rdv") == 0) {
+                        // Appeler l'API
+                        fetch("https://wic-doctor.com:3004/ajouterrendezvous", requestOptions)
+                            .then(response => {
 
-                        if (!response.ok) {
-                            throw new Error('Erreur lors de l\'envoi des données');
-                        }
-                        return response.json(); // Analyser la réponse JSON
-                    })
-                    .then(data => {
-                        console.log('Réponse de l\'API :', data);
+                                if (!response.ok) {
+                                    throw new Error('Erreur lors de l\'envoi des données');
+                                }
+                                return response.json(); // Analyser la réponse JSON
+                            })
+                            .then(data => {
+                                console.log('Réponse de l\'API :', data);
 
-                        if (data.message == "Rendez-vous inséré avec succès") {
-                            alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email pour plus de détails.\n\nMerci de votre confiance !");
-                            sessionStorage.removeItem("rendezvousClinic")
-                            window.location.href = 'profil.html'; // Rediriger vers la page 2
+                                if (data.message == "Rendez-vous inséré avec succès") {
+                                    alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email pour plus de détails.\n\nMerci de votre confiance !");
+                                    sessionStorage.removeItem("rendezvousClinic")
+                                    window.location.href = 'profil.html'; // Rediriger vers la page 2
 
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Erreur :', error);
-                    });
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Erreur :', error);
+                            });
+                    }
+                    else {
+                        // Appeler l'API
+                        fetch("https://wic-doctor.com:3004/ajouterrendezvoustele", requestOptions)
+                            .then(response => {
 
-                //window.location.href = 'profil.html'; // Rediriger vers la page 2
+                                if (!response.ok) {
+                                    throw new Error('Erreur lors de l\'envoi des données');
+                                }
+                                return response.json(); // Analyser la réponse JSON
+                            })
+                            .then(data => {
+                                console.log('Réponse de l\'API :', data);
 
+                                if (data.message == "Rendez-vous inséré avec succès") {
+                                    alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email pour plus de détails.\n\nMerci de votre confiance !");
+                                    sessionStorage.removeItem("rendezvousClinic")
+                                    window.location.href = 'profil.html'; // Rediriger vers la page 2
+
+                                }
+
+                            })
+                            .catch(error => {
+                                console.error('Erreur :', error);
+                            });
+                    }
+                    //window.location.href = 'profil.html'; // Rediriger vers la page 2
+                }
             }
             else if (sessionStorage.getItem('rendezvousClinic')) {
                 console.log("**************************************Rendez-vous Clinique")
@@ -298,7 +325,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
             alert(data.error || 'Une erreur est survenue. Veuillez réessayer.');
         }
     } catch (error) {
-       
+
         console.error('Erreur lors de la connexion:', error);
         alert('Une erreur est survenue. Veuillez réessayer.');
     }

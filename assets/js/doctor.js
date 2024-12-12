@@ -147,7 +147,7 @@ async function fetchCarouselData2() {
 									</div>
 									<div class="item-card2">
 								<small class="text-muted">${JSON.parse(item.specialities[0].name).fr || ""}</small>
-								<a  class="text-dark"  onclick="GetDetailsDoctor('${encryptedData}')">
+								<a  class="text-dark"  onclick="GetDetailsDoctor('${encryptedData}',0)">
 									<h4 class="font-weight-semibold mt-1 mb-1">Dr ${JSON.parse(item.name).fr}
 										<i class="ion-checkmark-circled  text-success fs-14 ms-1"></i>
 									</h4>
@@ -163,8 +163,8 @@ async function fetchCarouselData2() {
 						</div>
 						<div class="card-footer p-0 btn-appointment border-footer">
 							<div class="btn-group w-100">
-								<a class="w-50 btn btn-outline-light p-2 border-top-0 border-bottom-0 border-start-0 border-end-0"onclick="GetDetailsDoctor('${encryptedData}')"><i class="fe fe-eye me-1" ></i> Rendez vous</a>
-								<a class="w-50 btn btn-outline-light p-2 border-top-0 border-bottom-0 border-end-0" onclick="GetDetailsDoctor('${encryptedData}')"  ><i class="fe fe-phone me-1"></i> Téléconsultation</a>
+								<a class="w-50 btn btn-outline-light p-2 border-top-0 border-bottom-0 border-start-0 border-end-0"onclick="GetDetailsDoctor('${encryptedData}',0)"><i class="fe fe-eye me-1" ></i> Rendez vous</a>
+								<a class="w-50 btn btn-outline-light p-2 border-top-0 border-bottom-0 border-end-0" onclick="GetDetailsDoctor('${encryptedData}',1)"  ><i class="fe fe-phone me-1"></i> Téléconsultation</a>
 							</div>
 						</div>
 								</div>
@@ -215,8 +215,10 @@ function initializeOwlCarouselDoctors() {
 $(document).ready(function() {
   fetchCarouselData2();
 });
-function GetDetailsDoctor(doctorecrypted){
+function GetDetailsDoctor(doctorecrypted,typeRDV){
     sessionStorage.setItem("dataDetails",doctorecrypted)
 	sessionStorage.setItem("status", "add")
+	sessionStorage.setItem("rdv", typeRDV)
+
     window.location.href = 'prise-de-rendez-vous.html'; // Rediriger vers la page 2
 }

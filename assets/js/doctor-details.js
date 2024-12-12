@@ -169,7 +169,7 @@ document.getElementById("DoctorsDetails").innerHTML = document.getElementById("D
 									</div>
 									 <!-- Champ de sélection des motifs -->
                                          <div id="motifSelection" class="mt-3" style="display: none;">
-                                              <label for="motifSelect">Sélectionnez un motif :</label>
+                                              <label for="motifSelect">Choisissez la raison de votre visite : :</label>
                                                   <select class="form-control" id="motifSelect">
                                                      
                                                    </select>

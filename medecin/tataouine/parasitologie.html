@@ -51,7 +51,7 @@
 		<div class="container">
 			<!-- Contact Info -->
 			<div class="contact-info">
-				<p>Nous sommes disponibles sur <span class="span-info">+216 26 311 777 / +33
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
 						743 13 00 13</span></p>
 			</div>
 
@@ -118,14 +118,14 @@
 				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
 				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
 				<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
 				<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
 				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
 				<li><a href="https://wic-doctor.com/contact.html"class="active">Contact</a></li>
 				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
 						professionnel?</a></li>
 				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
+				<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
 			</ul>
 		</div>
 
@@ -136,7 +136,7 @@
 				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
 				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
 				<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+				<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
 				<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
 				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
 				<li><a href="https://wic-doctor.com/contact.html"class="active">Contact</a></li>
@@ -823,14 +823,14 @@
                 <div class="d-md-flex">
                     <div class="item-card9-img">
                         <div class="item-card9-imgs">
-                            <a href="#" ${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`}  id="doctorDetails"></a>
+                            <a href="#" ${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}',0)"`}  id="doctorDetails"></a>
                             <img alt="img" class="cover-image" src="./../../assets/images/media/doctors/${photo}">
                         </div>
                     </div>
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="item-card9">
-                                <a href="#" ${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`}  class="text-dark">
+                                <a href="#" ${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}',0)"`}  class="text-dark">
                                     <h4 class="font-weight-bold mt-1 mb-1">Dr ${name}</h4>
                                 </a>
                                 <span class="text-muted fs-13 mt-0">
@@ -848,12 +848,12 @@
 																
 																			<a href=""  
 																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.type === "non-conventionné" ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
-																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}',1)"`} 
 																	data-bs-toggle="modal"><i
 																		class="fe fe-phone  me-1 d-inline-block"></i>Téléconsultation</a>
 																<a href=""  
 																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.type === "non-conventionné" ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
-																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}',0)"`} 
 																	data-bs-toggle="modal"><i
 																		class="fe fe-phone  me-1 d-inline-block"></i>Rendez-vous</a>
 															</div>
