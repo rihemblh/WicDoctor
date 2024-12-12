@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,136 +41,174 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
 
 
 
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
 
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
 
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
+		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
+		});
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
+
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
+		});
+	</script>
+	<div class="header-bar">
+		Vous cherchez un médecin ? <a href="https://wic-doctor.com/">Cliquez ici !</a>
 	</div>
-</div>
-
-
-
-
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
-
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
-		});
-
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
-		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
-
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
-
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
@@ -181,37 +219,42 @@
                 </div>
             </div>
         </div>
-        
+        <div class="subtitlee"><p></p></div>
     </div>
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Caractéristiques de l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Causes et Facteurs de Risque de l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Symptômes de l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Comment Diagnostiquer l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Traitements de l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Lieux et Types de Soins Disponibles sur WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Caractéristiques de l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Causes et Facteurs de Risque de l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Symptômes de l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Comment Diagnostiquer l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Traitements de l’Hémochromatose<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Lieux et Types de Soins Disponibles sur WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques de l’Hémochromatose</h2></div><div class="info-text"><p><p>L’hémochromatose est une maladie chronique, souvent asymptomatique dans ses premières étapes. Les principales caractéristiques incluent :</p><p><strong>Accumulation excessive de fer</strong> : Le corps absorbe trop de fer provenant des aliments, ce qui entraîne un excès de fer dans le sang et dans divers organes, principalement le foie, le cœur, et le pancréas.<br/>
-<strong>Atteinte progressive des organes</strong> : Les organes affectés par l'accumulation de fer peuvent subir des dommages irréversibles, ce qui entraîne des complications graves.<br/>
-<strong>Symptômes non spécifiques au début</strong> : L’hémochromatose peut ne pas présenter de symptômes évidents dans les premières années, ce qui rend son diagnostic difficile sans tests spécifiques.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l’Hémochromatose</h2></div><div class="info-text"><p><p>L’hémochromatose est généralement causée par des mutations génétiques. Les facteurs suivants sont associés à un risque accru :  </p><p><strong>Mutations génétiques</strong> : L'hémochromatose est principalement causée par des mutations du gène HFE, notamment la mutation C282Y. Les personnes porteurs de ces mutations sont plus susceptibles de développer la maladie.<br/>
-<strong>Transmission héréditaire</strong> : La maladie est souvent héritée de manière autosomique récessive, ce qui signifie que les deux parents doivent être porteurs de la mutation pour que la maladie se manifeste.<br/>
-<strong>Âge et sexe</strong> : Les hommes sont généralement plus touchés que les femmes, et la maladie se manifeste souvent plus tôt chez les hommes. Les femmes peuvent être protégées avant la ménopause en raison de la perte régulière de fer due aux menstruations.<br/>
-<strong>Autres facteurs génétiques et environnementaux</strong> : Bien que la prédisposition génétique soit le facteur principal, des facteurs environnementaux, tels que des antécédents familiaux de la maladie, peuvent également jouer un rôle dans l'apparition de la maladie.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l’Hémochromatose</h2></div><div class="info-text"><p><p>Les symptômes de l’hémochromatose se développent lentement et varient d'une personne à l'autre. Les symptômes les plus fréquents incluent :  </p><p><strong>Fatigue extrême</strong> : La fatigue chronique est l'un des symptômes les plus courants.<br/>
-<strong>Douleurs articulaires</strong> : Les douleurs et l’inflammation des articulations, en particulier des mains et des genoux, sont fréquentes.<br/>
-<strong>Problèmes hépatiques</strong> : Des signes de lésions hépatiques peuvent se manifester par une jaunisse (coloration jaune de la peau et des yeux), des douleurs abdominales, ou une hépatomégalie (augmentation du volume du foie).<br/>
-<strong>Diabète</strong> : L'excès de fer peut endommager le pancréas, ce qui entraîne des troubles du métabolisme du glucose, pouvant conduire à un diabète de type 2.<br/>
-<strong>Troubles cardiaques</strong> : L'excès de fer peut affecter le cœur, provoquant des arythmies cardiaques, une insuffisance cardiaque et d'autres complications cardiaques graves.<br/>
-<strong>Changements cutanés</strong> : Une hyperpigmentation (peau bronzée ou grise) peut survenir, surtout sur les zones exposées au soleil.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Comment Diagnostiquer l’Hémochromatose</h2></div><div class="info-text"><p><p>Le diagnostic de l’hémochromatose repose sur une série d'examens, y compris des analyses de sang et des tests génétiques. Les étapes du diagnostic comprennent :  </p><p><strong>Analyse de la ferritine sérique et de la transferrine</strong> : Les niveaux de ferritine, une protéine qui stocke le fer, sont généralement élevés chez les personnes atteintes d'hémochromatose. La saturation de la transferrine est également un indicateur clé.<br/>
-<strong>Tests génétiques</strong> : Des tests génétiques permettent de détecter la mutation du gène HFE, confirmant ainsi le diagnostic d’hémochromatose.<br/>
-<strong>Échographie du foie et biopsie hépatique</strong> : Une échographie peut être utilisée pour évaluer l'état du foie, et dans certains cas, une biopsie hépatique peut être effectuée pour évaluer l'étendue des lésions du foie.<br/>
-<strong>IRM du foie</strong> : L’imagerie par résonance magnétique (IRM) peut être utilisée pour mesurer l’accumulation de fer dans le foie.<br/>
-<strong>Tests cardiaques et tests de la fonction pancréatique</strong> : Si des signes de complications cardiaques ou pancréatiques sont présents, des examens complémentaires, comme un électrocardiogramme (ECG) ou des tests de la fonction pancréatique, peuvent être réalisés.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements de l’Hémochromatose</h2></div><div class="info-text"><p><p>Le traitement de l’hémochromatose vise à réduire l'excès de fer dans le corps et à prévenir les complications graves. Les principales options de traitement incluent :  </p><p><strong>Phlébotomies régulières</strong> : La méthode la plus courante consiste à effectuer des saignées régulières (phlébotomies) pour éliminer le fer excédentaire. Cela aide à réduire les niveaux de fer dans l'organisme.<br/>
-<strong>Chélateurs du fer</strong> : Dans certains cas, des médicaments appelés chélateurs du fer peuvent être utilisés pour aider à éliminer le fer du corps, surtout lorsque les phlébotomies ne sont pas possibles.<br/>
-<strong>Surveillance régulière</strong> : Les patients doivent être suivis de près pour surveiller les niveaux de fer, la fonction hépatique, la santé cardiaque et la fonction pancréatique.<br/>
-<strong>Traitement des complications</strong> : Si des complications, telles que la cirrhose, le diabète ou les troubles cardiaques, sont présentes, un traitement spécifique pour ces affections peut être nécessaire.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p><strong>Médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a> et médecins internistes</strong> : Ces spécialistes peuvent effectuer un diagnostic initial, recommander des tests, et orienter les patients vers un spécialiste si nécessaire.<br/>
-<strong>Hépatologues et spécialistes en maladies du foie</strong> : Les hépatologues sont des experts dans le diagnostic et le traitement des maladies du foie, y compris l'hémochromatose et ses complications.<br/>
-<strong>Centres de soins pour maladies métaboliques</strong> : Des centres spécialisés dans les troubles du métabolisme, y compris l’hémochromatose, offrent des soins complets, y compris des phlébotomies régulières et des conseils sur le suivi à long terme.<br/>
-<strong><a href="https://wic-doctor.com/medecin/cardiologue.html">Cardiologues</a> et <a href="https://wic-doctor.com/medecin/endocrinologue.html">endocrinologues</a></strong> : En cas de complications cardiaques ou endocriniennes (comme le diabète), des consultations avec des <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a> ou <a href="https://wic-doctor.com/medecin/endocrinologue.html">endocrinologues</a> peuvent être nécessaires.<br/>
-<strong>Services de conseil génétique</strong> : Les services de génétique peuvent fournir un conseil sur les risques de transmission de la maladie et aider à diagnostiquer les cas héréditaires.  </p><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction</h2></div><div class="info-text"><p><p>L’hémochromatose est une maladie génétique qui provoque une absorption excessive de fer par l’organisme. Ce fer excédentaire s'accumule dans les tissus et les organes, ce qui peut entraîner des lésions graves, notamment au niveau du foie, du cœur et du pancréas. Non traitée, l'hémochromatose peut causer des complications graves, comme la cirrhose, le diabète, et des troubles cardiaques.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Caractéristiques de l’Hémochromatose</h2></div><div class="info-text"><p><p>L’hémochromatose est une maladie chronique, souvent asymptomatique dans ses premières étapes. Les principales caractéristiques incluent :<br/>
+<strong>Accumulation excessive de fer</strong>: Le corps absorbe trop de fer provenant des aliments, ce qui entraîne un excès de fer dans le sang et dans divers organes, principalement le foie, le cœur, et le pancréas.<br/>
+<strong>Atteinte progressive des organes</strong>: Les organes affectés par l'accumulation de fer peuvent subir des dommages irréversibles, ce qui entraîne des complications graves.<br/>
+<strong>Symptômes non spécifiques au début</strong>: L’hémochromatose peut ne pas présenter de symptômes évidents dans les premières années, ce qui rend son diagnostic difficile sans tests spécifiques.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de l’Hémochromatose</h2></div><div class="info-text"><p><p>L’hémochromatose est généralement causée par des mutations génétiques. Les facteurs suivants sont associés à un risque accru :<br/>
+<strong>Mutations génétiques</strong>: L'hémochromatose est principalement causée par des mutations du gène HFE, notamment la mutation C282Y. Les personnes porteurs de ces mutations sont plus susceptibles de développer la maladie.<br/>
+<strong>Transmission héréditaire</strong>: La maladie est souvent héritée de manière autosomique récessive, ce qui signifie que les deux parents doivent être porteurs de la mutation pour que la maladie se manifeste.<br/>
+<strong>Âge et sexe</strong>: Les hommes sont généralement plus touchés que les femmes, et la maladie se manifeste souvent plus tôt chez les hommes. Les femmes peuvent être protégées avant la ménopause en raison de la perte régulière de fer due aux menstruations.<br/>
+<strong>Autres facteurs génétiques et environnementaux</strong>: Bien que la prédisposition génétique soit le facteur principal, des facteurs environnementaux, tels que des antécédents familiaux de la maladie, peuvent également jouer un rôle dans l'apparition de la maladie.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de l’Hémochromatose</h2></div><div class="info-text"><p><p>Les symptômes de l’hémochromatose se développent lentement et varient d'une personne à l'autre. Les symptômes les plus fréquents incluent :<br/>
+<strong>Fatigue extrême</strong>: La fatigue chronique est l'un des symptômes les plus courants.<br/>
+<strong>Douleurs articulaires</strong>: Les douleurs et l’inflammation des articulations, en particulier des mains et des genoux, sont fréquentes.<br/>
+<strong>Problèmes hépatiques</strong>: Des signes de lésions hépatiques peuvent se manifester par une jaunisse (coloration jaune de la peau et des yeux), des douleurs abdominales, ou une hépatomégalie (augmentation du volume du foie).<br/>
+<strong>Diabète</strong>: L'excès de fer peut endommager le pancréas, ce qui entraîne des troubles du métabolisme du glucose, pouvant conduire à un diabète de type 2.<br/>
+<strong>Troubles cardiaques</strong>: L'excès de fer peut affecter le cœur, provoquant des arythmies cardiaques, une insuffisance cardiaque et d'autres complications cardiaques graves.<br/>
+<strong>Changements cutanés</strong>: Une hyperpigmentation (peau bronzée ou grise) peut survenir, surtout sur les zones exposées au soleil.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Comment Diagnostiquer l’Hémochromatose</h2></div><div class="info-text"><p><p>Le diagnostic de l’hémochromatose repose sur une série d'examens, y compris des analyses de sang et des tests génétiques. Les étapes du diagnostic comprennent :<br/>
+1.<strong>Analyse de la ferritine sérique et de la transferrine</strong>: Les niveaux de ferritine, une protéine qui stocke le fer, sont généralement élevés chez les personnes atteintes d'hémochromatose. La saturation de la transferrine est également un indicateur clé.<br/>
+2. <strong>Tests génétiques</strong>: Des tests génétiques permettent de détecter la mutation du gène HFE, confirmant ainsi le diagnostic d’hémochromatose.<br/>
+3. <strong>Échographie du foie et biopsie hépatique</strong>: Une échographie peut être utilisée pour évaluer l'état du foie, et dans certains cas, une biopsie hépatique peut être effectuée pour évaluer l'étendue des lésions du foie.<br/>
+4. <strong>IRM du foie</strong>: L’imagerie par résonance magnétique (IRM) peut être utilisée pour mesurer l’accumulation de fer dans le foie.<br/>
+5. <strong>Tests cardiaques et tests de la fonction pancréatique</strong>: Si des signes de complications cardiaques ou pancréatiques sont présents, des examens complémentaires, comme un électrocardiogramme (ECG) ou des tests de la fonction pancréatique, peuvent être réalisés.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitements de l’Hémochromatose</h2></div><div class="info-text"><p><p>Le traitement de l’hémochromatose vise à réduire l'excès de fer dans le corps et à prévenir les complications graves. Les principales options de traitement incluent :<br/>
+1.<strong>Phlébotomies régulières</strong>: La méthode la plus courante consiste à effectuer des saignées régulières (phlébotomies) pour éliminer le fer excédentaire. Cela aide à réduire les niveaux de fer dans l'organisme.<br/>
+2. <strong>Chélateurs du fer</strong>: Dans certains cas, des médicaments appelés chélateurs du fer peuvent être utilisés pour aider à éliminer le fer du corps, surtout lorsque les phlébotomies ne sont pas possibles.<br/>
+3. <strong>Surveillance régulière</strong>: Les patients doivent être suivis de près pour surveiller les niveaux de fer, la fonction hépatique, la santé cardiaque et la fonction pancréatique.<br/>
+4. <strong>Traitement des complications</strong>: Si des complications, telles que la cirrhose, le diabète ou les troubles cardiaques, sont présentes, un traitement spécifique pour ces affections peut être nécessaire.  </p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Lieux et Types de Soins Disponibles sur WIC-DOCTOR</h2></div><div class="info-text"><p><p>1.<strong>Médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a> et médecins internistes</strong>: Ces spécialistes peuvent effectuer un diagnostic initial, recommander des tests, et orienter les patients vers un spécialiste si nécessaire.<br/>
+2. <strong>Hépatologues et spécialistes en maladies du foie</strong>: Les hépatologues sont des experts dans le diagnostic et le traitement des maladies du foie, y compris l'hémochromatose et ses complications.<br/>
+3. <strong>Centres de soins pour maladies métaboliques</strong>: Des centres spécialisés dans les troubles du métabolisme, y compris l’hémochromatose, offrent des soins complets, y compris des phlébotomies régulières et des conseils sur le suivi à long terme.<br/>
+4. <strong><a href="https://wic-doctor.com/medecin/cardiologue.html">Cardiologues</a> et <a href="https://wic-doctor.com/medecin/endocrinologue.html">endocrinologues</a></strong>: En cas de complications cardiaques ou endocriniennes (comme le diabète), des consultations avec des <a href="https://wic-doctor.com/medecin/cardiologue.html">cardiologues</a> ou <a href="https://wic-doctor.com/medecin/endocrinologue.html">endocrinologues</a> peuvent être nécessaires.<br/>
+5. <strong>Services de conseil génétique</strong>: Les services de génétique peuvent fournir un conseil sur les risques de transmission de la maladie et aider à diagnostiquer les cas héréditaires.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>
@@ -255,7 +298,7 @@
 							</li>
 
 							<li>
-								<a href="https://wic-doctor.com/FAQ.html">FAQ</a>
+								<a href="javascript:;">FAQ</a>
 							</li>
 							<li>
 								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>

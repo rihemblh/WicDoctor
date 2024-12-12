@@ -22,7 +22,7 @@
 	<!-- Favicon -->
 	<link rel="icon" alt="WIC Doctor" href="../assets/images/brand/favicon.png" type="image/x-icon">
 	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="../assets/images/brand/favicon.png">
-
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
 	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
 	<title>WIC Doctor : plateforme de télémédecine</title>
 	<!-- Bootstrap Css -->
@@ -41,211 +41,240 @@
 
 	<!--Loader-->
 	<div id="global-loader">
-		<img alt="" class="loader-img" src="../assets/images/loader.svg">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
 	</div>
 	<!--/Loader-->
 
 	<!-- Header-main -->
-<!-- Top Header -->
-<div class="header-top">
-	<div class="container">
-		<!-- Contact Info -->
-		<div class="contact-info">
-			<p>Nous sommes disponibles sur <span class="span-info">+216 26 311 777 / +33
-					743 13 00 13</span></p>
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+						
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="profil.html">Mon Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
+	</div>
 
-		<!-- Buttons -->
+	<!-- Main Header -->
+	<div class="header-main">
+		<div class="container">
+			<!-- Hamburger Menu -->
+			<div class="hamburger-menu" id="hamburger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- Logo -->
+			<div class="logo">
+				<a href="https://wic-doctor.com/">
+					<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+				</a>
+			</div>
 
-		<div>
+
+
+			<!-- Menu mobile -->
+			<div class="menu-mobile" id="menu-mobile">
+				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							professionnel?</a></li>
+					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
+				</ul>
+			</div>
+
+
+			<!-- Navigation (visible uniquement sur desktop) -->
+			<nav>
+				<ul>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+					<li><a href="#etab">Nos Solutions</a></li>
+					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
+					<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Button -->
 			<div class="buttons">
-				<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un praticien?</a>
-				<a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a>
+				<a href="#" class="btn-danger">Devenir Partenaire</a>
 			</div>
 		</div>
-		
-
 	</div>
-</div>
-
-<!-- Main Header -->
-<div class="header-main">
-	<div class="container">
-		<!-- Hamburger Menu -->
-		<div class="hamburger-menu" id="hamburger-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!-- Logo -->
-		<div class="logo">
-			<a href="https://wic-doctor.com/">
-				<img class="logo-mb" src="../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-			</a>
-		</div>
 
 
 
-		<!-- Menu mobile -->
-		<div class="menu-mobile" id="menu-mobile">
-			<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un professionnel?</a></li>
-				<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-				<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
-			</ul>
-		</div>
 
+	<!-- JavaScript -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const hamburgerMenu = document.getElementById("hamburger-menu");
+			const menuMobile = document.getElementById("menu-mobile");
+			const closeMenuButton = document.getElementById("close-menu");
 
-		<!-- Navigation (visible uniquement sur desktop) -->
-		<nav>
-			<ul>
-				<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-				<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-				<li><a href="#">Nos Solutions</a></li>
-				<li><a href="#">Nos Tarifs</a></li>
-				<li><a href="https://wic-doctor.com/pathologies.html" class="active">Soins des patients</a></li>
-				<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-				<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-			</ul>
-		</nav>
+			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+			hamburgerMenu.addEventListener("click", () => {
+				menuMobile.classList.add("active"); // Affiche le menu
+			});
 
-		<!-- Extra Button -->
-		<div class="buttons">
-			<a href="#" class="btn-danger">Devenir Partenaire</a>
-		</div>
+			// Fermer le menu mobile en cliquant sur le bouton "X"
+			closeMenuButton.addEventListener("click", () => {
+				menuMobile.classList.remove("active"); // Cache le menu
+			});
+		});
+		// Sélectionner tous les liens du menu
+		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+		// Ajouter un écouteur d'événements pour chaque lien
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				menuLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
+		});
+		// Sélectionner tous les liens du menu desktop
+		const desktopLinks = document.querySelectorAll('nav ul li a');
+
+		// Ajouter un écouteur d'événements pour chaque lien
+		desktopLinks.forEach(link => {
+			link.addEventListener('click', function (event) {
+				// Supprimer la classe active de tous les liens
+				desktopLinks.forEach(link => link.classList.remove('active'));
+
+				// Ajouter la classe active au lien cliqué
+				event.target.classList.add('active');
+			});
+		});
+	</script>
+	<div class="header-bar">
+		Vous cherchez un médecin ? <a href="https://wic-doctor.com/">Cliquez ici !</a>
 	</div>
-</div>
-
-
-
-
-<!-- JavaScript -->
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const hamburgerMenu = document.getElementById("hamburger-menu");
-		const menuMobile = document.getElementById("menu-mobile");
-		const closeMenuButton = document.getElementById("close-menu");
-
-		// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-		hamburgerMenu.addEventListener("click", () => {
-			menuMobile.classList.add("active"); // Affiche le menu
-		});
-
-		// Fermer le menu mobile en cliquant sur le bouton "X"
-		closeMenuButton.addEventListener("click", () => {
-			menuMobile.classList.remove("active"); // Cache le menu
-		});
-	});
-	// Sélectionner tous les liens du menu
-	const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
-
-	// Ajouter un écouteur d'événements pour chaque lien
-	menuLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			menuLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-	// Sélectionner tous les liens du menu desktop
-	const desktopLinks = document.querySelectorAll('nav ul li a');
-
-	// Ajouter un écouteur d'événements pour chaque lien
-	desktopLinks.forEach(link => {
-		link.addEventListener('click', function (event) {
-			// Supprimer la classe active de tous les liens
-			desktopLinks.forEach(link => link.classList.remove('active'));
-
-			// Ajouter la classe active au lien cliqué
-			event.target.classList.add('active');
-		});
-	});
-</script>
     <div>
         <div class="bannerimg cover-image bg-politique">
             <div class="header-text mb-0">
                 <div class="container">
                     <div class="text-center text-white">
-                        <h1 class=""><h1>1. Qu'est-ce que la Gingivite, le Saignement de Gencives et la Parodontite ?</h1></h1>
+                        <h1 class=""><h1>Gingivite, Saignement de Gencives et Parodontite : Causes, Symptômes et Traitements</h1></h1>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="subtitlee"><p><ul>
-<li><strong>Gingivite</strong> : La gingivite est une inflammation des gencives, souvent causée par l’accumulation de plaque dentaire. Elle se manifeste principalement par des gencives rouges, gonflées et qui saignent lors du brossage des dents.</li>
-<li><strong>Saignement de gencives</strong> : Le saignement des gencives est un symptôme courant de la gingivite, mais il peut aussi être le signe d’une parodontite plus grave.</li>
-<li><strong>Parodontite</strong> : Il s'agit d'une forme plus avancée de la maladie parodontale. Si la gingivite n'est pas traitée, elle peut évoluer en parodontite, une infection plus profonde des gencives et des os de soutien des dents, pouvant entraîner leur perte.</li>
-</ul><h4><strong>Symptômes associés :</strong></h4><p>Les symptômes de la gingivite, du saignement de gencives et de la parodontite varient en fonction de la gravité de la condition :</p><ul>
-<li><strong>Gingivite</strong> : Rougeur, gonflement des gencives, saignement lors du brossage ou du passage du fil dentaire.</li>
-<li><strong>Saignement des gencives</strong> : Saignement léger ou modéré lors du brossage, sensation de gencives sensibles.</li>
-<li><strong>Parodontite</strong> : Recul des gencives, douleur à la mastication, mauvaise haleine persistante, dents mobiles.</li>
-</ul><hr/></p></div>
+        <div class="subtitlee"><p></p></div>
     </div>
     <section class="sptb section-bg">
         <div class="section-title center-block text-center">
             <div class="button-container text-center">
-                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">2. Causes de la Gingivite, Saignement de Gencives et Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">3. Symptômes de la Gingivite, Saignement de Gencives et Parodontite chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">4. Diagnostic de la Gingivite, Saignement de Gencives et Parodontite chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">5. Traitements de la Gingivite, Saignement de Gencives et Parodontite chez l'Adulte<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">6. Lieux et Types de Soins Selon WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
+                <a href="javascript:void(0)" onclick="scrollToSection('A')"><button class="alphabet-button">Introduction<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('B')"><button class="alphabet-button">Présentation de la Gingivite, des Saignements de Gencives et de la Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('C')"><button class="alphabet-button">Symptômes de la Gingivite, Saignement de Gencives et Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('D')"><button class="alphabet-button">Causes et Facteurs de Risque de la Gingivite et de la Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('E')"><button class="alphabet-button">Complications de la Gingivite et de la Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('F')"><button class="alphabet-button">Diagnostic de la Gingivite, Saignement de Gencives et Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('G')"><button class="alphabet-button">Traitement de la Gingivite, Saignement de Gencives et Parodontite<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('H')"><button class="alphabet-button">Suivi Médical à Distance avec WIC-DOCTOR<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('I')"><button class="alphabet-button">Suivi Médical, Spécialistes et Établissements<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a><a href="javascript:void(0)" onclick="scrollToSection('J')"><button class="alphabet-button">Les Bénéfices d’un Traitement Précoce<i class="fas fa-arrow-down" style="color: #17d092;"></i></button></a>  
             </div>
         </div>
         <div class="container">
-            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>2. Causes de la Gingivite, Saignement de Gencives et Parodontite</h2></div><div class="info-text"><p><p>Les causes de la gingivite et de la parodontite sont principalement liées à une accumulation de plaque dentaire, mais plusieurs facteurs peuvent aggraver la situation.</p><h4><strong>Facteurs de risque :</strong></h4><ul>
-<li><strong>Mauvaise hygiène bucco-dentaire</strong> : Une brosse à dents inefficace ou une négligence dans le nettoyage des dents favorisent l’accumulation de plaque bactérienne, qui provoque des inflammations des gencives.</li>
-<li><strong>Tabagisme</strong> : Le tabac est un facteur de risque majeur pour le développement de la gingivite et de la parodontite.</li>
-<li><strong>Changements hormonaux</strong> : Les fluctuations hormonales liées à la grossesse, à la puberté, à la ménopause ou à la prise de contraceptifs peuvent rendre les gencives plus sensibles et susceptibles de saigner.</li>
-<li><strong>Diabète</strong> : Les personnes atteintes de diabète sont plus susceptibles de développer des maladies parodontales en raison de la mauvaise circulation sanguine et de l'augmentation de la prolifération bactérienne.</li>
-<li><strong>Médicaments</strong> : Certains médicaments peuvent provoquer une sécheresse buccale ou affecter la réponse du système immunitaire, augmentant ainsi le risque de maladies parodontales.</li>
-<li><strong>Génétique</strong> : Certaines personnes peuvent être génétiquement plus prédisposées aux maladies des gencives.</li>
-</ul><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>3. Symptômes de la Gingivite, Saignement de Gencives et Parodontite chez l'Adulte</h2></div><div class="info-text"><p><p>Les symptômes varient selon l'étape de la maladie. Il est essentiel de reconnaître les signes de la gingivite ou du saignement de gencives avant qu'ils ne dégénèrent en parodontite.</p><h4><strong>Symptômes de la Gingivite :</strong></h4><ul>
-<li><strong>Gencives rouges, gonflées et sensibles</strong>.</li>
-<li><strong>Saignement léger</strong> lors du brossage ou de l’utilisation du fil dentaire.</li>
-<li><strong>Mauvaise haleine</strong> persistante.</li>
-<li><strong>Sensation de gencives irritées</strong> ou douloureuses.</li>
-</ul><h4><strong>Symptômes du Saignement de Gencives :</strong></h4><ul>
-<li><strong>Saignement au brossage des dents</strong> ou après l’utilisation du fil dentaire.</li>
-<li><strong>Sensibilité accrue des gencives</strong> aux aliments et boissons froids ou chauds.</li>
-<li><strong>Gencives enflées</strong>, souvent rougeâtres.</li>
-</ul><h4><strong>Symptômes de la Parodontite :</strong></h4><ul>
-<li><strong>Retrait des gencives</strong> laissant apparaître plus de la dent.</li>
-<li><strong>Dents mobiles</strong> ou sensibles à la pression.</li>
-<li><strong>Mauvaise haleine persistante</strong> (halitose).</li>
-<li><strong>Douleur à la mastication</strong> ou lors du contact des dents.</li>
-<li><strong>Infection chronique</strong> avec la formation de poches entre les dents et les gencives.</li>
-</ul><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>4. Diagnostic de la Gingivite, Saignement de Gencives et Parodontite chez l'Adulte</h2></div><div class="info-text"><p><p>Le diagnostic de ces affections bucco-dentaires repose sur un examen clinique minutieux et parfois des tests complémentaires pour évaluer la gravité de l’infection.</p><h4><strong>Méthodes diagnostiques :</strong></h4><ul>
-<li><strong>Examen clinique</strong> : Le dentiste inspecte la santé des gencives, la présence de plaque et la profondeur des poches parodontales.</li>
-<li><strong>Radiographies dentaires</strong> : Pour évaluer la perte osseuse et déterminer l'étendue de la parodontite.</li>
-<li><strong>Test de détection des bactéries</strong> : Certains dentistes peuvent effectuer des tests pour détecter les bactéries spécifiques responsables des infections parodontales.</li>
-</ul><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>5. Traitements de la Gingivite, Saignement de Gencives et Parodontite chez l'Adulte</h2></div><div class="info-text"><p><p>Le traitement de ces affections dépend de la gravité de la maladie. Les options varient de la prévention à l’intervention chirurgicale dans les cas avancés.</p><h4><strong>1. Traitements de la Gingivite :</strong></h4><ul>
-<li><strong>Hygiène bucco-dentaire améliorée</strong> : Brossage régulier des dents avec une brosse à dents à poils souples et utilisation du fil dentaire pour éliminer la plaque.</li>
-<li><strong>Nettoyage professionnel des dents</strong> : Un nettoyage dentaire effectué par un professionnel peut éliminer la plaque et le tartre accumulés.</li>
-<li><strong>Antiseptiques buccaux</strong> : Utilisation de bains de bouche antiseptiques pour réduire l’inflammation.</li>
-</ul><h4><strong>2. Traitements des Saignements de Gencives :</strong></h4><ul>
-<li><strong>Renforcement de l’hygiène dentaire</strong> : Pour éviter l’accumulation de plaque et prévenir les infections.</li>
-<li><strong>Consultations régulières chez le dentiste</strong> : Pour éliminer le tartre et réduire l’inflammation.</li>
-<li><strong>Traitements médicamenteux</strong> : Si nécessaire, des médicaments ou des gels antiseptiques peuvent être utilisés.</li>
-</ul><h4><strong>3. Traitements de la Parodontite :</strong></h4><ul>
-<li><strong>Nettoyage parodontal</strong> : Des techniques de détartrage et de surfaçage radiculaire pour éliminer la plaque et le tartre sous les gencives.</li>
-<li><strong>Antibiotiques</strong> : Parfois, des antibiotiques sont prescrits pour traiter les infections.</li>
-<li><strong>Chirurgie parodontale</strong> : Dans les cas graves, une intervention chirurgicale peut être nécessaire pour réparer les lésions des gencives et des os de soutien.</li>
-</ul><h4><strong>Prise en charge à distance via WIC-DOCTOR :</strong></h4><p>Le <strong>portail WIC-DOCTOR</strong> permet de consulter des dentistes et des professionnels de la santé dentaire à distance. Vous pouvez obtenir des conseils sur les soins de prévention, un suivi régulier et, si nécessaire, des prescriptions pour traiter la gingivite et la parodontite.</p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>6. Lieux et Types de Soins Selon WIC-DOCTOR</h2></div><div class="info-text"><p><p>Le <strong>portail WIC-DOCTOR</strong> facilite l’accès aux soins dentaires spécialisés, offrant des consultations en ligne pour évaluer et traiter les maladies des gencives.</p><h4><strong>1. Dentistes spécialisés</strong> :</h4><p>Les dentistes peuvent diagnostiquer et traiter efficacement la gingivite, les saignements de gencives et la parodontite, en offrant des soins adaptés à chaque cas.</p><ul>
-<li><strong>Services</strong> :</li>
-<li>Diagnostiquer la gingivite et la parodontite.</li>
-<li>Prescrire des traitements de nettoyage et de détartrage.</li>
-<li>Suivre les progrès du traitement et donner des conseils d’hygiène.</li>
-</ul><h4><strong>2. Médecins <a href="https://wic-doctor.com/medecin/généraliste.html">généralistes</a></strong> :</h4><p>Un médecin généraliste peut orienter vers un dentiste pour un examen plus approfondi et traiter les causes sous-jacentes, comme le diabète ou les déséquilibres hormonaux.</p><ul>
-<li><strong>Services</strong> :</li>
-<li>Identifier les facteurs sous-jacents de la maladie des gencives.</li>
-<li>Prescrire des médicaments pour traiter les infections ou l’inflammation.</li>
-</ul><h4><strong>3. Prise en charge en ligne</strong> :</h4><p>Grâce à WIC-DOCTOR, vous pouvez bénéficier de consultations à distance pour surveiller la santé de vos g</p><p>encives, recevoir des conseils d'hygiène et obtenir des prescriptions en ligne.</p><hr/></p></div></div></div>  
+            <div class="container section-A" id="A"><div class="info-section"><div class="section-title center-block text-center"><h2>Introduction</h2></div><div class="info-text"><p><p>Les affections des gencives, comme la gingivite et la parodontite, sont des problèmes bucco-dentaires courants qui peuvent entraîner des douleurs, des saignements et des complications graves si elles ne sont pas traitées. Ces pathologies sont généralement causées par une mauvaise hygiène bucco-dentaire, mais peuvent également résulter d'autres facteurs tels que des maladies systémiques, des médicaments ou des habitudes de vie. Grâce au <strong>portail WIC-DOCTOR</strong>, les patients peuvent accéder à des <strong>consultations de télémédecine</strong>pour discuter de leurs symptômes, recevoir un traitement adapté et être suivis à distance par un dentiste.  </p><hr/></p></div></div></div><div class="container section-B" id="B"><div class="info-section"><div class="section-title center-block text-center"><h2>Présentation de la Gingivite, des Saignements de Gencives et de la Parodontite</h2></div><div class="info-text"><p><p>La gingivite et la parodontite sont des inflammations des gencives, mais elles diffèrent par leur gravité et leur impact sur les tissus de soutien des dents. La gingivite est une forme précoce et réversible d'inflammation des gencives, tandis que la parodontite est plus grave et peut endommager les tissus et les os qui soutiennent les dents, entraînant des pertes dentaires si elle n'est pas traitée.<br/>
+<strong>Gingivite</strong>: Il s'agit de l'inflammation des gencives, généralement causée par l'accumulation de plaque bactérienne. Les gencives deviennent rouges, gonflées, et peuvent saigner, notamment lors du brossage des dents.  <br/>
+<strong>Saignement des Gencives</strong>: C'est un signe fréquent de gingivite, où les gencives saignent facilement lors du brossage ou de l’utilisation du fil dentaire.  <br/>
+<strong>Parodontite</strong>: Cette forme avancée d'infection des gencives affecte les tissus qui soutiennent les dents. Elle peut entraîner des récessions gingivales, la perte d'attache des dents, et éventuellement la perte des dents.  </p><hr/></p></div></div></div><div class="container section-C" id="C"><div class="info-section"><div class="section-title center-block text-center"><h2>Symptômes de la Gingivite, Saignement de Gencives et Parodontite</h2></div><div class="info-text"><p><p>Les symptômes varient en fonction de la gravité de l’infection, mais incluent généralement :<br/>
+<strong>Gingivite</strong>:<br/>
+- Rougeur et gonflement des gencives.<br/>
+- Saignement facile lors du brossage des dents ou de l’utilisation du fil dentaire.<br/>
+- Mauvaise haleine persistante.<br/>
+- Sensibilité dentaire légère.  <br/>
+<strong>Saignement de Gencives</strong>:<br/>
+- Les gencives saignent régulièrement, particulièrement lors du brossage ou de l'utilisation du fil dentaire.<br/>
+- Les gencives deviennent souvent plus sensibles au toucher.  <br/>
+<strong>Parodontite</strong>:<br/>
+- Recul des gencives, qui peut rendre les dents plus longues et visibles.<br/>
+- Formation de poches profondes entre les dents et les gencives.<br/>
+- Douleur ou inconfort autour des dents.<br/>
+- Perte de dents dans les cas graves.<br/>
+- Sensibilité accrue aux températures chaudes et froides.<br/>
+- Mauvaise haleine persistante et goût métallique dans la bouche.  </p><hr/></p></div></div></div><div class="container section-D" id="D"><div class="info-section"><div class="section-title center-block text-center"><h2>Causes et Facteurs de Risque de la Gingivite et de la Parodontite</h2></div><div class="info-text"><p><p>Les principales causes des affections des gencives sont les suivantes :<br/>
+1.<strong>Mauvaise hygiène bucco-dentaire</strong>: Une mauvaise hygiène dentaire permet à la plaque bactérienne de s'accumuler sur les dents et les gencives, ce qui peut entraîner une gingivite et, si elle n’est pas traitée, une parodontite.<br/>
+2. <strong>Tabagisme</strong>: Fumer affaiblit les défenses de l’organisme, y compris celles des gencives, ce qui augmente le risque de gingivite et de parodontite.<br/>
+3. <strong>Maladies systémiques</strong>: Certaines conditions médicales, comme le diabète, peuvent augmenter le risque de maladies des gencives. Un contrôle insuffisant de la glycémie peut altérer la réponse immunitaire et favoriser l'inflammation des gencives.<br/>
+4. <strong>Médicaments</strong>: Certains médicaments, notamment ceux qui réduisent la production de salive, peuvent augmenter le risque de maladies des gencives.<br/>
+5. <strong>Génétique</strong>: Certaines personnes peuvent être génétiquement prédisposées à développer des problèmes de gencives.<br/>
+6. <strong>Alimentation déséquilibrée</strong>: Une alimentation pauvre en nutriments, en particulier en vitamine C, peut affaiblir les gencives et les rendre plus vulnérables aux infections.  </p><hr/></p></div></div></div><div class="container section-E" id="E"><div class="info-section"><div class="section-title center-block text-center"><h2>Complications de la Gingivite et de la Parodontite</h2></div><div class="info-text"><p><p>Si elles ne sont pas traitées, les affections des gencives peuvent entraîner des complications graves :<br/>
+<strong>Perte de dents</strong>: La parodontite, si elle n'est pas traitée, peut entraîner une perte de dents due à la dégradation des tissus et des os de soutien.<br/>
+<strong>Infections graves</strong>: Les infections des gencives peuvent se propager à d'autres parties du corps, comme le cœur, et provoquer des maladies cardiaques.<br/>
+<strong>Mauvaise haleine persistante</strong>: La parodontite peut provoquer une mauvaise haleine chronique (halitose) en raison des bactéries présentes dans les poches parodontales.<br/>
+<strong>Problèmes de mastication</strong>: La perte de dents ou la mobilité dentaire due à des infections des gencives peut rendre la mastication difficile.  </p><hr/></p></div></div></div><div class="container section-F" id="F"><div class="info-section"><div class="section-title center-block text-center"><h2>Diagnostic de la Gingivite, Saignement de Gencives et Parodontite</h2></div><div class="info-text"><p><p>Le diagnostic repose généralement sur l'examen clinique et un entretien médical :<br/>
+1.<strong>Examen dentaire</strong>: Le dentiste examine l'état des gencives, cherche des signes d'inflammation, de saignement et de récession gingivale, et évalue la profondeur des poches parodontales.<br/>
+2. <strong>Mesure de la profondeur des poches parodontales</strong>: À l'aide d'un instrument appelé <em>sonde parodontale</em>, le dentiste mesure la profondeur des poches formées entre les dents et les gencives pour déterminer la gravité de la parodontite.<br/>
+3. <strong>Radiographies dentaires</strong>: Dans certains cas, des radiographies peuvent être nécessaires pour évaluer la perte osseuse et les dommages aux tissus de soutien des dents.  </p><hr/></p></div></div></div><div class="container section-G" id="G"><div class="info-section"><div class="section-title center-block text-center"><h2>Traitement de la Gingivite, Saignement de Gencives et Parodontite</h2></div><div class="info-text"><p><p>Les traitements varient en fonction de la gravité de la maladie, mais peuvent inclure :<br/>
+1.<strong>Traitements de la Gingivite</strong>:<br/>
+<strong>Nettoyage dentaire professionnel</strong>: Le dentiste ou l'hygiéniste dentaire procédera à un détartrage pour éliminer la plaque et le tartre qui causent l'inflammation.<br/>
+<strong>Amélioration des habitudes d’hygiène bucco-dentaire</strong>: Il est essentiel d'adopter une routine de brossage des dents rigoureuse et d'utiliser régulièrement du fil dentaire pour prévenir l'accumulation de plaque.<br/>
+<strong>Rinçages antibactériens</strong>: Des solutions antiseptiques peuvent être utilisées pour réduire l'inflammation et prévenir l'infection.<br/>
+2. <strong>Traitements de la Parodontite</strong>:<br/>
+<strong>Détartrage et surfaçage radiculaire</strong>: Un détartrage plus profond peut être effectué pour enlever la plaque et le tartre sous les gencives. Le surfaçage radiculaire permet de lisser les racines des dents, ce qui aide les gencives à se réattacher.<br/>
+<strong>Chirurgie parodontale</strong>: Si la parodontite est avancée, une chirurgie peut être nécessaire pour réduire les poches parodontales et restaurer les tissus de soutien.<br/>
+<strong>Antibiotiques</strong>: Des antibiotiques locaux ou oraux peuvent être prescrits pour contrôler l’infection bactérienne.  </p><hr/></p></div></div></div><div class="container section-H" id="H"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi Médical à Distance avec WIC-DOCTOR</h2></div><div class="info-text"><p><p>Grâce à la <strong>télémédecine</strong>, <strong>WIC-DOCTOR</strong>permet un suivi à distance efficace des patients souffrant de gingivite ou de parodontite. Voici quelques services offerts :<br/>
+<strong>Consultations virtuelles</strong>: Les patients peuvent consulter un dentiste à distance pour discuter de leurs symptômes, recevoir des conseils sur l'hygiène bucco-dentaire et suivre l’évolution de leur traitement.<br/>
+<strong>Suivi personnalisé</strong>: WIC-DOCTOR offre des programmes de suivi personnalisé pour adapter les traitements en fonction des progrès réalisés et aider à prévenir les récidives.<br/>
+<strong>Conseils d’hygiène bucco-dentaire</strong>: Des conseils pratiques sur le brossage des dents, l'utilisation du fil dentaire et l'alimentation peuvent être fournis pour améliorer la santé bucco-dentaire.  </p><hr/></p></div></div></div><div class="container section-I" id="I"><div class="info-section"><div class="section-title center-block text-center"><h2>Suivi Médical, Spécialistes et Établissements</h2></div><div class="info-text"><p><p>Le suivi de la gingivite et de la parodontite peut être effectué par différents professionnels de santé, y compris :<br/>
+<strong>Dentistes</strong>: Ils jouent un rôle essentiel dans le diagnostic, le traitement et la gestion de la gingivite et de la parodontite.<br/>
+<strong>Parodontistes</strong>: Ce sont des spécialistes des maladies des gencives et des tissus de soutien des dents.<br/>
+ Ils peuvent intervenir dans les cas plus graves de parodontite.<br/>
+<strong>Cliniques dentaires et hôpitaux</strong>: De nombreuses cliniques et hôpitaux spécialisés proposent des traitements avancés pour la parodontite, notamment des interventions chirurgicales.  </p><hr/></p></div></div></div><div class="container section-J" id="J"><div class="info-section"><div class="section-title center-block text-center"><h2>Les Bénéfices d’un Traitement Précoce</h2></div><div class="info-text"><p><p>Un traitement précoce permet de prévenir les complications graves, telles que la perte de dents et l'infection systémique. En prenant des mesures adaptées dès les premiers signes de gingivite ou de saignement des gencives, il est possible de restaurer la santé des gencives et d’éviter l’évolution vers une parodontite.  </p><hr/></p></div></div></div>  
         </div>
     </section>
     <script>
@@ -289,7 +318,7 @@
 							</li>
 
 							<li>
-								<a href="https://wic-doctor.com/FAQ.html">FAQ</a>
+								<a href="javascript:;">FAQ</a>
 							</li>
 							<li>
 								<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
