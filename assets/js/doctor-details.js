@@ -169,7 +169,7 @@ document.getElementById("DoctorsDetails").innerHTML = document.getElementById("D
 									</div>
 									 <!-- Champ de sélection des motifs -->
                                          <div id="motifSelection" class="mt-3" style="display: none;">
-                                              <label for="motifSelect">Choisissez la raison de votre visite : :</label>
+                                              <label for="motifSelect">Choisissez la raison de votre visite :</label>
                                                   <select class="form-control" id="motifSelect">
                                                      
                                                    </select>
@@ -200,9 +200,39 @@ document.getElementById("DoctorsDetails").innerHTML = document.getElementById("D
 								</div>
 							</div>
 						</div>
+						<style>
+									/* État désactivé avec animation de chargement */
+									.btn-load:disabled {
+										color: white;
+										position: relative;
+										cursor: not-allowed;
+									}
+
+									.btn-load:disabled::after {
+										content: '';
+										position: absolute;
+										left: 50%;
+										top: 50%;
+										width: 20px;
+										height: 20px;
+										margin-left: -10px;
+										margin-top: -10px;
+										border: 3px solid white;
+										border-radius: 50%;
+										border-top-color: #007bff;
+										animation: spin 1s linear infinite;
+									}
+
+									/* Animation de rotation */
+									@keyframes spin {
+										to {
+											transform: rotate(360deg);
+										}
+									}
+								</style>
 						<div class="card-footer">
 							<div class="btn-list">
-								<a  id="confirmRDV" class="btn btn-success icons" onclick="ConfirmerRedezvous()"><i
+								<a  id="confirmRDV" class="btn btn-success icons btn-load" onclick="ConfirmerRedezvous()"><i
 										class="icon icon-note me-1 book-visit" ></i> Confirmer</a>
 							
 							</div>
