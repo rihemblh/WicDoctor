@@ -320,14 +320,14 @@ function ConfirmerRedezvous() {
                         if (sessionStorage.getItem("rdv") == 0) {
                     document.getElementById('popup').style.display = 'block';
                     document.getElementById('overlay').style.display = 'block';
-                    alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email pour plus de détails.\n\nMerci de votre confiance !");
+                    alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
                     sessionStorage.removeItem("rendezvousClinic")
                     window.location.href = 'profil.html'; // Rediriger vers la page 2
                     }
                     else{
                         document.getElementById('popup').style.display = 'block';
                         document.getElementById('overlay').style.display = 'block';
-                        alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email pour plus de détails.\n\nMerci de votre confiance !");
+                        alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
                         sessionStorage.removeItem("rendezvousClinic")
                         window.location.href = 'profil.html'; // Rediriger vers la page 2
                         sessionStorage.removeItem("rdv")

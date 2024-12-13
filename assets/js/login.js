@@ -242,7 +242,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
                                 console.log('Réponse de l\'API :', data);
 
                                 if (data.message == "Rendez-vous inséré avec succès") {
-                                    alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email pour plus de détails.\n\nMerci de votre confiance !");
+                                    alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
                                     sessionStorage.removeItem("rendezvousClinic")
                                     window.location.href = 'profil.html'; // Rediriger vers la page 2
 
@@ -266,7 +266,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
                                 console.log('Réponse de l\'API :', data);
 
                                 if (data.message == "Rendez-vous inséré avec succès") {
-                                    alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email pour plus de détails.\n\nMerci de votre confiance !");
+                                    alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
                                     sessionStorage.removeItem("rendezvousClinic")
                                     window.location.href = 'profil.html'; // Rediriger vers la page 2
 
@@ -304,7 +304,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
                     .then(data => {
                         console.log('Réponse de l\'API :', data);
                         if (data.message == "Rendez-vous inséré avec succès") {
-                            alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email pour plus de détails.\n\nMerci de votre confiance !");
+                            alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
                             sessionStorage.removeItem("rendezvousClinic")
                             window.location.href = 'profil.html'; // Rediriger vers la page 2
 
