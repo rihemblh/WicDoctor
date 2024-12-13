@@ -38,7 +38,7 @@ document.getElementById('Register').addEventListener('submit', async function (e
         const data = response;
         console.log("reponse:", data);
         if (response.ok) {
-            alert(data.message || 'Inscription réussie! Vérifiez votre email pour confirmer.');
+            alert(data.message || 'Inscription réussie! Vérifiez votre email / téléphone pour confirmer.');
             window.location.href = 'login.html'; // Redirect to index.html
         }
     } catch (error) {
