@@ -828,7 +828,7 @@
                     <div class="card border-0 mb-0">
                         <div class="card-body">
                             <div class="item-card9">
-                                <a href="#" onclick="GetDetailsDoctor('${encryptedData}')" class="text-dark">
+                                <a href="#" onclick="GetDetailsDoctor('${encryptedData}',0)" class="text-dark">
                                     <h4 class="font-weight-bold mt-1 mb-1">Dr ${name}</h4>
                                 </a>
                                 <span class="text-muted fs-13 mt-0">
@@ -846,12 +846,12 @@
 																
 																<a href=""  
 																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.type === "non-conventionné" ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
-																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}',1)"`} 
 																	data-bs-toggle="modal"><i
 																		class="fe fe-phone  me-1 d-inline-block"></i>Téléconsultation</a>
 																<a href=""  
 																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"style="${doctor.type === "non-conventionné" ? 'width: 55%; color:#dadada !important; padding: 0.5rem; border-top: 0; border-right: 0; border-bottom: 0; background: transparent; color: white;' : ''} "
-																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}')"`} 
+																	${doctor.type === "non-conventionné" ? 'onclick="return false;"' : `onclick="GetDetailsDoctor('${encryptedData}',0)"`} 
 																	data-bs-toggle="modal"><i
 																		class="fe fe-phone  me-1 d-inline-block"></i>Rendez-vous</a>
 															</div>
