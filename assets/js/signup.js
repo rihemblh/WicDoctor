@@ -39,7 +39,7 @@ document.getElementById('Register').addEventListener('submit', async function (e
         console.log("reponse:", data);
         if (response.ok) {
             alert(data.message || 'Inscription réussie! Vérifiez votre email pour confirmer.');
-           // window.location.href = 'login.html'; // Redirect to index.html
+            window.location.href = 'login.html'; // Redirect to index.html
         }
     } catch (error) {
         var button = document.getElementById('inscription');
