@@ -44,7 +44,7 @@ document.getElementById('Register').addEventListener('submit', async function (e
         }
         else if (response.status === 409) {
             const errorData = await response.json();
-            if (errorData.error.includes('téléphone')) {
+          /*   if (errorData.error.includes('téléphone')) {
                 // Disable the button
                 button.disabled = false;
                 showError("Le numéro de téléphone est déjà utilisé.");
@@ -53,6 +53,25 @@ document.getElementById('Register').addEventListener('submit', async function (e
                 button.disabled = false;
                 showErrorMail("L'adresse e-mail est déjà utilisée.");
             }
+            else { */
+                // Si la réponse n'est pas ok, récupérer les erreurs
+                
+                if (errorData.errors) {
+                    // Afficher toutes les erreurs retournées
+                    errorData.errors.forEach(error => {
+                        if(error== "Le numéro de téléphone est déjà utilisé.")
+                        showError(error);
+                        else if(error== "L'adresse e-mail est déjà utilisée.")
+                        showErrorMail(error);
+                    else{
+                        showError(error);
+                        showErrorMail(error);
+                    }
+                    });
+                } else {
+                    // Si aucune erreur spécifique n'est renvoyée, afficher une erreur générique
+                    showError(errorData.error || 'Une erreur inconnue est survenue.');
+                }
         }
     } catch (error) {
         var button = document.getElementById('inscription');
