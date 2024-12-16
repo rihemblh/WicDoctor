@@ -40,6 +40,19 @@ document.getElementById('Register').addEventListener('submit', async function (e
         if (response.ok) {
             alert(data.message || 'Inscription réussie! Vérifiez votre email / téléphone pour confirmer.');
             window.location.href = 'login.html'; // Redirect to index.html
+
+        }
+        else if (response.status === 409) {
+            const errorData = await response.json();
+            if (errorData.error.includes('téléphone')) {
+                // Disable the button
+                button.disabled = false;
+                showError("Le numéro de téléphone est déjà utilisé.");
+            } if (errorData.error.includes('e-mail')) {
+                // Disable the button
+                button.disabled = false;
+                showErrorMail("L'adresse e-mail est déjà utilisée.");
+            }
         }
     } catch (error) {
         var button = document.getElementById('inscription');
@@ -77,34 +90,34 @@ document.addEventListener("DOMContentLoaded", function () {
         contactField.value = `+${dialCode} `;
     });
     const contactFieldname = document.getElementById('name');
-const contactFieldlast = document.getElementById('lastname')
-const contactFieldtel = document.getElementById('phone');
-const contactFieldemail = document.getElementById('mail');
-;
-contactFieldname.addEventListener('input', () => {
-    var button = document.getElementById('inscription');
+    const contactFieldlast = document.getElementById('lastname')
+    const contactFieldtel = document.getElementById('phone');
+    const contactFieldemail = document.getElementById('mail');
+    ;
+    contactFieldname.addEventListener('input', () => {
+        var button = document.getElementById('inscription');
 
-    // Disable the button
-    button.disabled = false;
-})
-contactFieldlast.addEventListener('input', () => {
-    var button = document.getElementById('inscription');
+        // Disable the button
+        button.disabled = false;
+    })
+    contactFieldlast.addEventListener('input', () => {
+        var button = document.getElementById('inscription');
 
-    // Disable the button
-    button.disabled = false;
-})
-contactFieldemail.addEventListener('input', () => {
-    var button = document.getElementById('inscription');
+        // Disable the button
+        button.disabled = false;
+    })
+    contactFieldemail.addEventListener('input', () => {
+        var button = document.getElementById('inscription');
 
-    // Disable the button
-    button.disabled = false;
-})
-contactFieldtel.addEventListener('input', () => {
-    var button = document.getElementById('inscription');
+        // Disable the button
+        button.disabled = false;
+    })
+    contactFieldtel.addEventListener('input', () => {
+        var button = document.getElementById('inscription');
 
-    // Disable the button
-    button.disabled = false;
-})
+        // Disable the button
+        button.disabled = false;
+    })
 });
 // Affiche une erreur visuelle
 function showError(message) {
@@ -124,6 +137,25 @@ function showError(message) {
     errorMessage.innerText = message;
     errorMessage.style.display = "block";
     phoneInputField.classList.add("error");
+}
+// Affiche une erreur visuelle
+function showErrorMail(message) {
+    mailInputField = document.getElementById("mail");
+
+    const mailInputContainer = mailInputField.closest(".mail");
+    let errorMessage = mailInputContainer.querySelector(".error-message");
+
+    // Créer un message d'erreur si absent
+    if (!errorMessage) {
+        errorMessage = document.createElement("div");
+        errorMessage.classList.add("error-message");
+        mailInputContainer.appendChild(errorMessage);
+    }
+
+    // Afficher l'erreur
+    errorMessage.innerText = message;
+    errorMessage.style.display = "block";
+    mailInputField.classList.add("error");
 }
 
 // Supprime les erreurs visuelles
