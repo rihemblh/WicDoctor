@@ -201,10 +201,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
         });
 
         const data = await response.json();
-        var button = document.getElementById('login');
 
-        // Disable the button
-        button.disabled = false;
         if (response.ok) {
 
             console.log("data:", data)
@@ -239,6 +236,10 @@ document.getElementById('loginForm').addEventListener('submit', async function (
                                 return response.json(); // Analyser la réponse JSON
                             })
                             .then(data => {
+                                var button = document.getElementById('login');
+
+                                // Disable the button
+                                button.disabled = false;
                                 console.log('Réponse de l\'API :', data);
 
                                 if (data.message == "Rendez-vous inséré avec succès") {
@@ -249,6 +250,10 @@ document.getElementById('loginForm').addEventListener('submit', async function (
                                 }
                             })
                             .catch(error => {
+                                var button = document.getElementById('login');
+
+                                // Disable the button
+                                button.disabled = false;
                                 console.error('Erreur :', error);
                             });
                     }
@@ -317,15 +322,26 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
             }
             else {
+                var button = document.getElementById('login');
+
+                // Disable the button
+                button.disabled = false;
                 alert('Connexion réussie!');
                 window.location.href = 'profil.html'; // Rediriger vers la page 2
             }
 
         } else {
+            var button = document.getElementById('login');
+
+            // Disable the button
+            button.disabled = false;
             alert(data.error || 'Une erreur est survenue. Veuillez réessayer.');
         }
     } catch (error) {
+        var button = document.getElementById('login');
 
+        // Disable the button
+        button.disabled = false;
         console.error('Erreur lors de la connexion:', error);
         alert('Une erreur est survenue. Veuillez réessayer.');
     }

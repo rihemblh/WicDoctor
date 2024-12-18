@@ -129,13 +129,13 @@
                     <li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
                     <li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
                     <li class="dropdown">
-						<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
-						<ul class="submenu">
-							<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
-							<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
-							<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
-						</ul>
-					</li>
+                        <a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+                        <ul class="submenu">
+                            <li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
+                            <li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
+                            <li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
+                        </ul>
+                    </li>
                     <li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
                     <li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
                     <li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
@@ -155,13 +155,13 @@
                     <li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
                     <li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
                     <li class="dropdown">
-						<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
-						<ul class="submenu">
-							<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
-							<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
-							<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
-						</ul>
-					</li>
+                        <a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+                        <ul class="submenu">
+                            <li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
+                            <li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
+                            <li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
+                        </ul>
+                    </li>
                     <li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
                     <li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
                 </ul>
@@ -240,9 +240,8 @@
                 <div class="container">
                     <div class="text-center text-white mb-0">
                         <h1>
-                            <a href="" class="typewrite" data-period="2000"
-                                >
-                               <span class="wrap">Prise de rendez-vous médical en ligne</span>
+                            <a href="" class="typewrite" data-period="2000">
+                                <span class="wrap">Prise de rendez-vous médical en ligne</span>
                                 <span class="wrap"></span>
                             </a>
                         </h1>
@@ -266,108 +265,101 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <style>
+                                    #doctorsList {
+                                        display: none;
+                                        /* Masqué par défaut */
+                                        width: 100%;
+                                    }
+
+                                    #doctorsList option {
+                                        padding: 5px;
+                                        cursor: pointer;
+                                    }
+                                </style>
+
                                 <div class="tab-content index-search-select">
                                     <div class="tab-pane active" id="tab1">
                                         <div class="search-background">
                                             <div class="form row no-gutters">
-                                                <div class="form-group col-xl-4 col-lg-3 col-md-12 mb-0 location" style="position: relative;">
-                                                    <input class="form-control border" id="searchInput" placeholder="Nom du professionnel de santé" type="text">
-                                                    <ul id="suggestions" class="dropdown-menu"></ul>
+                                                <div class="form-group col-xl-4 col-lg-3 col-md-12 mb-0 location"
+                                                    >
+                                                    <input class="form-control border" id="searchInput"
+                                                        placeholder="Nom du professionnel de santé" type="text"
+                                                        onkeyup="filterDoctors()" autocomplete="off" />
+                                                    <select id="doctorsList"
+                                                        class="form-control select2-show-search border-bottom-0 w-100"
+                                                        data-placeholder="Select"></select>
                                                 </div>
                                                 <div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0 location">
-                                                    <select class="form-control select2-show-search border-bottom-0 w-100" data-placeholder="Select" id="dynamicSelectPays">
+                                                    <select
+                                                        class="form-control select2-show-search border-bottom-0 w-100"
+                                                        data-placeholder="Select" id="dynamicSelectPays">
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0 location">
-                                                    <select class="form-control select2-show-search border-bottom-0 w-100" data-placeholder="Select" id="dynamicSelectVille">
+                                                    <select
+                                                        class="form-control select2-show-search border-bottom-0 w-100"
+                                                        data-placeholder="Select" id="dynamicSelectVille">
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0">
-                                                    <select class="form-control select2-show-search border-bottom-0 w-100" data-placeholder="Select" id="dynamicSelect">
+                                                    <select
+                                                        class="form-control select2-show-search border-bottom-0 w-100"
+                                                        data-placeholder="Select" id="dynamicSelect">
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0">
-                                                    <a class="btn btn-block btn-orange fs-14" onclick="RechercheDoctor()">
+                                                    <a class="btn btn-block btn-orange fs-14"
+                                                        onclick="RechercheDoctor()">
                                                         <i class="fa fa-search"></i> Rechercher
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    <style>
-                                        #suggestions {
-                                            position: absolute;
-                                            top: 100%;
-                                            left: 0;
-                                            width: 100%;
-                                            z-index: 1000;
-                                            background-color: white;
-                                            border: 1px solid #ddd;
-                                            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-                                            max-height: 200px; /* Limit the height of the dropdown */
-                                            overflow-y: auto; /* Add scroll if content exceeds max height */
-                                        }
-                                    
-                                        #suggestions li:hover {
-                                            background-color: #f5f5f5;
-                                        }
-                                    </style>
-                                    
                                     <script>
-                                        document.getElementById('searchInput').addEventListener('input', function () {
-                                            const query = this.value.trim();
-                                            const suggestionsContainer = document.getElementById('suggestions');
-                                    
-                                            // Liste provisoire de médecins
-                                            const provisionalDoctors = [
-                                                { name: 'Dr. Jean Dupont' },
-                                                { name: 'Dr. Sophie Martin' },
-                                                { name: 'Dr. Lucas Bernard' },
-                                                { name: 'Dr. Clara Moreau' },
-                                                { name: 'Dr. Paul Dubois' }
-                                            ];
-                                    
-                                            if (query.length >= 3) {
-                                                // Effacez les suggestions précédentes
-                                                suggestionsContainer.innerHTML = '';
-                                    
-                                                // Filtrez les médecins en fonction du texte saisi
-                                                const filteredDoctors = provisionalDoctors.filter(doctor =>
-                                                    doctor.name.toLowerCase().includes(query.toLowerCase())
-                                                );
-                                    
-                                                // Ajoutez les suggestions correspondantes
-                                                filteredDoctors.forEach(doctor => {
-                                                    const li = document.createElement('li');
-                                                    li.textContent = doctor.name;
-                                                    li.style.padding = "10px";
-                                                    li.style.cursor = "pointer";
-                                                    li.onclick = () => {
-                                                        document.getElementById('searchInput').value = doctor.name;
-                                                        suggestionsContainer.style.display = 'none';
-                                                    };
-                                                    suggestionsContainer.appendChild(li);
-                                                });
-                                                // Affichez le menu des suggestions
-                                                suggestionsContainer.style.display = filteredDoctors.length > 0 ? 'block' : 'none';
+                                        const doctors = [
+                                            "Mohamed Amine CHEMLI - Radiologue - Nabeul",
+                                            "Jbeli MOHAMED - Dentiste - Beja",
+                                            "Mohamed BASLY - Gynécologue - Tunis",
+                                            "Mohamed BEN HAMMAMIA - Chirurgien vasculaire - Ariana",
+                                            "Mohamed KARIM MAHFOUDHI - Chirurgien - Ben arous"
+                                        ];
+
+                                        function filterDoctors() {
+                                            const input = document.getElementById("searchInput").value.toLowerCase();
+                                            const doctorsList = document.getElementById("doctorsList");
+                                            doctorsList.innerHTML = ""; // Effacer les anciennes options
+
+                                            if (input.length >= 3) {
+                                                const results = doctors.filter(doctor => doctor.toLowerCase().includes(input));
+
+                                                if (results.length > 0) {
+                                                    // Ajouter les résultats au <select>
+                                                    results.forEach(doctor => {
+                                                        const option = document.createElement("option");
+                                                        option.textContent = doctor;
+                                                        option.value = doctor;
+                                                        option.onclick = () => {
+                                                            document.getElementById("searchInput").value = doctor;
+                                                            doctorsList.style.display = "none";
+                                                        };
+                                                        doctorsList.appendChild(option);
+                                                    });
+
+                                                    doctorsList.style.display = "block";
+                                                } else {
+                                                    doctorsList.style.display = "none";
+                                                }
                                             } else {
-                                                // Masquez le menu si le texte est trop court
-                                                suggestionsContainer.style.display = 'none';
+                                                doctorsList.style.display = "none";
                                             }
-                                        });
-                                    
-                                        // Cacher les suggestions lorsqu'on clique en dehors
-                                        document.addEventListener('click', function (event) {
-                                            const input = document.getElementById('searchInput');
-                                            const suggestions = document.getElementById('suggestions');
-                                    
-                                            if (!input.contains(event.target) && !suggestions.contains(event.target)) {
-                                                suggestions.style.display = 'none';
-                                            }
-                                        });
+                                        }
+
                                     </script>
-                                    
+
+
                                     <div class="tab-pane" id="tab2">
                                         <div class="search-background">
                                             <div class="form row no-gutters">
@@ -584,7 +576,7 @@
                         </div>
                         <div class="item">
                             <div class="card">
-                                a href="https://wic-doctor.com/Cliniques/tous.html">
+                                <a href="./trouver-une-clinique.html">
 
                                     <div class="card-body">
                                         <div class="cat-item text-center">
@@ -772,7 +764,7 @@
                                     <a href="javascript:;">Pharmacies & Parapharmacies</a>
                                 </li>
                                 <li>
-                                    <a href="https://wic-doctor.com/Cliniques/tous.html">Cliniques</a>
+                                    <a href="./trouver-une-clinique.html">Cliniques</a>
                                 </li>
                                 <li>
                                     <a href="javascript:;">Laboratoires</a>
