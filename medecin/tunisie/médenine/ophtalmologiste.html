@@ -883,14 +883,20 @@
 			if (checkbox.checked) {
 				console.log(`Checkbox checked: ${checkbox.value}`);
 				// Add your logic here for when the checkbox is checked
-				let obj = Object.assign({ "ville": checkbox.value })
+				let obj = Object.assign({ "ville": checkbox.value },{"limit": 10},{"offset": 0})
 				console.log("obj*******************************************: ", obj)
 				loadDoctors(obj)
 			} else {
 				console.log(`Checkbox unchecked: ${checkbox.value}`);
 				// Add your logic here for when the checkbox is unchecked
-				loadDoctors()
-			}
+				const initialParams = {
+				speciality_id: "Ophtalmologiste",
+				gouvernorat: "{\"fr\":\"Médenine\"}",
+				pays: "{\"fr\":\"tunisie\"}",
+				limit: 10,
+				offset: 0
+			};
+			loadDoctors(initialParams);			}
 		}
 		getCities()
 		function changePage(page) {
@@ -946,7 +952,7 @@
 				currentPage = page; // Mettre à jour la page actuelle
 				loadDoctors({
 					speciality_id: "Ophtalmologiste",
-					ville: "{\"fr\":\"Médenine\"}",
+					gouvernorat: "{\"fr\":\"Médenine\"}",
 					pays: "{\"fr\":\"tunisie\"}",
 					limit: 10,
 					offset: (page - 1) * 10
@@ -986,6 +992,7 @@
 		function buildApiUrl(params) {
 			const urlParams = new URLSearchParams();
 			if (params.speciality_id) urlParams.append('speciality_id', params.speciality_id);
+			if (params.gouvernorat) urlParams.append('gouvernorat', params.gouvernorat);
 			if (params.ville) urlParams.append('ville', params.ville);
 			if (params.pays) urlParams.append('pays', params.pays);
 			if (params.limit) urlParams.append('limit', params.limit);
@@ -1053,7 +1060,7 @@
 				const photo = doctor.doctor_photo || "doctor.png";
 				const name = getDoctorName(doctor.name);
 				const speciality = getDoctorSpec(doctor.specialities, doctor.specialites);
-				const city = getDoctorName(doctor.ville);
+				const city = getDoctorName(doctor.gouvernorat);
 				const phone = doctor.phone_number || "Non spécifié";
 
 				const encryptedData = encryptData(doctor);
@@ -1138,15 +1145,15 @@
 			doc = decryptData(doctorEncrypted)
 
 			sessionStorage.setItem("rdv", typeRDV)
-			console.log("url: ", `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`)
-			window.location.href = `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`; // Rediriger vers la page 2
+			console.log("url: ", `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.gouvernorat).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`)
+			window.location.href = `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.gouvernorat).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`; // Rediriger vers la page 2
 		}
 
 		// Chargement initial des médecins
 		document.addEventListener("DOMContentLoaded", () => {
 			const initialParams = {
 				speciality_id: "Ophtalmologiste",
-				ville: "{\"fr\":\"Médenine\"}",
+				gouvernorat: "{\"fr\":\"Médenine\"}",
 				pays: "{\"fr\":\"tunisie\"}",
 				limit: 10,
 				offset: 0
