@@ -21,8 +21,8 @@
 		content="appointments, booking, bootstrap list template,  directory listing html template,  directory website template, doctor directory, doctor search, health template, healthcare directory, hospital,  html css templates, html directory listing, listing, medical bootstrap template, medical directory, medical html template , medical template,  medical web templates, medical website templates, pharma website templates, responsive html template,template html css, online directory website,  html5 template, themeforest html,  online directory, simple html templates ">
 
 	<!-- Favicon -->
-	<link rel="icon" href="./../../../../assets/images/brand/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" type="image/x-icon" href="./../../../../assets/images/brand/favicon.ico">
+	<link rel="icon" href="./../../../../assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" type="image/x-icon" href="./../../../../assets/images/brand/favicon.png">
 
 	<!-- Title -->
 	<title>Dr KASDALLAH Nadia - Pédiatre à Tunis</title>
@@ -229,7 +229,7 @@
 						<p>Rapide, gratuit et sécurisé</p>
 					</div>
 					<div class="row">
-						<div class="col-xl-10 col-lg-12 col-md-12 d-block mx-auto">
+						<div class="col-xl-12 col-lg-12 col-md-12 d-block mx-auto">
 							<div class="item-search-tabs">
 								<div class="item-search-menu">
 									<!-- Menu tabs -->
@@ -247,21 +247,27 @@
 								</div>
 								<div class="tab-content index-search-select">
 									<div class="tab-pane active" id="tab1">
-										<div class="search-background">
+										<div class="search-background" style="overflow: visible !important;">
 											<div class="form row no-gutters">
-												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+												<div class="form-group col-xl-4 col-lg-3 col-md-12 mb-0 location"
+													style="position: relative;">
+													<input class="form-control border" id="searchInput"
+														placeholder="Nom du professionnel de santé" type="text">
+													<ul id="suggestions" class="dropdown-menu"></ul>
+												</div>
+												<div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0 location">
 													<select
 														class="form-control select2-show-search border-bottom-0 w-100"
 														data-placeholder="Select" id="dynamicSelectPays">
 													</select>
 												</div>
-												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0 location">
+												<div class="form-group col-xl-2 col-lg-2 col-md-12 mb-0 location">
 													<select
 														class="form-control select2-show-search border-bottom-0 w-100"
 														data-placeholder="Select" id="dynamicSelectVille">
 													</select>
 												</div>
-												<div class="form-group col-xl-4 col-lg-4 col-md-12 mb-0">
+												<div class="form-group col-xl-3 col-lg-3 col-md-12 mb-0">
 													<select
 														class="form-control select2-show-search border-bottom-0 w-100"
 														data-placeholder="Select" id="dynamicSelect">
@@ -276,6 +282,152 @@
 											</div>
 										</div>
 									</div>
+
+									<style>
+										.row {
+											overflow: visible !important;
+											/* Assurez-vous que les enfants ne soient pas coupés */
+										}
+
+										#suggestions {
+											position: absolute;
+											top: 100%;
+											left: 0;
+											width: 100%;
+											z-index: 1000;
+											background-color: white;
+											border: 1px solid #ddd;
+											box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+											max-height: 200px;
+											/* Limit the height of the dropdown */
+											overflow-y: auto;
+											/* Add scroll if content exceeds max height */
+										}
+
+										#suggestions li:hover {
+											background-color: #f5f5f5;
+										}
+									</style>
+
+									<script>
+										function getDoctorSpec(name1) {
+											console.log("*************************************************: ", name1)
+											console.log("!name1: ", !name1)
+
+											// Vérifiez si `name` est une chaîne JSON
+											if (JSON.stringify(name1).trim().startsWith('"[') && JSON.stringify(name1).trim().endsWith(']"')) {
+												console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame", name1)
+												try {
+
+													console.log("JSON.parse(data[0].name).fr: ", JSON.parse(JSON.parse(name1)[0].name).fr)
+													return JSON.parse(JSON.parse(name1)[0].name).fr; // Vérifiez si la clé 'fr' existe
+												} catch (error) {
+													console.error("Erreur lors du parsing :", error);
+												}
+											}
+											else {
+												return name1
+											}
+										}
+										function getDoctorName(name) {
+											console.log("*************************************************")
+											// Vérifiez si `name` est une chaîne JSON
+											if (typeof name === 'string' && name.trim().startsWith('{') && name.trim().endsWith('}')) {
+												try {
+													const parsedName = JSON.parse(name); // Tentez de parser le JSON
+													return JSON.parse(name).fr; // Vérifiez si la clé 'fr' existe
+												} catch (error) {
+													console.error("Erreur lors du parsing :", error);
+												}
+											}
+											return name; // Retourne false si ce n'est pas un JSON valide
+										}
+										document.getElementById('searchInput').addEventListener('input', function () {
+
+											const query = this.value.trim();
+											const suggestionsContainer = document.getElementById('suggestions');
+
+											// Liste provisoire de médecins
+											let provisionalDoctors
+
+
+											if (query.length >= 3) {
+
+
+												//console.log("apiUrl: ", apiUrl)
+												try {
+													fetch(`https://wic-doctor.com:3004/search-doctors?query=${query.toLowerCase()}`)
+														.then(response => {
+															if (!response.ok) {
+																throw new Error('Erreur lors de la récupération des catégories');
+															}
+															return response.json();
+														})
+														.then(data => {
+															console.log("doctors: ", data);
+															provisionalDoctors = data.data;
+															// Effacez les suggestions précédentes
+															suggestionsContainer.innerHTML = '';
+
+															// Filtrez les médecins en fonction du texte saisi
+															const filteredDoctors = provisionalDoctors.filter(doctor =>
+																doctor.name.toLowerCase().includes(query.toLowerCase())
+															);
+
+															// Ajoutez les suggestions correspondantes
+															if (filteredDoctors.length === 0) {
+																const li = document.createElement('li');
+																li.textContent = "Pas de doc";  // Message when no doctors match
+																li.style.padding = "10px";
+																suggestionsContainer.appendChild(li);
+															} else {
+																filteredDoctors.forEach(doctor => {
+																	const li = document.createElement('li');
+																	li.textContent = getDoctorName(doctor.name);
+																	li.style.padding = "10px";
+																	li.style.cursor = "pointer";
+																	li.onclick = () => {
+																		console.log("JSON.parse(doctor.ville).fr.replace(/\s+/g, '-').toLowerCase(): ", getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase())
+																		console.log("doctor.specialities.replace(/\s+/g, '-').toLowerCase(): ", getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase())
+																		console.log("doctor.name.replace(/\s+/g, '-').toLowerCase(): ", getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase())
+																		console.log("", `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`)
+																		window.location.href = `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`;
+																		document.getElementById('searchInput').value =  getDoctorName(doctor.name);
+																		suggestionsContainer.style.display = 'none';
+																	};
+																	suggestionsContainer.appendChild(li);
+																});
+															}
+
+															// Affichez le menu des suggestions
+															suggestionsContainer.style.display = filteredDoctors.length > 0 ? 'block' : 'none';
+														});
+												} catch (error) {
+													const li = document.createElement('li');
+													li.textContent = "Pas de doc";  // Message when no doctors match
+													li.style.padding = "10px";
+													suggestionsContainer.appendChild(li);
+												}
+
+
+
+
+											} else {
+												// Masquez le menu si le texte est trop court
+												suggestionsContainer.style.display = 'none';
+											}
+										});
+
+										// Cacher les suggestions lorsqu'on clique en dehors
+										document.addEventListener('click', function (event) {
+											const input = document.getElementById('searchInput');
+											const suggestions = document.getElementById('suggestions');
+
+											if (!input.contains(event.target) && !suggestions.contains(event.target)) {
+												suggestions.style.display = 'none';
+											}
+										});
+									</script>
 									<div class="tab-pane" id="tab2">
 										<div class="search-background">
 											<div class="form row no-gutters">
