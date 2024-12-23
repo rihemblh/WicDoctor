@@ -466,7 +466,7 @@
 		<div class="container">
 			<div class="row">
 				<!--Add lists-->
-				<div class="col-xl-12 col-lg-12 col-md-12">
+				<div class="col-xl-9 col-lg-8 col-md-12">
 					<div class=" mb-lg-0">
 						<div class="">
 							<div class="item2-gl">
@@ -501,6 +501,54 @@
 							</div> -->
 						</div>
 					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-12">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="card-title">Filtrer par Ville							</h3>
+						</div>
+						<div class="card-body">
+							<div class="" id="container">
+								<div class="filter-product-checkboxs" id="villes">
+
+
+								</div>
+							</div>
+						</div>
+						<!-- <div class="card-header border-top">
+							<h3 class="card-title">Rating</h3>
+						</div> -->
+						<!-- <div class="card-body">
+							<select class="form-control nice nice-select" id="inputState">
+								<option>
+									1 Star and higher
+								</option>
+								<option>
+									2 Star and higher
+								</option>
+								<option>
+									3 Star and higher
+								</option>
+								<option>
+									4 Star and higher
+								</option>
+								<option>
+									5 Star and higher
+								</option>
+							</select>
+						</div> -->
+						<!-- 	<div class="card-header border-top">
+							<h3 class="card-title">Fees Range</h3>
+						</div>
+						<div class="card-body">
+							<h6><label for="price">Fees Range:</label> <input id="price" type="text"></h6>
+							<div id="mySlider"></div>
+						</div> -->
+						<!-- <div class="card-footer">
+							<a class="btn btn-secondary btn-block" href="javascript:void(0);">Apply Filter</a>
+						</div> -->
+					</div>
+
 				</div>
 				<!--/Add lists-->
 				<!--Right Side Content-->
@@ -803,6 +851,49 @@
 	<script src="./../../../assets/js/recherche.js"></script>
 
 	<script>
+			function getCities() {
+				//console.log("https://wic-doctor.com:3004/cities/{"fr":"Médenine"}")
+			fetch('https://wic-doctor.com:3004/cities/{"fr":"Médenine"}')
+				.then(response => {
+					if (!response.ok) {
+						throw new Error('Erreur lors de la récupération des catégories');
+					}
+					return response.json();
+				})
+				.then(data => {
+					console.log("*********************************************************************************************data: ", data)
+					data.forEach(item => {
+						document.getElementById("villes").innerHTML = document.getElementById("villes").innerHTML +
+							`<label class="custom-control form-checkbox mb-3">
+										<input class="custom-control-input" name="checkbox1" type="checkbox"
+											value="${item}" onchange="handleCheckboxChange(this)">
+										<span class="custom-control-label">
+											<span class="text-dark">${item}<!--<span
+													class="label label-light float-end">14</span>--></span>
+										</span>
+									</label>`
+
+
+
+					});
+				});
+
+
+		}
+		function handleCheckboxChange(checkbox) {
+			if (checkbox.checked) {
+				console.log(`Checkbox checked: ${checkbox.value}`);
+				// Add your logic here for when the checkbox is checked
+				let obj =Object.assign({"ville":checkbox.value})
+				console.log("obj*******************************************: ",obj)
+				loadDoctors(obj)
+			} else {
+				console.log(`Checkbox unchecked: ${checkbox.value}`);
+				// Add your logic here for when the checkbox is unchecked
+				loadDoctors()
+			}
+		}
+		getCities()
 		function changePage(page) {
 			if (page < 1 || page > totalPages) return; // Vérifie que la page est valide
 			currentPage = page;
@@ -1120,8 +1211,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 
 	<!--Showmore Js-->
-	<script src="./../../../assets/js/jquery.showmore.js"></script>
-	<script src="./../../../assets/js/showmore.js"></script>
+	<!-- <script src="./../../../assets/js/jquery.showmore.js"></script>
+	<script src="./../../../assets/js/showmore.js"></script> -->
 
 	<!--Owl-Carousel Js-->
 	<script src="./../../../assets/js/owl-carousel.js"></script>

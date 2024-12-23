@@ -2,15 +2,15 @@
 <html class="no-js" lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'G-VQ6Y9SHVYS');
-</script>
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
 	<meta charset="UTF-8">
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -72,7 +72,7 @@
 						</ul>
 					</a> -->
 					<style>
-						
+
 					</style>
 					<div class="nav-item dropdown d-flex align-items-center" id="Login">
 						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
@@ -124,7 +124,8 @@
 					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
 							professionnel?</a></li>
 					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir
+							Partenaire</a></li>
 				</ul>
 			</div>
 
@@ -205,9 +206,8 @@
 				<div class="container">
 					<div class="text-center text-white mb-0">
 						<h1>
-							<a href="" class="typewrite" data-period="2000"
-								>
-                               <span class="wrap">Prise de rendez-vous médical en ligne</span>
+							<a href="" class="typewrite" data-period="2000">
+								<span class="wrap">Prise de rendez-vous médical en ligne</span>
 								<span class="wrap"></span>
 							</a>
 						</h1>
@@ -378,7 +378,7 @@
 																		console.log("doctor.name.replace(/\s+/g, '-').toLowerCase(): ", getDoctorName2(doctor.name).replace(/\s+/g, '-').toLowerCase())
 																		console.log("", `https://wic-doctor.com/medecin/tunisie/${getDoctorName2(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec2(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`)
 																		window.location.href = `https://wic-doctor.com/medecin/tunisie/${getDoctorName2(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec2(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`;
-																		document.getElementById('searchInput').value =  getDoctorName2(doctor.name);
+																		document.getElementById('searchInput').value = getDoctorName2(doctor.name);
 																		suggestionsContainer.style.display = 'none';
 																	};
 																	suggestionsContainer.appendChild(li);
@@ -469,7 +469,7 @@
 		<div class="container">
 			<div class="row">
 				<!--Add lists-->
-				<div class="col-xl-12 col-lg-12 col-md-12">
+				<div class="col-xl-9 col-lg-8 col-md-12">
 					<div class=" mb-lg-0">
 						<div class="">
 							<div class="item2-gl">
@@ -504,6 +504,54 @@
 							</div> -->
 						</div>
 					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-12">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="card-title">Filtrer par Ville							</h3>
+						</div>
+						<div class="card-body">
+							<div class="" id="container">
+								<div class="filter-product-checkboxs" id="villes">
+
+
+								</div>
+							</div>
+						</div>
+						<!-- <div class="card-header border-top">
+							<h3 class="card-title">Rating</h3>
+						</div> -->
+						<!-- <div class="card-body">
+							<select class="form-control nice nice-select" id="inputState">
+								<option>
+									1 Star and higher
+								</option>
+								<option>
+									2 Star and higher
+								</option>
+								<option>
+									3 Star and higher
+								</option>
+								<option>
+									4 Star and higher
+								</option>
+								<option>
+									5 Star and higher
+								</option>
+							</select>
+						</div> -->
+						<!-- 	<div class="card-header border-top">
+							<h3 class="card-title">Fees Range</h3>
+						</div>
+						<div class="card-body">
+							<h6><label for="price">Fees Range:</label> <input id="price" type="text"></h6>
+							<div id="mySlider"></div>
+						</div> -->
+						<!-- <div class="card-footer">
+							<a class="btn btn-secondary btn-block" href="javascript:void(0);">Apply Filter</a>
+						</div> -->
+					</div>
+
 				</div>
 				<!--/Add lists-->
 				<!--Right Side Content-->
@@ -548,8 +596,7 @@
 							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
 							<ul class="list-unstyled mb-0">
 								<li>
-									<a
-										href="https://wic-doctor.com/qui-sommes-nous.html">Qui
+									<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui
 										sommes-nous ?</a>
 								</li>
 								<li>
@@ -799,13 +846,55 @@
 			</div>
 		</div>
 	</div>
-		<!--Cryptojs-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 	<!-- End Popup Login-->
-		<script src="./../assets/js/recherche.js"></script>
+	<script src="./../assets/js/recherche.js"></script>
 
 
 	<script>
+		function getCities() {
+			fetch('https://wic-doctor.com:3004/cities/ben arous')
+				.then(response => {
+					if (!response.ok) {
+						throw new Error('Erreur lors de la récupération des catégories');
+					}
+					return response.json();
+				})
+				.then(data => {
+					console.log("*********************************************************************************************data: ", data)
+					data.forEach(item => {
+						document.getElementById("villes").innerHTML = document.getElementById("villes").innerHTML +
+							`<label class="custom-control form-checkbox mb-3">
+										<input class="custom-control-input" name="checkbox1" type="checkbox"
+											value="${item}" onchange="handleCheckboxChange(this)">
+										<span class="custom-control-label">
+											<span class="text-dark">${item}<!--<span
+													class="label label-light float-end">14</span>--></span>
+										</span>
+									</label>`
+
+
+
+					});
+				});
+
+
+		}
+		function handleCheckboxChange(checkbox) {
+			if (checkbox.checked) {
+				console.log(`Checkbox checked: ${checkbox.value}`);
+				// Add your logic here for when the checkbox is checked
+				let obj =Object.assign({"ville":checkbox.value})
+				console.log("obj*******************************************: ",obj)
+				loadDoctors(obj)
+			} else {
+				console.log(`Checkbox unchecked: ${checkbox.value}`);
+				// Add your logic here for when the checkbox is unchecked
+				loadDoctors()
+			}
+		}
+		getCities()
 		function changePage(page) {
 			if (page < 1 || page > totalPages) return; // Vérifie que la page est valide
 			currentPage = page;
@@ -934,9 +1023,9 @@
 			}
 			return name; // Retourne false si ce n'est pas un JSON valide
 		}
-		function getDoctorSpec(name1,name2) {
-			console.log("*************************************************: ", name1,name2)
-			console.log("!name1: ",!name1)
+		function getDoctorSpec(name1, name2) {
+			console.log("*************************************************: ", name1, name2)
+			console.log("!name1: ", !name1)
 			if (!name1) {
 				return name2; // Retourne false si ce n'est pas un JSON valide
 
@@ -945,7 +1034,7 @@
 			else if (JSON.stringify(name1).trim().startsWith('[') && JSON.stringify(name1).trim().endsWith(']')) {
 				console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame")
 				try {
-					
+
 					console.log("JSON.parse(data[0].name).fr: ", JSON.parse(name1[0].name).fr)
 					return JSON.parse(name1[0].name).fr; // Vérifiez si la clé 'fr' existe
 				} catch (error) {
@@ -963,7 +1052,7 @@
 				console.log("doctor to show: ", doctor)
 				const photo = doctor.doctor_photo || "doctor.png";
 				const name = getDoctorName(doctor.name);
-				const speciality = getDoctorSpec(doctor.specialities,doctor.specialites);
+				const speciality = getDoctorSpec(doctor.specialities, doctor.specialites);
 				const city = getDoctorName(doctor.ville);
 				const phone = doctor.phone_number || "Non spécifié";
 
@@ -1042,23 +1131,23 @@
 		}
 
 		// Redirection vers les détails du médecin
-		function GetDetailsDoctor(doctorEncrypted,typeRDV) {
+		function GetDetailsDoctor(doctorEncrypted, typeRDV) {
 			sessionStorage.setItem("dataDetails", doctorEncrypted);
 			sessionStorage.setItem("status", "add");
 			//window.location.href = `${currentPath}prise-de-rendez-vous.html`;
-			doc=decryptData(doctorEncrypted)
-	
-	sessionStorage.setItem("rdv", typeRDV)
-	console.log("url: ",`https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities,doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`)
-	window.location.href = `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities,doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`; // Rediriger vers la page 2
+			doc = decryptData(doctorEncrypted)
+
+			sessionStorage.setItem("rdv", typeRDV)
+			console.log("url: ", `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`)
+			window.location.href = `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`; // Rediriger vers la page 2
 		}
 
 		// Chargement initial des médecins
 		document.addEventListener("DOMContentLoaded", () => {
 			const initialParams = {
 				speciality_id: undefined,
-					ville: undefined,
-					pays: undefined,
+				ville: undefined,
+				pays: undefined,
 				limit: 10,
 				offset: 0
 			};
@@ -1121,8 +1210,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 
 	<!--Showmore Js-->
-	<script src="./../assets/js/jquery.showmore.js"></script>
-	<script src="./../assets/js/showmore.js"></script>
+<!-- 	<script src="./../assets/js/jquery.showmore.js"></script>
+	<script src="./../assets/js/showmore.js"></script> -->
 
 	<!--Owl-Carousel Js-->
 	<script src="./../assets/js/owl-carousel.js"></script>
