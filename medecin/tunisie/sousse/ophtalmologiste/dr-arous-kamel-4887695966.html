@@ -310,7 +310,7 @@
 									</style>
 
 									<script>
-										function getDoctorSpec(name1) {
+										function getDoctorSpec2(name1) {
 											console.log("************************JSON.stringify(name1)*************************: ", JSON.stringify(name1))
 											console.log("!name1: ", !name1)
 
@@ -388,10 +388,10 @@
 																	li.style.cursor = "pointer";
 																	li.onclick = () => {
 																		console.log("JSON.parse(doctor.ville).fr.replace(/\s+/g, '-').toLowerCase(): ", getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase())
-																		console.log("doctor.specialities.replace(/\s+/g, '-').toLowerCase(): ", getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase())
+																		console.log("doctor.specialities.replace(/\s+/g, '-').toLowerCase(): ", getDoctorSpec2(doctor.specialities).replace(/\s+/g, '-').toLowerCase())
 																		console.log("doctor.name.replace(/\s+/g, '-').toLowerCase(): ", getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase())
-																		console.log("", `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`)
-																		//window.location.href = `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`;
+																		console.log("", `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec2(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`)
+																		window.location.href = `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec2(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`;
 																		document.getElementById('searchInput').value =  getDoctorName(doctor.name);
 																		suggestionsContainer.style.display = 'none';
 																	};
