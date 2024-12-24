@@ -875,13 +875,14 @@
 					status="add"
 					if (status == "add") {
 						console.log("add")
-						
+						console.log("sessionStorage.getItem('rdv'): ",sessionStorage.getItem("rdv"))
 						if (sessionStorage.getItem("rdv")) {
 							rdv = sessionStorage.getItem("rdv")
 						}
 						if (rdv == 0) {
 							apiurl = "https://wic-doctor.com:3004/ajouterrendezvous"
 							object = Object.assign(object, { "motif_id": motifSelect })
+							console.log("object: after modif ",object)
 
 						}
 						else {
