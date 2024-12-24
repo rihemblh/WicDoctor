@@ -392,7 +392,7 @@
 																		console.log("doctor.name.replace(/\s+/g, '-').toLowerCase(): ", getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase())
 																		console.log("", `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`)
 																		window.location.href = `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`;
-																		document.getElementById('searchInput').value =  getDoctorName(doctor.name);
+																		document.getElementById('searchInput').value = getDoctorName(doctor.name);
 																		suggestionsContainer.style.display = 'none';
 																	};
 																	suggestionsContainer.appendChild(li);
@@ -1097,8 +1097,8 @@
 			</div>
 		</div>
 		`
-			
-				document.body.appendChild(script);
+
+				//document.body.appendChild(script);
 				//${Detailsdoctors.doctor_id}
 				console.log("Detailsdoctors.specialities[0].id ", Detailsdoctors.specialities[0])
 				fetch(`https://wic-doctor.com:3004/getmotif?specialite_id=${Detailsdoctors.specialities[0].id}&doctor_id=${Detailsdoctors.doctor_id}`)
@@ -1155,7 +1155,6 @@
 				if (rdv == 0) {
 					console.log("rendez-vous")
 					// Fetching slots data for the doctor
-					console
 					fetch(`https://wic-doctor.com:3004/afftempsdoctorsbyid?doctor_id=${Detailsdoctors.doctor_id}`)
 						.then(response => {
 							if (!response.ok) {
@@ -1164,8 +1163,13 @@
 							return response.json();
 						})
 						.then(data => {
-							console.log("availability: ", data)
-							slotsData = data;
+							console.log("availability: ", JSON.stringify(data))
+							const config = data
+
+							// Generate slots
+							slotsData = generateTimeSlots(config);
+							console.log(slotsData);
+							console.log("slotsData: ", JSON.stringify(slotsData))
 							initializeWeek();
 						});
 				}
@@ -1235,12 +1239,14 @@
 					}
 
 					// Iterate through time slots based on available data
+					console.log("slotsData***************************************: ", slotsData)
 					const uniqueSlotsTimes = getUniqueSlotTimes(slotsData);
-					console.log("uniqueSlotsTimes: ", uniqueSlotsTimes)
+					console.log("uniqueSlotsTimes: ", JSON.stringify(uniqueSlotsTimes))
 					uniqueSlotsTimes.forEach(time => {
 						const tr = document.createElement('tr');
 
 						days.forEach(day => {
+							console.log("daaaaaaaaaaaaaaaaaay: ", day)
 							const td = document.createElement('td');
 
 							// Find if there's a slot at this time for this day
@@ -1248,7 +1254,9 @@
 								const slotDate = new Date(slot.start_at);
 								const slotTime = new Date(slot.start_at).toLocaleTimeString('fr-FR', {
 									hour: '2-digit',
-									minute: '2-digit'
+									minute: '2-digit',
+
+
 								});
 								return (
 									slotDate.getUTCDate() === day.date.getUTCDate() &&
@@ -1257,13 +1265,13 @@
 									slotTime === time
 								);
 							});
-
+							console.log("sloot for this day: ", slot)
 							const button = document.createElement('button');
 							button.classList.add('btn');
 
 							if (slot) {
 								const now = new Date(); // Date et heure actuelles
-
+								console.log("new Date(slot.start_at) < now: ", slot.start_at, new Date(slot.start_at) < now)
 								if (new Date(slot.start_at) < now) {
 									// If no appointment, display 'Aucun créneau'
 									button.classList.add('indsponible');
@@ -1274,13 +1282,17 @@
 									// If there's an available slot, show the time range
 									const startTime = new Date(slot.start_at).toLocaleTimeString('fr-FR', {
 										hour: '2-digit',
-										minute: '2-digit'
+										minute: '2-digit',
+
+
 									});
 									const endTime = new Date(slot.end_at).toLocaleTimeString('fr-FR', {
 										hour: '2-digit',
-										minute: '2-digit'
-									});
+										minute: '2-digit',
 
+
+									});
+									console.log("startTime: ", startTime, "endTime", endTime)
 									button.classList.add('disponible');
 									//button.textContent = `${startTime} - ${endTime}`;
 									button.textContent = `${startTime}`;
@@ -1292,6 +1304,7 @@
 
 										// Ajouter la classe au bouton actuellement cliqué
 										button.classList.add('selected-slot');
+										let rdv = 0
 										if (sessionStorage.getItem("rdv")) {
 											rdv = sessionStorage.getItem("rdv")
 										}
@@ -1352,12 +1365,15 @@
 
 				// Function to extract unique time slots from available data
 				function getUniqueSlotTimes(slotsData) {
+					console.log("slotsData: ", slotsData)
 					const times = slotsData.map(slot =>
 						new Date(slot.start_at).toLocaleTimeString('fr-FR', {
 							hour: '2-digit',
-							minute: '2-digit'
+							minute: '2-digit',
+
 						})
 					);
+					console.log("times: ", times)
 					return [...new Set(times)].sort(); // Sort to display times in order
 				}
 
@@ -1391,6 +1407,7 @@
 					console.log('sessionStorage.getItem("status"): ', sessionStorage.getItem("status"))
 					if (sessionStorage.getItem("status") == "add") {
 						console.log("add")
+						let rdv = 0
 						if (sessionStorage.getItem("rdv")) {
 							rdv = sessionStorage.getItem("rdv")
 						}
@@ -1405,8 +1422,8 @@
 
 
 						}
-					}
 
+					}
 					else if (sessionStorage.getItem("status") == "edit") {
 						console.log("edit")
 						object = Object.assign({ "end_at": object.ends_at }, { "start_at": object.start_at }, { "patern_id": motifSelect })
@@ -1461,6 +1478,7 @@
 								console.log('Réponse de l\'API :', data);
 
 								if (data.message == "Rendez-vous inséré avec succès") {
+									let rdv = 0
 									if (sessionStorage.getItem("rdv")) {
 										rdv = sessionStorage.getItem("rdv")
 									}
@@ -1479,9 +1497,9 @@
 										window.location.href = 'profil.html'; // Rediriger vers la page 2
 										sessionStorage.removeItem("rdv")
 									}
+
+
 								}
-
-
 							})
 							.catch(error => {
 								console.error('Erreur :', error);
@@ -1503,6 +1521,152 @@
 					document.getElementById('overlay').style.display = 'none';
 				}
 				initializeWeek();
+				const config = {
+					"start": "08:00 AM",
+					"end": "05:00 PM",
+					"duree": 30,
+					"indisponibles": ["2024-12-16:16:30", "2024-12-17:08:30"]
+				};
+
+				function generateTimeSlots(config) {
+					const slots = [];
+					const startDate = new Date(); // Today's date
+
+					// Parse the config
+					const daysConfig = config.days.reduce((acc, day) => {
+						acc[day.day] = {
+							start: day.start_at,
+							end: day.end_at,
+						};
+						return acc;
+					}, {});
+
+					const { pauses, duree, holidays, urgence, indisponibles } = config;
+
+					// Parse holidays into ranges
+					console.log("holidays: ", holidays, holidays[0].holiday_from.split(' ')[0])
+					const holidayRanges = holidays.map(holiday => {
+						// Extract and reformat the date strings (DD/MM/YYYY -> YYYY-MM-DD)
+						const fromDateStr = holiday.holiday_from.split(' ')[0]; // Example: '28/12/2024'
+						const toDateStr = holiday.holiday_to.split(' ')[0]; // Example: '29/12/2024'
+
+						// Split the date (DD/MM/YYYY)
+						const [dayFrom, monthFrom, yearFrom] = fromDateStr.split('/');
+						const [dayTo, monthTo, yearTo] = toDateStr.split('/');
+
+						// Reformat as YYYY-MM-DD
+						const reformattedFromDate = `${yearFrom}-${monthFrom}-${dayFrom}`;
+						const reformattedToDate = `${yearTo}-${monthTo}-${dayTo}`;
+
+						// Create Date objects
+						const fromDate = new Date(reformattedFromDate);
+						const toDate = new Date(reformattedToDate);
+
+						// Log for debugging
+						console.log("Parsed Dates:", { reformattedFromDate, reformattedToDate, fromDate, toDate });
+
+						return { from: fromDate, to: toDate };
+					});
+					console.log("holidayRanges: ", holidayRanges)
+					// Convertir les urgences en plages similaires aux holidays
+					const parsedUrgences = urgence.map(u => ({
+						from: new Date(`${u.jour}T${u.heurDebut}`),
+						to: new Date(`${u.jour}T${u.heurFin}`)
+					}));
+
+					// Fusionner holidays et urgences en une seule liste
+					const exclusions = [...parsedUrgences];
+					// Parse indisponibles into ranges
+					console.log("indisponibles: ", indisponibles)
+					const unavailableRanges = indisponibles.map(indispo => {
+						console.log("indispo: ", indispo)
+						// Parse the date string and convert it to ISO format
+						const parseDate = dateStr => {
+							const [day, month, yearAndTime] = dateStr.split('/');
+							const [year, time] = yearAndTime.split(' ');
+							return new Date(`${year}-${month}-${day}T${time}`);
+						};
+
+						return {
+							from: parseDate(indispo.indisponible_date_debut),
+							to: parseDate(indispo.indisponible_date_end),
+						};
+					});
+
+
+					// Check if a date is within a holiday
+					const isHoliday = (date) => holidayRanges.some(range => date >= range.from && date <= range.to);
+
+					// Vérifier si le créneau chevauche une exclusion (holiday ou urgence)
+
+
+
+
+					// Generate slots for 30 days
+					for (let i = 0; i < 30; i++) {
+						const currentDate = new Date(startDate);
+						currentDate.setDate(currentDate.getDate() + i);
+
+						const dayName = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"][currentDate.getDay()];
+						const daySchedule = daysConfig[dayName];
+
+						if (!daySchedule || !daySchedule.start || !daySchedule.end || isHoliday(currentDate)) {
+							continue; // Skip non-working days and holidays
+						}
+
+						const startTime = new Date(currentDate);
+						const [startHour, startMinute] = daySchedule.start.split(":").map(Number);
+						startTime.setHours(startHour, startMinute, 0, 0);
+
+						const endTime = new Date(currentDate);
+						const [endHour, endMinute] = daySchedule.end.split(":").map(Number);
+						endTime.setHours(endHour, endMinute, 0, 0);
+
+						const pauseStart = new Date(currentDate);
+						const [pauseStartHour, pauseStartMinute] = pauses.pause_start.split(":").map(Number);
+						pauseStart.setHours(pauseStartHour, pauseStartMinute, 0, 0);
+
+						const pauseEnd = new Date(currentDate);
+						const [pauseEndHour, pauseEndMinute] = pauses.pause_end.split(":").map(Number);
+						pauseEnd.setHours(pauseEndHour, pauseEndMinute, 0, 0);
+
+						let slotStart = new Date(startTime);
+
+						// Generate slots for the day
+						while (slotStart < endTime) {
+							const slotEnd = new Date(slotStart);
+							slotEnd.setMinutes(slotEnd.getMinutes() + duree);
+							console.log("slotStart: ", slotStart)
+							console.log("unavailableRanges: ", unavailableRanges)
+							// Check if the slot is within unavailable or urgent intervals
+							const isUnavailable = unavailableRanges.some(range => slotStart >= range.from && slotEnd <= range.to);
+							//console.log("parsedUrgences: ", parsedUrgences)
+							const isUrgence = parsedUrgences.some(range => {
+								console.log("range: ", range)
+								slotStart >= range.from && slotEnd <= range.to
+							});
+							console.log("isUnavailable: ", isUnavailable)
+							const isDuringPause = slotStart >= pauseStart && slotStart < pauseEnd;
+
+							if (slotEnd <= endTime && !isUnavailable && !isDuringPause && !isUrgence) {
+								slots.push({
+									start_at: slotStart.toISOString(),
+									end_at: slotEnd.toISOString(),
+								});
+							}
+
+							slotStart = new Date(slotEnd); // Move to the next slot
+						}
+					}
+
+					return slots;
+				}
+
+
+				// Exemple d'utilisation
+				/* const result = generateSlots(input);
+				console.log(result); */
+
 			})
 
 
