@@ -856,7 +856,132 @@
 				return name1
 			}
 		}
+		var apiurl
+				var requestOptions
+				let status
+				let object ={}
+				function ConfirmerRedezvous() {
+					/// Prevent the default action (navigation)
 
+
+					// Optionally, you can add a class to style it as disabled
+					var link = document.getElementById('confirmRDV');
+					link.classList.add('disabled');
+
+					motifSelect = document.getElementById('motifSelect').value;
+					console.log('sessionStorage.getItem("status"): ', sessionStorage.getItem("status"))
+					if(!sessionStorage.getItem("status"))
+					status="add"
+					if (status == "add") {
+						console.log("add")
+						let rdv = 0
+						if (sessionStorage.getItem("rdv")) {
+							rdv = sessionStorage.getItem("rdv")
+						}
+						if (rdv == 0) {
+							apiurl = "https://wic-doctor.com:3004/ajouterrendezvous"
+							object = Object.assign(object, { "motif_id": motifSelect })
+
+						}
+						else {
+							apiurl = "https://wic-doctor.com:3004/ajouterrendezvoustele"
+							//object = Object.assign(object, { "motif_id": motifSelect })
+
+
+						}
+
+					}
+					else if (status == "edit") {
+						console.log("edit")
+						object = Object.assign({ "end_at": object.ends_at }, { "start_at": object.start_at }, { "patern_id": motifSelect })
+						console.log("decryptData(sessionStorage.getItem('id')", decryptData(sessionStorage.getItem("id")))
+						apiurl = `https://wic-doctor.com:3004/updateappointement/${decryptData(sessionStorage.getItem("id"))}`
+					}
+					console.log('apiurl: ', apiurl)
+					encryptedData = encryptData(object);
+
+					console.log("object rendez-vous: ", object)
+					if (sessionStorage.getItem('auth')) {
+						const authData = sessionStorage.getItem("auth");
+						const data = decryptData(authData);
+						console.log("Initial login data: ", data);
+						console.log("**************************************Rendez-vous Medecin")
+						const RendezVous = object;
+						console.log("RendezVous: ", JSON.stringify(RendezVous))
+						if (status == "add") {
+							requestOptions = {
+								method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
+								headers: {
+									'Authorization': `Bearer ${data.token}`, // Ajouter le token dans l'en-tête Authorization
+									'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
+								},
+								body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
+							};
+
+						}
+						else if (status == "edit") {
+							requestOptions = {
+								method: 'PUT', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
+								headers: {
+									'Authorization': `Bearer ${data.token}`, // Ajouter le token dans l'en-tête Authorization
+									'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
+								},
+								body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
+							}
+						}
+
+
+
+						// Appeler l'API
+						fetch(apiurl, requestOptions)
+							.then(response => {
+
+								if (!response.ok) {
+									throw new Error('Erreur lors de l\'envoi des données');
+								}
+								return response.json(); // Analyser la réponse JSON
+							})
+							.then(data => {
+								console.log('Réponse de l\'API :', data);
+
+								if (data.message == "Rendez-vous inséré avec succès") {
+									let rdv = 0
+									if (sessionStorage.getItem("rdv")) {
+										rdv = sessionStorage.getItem("rdv")
+									}
+									if (rdv == 0) {
+										document.getElementById('popup').style.display = 'block';
+										document.getElementById('overlay').style.display = 'block';
+										alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
+										sessionStorage.removeItem("rendezvousClinic")
+										window.location.href = 'https://wic-doctor.com/profil.html'; // Rediriger vers la page 2
+									}
+									else {
+										document.getElementById('popup').style.display = 'block';
+										document.getElementById('overlay').style.display = 'block';
+										alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
+										sessionStorage.removeItem("rendezvousClinic")
+										window.location.href = 'https://wic-doctor.com/profil.html'; // Rediriger vers la page 2
+										sessionStorage.removeItem("rdv")
+									}
+
+
+								}
+							})
+							.catch(error => {
+								console.error('Erreur :', error);
+							});
+
+
+
+					}
+
+					else {
+						sessionStorage.setItem("rendezvous", encryptedData)
+						window.location.href = 'https://wic-doctor.com/login.html'; // Rediriger vers la page 2
+					}
+
+				}
 		//console.log("sessionStorage.getItem('dataDetails'): ", decryptData(sessionStorage.getItem('dataDetails')))
 		fetch('https://wic-doctor.com:3004/getdocbyid/5295300542')
 			.then(response => {
@@ -1213,7 +1338,7 @@
 					updateWeek();
 				}
 				var encryptedData
-				var object = {}
+				
 				function updateWeek() {
 					const daysHeader = document.getElementById('days-header');
 					const timeSlotsContainer = document.getElementById('time-slots-container');
@@ -1393,128 +1518,7 @@
 					console.log("selectedSlot: ", selectedSlot)
 					$('#confirmationModal').modal('hide');
 				}); */
-				var apiurl
-				var requestOptions
-				function ConfirmerRedezvous() {
-					/// Prevent the default action (navigation)
-
-
-					// Optionally, you can add a class to style it as disabled
-					var link = document.getElementById('confirmRDV');
-					link.classList.add('disabled');
-
-					motifSelect = document.getElementById('motifSelect').value;
-					console.log('sessionStorage.getItem("status"): ', sessionStorage.getItem("status"))
-					if (sessionStorage.getItem("status") == "add") {
-						console.log("add")
-						let rdv = 0
-						if (sessionStorage.getItem("rdv")) {
-							rdv = sessionStorage.getItem("rdv")
-						}
-						if (rdv == 0) {
-							apiurl = "https://wic-doctor.com:3004/ajouterrendezvous"
-							object = Object.assign(object, { "motif_id": motifSelect })
-
-						}
-						else {
-							apiurl = "https://wic-doctor.com:3004/ajouterrendezvoustele"
-							//object = Object.assign(object, { "motif_id": motifSelect })
-
-
-						}
-
-					}
-					else if (sessionStorage.getItem("status") == "edit") {
-						console.log("edit")
-						object = Object.assign({ "end_at": object.ends_at }, { "start_at": object.start_at }, { "patern_id": motifSelect })
-						console.log("decryptData(sessionStorage.getItem('id')", decryptData(sessionStorage.getItem("id")))
-						apiurl = `https://wic-doctor.com:3004/updateappointement/${decryptData(sessionStorage.getItem("id"))}`
-					}
-					console.log('apiurl: ', apiurl)
-					encryptedData = encryptData(object);
-
-					console.log("object rendez-vous: ", object)
-					if (sessionStorage.getItem('auth')) {
-						const authData = sessionStorage.getItem("auth");
-						const data = decryptData(authData);
-						console.log("Initial login data: ", data);
-						console.log("**************************************Rendez-vous Medecin")
-						const RendezVous = object;
-						console.log("RendezVous: ", JSON.stringify(RendezVous))
-						if (sessionStorage.getItem("status") == "add") {
-							requestOptions = {
-								method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
-								headers: {
-									'Authorization': `Bearer ${data.token}`, // Ajouter le token dans l'en-tête Authorization
-									'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
-								},
-								body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
-							};
-
-						}
-						else if (sessionStorage.getItem("status") == "edit") {
-							requestOptions = {
-								method: 'PUT', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
-								headers: {
-									'Authorization': `Bearer ${data.token}`, // Ajouter le token dans l'en-tête Authorization
-									'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
-								},
-								body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
-							}
-						}
-
-
-
-						// Appeler l'API
-						fetch(apiurl, requestOptions)
-							.then(response => {
-
-								if (!response.ok) {
-									throw new Error('Erreur lors de l\'envoi des données');
-								}
-								return response.json(); // Analyser la réponse JSON
-							})
-							.then(data => {
-								console.log('Réponse de l\'API :', data);
-
-								if (data.message == "Rendez-vous inséré avec succès") {
-									let rdv = 0
-									if (sessionStorage.getItem("rdv")) {
-										rdv = sessionStorage.getItem("rdv")
-									}
-									if (rdv == 0) {
-										document.getElementById('popup').style.display = 'block';
-										document.getElementById('overlay').style.display = 'block';
-										alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
-										sessionStorage.removeItem("rendezvousClinic")
-										window.location.href = 'profil.html'; // Rediriger vers la page 2
-									}
-									else {
-										document.getElementById('popup').style.display = 'block';
-										document.getElementById('overlay').style.display = 'block';
-										alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
-										sessionStorage.removeItem("rendezvousClinic")
-										window.location.href = 'profil.html'; // Rediriger vers la page 2
-										sessionStorage.removeItem("rdv")
-									}
-
-
-								}
-							})
-							.catch(error => {
-								console.error('Erreur :', error);
-							});
-
-
-
-					}
-
-					else {
-						sessionStorage.setItem("rendezvous", encryptedData)
-						window.location.href = 'login.html'; // Rediriger vers la page 2
-					}
-
-				}
+			
 				// Fonction pour fermer la pop-up
 				function fermerPopup() {
 					document.getElementById('popup').style.display = 'none';
