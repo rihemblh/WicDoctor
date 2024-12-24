@@ -860,6 +860,7 @@
 				var requestOptions
 				let status
 				let object ={}
+				let rdv = 0
 				function ConfirmerRedezvous() {
 					/// Prevent the default action (navigation)
 
@@ -874,7 +875,7 @@
 					status="add"
 					if (status == "add") {
 						console.log("add")
-						let rdv = 0
+						
 						if (sessionStorage.getItem("rdv")) {
 							rdv = sessionStorage.getItem("rdv")
 						}
