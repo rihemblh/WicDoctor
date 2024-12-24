@@ -391,7 +391,7 @@
 																		console.log("doctor.specialities.replace(/\s+/g, '-').toLowerCase(): ", getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase())
 																		console.log("doctor.name.replace(/\s+/g, '-').toLowerCase(): ", getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase())
 																		console.log("", `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`)
-																		window.location.href = `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`;
+																		//window.location.href = `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`;
 																		document.getElementById('searchInput').value =  getDoctorName(doctor.name);
 																		suggestionsContainer.style.display = 'none';
 																	};
