@@ -10,73 +10,55 @@ function decryptData(cipherText) {
 function encryptData(data) {
     return CryptoJS.AES.encrypt(JSON.stringify(data), secretKey).toString();
 }
-//Detailsdoctors = decryptData(sessionStorage.getItem('dataDetails'));
-let rdv = 0
+Detailsdoctors = decryptData(sessionStorage.getItem('dataDetails'));
 if (sessionStorage.getItem("rdv")) {
-    rdv = sessionStorage.getItem("rdv")
-}
-if (rdv == 0) {
-    console.log("rendez-vous")
-    // Fetching slots data for the doctor
-    fetch(`https://wic-doctor.com:3004/afftempsdoctorsbyid?doctor_id=${Detailsdoctors.doctor_id}`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erreur lors de la récupération des créneaux');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log("availability: ", data)
-            const config = {
-                days: [
-                    { day: "lundi", start_at: "08:00:00", end_at: "17:00:00" },
-                    { day: "mardi", start_at: "09:00:00", end_at: "15:00:00" },
-                    { day: "mercredi", start_at: "08:00:00", end_at: "17:00:00" },
-                    { day: "jeudi", start_at: "08:00:00", end_at: "13:00:00" },
-                    { day: "vendredi", start_at: "08:30:00", end_at: "17:30:00" },
-                    { day: "samedi", start_at: "08:00:00", end_at: "12:00:00" },
-                    { day: "dimanche", start_at: null, end_at: null },
-                ],
-                pauses: {
-                    pause_start: "12:00:00",
-                    pause_end: "13:00:00",
-                },
-                duree: 30,
-                holidays: [
-                    { holiday_from: "2024-12-23 00:00:00", holiday_to: "2024-12-31 00:00:00", holiday_type: "période" },
-                ],
-                indisponibles: [
-                    { indisponible_date_debut: "2024-12-16T14:30:00", indisponible_date_end: "2024-12-16T15:30:00" },
-                ],
-                urgence: [
-                    { jour: "2024-12-23", heurDebut: "12:55:56", heurFin: "14:55:56" },
-                ],
-            };
+    if (sessionStorage.getItem("rdv") == 0) {
+        console.log("rendez-vous")
+        // Fetching slots data for the doctor
+        fetch(`https://wic-doctor.com:3004/afftempsdoctorsbyid?doctor_id=${Detailsdoctors.doctor_id}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur lors de la récupération des créneaux');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log("availability: ", data)
+                const config = {
+                    lundi: { start: "08:00", end: "17:00" },
+                    mardi: { start: "09:00", end: "15:00" },
+                    mercredi: { start: "08:00", end: "17:00" },
+                    jeudi: { start: "08:00", end: "13:00" },
+                    vendredi: { start: "08:30", end: "17:30" },
+                    samedi: { start: "08:00", end: "12:00" },
+                    dimanche: {},
+                    duree: 60,
+                    indisponibles: ["2024-12-16:14:30", "2024-12-17:10:30"],
+                    holidays: [{ from: "2024-12-23", to: "2024-12-31" }],
+                    pause: { start: "12:00", end: "13:00" }
+                };
+                slotsData = generateTimeSlots(config)
+                console.log("slotsData: ", JSON.stringify(slotsData))
+                initializeWeek();
+            });
+    }
+    else {
+        console.log("téléonsultation")
 
-            // Generate slots
-            const slotsData = generateTimeSlots(config);
-            console.log(slotsData);
-            console.log("slotsData: ", JSON.stringify(slotsData))
-            initializeWeek();
-        });
+        fetch(`https://wic-doctor.com:3004/gettempsteleconsultation?doctor_id=${Detailsdoctors.doctor_id}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur lors de la récupération des créneaux');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log("availability: ", data)
+                slotsData = data;
+                initializeWeek();
+            });
+    }
 }
-else {
-    console.log("téléonsultation")
-
-    fetch(`https://wic-doctor.com:3004/gettempsteleconsultation?doctor_id=${Detailsdoctors.doctor_id}`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erreur lors de la récupération des créneaux');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log("availability: ", data)
-            slotsData = data;
-            initializeWeek();
-        });
-}
-
 /* // Fetching slots data for the doctor
 fetch(`https://wic-doctor.com:3004/afftempsdoctorsbyid?doctor_id=${Detailsdoctors.doctor_id}`)
     .then(response => {
@@ -141,7 +123,7 @@ function updateWeek() {
                 const slotTime = new Date(slot.start_at).toLocaleTimeString('fr-FR', {
                     hour: '2-digit',
                     minute: '2-digit',
-
+                    
 
                 });
                 return (
@@ -169,13 +151,13 @@ function updateWeek() {
                     const startTime = new Date(slot.start_at).toLocaleTimeString('fr-FR', {
                         hour: '2-digit',
                         minute: '2-digit',
-
+                        
 
                     });
                     const endTime = new Date(slot.end_at).toLocaleTimeString('fr-FR', {
                         hour: '2-digit',
                         minute: '2-digit',
-
+                        
 
                     });
                     console.log("startTime: ", startTime, "endTime", endTime)
@@ -190,14 +172,11 @@ function updateWeek() {
 
                         // Ajouter la classe au bouton actuellement cliqué
                         button.classList.add('selected-slot');
-                        let rdv = 0
                         if (sessionStorage.getItem("rdv")) {
-                            rdv = sessionStorage.getItem("rdv")
+                            if (sessionStorage.getItem("rdv") == 0) {
+                                document.getElementById("motifSelection").style.display = ""
+                            }
                         }
-                        if (rdv == 0) {
-                            document.getElementById("motifSelection").style.display = ""
-                        }
-
                         selectedSlotStart = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${startTime}`;
                         selectedSlotEnd = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${endTime}`;
 
@@ -255,7 +234,7 @@ function getUniqueSlotTimes(slotsData) {
         new Date(slot.start_at).toLocaleTimeString('fr-FR', {
             hour: '2-digit',
             minute: '2-digit',
-
+            
         })
     );
     console.log("times: ", times)
@@ -292,22 +271,19 @@ function ConfirmerRedezvous() {
     console.log('sessionStorage.getItem("status"): ', sessionStorage.getItem("status"))
     if (sessionStorage.getItem("status") == "add") {
         console.log("add")
-        let rdv = 0
         if (sessionStorage.getItem("rdv")) {
-            rdv = sessionStorage.getItem("rdv")
+            if (sessionStorage.getItem("rdv") == 0) {
+                apiurl = "https://wic-doctor.com:3004/ajouterrendezvous"
+                object = Object.assign(object, { "motif_id": motifSelect })
+
+            }
+            else {
+                apiurl = "https://wic-doctor.com:3004/ajouterrendezvoustele"
+                //object = Object.assign(object, { "motif_id": motifSelect })
+
+
+            }
         }
-        if (rdv == 0) {
-            apiurl = "https://wic-doctor.com:3004/ajouterrendezvous"
-            object = Object.assign(object, { "motif_id": motifSelect })
-
-        }
-        else {
-            apiurl = "https://wic-doctor.com:3004/ajouterrendezvoustele"
-            //object = Object.assign(object, { "motif_id": motifSelect })
-
-
-        }
-
     }
     else if (sessionStorage.getItem("status") == "edit") {
         console.log("edit")
@@ -363,26 +339,23 @@ function ConfirmerRedezvous() {
                 console.log('Réponse de l\'API :', data);
 
                 if (data.message == "Rendez-vous inséré avec succès") {
-                    let rdv = 0
                     if (sessionStorage.getItem("rdv")) {
-                        rdv = sessionStorage.getItem("rdv")
+                        if (sessionStorage.getItem("rdv") == 0) {
+                            document.getElementById('popup').style.display = 'block';
+                            document.getElementById('overlay').style.display = 'block';
+                            alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
+                            sessionStorage.removeItem("rendezvousClinic")
+                            window.location.href = 'profil.html'; // Rediriger vers la page 2
+                        }
+                        else {
+                            document.getElementById('popup').style.display = 'block';
+                            document.getElementById('overlay').style.display = 'block';
+                            alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
+                            sessionStorage.removeItem("rendezvousClinic")
+                            window.location.href = 'profil.html'; // Rediriger vers la page 2
+                            sessionStorage.removeItem("rdv")
+                        }
                     }
-                    if (rdv == 0) {
-                        document.getElementById('popup').style.display = 'block';
-                        document.getElementById('overlay').style.display = 'block';
-                        alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
-                        sessionStorage.removeItem("rendezvousClinic")
-                        window.location.href = 'profil.html'; // Rediriger vers la page 2
-                    }
-                    else {
-                        document.getElementById('popup').style.display = 'block';
-                        document.getElementById('overlay').style.display = 'block';
-                        alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
-                        sessionStorage.removeItem("rendezvousClinic")
-                        window.location.href = 'profil.html'; // Rediriger vers la page 2
-                        sessionStorage.removeItem("rdv")
-                    }
-
 
                 }
             })
@@ -413,47 +386,44 @@ const config = {
     "indisponibles": ["2024-12-16:16:30", "2024-12-17:08:30"]
 };
 
-function generateTimeSlots(config) {
+function generateTimeSlots(schedule) {
+    const { duree, indisponibles, holidays, pause } = schedule;
     const slots = [];
-    const startDate = new Date(); // Today's date
+    const startDate = new Date(); // Date d'aujourd'hui
 
-    // Parse the config
-    const daysConfig = config.days.reduce((acc, day) => {
-        acc[day.day] = {
-            start: day.start_at,
-            end: day.end_at,
-        };
-        return acc;
-    }, {});
+    // Créer un ensemble pour les créneaux indisponibles
+    const unavailableSet = new Set(indisponibles);
 
-    const { pauses, duree, holidays, urgence, indisponibles } = config;
+    // Fonction pour vérifier si une date est un jour férié
+    const isHoliday = (date) => {
+        return holidays.some(holiday => {
+            const from = new Date(holiday.from);
+            const to = new Date(holiday.to);
+            return date >= from && date <= to;
+        });
+    };
 
-    // Parse holidays into ranges
-    const holidayRanges = holidays.map(holiday => ({
-        from: new Date(holiday.holiday_from.split(' ')[0]),
-        to: new Date(holiday.holiday_to.split(' ')[0]),
-    }));
-
-    // Parse indisponibles into ranges
-    const unavailableRanges = indisponibles.map(indispo => ({
-        from: new Date(indispo.indisponible_date_debut),
-        to: new Date(indispo.indisponible_date_end),
-    }));
-
-    // Check if a date is within a holiday
-    const isHoliday = (date) => holidayRanges.some(range => date >= range.from && date <= range.to);
-
-    // Generate slots for 30 days
+    // Générer les créneaux pour 7 jours
     for (let i = 0; i < 30; i++) {
         const currentDate = new Date(startDate);
         currentDate.setDate(currentDate.getDate() + i);
 
         const dayName = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"][currentDate.getDay()];
-        const daySchedule = daysConfig[dayName];
+        const daySchedule = schedule[dayName];
 
         if (!daySchedule || !daySchedule.start || !daySchedule.end || isHoliday(currentDate)) {
-            continue; // Skip non-working days and holidays
+            // Ignorer les jours non travaillés ou fériés
+            continue;
         }
+
+        // Convertir les heures de pause et heures de début/fin
+        const pauseStart = new Date(currentDate);
+        const [pauseStartHour, pauseStartMinute] = pause.start.split(":").map(Number);
+        pauseStart.setHours(pauseStartHour, pauseStartMinute, 0, 0);
+
+        const pauseEnd = new Date(currentDate);
+        const [pauseEndHour, pauseEndMinute] = pause.end.split(":").map(Number);
+        pauseEnd.setHours(pauseEndHour, pauseEndMinute, 0, 0);
 
         const startTime = new Date(currentDate);
         const [startHour, startMinute] = daySchedule.start.split(":").map(Number);
@@ -463,33 +433,28 @@ function generateTimeSlots(config) {
         const [endHour, endMinute] = daySchedule.end.split(":").map(Number);
         endTime.setHours(endHour, endMinute, 0, 0);
 
-        const pauseStart = new Date(currentDate);
-        const [pauseStartHour, pauseStartMinute] = pauses.pause_start.split(":").map(Number);
-        pauseStart.setHours(pauseStartHour, pauseStartMinute, 0, 0);
-
-        const pauseEnd = new Date(currentDate);
-        const [pauseEndHour, pauseEndMinute] = pauses.pause_end.split(":").map(Number);
-        pauseEnd.setHours(pauseEndHour, pauseEndMinute, 0, 0);
-
         let slotStart = new Date(startTime);
 
-        // Generate slots for the day
+        // Générer les créneaux pour la journée
         while (slotStart < endTime) {
             const slotEnd = new Date(slotStart);
             slotEnd.setMinutes(slotEnd.getMinutes() + duree);
 
-            // Check if the slot is within unavailable or urgent intervals
-            const isUnavailable = unavailableRanges.some(range => slotStart >= range.from && slotEnd <= range.to);
-            const isDuringPause = slotStart >= pauseStart && slotStart < pauseEnd;
+            const slotKey = `${currentDate.toISOString().split('T')[0]}:${slotStart.getHours().toString().padStart(2, "0")}:${slotStart.getMinutes().toString().padStart(2, "0")}`;
 
-            if (slotEnd <= endTime && !isUnavailable && !isDuringPause) {
+            // Vérifier si le créneau est indisponible ou pendant la pause
+            if (
+                slotEnd <= endTime &&
+                !unavailableSet.has(slotKey) &&
+                !(slotStart >= pauseStart && slotStart < pauseEnd)
+            ) {
                 slots.push({
                     start_at: slotStart.toISOString(),
                     end_at: slotEnd.toISOString(),
                 });
             }
 
-            slotStart = new Date(slotEnd); // Move to the next slot
+            slotStart = new Date(slotEnd); // Passer au créneau suivant
         }
     }
 
