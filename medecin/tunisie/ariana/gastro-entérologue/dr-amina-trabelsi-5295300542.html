@@ -1550,30 +1550,33 @@
 					const { pauses, duree, holidays, urgence, indisponibles } = config;
 
 					// Parse holidays into ranges
-					console.log("holidays: ", holidays, holidays[0].holiday_from.split(' ')[0])
-					const holidayRanges = holidays.map(holiday => {
-						// Extract and reformat the date strings (DD/MM/YYYY -> YYYY-MM-DD)
-						const fromDateStr = holiday.holiday_from.split(' ')[0]; // Example: '28/12/2024'
-						const toDateStr = holiday.holiday_to.split(' ')[0]; // Example: '29/12/2024'
+					//console.log("holidays: ", holidays, holidays[0].holiday_from.split(' ')[0])
+					let holidayRanges
+					if (holidays != null) {
+						holidayRanges = holidays.map(holiday => {
+							// Extract and reformat the date strings (DD/MM/YYYY -> YYYY-MM-DD)
+							const fromDateStr = holiday.holiday_from.split(' ')[0]; // Example: '28/12/2024'
+							const toDateStr = holiday.holiday_to.split(' ')[0]; // Example: '29/12/2024'
 
-						// Split the date (DD/MM/YYYY)
-						const [dayFrom, monthFrom, yearFrom] = fromDateStr.split('/');
-						const [dayTo, monthTo, yearTo] = toDateStr.split('/');
+							// Split the date (DD/MM/YYYY)
+							const [dayFrom, monthFrom, yearFrom] = fromDateStr.split('/');
+							const [dayTo, monthTo, yearTo] = toDateStr.split('/');
 
-						// Reformat as YYYY-MM-DD
-						const reformattedFromDate = `${yearFrom}-${monthFrom}-${dayFrom}`;
-						const reformattedToDate = `${yearTo}-${monthTo}-${dayTo}`;
+							// Reformat as YYYY-MM-DD
+							const reformattedFromDate = `${yearFrom}-${monthFrom}-${dayFrom}`;
+							const reformattedToDate = `${yearTo}-${monthTo}-${dayTo}`;
 
-						// Create Date objects
-						const fromDate = new Date(reformattedFromDate);
-						const toDate = new Date(reformattedToDate);
+							// Create Date objects
+							const fromDate = new Date(reformattedFromDate);
+							const toDate = new Date(reformattedToDate);
 
-						// Log for debugging
-						console.log("Parsed Dates:", { reformattedFromDate, reformattedToDate, fromDate, toDate });
+							// Log for debugging
+							console.log("Parsed Dates:", { reformattedFromDate, reformattedToDate, fromDate, toDate });
 
-						return { from: fromDate, to: toDate };
-					});
-					console.log("holidayRanges: ", holidayRanges)
+							return { from: fromDate, to: toDate };
+						});
+						console.log("holidayRanges: ", holidayRanges)
+					}
 					// Convertir les urgences en plages similaires aux holidays
 					const parsedUrgences = urgence.map(u => ({
 						from: new Date(`${u.jour}T${u.heurDebut}`),
@@ -1599,9 +1602,10 @@
 						};
 					});
 
-
+					let isHoliday = (date) => false;
+					if (!holidayRanges)
 					// Check if a date is within a holiday
-					const isHoliday = (date) => holidayRanges.some(range => date >= range.from && date <= range.to);
+					{ isHoliday = (date) => holidayRanges.some(range => date >= range.from && date <= range.to); }
 
 					// Vérifier si le créneau chevauche une exclusion (holiday ou urgence)
 
@@ -1627,15 +1631,19 @@
 						const endTime = new Date(currentDate);
 						const [endHour, endMinute] = daySchedule.end.split(":").map(Number);
 						endTime.setHours(endHour, endMinute, 0, 0);
+						let pauseStart
+						let pauseEnd
+						console.log("*************************************pauses: ",pauses)
+						if (pauses.pause_start != null) {
+							 pauseStart = new Date(currentDate);
+							const [pauseStartHour, pauseStartMinute] = pauses.pause_start.split(":").map(Number);
+							pauseStart.setHours(pauseStartHour, pauseStartMinute, 0, 0);
+						
 
-						const pauseStart = new Date(currentDate);
-						const [pauseStartHour, pauseStartMinute] = pauses.pause_start.split(":").map(Number);
-						pauseStart.setHours(pauseStartHour, pauseStartMinute, 0, 0);
-
-						const pauseEnd = new Date(currentDate);
+						 pauseEnd = new Date(currentDate);
 						const [pauseEndHour, pauseEndMinute] = pauses.pause_end.split(":").map(Number);
 						pauseEnd.setHours(pauseEndHour, pauseEndMinute, 0, 0);
-
+					}
 						let slotStart = new Date(startTime);
 
 						// Generate slots for the day
@@ -1652,7 +1660,9 @@
 								slotStart >= range.from && slotEnd <= range.to
 							});
 							console.log("isUnavailable: ", isUnavailable)
-							const isDuringPause = slotStart >= pauseStart && slotStart < pauseEnd;
+							let isDuringPause = false;
+							if(pauseStart)
+							{ isDuringPause = slotStart >= pauseStart && slotStart < pauseEnd;}
 
 							if (slotEnd <= endTime && !isUnavailable && !isDuringPause && !isUrgence) {
 								slots.push({
@@ -1667,6 +1677,7 @@
 
 					return slots;
 				}
+
 
 
 				// Exemple d'utilisation
