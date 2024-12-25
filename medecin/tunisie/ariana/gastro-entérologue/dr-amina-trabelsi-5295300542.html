@@ -1311,8 +1311,11 @@
 							return response.json();
 						})
 						.then(data => {
-							console.log("availability: ", data)
-							slotsData = data;
+							const config = data
+							console.log("availabilitytélé: ", data)
+							slotsData = generateTimeSlots(config);
+							console.log(slotsData);
+							console.log("slotsData: ", JSON.stringify(slotsData))
 							initializeWeek();
 						});
 				}
