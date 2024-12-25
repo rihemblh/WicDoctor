@@ -51,7 +51,7 @@
 		<div class="container">
 			<!-- Contact Info -->
 			<div class="contact-info">
-				<p>Nous sommes disponibles sur<i class="fas fa-phone"></i> <span class="span-info">+216 26 311 777 / +33
+				<p>Nous sommes disponibles sur <span class="span-info">+216 26 311 777 / +33
 						743 13 00 13</span></p>
 			</div>
 
@@ -115,31 +115,44 @@
 			<div class="menu-mobile" id="menu-mobile">
 				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
 				<ul>
-					<li><a href="https://wic-doctor.com/">Accueil</a></li>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
 					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
 					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
-					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
-					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+					<li class="dropdown">
+						<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+						<ul class="submenu">
+							<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
+							<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
+							<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
+						</ul>
+					</li>
 					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-					<li><a href="https://wic-doctor.com/contact.html" class="active">Contact</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
 					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
 							professionnel?</a></li>
 					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-					<li><a href="#" class="btn-partenaire">Devenir Partenaire</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir
+							Partenaire</a></li>
 				</ul>
 			</div>
-
-
 			<!-- Navigation (visible uniquement sur desktop) -->
 			<nav>
 				<ul>
-					<li><a href="https://wic-doctor.com/">Accueil</a></li>
+					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
 					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
 					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
-					<li><a href="https://wic-doctor.com/tarifs.html">Nos Tarifs</a></li>
-					<li><a href="https://wic-doctor.com/pathologies.html">Soins des patients</a></li>
+					<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+					<li class="dropdown">
+						<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+						<ul class="submenu">
+							<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
+							<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
+							<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
+						</ul>
+					</li>
 					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-					<li><a href="https://wic-doctor.com/contact.html" class="active">Contact</a></li>
+					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -149,6 +162,7 @@
 			</div>
 		</div>
 	</div>
+
 
 
 
@@ -741,9 +755,9 @@
 						document.getElementById("villes").innerHTML = document.getElementById("villes").innerHTML +
 							`<label class="custom-control form-radio mb-3">
 										<input class="custom-control-input" name="radioGroup" type="radio"
-											value="${item}" onchange="handleCheckboxChange(this)">
+											value="${JSON.parse(item).fr}" onchange="handleCheckboxChange(this)">
 										<span class="custom-control-label">
-											<span class="text-dark">${item}<!--<span
+											<span class="text-dark">${JSON.parse(item).fr}<!--<span
 													class="label label-light float-end">14</span>--></span>
 										</span>
 									</label>`
