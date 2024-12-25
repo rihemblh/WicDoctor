@@ -1016,8 +1016,8 @@
 			doc = decryptData(doctorEncrypted)
 
 			sessionStorage.setItem("rdv", typeRDV)
-			console.log("url: ", `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`)
-			window.location.href = `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`; // Rediriger vers la page 2
+			console.log("url: ", `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.gouvernorat).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`)
+			window.location.href = `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.gouvernorat).fr.replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doc.specialities, doc.specialites).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doc.name).replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`; // Rediriger vers la page 2
 		}
 
 		// Chargement initial des médecins
