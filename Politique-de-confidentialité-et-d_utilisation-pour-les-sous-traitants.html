@@ -97,147 +97,139 @@
 		</div>
 	</div>
 
-	<!-- Main Header -->
-	<div class="header-main">
-		<div class="container">
-			<!-- Hamburger Menu -->
-			<div class="hamburger-menu" id="hamburger-menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<!-- Logo -->
-			<div class="logo">
-				<a href="https://wic-doctor.com/">
-					<img class="logo-mb" src="assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
-				</a>
-			</div>
-
-
-
-			<!-- Menu mobile -->
-			<div class="menu-mobile" id="menu-mobile">
-				<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
-				<ul>
-					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
-					<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
-					<li class="dropdown">
-						<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
-						<ul class="submenu">
-							<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
-							<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
-							<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
-						</ul>
-					</li>
-					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
-							professionnel?</a></li>
-					<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-					<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir Partenaire</a></li>
-				</ul>
-			</div>
-
-
-			<!-- Navigation (visible uniquement sur desktop) -->
-			<nav>
-				<ul>
-					<li><a href="https://wic-doctor.com/" >Accueil</a></li>
-					<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-					<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
-					<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
-					<li class="dropdown">
-						<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
-						<ul class="submenu">
-							<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
-							<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
-							<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
-						</ul>
-					</li>
-					<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-					<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-				</ul>
-			</nav>
-
-			<!-- Extra Button -->
-			<div class="buttons">
-				<a href="#" class="btn-danger">Devenir Partenaire</a>
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<!-- JavaScript -->
-	<script>
-		document.addEventListener("DOMContentLoaded", () => {
-			const hamburgerMenu = document.getElementById("hamburger-menu");
-			const menuMobile = document.getElementById("menu-mobile");
-			const closeMenuButton = document.getElementById("close-menu");
-
-			// Ouvrir le menu mobile en cliquant sur l'icône hamburger
-			hamburgerMenu.addEventListener("click", () => {
-				menuMobile.classList.add("active"); // Affiche le menu
-			});
-
-			// Fermer le menu mobile en cliquant sur le bouton "X"
-			closeMenuButton.addEventListener("click", () => {
-				menuMobile.classList.remove("active"); // Cache le menu
-			});
-		});
-		// Sélectionner tous les liens du menu
-		const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
-
-		// Ajouter un écouteur d'événements pour chaque lien
-		menuLinks.forEach(link => {
-			link.addEventListener('click', function (event) {
-				// Supprimer la classe active de tous les liens
-				menuLinks.forEach(link => link.classList.remove('active'));
-
-				// Ajouter la classe active au lien cliqué
-				event.target.classList.add('active');
-			});
-		});
-		// Sélectionner tous les liens du menu desktop
-		const desktopLinks = document.querySelectorAll('nav ul li a');
-
-		// Ajouter un écouteur d'événements pour chaque lien
-		desktopLinks.forEach(link => {
-			link.addEventListener('click', function (event) {
-				// Supprimer la classe active de tous les liens
-				desktopLinks.forEach(link => link.classList.remove('active'));
-
-				// Ajouter la classe active au lien cliqué
-				event.target.classList.add('active');
-			});
-		});
-	</script>
-
-
+<!-- Main Header -->
+<section>
+	<div class="banner-2 cover-image sptb-2 sptb-tab banner-section position-relative">
+		<div class="header-main">
+			<div class="container">
+				<!-- Hamburger Menu -->
+				<div class="hamburger-menu" id="hamburger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<!-- Logo -->
+				<div class="logo">
+					<a href="https://wic-doctor.com/">
+						<img class="logo-mb" src="assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+					</a>
+				</div>
 	
-		<style>
-		
-
-
-
-		</style>
-        <!--Breadcrumb-->
-		<div>
-			<div class="bannerimg cover-image bg-politique" >
-				<div class="header-text mb-0">
-					<div class="container">
-						<div class="text-center text-white ">
-							<h1 class="">Politique de confidentialité et d'utilisation pour les sous-traitants
-							</h1>
-							
-						</div>
-					</div>
+	
+	
+				<!-- Menu mobile -->
+				<div class="menu-mobile" id="menu-mobile">
+					<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+					<ul>
+						<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
+						<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+						<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+						<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+						<li class="dropdown">
+							<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+							<ul class="submenu">
+								<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
+								<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
+								<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
+							</ul>
+						</li>
+						<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+						<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+						<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+								professionnel?</a></li>
+						<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+						<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir
+								Partenaire</a></li>
+					</ul>
+				</div>
+				<!-- Navigation (visible uniquement sur desktop) -->
+				<nav>
+					<ul>
+						<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
+						<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+						<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
+						<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+						<li class="dropdown">
+							<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+							<ul class="submenu">
+								<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
+								<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
+								<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
+							</ul>
+						</li>
+						<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+						<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+					</ul>
+				</nav>
+	
+				<!-- Extra Button -->
+				<div class="buttons">
+					<a href="#" class="btn-danger">Devenir Partenaire</a>
 				</div>
 			</div>
 		</div>
+	
+		
+			<div class="header-text mb-0">
+				<div class="container">
+					<div class="text-center text-white ">
+						<h1 style="padding: 0rem 0rem 6rem 0rem;" class="">Politique de confidentialité et d'utilisation pour les sous-traitants
+
+						</h1>
+
+					</div>
+				</div>
+			</div>
+		
+	
+	
+		<!-- JavaScript -->
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const hamburgerMenu = document.getElementById("hamburger-menu");
+				const menuMobile = document.getElementById("menu-mobile");
+				const closeMenuButton = document.getElementById("close-menu");
+	
+				// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+				hamburgerMenu.addEventListener("click", () => {
+					menuMobile.classList.add("active"); // Affiche le menu
+				});
+	
+				// Fermer le menu mobile en cliquant sur le bouton "X"
+				closeMenuButton.addEventListener("click", () => {
+					menuMobile.classList.remove("active"); // Cache le menu
+				});
+			});
+			// Sélectionner tous les liens du menu
+			const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+	
+			// Ajouter un écouteur d'événements pour chaque lien
+			menuLinks.forEach(link => {
+				link.addEventListener('click', function (event) {
+					// Supprimer la classe active de tous les liens
+					menuLinks.forEach(link => link.classList.remove('active'));
+	
+					// Ajouter la classe active au lien cliqué
+					event.target.classList.add('active');
+				});
+			});
+			// Sélectionner tous les liens du menu desktop
+			const desktopLinks = document.querySelectorAll('nav ul li a');
+	
+			// Ajouter un écouteur d'événements pour chaque lien
+			desktopLinks.forEach(link => {
+				link.addEventListener('click', function (event) {
+					// Supprimer la classe active de tous les liens
+					desktopLinks.forEach(link => link.classList.remove('active'));
+	
+					// Ajouter la classe active au lien cliqué
+					event.target.classList.add('active');
+				});
+			});
+		</script>
+		
+	</div>
+</section>
 		<!--/Breadcrumb-->
 		<div class="content container">
 

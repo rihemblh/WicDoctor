@@ -3,42 +3,50 @@
 	$('#container').showmore({
 		closedHeight: 130,
 		buttonTextMore: 'Voir plus',
-		buttonTextLess: 'Close',
+		buttonTextLess: 'Fermer',
 		buttonCssClass: 'showmore-button',
 		animationSpeed: 0.5
 	});
 	$( '#villes').showmore({
 		closedHeight: 130,
 		buttonTextMore: 'Voir plus',
-		buttonTextLess: 'Close',
+		buttonTextLess: 'Fermer',
 		buttonCssClass: 'showmore-button',
 		animationSpeed: 0.5
 	});
+	$( '#time-slots-container').showmore({
+		closedHeight: 130,
+		buttonTextMore: 'Voir plus',
+		buttonTextLess: 'Fermer',
+		buttonCssClass: 'showmore-button',
+		animationSpeed: 0.5
+	});
+	
 	$('.list-container').showmore({
 		closedHeight: 380,
 		buttonTextMore: 'Voir plus',
-		buttonTextLess: 'Close',
+		buttonTextLess: 'Fermer',
 		buttonCssClass: 'showmore-button',
 		animationSpeed: 0.5
 	});
 	$('#container1').showmore({
 		closedHeight: 350,
 		buttonTextMore: 'Voir plus',
-		buttonTextLess: 'Close',
+		buttonTextLess: 'Fermer',
 		buttonCssClass: 'showmore-button',
 		animationSpeed: 0.5
 	});
 	$('#container2').showmore({
 		closedHeight: 280,
 		buttonTextMore: 'Voir plus',
-		buttonTextLess: 'Close',
+		buttonTextLess: 'Fermer',
 		buttonCssClass: 'showmore-button',
 		animationSpeed: 0.5
 	});
 	$('.hide-details').showmore({
 		closedHeight: 115,
 		buttonTextMore: 'Voir plus',
-		buttonTextLess: 'Close',
+		buttonTextLess: 'Fermer',
 		buttonCssClass: 'showmore-button1',
 		animationSpeed: 0.5
 	});
@@ -46,7 +54,7 @@
 		$('#container1').showmore({
 			closedHeight: 450,
 			buttonTextMore: 'Voir plus',
-			buttonTextLess: 'Close',
+			buttonTextLess: 'Fermer',
 			buttonCssClass: 'showmore-button',
 			animationSpeed: 0.5
 		});

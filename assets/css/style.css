@@ -62,8 +62,160 @@ html {
 }
 
 /* Header Styling */
+/* new style */
+
+/* Background with gradient */
+.banner-section {
+    background: linear-gradient(30deg, rgb(145 171 165), rgba(24, 22, 122)) !important;
+color: white !important;
+padding: 0px 0px 60px 0px !important;
+position: relative !important;
+}
+
+/* Header text */
+.header-text h1 {
+    font-size: 3rem !important;
+    font-weight: bold !important;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) !important;
+    margin-bottom: 15px !important;
+}
+
+.subtext {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Button styles */
+.search-btn {
+    background-color: #ff5722;
+    color: white;
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Input fields */
+
+
+/* Floating image and shapes */
+.floating-elements {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    z-index: -1;
+}
+/* Background shapes */
+.background-shape {
+    position: absolute;
+    border-radius:40%;
+    z-index: -1; /* Derrière l'image */
+    opacity: 0.9;
+}
+
+/* Forme 1 */
+.shape1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(153 227 255); /* Jaune */
+    top: -20px;
+    left: -40px;
+}
+
+/* Forme 2 */
+.shape2 {
+    width: 250px;
+    height: 250px;
+    background-color: #ffcd9a; /* Bleu clair */
+    top: 40px;
+    right: -50px;
+}
+
+/* Forme 3 */
+.shape3 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(36 156 169 / 80%); /* Orange */
+    bottom: -30px;
+    left: 30px;
+}
+
+/* Doctor image */
+.doctor-image {
+    width: 250px;
+    border-radius: 10px;
+    animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    .doctor-image {
+        display: none;
+    }
+
+    .background-shape {
+        display: none;
+    }
+}
+.doctor-image {
+    width: 250px;
+    animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Tab menu styles */
+.nav-tabs .nav-link {
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+/* HIDE IMAGE ON MOBILE */
+@media (max-width: 768px) {
+    .doctor-image {
+        display: none;
+    }
+}
+
+/* new style*/
+
+
 .header-top {
-    background-color: #24a98a;
+    background-color: white;
     color: white;
     padding: 10px 0;
     font-size: 14px;
@@ -135,7 +287,7 @@ html {
 .header-top .contact-info p {
     margin: 0;
     margin: 0;
-    color: white;
+    color: #18167a;
     font-weight: bold;
     font-size: 13px;
 }
@@ -161,8 +313,7 @@ html {
 
 /* Main Header */
 .header-main {
-    background-color: #ffffff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
 
 .header-main .container {
@@ -228,7 +379,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: gray;
+    color: white;
     font-size: 16px;
     font-family: 'Roboto';
 }
@@ -395,8 +546,8 @@ nav ul li a {
 
 /* Style pour les liens actifs dans le menu desktop */
 nav ul li a.active {
-    color: #18167a;
-    border-bottom: 2px solid #18167a;
+    color:white;
+    border-bottom: 2px solid white;
     font-weight: bold;
     font-family: 'Roboto';
     font-size: 16px;
@@ -404,8 +555,8 @@ nav ul li a.active {
 
 /* Style pour les liens au survol dans le menu desktop */
 nav ul li a:hover {
-    color: #18167a;
-    border-bottom: 2px solid #18167a;
+    color: white;
+    border-bottom: 2px solid white;
     font-weight: bold;
     font-family: 'Roboto';
     font-size: 16px;
@@ -16126,7 +16277,7 @@ a.typewrite {
     font-weight: bold !important;
     font-size: 50px !important;
     line-height: 122% !important;
-    color: #18167A !important;
+    color: white !important;
 }
 
 .user-pattern {
@@ -28324,6 +28475,7 @@ video {
     padding: 0px;
     margin: 0px 0px 0 0;
     border-radius: 2px;
+    border: 1px solid #d1d1d1;
 }
 
 .item-search-tabs.travel-content .select2-container {
