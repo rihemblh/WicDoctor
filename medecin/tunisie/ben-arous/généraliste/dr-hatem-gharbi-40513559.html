@@ -1311,11 +1311,13 @@
 							return response.json();
 						})
 						.then(data => {
+							console.log("availabilitytélé: ", JSON.stringify(data))
 							const config = data
-							console.log("availabilitytélé: ", data)
+
+							// Generate slots
 							slotsData = generateTimeSlots(config);
 							console.log(slotsData);
-							console.log("slotsData: ", JSON.stringify(slotsData))
+							console.log("slotsDatatélé: ", JSON.stringify(slotsData))
 							initializeWeek();
 						});
 				}

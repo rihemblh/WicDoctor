@@ -155,7 +155,7 @@ async function fetchCarouselData2() {
 								
 								<div class="mb-0 mt-0">
 									<ul class="item-card-features mb-0">
-										<li class="mb-0"><span class="text-muted"><i class="fa fa-map-marker me-1"></i> ${JSON.parse(item.ville).fr}</span></li>
+										<li class="mb-0" style="width: 100% !important"><span class="text-muted"><i class="fa fa-map-marker me-1"></i>${JSON.parse(item.gouvernorat).fr} , ${JSON.parse(item.ville).fr}</span></li>
 										<!-- <li><span class="text-muted "><i class="fa fa-briefcase me-1"></i>${item.title} expérience</span></li> -->
 									</ul>
 								</div>
@@ -221,7 +221,7 @@ function GetDetailsDoctor(doctorecrypted,typeRDV,aleatoire){
 	doc=decryptData(doctorecrypted)
 	sessionStorage.setItem("status", "add")
 	sessionStorage.setItem("rdv", typeRDV)
-	console.log("url: ",`https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${JSON.parse(doc.specialities[0].name).fr.replace(/\s+/g, '-').toLowerCase()}/dr-${JSON.parse(doc.name).fr.replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`)
-	window.location.href = `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.ville).fr.replace(/\s+/g, '-').toLowerCase()}/${JSON.parse(doc.specialities[0].name).fr.replace(/\s+/g, '-').toLowerCase()}/dr-${JSON.parse(doc.name).fr.replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`; // Rediriger vers la page 2
+	console.log("url: ",`https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.gouvernorat).fr.replace(/\s+/g, '-').toLowerCase()}/${JSON.parse(doc.specialities[0].name).fr.replace(/\s+/g, '-').toLowerCase()}/dr-${JSON.parse(doc.name).fr.replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`)
+	window.location.href = `https://wic-doctor.com/medecin/tunisie/${JSON.parse(doc.gouvernorat).fr.replace(/\s+/g, '-').toLowerCase()}/${JSON.parse(doc.specialities[0].name).fr.replace(/\s+/g, '-').toLowerCase()}/dr-${JSON.parse(doc.name).fr.replace(/\s+/g, '-').toLowerCase()}-${doc.aleatoire}.html`; // Rediriger vers la page 2
    // window.location.href = 'prise-de-rendez-vous.html'; // Rediriger vers la page 2
 }
