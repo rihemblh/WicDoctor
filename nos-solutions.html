@@ -110,16 +110,17 @@
 							<img class="logo-mb" src="assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
 						</a>
 					</div>
-		
-		
-		
+
+
+
 					<!-- Menu mobile -->
 					<div class="menu-mobile" id="menu-mobile">
 						<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
 						<ul>
-							<li><a href="https://wic-doctor.com/"  >Accueil</a></li>
+							<li><a href="https://wic-doctor.com/">Accueil</a></li>
 							<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-							<li><a href="https://wic-doctor.com/nos-solutions.html"class="active">Nos Solutions</a></li>
+							<li><a href="https://wic-doctor.com/nos-solutions.html" class="active">Nos Solutions</a>
+							</li>
 							<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
 							<li class="dropdown">
 								<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
@@ -130,20 +131,23 @@
 								</ul>
 							</li>
 							<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
-							<li><a href="https://wic-doctor.com/contact.html" >Contact</a></li>
-							<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+							<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes
+									un
 									professionnel?</a></li>
 							<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-							<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir
+							<li><a href="https://wic-doctor.com/inscription-professionnel/"
+									class="btn-partenaire">Devenir
 									Partenaire</a></li>
 						</ul>
 					</div>
 					<!-- Navigation (visible uniquement sur desktop) -->
 					<nav>
 						<ul>
-							<li><a href="https://wic-doctor.com/" >Accueil</a></li>
+							<li><a href="https://wic-doctor.com/">Accueil</a></li>
 							<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-							<li><a href="https://wic-doctor.com/nos-solutions.html"class="active">Nos Solutions</a></li>
+							<li><a href="https://wic-doctor.com/nos-solutions.html" class="active">Nos Solutions</a>
+							</li>
 							<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
 							<li class="dropdown">
 								<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
@@ -157,39 +161,39 @@
 							<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
 						</ul>
 					</nav>
-		
+
 					<!-- Extra Button -->
 					<div class="buttons">
 						<a href="#" class="btn-danger">Devenir Partenaire</a>
 					</div>
 				</div>
 			</div>
-		
-			
-				<div class="header-text mb-0">
-					<div class="container">
-						<div class="text-center text-white ">
-							<h1 style="padding: 0rem 0rem 6rem 0rem;" class="">Nos solutions
-							</h1>
-	
-						</div>
+
+
+			<div class="header-text mb-0">
+				<div class="container">
+					<div class="text-center text-white ">
+						<h1 style="padding: 0rem 0rem 6rem 0rem;" class="">Nos solutions
+						</h1>
+
 					</div>
 				</div>
-			
-		
-		
+			</div>
+
+
+
 			<!-- JavaScript -->
 			<script>
 				document.addEventListener("DOMContentLoaded", () => {
 					const hamburgerMenu = document.getElementById("hamburger-menu");
 					const menuMobile = document.getElementById("menu-mobile");
 					const closeMenuButton = document.getElementById("close-menu");
-		
+
 					// Ouvrir le menu mobile en cliquant sur l'icône hamburger
 					hamburgerMenu.addEventListener("click", () => {
 						menuMobile.classList.add("active"); // Affiche le menu
 					});
-		
+
 					// Fermer le menu mobile en cliquant sur le bouton "X"
 					closeMenuButton.addEventListener("click", () => {
 						menuMobile.classList.remove("active"); // Cache le menu
@@ -197,32 +201,32 @@
 				});
 				// Sélectionner tous les liens du menu
 				const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
-		
+
 				// Ajouter un écouteur d'événements pour chaque lien
 				menuLinks.forEach(link => {
 					link.addEventListener('click', function (event) {
 						// Supprimer la classe active de tous les liens
 						menuLinks.forEach(link => link.classList.remove('active'));
-		
+
 						// Ajouter la classe active au lien cliqué
 						event.target.classList.add('active');
 					});
 				});
 				// Sélectionner tous les liens du menu desktop
 				const desktopLinks = document.querySelectorAll('nav ul li a');
-		
+
 				// Ajouter un écouteur d'événements pour chaque lien
 				desktopLinks.forEach(link => {
 					link.addEventListener('click', function (event) {
 						// Supprimer la classe active de tous les liens
 						desktopLinks.forEach(link => link.classList.remove('active'));
-		
+
 						// Ajouter la classe active au lien cliqué
 						event.target.classList.add('active');
 					});
 				});
 			</script>
-			
+
 		</div>
 	</section>
 	<div class="header-bar">
@@ -481,11 +485,7 @@
 					<p>La plateforme aide à rationaliser l’utilisation des équipements et des ressources humaines, pour
 						une meilleure gestion des flux et une réduction des coûts opérationnels.</p>
 				</div>
-				<div class="card">
-					<h3>Sécurité des données et conformité aux normes internationales</h3>
-					<p>Avec un hébergement cloud sécurisé sur Microsoft Azure et un respect strict des normes RGPD, WIC
-						Doctor garantit la protection et la confidentialité des données médicales sensibles.</p>
-				</div>
+				
 				<div class="card">
 					<h3>Accessibilité multilingue et multisectorielle</h3>
 					<p>Déployée dans plusieurs pays, WIC Doctor s’adapte aux spécificités locales tout en offrant une
@@ -497,10 +497,25 @@
 						laboratoires.</p>
 				</div>
 				<div class="card">
+					<h3>Sécurité des données et conformité aux normes internationales</h3>
+					<p>Chez WIC Doctor, nous faisons de la sécurité des données une priorité absolue en garantissant une
+						conformité totale aux normes internationales les plus exigeantes. Notre plateforme respecte le
+						RGPD pour la protection des données personnelles en Europe, la norme HIPAA pour la sécurité des
+						données de santé aux États-Unis, la Loi Tunisienne N°2004-63, ainsi que les réglementations
+						telles que le CCPA en Californie, la LPRPDE au Canada, et celles spécifiques aux régions du
+						Moyen-Orient et de l’Afrique (MEA). Les données sont hébergées sur Microsoft Azure HDS, une
+						infrastructure certifiée pour le secteur médical, offrant fiabilité et disponibilité optimales.
+						De plus, toutes les communications sont protégées par un cryptage SSL de bout en bout, assurant
+						une sécurité avancée. Grâce à ces mesures, WIC Doctor garantit la confiance des utilisateurs,
+						une conformité mondiale et une infrastructure robuste qui répond aux besoins des professionnels
+						de santé et de leurs patients.</p>
+				</div>
+				<div class="card">
 					<h3>Informations médicales </h3>
 					<p>Accès à des conseils santé et à des ressources fiables, élaborés par nos spécialistes, pour aider
 						les utilisateurs à mieux gérer leur bien-être au quotidien.</p>
 				</div>
+				
 
 			</div>
 		</div>
@@ -510,10 +525,11 @@
 	<section class="how-it-works">
 		<div class="container">
 
-		<h3>Intégration des technologies de pointe
-		</h3>
-		<p class="comment-ca-marche">En incorporant des technologies avancées, WIC Doctor redéfinit les standards des
-			communications médicales et offre une expérience utilisateur inégalée grâce à :</p>
+			<h3>Intégration des technologies de pointe
+			</h3>
+			<p class="comment-ca-marche">En incorporant des technologies avancées, WIC Doctor redéfinit les standards
+				des
+				communications médicales et offre une expérience utilisateur inégalée grâce à :</p>
 		</div>
 	</section>
 	<!-- Section pour les patients -->
@@ -542,17 +558,27 @@
 					<p>Les utilisateurs peuvent accéder à des services médicaux à tout moment, garantissant une
 						disponibilité continue et réactive, particulièrement utile pour les urgences.</p>
 				</div>
-				<div class="card">
-					<!--<div class="icon"></div>-->
-					<h3>Sécurité et conformité des données</h3>
-					<p>Avec un hébergement cloud sécurisé sur Microsoft Azure et un respect strict des normes RGPD, nous
-						garantissons la confidentialité et la protection des informations médicales.</p>
-				</div>
+				
 				<div class="card">
 					<!--<div class="icon"></div>-->
 					<h3>Système intuitif et ergonomique</h3>
 					<p>Une interface pensée pour être simple d’utilisation, facilitant la prise de rendez-vous, la
 						Télémédecine, et l’accès aux ressources médicales essentielles.</p>
+				</div>
+				<div class="card">
+					<!--<div class="icon"></div>-->
+					<h3>Sécurité et conformité des données</h3>
+					<p>Chez WIC Doctor, nous faisons de la sécurité des données une priorité absolue en garantissant une
+						conformité totale aux normes internationales les plus exigeantes. Notre plateforme respecte le
+						RGPD pour la protection des données personnelles en Europe, la norme HIPAA pour la sécurité des
+						données de santé aux États-Unis, la Loi Tunisienne N°2004-63, ainsi que les réglementations
+						telles que le CCPA en Californie, la LPRPDE au Canada, et celles spécifiques aux régions du
+						Moyen-Orient et de l’Afrique (MEA). Les données sont hébergées sur Microsoft Azure HDS, une
+						infrastructure certifiée pour le secteur médical, offrant fiabilité et disponibilité optimales.
+						De plus, toutes les communications sont protégées par un cryptage SSL de bout en bout, assurant
+						une sécurité avancée. Grâce à ces mesures, WIC Doctor garantit la confiance des utilisateurs,
+						une conformité mondiale et une infrastructure robuste qui répond aux besoins des professionnels
+						de santé et de leurs patients.</p>
 				</div>
 			</div>
 		</div>
