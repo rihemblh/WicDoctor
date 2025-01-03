@@ -106,12 +106,13 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="https://wic-doctor.com/">
-							<img class="logo-mb" src="./../../../../assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+							<img class="logo-mb" src="./../../../../assets/images/brand/logo-dr-wic.png"
+								alt="WIC Doctor Logo">
 						</a>
 					</div>
-		
-		
-		
+
+
+
 					<!-- Menu mobile -->
 					<div class="menu-mobile" id="menu-mobile">
 						<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
@@ -130,10 +131,12 @@
 							</li>
 							<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
 							<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
-							<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes un
+							<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes
+									un
 									professionnel?</a></li>
 							<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
-							<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-partenaire">Devenir
+							<li><a href="https://wic-doctor.com/inscription-professionnel/"
+									class="btn-partenaire">Devenir
 									Partenaire</a></li>
 						</ul>
 					</div>
@@ -156,29 +159,29 @@
 							<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
 						</ul>
 					</nav>
-		
+
 					<!-- Extra Button -->
 					<div class="buttons">
 						<a href="#" class="btn-danger">Devenir Partenaire</a>
 					</div>
 				</div>
 			</div>
-		
-		
-		
-		
+
+
+
+
 			<!-- JavaScript -->
 			<script>
 				document.addEventListener("DOMContentLoaded", () => {
 					const hamburgerMenu = document.getElementById("hamburger-menu");
 					const menuMobile = document.getElementById("menu-mobile");
 					const closeMenuButton = document.getElementById("close-menu");
-		
+
 					// Ouvrir le menu mobile en cliquant sur l'icône hamburger
 					hamburgerMenu.addEventListener("click", () => {
 						menuMobile.classList.add("active"); // Affiche le menu
 					});
-		
+
 					// Fermer le menu mobile en cliquant sur le bouton "X"
 					closeMenuButton.addEventListener("click", () => {
 						menuMobile.classList.remove("active"); // Cache le menu
@@ -186,26 +189,26 @@
 				});
 				// Sélectionner tous les liens du menu
 				const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
-		
+
 				// Ajouter un écouteur d'événements pour chaque lien
 				menuLinks.forEach(link => {
 					link.addEventListener('click', function (event) {
 						// Supprimer la classe active de tous les liens
 						menuLinks.forEach(link => link.classList.remove('active'));
-		
+
 						// Ajouter la classe active au lien cliqué
 						event.target.classList.add('active');
 					});
 				});
 				// Sélectionner tous les liens du menu desktop
 				const desktopLinks = document.querySelectorAll('nav ul li a');
-		
+
 				// Ajouter un écouteur d'événements pour chaque lien
 				desktopLinks.forEach(link => {
 					link.addEventListener('click', function (event) {
 						// Supprimer la classe active de tous les liens
 						desktopLinks.forEach(link => link.classList.remove('active'));
-		
+
 						// Ajouter la classe active au lien cliqué
 						event.target.classList.add('active');
 					});
@@ -233,7 +236,8 @@
 											</a>
 										</li>
 										<li>
-											<a data-bs-toggle="tab" href="#tab2"><i class="fa fa-hospital-o"></i> Cliniques</a>
+											<a data-bs-toggle="tab" href="#tab2"><i class="fa fa-hospital-o"></i>
+												Cliniques</a>
 										</li>
 									</ul>
 								</div>
@@ -274,13 +278,13 @@
 											</div>
 										</div>
 									</div>
-	
+
 									<style>
 										.row {
 											overflow: visible !important;
 											/* Assurez-vous que les enfants ne soient pas coupés */
 										}
-	
+
 										#suggestions {
 											position: absolute;
 											top: 100%;
@@ -295,23 +299,23 @@
 											overflow-y: auto;
 											/* Add scroll if content exceeds max height */
 										}
-	
+
 										#suggestions li:hover {
 											background-color: #f5f5f5;
 										}
 									</style>
-	
+
 									<script>
 										function getDoctorSpec(name1) {
 											console.log("*************************************************: ", name1)
 											console.log("!name1: ", !name1)
-	
+
 											// Vérifiez si `name` est une chaîne JSON
-											console.log("JSON.stringify(name1): ",JSON.stringify(name1))
+											console.log("JSON.stringify(name1): ", JSON.stringify(name1))
 											if (JSON.stringify(name1).trim().startsWith('"[') && JSON.stringify(name1).trim().endsWith(']"')) {
 												console.log("naaaaaaaaaaaaaaaaaaaaaaaaaaame", name1)
 												try {
-	
+
 													console.log("JSON.parse(data[0].name).fr: ", JSON.parse(JSON.parse(name1)[0].name).fr)
 													return JSON.parse(JSON.parse(name1)[0].name).fr; // Vérifiez si la clé 'fr' existe
 												} catch (error) {
@@ -336,17 +340,17 @@
 											return name; // Retourne false si ce n'est pas un JSON valide
 										}
 										document.getElementById('searchInput').addEventListener('input', function () {
-	
+
 											const query = this.value.trim();
 											const suggestionsContainer = document.getElementById('suggestions');
-	
+
 											// Liste provisoire de médecins
 											let provisionalDoctors
-	
-	
+
+
 											if (query.length >= 3) {
-	
-	
+
+
 												//console.log("apiUrl: ", apiUrl)
 												try {
 													fetch(`https://wic-doctor.com:3004/search-doctors?query=${query.toLowerCase()}`)
@@ -361,12 +365,12 @@
 															provisionalDoctors = data.data;
 															// Effacez les suggestions précédentes
 															suggestionsContainer.innerHTML = '';
-	
+
 															// Filtrez les médecins en fonction du texte saisi
 															const filteredDoctors = provisionalDoctors.filter(doctor =>
 																doctor.name.toLowerCase().includes(query.toLowerCase())
 															);
-	
+
 															// Ajoutez les suggestions correspondantes
 															if (filteredDoctors.length === 0) {
 																const li = document.createElement('li');
@@ -385,13 +389,13 @@
 																		console.log("doctor.name.replace(/\s+/g, '-').toLowerCase(): ", getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase())
 																		console.log("", `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`)
 																		window.location.href = `https://wic-doctor.com/medecin/tunisie/${getDoctorName(doctor.gouvernorat).replace(/\s+/g, '-').toLowerCase()}/${getDoctorSpec(doctor.specialities).replace(/\s+/g, '-').toLowerCase()}/dr-${getDoctorName(doctor.name).replace(/\s+/g, '-').toLowerCase()}-${doctor.id_aleatoire}.html`;
-																		document.getElementById('searchInput').value =  getDoctorName(doctor.name);
+																		document.getElementById('searchInput').value = getDoctorName(doctor.name);
 																		suggestionsContainer.style.display = 'none';
 																	};
 																	suggestionsContainer.appendChild(li);
 																});
 															}
-	
+
 															// Affichez le menu des suggestions
 															suggestionsContainer.style.display = filteredDoctors.length > 0 ? 'block' : 'none';
 														});
@@ -401,21 +405,21 @@
 													li.style.padding = "10px";
 													suggestionsContainer.appendChild(li);
 												}
-	
-	
-	
-	
+
+
+
+
 											} else {
 												// Masquez le menu si le texte est trop court
 												suggestionsContainer.style.display = 'none';
 											}
 										});
-	
+
 										// Cacher les suggestions lorsqu'on clique en dehors
 										document.addEventListener('click', function (event) {
 											const input = document.getElementById('searchInput');
 											const suggestions = document.getElementById('suggestions');
-	
+
 											if (!input.contains(event.target) && !suggestions.contains(event.target)) {
 												suggestions.style.display = 'none';
 											}
@@ -454,31 +458,32 @@
 							</div>
 						</div>
 					</div>
-	
+
 					<!-- Image and floating shapes -->
 					<div class="floating-elements">
 						<!-- Les formes de fond -->
 						<div class="background-shape shape1"></div>
 						<div class="background-shape shape2"></div>
 						<div class="background-shape shape3"></div>
-					
+
 						<!-- L'image du médecin -->
-						<img src="./../../../../assets/images/media/doctors/DOC1.png" alt="wic doctor télémedecine" class="doctor-image" />
+						<img src="./../../../../assets/images/media/doctors/DOC1.png" alt="wic doctor télémedecine"
+							class="doctor-image" />
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<style>
 		/* Background with gradient */
 		.banner-section {
 			background: linear-gradient(30deg, rgb(145 171 165), rgba(24, 22, 122));
-		color: white;
-		padding: 0px 0px 60px 0px;
-		position: relative;
+			color: white;
+			padding: 0px 0px 60px 0px;
+			position: relative;
 		}
-	
+
 		/* Header text */
 		.header-text h1 {
 			font-size: 3rem;
@@ -486,13 +491,13 @@
 			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 			margin-bottom: 15px;
 		}
-	
+
 		.subtext {
 			font-size: 1.2rem;
 			font-weight: 300;
 			opacity: 0.9;
 		}
-	
+
 		/* Button styles */
 		.search-btn {
 			background-color: #ff5722;
@@ -500,15 +505,15 @@
 			border-radius: 25px;
 			transition: transform 0.3s, background-color 0.3s;
 		}
-	
+
 		.search-btn:hover {
 			background-color: #e64a19;
 			transform: scale(1.05);
 		}
-	
+
 		/* Input fields */
-	  
-	
+
+
 		/* Floating image and shapes */
 		.floating-elements {
 			position: absolute;
@@ -520,81 +525,93 @@
 			height: 300px;
 			z-index: -1;
 		}
-	 /* Background shapes */
-	 .background-shape {
+
+		/* Background shapes */
+		.background-shape {
 			position: absolute;
-			border-radius:40%;
-			z-index: -1; /* Derrière l'image */
+			border-radius: 40%;
+			z-index: -1;
+			/* Derrière l'image */
 			opacity: 0.9;
 		}
-	
+
 		/* Forme 1 */
 		.shape1 {
 			width: 200px;
 			height: 200px;
-			background-color: rgb(153 227 255); /* Jaune */
+			background-color: rgb(153 227 255);
+			/* Jaune */
 			top: -20px;
 			left: -40px;
 		}
-	
+
 		/* Forme 2 */
 		.shape2 {
 			width: 250px;
 			height: 250px;
-			background-color: #ffcd9a; /* Bleu clair */
+			background-color: #ffcd9a;
+			/* Bleu clair */
 			top: 40px;
 			right: -50px;
 		}
-	
+
 		/* Forme 3 */
 		.shape3 {
 			width: 150px;
 			height: 150px;
-			background-color: rgb(36 156 169 / 80%); /* Orange */
+			background-color: rgb(36 156 169 / 80%);
+			/* Orange */
 			bottom: -30px;
 			left: 30px;
 		}
-	
+
 		/* Doctor image */
 		.doctor-image {
 			width: 250px;
 			border-radius: 10px;
 			animation: float 6s infinite ease-in-out;
 		}
-	
+
 		@keyframes float {
-			0%, 100% {
+
+			0%,
+			100% {
 				transform: translateY(0);
 			}
+
 			50% {
 				transform: translateY(-20px);
 			}
 		}
-	
+
 		/* Media query for mobile */
 		@media (max-width: 768px) {
 			.doctor-image {
 				display: none;
 			}
-	
+
 			.background-shape {
 				display: none;
 			}
 		}
+
 		.doctor-image {
 			width: 250px;
 			animation: float 6s infinite ease-in-out;
 		}
-	
+
 		@keyframes float {
-			0%, 100% {
+
+			0%,
+			100% {
 				transform: translateY(0);
 			}
+
 			50% {
 				transform: translateY(-10px);
 			}
 		}
-	
+
 		/* Tab menu styles */
 		.nav-tabs .nav-link {
 			color: white;
@@ -604,13 +621,13 @@
 			margin-right: 10px;
 			transition: color 0.3s;
 		}
-	
+
 		.nav-tabs .nav-link:hover,
 		.nav-tabs .nav-link.active {
 			color: #ff9800;
 			font-weight: bold;
 		}
-	
+
 		/* HIDE IMAGE ON MOBILE */
 		@media (max-width: 768px) {
 			.doctor-image {
@@ -711,8 +728,15 @@
 									<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
 								</li>
 								<li>
+									<a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/intervention.html">Interventions</a>
+								</li>
+								<li>
 									<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
 								</li>
+								
 								<!-- <li>
 									<a href="javascript:;">Forum Médical</a>
 								</li> -->
@@ -1002,133 +1026,133 @@
 			}
 		}
 		var apiurl
-				var requestOptions
-				let status="add"
-				let object ={}
-				let rdv = 0
-				function ConfirmerRedezvous() {
-					/// Prevent the default action (navigation)
+		var requestOptions
+		let status = "add"
+		let object = {}
+		let rdv = 0
+		function ConfirmerRedezvous() {
+			/// Prevent the default action (navigation)
 
 
-					// Optionally, you can add a class to style it as disabled
-					var link = document.getElementById('confirmRDV');
-					link.classList.add('disabled');
+			// Optionally, you can add a class to style it as disabled
+			var link = document.getElementById('confirmRDV');
+			link.classList.add('disabled');
 
-					motifSelect = document.getElementById('motifSelect').value;
-					console.log('sessionStorage.getItem("status"): ', sessionStorage.getItem("status"))
-					if(sessionStorage.getItem("status"))
-					status=sessionStorage.getItem("status")
-					if (status == "add") {
-						console.log("add")
-						console.log("sessionStorage.getItem('rdv'): ",sessionStorage.getItem("rdv"))
-						if (sessionStorage.getItem("rdv")) {
-							rdv = sessionStorage.getItem("rdv")
-						}
-						if (rdv == 0) {
-							apiurl = "https://wic-doctor.com:3004/ajouterrendezvous"
-							object = Object.assign(object, { "motif_id": motifSelect })
-							console.log("object: after modif ",object)
-
-						}
-						else {
-							apiurl = "https://wic-doctor.com:3004/ajouterrendezvoustele"
-							//object = Object.assign(object, { "motif_id": motifSelect })
-
-
-						}
-
-					}
-					else if (status == "edit") {
-						console.log("edit")
-						object = Object.assign({ "end_at": object.ends_at }, { "start_at": object.start_at }, { "patern_id": motifSelect })
-						console.log("decryptData(sessionStorage.getItem('id')", decryptData(sessionStorage.getItem("id")))
-						apiurl = `https://wic-doctor.com:3004/updateappointement/${decryptData(sessionStorage.getItem("id"))}`
-					}
-					console.log('apiurl: ', apiurl)
-					encryptedData = encryptData(object);
-
-					console.log("object rendez-vous: ", object)
-					if (sessionStorage.getItem('auth')) {
-						const authData = sessionStorage.getItem("auth");
-						const data = decryptData(authData);
-						console.log("Initial login data: ", data);
-						console.log("**************************************Rendez-vous Medecin")
-						const RendezVous = object;
-						console.log("RendezVous: ", JSON.stringify(RendezVous))
-						if (status == "add") {
-							requestOptions = {
-								method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
-								headers: {
-									'Authorization': `Bearer ${data.token}`, // Ajouter le token dans l'en-tête Authorization
-									'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
-								},
-								body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
-							};
-
-						}
-						else if (status == "edit") {
-							requestOptions = {
-								method: 'PUT', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
-								headers: {
-									'Authorization': `Bearer ${data.token}`, // Ajouter le token dans l'en-tête Authorization
-									'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
-								},
-								body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
-							}
-						}
-
-
-
-						// Appeler l'API
-						fetch(apiurl, requestOptions)
-							.then(response => {
-
-								if (!response.ok) {
-									throw new Error('Erreur lors de l\'envoi des données');
-								}
-								return response.json(); // Analyser la réponse JSON
-							})
-							.then(data => {
-								console.log('Réponse de l\'API :', data);
-
-								if (data.message == "Rendez-vous inséré avec succès") {
-									let rdv = 0
-									if (sessionStorage.getItem("rdv")) {
-										rdv = sessionStorage.getItem("rdv")
-									}
-									if (rdv == 0) {
-										document.getElementById('popup').style.display = 'block';
-										document.getElementById('overlay').style.display = 'block';
-										alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
-										sessionStorage.removeItem("rendezvousClinic")
-										window.location.href = 'https://wic-doctor.com/profil.html'; // Rediriger vers la page 2
-									}
-									else {
-										document.getElementById('popup').style.display = 'block';
-										document.getElementById('overlay').style.display = 'block';
-										alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
-										sessionStorage.removeItem("rendezvousClinic")
-										window.location.href = 'https://wic-doctor.com/profil.html'; // Rediriger vers la page 2
-										sessionStorage.removeItem("rdv")
-									}
-
-
-								}
-							})
-							.catch(error => {
-								console.error('Erreur :', error);
-							});
-
-
-
-					}
-
-					else {
-						sessionStorage.setItem("rendezvous", encryptedData)
-						window.location.href = 'https://wic-doctor.com/login.html'; // Rediriger vers la page 2
-					}
+			motifSelect = document.getElementById('motifSelect').value;
+			console.log('sessionStorage.getItem("status"): ', sessionStorage.getItem("status"))
+			if (sessionStorage.getItem("status"))
+				status = sessionStorage.getItem("status")
+			if (status == "add") {
+				console.log("add")
+				console.log("sessionStorage.getItem('rdv'): ", sessionStorage.getItem("rdv"))
+				if (sessionStorage.getItem("rdv")) {
+					rdv = sessionStorage.getItem("rdv")
+				}
+				if (rdv == 0) {
+					apiurl = "https://wic-doctor.com:3004/ajouterrendezvous"
+					object = Object.assign(object, { "motif_id": motifSelect })
+					console.log("object: after modif ", object)
 
 				}
+				else {
+					apiurl = "https://wic-doctor.com:3004/ajouterrendezvoustele"
+					//object = Object.assign(object, { "motif_id": motifSelect })
+
+
+				}
+
+			}
+			else if (status == "edit") {
+				console.log("edit")
+				object = Object.assign({ "end_at": object.ends_at }, { "start_at": object.start_at }, { "patern_id": motifSelect })
+				console.log("decryptData(sessionStorage.getItem('id')", decryptData(sessionStorage.getItem("id")))
+				apiurl = `https://wic-doctor.com:3004/updateappointement/${decryptData(sessionStorage.getItem("id"))}`
+			}
+			console.log('apiurl: ', apiurl)
+			encryptedData = encryptData(object);
+
+			console.log("object rendez-vous: ", object)
+			if (sessionStorage.getItem('auth')) {
+				const authData = sessionStorage.getItem("auth");
+				const data = decryptData(authData);
+				console.log("Initial login data: ", data);
+				console.log("**************************************Rendez-vous Medecin")
+				const RendezVous = object;
+				console.log("RendezVous: ", JSON.stringify(RendezVous))
+				if (status == "add") {
+					requestOptions = {
+						method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
+						headers: {
+							'Authorization': `Bearer ${data.token}`, // Ajouter le token dans l'en-tête Authorization
+							'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
+						},
+						body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
+					};
+
+				}
+				else if (status == "edit") {
+					requestOptions = {
+						method: 'PUT', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
+						headers: {
+							'Authorization': `Bearer ${data.token}`, // Ajouter le token dans l'en-tête Authorization
+							'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
+						},
+						body: JSON.stringify(RendezVous) // Convertir l'objet en chaîne JSON
+					}
+				}
+
+
+
+				// Appeler l'API
+				fetch(apiurl, requestOptions)
+					.then(response => {
+
+						if (!response.ok) {
+							throw new Error('Erreur lors de l\'envoi des données');
+						}
+						return response.json(); // Analyser la réponse JSON
+					})
+					.then(data => {
+						console.log('Réponse de l\'API :', data);
+
+						if (data.message == "Rendez-vous inséré avec succès") {
+							let rdv = 0
+							if (sessionStorage.getItem("rdv")) {
+								rdv = sessionStorage.getItem("rdv")
+							}
+							if (rdv == 0) {
+								document.getElementById('popup').style.display = 'block';
+								document.getElementById('overlay').style.display = 'block';
+								alert("🎉 Votre rendez-vous a été confirmé !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
+								sessionStorage.removeItem("rendezvousClinic")
+								window.location.href = 'https://wic-doctor.com/profil.html'; // Rediriger vers la page 2
+							}
+							else {
+								document.getElementById('popup').style.display = 'block';
+								document.getElementById('overlay').style.display = 'block';
+								alert("🎉 Votre demande de téléconsultation a été envoyée !\n\nVeuillez consulter votre email / Téléphone pour plus de détails.\n\nMerci de votre confiance !");
+								sessionStorage.removeItem("rendezvousClinic")
+								window.location.href = 'https://wic-doctor.com/profil.html'; // Rediriger vers la page 2
+								sessionStorage.removeItem("rdv")
+							}
+
+
+						}
+					})
+					.catch(error => {
+						console.error('Erreur :', error);
+					});
+
+
+
+			}
+
+			else {
+				sessionStorage.setItem("rendezvous", encryptedData)
+				window.location.href = 'https://wic-doctor.com/login.html'; // Rediriger vers la page 2
+			}
+
+		}
 		//console.log("sessionStorage.getItem('dataDetails'): ", decryptData(sessionStorage.getItem('dataDetails')))
 		fetch('https://wic-doctor.com:3004/getdocbyid/7921560615')
 			.then(response => {
@@ -1410,7 +1434,7 @@
 				let currentWeekStart = new Date();
 				let selectedSlot = '';
 				let slotsData = [];
-
+                let config 
 				// Function to decrypt session storage data
 				function decryptData(cipherText) {
 					const bytes = CryptoJS.AES.decrypt(cipherText, secretKey);
@@ -1436,10 +1460,10 @@
 						})
 						.then(data => {
 							console.log("availability: ", JSON.stringify(data))
-							const config = data
+							 config = data
 
 							// Generate slots
-							slotsData = generateTimeSlots(config);
+							slotsData = generateTimeSlots(config ,new Date());
 							console.log(slotsData);
 							console.log("slotsData: ", JSON.stringify(slotsData))
 							initializeWeek();
@@ -1457,10 +1481,10 @@
 						})
 						.then(data => {
 							console.log("availabilitytélé: ", JSON.stringify(data))
-							const config = data
+							 config = data
 
 							// Generate slots
-							slotsData = generateTimeSlots(config);
+							slotsData = generateTimeSlots(config, new Date());
 							console.log(slotsData);
 							console.log("slotsDatatélé: ", JSON.stringify(slotsData))
 							initializeWeek();
@@ -1490,7 +1514,7 @@
 					updateWeek();
 				}
 				var encryptedData
-				
+
 				function updateWeek() {
 					const daysHeader = document.getElementById('days-header');
 					const timeSlotsContainer = document.getElementById('time-slots-container');
@@ -1657,6 +1681,7 @@
 				function navigateDays(direction) {
 					// Increment or decrement by 3 days
 					currentWeekStart.setDate(currentWeekStart.getDate() + direction * 3);
+					generateTimeSlots(config, new Date(currentWeekStart))
 					updateWeek();
 				}
 
@@ -1670,23 +1695,18 @@
 					console.log("selectedSlot: ", selectedSlot)
 					$('#confirmationModal').modal('hide');
 				}); */
-			
+
 				// Fonction pour fermer la pop-up
 				function fermerPopup() {
 					document.getElementById('popup').style.display = 'none';
 					document.getElementById('overlay').style.display = 'none';
 				}
 				initializeWeek();
-				const config = {
-					"start": "08:00 AM",
-					"end": "05:00 PM",
-					"duree": 30,
-					"indisponibles": ["2024-12-16:16:30", "2024-12-17:08:30"]
-				};
+				
 
-				function generateTimeSlots(config) {
+				function generateTimeSlots(config , date) {
 					const slots = [];
-					const startDate = new Date(); // Today's date
+					const startDate = date; // Today's date
 
 					// Parse the config
 					const daysConfig = config.days.reduce((acc, day) => {
@@ -1728,10 +1748,20 @@
 						console.log("holidayRanges: ", holidayRanges)
 					}
 					// Convertir les urgences en plages similaires aux holidays
-					const parsedUrgences = urgence.map(u => ({
-						from: new Date(`${u.jour}T${u.heurDebut}`),
-						to: new Date(`${u.jour}T${u.heurFin}`)
-					}));
+					const parsedUrgences = urgence.map(u => {
+						// Convertir "jour" de "MM/DD/YYYY" à "YYYY-MM-DD"
+						const [month, day, year] = u.jour.split('/');
+						const isoDate = `${year}-${month}-${day}`;
+
+						// Construire l'objet Date manuellement sans fuseau horaire
+						const fromParts = [...isoDate.split('-'), ...u.heurDebut.split(':')];
+						const toParts = [...isoDate.split('-'), ...u.heurFin.split(':')];
+
+						return {
+							from: new Date(fromParts[0], fromParts[2] - 1, fromParts[1], fromParts[3], fromParts[4], fromParts[5]),
+							to: new Date(toParts[0], toParts[2] - 1, toParts[1], toParts[3], toParts[4], toParts[5])
+						};
+					});
 
 					// Fusionner holidays et urgences en une seule liste
 					const exclusions = [...parsedUrgences];
@@ -1753,7 +1783,7 @@
 					});
 
 					let isHoliday = (date) => false;
-					if (!holidayRanges)
+					if (holidayRanges)
 					// Check if a date is within a holiday
 					{ isHoliday = (date) => holidayRanges.some(range => date >= range.from && date <= range.to); }
 
@@ -1783,17 +1813,17 @@
 						endTime.setHours(endHour, endMinute, 0, 0);
 						let pauseStart
 						let pauseEnd
-						console.log("*************************************pauses: ",pauses)
+						console.log("*************************************pauses: ", pauses)
 						if (pauses.pause_start != null) {
-							 pauseStart = new Date(currentDate);
+							pauseStart = new Date(currentDate);
 							const [pauseStartHour, pauseStartMinute] = pauses.pause_start.split(":").map(Number);
 							pauseStart.setHours(pauseStartHour, pauseStartMinute, 0, 0);
-						
 
-						 pauseEnd = new Date(currentDate);
-						const [pauseEndHour, pauseEndMinute] = pauses.pause_end.split(":").map(Number);
-						pauseEnd.setHours(pauseEndHour, pauseEndMinute, 0, 0);
-					}
+
+							pauseEnd = new Date(currentDate);
+							const [pauseEndHour, pauseEndMinute] = pauses.pause_end.split(":").map(Number);
+							pauseEnd.setHours(pauseEndHour, pauseEndMinute, 0, 0);
+						}
 						let slotStart = new Date(startTime);
 
 						// Generate slots for the day
@@ -1805,14 +1835,10 @@
 							// Check if the slot is within unavailable or urgent intervals
 							const isUnavailable = unavailableRanges.some(range => slotStart >= range.from && slotEnd <= range.to);
 							//console.log("parsedUrgences: ", parsedUrgences)
-							const isUrgence = parsedUrgences.some(range => {
-								console.log("range: ", range)
-								slotStart >= range.from && slotEnd <= range.to
-							});
+							const isUrgence = parsedUrgences.some(range => slotStart >= range.from && slotEnd <= range.to);
 							console.log("isUnavailable: ", isUnavailable)
 							let isDuringPause = false;
-							if(pauseStart)
-							{ isDuringPause = slotStart >= pauseStart && slotStart < pauseEnd;}
+							if (pauseStart) { isDuringPause = slotStart >= pauseStart && slotStart < pauseEnd; }
 
 							if (slotEnd <= endTime && !isUnavailable && !isDuringPause && !isUrgence) {
 								slots.push({
@@ -1896,7 +1922,7 @@
 	<script src="./../../../../assets/js/owl-carousel.js"></script>
 	<!--Showmore Js-->
 	<script src="./../../../../assets/js/jquery.showmore.js"></script>
-	<script src="./../../../../assets/js/showmore.js"></script> 
+	<script src="./../../../../assets/js/showmore.js"></script>
 	<!--doctor-details-->
 	<!--<script src="./../../../../assets/js/doctor-details.js"></script>-->
 
