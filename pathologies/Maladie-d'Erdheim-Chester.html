@@ -19,8 +19,8 @@
 <!-- Favicon -->
 <link alt="WIC Doctor" href="../assets/images/brand/favicon.png" rel="icon" type="image/x-icon"/>
 <link alt="WIC Doctor" href="../assets/images/brand/favicon.png" rel="shortcut icon" type="image/x-icon"/>
-<meta content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" name="google-site-verification">
-<meta content="WIC Doctor : plateforme de télémédecine" id="metaTitle" name="title"/>
+<meta content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" name="google-site-verification"/>
+<meta content="WIC Doctor : plateforme de télémédecine" id="metaTitle" name="title">
 <title>WIC Doctor : plateforme de télémédecine</title>
 <!-- Bootstrap Css -->
 <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" id="style" rel="stylesheet"/>
@@ -108,14 +108,36 @@
 </ul>
 </div>
 <!-- Navigation (visible uniquement sur desktop) -->
+
+<!-- Navigation (visible uniquement sur desktop) -->
 <nav>
 <ul>
-<li><a class="active" href="https://wic-doctor.com/">Accueil</a></li>
+<li><a href="https://wic-doctor.com/">Accueil</a></li>
 <li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
-<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+<li class="mega-menu">
+<a href="#">Nos Solutions</a>
+<div class="mega-menu-content">
+<div class="mega-menu-item">
+<img alt="Logo Praticiens" src="../assets/images/media/photos/medecin-solution.png"/>
+<a href="https://wic-doctor.com/nos-solutions.html#Pratcien">Praticiens</a>
+</div>
+<div class="mega-menu-item">
+<img alt="Logo Patients" src="../assets/images/media/photos/patient-solution.png"/>
+<a href="https://wic-doctor.com/nos-solutions.html#Patient">Patients</a>
+</div>
+<div class="mega-menu-item">
+<img alt="Logo Télémédecine" src="../assets/images/media/photos/Télémédecine-soltion.png"/>
+<a href="https://wic-doctor.com/nos-solutions.html">Télémédecine</a>
+</div>
+<div class="mega-menu-item">
+<img alt="Logo Technologie" src="../assets/images/media/photos/technologie-solution.png"/>
+<a href="https://wic-doctor.com/nos-solutions.html#Tech">Technologie de pointe</a>
+</div>
+</div>
+</li>
+<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Tarifs</a></li>
 <li class="dropdown">
-<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+<a class="active" href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
 <ul class="submenu">
 <li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
 <li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
@@ -126,6 +148,58 @@
 <li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
 </ul>
 </nav>
+<style>
+        nav {
+            position: relative;
+        }
+
+        .mega-menu-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 600px;
+            background: #ffffff;
+            border-radius: 2%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            z-index: 999;
+        }
+
+        .mega-menu:hover .mega-menu-content {
+            display: inline-flex;
+        }
+
+        .mega-menu-item {
+            text-align: center;
+            border: 2px solid #83D1C3;
+            border-radius: 8px;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .mega-menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .mega-menu-item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .mega-menu-item a {
+            display: block;
+            font-size: 12px;
+            text-decoration: none;
+            color: #18167A;
+            font-weight: bold;
+        }
+    </style>
+
 <!-- Extra Button -->
 <div class="buttons">
 <a class="btn-danger" href="#">Devenir Partenaire</a>
@@ -143,9 +217,7 @@
 <style>
 </style>
 <!-- Top Header -->
-
 <!-- Main Header -->
-
 <!-- JavaScript -->
 <script>
 		document.addEventListener("DOMContentLoaded", () => {
@@ -296,26 +368,25 @@
 <p class="footer-title">Ressources</p>
 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0"/>
 <ul class="list-unstyled mb-0">
-								<li>
-									<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
-								</li>
-								<li>
-									<a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a>
-								</li>
-								<li>
-									<a href="https://wic-doctor.com/intervention.html">Interventions</a>
-								</li>
-								<li>
-									<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
-								</li>
-								<!-- <li>
+<li>
+<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+</li>
+<li>
+<a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a>
+</li>
+<li>
+<a href="https://wic-doctor.com/intervention.html">Interventions</a>
+</li>
+<li>
+<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+</li>
+<!-- <li>
 									<a href="javascript:;">Forum Médical</a>
 								</li> -->
-								<!-- <li>
+<!-- <li>
 									<a href="javascript:;">La technologie Médicale</a>
 								</li> -->
-
-							</ul>
+</ul>
 </div>
 <div class="col-lg-3 col-md-12">
 <p class="footer-title">Les conditions</p>
@@ -329,7 +400,6 @@
 <li>
 <a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
 									d'utilisation</a>
-
 </li>
 <li>
 <a href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique

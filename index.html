@@ -154,8 +154,32 @@
 						<ul>
 							<li><a href="https://wic-doctor.com/" class="active">Accueil</a></li>
 							<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
-							<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Solutions</a></li>
-							<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+							<li class="mega-menu">
+								<a href="#">Nos Solutions</a>
+								<div class="mega-menu-content">
+									<div class="mega-menu-item">
+										<img src="./assets/images/media/photos/medecin-solution.png"
+											alt="Logo Praticiens" />
+										<a href="https://wic-doctor.com/nos-solutions.html#Pratcien">Praticiens</a>
+									</div>
+									<div class="mega-menu-item">
+										<img src="./assets/images/media/photos/patient-solution.png"
+											alt="Logo Patients" />
+										<a href="https://wic-doctor.com/nos-solutions.html#Patient">Patients</a>
+									</div>
+									<div class="mega-menu-item">
+										<img src="./assets/images/media/photos/Télémédecine-soltion.png"
+											alt="Logo Télémédecine" />
+										<a href="https://wic-doctor.com/nos-solutions.html">Télémédecine</a>
+									</div>
+									<div class="mega-menu-item">
+										<img src="./assets/images/media/photos/technologie-solution.png"
+											alt="Logo Technologie" />
+										<a href="https://wic-doctor.com/nos-solutions.html#Tech">Technologie de pointe</a>
+									</div>
+								</div>
+							</li>
+							<li><a href="https://wic-doctor.com/nos-solutions.html">Nos Tarifs</a></li>
 							<li class="dropdown">
 								<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
 								<ul class="submenu">
@@ -168,6 +192,59 @@
 							<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
 						</ul>
 					</nav>
+
+					<style>
+						nav {
+							position: relative;
+						}
+
+						.mega-menu-content {
+							display: none;
+							position: absolute;
+							top: 100%;
+							left: 0;
+							width: 600px;
+							background: #ffffff;
+							border-radius: 2%;
+							box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+							padding: 20px;
+							grid-template-columns: repeat(2, 1fr);
+							gap: 20px;
+							z-index: 999;
+						}
+
+						.mega-menu:hover .mega-menu-content {
+							display: inline-flex;
+						}
+
+						.mega-menu-item {
+							text-align: center;
+							border: 2px solid #83D1C3;
+							border-radius: 8px;
+							padding: 10px;
+							transition: transform 0.3s ease, box-shadow 0.3s ease;
+						}
+
+						.mega-menu-item:hover {
+							transform: scale(1.05);
+							box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+						}
+
+						.mega-menu-item img {
+							width: 100px;
+							height: 100px;
+							margin-bottom: 10px;
+						}
+
+						.mega-menu-item a {
+							display: block;
+							font-size: 12px;
+							text-decoration: none;
+							color: #18167A;
+							font-weight: bold;
+						}
+					</style>
+
 
 					<!-- Extra Button -->
 					<div class="buttons">
@@ -468,17 +545,24 @@
 						</div>
 					</div>
 
-					<!-- Image and floating shapes -->
 					<div class="floating-elements">
 						<!-- Les formes de fond -->
-						<div class="background-shape shape1"></div>
-						<div class="background-shape shape2"></div>
-						<div class="background-shape shape3"></div>
+
+						<!-- Bulle de message 1 -->
+						<div class="bubble bubble-1">
+							<img src="assets/images/media/Banner/bubble.png" alt="Patient 1" class="bubble-image" />
+						</div>
+
+						<!-- Bulle de message 2 -->
+						<div class="bubble-p  bubble-2">
+							<img src="assets/images/media/Banner/patient.png" alt="Patient 2" class="bubble-image" />
+						</div>
 
 						<!-- L'image du médecin -->
-						<img src="assets/images/media/doctors/DOC1.png" alt="wic doctor télémedecine"
-							class="doctor-image" />
+						<img src="assets/images/media/Banner/Identite-wic-doctor.png"
+							alt="wic doctor télémedecine" class="doctor-image" />
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -487,7 +571,8 @@
 	<style>
 		/* Background with gradient */
 		.banner-section {
-			background: linear-gradient(30deg, rgb(145 171 165), rgba(24, 22, 122));
+			background: linear-gradient(30deg, rgb(145 171 165), rgb(33 30 209));
+			/*background:rgb(66 63 205);*/
 			color: white;
 			padding: 0px 0px 60px 0px;
 			position: relative;
@@ -526,13 +611,60 @@
 		/* Floating image and shapes */
 		.floating-elements {
 			position: absolute;
-			right: 20px;
+
 			bottom: 0;
 			display: flex;
-			align-items: center;
-			justify-content: center;
+			align-items: initial;
 			height: 300px;
 			z-index: -1;
+		}
+
+		.bubble {
+			background: transparent !important;
+			position: absolute;
+			animation: pop 4s infinite ease-in-out;
+			overflow: hidden;
+			z-index: 1;
+			border-radius: 0% !important;
+		}
+		.bubble-p {
+			background: transparent !important;
+			position: absolute;
+			overflow: hidden;
+			z-index: 1;
+			border-radius: 0% !important;
+		}
+		.bubble-1 {
+			top: 0%;
+			left: -50px;
+			width: 140px;
+			height: 140px;
+		}
+
+		.bubble-2 {
+			top: 25%;
+			left: -80px;
+			width: 60px;
+			height: 60px;
+		}
+
+		.bubble-image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		/* Animation "pop" */
+		@keyframes pop {
+
+			0%,
+			100% {
+				transform: scale(1);
+			}
+
+			50% {
+				transform: scale(1.2);
+			}
 		}
 
 		/* Background shapes */
@@ -544,54 +676,14 @@
 			opacity: 0.9;
 		}
 
-		/* Forme 1 */
-		.shape1 {
-			width: 200px;
-			height: 200px;
-			background-color: rgb(153 227 255);
-			/* Jaune */
-			top: -20px;
-			left: -40px;
-		}
-
-		/* Forme 2 */
-		.shape2 {
-			width: 250px;
-			height: 250px;
-			background-color: #ffcd9a;
-			/* Bleu clair */
-			top: 40px;
-			right: -50px;
-		}
-
-		/* Forme 3 */
-		.shape3 {
-			width: 150px;
-			height: 150px;
-			background-color: rgb(36 156 169 / 80%);
-			/* Orange */
-			bottom: -30px;
-			left: 30px;
-		}
 
 		/* Doctor image */
 		.doctor-image {
-			width: 250px;
+			width: 100%;
 			border-radius: 10px;
-			animation: float 6s infinite ease-in-out;
 		}
 
-		@keyframes float {
 
-			0%,
-			100% {
-				transform: translateY(0);
-			}
-
-			50% {
-				transform: translateY(-20px);
-			}
-		}
 
 		/* Media query for mobile */
 		@media (max-width: 768px) {
@@ -602,24 +694,20 @@
 			.background-shape {
 				display: none;
 			}
+			.bubble{
+				display: none;
+			}
+			.bubble-p{
+				display: none;
+			}
 		}
 
 		.doctor-image {
-			width: 250px;
-			animation: float 6s infinite ease-in-out;
+			width: 100%;
+
 		}
 
-		@keyframes float {
 
-			0%,
-			100% {
-				transform: translateY(0);
-			}
-
-			50% {
-				transform: translateY(-10px);
-			}
-		}
 
 		/* Tab menu styles */
 		.nav-tabs .nav-link {
