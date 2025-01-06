@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Découvrez les spécificités de notre plateforme WIC Doctor qui vous permet de réserver des rdv et consulter votre médecin en ligne">
+	<meta name="author" content="Wic DOCTOR">
+	<meta name="title" content="WIC Doctor : RDV et Télémédecine">
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="assets/images/brand/favicon.png">
+
+	<!-- Title -->
+	<title>WIC Doctor </title>
+
+	<!-- Bootstrap Css -->
+	<link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Top Header -->
+	<div class="header-top">
+		<div class="container">
+			<!-- Contact Info -->
+			<div class="contact-info">
+				<p>Nous sommes disponibles sur <span class="span-info">+216 26 311 777 / +33
+						743 13 00 13</span></p>
+			</div>
+
+			<!-- Buttons -->
+
+			<div>
+				<div class="buttons">
+					<a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger" id="B2B">Vous êtes un
+						praticien?</a>
+					<a href="https://wic-doctor.com/login.html" class="btn-primary" id="SeConnecter">Connexion</a>
+					<!-- 		<a class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar"></div>
+						<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+							<li><a class="dropdown-item" href="https://wic-doctor.com/profil.html">Mon Profil</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item"  onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</a> -->
+					<style>
+
+					</style>
+					<div class="nav-item dropdown d-flex align-items-center" id="Login">
+						<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false"></div>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
+							<li><a class="dropdown-item profile" href="https://wic-doctor.com/profil.html">Mon
+									Profil</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- Main Header -->
+	<section>
+		<div class="banner-2 cover-image sptb-2 sptb-tab banner-section position-relative">
+			<div class="header-main">
+				<div class="container">
+					<!-- Hamburger Menu -->
+					<div class="hamburger-menu" id="hamburger-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<!-- Logo -->
+					<div class="logo">
+						<a href="https://wic-doctor.com/">
+							<img class="logo-mb" src="assets/images/brand/logo-dr-wic.png" alt="WIC Doctor Logo">
+						</a>
+					</div>
+
+
+
+					<!-- Menu mobile -->
+					<div class="menu-mobile" id="menu-mobile">
+						<button class="close-menu" id="close-menu">X</button> <!-- Bouton de fermeture -->
+						<ul>
+							<li><a href="https://wic-doctor.com/">Accueil</a></li>
+							<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+							<li><a href="https://wic-doctor.com/nos-solutions.html" class="active">Nos Solutions</a>
+							</li>
+							<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+							<li class="dropdown">
+								<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+								<ul class="submenu">
+									<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
+									<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
+									<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
+								</ul>
+							</li>
+							<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+							<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+							<li><a href="https://wic-doctor.com/inscription-professionnel/" class="btn-danger">Vous êtes
+									un
+									professionnel?</a></li>
+							<li><a href="https://wic-doctor.com/login.html" class="btn-primary">Connexion</a></li>
+							<li><a href="https://wic-doctor.com/inscription-professionnel/"
+									class="btn-partenaire">Devenir
+									Partenaire</a></li>
+						</ul>
+					</div>
+					<!-- Navigation (visible uniquement sur desktop) -->
+					<nav>
+						<ul>
+							<li><a href="https://wic-doctor.com/">Accueil</a></li>
+							<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+							<li class="mega-menu">
+								<a href="#" class="active">Nos Solutions</a>
+								<div class="mega-menu-content">
+									<div class="mega-menu-item">
+										<img src="./assets/images/media/photos/medecin-solution.png"
+											alt="Logo Praticiens" />
+										<a href="https://wic-doctor.com/nos-solutions.html#Pratcien">Praticiens</a>
+									</div>
+									<div class="mega-menu-item">
+										<img src="./assets/images/media/photos/patient-solution.png"
+											alt="Logo Patients" />
+										<a href="https://wic-doctor.com/nos-solutions.html#Patient">Patients</a>
+									</div>
+									<div class="mega-menu-item">
+										<img src="./assets/images/media/photos/Télémédecine-soltion.png"
+											alt="Logo Télémédecine" />
+										<a href="https://wic-doctor.com/nos-solutions.html">Télémédecine</a>
+									</div>
+									<div class="mega-menu-item">
+										<img src="./assets/images/media/photos/technologie-solution.png"
+											alt="Logo Technologie" />
+										<a href="https://wic-doctor.com/nos-solutions.html#Tech">Technologie de
+											pointe</a>
+									</div>
+								</div>
+							</li>
+							<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos Tarifs</a></li>
+							<li class="dropdown">
+								<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+								<ul class="submenu">
+									<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a></li>
+									<li><a href="https://wic-doctor.com/intervention.html">Interventions</a></li>
+									<li><a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a></li>
+								</ul>
+							</li>
+							<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a></li>
+							<li><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+					<style>
+						nav {
+							position: relative;
+						}
+
+						.mega-menu-content {
+							display: none;
+							position: absolute;
+							top: 100%;
+							left: 0;
+							width: 600px;
+							background: #ffffff;
+							border-radius: 2%;
+							box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+							padding: 20px;
+							grid-template-columns: repeat(2, 1fr);
+							gap: 20px;
+							z-index: 999;
+						}
+
+						.mega-menu:hover .mega-menu-content {
+							display: inline-flex;
+						}
+
+						.mega-menu-item {
+							text-align: center;
+							border: 2px solid #83D1C3;
+							border-radius: 8px;
+							padding: 10px;
+							transition: transform 0.3s ease, box-shadow 0.3s ease;
+						}
+
+						.mega-menu-item:hover {
+							transform: scale(1.05);
+							box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+						}
+
+						.mega-menu-item img {
+							width: 100px;
+							height: 100px;
+							margin-bottom: 10px;
+						}
+
+						.mega-menu-item a {
+							display: block;
+							font-size: 12px;
+							text-decoration: none;
+							color: #18167A;
+							font-weight: bold;
+						}
+					</style>
+
+					<!-- Extra Button -->
+					<div class="buttons">
+						<a href="#" class="btn-danger">Devenir Partenaire</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="header-text mb-0">
+				<div class="container">
+					<div class="text-center text-white ">
+						<h1 style="padding: 0rem 0rem 6rem 0rem;" class="">Services de Télémedecine
+						</h1>
+
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- JavaScript -->
+			<script>
+				document.addEventListener("DOMContentLoaded", () => {
+					const hamburgerMenu = document.getElementById("hamburger-menu");
+					const menuMobile = document.getElementById("menu-mobile");
+					const closeMenuButton = document.getElementById("close-menu");
+
+					// Ouvrir le menu mobile en cliquant sur l'icône hamburger
+					hamburgerMenu.addEventListener("click", () => {
+						menuMobile.classList.add("active"); // Affiche le menu
+					});
+
+					// Fermer le menu mobile en cliquant sur le bouton "X"
+					closeMenuButton.addEventListener("click", () => {
+						menuMobile.classList.remove("active"); // Cache le menu
+					});
+				});
+				// Sélectionner tous les liens du menu
+				const menuLinks = document.querySelectorAll('.menu-mobile ul li a');
+
+				// Ajouter un écouteur d'événements pour chaque lien
+				menuLinks.forEach(link => {
+					link.addEventListener('click', function (event) {
+						// Supprimer la classe active de tous les liens
+						menuLinks.forEach(link => link.classList.remove('active'));
+
+						// Ajouter la classe active au lien cliqué
+						event.target.classList.add('active');
+					});
+				});
+				// Sélectionner tous les liens du menu desktop
+				const desktopLinks = document.querySelectorAll('nav ul li a');
+
+				// Ajouter un écouteur d'événements pour chaque lien
+				desktopLinks.forEach(link => {
+					link.addEventListener('click', function (event) {
+						// Supprimer la classe active de tous les liens
+						desktopLinks.forEach(link => link.classList.remove('active'));
+
+						// Ajouter la classe active au lien cliqué
+						event.target.classList.add('active');
+					});
+				});
+			</script>
+
+		</div>
+	</section>
+	<div class="header-bar">
+		Vous cherchez un médecin ? <a href="https://wic-doctor.com/">Cliquez ici !</a>
+	</div>
+
+
+	<style>
+		.intro {
+			text-align: center;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #555;
+			max-width: 800px;
+			margin: 20px auto;
+		}
+
+		
+		.card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card-title {
+      color: #1BA584;
+    }
+	</style>
+	<!--/Section-->
+	<!-- Bannière -->
+
+	<!-- Section Héro -->
+
+
+	<!-- Section Description -->
+
+	<section class="how-it-works">
+		<div class="container">
+			<p class="comment-ca-marche">La plateforme WIC Doctor intègre une gamme complète de services de
+				télémedecine, répondant aux besoins des médecins, des professionnels de santé, et des patients. Ces
+				services sont conçus pour offrir une solution numérique innovante et conforme aux normes internationales
+				de sécurité des données médicales, notamment HDS et RGPD. Voici une description enrichie des services
+				proposés, tenant compte des spécificités techniques et opérationnelles.</p>
+			
+		</div>
+	</section>
+
+
+
+	
+	<div class="container my-5">
+		<div class="row g-4">
+		  <!-- Téléconsultation -->
+		  <div class="col-12 col-md-6 fade-in" style="animation-delay: 0.1s;">
+			<div class="card">
+			  <img src="./assets/images/media/photos/téléconsultation.png" class="card-img-top" alt="Téléconsultation">
+			  <div class="card-body">
+				<h5 class="card-title">Téléconsultation via WIC Doctor</h5>
+				<p class="card-text">
+				  La téléconsultation permet aux médecins d’interagir avec leurs patients à distance, grâce à un système sécurisé et ergonomique.
+				</p>
+				<ul>
+				  <li>Consultations en temps réel via vidéo, audio ou messagerie.</li>
+				  <li>Renouvellement sécurisé des ordonnances.</li>
+				  <li>Historique des consultations intégré pour un suivi simplifié.</li>
+				  <li>Prise en charge immédiate des urgences non critiques.</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <!-- Téléexpertise -->
+		  <div class="col-12 col-md-6 fade-in" style="animation-delay: 0.2s;">
+			<div class="card">
+			  <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Téléexpertise">
+			  <div class="card-body">
+				<h5 class="card-title">Téléexpertise sur WIC Doctor</h5>
+				<p class="card-text">
+				  La téléexpertise facilite les échanges entre médecins généralistes et spécialistes pour un diagnostic ou une stratégie thérapeutique optimale.
+				</p>
+				<ul>
+				  <li>Consultation de spécialistes directement via la plateforme.</li>
+				  <li>Partage sécurisé de documents médicaux (imagerie, bilans biologiques).</li>
+				  <li>Outils collaboratifs intégrés pour des décisions médicales rapides.</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <!-- Télésurveillance Médicale -->
+		  <div class="col-12 col-md-6 fade-in" style="animation-delay: 0.3s;">
+			<div class="card">
+			  <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Télésurveillance">
+			  <div class="card-body">
+				<h5 class="card-title">Télésurveillance Médicale via WIC Doctor</h5>
+				<p class="card-text">
+				  Suivi à distance des patients atteints de maladies chroniques ou nécessitant une surveillance spécifique.
+				</p>
+				<ul>
+				  <li>Intégration des dispositifs médicaux connectés (glucomètres, tensiomètres, oxymètres).</li>
+				  <li>Alerte automatique en cas de détection d'anomalies.</li>
+				  <li>Rapports détaillés accessibles pour les médecins et les patients.</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <!-- Téléassistance Médicale -->
+		  <div class="col-12 col-md-6 fade-in" style="animation-delay: 0.4s;">
+			<div class="card">
+			  <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Téléassistance">
+			  <div class="card-body">
+				<h5 class="card-title">Téléassistance Médicale avec WIC Doctor</h5>
+				<p class="card-text">
+				  Assistance à distance aux professionnels de santé en situation d'urgence ou dans des environnements isolés.
+				</p>
+				<ul>
+				  <li>Assistance en temps réel pour les actes médicaux ou les soins complexes.</li>
+				  <li>Outils de communication audio et vidéo pour un accompagnement efficace.</li>
+				  <li>Intégration d’un module d’expertise instantanée.</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+	  
+
+	<!--Footer Section-->
+	<section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+
+								<li>
+									<a href="https://wic-doctor.com/FAQ.html">FAQ</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Cliniques/tous.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/intervention.html">Interventions</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+
+
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Les conditions</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+										générales de vente en ligne</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+										d'utilisation</a>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://wic-doctor.com/Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+										de confidentialité des données personnelles</a>
+									</a>
+								</li>
+								<li>
+									<a href="#">Termes et licences d'utilisation
+									</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="assets/js/circle-progress.min.js"></script>
+
+	<!-- Star Rating Js-->
+	<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--jquery-touchSwipe-->
+	<script src="assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+	<script src="assets/js/select2.js"></script>
+
+	<!-- sticky Js-->
+	<script src="assets/js/sticky.js"></script>
+
+	<!-- Cookie js -->
+	<script src="assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="assets/plugins/cookie/cookie.js"></script>
+
+	<!--Counters -->
+	<script src="assets/plugins/counters/counterup.min.js"></script>
+	<script src="assets/plugins/counters/waypoints.min.js"></script>
+	<script src="assets/plugins/counters/numeric-counter.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!--Dotcors-->
+	<script src="assets/js/recherche.js"></script>
+	<!-- Swipe Js-->
+	<script src="assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="assets/js/owl-carousel.js"></script>
+	<!-- Typewritter Js-->
+	<script src="assets/js/typewritter.js"></script>
+	<!-- Theme-color js -->
+	<script src="assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="assets/js/custom.js"></script>
+
+	<!-- switcher-custom js -->
+	<script src="assets/js/switcher-custom.js"></script>
+</body>
+
+</html>

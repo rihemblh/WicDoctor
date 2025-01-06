@@ -527,27 +527,37 @@
 						<!-- Image and floating shapes -->
 						<div class="floating-elements">
 							<!-- Les formes de fond -->
-							<div class="background-shape shape1"></div>
-							<div class="background-shape shape2"></div>
-							<div class="background-shape shape3"></div>
-						
+	
+							<!-- Bulle de message 1 -->
+							<div class="bubble bubble-1">
+								<img src="assets/images/media/Banner/bubble.png" alt="Patient 1" class="bubble-image" />
+							</div>
+	
+							<!-- Bulle de message 2 -->
+							<div class="bubble-p  bubble-2">
+								<img src="assets/images/media/Banner/patient.png" alt="Patient 2" class="bubble-image" />
+							</div>
+	
 							<!-- L'image du médecin -->
-							<img src="assets/images/media/doctors/DOC1.png" alt="wic doctor télémedecine" class="doctor-image" />
+							<img src="assets/images/media/Banner/Identite-wic-doctor.png"
+								alt="wic doctor télémedecine" class="doctor-image" />
 						</div>
+	
 					</div>
 				</div>
 			</div>
 		</section>
-		
+	
 		<style>
 			/* Background with gradient */
 			.banner-section {
-				background: linear-gradient(30deg, rgb(145 171 165), rgba(24, 22, 122));
-			color: white;
-			padding: 0px 0px 60px 0px;
-			position: relative;
+				background: linear-gradient(30deg, rgb(145 171 165), rgb(33 30 209));
+				/*background:rgb(66 63 205);*/
+				color: white;
+				padding: 0px 0px 60px 0px;
+				position: relative;
 			}
-		
+	
 			/* Header text */
 			.header-text h1 {
 				font-size: 3rem;
@@ -555,13 +565,13 @@
 				text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 				margin-bottom: 15px;
 			}
-		
+	
 			.subtext {
 				font-size: 1.2rem;
 				font-weight: 300;
 				opacity: 0.9;
 			}
-		
+	
 			/* Button styles */
 			.search-btn {
 				background-color: #ff5722;
@@ -569,101 +579,116 @@
 				border-radius: 25px;
 				transition: transform 0.3s, background-color 0.3s;
 			}
-		
+	
 			.search-btn:hover {
 				background-color: #e64a19;
 				transform: scale(1.05);
 			}
-		
+	
 			/* Input fields */
-		  
-		
+	
+	
 			/* Floating image and shapes */
 			.floating-elements {
 				position: absolute;
-				right: 20px;
+	
 				bottom: 0;
 				display: flex;
-				align-items: center;
-				justify-content: center;
+				align-items: initial;
 				height: 300px;
 				z-index: -1;
 			}
-		 /* Background shapes */
-		 .background-shape {
+	
+			.bubble {
+				background: transparent !important;
 				position: absolute;
-				border-radius:40%;
-				z-index: -1; /* Derrière l'image */
+				animation: pop 4s infinite ease-in-out;
+				overflow: hidden;
+				z-index: 1;
+				border-radius: 0% !important;
+			}
+			.bubble-p {
+				background: transparent !important;
+				position: absolute;
+				overflow: hidden;
+				z-index: 1;
+				border-radius: 0% !important;
+			}
+			.bubble-1 {
+				top: 0%;
+				left: -50px;
+				width: 140px;
+				height: 140px;
+			}
+	
+			.bubble-2 {
+				top: 25%;
+				left: -80px;
+				width: 60px;
+				height: 60px;
+			}
+	
+			.bubble-image {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+	
+			/* Animation "pop" */
+			@keyframes pop {
+	
+				0%,
+				100% {
+					transform: scale(1);
+				}
+	
+				50% {
+					transform: scale(1.2);
+				}
+			}
+	
+			/* Background shapes */
+			.background-shape {
+				position: absolute;
+				border-radius: 40%;
+				z-index: -1;
+				/* Derrière l'image */
 				opacity: 0.9;
 			}
-		
-			/* Forme 1 */
-			.shape1 {
-				width: 200px;
-				height: 200px;
-				background-color: rgb(153 227 255); /* Jaune */
-				top: -20px;
-				left: -40px;
-			}
-		
-			/* Forme 2 */
-			.shape2 {
-				width: 250px;
-				height: 250px;
-				background-color: #ffcd9a; /* Bleu clair */
-				top: 40px;
-				right: -50px;
-			}
-		
-			/* Forme 3 */
-			.shape3 {
-				width: 150px;
-				height: 150px;
-				background-color: rgb(36 156 169 / 80%); /* Orange */
-				bottom: -30px;
-				left: 30px;
-			}
-		
+	
+	
 			/* Doctor image */
 			.doctor-image {
-				width: 250px;
+				width: 100%;
 				border-radius: 10px;
-				animation: float 6s infinite ease-in-out;
 			}
-		
-			@keyframes float {
-				0%, 100% {
-					transform: translateY(0);
-				}
-				50% {
-					transform: translateY(-20px);
-				}
-			}
-		
+	
+	
+	
 			/* Media query for mobile */
 			@media (max-width: 768px) {
 				.doctor-image {
 					display: none;
 				}
-		
+	
 				.background-shape {
 					display: none;
 				}
+				.bubble{
+					display: none;
+				}
+				.bubble-p{
+					display: none;
+				}
 			}
+	
 			.doctor-image {
-				width: 250px;
-				animation: float 6s infinite ease-in-out;
+				width: 100%;
+	
 			}
-		
-			@keyframes float {
-				0%, 100% {
-					transform: translateY(0);
-				}
-				50% {
-					transform: translateY(-10px);
-				}
-			}
-		
+	
+	
+	
 			/* Tab menu styles */
 			.nav-tabs .nav-link {
 				color: white;
@@ -673,13 +698,13 @@
 				margin-right: 10px;
 				transition: color 0.3s;
 			}
-		
+	
 			.nav-tabs .nav-link:hover,
 			.nav-tabs .nav-link.active {
 				color: #ff9800;
 				font-weight: bold;
 			}
-		
+	
 			/* HIDE IMAGE ON MOBILE */
 			@media (max-width: 768px) {
 				.doctor-image {
