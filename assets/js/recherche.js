@@ -317,7 +317,7 @@ if (sessionStorage.getItem("auth")) {
   console.error("User not authenticated.");
 }
 document.getElementById('searchInput').addEventListener('input', function () {
-
+console.log("this.value.trim(): ",this.value.trim())
   const query = this.value.trim();
   const suggestionsContainer = document.getElementById('suggestions');
 
@@ -330,6 +330,7 @@ document.getElementById('searchInput').addEventListener('input', function () {
 
     //console.log("apiUrl: ", apiUrl)
     try {
+      console.log(`https://wic-doctor.com:3004/search-doctors?query=${query.toLowerCase()}`)
       fetch(`https://wic-doctor.com:3004/search-doctors?query=${query.toLowerCase()}`)
         .then(response => {
           if (!response.ok) {
