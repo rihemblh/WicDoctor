@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 // Clé de chiffrement (doit être sécurisée)
 // Clé de chiffrement (doit être sécurisée)
 const secretKeyrech = "maCleSecrete";
@@ -11,6 +13,7 @@ function decryptData(cipherText) {
   const bytes = CryptoJS.AES.decrypt(cipherText, secretKeyrech);
   return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
 }
+
 // Récupérer les données depuis l'API et créer les <optgroup>
 fetch('https://wic-doctor.com:3004/specialties')
   .then(response => {
@@ -576,4 +579,4 @@ if (sessionStorage.getItem("auth")) {
 } else {
   console.error("User not authenticated.");
 }
-
+});
