@@ -163,7 +163,7 @@
 									<div class="mega-menu-item">
 										<img src="./assets/images/media/photos/Télémédecine-soltion.png"
 											alt="Logo Télémédecine" />
-										<a href="https://wic-doctor.com/nos-solutions.html">Télémédecine</a>
+										<a href="https://wic-doctor.com/Telemedecine.html">Télémédecine</a>
 									</div>
 									<div class="mega-menu-item">
 										<img src="./assets/images/media/photos/technologie-solution.png"
@@ -321,143 +321,255 @@
 			margin: 20px auto;
 		}
 
-		
+
 		.card {
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
+			border: none;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s, box-shadow 0.3s;
+		}
+
+		.card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+		}
+
+		.card img {
+			height: 200px;
+			object-fit: cover;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			background: #f1f7ff;
+		}
+
+		.fade-in {
+			opacity: 0;
+			transform: translateY(20px);
+			animation: fadeInUp 1s forwards;
+		}
+
+		@keyframes fadeInUp {
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.card-title {
+			color: #6c7cb3;
+		}
+		.card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
     }
 
     .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .card img {
-      height: 200px;
-      object-fit: cover;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+    .card-body {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
     }
 
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards;
-    }
-
-    @keyframes fadeInUp {
-      to {
+    .card-body.active {
+        display: block;
         opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     .card-title {
-      color: #1BA584;
+        color: #6c7cb3;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
     }
 	</style>
-	<!--/Section-->
-	<!-- Bannière -->
 
-	<!-- Section Héro -->
-
-
-	<!-- Section Description -->
-
-	<section class="how-it-works">
-		<div class="container">
-			<p class="comment-ca-marche">La plateforme WIC Doctor intègre une gamme complète de services de
-				télémedecine, répondant aux besoins des médecins, des professionnels de santé, et des patients. Ces
-				services sont conçus pour offrir une solution numérique innovante et conforme aux normes internationales
-				de sécurité des données médicales, notamment HDS et RGPD. Voici une description enrichie des services
-				proposés, tenant compte des spécificités techniques et opérationnelles.</p>
-			
-		</div>
-	</section>
-
-
-
-	
 	<div class="container my-5">
 		<div class="row g-4">
-		  <!-- Téléconsultation -->
-		  <div class="col-12 col-md-6 fade-in" style="animation-delay: 0.1s;">
-			<div class="card">
-			  <img src="./assets/images/media/photos/téléconsultation.png" class="card-img-top" alt="Téléconsultation">
-			  <div class="card-body">
-				<h5 class="card-title">Téléconsultation via WIC Doctor</h5>
-				<p class="card-text">
-				  La téléconsultation permet aux médecins d’interagir avec leurs patients à distance, grâce à un système sécurisé et ergonomique.
-				</p>
-				<ul>
-				  <li>Consultations en temps réel via vidéo, audio ou messagerie.</li>
-				  <li>Renouvellement sécurisé des ordonnances.</li>
-				  <li>Historique des consultations intégré pour un suivi simplifié.</li>
-				  <li>Prise en charge immédiate des urgences non critiques.</li>
-				</ul>
-			  </div>
+			<!-- Téléconsultation -->
+			<div class="col-12 col-md-6 fade-in" style="animation-delay: 0.1s;">
+				<div class="card">
+					<img src="./assets/images/media/photos/Téléconsultation.png" class="card-img-top"
+						alt="Téléconsultation">
+						<h5 class="card-title">Téléconsultation via WIC Doctor</h5>
+					<div class="card-body">
+						
+						<p class="card-text">
+							La téléconsultation permet aux médecins d’interagir avec leurs patients à distance, grâce à
+							un système sécurisé et ergonomique.
+						</p>
+						<ul>
+							<b>Caractéristiques principales</b> <br>
+							<li>Consultations en temps réel via vidéo, audio ou messagerie.</li>
+							<li>Renouvellement sécurisé des ordonnances.</li>
+							<li>Historique des consultations intégré pour un suivi simplifié.</li>
+							<li>Prise en charge immédiate des urgences non critiques.</li>
+						</ul>
+						<ul>
+							<b>Avantages sur WIC Doctor :</b> <br>
+							<li>Optimisation du temps médical** grâce à un planning digitalisé.</li>
+							<li>Accès simplifié pour les patients dans des zones médicalement sous-dotées. </li>
+							<li>Interaction sécurisée avec stockage des données HDS. </li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		  </div>
-	  
-		  <!-- Téléexpertise -->
-		  <div class="col-12 col-md-6 fade-in" style="animation-delay: 0.2s;">
-			<div class="card">
-			  <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Téléexpertise">
-			  <div class="card-body">
-				<h5 class="card-title">Téléexpertise sur WIC Doctor</h5>
-				<p class="card-text">
-				  La téléexpertise facilite les échanges entre médecins généralistes et spécialistes pour un diagnostic ou une stratégie thérapeutique optimale.
-				</p>
-				<ul>
-				  <li>Consultation de spécialistes directement via la plateforme.</li>
-				  <li>Partage sécurisé de documents médicaux (imagerie, bilans biologiques).</li>
-				  <li>Outils collaboratifs intégrés pour des décisions médicales rapides.</li>
-				</ul>
-			  </div>
+
+			<!-- Téléexpertise -->
+			<div class="col-12 col-md-6 fade-in" style="animation-delay: 0.2s;">
+				<div class="card">
+					<img src="./assets/images/media/photos/Téléexpertise.png" class="card-img-top" alt="Téléexpertise">
+					<h5 class="card-title">Téléexpertise sur WIC Doctor</h5>
+					<div class="card-body">
+						
+						<p class="card-text">
+							La téléexpertise facilite les échanges entre médecins généralistes et spécialistes pour un
+							diagnostic ou une stratégie thérapeutique optimale.
+						</p>
+						<ul>
+							<b>Fonctionnalités clés :</b> <br>
+
+							<li>Consultation de spécialistes directement via la plateforme.</li>
+							<li>Partage sécurisé de documents médicaux (imagerie, bilans biologiques).</li>
+							<li>Outils collaboratifs intégrés pour des décisions médicales rapides.</li>
+						</ul>
+						<ul>
+							<b>Pourquoi choisir WIC Doctor :</b> <br>
+
+							<li>Réponse rapide grâce à un réseau de spécialistes qualifiés. </li>
+							<li>Dossiers patients centralisés et accessibles en toute sécurité. </li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		  </div>
-	  
-		  <!-- Télésurveillance Médicale -->
-		  <div class="col-12 col-md-6 fade-in" style="animation-delay: 0.3s;">
-			<div class="card">
-			  <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Télésurveillance">
-			  <div class="card-body">
-				<h5 class="card-title">Télésurveillance Médicale via WIC Doctor</h5>
-				<p class="card-text">
-				  Suivi à distance des patients atteints de maladies chroniques ou nécessitant une surveillance spécifique.
-				</p>
-				<ul>
-				  <li>Intégration des dispositifs médicaux connectés (glucomètres, tensiomètres, oxymètres).</li>
-				  <li>Alerte automatique en cas de détection d'anomalies.</li>
-				  <li>Rapports détaillés accessibles pour les médecins et les patients.</li>
-				</ul>
-			  </div>
+
+			<!-- Télésurveillance Médicale -->
+			<div class="col-12 col-md-6 fade-in" style="animation-delay: 0.3s;">
+				<div class="card">
+					<img src="./assets/images/media/photos/Télésurveillance.png" class="card-img-top"
+						alt="Télésurveillance">
+						<h5 class="card-title">Télésurveillance Médicale via WIC Doctor</h5>
+					<div class="card-body">
+						
+						<p class="card-text">
+							Suivi à distance des patients atteints de maladies chroniques ou nécessitant une
+							surveillance spécifique.
+						</p>
+						<ul>
+							<b>Fonctionnalités :</b> <br>
+							<li>Intégration des dispositifs médicaux connectés (glucomètres, tensiomètres, oxymètres).
+							</li>
+							<li>Alerte automatique en cas de détection d'anomalies.</li>
+							<li>Rapports détaillés accessibles pour les médecins et les patients.</li>
+						</ul>
+						<ul>
+							<b>Bénéfices pour les utilisateurs de WIC Doctor :</b> <br>
+							<li><b>Prévention proactive</b> des complications médicales. </li>
+							<li>Amélioration de la qualité de vie des patients grâce à un suivi continu. </li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		  </div>
-	  
-		  <!-- Téléassistance Médicale -->
-		  <div class="col-12 col-md-6 fade-in" style="animation-delay: 0.4s;">
-			<div class="card">
-			  <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Téléassistance">
-			  <div class="card-body">
-				<h5 class="card-title">Téléassistance Médicale avec WIC Doctor</h5>
-				<p class="card-text">
-				  Assistance à distance aux professionnels de santé en situation d'urgence ou dans des environnements isolés.
-				</p>
-				<ul>
-				  <li>Assistance en temps réel pour les actes médicaux ou les soins complexes.</li>
-				  <li>Outils de communication audio et vidéo pour un accompagnement efficace.</li>
-				  <li>Intégration d’un module d’expertise instantanée.</li>
-				</ul>
-			  </div>
+
+			<!-- Téléassistance Médicale -->
+			<div class="col-12 col-md-6 fade-in" style="animation-delay: 0.4s;">
+				<div class="card">
+					<img src="./assets/images/media/photos/Téléassistance.png" class="card-img-top"
+						alt="Téléassistance">
+						<h5 class="card-title">Téléassistance Médicale avec WIC Doctor</h5>
+					<div class="card-body">
+						
+						<p class="card-text">
+							Assistance à distance aux professionnels de santé en situation d'urgence ou dans des
+							environnements isolés.
+						</p>
+						<ul>
+							<b>Caractéristiques :</b> <br>
+							<li>Assistance en temps réel pour les actes médicaux ou les soins complexes.</li>
+							<li>Outils de communication audio et vidéo pour un accompagnement efficace.</li>
+							<li>Intégration d’un module d’expertise instantanée.</li>
+						</ul>
+						<ul>
+							<b>Atouts :</b> <br>
+							<li>Renforcement des compétences locales grâce à un accès immédiat aux experts.</li>
+							<li>Réduction des erreurs dans les soins critiques. </li>
+						</ul>
+					</div>
+				</div>
 			</div>
-		  </div>
+
+			<!-- Régulation Médicale sur WIC Doctor -->
+			<div class="col-12 col-md-6 fade-in" style="animation-delay: 0.3s;">
+				<div class="card">
+					<img src="./assets/images/media/photos/Regulation.png" class="card-img-top" alt="Télésurveillance">
+					<h5 class="card-title">Régulation Médicale sur WIC Doctor</h5>
+					<div class="card-body">
+						
+						<p class="card-text">
+							Suivi à distance des patients atteints de maladies chroniques ou nécessitant une
+							surveillance spécifique.
+						</p>
+						<ul>
+							<b>Fonctionnalités spécifiques :</b> <br>
+							<li>Centre d’appels médical intégré avec gestion des priorités. </li>
+							<li>Analyse des symptômes via un algorithme d’intelligence artificielle. </li>
+							<li>Orientation vers une téléconsultation, une hospitalisation ou un soin en présentiel.
+							</li>
+						</ul>
+						<ul>
+							<b>Bénéfices :</b> <br>
+							<li>Réduction des délais de prise en charge. </li>
+							<li>Optimisation des ressources médicales disponibles. </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Prescription Médicale Électronique avec Signature Électronique -->
+			<div class="col-12 col-md-6 fade-in" style="animation-delay: 0.4s;">
+				<div class="card">
+					<img src="./assets/images/media/photos/prescription.png" class="card-img-top" alt="Téléassistance">
+					<h5 class="card-title">Prescription Médicale Électronique avec Signature Électronique</h5>
+					<div class="card-body">
+						
+						<p class="card-text">
+							Assistance à distance aux professionnels de santé en situation d'urgence ou dans des
+							environnements isolés.
+						</p>
+						<ul>
+							<b>Caractéristiques :</b> <br>
+							<li>Assistance en temps réel pour les actes médicaux ou les soins complexes.</li>
+							<li>Outils de communication audio et vidéo pour un accompagnement efficace.</li>
+							<li>Intégration d’un module d’expertise instantanée.</li>
+						</ul>
+						<ul>
+							<b>Pourquoi c’est essentiel :</b> <br>
+							<li>Assure une traçabilité totale des prescriptions. </li>
+							<li>Réduit les risques d’erreurs médicales.</li>
+							<li>Simplifie les renouvellements et le suivi des traitements.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-	  </div>
-	  
-	  
+	</div>
+	<script>
+		// JavaScript to handle toggling card-body visibility
+		document.querySelectorAll('.card-title').forEach(title => {
+			title.addEventListener('click', () => {
+				const cardBody = title.nextElementSibling;
+				cardBody.classList.toggle('active');
+			});
+		});
+	</script>
+
 
 	<!--Footer Section-->
 	<section>
