@@ -2,17 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Clé de chiffrement (doit être sécurisée)
 // Clé de chiffrement (doit être sécurisée)
-const secretKeyrech = "maCleSecrete";
-// Fonction pour crypter
-function encryptData(data) {
-  return CryptoJS.AES.encrypt(JSON.stringify(data), secretKeyrech).toString();
-}
-/*11-12-2024*/
-// Fonction pour décrypter
-function decryptData(cipherText) {
-  const bytes = CryptoJS.AES.decrypt(cipherText, secretKeyrech);
-  return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
-}
+
 
 // Récupérer les données depuis l'API et créer les <optgroup>
 fetch('https://wic-doctor.com:3004/specialties')
@@ -137,7 +127,7 @@ fetch('https://wic-doctor.com:3004/specialties')
     // Ajouter l'<optgroup> au <select>
     selectclinic.appendChild(optgroupclinic);
   }); */
-  document.addEventListener('DOMContentLoaded', () => {
+  
     const data = [
       {"ville":"{\"fr\":\"Ariana\"}"},{"ville":"{\"fr\":\"Béja\"}"},{"ville":"{\"fr\":\"Ben Arous\"}"},{"ville":"{\"fr\":\"Bizerte\"}"},
       {"ville":"{\"fr\":\"Gabès\"}"},{"ville":"{\"fr\":\"Gafsa\"}"},{"ville":"{\"fr\":\"Jendouba\"}"},{"ville":"{\"fr\":\"Kairouan\"}"},
@@ -177,7 +167,7 @@ fetch('https://wic-doctor.com:3004/specialties')
     // Remplir les deux sélecteurs
     populateSelect('dynamicSelectVille');
     populateSelect('dynamicSelectVilleClinic');
-  });
+
 fetch('https://wic-doctor.com:3004/getpays')
   .then(response => {
     if (!response.ok) {
@@ -239,6 +229,94 @@ fetch('https://wic-doctor.com:3004/getpays')
 
   });
 
+
+
+
+var Login
+if (sessionStorage.getItem("auth")) {
+  console.log("sessionStorage.getItem('auth'): ",sessionStorage.getItem("auth"))
+
+  document.getElementById('SeConnecter').style.display = "none "
+  document.getElementById('B2B').style.display = "none"
+  document.getElementById('Login').style.display = ""
+  Login = decryptData(sessionStorage.getItem("auth"));
+  console.log("Donne login: ", Login)
+  document.addEventListener('DOMContentLoaded', function () {
+    console.log("Login.result[0]: ", Login.result[0],JSON.parse(Login.result[0].first_name).fr.charAt(0),JSON.parse(Login.result[0].last_name).fr.charAt(0))
+    const userName = JSON.parse(Login.result[0].first_name).fr.charAt(0) + JSON.parse(Login.result[0].last_name).fr.charAt(0); // Replace with the variable holding the user's first name
+    console.log("userName: ", userName)
+    const initial = userName.toUpperCase();
+    console.log("initial: ",initial)
+
+    document.getElementById('userAvatar').textContent = initial;
+    console.log("document.getElementById('userAvatar').textContent: ",document.getElementById('userAvatar').textContent)
+    document.getElementById('userAvatar').style.backgroundColor = getRandomColor();
+  });
+}
+else {
+
+  document.getElementById('SeConnecter').style.display = ""
+  document.getElementById('B2B').style.display = ""
+  document.getElementById('Login').style.setProperty("display", "none", "important");
+  document.getElementById('userDropdown').style.setProperty("display", "none", "important");
+
+  
+
+}
+function Deconexion() {
+  console.log("Login: ",Login)
+  const requestOptions = {
+    method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
+    headers: {
+      'Authorization': `Bearer ${Login.token}`, // Ajouter le token dans l'en-tête Authorization
+      'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
+    },
+  };
+  // Appeler l'API
+  fetch("https://wic-doctor.com:3004/logout", requestOptions)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erreur lors de l\'envoi des données');
+      }
+      return response.json(); // Analyser la réponse JSON
+    })
+    .then(data => {
+      console.log('Réponse de l\'API :', data);
+      sessionStorage.removeItem('auth');
+      sessionStorage.removeItem('rendezvous');
+
+      window.location.href = 'https://wic-doctor.com/'; // Rediriger vers la page 2
+    })
+    .catch(error => {
+      console.error('Erreur :', error);
+    });
+}
+
+// Function to generate a random color
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+
+  return color;
+}
+
+// Ensure you define the variable in the global scope
+if (sessionStorage.getItem("auth")) {
+  const authData = decryptData(sessionStorage.getItem("auth"));
+
+  // Store user data in the global variable
+  window.userData = {
+    firstName: authData.result[0].first_name,
+    lastName: authData.result[0].last_name
+  };
+  console.log("User Data Stored: ", window.userData); // Should log the stored data
+} else {
+  console.error("User not authenticated.");
+}
+});
 function RechercheDoctor() {
   var specialtyId = ""
   var Ville = ""
@@ -431,7 +509,17 @@ function RechercheClinic() {
 
 
 }
-
+const secretKeyrech = "maCleSecrete";
+// Fonction pour crypter
+function encryptData(data) {
+  return CryptoJS.AES.encrypt(JSON.stringify(data), secretKeyrech).toString();
+}
+/*11-12-2024*/
+// Fonction pour décrypter
+function decryptData(cipherText) {
+  const bytes = CryptoJS.AES.decrypt(cipherText, secretKeyrech);
+  return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+}
 function SearchSpecialities(id,name) {
   console.log("id: ",id)
   var apiurlSearch = "https://wic-doctor.com:3004/doctorsadd?"
@@ -477,106 +565,3 @@ function toggleDropdown() {
   const dropdownMenu = document.getElementById("dropdownMenu");
   dropdownMenu.classList.toggle("show");
 }
-
-// Ferme la dropdown si l'utilisateur clique en dehors
-window.onclick = function (event) {
-  if (!event.target.matches('#patientDropdown')) {
-    const dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      const openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-// Fonction pour décrypter
-function decryptData(cipherText) {
-  const bytes = CryptoJS.AES.decrypt(cipherText, secretKeyrech);
-  return JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
-}
-var Login
-if (sessionStorage.getItem("auth")) {
-  console.log("sessionStorage.getItem('auth'): ",sessionStorage.getItem("auth"))
-
-  document.getElementById('SeConnecter').style.display = "none "
-  document.getElementById('B2B').style.display = "none"
-  document.getElementById('Login').style.display = ""
-  Login = decryptData(sessionStorage.getItem("auth"));
-  console.log("Donne login: ", Login)
-  document.addEventListener('DOMContentLoaded', function () {
-    console.log("Login.result[0]: ", Login.result[0],JSON.parse(Login.result[0].first_name).fr.charAt(0),JSON.parse(Login.result[0].last_name).fr.charAt(0))
-    const userName = JSON.parse(Login.result[0].first_name).fr.charAt(0) + JSON.parse(Login.result[0].last_name).fr.charAt(0); // Replace with the variable holding the user's first name
-    console.log("userName: ", userName)
-    const initial = userName.toUpperCase();
-    console.log("initial: ",initial)
-
-    document.getElementById('userAvatar').textContent = initial;
-    console.log("document.getElementById('userAvatar').textContent: ",document.getElementById('userAvatar').textContent)
-    document.getElementById('userAvatar').style.backgroundColor = getRandomColor();
-  });
-}
-else {
-
-  document.getElementById('SeConnecter').style.display = ""
-  document.getElementById('B2B').style.display = ""
-  document.getElementById('Login').style.setProperty("display", "none", "important");
-  document.getElementById('userDropdown').style.setProperty("display", "none", "important");
-
-  
-
-}
-function Deconexion() {
-  console.log("Login: ",Login)
-  const requestOptions = {
-    method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
-    headers: {
-      'Authorization': `Bearer ${Login.token}`, // Ajouter le token dans l'en-tête Authorization
-      'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
-    },
-  };
-  // Appeler l'API
-  fetch("https://wic-doctor.com:3004/logout", requestOptions)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Erreur lors de l\'envoi des données');
-      }
-      return response.json(); // Analyser la réponse JSON
-    })
-    .then(data => {
-      console.log('Réponse de l\'API :', data);
-      sessionStorage.removeItem('auth');
-      sessionStorage.removeItem('rendezvous');
-
-      window.location.href = 'https://wic-doctor.com/'; // Rediriger vers la page 2
-    })
-    .catch(error => {
-      console.error('Erreur :', error);
-    });
-}
-
-// Function to generate a random color
-function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-
-  return color;
-}
-
-// Ensure you define the variable in the global scope
-if (sessionStorage.getItem("auth")) {
-  const authData = decryptData(sessionStorage.getItem("auth"));
-
-  // Store user data in the global variable
-  window.userData = {
-    firstName: authData.result[0].first_name,
-    lastName: authData.result[0].last_name
-  };
-  console.log("User Data Stored: ", window.userData); // Should log the stored data
-} else {
-  console.error("User not authenticated.");
-}
-});
