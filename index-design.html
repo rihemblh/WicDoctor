@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Rejoignez WIC Doctor, la plateforme de télémédecine qui vous permet de réserver des rdv médicaux et de consulter votre médecin en ligne">
+	<meta name="author" content="WIC Doctor">
+
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="assets/images/brand/favicon.png">
+	<meta name="google-site-verification" content="PVuEtUU1FP_lSbCcbx4ZMaSaIYw2kUicttNRo3kEv2U" />
+	<meta name="title" content="WIC Doctor : plateforme de télémédecine" id="metaTitle">
+	<title>WIC Doctor : plateforme de télémédecine</title>
+	<!-- Bootstrap Css -->
+	<link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/color.css" rel="stylesheet">
+
+	<!--Icons  Css -->
+	<link href="assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!-- Header-main -->
+	<!-- Header-main -->
+	<!-- Main Header -->
+	<!-- Header-main -->
+
+	<style>
+
+	</style>
+
+	<div id="header"></div>
+	<script>
+		// Charger dynamiquement le header
+		fetch('header.html')
+			.then(response => response.text())
+			.then(data => document.getElementById('header').innerHTML = data);
+
+		/* // Charger dynamiquement le footer
+		fetch('footer.html')
+			.then(response => response.text())
+			.then(data => document.getElementById('footer').innerHTML = data); */
+	</script>
+
+
+
+	<!--Section-->
+	<section class="sptb section-bg">
+		<div class="container">
+			<div class="section-title center-block text-center">
+				<h2>Médecins Disponibles</h2>
+
+			</div>
+			<div class="owl-carousel owl-carousel-icons2" id="carouselDoctors">
+
+			</div>
+		</div>
+	</section>
+	<!--Section-->
+
+	<section class="sptb">
+		<div class="container">
+			<!-- <div class="section-title center-block text-center">
+				<h2 class=" position-relative">Offres</h2>
+			</div> -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="">
+						<div id="myCarousel" class="owl-carousel testimonial-owl-carousel">
+							<div class="item text-center">
+								<div class="card-body p-0">
+									<div class="row">
+										<div class="col-xl-12 col-md-12 d-block mx-auto">
+											<div class="">
+												<div class="testimonia-img mx-auto mb-3">
+													<img src="assets/images/banners/WIC.DOC-Banner.jpeg"
+														class="img-thumbnail img-pub" alt="">
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 	<div class="item text-center">
+								<div class="card-body p-0">
+									<div class="row">
+										<div class="col-xl-12 col-md-12 d-block mx-auto">
+											<div class="">
+												<div class="testimonia-img mx-auto mb-3">
+													<img src="assets/images/banners/WIC.DOC-Banner.jpeg"
+														class="img-thumbnail " alt="">
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item text-center">
+								<div class="card-body p-0">
+									<div class="row">
+										<div class="col-xl-12 col-md-12 d-block mx-auto">
+											<div class="">
+												<div class="testimonia-img mx-auto mb-3">
+													<img src="assets/images/banners/WIC.DOC-Banner.jpeg"
+														class="img-thumbnail " alt="">
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Section-->
+	<section class="sptb section-bg">
+		<div class="container">
+			<div class="section-title center-block text-center">
+				<h2>Spécialités</h2>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div id="carouselSpecialities" class="owl-carousel owl-carousel-icons2">
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</section>
+	<!--/Section-->
+
+	<!--Section-->
+	<section id="etab" class="sptb">
+		<div class="container">
+			<div class="section-title center-block text-center">
+				<h2>Établissements</h2>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="owl-carousel owl-carousel-icons2">
+						<div class="item">
+							<div class="card">
+								<a href="https://wic-doctor.com/pharmacies/Pharmacie.html">
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/pharmacie.png" class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Pharmacies</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="https://wic-doctor.com/Laboratoires/tous.html">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/centre-de-dialyse.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Laboratoires</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="#">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/ambulance.png" class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Ambulances Privées</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="https://wic-doctor.com/Cliniques/tous.html">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/clinique.png" class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Cliniques</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="#">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/banque-de-sang.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Banque de sang</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="card">
+								<a href="https://wic-doctor.com/Infirmerie/tous.html">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/infirmier.png" class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Infirmerie privée</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="https://wic-doctor.com/Vétérinaire/tous.html">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/vétérinaire.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Vétérinaires</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="#">
+
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/parapharmacie.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Para pharmacies</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="card">
+								<a href="https://wic-doctor.com/Hopitaux/tous.html">
+									<div class="card-body">
+										<div class="cat-item text-center">
+											<div class="cat-imgs">
+												<img alt="img" src="assets/images/icons/Hopital-et-clinique.png"
+													class="svg-img">
+											</div>
+											<div class="cat-desc">
+												<h5 class="mb-1">Hôpitaux</h5>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</section>
+
+	<!--/Section-->
+
+
+	<!--Section-->
+	<!--/Section-->
+
+	<section>
+		<div class="sptb section-bg-vert">
+			<div class="content-text mb-0">
+				<div class="content-text mb-0">
+					<div class="container">
+						<div class="text-center text-white ">
+							<h2 class="mb-2"> Inscrivez-vous </h2>
+							Pour recevoir nos dernières publications</p>
+							<div class="row">
+								<div class="col-lg-7 mx-auto d-block">
+									<div class="mt-5">
+										<div class="input-group sub-input mt-1">
+											<input type="text" class="form-control input-lg "
+												placeholder="Votre e-mail">
+											<div class="input-group-append ">
+												<button type="button" class="btn btn-secondary btn-lg br-te-3  br-be-3">
+													S’inscrire
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Footer Section-->
+	<section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+
+								<li>
+									<a href="https://wic-doctor.com/FAQ.html">FAQ</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Cliniques/tous.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/intervention.html">Interventions</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+
+
+						<div class="col-lg-3 col-md-12">
+							<p class="footer-title">Les conditions</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+										générales de vente en ligne</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+										d'utilisation</a>
+									</a>
+								</li>
+								<li>
+									<a
+										href="Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+										de confidentialité des données personnelles
+									</a>
+								</li>
+								<li>
+									<a href="#">Termes et licences d'utilisation
+									</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Popup Login-->
+	<div class="modal" id="exampleModal">
+		<div class="modal-dialog modal-lg modal-appoint" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Make an Appointment</h5><button aria-label="Close"
+						class="close" data-bs-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Name</label>
+								<input class="form-control" placeholder="Enter Your Name" type="text">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Email</label>
+								<input class="form-control" placeholder="Enter your Email" type="email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Your Number</label>
+								<input class="form-control" placeholder="Enter your Phone Number" type="number">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Gender</label>
+								<select class="form-control select2" name="user[hour]">
+									<option value="">Male</option>
+									<option value="0">Female</option>
+									<option value="1">Others</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="form-label">Select Date</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text">
+											<i class="fa fa-calendar tx-16 lh-0 op-6"></i>
+										</div>
+									</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY"
+										type="text">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select City</label>
+								<select class="form-control form-select select2-show-search" name="city">
+									<option selected value="0">Select City</option>
+									<option value="1">Hyderabad</option>
+									<option value="2">Mumbai</option>
+									<option value="3">Delhi</option>
+									<option value="4">Bangalore</option>
+									<option value="5">Ahmedabad</option>
+									<option value="6">Chennai</option>
+									<option value="7">Kolkata</option>
+									<option value="8">Lucknow</option>
+									<option value="9">Jaipur</option>
+									<option value="10">Bhopal</option>
+									<option value="11">Visakhapatnam</option>
+									<option value="12">Patna</option>
+									<option value="13">Srinagar</option>
+									<option value="14">Lucknow</option>
+									<option value="15">Bhubaneswar</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Hospital</label>
+								<select class="form-control form-select select2-show-search" name="Hospital">
+									<option selected value="0">Select Hospital</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Specialist</label>
+								<select class="form-control form-select select2-show-search" name="Specialist">
+									<option selected value="0">Select Specialist</option>
+									<option value="1">Cardiologist</option>
+									<option value="2">Neurosurgeon</option>
+									<option value="3">Orthopaedic Surgeon</option>
+									<option value="4">Oncologist</option>
+									<option value="5">Neurologist</option>
+									<option value="6">Gastroenterologist</option>
+									<option value="7">ENT</option>
+									<option value="8">Dentist</option>
+									<option value="9">Psychiatrist</option>
+									<option value="10">Urologist</option>
+									<option value="11">Gynecologist</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Select Slot</label>
+								<select class="form-control form-select select2-show-search" name="Slot">
+									<option selected value="0">Select Hospital</option>
+									<option value="1">morning</option>
+									<option value="2">Afternoon</option>
+									<option value="3">Evening</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="">
+						<a class="btn btn-orange btn-block" href="javascript:void(0);">Book Appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Popup Login-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="assets/js/circle-progress.min.js"></script>
+
+
+
+	<!-- Star Rating Js-->
+	<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Counters -->
+	<script src="assets/plugins/counters/counterup.min.js"></script>
+	<script src="assets/plugins/counters/waypoints.min.js"></script>
+	<script src="assets/plugins/counters/numeric-counter.js"></script>
+
+	<!-- Datepicker js -->
+	<script src="assets/plugins/date-picker/spectrum.js"></script>
+	<script src="assets/plugins/date-picker/jquery-ui.js"></script>
+	<script src="assets/plugins/date-picker/datepicker.js"></script>
+
+	<!--JQuery TouchSwipe js-->
+	<script src="assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+	<script src="assets/js/select2.js"></script>
+
+	<!-- Cookie js -->
+	<script src="assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="assets/plugins/cookie/cookie.js"></script>
+
+	<!-- sticky Js-->
+	<script src="assets/js/sticky.js"></script>
+
+	<!-- Swipe Js-->
+	<script src="assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="assets/js/owl-carousel.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!-- Typewritter Js-->
+	<script src="assets/js/typewritter.js"></script>
+
+	<!--Dotcors-->
+	<script src="assets/js/doctor.js"></script>
+
+	<!--Dotcors-->
+	<script src="assets/js/recherche.js"></script>
+	<!-- Theme-color js -->
+	<script src="assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="assets/js/custom.js"></script>
+
+
+	<!-- switcher-custom js -->
+	<script src="assets/js/switcher-custom.js"></script>
+
+</body>
+
+</html>
