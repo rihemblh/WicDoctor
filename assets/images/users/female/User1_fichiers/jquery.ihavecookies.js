@@ -41,17 +41,17 @@
         var settings = $.extend({
             cookieTypes: [
                 {
-                    type: 'Site Preferences',
+                    type: 'Préférences du site',
                     value: 'preferences',
                     description: 'These are cookies that are related to your site preferences, e.g. remembering your username, site colours, etc.'
                 },
                 {
-                    type: 'Analytics',
+                    type: 'Analytique',
                     value: 'analytics',
                     description: 'Cookies related to site visits, browser types, etc.'
                 },
                 {
-                    type: 'Marketing',
+                    type: 'Commercialisation',
                     value: 'marketing',
                     description: 'Cookies related to marketing, e.g. newsletters, social media, etc'
                 }
@@ -63,7 +63,7 @@
             expires: 30,
             moreInfoLabel: 'More information',
             acceptBtnLabel: 'Accept Cookies',
-            advancedBtnLabel: 'Customise Cookies',
+            advancedBtnLabel: 'Personnaliser les cookies',
             onAccept: function(){},
             uncheckBoxes: false
         }, options);

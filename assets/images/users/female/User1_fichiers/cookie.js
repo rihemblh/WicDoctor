@@ -1,18 +1,18 @@
 $(document).ready(function() {
 	$('body').ihavecookies({
-		title: 'Accept Cookies & Privacy Policy?',
-		message: 'There are no cookies used on this site, but if there were this message could be customised to provide more details. Click the <strong>accept</strong> button below to see the optional callback in action...',
+		title: 'Acceptez-vous de nous laisser utiliser des cookies ?',
+		message: 'Ce site utilise des cookies pour gérer les sessions utilisateurs de manière sécurisée. Nous ne stockons aucune donnée médicale dans les cookies. Veuillez consulter notre politique de confidentialité pour en savoir plus.',
 		delay: 600,
 		expires: 1,
-		link: '#privacy',
+		link: 'https://wic-doctor.com/Politique-de-confidentialit%C3%A9-et-d_utilisation-pour-les-sous-traitants.html',
 		onAccept: function(){
 			var myPreferences = $.fn.ihavecookies.cookie();
 			console.log('Yay! The following preferences were saved...');
 			console.log(myPreferences);
 		},
 		uncheckBoxes: true,
-		acceptBtnLabel: 'Accept Cookies',
-		moreInfoLabel: 'More information'
+		acceptBtnLabel: 'Accepter',
+		moreInfoLabel: 'Voir plus'
 	});
 
 	if ($.fn.ihavecookies.preference('marketing') === true) {

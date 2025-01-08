@@ -42,17 +42,17 @@
         var settings = $.extend({
             cookieTypes: [
                 {
-                    type: 'Site Preferences',
+                    type: 'Préférences du site',
                     value: 'preferences',
                     description: 'These are cookies that are related to your site preferences, e.g. remembering your username, site colours, etc.'
                 },
                 {
-                    type: 'Analytics',
+                    type: 'Analytique',
                     value: 'analytics',
                     description: 'Cookies related to site visits, browser types, etc.'
                 },
                 {
-                    type: 'Marketing',
+                    type: 'Commercialisation',
                     value: 'marketing',
                     description: 'Cookies related to marketing, e.g. newsletters, social media, etc'
                 }
@@ -64,7 +64,7 @@
             expires: 30,
             moreInfoLabel: 'More information',
             acceptBtnLabel: 'Accept Cookies',
-            advancedBtnLabel: 'Customise Cookies',
+            advancedBtnLabel: 'Personnaliser les cookies',
             onAccept: function(){},
             uncheckBoxes: false
         }, options);
@@ -74,7 +74,7 @@
         if (!myCookie || !myCookiePrefs) {
 
             // Set the 'necessary' cookie type checkbox which can not be unchecked
-            var cookieTypes = '<li><input type="checkbox" name="gdpr[]" value="necessary" checked="checked" disabled="disabled"> <label title="These are cookies that are essential for the website to work correctly.">Necessary</label></li>';
+            var cookieTypes = '<li><input type="checkbox" name="gdpr[]" value="necessary" checked="checked" disabled="disabled"> <label title="These are cookies that are essential for the website to work correctly.">Nécessaire</label></li>';
 
             // Generate list of cookie type checkboxes
             $.each(settings.cookieTypes, function(index, field) {
