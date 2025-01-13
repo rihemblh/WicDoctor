@@ -2,7 +2,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Clé de chiffrement (doit être sécurisée)
 // Clé de chiffrement (doit être sécurisée)
+var Login
+if (sessionStorage.getItem("auth")) {
+  console.log("sessionStorage.getItem('auth'): ",sessionStorage.getItem("auth"))
+if(document.getElementById('SeConnecter'))
+  document.getElementById('SeConnecter').style.display = "none "
+if(document.getElementById('B2B'))
+  document.getElementById('B2B').style.display = "none"
+  document.getElementById('Login').style.display = ""
+  Login = decryptData(sessionStorage.getItem("auth"));
+  console.log("Donne login: ", Login)
+    console.log("Login.result[0]: ", Login.result[0],JSON.parse(Login.result[0].first_name).fr.charAt(0),JSON.parse(Login.result[0].last_name).fr.charAt(0))
+    const userName = JSON.parse(Login.result[0].first_name).fr.charAt(0) + JSON.parse(Login.result[0].last_name).fr.charAt(0); // Replace with the variable holding the user's first name
+    console.log("userName: ", userName)
+    const initial = userName.toUpperCase();
+    console.log("initial: ",initial)
 
+    document.getElementById('userAvatar').textContent = initial;
+    console.log("document.getElementById('userAvatar').textContent: ",document.getElementById('userAvatar').textContent)
+    document.getElementById('userAvatar').style.backgroundColor = getRandomColor();
+  
+}
+else {
+
+  document.getElementById('SeConnecter').style.display = ""
+  document.getElementById('B2B').style.display = ""
+  document.getElementById('Login').style.setProperty("display", "none", "important");
+ // document.getElementById('userDropdown').style.setProperty("display", "none", "important");
+
+  
+
+}
 
 // Récupérer les données depuis l'API et créer les <optgroup>
 fetch('https://wic-doctor.com:3004/specialties')
@@ -232,37 +262,7 @@ fetch('https://wic-doctor.com:3004/getpays')
 
 
 
-var Login
-if (sessionStorage.getItem("auth")) {
-  console.log("sessionStorage.getItem('auth'): ",sessionStorage.getItem("auth"))
 
-  document.getElementById('SeConnecter').style.display = "none "
-  document.getElementById('B2B').style.display = "none"
-  document.getElementById('Login').style.display = ""
-  Login = decryptData(sessionStorage.getItem("auth"));
-  console.log("Donne login: ", Login)
-  document.addEventListener('DOMContentLoaded', function () {
-    console.log("Login.result[0]: ", Login.result[0],JSON.parse(Login.result[0].first_name).fr.charAt(0),JSON.parse(Login.result[0].last_name).fr.charAt(0))
-    const userName = JSON.parse(Login.result[0].first_name).fr.charAt(0) + JSON.parse(Login.result[0].last_name).fr.charAt(0); // Replace with the variable holding the user's first name
-    console.log("userName: ", userName)
-    const initial = userName.toUpperCase();
-    console.log("initial: ",initial)
-
-    document.getElementById('userAvatar').textContent = initial;
-    console.log("document.getElementById('userAvatar').textContent: ",document.getElementById('userAvatar').textContent)
-    document.getElementById('userAvatar').style.backgroundColor = getRandomColor();
-  });
-}
-else {
-
-  document.getElementById('SeConnecter').style.display = ""
-  document.getElementById('B2B').style.display = ""
-  document.getElementById('Login').style.setProperty("display", "none", "important");
-  document.getElementById('userDropdown').style.setProperty("display", "none", "important");
-
-  
-
-}
 function Deconexion() {
   console.log("Login: ",Login)
   const requestOptions = {

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr-fr">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6Y9SHVYS"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-VQ6Y9SHVYS');
+	</script>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description"
+		content="Découvrez les spécificités de notre plateforme WIC Doctor qui vous permet de réserver des rdv et consulter votre médecin en ligne">
+	<meta name="author" content="Wic DOCTOR">
+	<meta name="title" content="WIC Doctor : RDV et Télémédecine">
+
+	<!-- Favicon -->
+	<link rel="icon" alt="WIC Doctor" href="assets/images/brand/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" alt="WIC Doctor" type="image/x-icon" href="assets/images/brand/favicon.png">
+
+	<!-- Title -->
+	<title>WIC Doctor </title>
+
+	<!-- Bootstrap Css -->
+	<link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Style Css -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<!--rihem 09-01-2025-->
+	<link href="assets/css/font-awesome-all.css" rel="stylesheet">
+	<link href="assets/css/flaticon.css" rel="stylesheet">
+	<link href="assets/css/owl.css" rel="stylesheet">
+	<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/imagebg.css" rel="stylesheet">
+	<link href="assets/css/color.css" rel="stylesheet">
+	<link href="assets/css/style-2.css" rel="stylesheet">
+	<link href="assets/css/responsive.css" rel="stylesheet">
+	<!--rihem 09-01-2025-->
+	<!--Icons  Css -->
+	<link href="assets/css/icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<!--Loader-->
+	<div id="global-loader">
+		<img alt="" class="loader-img" src="assets/images/loader.svg">
+	</div>
+	<!--/Loader-->
+
+	<!--rihem 09-01-2025-->
+
+
+
+	<!-- main header -->
+	<header class="main-header style-two">
+		<div class="auto-container">
+			<div class="header-upper">
+				<div class="outer-box clearfix">
+					<div class="logo-box pull-left">
+						<figure class="logo"><a href="index.html"><img src="assets/images/wic-dr-logo.png" alt=""></a>
+						</figure>
+					</div>
+					<div class="nav-box pull-right clearfix">
+						<div class="menu-area pull-left">
+							<!--Mobile Navigation Toggler-->
+							<div class="mobile-nav-toggler">
+								<i class="icon-bar"></i>
+								<i class="icon-bar"></i>
+								<i class="icon-bar"></i>
+							</div>
+							<nav class="main-menu navbar-expand-md navbar-light">
+								<div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+
+									<ul class="navigation clearfix">
+										<li class=" dropdown"><a href="index.html">Accueil</a>
+
+										</li>
+										<li><a href="https://wic-doctor.com/qui-sommes-nous.html">WIC Dr.</a></li>
+										<li class="current dropdown">
+											<a href="#">Nos Solutions</a>
+											<ul class="megamenu">
+												<li>
+													<img src="./assets/images/media/photos/medecin-solution.png"
+														alt="Logo Praticiens" />
+													<a
+														href="https://wic-doctor.com/nos-solutions.html#Pratcien">Praticiens</a>
+												</li>
+												<li>
+													<img src="./assets/images/media/photos/patient-solution.png"
+														alt="Logo Patients" />
+													<a
+														href="https://wic-doctor.com/nos-solutions.html#Patient">Patients</a>
+												</li>
+												<li>
+													<img src="./assets/images/media/photos/Télémédecine-soltion.png"
+														alt="Logo Télémédecine" />
+													<a href="https://wic-doctor.com/Telemedecine.html">Télémédecine</a>
+												</li>
+												<li>
+													<img src="./assets/images/media/photos/technologie-solution.png"
+														alt="Logo Technologie" />
+													<a href="https://wic-doctor.com/nos-solutions.html#Tech">Technologie
+														de pointe</a>
+												</li>
+											</ul>
+										</li>
+										<li><a href="https://wic-doctor.com/inscription-professionnel/#pricing">Nos
+												Tarifs</a></li>
+										<li class="dropdown">
+											<a href="https://wic-doctor.com/pathologies.html">Soins des patients</a>
+											<ul>
+												<li><a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+												</li>
+												<li><a href="https://wic-doctor.com/intervention.html">Interventions</a>
+												</li>
+												<li><a
+														href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a>
+												</li>
+											</ul>
+										</li>
+										<li><a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+										</li>
+										<li class=""><a href="https://wic-doctor.com/contact.html">Contact</a></li>
+										<li>
+											<div class="menu-right-content pull-left" id="Login">
+												<div class="avatar-initial rounded-circle me-2" id="userAvatar"
+													role="button" data-bs-toggle="dropdown" aria-expanded="false"></div>
+												<ul class="dropdown-menu dropdown-menu-end"
+													aria-labelledby="userAvatar">
+													<li><a class="dropdown-item profile"
+															href="https://wic-doctor.com/profil.html">Mon Profil</a>
+													</li>
+													<li>
+														<hr class="dropdown-divider">
+													</li>
+													<li><a class="dropdown-item" onclick="Deconexion()">Se
+															déconnecter</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--sticky Header-->
+		<div class="sticky-header">
+			<div class="container clearfix">
+				<figure class="logo-box"><a href="index.html"><img src="assets/images/small-logo.png" alt=""></a>
+				</figure>
+				<div class="menu-area">
+					<nav class="main-menu clearfix">
+						<!--Keep This Empty / Menu will come through Javascript-->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- main-header end -->
+
+	<!-- Mobile Menu  -->
+	<div class="mobile-menu">
+		<div class="menu-backdrop"></div>
+		<div class="close-btn"><i class="fas fa-times"></i></div>
+
+		<nav class="menu-box">
+			<div class="nav-logo"><a href="index.html"><img src="assets/images/wic-dr-logo.png" alt="" title=""></a>
+			</div>
+			<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+			</div>
+
+
+		</nav>
+	</div><!-- End Mobile Menu -->
+
+
+	<!--Page Title-->
+	<section class="page-title centred">
+		<div class="pattern-layer">
+			<div class="pattern-1" style="background-image: url(assets/images/icons/pattern-21.png);"></div>
+			<div class="pattern-2" style="background-image: url(assets/images/icons/pattern-22.png);"></div>
+			<div class="pattern-3 float-bob-x" style="background-image: url(assets/images/icons/pattern-23.png);"></div>
+		</div>
+		<div class="bubble-box">
+			<div class="bubble bubble-1" style="background-image: url(assets/images/icons/bubble-14.png);"></div>
+			<div class="bubble bubble-2 rotate-me" style="background-image: url(assets/images/icons/bubble-15.png);">
+			</div>
+			<div class="bubble bubble-3" style="background-image: url(assets/images/icons/bubble-16.png);"></div>
+			<div class="bubble bubble-4"></div>
+		</div>
+		<div class="auto-container">
+			<div class="content-box">
+				<h1>Regoignez WIC Dr.</h1>
+
+			</div>
+		</div>
+	</section>
+	<!--End Page Title-->
+	<!--rihem 09-01-2025-->
+	<div class="header-bar">
+		Vous cherchez un médecin ? <a href="https://wic-doctor.com/">Cliquez ici !</a>
+	</div>
+
+
+	<!-- about-section -->
+	<section class="about-section sec-pad">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<div class="col-lg-4 col-md-12 col-sm-12 image-column">
+					<div id="image_block_01">
+						<div class="image-box js-tilt">
+							<div class="pattern-layer-1 wow slideInLeft animated" data-wow-delay="0ms"
+								data-wow-duration="1500ms"
+								style="background-image: url(assets/images/icons/pattern-3.png);"></div>
+							<div class="pattern-layer-2" data-wow-duration="1500ms"
+								style="background-image: url(assets/images/icons/pattern-2.png);"></div>
+							<figure class="image wow slideInDown animated" data-wow-delay="0ms"
+								data-wow-duration="1500ms"><img src="assets/images/resource/about-1.png" alt="">
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-12 col-sm-12 content-column">
+					<div id="content_block_01">
+						<div class="content-box">
+							<div class="sec-title wow fadeInDown animated" data-wow-delay="0ms">
+								<div class="title"><i class="fas fa-user"></i><span>Rejoignez</span></div>
+								<h3>Pourquoi devenir partenaire de WIC DOCTOR ?</h3>
+							</div>
+							<div class="text wow fadeInUp animated" data-wow-delay="0ms">
+								<p>Chez WIC DOCTOR, nous croyons que l'innovation est essentielle pour transformer les
+									soins de santé. Nous associons technologie, intelligence artificielle (IA) et
+									expertise humaine pour offrir des solutions intelligentes qui répondent aux besoins
+									des professionnels de santé. Notre plateforme dédiée connecte les acteurs du domaine
+									pour améliorer la prise en charge des patients et optimiser les performances des
+									professionnels.</p>
+								<p><b>Nous recherchons des visiteurs médicaux, des agents de commerce, des partenaires
+										commerciaux et des fournisseurs d'équipements médicaux pour nous accompagner
+										dans cette mission.</b></p>
+								<p>En nous rejoignant, vous deviendrez un acteur clé d'une transformation digitale
+									ambitieuse, tout en bénéficiant d'opportunités uniques pour votre activité.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- about-section end -->
+
+	<!-- chooseus-section -->
+	<section style=" padding: 0px" class="chooseus-section">
+		
+		<div class="auto-container">
+			<div class="sec-title centred">
+
+				<h2>Nos opportunités de partenariat</h2>
+				
+			</div>
+			<div class="row clearfix" style="padding: 3%;">
+				<div class="col-lg-12 col-md-12 col-sm-12 content-column">
+					<div id="content_block_02">
+						<div class="content-box">
+							<div class="sec-title wow fadeInDown" data-wow-delay="300ms" data-wow-duration="1500ms">
+								<div class="title"><i class="fas fa-star"></i><span>Visiteur Médical / Agent de
+										Commerce</span></div>
+
+								<p>Boostez vos ventes et élargissez votre réseau en représentant les solutions
+									innovantes de WIC DOCTOR.</p>
+							</div>
+							<div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+								<div class="single-item">
+									<figure class="icon-box"><img src="assets/images/icons/icon-1.png" alt=""></figure>
+									<h3><a >Modèle de partage des revenus</a></h3>
+									<div class="text">
+										<p>Gagnez des commissions attractives grâce à nos solutions de santé tout-en-un.
+										</p>
+									</div>
+								</div>
+								<div class="single-item">
+									<figure class="icon-box"><img src="assets/images/icons/icon-2.png" alt=""></figure>
+									<h3><a >Outils avancés </a></h3>
+									<div class="text">
+										<p>Offrez aux médecins des plateformes d’IA pour améliorer la gestion des
+											patients et offrir des soins personnalisés.</p>
+									</div>
+								</div>
+								<div class="single-item">
+									<figure class="icon-box"><img src="assets/images/icons/icon-3.png" alt=""></figure>
+									<h3><a >Accompagnement</a></h3>
+									<div class="text">
+										<p>Bénéficiez de supports marketing, de formations et d’un accompagnement
+											technique.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row clearfix" style="padding: 3%;">
+				
+				<div class="col-lg-12 col-md-12 col-sm-12 content-column">
+					<div id="content_block_02">
+						<div class="content-box">
+							<div class="sec-title wow fadeInDown" data-wow-delay="300ms" data-wow-duration="1500ms">
+								<div class="title"><i class="fas fa-star"></i><span>Société de Vente de Médicaments /
+										Compléments Alimentaires</span></div>
+
+								<p>Enrichissez votre offre en intégrant des outils de gestion et de suivi basés sur l’IA
+									pour renforcer l’impact de vos produits.</p>
+							</div>
+							<div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+								<div class="single-item">
+									<figure class="icon-box"><img src="assets/images/icons/icon-4.png" alt=""></figure>
+									<h3><a >Optimisation des prescriptions</a></h3>
+									<div class="text">
+										<p>Permettez aux médecins de mieux cibler leurs recommandations.</p>
+									</div>
+								</div>
+								<div class="single-item">
+									<figure class="icon-box"><img src="assets/images/icons/icon-5.png" alt=""></figure>
+									<h3><a >Suivi amélioré </a></h3>
+									<div class="text">
+										<p>Fournissez des solutions pour un suivi précis des évolutions des patients.
+										</p>
+									</div>
+								</div>
+								<div class="single-item">
+									<figure class="icon-box"><img src="assets/images/icons/icon-6.png" alt=""></figure>
+									<h3><a >Partenariat stratégique</a></h3>
+									<div class="text">
+										<p>Renforcez votre relation avec les professionnels de santé.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="row clearfix" style="padding: 3%;">
+
+				<div class="col-lg-12 col-md-12 col-sm-12 content-column">
+					<div id="content_block_02">
+						<div class="content-box">
+							<div class="sec-title wow fadeInDown" data-wow-delay="300ms" data-wow-duration="1500ms">
+								<div class="title"><i class="fas fa-star"></i><span>Fournisseur d’Équipements
+										Médicaux</span></div>
+
+								<p>Associez vos équipements à notre plateforme intelligente pour une utilisation
+									optimale.</p>
+							</div>
+							<div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+								<div class="single-item">
+									<figure class="icon-box"><img src="assets/images/icons/icon-7.png" alt=""></figure>
+									<h3><a >Complémentarité</a></h3>
+									<div class="text">
+										<p>Ajoutez des outils de gestion de données et de prise de décision basés sur
+											l’IA.</p>
+									</div>
+								</div>
+								<div class="single-item">
+									<figure class="icon-box"><img src="assets/images/icons/icon-8.png" alt=""></figure>
+									<h3><a >Visibilité accrue </a></h3>
+									<div class="text">
+										<p>Gagnez en visibilité sur notre plateforme et touchez directement votre public
+											cible.</p>
+									</div>
+								</div>
+								<div class="single-item">
+									<figure class="icon-box"><img src="assets/images/icons/icon-9.png" alt=""></figure>
+									<h3><a >Valorisation des données </a></h3>
+									<div class="text">
+										<p>Offrez des solutions qui facilitent la gestion des dossiers médicaux et
+											améliorent les performances des équipements.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- chooseus-section end -->
+	<!-- featured-section -->
+	<section class="featured-section style-two">
+		<div class="bubble-dotted">
+			<span class="dotted dotted-1"></span>
+			<span class="dotted dotted-2"></span>
+			<span class="dotted dotted-3"></span>
+			<span class="dotted dotted-4"></span>
+			<span class="dotted dotted-5"></span>
+			<span class="dotted dotted-6"></span>
+			<span class="dotted dotted-7"></span>
+			<span class="dotted dotted-8"></span>
+			<span class="dotted dotted-9"></span>
+			<span class="dotted dotted-10"></span>
+		</div>
+		<div class="auto-container">
+			<div class="sec-title centred">
+
+				<h2>Espaces Publicitaires Exclusifs</h2>
+				<p>Profitez d’un espace publicitaire dédié sur le site web WIC DOCTOR pour mettre en avant vos produits
+					et services. Cette opportunité unique permet de toucher directement les médecins, cliniques,
+					hôpitaux et établissements de santé.</p>
+			</div>
+			<div class="row clearfix wow zoomIn animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+				<div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+					<div class="feature-block-one">
+						<div class="hover-content"></div>
+						<div class="inner-box">
+							<div class="icon-box">
+								<span class="shadow-box"></span>
+								<i class="flaticon-configuration"></i>
+							</div>
+							<h4><a href="service.html">Exposition ciblée</a></h4>
+							<div class="text">
+								<p>Augmentez la portée de votre marque.
+								</p>
+							</div>
+							<div class="link"><a href="contact.html">Contact us<i
+										class="flaticon-arrow-pointing-to-right"></i></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+					<div class="feature-block-one">
+						<div class="hover-content"></div>
+						<div class="inner-box">
+							<div class="icon-box">
+								<span class="shadow-box"></span>
+								<i class="flaticon-statistics"></i>
+							</div>
+							<h4><a href="service.html">Audience spécifique</a></h4>
+							<div class="text">
+								<p>Accédez à un réseau étendu de professionnels de santé.
+								</p>
+							</div>
+							<div class="link"><a href="contact.html">Contact us<i
+										class="flaticon-arrow-pointing-to-right"></i></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+					<div class="feature-block-one">
+						<div class="hover-content"></div>
+						<div class="inner-box">
+							<div class="icon-box">
+								<span class="shadow-box"></span>
+								<i class="flaticon-social-media"></i>
+							</div>
+							<h4><a href="service.html">Retour sur investissement</a></h4>
+							<div class="text">
+								<p>Optimisez vos campagnes marketing en ciblant les décideurs.
+								</p>
+							</div>
+							<div class="link"><a href="contact.html">Contact us<i
+										class="flaticon-arrow-pointing-to-right"></i></a></div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- featured-section end -->
+	 <!-- service-section -->
+	 <section class="service-section">
+        <div class="parallax-scene parallax-scene-3 parallax-icon">
+            <span data-depth="0.40" class="parallax-layer icon bubble-1" style="background-image: url(assets/images/icons/bubble-1.png);"></span>
+            <span data-depth="0.50" class="parallax-layer icon bubble-2" style="background-image: url(assets/images/icons/bubble-2.png);"></span>
+            <span data-depth="0.30" class="parallax-layer icon bubble-3" style="background-image: url(assets/images/icons/bubble-3.png);"></span>
+            <span data-depth="0.40" class="parallax-layer icon bubble-4" style="background-image: url(assets/images/icons/bubble-4.png);"></span>
+        </div>
+        <div class="auto-container">
+            <div class="sec-title centred wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <h3>Les avantages de Partenariat avec WIC DOCTOR  </h3>
+            </div>
+            <!-- SECTION 1 Télésec / rdv / téléconsultation -->
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                           
+                            <h4><a href="service-details.html">Renforcement des relations médecins</a></h4>
+                            <div class="text">
+                                <p>Offrez des outils performants pour une meilleure gestion des patients.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow flipInY" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            
+                            
+                            <h4><a href="service-details.html">Solutions personnalisées</a></h4>
+                            <div class="text">
+                                <p>Adaptez vos services aux besoins des médecins.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow flipInY" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                          
+                            
+                            <h4><a href="service-details.html">Outils marketing puissants </a></h4>
+                            <div class="text">
+                                <p>Promouvez vos produits de manière efficace.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 100px;">
+
+
+            </div>
+            <!-- SECTION 2 agenda/ sms / heberg -->
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow flipInY" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                           
+                            
+                            <h4><a href="service-details.html">Participation à l’évolution de la santé</a></h4>
+                            <div class="text">
+                                <p>Contribuez activement à la transformation digitale du secteur.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow flipInY" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                          
+                            
+                            <h4><a href="service-details.html">Visibilité accrue</a></h4>
+                            <div class="text">
+                                <p>Bénéficiez d’une présence à forte valeur ajoutée sur notre plateforme.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                    <div class="service-block-one wow flipInY" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            
+                            
+                            <h4><a href="service-details.html">Technologie de pointe</a></h4>
+                            <div class="text">
+                                <p>Accédez à des services IA pour des recommandations et analyses prédictives.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service-section end -->
+	<!--Footer Section-->
+	<section>
+		<footer class="text-white footer-bg">
+			<div class="footer-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+
+								<li>
+									<a href="https://wic-doctor.com/FAQ.html">FAQ</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="col-lg-2 col-md-12">
+							<p class="footer-title">Trouvez</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:;">Professionnels de santé</a>
+								</li>
+								<li>
+									<a href="javascript:;">Pharmacies & Parapharmacies</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Cliniques/tous.html">Cliniques</a>
+								</li>
+								<li>
+									<a href="javascript:;">Laboratoires</a>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-12">
+							<p class="footer-title">Ressources</p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/pathologies.html">Pathologies</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/diagnostiques.html">Diagnostiques</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/intervention.html">Interventions</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/journal-medical.html">Journal Médical</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Forum Médical</a>
+								</li> -->
+								<!-- <li>
+									<a href="javascript:;">La technologie Médicale</a>
+								</li> -->
+
+							</ul>
+						</div>
+
+
+						<div class="col-lg-2 col-md-12">
+							<p class="footer-title">Les conditions</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<div class="clearfix"></div>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/Conditions-Générales-de-Vente.html">Conditions
+										générales de vente en ligne</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Conditions-utilisation.html">Conditions
+										d'utilisation</a>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://wic-doctor.com/Politique-de-confidentialité-et-d_utilisation-pour-les-sous-traitants.html">Politique
+										de confidentialité des données personnelles</a>
+									</a>
+								</li>
+								<li>
+									<a href="#">Termes et licences d'utilisation
+									</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/Mentions-légales.html">Mentions légales</a>
+								</li>
+								<!-- <li>
+									<a href="javascript:;">Support technique</a>
+								</li>
+								<li>
+									<a href="javascript:;">Réseaux Sociaux</a>
+								</li> -->
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-12">
+							<p class="footer-title">À propos </p>
+							<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto mt-0">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="https://wic-doctor.com/qui-sommes-nous.html">Qui sommes-nous ?</a>
+								</li>
+								<li>
+									<a href="javascript:;">Témoignages</a>
+								</li>
+
+								<li>
+									<a href="https://wic-doctor.com/FAQ.html">FAQ</a>
+								</li>
+								<li>
+									<a href="https://wic-doctor.com/contact.html">Contactez-nous</a>
+								</li>
+
+							</ul>
+						</div>
+						<!-- 	<div class="col-lg-3 col-md-12">
+							<h6>Contact</p>
+							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
+							<ul class="list-unstyled mb-0 contact-footer">
+								<li>
+									<i class="fa fa-map-marker"></i> 22 S. Rock Creek StreetSan Carlos, Uniontown CA
+									94070, USA
+								</li>
+								<li>
+									<i class="fa fa-envelope "></i>contact@way-interactive-convergence.com
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>+33 2 55 04 55 04
+								</li>
+								<li>
+									<i class="fa fa-print"></i>+ 01 234 567 89
+								</li>
+							</ul>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+
+			<div class="text-white p-0">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-lg-12 col-sm-12 mt-3 mb-3 text-center">
+							Copyright © 2024 WIC DOCTOR All
+							rights reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+	<!--Footer Section-->
+
+	<!-- Back to top -->
+	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+	<!-- JQuery js-->
+	<!--rihem 09-01-2025-->
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/new-js/popper.min.js"></script>
+	<script src="assets/js/new-js/bootstrap.min.js"></script>
+	<script src="assets/js/new-js/owl.js"></script>
+	<script src="assets/js/new-js/wow.js"></script>
+	<script src="assets/js/new-js/validation.js"></script>
+	<script src="assets/js/new-js/jquery.fancybox.js"></script>
+	<script src="assets/js/new-js/appear.js"></script>
+	<script src="assets/js/new-js/isotope.js"></script>
+	<script src="assets/js/new-js/parallax.min.js"></script>
+	<script src="assets/js/new-js/tilt.jquery.js"></script>
+
+	<script src="assets/js/scrollbar.js"></script>
+
+	<script src="assets/js/script.js"></script>
+	<!--rihem 09-01-2025-->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Bootstrap js -->
+	<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!--JQueryVehiclerkline Js-->
+	<script src="assets/js/jquery.sparkline.min.js"></script>
+
+	<!-- Circle Progress Js-->
+	<script src="assets/js/circle-progress.min.js"></script>
+
+	<!-- Star Rating Js-->
+	<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+	<!--Horizontal Menu-->
+	<script src="assets/plugins/horizontal/horizontal.js"></script>
+
+	<!--Owl Carousel js -->
+	<script src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+
+	<!--jquery-touchSwipe-->
+	<script src="assets/js/jquery.touchSwipe.min.js"></script>
+
+	<!--Select2 js -->
+	<script src="assets/plugins/select2/select2.full.min.js"></script>
+	<script src="assets/js/select2.js"></script>
+
+	<!-- sticky Js-->
+	<script src="assets/js/sticky.js"></script>
+
+	<!-- Cookie js -->
+	<script src="assets/plugins/cookie/jquery.ihavecookies.js"></script>
+	<script src="assets/plugins/cookie/cookie.js"></script>
+
+	<!--Counters -->
+	<script src="assets/plugins/counters/counterup.min.js"></script>
+	<script src="assets/plugins/counters/waypoints.min.js"></script>
+	<script src="assets/plugins/counters/numeric-counter.js"></script>
+	<!--Cryptojs-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+	<!--Dotcors-->
+	<script src="assets/js/recherche.js"></script>
+	<!-- Swipe Js-->
+	<script src="assets/js/swipe.js"></script>
+
+	<!--Owl-Carousel Js-->
+	<script src="assets/js/owl-carousel.js"></script>
+	<!-- Typewritter Js-->
+	<script src="assets/js/typewritter.js"></script>
+	<!-- Theme-color js -->
+	<script src="assets/js/themeColors.js"></script>
+
+	<!-- Custom Js-->
+	<script src="assets/js/custom.js"></script>
+
+	<!-- switcher-custom js -->
+	<script src="assets/js/switcher-custom.js"></script>
+</body>
+
+</html>
