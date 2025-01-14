@@ -263,6 +263,33 @@ fetch('https://wic-doctor.com:3004/getpays')
 
 
 
+
+
+// Function to generate a random color
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+
+  return color;
+}
+
+// Ensure you define the variable in the global scope
+if (sessionStorage.getItem("auth")) {
+  const authData = decryptData(sessionStorage.getItem("auth"));
+
+  // Store user data in the global variable
+  window.userData = {
+    firstName: authData.result[0].first_name,
+    lastName: authData.result[0].last_name
+  };
+  console.log("User Data Stored: ", window.userData); // Should log the stored data
+} else {
+  console.error("User not authenticated.");
+}
+});
 function Deconexion() {
   console.log("Login: ",Login)
   const requestOptions = {
@@ -291,32 +318,6 @@ function Deconexion() {
       console.error('Erreur :', error);
     });
 }
-
-// Function to generate a random color
-function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-
-  return color;
-}
-
-// Ensure you define the variable in the global scope
-if (sessionStorage.getItem("auth")) {
-  const authData = decryptData(sessionStorage.getItem("auth"));
-
-  // Store user data in the global variable
-  window.userData = {
-    firstName: authData.result[0].first_name,
-    lastName: authData.result[0].last_name
-  };
-  console.log("User Data Stored: ", window.userData); // Should log the stored data
-} else {
-  console.error("User not authenticated.");
-}
-});
 function RechercheDoctor() {
   var specialtyId = ""
   var Ville = ""
