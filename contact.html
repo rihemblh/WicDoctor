@@ -428,22 +428,68 @@
 				</div>
 
 				<!-- Contact Form -->
-				<div class="contact-form">
-					<form action="#" method="post">
-						<div class="form-row">
-							<input type="text" name="name" placeholder="Nom" required>
-							<input type="email" name="email" placeholder="E-mail" required>
-							<input type="text" name="subject" placeholder="Sujet" required>
-						</div>
-						<div class="form-row">
+			<!-- Contact Form -->
+<div class="contact-form">
+    <form id="contactForm" action="#" method="post">
+        <div class="form-row">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="subject" placeholder="Sujet" required>
+        </div>
+        <div class="form-row">
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <button class="button-con" type="submit">Envoyer</button>
+    </form>
+    <div id="successMessage" style="display:none; color: green; margin-top: 10px;">Votre message a été envoyé avec succès !</div>
+    <div id="errorMessage" style="display:none; color: red; margin-top: 10px;">Une erreur s'est produite. Veuillez réessayer.</div>
+</div>
 
-							<textarea name="message" rows="5" placeholder="Message" required></textarea>
-						</div>
-						<button class="button-con" type="submit">Envoyer</button>
-					</form>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Empêche l'envoi du formulaire
 
-				</div>
+    // Créer un objet FormData pour récupérer les valeurs du formulaire
+    const formData = new FormData(this);
 
+    // Créer un objet vide pour stocker les données sous forme de JSON
+    const formObject = {};
+
+    // Boucler sur les données du formulaire pour les ajouter à l'objet
+    formData.forEach((value, key) => {
+        formObject[key] = value;
+    });
+
+    // Convertir l'objet en JSON
+    const formJSON = JSON.stringify(formObject);
+
+    // Envoi des données via l'API avec fetch
+    fetch('https://wic-doctor.com:3004/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: formJSON
+    })
+    .then(response => response.json())  // On suppose que l'API retourne une réponse JSON
+    .then(data => {
+        if (data.success) {
+            // Afficher le message de succès
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Réinitialiser le formulaire
+            document.getElementById('contactForm').reset();
+        } else {
+            // Si l'API retourne une erreur, afficher un message d'erreur
+            document.getElementById('errorMessage').style.display = 'block';
+        }
+    })
+    .catch(error => {
+        // En cas d'erreur de réseau ou d'autres erreurs, afficher un message d'erreur
+        document.getElementById('errorMessage').style.display = 'block';
+    });
+});
+</script>
 
 
 				<!-- FontAwesome for Icons -->
@@ -497,7 +543,7 @@
 									<a href="https://wic-doctor.com/medecin/tous.html">Professionnels de santé</a>
 								</li>
 								<li>
-									<a href="https://wic-doctor.com/pharmacies/Pharmacie.html;">Pharmacies & Parapharmacies</a>
+									<a href="https://wic-doctor.com/pharmacies/pharmacie.html">Pharmacies & Parapharmacies</a>
 								</li>
 								<li>
 									<a href="https://wic-doctor.com/Cliniques/tous.html">Cliniques</a>
