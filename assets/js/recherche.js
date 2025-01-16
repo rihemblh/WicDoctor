@@ -320,7 +320,7 @@ function Deconexion() {
 }
 function RechercheDoctor() {
   if (document.getElementById('searchInput'))
-   { query = document.getElementById('searchInput2').value
+   { query = document.getElementById('searchInput').value
   console.log("queryyyy*********************: ", query)
   if (query == "")
     sessionStorage.removeItem("query")}
