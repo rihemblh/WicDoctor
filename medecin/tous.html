@@ -317,6 +317,7 @@
 
 										const query = this.value.trim();
 										const suggestionsContainer = document.getElementById('suggestions2');
+										sessionStorage.setItem("query",query)
 
 										// Liste provisoire de médecins
 										let provisionalDoctors
@@ -885,6 +886,7 @@
 			if (params.speciality_id) urlParams.append('speciality_id', params.speciality_id);
 			if (params.ville) urlParams.append('ville', params.ville);
 			if (params.pays) urlParams.append('pays', params.pays);
+			if(sessionStorage.getItem("query")) urlParams.append('doctor_name', sessionStorage.getItem("query"));
 			if (params.limit) urlParams.append('limit', params.limit);
 			urlParams.append('offset', params.offset);
 			console.log(`${apiBaseUrl}${urlParams.toString()}`)
