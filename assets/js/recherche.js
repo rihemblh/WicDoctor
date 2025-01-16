@@ -566,4 +566,227 @@ function toggleDropdown() {
   const dropdownMenu = document.getElementById("dropdownMenu");
   dropdownMenu.classList.toggle("show");
 }
+// Récupérer les données depuis l'API et créer les <optgroup>
+fetch('https://wic-doctor.com:3004/specialties')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erreur lors de la récupération des catégories');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log("**************************************liste specialite : ", JSON.stringify(data))
+    const select = document.getElementById('dynamicSelect');
+    const optgroup = document.createElement('optgroup');
+    optgroup.label = "";
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'Veuillez sélectionner une option...';
+    defaultOption.disabled = true; // Désactive l'option pour ne pas la rendre sélectionnable
+    defaultOption.selected = true; // Rend cette option sélectionnée par défaut
+    optgroup.appendChild(defaultOption);
+    data.forEach(item => {
+      // Créer un <optgroup> pour chaque catégorie
 
+      // Créer un <option> pour chaque élément de la catégorie
+
+      console.log("item: ", item)
+      const option = document.createElement('option');
+      option.value = JSON.parse(item.name).fr;
+      option.textContent = JSON.parse(item.name).fr;
+      optgroup.appendChild(option);
+    });
+
+    // Ajouter l'<optgroup> au <select>
+    select.appendChild(optgroup);
+
+    const selectclinic = document.getElementById('dynamicSelectClinic');
+    const optgroupclinic = document.createElement('optgroup');
+    optgroupclinic.label = "";
+    const defaultOptionclinic = document.createElement('option');
+    defaultOptionclinic.value = '';
+    defaultOptionclinic.textContent = 'Veuillez sélectionner une option...';
+    defaultOptionclinic.disabled = true; // Désactive l'option pour ne pas la rendre sélectionnable
+    defaultOptionclinic.selected = true; // Rend cette option sélectionnée par défaut
+    optgroupclinic.appendChild(defaultOptionclinic);
+    data.forEach(item => {
+      // Créer un <optgroup> pour chaque catégorie
+
+      // Créer un <option> pour chaque élément de la catégorie
+
+      console.log("item: ", item)
+      const option = document.createElement('option');
+      option.value = item.id;
+      option.textContent = JSON.parse(item.name).fr;
+      optgroupclinic.appendChild(option);
+    });
+
+    // Ajouter l'<optgroup> au <select>
+    selectclinic.appendChild(optgroupclinic);
+
+  });
+/* fetch('https://wic-doctor.com:3004/getvilles')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erreur lors de la récupération des catégories');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log("**************************************liste ville : ", JSON.stringify(data))
+
+    const select = document.getElementById('dynamicSelectVille');
+    const optgroup = document.createElement('optgroup');
+    optgroup.label = "";
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'Veuillez sélectionner une option...';
+    defaultOption.disabled = true; // Désactive l'option pour ne pas la rendre sélectionnable
+    defaultOption.selected = true; // Rend cette option sélectionnée par défaut
+    optgroup.appendChild(defaultOption);
+    data.forEach(item => {
+      console.log("item: ", item)
+      // Créer un <optgroup> pour chaque catégorie
+
+      // Créer un <option> pour chaque élément de la catégorie
+
+      console.log("item: ", item)
+      const option = document.createElement('option');
+      let value = JSON.parse(item.ville)
+      console.log("value ville json: ", value, "string: ", JSON.stringify(value))
+      option.value = JSON.stringify(value);
+      option.textContent = JSON.parse(item.ville).fr;
+      optgroup.appendChild(option);
+    });
+
+    // Ajouter l'<optgroup> au <select>
+    select.appendChild(optgroup);
+
+    //for clinic
+    const selectclinic = document.getElementById('dynamicSelectVilleClinic');
+    const optgroupclinic = document.createElement('optgroup');
+    optgroup.label = "";
+    const defaultOptionclinic = document.createElement('option');
+    defaultOptionclinic.value = '';
+    defaultOptionclinic.textContent = 'Veuillez sélectionner une option...';
+    defaultOptionclinic.disabled = true; // Désactive l'option pour ne pas la rendre sélectionnable
+    defaultOptionclinic.selected = true; // Rend cette option sélectionnée par défaut
+    optgroupclinic.appendChild(defaultOptionclinic);
+    data.forEach(item => {
+      // Créer un <optgroup> pour chaque catégorie
+
+      // Créer un <option> pour chaque élément de la catégorie
+
+      console.log("item: ", item)
+      const option = document.createElement('option');
+      let value = JSON.parse(item.ville)
+      console.log("value ville json: ", value, "string: ", JSON.stringify(value))
+      option.value = JSON.stringify(value);
+      option.textContent = JSON.parse(item.ville).fr;
+      optgroupclinic.appendChild(option);
+    });
+
+    // Ajouter l'<optgroup> au <select>
+    selectclinic.appendChild(optgroupclinic);
+  }); */
+  
+    const data = [
+      {"ville":"{\"fr\":\"Ariana\"}"},{"ville":"{\"fr\":\"Béja\"}"},{"ville":"{\"fr\":\"Ben Arous\"}"},{"ville":"{\"fr\":\"Bizerte\"}"},
+      {"ville":"{\"fr\":\"Gabès\"}"},{"ville":"{\"fr\":\"Gafsa\"}"},{"ville":"{\"fr\":\"Jendouba\"}"},{"ville":"{\"fr\":\"Kairouan\"}"},
+      {"ville":"{\"fr\":\"Kasserine\"}"},{"ville":"{\"fr\":\"Kébili\"}"},{"ville":"{\"fr\":\"Le Kef\"}"},{"ville":"{\"fr\":\"Mahdia\"}"},
+      {"ville":"{\"fr\":\"La Manouba\"}"},{"ville":"{\"fr\":\"Médenine\"}"},{"ville":"{\"fr\":\"Monastir\"}"},{"ville":"{\"fr\":\"Nabeul\"}"},
+      {"ville":"{\"fr\":\"Sfax\"}"},{"ville":"{\"fr\":\"Sidi Bouzid\"}"},{"ville":"{\"fr\":\"Siliana\"}"},{"ville":"{\"fr\":\"Sousse\"}"},
+      {"ville":"{\"fr\":\"Tataouine\"}"},{"ville":"{\"fr\":\"Tozeur\"}"},{"ville":"{\"fr\":\"Tunis\"}"},{"ville":"{\"fr\":\"Zaghouan\"}"}
+    ];
+  
+    // Fonction pour remplir un select
+    const populateSelect = (selectId) => {
+      const select = document.getElementById(selectId);
+      const optgroup = document.createElement('optgroup');
+      optgroup.label = "";
+  
+      // Ajouter l'option par défaut
+      const defaultOption = document.createElement('option');
+      defaultOption.value = '';
+      defaultOption.textContent = 'Veuillez sélectionner une option...';
+      defaultOption.disabled = true; // Désactive l'option pour ne pas la rendre sélectionnable
+      defaultOption.selected = true; // Rend cette option sélectionnée par défaut
+      optgroup.appendChild(defaultOption);
+  
+      // Ajouter les villes
+      data.forEach(item => {
+        const option = document.createElement('option');
+        let value = JSON.parse(item.ville);
+        option.value = JSON.stringify(value);
+        option.textContent = value.fr;
+        optgroup.appendChild(option);
+      });
+  
+      // Ajouter l'<optgroup> au <select>
+      select.appendChild(optgroup);
+    };
+  
+    // Remplir les deux sélecteurs
+    populateSelect('dynamicSelectVille');
+    populateSelect('dynamicSelectVilleClinic');
+
+fetch('https://wic-doctor.com:3004/getpays')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erreur lors de la récupération des catégories');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log("**************************************liste pays : ", JSON.stringify(data))
+    const select = document.getElementById('dynamicSelectPays');
+    const optgroup = document.createElement('optgroup');
+    optgroup.label = "";
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'Veuillez sélectionner une option...';
+    defaultOption.disabled = true; // Désactive l'option pour ne pas la rendre sélectionnable
+    defaultOption.selected = true; // Rend cette option sélectionnée par défaut
+    optgroup.appendChild(defaultOption);
+    data.forEach(item => {
+      // Créer un <optgroup> pour chaque catégorie
+
+      // Créer un <option> pour chaque élément de la catégorie
+
+      console.log("item: ", item)
+      const option = document.createElement('option');
+      let value = JSON.parse(item.pays)
+      option.value = JSON.stringify(value);
+      option.textContent = JSON.parse(item.pays).fr;
+      optgroup.appendChild(option);
+    });
+
+    // Ajouter l'<optgroup> au <select>
+    select.appendChild(optgroup);
+    //for clinic
+    const selectclinic = document.getElementById('dynamicSelectPaysClinic');
+    const optgroupclinic = document.createElement('optgroup');
+    optgroup.label = "";
+    const defaultOptionclinic = document.createElement('option');
+    defaultOptionclinic.value = '';
+    defaultOptionclinic.textContent = 'Veuillez sélectionner une option...';
+    defaultOptionclinic.disabled = true; // Désactive l'option pour ne pas la rendre sélectionnable
+    defaultOptionclinic.selected = true; // Rend cette option sélectionnée par défaut
+    optgroupclinic.appendChild(defaultOptionclinic);
+    data.forEach(item => {
+      // Créer un <optgroup> pour chaque catégorie
+
+      // Créer un <option> pour chaque élément de la catégorie
+
+      console.log("item: ", item)
+      const option = document.createElement('option');
+      let value = JSON.parse(item.pays)
+      option.value = JSON.stringify(value);
+      option.textContent = JSON.parse(item.pays).fr;
+      optgroupclinic.appendChild(option);
+    });
+
+    // Ajouter l'<optgroup> au <select>
+    selectclinic.appendChild(optgroupclinic);
+
+  });
