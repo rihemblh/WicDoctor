@@ -1441,7 +1441,7 @@
 				function navigateDays(direction) {
 					// Increment or decrement by 3 days
 					currentWeekStart.setDate(currentWeekStart.getDate() + direction * 3);
-					generateTimeSlots(config, new Date(currentWeekStart))
+					slotsData=generateTimeSlots(config, new Date(currentWeekStart))
 					updateWeek();
 				}
 
@@ -1553,7 +1553,7 @@
 
 
 					// Generate slots for 30 days
-					for (let i = 0; i < 30; i++) {
+					for (let i = 0; i < 3; i++) {
 						const currentDate = new Date(startDate);
 						currentDate.setDate(currentDate.getDate() + i);
 
