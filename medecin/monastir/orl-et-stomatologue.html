@@ -958,6 +958,7 @@
 				const photo = doctor.doctor_photo || "doctor.png";
 				const name = getDoctorName(doctor.name);
 				const speciality = getDoctorSpec(doctor.specialities, doctor.specialites);
+				const addr = getDoctorName(doctor.adresse_exacte) ;
 				const gouv = getDoctorName(doctor.gouvernorat) ;
 				const city = getDoctorName(doctor.ville);
 				const phone = doctor.phone_number || "Non spécifié";
@@ -983,7 +984,7 @@
                                     <i class="fa fa-user-md text-muted me-2"></i>${speciality}
                                 </span>
                                 <div class="item-card9-desc mb-0 mt-2">
-                                    <span class="me-4 d-inline-block"><i class="fa fa-map-marker text-muted me-1"></i>${gouv} , ${city}</span>
+                                    <span class="me-4 d-inline-block"><i class="fa fa-map-marker text-muted me-1"></i>${addr} , ${gouv} , ${city}</span>
                                     <span class="me-4"><i class="fe fe-phone text-muted me-1"></i>${phone}</span>
                                 </div>
                             </div>
