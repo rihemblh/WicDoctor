@@ -892,6 +892,7 @@
 			if (params.gouvernorat) urlParams.append('gouvernorat', params.gouvernorat);
 			if (params.ville) urlParams.append('ville', params.ville);
 			if (params.pays) urlParams.append('pays', params.pays);
+			if(sessionStorage.getItem("query")) urlParams.append('doctor_name', sessionStorage.getItem("query"));
 			if (params.limit) urlParams.append('limit', params.limit);
 			urlParams.append('offset', params.offset);
 			console.log(`${apiBaseUrl}${urlParams.toString()}`)
