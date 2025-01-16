@@ -331,8 +331,8 @@ function RechercheDoctor() {
   console.log("selectValue: ", specialtyId)
   Ville = document.getElementById('dynamicSelectVille').value;
   console.log("selectValue: ", Ville)
-  Pays = document.getElementById('dynamicSelectPays').value;
-  console.log("selectValue: ", Pays)
+  //Pays = document.getElementById('dynamicSelectPays').value;
+  //console.log("selectValue: ", Pays)
 
   /* 
   const newTitle = `WIC Doctor : Télémédecine pour ${username} (${specialty})`;
