@@ -787,11 +787,12 @@
 
 
 		}
+		let obj = {}
 		function handleCheckboxChange(checkbox) {
 			if (checkbox.checked) {
 				console.log(`Checkbox checked: ${checkbox.value}`);
 				// Add your logic here for when the checkbox is checked
-				let obj = Object.assign({ "ville": checkbox.value }, { "limit": 10 }, { "offset": 0 })
+				obj = Object.assign({ "ville": checkbox.value }, { "limit": 10 }, { "offset": 0 })
 				console.log("obj*******************************************: ", obj)
 				loadDoctors(obj)
 			} else {
@@ -859,13 +860,19 @@
 			button.textContent = page;
 			button.onclick = () => {
 				currentPage = page; // Mettre à jour la page actuelle
-				loadDoctors({
-					speciality_id: "Urologue",
-					gouvernorat: undefined,
-					pays: undefined,
-					limit: 10,
-					offset: (page - 1) * 10
-				});
+				if (obj != {})
+					{
+						obj=Object.assign(obj,{"limit": 10},
+						{"offset": (page - 1) * 10})
+						loadDoctors(obj)}
+				else
+					{loadDoctors({
+						speciality_id: undefined,
+						ville: undefined,
+						pays: undefined,
+						limit: 10,
+						offset: (page - 1) * 10
+					});}
 			};
 			return button;
 		}
