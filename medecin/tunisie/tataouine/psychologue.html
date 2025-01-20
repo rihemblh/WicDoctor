@@ -812,7 +812,13 @@
 		function changePage(page) {
 			if (page < 1 || page > totalPages) return; // Vérifie que la page est valide
 			currentPage = page;
-			loadDoctors(); // Recharge les médecins pour la page sélectionnée
+			loadDoctors({
+						speciality_id: "Psychologue",
+						ville: "{\"fr\":\"Tataouine\"}",
+						pays: "{\"fr\":\"tunisie\"}",
+						limit: 10,
+						offset: (page - 1) * 10
+					}); // Recharge les médecins pour la page sélectionnée
 		}
 		var totalPages = 0
 		var currentPage = 1
@@ -860,16 +866,16 @@
 			button.textContent = page;
 			button.onclick = () => {
 				currentPage = page; // Mettre à jour la page actuelle
-				if (obj != {})
+				if (obj.ville)
 					{
 						obj=Object.assign(obj,{"limit": 10},
 						{"offset": (page - 1) * 10})
 						loadDoctors(obj)}
 				else
 					{loadDoctors({
-						speciality_id: undefined,
-						ville: undefined,
-						pays: undefined,
+						speciality_id: "Psychologue",
+						ville: "{\"fr\":\"Tataouine\"}",
+						pays: "{\"fr\":\"tunisie\"}",
 						limit: 10,
 						offset: (page - 1) * 10
 					});}
