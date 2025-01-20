@@ -346,6 +346,18 @@
 												}
 												return name; // Retourne false si ce n'est pas un JSON valide
 											}
+											document.getElementById('searchInput').addEventListener('keydown', function (event) {
+												if (event.key === 'Enter') {
+													event.preventDefault(); // Empêche le comportement par défaut
+													const searchValue = event.target.value.trim();
+
+											  console.log("searchValue: ",searchValue)
+
+												sessionStorage.setItem("query", searchValue)
+												console.log("searchValue stockée dans sessionStorage: ", sessionStorage.getItem("query"));
+
+													RechercheDoctor()
+												}})
 											document.getElementById('searchInput').addEventListener('input', function () {
 
 												const query = this.value.trim();
