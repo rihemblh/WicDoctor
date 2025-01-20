@@ -1054,15 +1054,20 @@
 				.then(data => {
 					console.log("Données récupérées :", data);
 					ListeDoctors = data.data || [];
-					totalPages = data.totalPages
+					console.log("data.data: ",data.data.length == 0)
+					if(data.data.length == 0)
+					document.getElementById("List-doctors").innerHTML = "Aucun médecin correspondant à ces critères n’a été trouvé";
+				else
+					{totalPages = data.totalPages
 					currentPage = data.currentPage
 					displayDoctors(ListeDoctors);
 					updatePagination(); // Mettre à jour les numéros de page
+					}
 
 				})
 				.catch(error => {
 					console.error("Erreur :", error);
-					document.getElementById("List-doctors").innerHTML = "Aucun médecin trouvé.";
+					document.getElementById("List-doctors").innerHTML = "Aucun médecin correspondant à ces critères n’a été trouvé";
 				});
 		}
 
