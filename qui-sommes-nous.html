@@ -513,12 +513,64 @@
 			<div class="row justify-content-center mt-4">
 				<div class="col-md-8 col-lg-6">
 					<div class="input-group">
-						<input type="email" class="form-control email-input"
+						<input type="email" class="form-control email-input" id="email-new"
 							placeholder="Tapez votre adresse mail..." />
-						<button class="btn btn-success submit-btn envoyer-btn">Envoyer</button>
+							<small id="email-error" style="color: red; display: none;">Veuillez entrer une adresse e-mail
+								valide.</small>
+						<button id="subscribe-btn" class="btn btn-success submit-btn envoyer-btn">Envoyer</button>
 					</div>
 				</div>
 			</div>
+			<script>
+				document.getElementById('subscribe-btn').addEventListener('click', function () {
+					const emailInput = document.getElementById('email-new'); // Référence au champ input
+					const emailError = document.getElementById('email-error'); // Message d'erreur
+					const emailValue = emailInput.value.trim(); // Récupérer la valeur et supprimer les espaces
+					const apiUrl = 'https://wic-doctor.com:3004/send-News'; // Remplacez par l'URL de votre API
+	
+					if (emailValue) {
+						// Création de l'objet JSON
+						// Expression régulière pour valider les adresses e-mail
+						const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	
+						// Vérifier si l'e-mail est valide
+						if (emailRegex.test(emailValue)) {
+							// Masquer le message d'erreur si l'e-mail est valide
+							emailError.style.display = 'none';
+							const data = {
+								email: emailValue
+							};
+							console.log("data: ", JSON.stringify(data))
+							// Envoi de la requête
+							fetch(apiUrl, {
+								method: 'POST',
+								headers: {
+									'Content-Type': 'application/json'
+								},
+								body: JSON.stringify(data) // Conversion de l'objet en JSON
+							})
+								.then(response => response.json())
+								.then(result => {
+									console.log('Succès:', result);
+									alert('Inscription réussie !');
+									emailInput.value = '';
+								})
+								.catch(error => {
+									console.error('Erreur:', error);
+									alert('Une erreur s\'est produite.');
+								});
+						}
+						else {
+							// Afficher un message d'erreur si l'e-mail est invalide
+							emailError.style.display = 'block';
+						}
+	
+					} else {
+						alert('Veuillez entrer une adresse e-mail.');
+					}
+	
+				});
+			</script>
 		</div>
 	</section>
 
