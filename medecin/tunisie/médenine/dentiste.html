@@ -434,7 +434,7 @@
 
 
 
-								
+
 							</form>
 							<div class="d-grid">
 								<button class="btn btn-warning text-white" onclick="RechercheDoctor()">
@@ -518,8 +518,10 @@
 							.then(response => response.json())
 							.then(result => {
 								console.log('Succès:', result);
-								alert('Inscription réussie !');
-								emailInput.value = '';
+								if (result.message == "Cet email est déjà enregistré.")
+									alert("Cette adresse email a déjà été enregistrée.")
+								else
+									alert('Inscription réussie !'); emailInput.value = '';
 							})
 							.catch(error => {
 								console.error('Erreur:', error);
@@ -870,12 +872,12 @@
 			if (page < 1 || page > totalPages) return; // Vérifie que la page est valide
 			currentPage = page;
 			loadDoctors({
-						speciality_id: "Dentiste",
-						ville: "{\"fr\":\"Médenine\"}",
-						pays: "{\"fr\":\"tunisie\"}",
-						limit: 10,
-						offset: (page - 1) * 10
-					}); // Recharge les médecins pour la page sélectionnée
+				speciality_id: "Dentiste",
+				ville: "{\"fr\":\"Médenine\"}",
+				pays: "{\"fr\":\"tunisie\"}",
+				limit: 10,
+				offset: (page - 1) * 10
+			}); // Recharge les médecins pour la page sélectionnée
 		}
 		var totalPages = 0
 		var currentPage = 1
@@ -923,19 +925,20 @@
 			button.textContent = page;
 			button.onclick = () => {
 				currentPage = page; // Mettre à jour la page actuelle
-				if (obj.ville)
-					{
-						obj=Object.assign(obj,{"limit": 10},
-						{"offset": (page - 1) * 10})
-						loadDoctors(obj)}
-				else
-					{loadDoctors({
+				if (obj.ville) {
+					obj = Object.assign(obj, { "limit": 10 },
+						{ "offset": (page - 1) * 10 })
+					loadDoctors(obj)
+				}
+				else {
+					loadDoctors({
 						speciality_id: "Dentiste",
 						gouvernorat: "{\"fr\":\"Médenine\"}",
 						pays: "{\"fr\":\"tunisie\"}",
 						limit: 10,
 						offset: (page - 1) * 10
-					});}
+					});
+				}
 			};
 			return button;
 		}
@@ -1111,14 +1114,14 @@
 				.then(data => {
 					console.log("Données récupérées :", data);
 					ListeDoctors = data.data || [];
-					console.log("data.data: ",data.data.length == 0)
-					if(data.data.length == 0)
-					document.getElementById("List-doctors").innerHTML = "Aucun médecin correspondant à ces critères n’a été trouvé";
-				else
-					{totalPages = data.totalPages
-					currentPage = data.currentPage
-					displayDoctors(ListeDoctors);
-					updatePagination(); // Mettre à jour les numéros de page
+					console.log("data.data: ", data.data.length == 0)
+					if (data.data.length == 0)
+						document.getElementById("List-doctors").innerHTML = "Aucun médecin correspondant à ces critères n’a été trouvé";
+					else {
+						totalPages = data.totalPages
+						currentPage = data.currentPage
+						displayDoctors(ListeDoctors);
+						updatePagination(); // Mettre à jour les numéros de page
 					}
 
 				})

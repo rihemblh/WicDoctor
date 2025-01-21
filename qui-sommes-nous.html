@@ -552,7 +552,10 @@
 								.then(response => response.json())
 								.then(result => {
 									console.log('Succès:', result);
-									alert('Inscription réussie !');
+																	if(result.message == "Cet email est déjà enregistré.")
+																	alert("Cette adresse email a déjà été enregistrée.")
+																else
+																	alert('Inscription réussie !');
 									emailInput.value = '';
 								})
 								.catch(error => {
