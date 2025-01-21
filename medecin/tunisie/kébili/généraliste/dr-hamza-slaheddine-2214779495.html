@@ -851,8 +851,21 @@
 		let object = {}
 		let rdv = 0
 		function ConfirmerRedezvous() {
-			alert("Ce médecin n'est pas encore conventionné avec nous. Nous allons le contacter afin qu'il puisse être intégré à notre plateforme, et ainsi vous permettre de prendre un rendez-vous en toute simplicité.")
-			window.location.href = "https://wic-doctor.com/"
+			apiurl = `https://wic-doctor.com:3004/send-doctor-details/${Detailsdoctors.doctor_id}`
+			fetch(apiurl)
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('Erreur lors de la récupération des catégories');
+				}
+				return response.json();
+			})
+			.then(data => {
+				console.log("data details*********************************: ", data)
+				alert("Ce médecin n'est pas encore conventionné avec nous. Nous allons le contacter afin qu'il puisse être intégré à notre plateforme, et ainsi vous permettre de prendre un rendez-vous en toute simplicité.")
+
+				window.location.href="https://wic-doctor.com/"
+			})
+			
 		}
 		//console.log("sessionStorage.getItem('dataDetails'): ", decryptData(sessionStorage.getItem('dataDetails')))
 		fetch('https://wic-doctor.com:3004/getdocbyid/2214779495')
