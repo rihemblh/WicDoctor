@@ -814,6 +814,8 @@
 										<div class="input-group sub-input mt-1">
 											<input type="text" class="form-control input-lg " placeholder="Votre e-mail"
 												id="email-new">
+												<small id="email-error" style="color: red; display: none;">Veuillez entrer une adresse e-mail
+													valide.</small>
 											<div class="input-group-append ">
 												<button type="button" id="subscribe-btn"
 													class="btn btn-secondary btn-lg br-te-3  br-be-3">
@@ -823,36 +825,51 @@
 											<script>
 												document.getElementById('subscribe-btn').addEventListener('click', function () {
 													const emailInput = document.getElementById('email-new'); // Référence au champ input
+													const emailError = document.getElementById('email-error'); // Message d'erreur
 													const emailValue = emailInput.value.trim(); // Récupérer la valeur et supprimer les espaces
 													const apiUrl = 'https://wic-doctor.com:3004/send-News'; // Remplacez par l'URL de votre API
-
-													if (emailInput) {
+									
+													if (emailValue) {
 														// Création de l'objet JSON
-														const data = {
-															email: emailValue
-														};
-														console.log("data: ", JSON.stringify(data))
-														// Envoi de la requête
-														fetch(apiUrl, {
-															method: 'POST',
-															headers: {
-																'Content-Type': 'application/json'
-															},
-															body: JSON.stringify(data) // Conversion de l'objet en JSON
-														})
-															.then(response => response.json())
-															.then(result => {
-																console.log('Succès:', result);
-																alert('Inscription réussie !');
-																emailInput.value = '';
+														// Expression régulière pour valider les adresses e-mail
+														const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+									
+														// Vérifier si l'e-mail est valide
+														if (emailRegex.test(emailValue)) {
+															// Masquer le message d'erreur si l'e-mail est valide
+															emailError.style.display = 'none';
+															const data = {
+																email: emailValue
+															};
+															console.log("data: ", JSON.stringify(data))
+															// Envoi de la requête
+															fetch(apiUrl, {
+																method: 'POST',
+																headers: {
+																	'Content-Type': 'application/json'
+																},
+																body: JSON.stringify(data) // Conversion de l'objet en JSON
 															})
-															.catch(error => {
-																console.error('Erreur:', error);
-																alert('Une erreur s\'est produite.');
-															});
+																.then(response => response.json())
+																.then(result => {
+																	console.log('Succès:', result);
+																	alert('Inscription réussie !');
+																	emailInput.value = '';
+																})
+																.catch(error => {
+																	console.error('Erreur:', error);
+																	alert('Une erreur s\'est produite.');
+																});
+														}
+														else {
+															// Afficher un message d'erreur si l'e-mail est invalide
+															emailError.style.display = 'block';
+														}
+									
 													} else {
 														alert('Veuillez entrer une adresse e-mail.');
 													}
+									
 												});
 											</script>
 										</div>
