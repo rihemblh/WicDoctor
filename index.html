@@ -241,7 +241,8 @@
 												</a>
 											</li>
 											<li>
-												<a href="https://wic-doctor.com/Cliniques/tous.html" ><i class="fa fa-hospital-o"></i>
+												<a href="https://wic-doctor.com/Cliniques/tous.html"><i
+														class="fa fa-hospital-o"></i>
 													Cliniques</a>
 											</li>
 										</ul>
@@ -351,13 +352,14 @@
 													event.preventDefault(); // Empêche le comportement par défaut
 													const searchValue = event.target.value.trim();
 
-											  console.log("searchValue: ",searchValue)
+													console.log("searchValue: ", searchValue)
 
-												sessionStorage.setItem("query", searchValue)
-												console.log("searchValue stockée dans sessionStorage: ", sessionStorage.getItem("query"));
+													sessionStorage.setItem("query", searchValue)
+													console.log("searchValue stockée dans sessionStorage: ", sessionStorage.getItem("query"));
 
 													RechercheDoctor()
-												}})
+												}
+											})
 											document.getElementById('searchInput').addEventListener('input', function () {
 
 												const query = this.value.trim();
@@ -810,13 +812,49 @@
 								<div class="col-lg-7 mx-auto d-block">
 									<div class="mt-5">
 										<div class="input-group sub-input mt-1">
-											<input type="text" class="form-control input-lg "
-												placeholder="Votre e-mail">
+											<input type="text" class="form-control input-lg " placeholder="Votre e-mail"
+												id="email-new">
 											<div class="input-group-append ">
-												<button type="button" class="btn btn-secondary btn-lg br-te-3  br-be-3">
+												<button type="button" id="subscribe-btn"
+													class="btn btn-secondary btn-lg br-te-3  br-be-3">
 													S’inscrire
 												</button>
 											</div>
+											<script>
+												document.getElementById('subscribe-btn').addEventListener('click', function () {
+													const emailInput = document.getElementById('email-new'); // Référence au champ input
+													const emailValue = emailInput.value.trim(); // Récupérer la valeur et supprimer les espaces
+													const apiUrl = 'https://wic-doctor.com:3004/send-News'; // Remplacez par l'URL de votre API
+
+													if (emailInput) {
+														// Création de l'objet JSON
+														const data = {
+															email: emailValue
+														};
+														console.log("data: ", JSON.stringify(data))
+														// Envoi de la requête
+														fetch(apiUrl, {
+															method: 'POST',
+															headers: {
+																'Content-Type': 'application/json'
+															},
+															body: JSON.stringify(data) // Conversion de l'objet en JSON
+														})
+															.then(response => response.json())
+															.then(result => {
+																console.log('Succès:', result);
+																alert('Inscription réussie !');
+																emailInput.value = '';
+															})
+															.catch(error => {
+																console.error('Erreur:', error);
+																alert('Une erreur s\'est produite.');
+															});
+													} else {
+														alert('Veuillez entrer une adresse e-mail.');
+													}
+												});
+											</script>
 										</div>
 									</div>
 								</div>
@@ -839,9 +877,10 @@
 				<figure class="image-box"><a href="#"><img src="assets/images/resource/sprakle.png" alt=""></a></figure>
 				<figure class="image-box"><a href="#"><img src="assets/images/resource/wic-sms.png" alt=""></a></figure>
 				<figure class="image-box"><a href="#"><img src="assets/images/resource/vnt.png" alt=""></a></figure>
-				<figure class="image-box"><a href="#"><img src="assets/images/resource/wic-inst.png" alt=""></a></figure>
+				<figure class="image-box"><a href="#"><img src="assets/images/resource/wic-inst.png" alt=""></a>
+				</figure>
 
-				
+
 			</div>
 		</div>
 	</section>
