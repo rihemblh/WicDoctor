@@ -412,85 +412,87 @@
 	</section>
 	<!--/ Section-->
 
-		<!-- Newsletter-->
-		<section class="sptb section-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 col-xl-6 col-md-12">
-						<div class="sub-newsletter">
-							<h3 class="mb-2"><i class="fa fa-paper-plane-o me-2"></i> Inscrivez-vous </h3>
-							<p class="mb-0">Pour recevoir nos dernières publications
-	
-	
-							</p>
-						</div>
+	<!-- Newsletter-->
+	<section class="sptb section-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-xl-6 col-md-12">
+					<div class="sub-newsletter">
+						<h3 class="mb-2"><i class="fa fa-paper-plane-o me-2"></i> Inscrivez-vous </h3>
+						<p class="mb-0">Pour recevoir nos dernières publications
+
+
+						</p>
 					</div>
-					<div class="col-lg-5 col-xl-6 col-md-12">
-						<div class="input-group sub-input mt-1">
-							<input class="form-control input-lg" id="email-new" placeholder="Enter your Email" type="text">
-							<small id="email-error" style="color: red; display: none;">Veuillez entrer une adresse e-mail
-								valide.</small>
-						</div>
-						<div class="input-group-append">
-							<button id="subscribe-btn" class="btn btn-primary btn-lg br-te-3 br-be-3"
-								type="button">S’inscrire</button>
-						</div>
+				</div>
+				<div class="col-lg-5 col-xl-6 col-md-12">
+					<div class="input-group sub-input mt-1">
+						<input class="form-control input-lg" id="email-new" placeholder="Enter your Email" type="text">
+						<small id="email-error" style="color: red; display: none;">Veuillez entrer une adresse e-mail
+							valide.</small>
+					</div>
+					<div class="input-group-append">
+						<button id="subscribe-btn" class="btn btn-primary btn-lg br-te-3 br-be-3"
+							type="button">S’inscrire</button>
 					</div>
 				</div>
 			</div>
-			</div>
-			<script>
-				document.getElementById('subscribe-btn').addEventListener('click', function () {
-					const emailInput = document.getElementById('email-new'); // Référence au champ input
-					const emailError = document.getElementById('email-error'); // Message d'erreur
-					const emailValue = emailInput.value.trim(); // Récupérer la valeur et supprimer les espaces
-					const apiUrl = 'https://wic-doctor.com:3004/send-News'; // Remplacez par l'URL de votre API
-	
-					if (emailValue) {
-						// Création de l'objet JSON
-						// Expression régulière pour valider les adresses e-mail
-						const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-	
-						// Vérifier si l'e-mail est valide
-						if (emailRegex.test(emailValue)) {
-							// Masquer le message d'erreur si l'e-mail est valide
-							emailError.style.display = 'none';
-							const data = {
-								email: emailValue
-							};
-							console.log("data: ", JSON.stringify(data))
-							// Envoi de la requête
-							fetch(apiUrl, {
-								method: 'POST',
-								headers: {
-									'Content-Type': 'application/json'
-								},
-								body: JSON.stringify(data) // Conversion de l'objet en JSON
+		</div>
+		</div>
+		<script>
+			document.getElementById('subscribe-btn').addEventListener('click', function () {
+				const emailInput = document.getElementById('email-new'); // Référence au champ input
+				const emailError = document.getElementById('email-error'); // Message d'erreur
+				const emailValue = emailInput.value.trim(); // Récupérer la valeur et supprimer les espaces
+				const apiUrl = 'https://wic-doctor.com:3004/send-News'; // Remplacez par l'URL de votre API
+
+				if (emailValue) {
+					// Création de l'objet JSON
+					// Expression régulière pour valider les adresses e-mail
+					const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+					// Vérifier si l'e-mail est valide
+					if (emailRegex.test(emailValue)) {
+						// Masquer le message d'erreur si l'e-mail est valide
+						emailError.style.display = 'none';
+						const data = {
+							email: emailValue
+						};
+						console.log("data: ", JSON.stringify(data))
+						// Envoi de la requête
+						fetch(apiUrl, {
+							method: 'POST',
+							headers: {
+								'Content-Type': 'application/json'
+							},
+							body: JSON.stringify(data) // Conversion de l'objet en JSON
+						})
+							.then(response => response.json())
+							.then(result => {
+								console.log('Succès:', result);
+								if (result.message == "Cet email est déjà enregistré.")
+									alert("Cette adresse email a déjà été enregistrée.")
+								else
+									alert('Inscription réussie !'); emailInput.value = '';
 							})
-								.then(response => response.json())
-								.then(result => {
-									console.log('Succès:', result);
-									alert('Inscription réussie !');
-									emailInput.value = '';
-								})
-								.catch(error => {
-									console.error('Erreur:', error);
-									alert('Une erreur s\'est produite.');
-								});
-						}
-						else {
-							// Afficher un message d'erreur si l'e-mail est invalide
-							emailError.style.display = 'block';
-						}
-	
-					} else {
-						alert('Veuillez entrer une adresse e-mail.');
+							.catch(error => {
+								console.error('Erreur:', error);
+								alert('Une erreur s\'est produite.');
+							});
 					}
-	
-				});
-			</script>
-		</section>
-		<!--/Newsletter-->
+					else {
+						// Afficher un message d'erreur si l'e-mail est invalide
+						emailError.style.display = 'block';
+					}
+
+				} else {
+					alert('Veuillez entrer une adresse e-mail.');
+				}
+
+			});
+		</script>
+	</section>
+	<!--/Newsletter-->
 
 	<!--Footer Section-->
 	<section>
@@ -850,7 +852,7 @@
 		let rdv = 0
 		function ConfirmerRedezvous() {
 			alert("Ce médecin n'est pas encore conventionné avec nous. Nous allons le contacter afin qu'il puisse être intégré à notre plateforme, et ainsi vous permettre de prendre un rendez-vous en toute simplicité.")
-            window.location.href="https://wic-doctor.com/"
+			window.location.href = "https://wic-doctor.com/"
 		}
 		//console.log("sessionStorage.getItem('dataDetails'): ", decryptData(sessionStorage.getItem('dataDetails')))
 		fetch('https://wic-doctor.com:3004/getdocbyid/6848362544')
@@ -1146,14 +1148,16 @@
 					console.log("rendez-vous")
 
 					console.log("availability: ", JSON.stringify(data))
-					config = { "days": [{ "day": "Lundi", "start_at": "09:00:00", "end_at": "15:00:00" },
-					{ "day": "Mardi", "start_at": "09:00:00", "end_at": "15:00:00" }, 
-					{ "day": "Mercredi", "start_at": "09:00:00", "end_at": "15:00:00" }, 
-					{ "day": "Jeudi", "start_at": "09:00:00", "end_at": "15:00:00" }, 
-					{ "day": "Vendredi", "start_at": "09:00:00", "end_at": "15:00:00" }, 
-					{ "day": "Samedi", "start_at": "09:00:00", "end_at": "13:00:00" }], 
-					"pauses": {}, 
-					"duree": 30, "holidays": [], "urgence": [], "indisponibles": [] }
+					config = {
+						"days": [{ "day": "Lundi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Mardi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Mercredi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Jeudi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Vendredi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Samedi", "start_at": "09:00:00", "end_at": "13:00:00" }],
+						"pauses": {},
+						"duree": 30, "holidays": [], "urgence": [], "indisponibles": []
+					}
 
 					// Generate slots
 					slotsData = generateTimeSlots(config, new Date());

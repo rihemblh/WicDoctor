@@ -118,10 +118,10 @@
 											<ul>
 												<li><a href="https://wic-doctor.com/partenaire.html">Partenaire</a>
 												</li>
-												<li><a href="https://wic-doctor.com/collaborateur.html">Collaborateur</a>
-												</li>
 												<li><a
-														href="">Télésecrétariat</a>
+														href="https://wic-doctor.com/collaborateur.html">Collaborateur</a>
+												</li>
+												<li><a href="">Télésecrétariat</a>
 												</li>
 											</ul>
 										</li>
@@ -145,16 +145,20 @@
 										<li class=""><a href="https://wic-doctor.com/contact.html">Contact</a></li>
 										<li>
 											<div class="menu-right-content pull-left" id="Login">
-												<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
-													data-bs-toggle="dropdown" aria-expanded="false"></div>
-												<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
-													<li><a class="dropdown-item profile" href="https://wic-doctor.com/profil.html">Mon Profil</a></li>
+												<div class="avatar-initial rounded-circle me-2" id="userAvatar"
+													role="button" data-bs-toggle="dropdown" aria-expanded="false"></div>
+												<ul class="dropdown-menu dropdown-menu-end"
+													aria-labelledby="userAvatar">
+													<li><a class="dropdown-item profile"
+															href="https://wic-doctor.com/profil.html">Mon Profil</a>
+													</li>
 													<li>
 														<hr class="dropdown-divider">
 													</li>
-													<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+													<li><a class="dropdown-item" onclick="Deconexion()">Se
+															déconnecter</a></li>
 												</ul>
-										</div>
+											</div>
 										</li>
 									</ul>
 								</div>
@@ -466,8 +470,10 @@
 							.then(response => response.json())
 							.then(result => {
 								console.log('Succès:', result);
-								alert('Inscription réussie !');
-								emailInput.value = '';
+								if (result.message == "Cet email est déjà enregistré.")
+									alert("Cette adresse email a déjà été enregistrée.")
+								else
+									alert('Inscription réussie !'); emailInput.value = '';
 							})
 							.catch(error => {
 								console.error('Erreur:', error);
@@ -1495,7 +1501,7 @@
 				function navigateDays(direction) {
 					// Increment or decrement by 3 days
 					currentWeekStart.setDate(currentWeekStart.getDate() + direction * 3);
-					slotsData=generateTimeSlots(config, new Date(currentWeekStart))
+					slotsData = generateTimeSlots(config, new Date(currentWeekStart))
 					updateWeek();
 				}
 
