@@ -820,6 +820,47 @@
                     
 						
             </div>`;}
+			else if(doctor.name == "Clinique El Amen Mutuelleville")
+				{console.log("doctor to show: ", doctor)
+				const photo = doctor.doctor_photo || "clinique.png";
+				const name = getDoctorName(doctor.name);
+				//	const speciality = getDoctorSpec(doctor.specialities);
+				const city = getDoctorName(doctor.ville);
+				const adress = getDoctorName(doctor.Adresse_exacte);
+				const secteur = doctor.Secteur || "Non spécifié";
+				const phone = doctor.phone_number || "Non spécifié";
+
+				const encryptedData = encryptData(doctor);
+
+				container.innerHTML += `
+             <div class="card overflow-hidden">
+                <div class="d-md-flex">
+                    <div class="item-card9-img">
+                        <div class="item-card9-imgs">
+                            <a href="https://wic-doctor.com/Cliniques/clinique-amen-mutuelleville.html"  id="doctorDetails"></a>
+                            <img alt="img" class="cover-image" src="./../assets/images/icons/${photo}">
+                        </div>
+                    </div>
+                    <div class="card border-0 mb-0">
+                        <div class="card-body">
+                            <div class="item-card9">
+                                <a href="https://wic-doctor.com/Cliniques/clinique-amen-mutuelleville.html"  class="text-dark">
+                                    <h4 class="font-weight-bold mt-1 mb-1"> ${name}</h4>
+                                </a>
+                               
+                                <div class="item-card9-desc mb-0 mt-2">
+									                                                                        <span class="me-4 d-inline-block"><i class="fa fa-map-marker text-muted me-1"></i>${adress}</span>
+
+                                    <span class="me-4 d-inline-block"><i class="fa fa-map-marker text-muted me-1"></i>${city}</span>
+
+                                    <span class="me-4"><i class="fe fe-phone text-muted me-1"></i>${phone}</span>
+                                </div>
+								
+                            </div>
+                    
+						
+            </div>`;}
+			
 			else{
 				console.log("doctor to show: ", doctor)
 				const photo = doctor.doctor_photo || "clinique.png";
