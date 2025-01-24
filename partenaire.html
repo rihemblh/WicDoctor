@@ -737,32 +737,36 @@
 							/* Retirer l'effet lorsque le bouton est activé */
 						}
 					</style>
+					<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+						rel="stylesheet" />
+					<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+					<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 					<form id="contact-form">
 						<div class="row clearfix">
 							<div class="col-lg-12 col-md-12 col-sm-12 form-group interest-section">
 								<p class="section-title">Vous êtes</p>
 								<div class="checkbox-container">
 									<label class="custom-checkbox">
-										<input type="checkbox" name="interest"
+										<input type="radio" name="interest"
 											value="Visiteur Médical / Agent de Commerce">
 										<span class="icon"><i class="fas fa-briefcase-medical"></i></span>
 										<span class="text">Visiteur Médical / Agent de Commerce</span>
 									</label>
 									<label class="custom-checkbox">
-										<input type="checkbox" name="interest" value="Société de Vente de Médicaments / Compléments
+										<input type="radio" name="interest" value="Société de Vente de Médicaments / Compléments
 										Alimentaires">
 										<span class="icon"><i class="fas fa-pills"></i></span>
 										<span class="text">Société de Vente de Médicaments / Compléments
 											Alimentaires</span>
 									</label>
 									<label class="custom-checkbox">
-										<input type="checkbox" name="interest"
+										<input type="radio" name="interest"
 											value="Fournisseur d’Équipements Médicaux">
 										<span class="icon"><i class="fas fa-stethoscope"></i></span>
 										<span class="text">Fournisseur d’Équipements Médicaux</span>
 									</label>
 									<label class="custom-checkbox">
-										<input type="checkbox" name="interest" value="Maison Cosmétique">
+										<input type="radio" name="interest" value="Maison Cosmétique">
 										<span class="icon"><i class="fas fa-mortar-pestle"></i></span>
 										<span class="text">Maison Cosmétique</span>
 									</label>
@@ -995,19 +999,17 @@
 							</div>
 						</div>
 					</form>
-					<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-						rel="stylesheet" />
-					<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-					<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 					<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 					<script>
 						$(document).ready(function () {
-							// Activer Select2 sur le champ avec ID country
+							// Initialisation de Select2
 							$('#country').select2({
-								placeholder: "Sélectionnez un pays", // Placeholder pour le champ
-								allowClear: true,                  // Permet de réinitialiser la sélection
-								width: '100%'                      // Assurez une largeur complète
+								placeholder: "Sélectionnez un pays",
+								allowClear: true,
+								width: '100%',
+								minimumResultsForSearch: 1  // Active la recherche dès qu'il y a plus d'un résultat
 							});
 						});
 						document.getElementById('contact-form').addEventListener('submit', function (event) {
