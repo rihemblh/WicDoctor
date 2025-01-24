@@ -119,7 +119,7 @@
 												<li><a
 														href="https://wic-doctor.com/collaborateur.html">Collaborateur</a>
 												</li>
-												<li><a href="">Télésecrétariat</a>
+												<li><a href="https://telesecretariat.wic-call.com/">Télésecrétariat</a>
 												</li>
 											</ul>
 										</li>
@@ -814,8 +814,9 @@
 										<div class="input-group sub-input mt-1">
 											<input type="text" class="form-control input-lg " placeholder="Votre e-mail"
 												id="email-new">
-												<small id="email-error" style="color: red; display: none;">Veuillez entrer une adresse e-mail
-													valide.</small>
+											<small id="email-error" style="color: red; display: none;">Veuillez entrer
+												une adresse e-mail
+												valide.</small>
 											<div class="input-group-append ">
 												<button type="button" id="subscribe-btn"
 													class="btn btn-secondary btn-lg br-te-3  br-be-3">
@@ -828,12 +829,12 @@
 													const emailError = document.getElementById('email-error'); // Message d'erreur
 													const emailValue = emailInput.value.trim(); // Récupérer la valeur et supprimer les espaces
 													const apiUrl = 'https://wic-doctor.com:3004/send-News'; // Remplacez par l'URL de votre API
-									
+
 													if (emailValue) {
 														// Création de l'objet JSON
 														// Expression régulière pour valider les adresses e-mail
 														const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-									
+
 														// Vérifier si l'e-mail est valide
 														if (emailRegex.test(emailValue)) {
 															// Masquer le message d'erreur si l'e-mail est valide
@@ -853,10 +854,10 @@
 																.then(response => response.json())
 																.then(result => {
 																	console.log('Succès:', result);
-																	if(result.message == "Cet email est déjà enregistré.")
-																	alert("Cette adresse email a déjà été enregistrée.")
-																else
-																	alert('Inscription réussie !');
+																	if (result.message == "Cet email est déjà enregistré.")
+																		alert("Cette adresse email a déjà été enregistrée.")
+																	else
+																		alert('Inscription réussie !');
 																	emailInput.value = '';
 																})
 																.catch(error => {
@@ -868,11 +869,11 @@
 															// Afficher un message d'erreur si l'e-mail est invalide
 															emailError.style.display = 'block';
 														}
-									
+
 													} else {
 														alert('Veuillez entrer une adresse e-mail.');
 													}
-									
+
 												});
 											</script>
 										</div>
