@@ -1303,54 +1303,13 @@
 									//button.textContent = `${startTime} - ${endTime}`;
 									button.textContent = `${startTime}`;
 									button.onclick = () => {
+										
+				alert("Ce médecin n'est pas encore conventionné avec nous. Nous allons le contacter afin qu'il puisse être intégré à notre plateforme, et ainsi vous permettre de prendre un rendez-vous en toute simplicité.")
+
+				window.location.href="https://wic-doctor.com/"
+									//window.location.href=""
 										// Supprimer la classe 'selected-slot' des autres boutons
-										document.querySelectorAll('.btn.disponible').forEach(btn => {
-											btn.classList.remove('selected-slot');
-										});
-
-										// Ajouter la classe au bouton actuellement cliqué
-										button.classList.add('selected-slot');
-										let rdv = 0
-										if (sessionStorage.getItem("rdv")) {
-											rdv = sessionStorage.getItem("rdv")
-										}
-										if (rdv == 0) {
-											document.getElementById("motifSelection").style.display = ""
-										}
-
-										selectedSlotStart = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${startTime}`;
-										selectedSlotEnd = `${day.dayName} ${day.date.getDate()}/${day.date.getMonth() + 1} à ${endTime}`;
-
-										const inputString = "mardi 15/10 à 10:00-11:00";
-
-										// Define the year
-										const currentDate = new Date();
-										const year = currentDate.getFullYear();
-
-										// Parse the input string
-										const [dayMonth, time] = selectedSlotStart.split(" à "); // Split by " à "
-										const [jour, month] = dayMonth.split(" ")[1].split("/"); // Get the day and month
-
-										// Format the output
-										const formattedDateStart = `${year}-${month.padStart(2, '0')}-${jour.padStart(2, '0')} ${time}`;
-
-										// Log the formatted date
-										console.log(formattedDateStart); // Output: "2024-10-15 10:00"
-
-
-										// Parse the input string
-										const [dayMonth2, time2] = selectedSlotEnd.split(" à "); // Split by " à "
-										const [jour2, month2] = dayMonth2.split(" ")[1].split("/"); // Get the day and month
-
-										// Format the output
-										const formattedDateEnd = `${year}-${month2.padStart(2, '0')}-${jour2.padStart(2, '0')} ${time2}`;
-
-										// Log the formatted date
-										console.log(formattedDateEnd); // Output: "2024-10-15 10:00"
-
-										object = Object.assign({ "appointment_at": formattedDateStart }, { "ends_at": formattedDateEnd }, { "start_at": formattedDateStart },
-											{ "doctor_id": Detailsdoctors.doctor_id }, { "clinic": "" }, { "doctor": JSON.parse(Detailsdoctors.name).fr }, { "address": "" })
-										console.log("object rendez-vous: ", object)
+										
 
 									};
 								}
