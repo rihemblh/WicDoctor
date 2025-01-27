@@ -1043,19 +1043,7 @@
 
 				container.innerHTML += `
                <div class="card overflow-hidden" style="box-shadow: 0 0px 30px #cfe8e1 ; border-radius: 15px;">
-				<style>
-  @media (max-width: 767.98px) { /* Cible les écrans de taille mobile */
-    .custom-padding {
-      padding: 0 !important;
-    }
-  }
-	 @media (min-width: 768.98px) { /* Cible les écrans de taille mobile */
-    .custom-padding {
-      padding: 2% !important;
-    }
-  }
-</style>
-                <div class="d-md-flex custom-padding">
+                <div class="d-md-flex" style="padding: 2%;">
                     <div class="item-card9-img">
                         <div class="item-card9-imgs">
                             <a href="#" onclick="GetDetailsDoctor('${encryptedData}',0)"  id="doctorDetails"></a>
@@ -1077,7 +1065,22 @@
                                 </div>
                             </div>
                         </div>
-						<div class="card-footer p-0"  style="padding-right: 13% !important;border: 0px !important">
+						<style>
+							 /* Cible les écrans de taille mobile (moins de 768px) */
+  @media (max-width: 767.98px) { 
+    .custom-padding {
+      padding-right: 0 !important;
+    }
+  }
+
+  /* Cible les écrans au-dessus de 768px (tablettes et plus grandes tailles) */
+  @media (min-width: 768px) { 
+    .custom-padding {
+      padding-right: 13% !important;
+    }
+  }
+							</style>
+						<div class="card-footer p-0 custom-padding"  style="border: 0px !important">
 														<div class="item-card9-footer btn-appointment">
 															<div class="btn-group w-100">
 																
