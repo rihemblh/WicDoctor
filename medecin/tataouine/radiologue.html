@@ -1073,7 +1073,22 @@
                                 </div>
                             </div>
                         </div>
-						<div class="card-footer p-0"  style="padding-right: 13% !important;border: 0px !important">
+							<style>
+							 /* Cible les écrans de taille mobile (moins de 768px) */
+  @media (max-width: 767.98px) { 
+    .custom-padding {
+      padding-right: 0 !important;
+    }
+  }
+
+  /* Cible les écrans au-dessus de 768px (tablettes et plus grandes tailles) */
+  @media (min-width: 768px) { 
+    .custom-padding {
+      padding-right: 13% !important;
+    }
+  }
+							</style>
+						<div class="card-footer p-0 custom-padding"  style="border: 0px !important">
 														<div class="item-card9-footer btn-appointment">
 															<div class="btn-group w-100">
 																
