@@ -290,7 +290,9 @@ document.addEventListener('DOMContentLoaded', function () {
     console.error("User not authenticated.");
   }
 });
+var Login
 function Deconexion() {
+  Login = decryptData(sessionStorage.getItem("auth"));
   console.log("Login: ", Login)
   const requestOptions = {
     method: 'POST', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
@@ -299,6 +301,7 @@ function Deconexion() {
       'Content-Type': 'application/json' // Type de contenu si vous envoyez des données
     },
   };
+  console.log("Login.token: ",Login.token)
   // Appeler l'API
   fetch("https://wic-doctor.com:3004/logout", requestOptions)
     .then(response => {
