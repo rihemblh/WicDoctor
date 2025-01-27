@@ -1043,7 +1043,19 @@
 
 				container.innerHTML += `
                <div class="card overflow-hidden" style="box-shadow: 0 0px 30px #cfe8e1 ; border-radius: 15px;">
-                <div class="d-md-flex" style="padding: 2%;">
+				<style>
+  @media (max-width: 767.98px) { /* Cible les écrans de taille mobile */
+    .custom-padding {
+      padding: 0 !important;
+    }
+  }
+	 @media (min-width: 768.98px) { /* Cible les écrans de taille mobile */
+    .custom-padding {
+      padding: 2% !important;
+    }
+  }
+</style>
+                <div class="d-md-flex custom-padding">
                     <div class="item-card9-img">
                         <div class="item-card9-imgs">
                             <a href="#" onclick="GetDetailsDoctor('${encryptedData}',0)"  id="doctorDetails"></a>
