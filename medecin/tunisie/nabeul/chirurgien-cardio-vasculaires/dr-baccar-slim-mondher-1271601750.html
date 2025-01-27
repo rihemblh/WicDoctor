@@ -1187,7 +1187,16 @@
 						.then(data => {
 							console.log("availabilitytélé: ", JSON.stringify(data))
 							config = data
-
+							config = {
+						"days": [{ "day": "Lundi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Mardi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Mercredi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Jeudi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Vendredi", "start_at": "09:00:00", "end_at": "15:00:00" },
+						{ "day": "Samedi", "start_at": "09:00:00", "end_at": "13:00:00" }],
+						"pauses": {},
+						"duree": 30, "holidays": [], "urgence": [], "indisponibles": []
+					}
 							// Generate slots
 							slotsData = generateTimeSlots(config, new Date());
 							console.log(slotsData);
