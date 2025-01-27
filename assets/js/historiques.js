@@ -159,5 +159,6 @@ function CancelAppointment(id) {
         .then(response => response.json())
         .then(data => {
             console.log("resp cancel appointment: ", data)
+            location.reload();
         })
 }
