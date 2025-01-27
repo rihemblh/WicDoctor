@@ -146,8 +146,19 @@ console.log("appointmentid: ",appointmentid)
     //window.location.href = 'prise-de-rendez-vous.html'; // Rediriger vers la page 2
 }
 function CancelAppointment(id) {
-    const isConfirmed = confirm("Êtes-vous sûr(e) de vouloir annuler ce rendez-vous ?");
-    if (isConfirmed) {
+    //const isConfirmed = confirm("Êtes-vous sûr(e) de vouloir annuler ce rendez-vous ?");
+    //if (isConfirmed) {
+        Swal.fire({
+            title: 'Êtes-vous sûr(e) ?',
+            text: "Cette action annulera définitivement votre rendez-vous.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Oui, annuler',
+            cancelButtonText: 'Non, conserver'
+        }).then((result) => {
+            if (result.isConfirmed) {
     const requestOptions = {
         method: 'DELETE', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
         headers: {
@@ -163,5 +174,14 @@ function CancelAppointment(id) {
             console.log("resp cancel appointment: ", data)
             location.reload();
         })
+        .catch(error => {
+            console.error("Erreur :", error);
+            Swal.fire(
+                'Erreur',
+                'Une erreur s\'est produite lors de l\'annulation.',
+                'error'
+            );
+        });
     }
+})
 }
