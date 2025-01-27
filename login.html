@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="fr-fr"  translate="no">
+<html class="no-js" lang="fr-fr" translate="no">
 
 <head>
 	<!-- Google tag (gtag.js) -->
@@ -45,6 +45,10 @@
 	<link href="assets/css/icons.css" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/css/intlTelInput.min.css">
 	<script src="./assets/js/intlTelInput.min.js"></script>
+	<!-- SweetAlert2 CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+	<!-- SweetAlert2 JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -56,7 +60,7 @@
 	</div>
 	<!--/Loader-->
 
-<!--rihem 09-01-2025-->
+	<!--rihem 09-01-2025-->
 
 
 
@@ -118,11 +122,11 @@
 											<ul>
 												<li><a href="https://wic-doctor.com/partenaire.html">Partenaire</a>
 												</li>
-												<li><a href="https://wic-doctor.com/collaborateur.html">Collaborateur</a>
-												</li>
 												<li><a
-																										href="https://telesecretariat.wic-call.com/">Télésecrétariat
-</a>
+														href="https://wic-doctor.com/collaborateur.html">Collaborateur</a>
+												</li>
+												<li><a href="https://telesecretariat.wic-call.com/">Télésecrétariat
+													</a>
 												</li>
 											</ul>
 										</li>
@@ -145,16 +149,20 @@
 										<li class=""><a href="https://wic-doctor.com/contact.html">Contact</a></li>
 										<li>
 											<div class="menu-right-content pull-left" id="Login">
-												<div class="avatar-initial rounded-circle me-2" id="userAvatar" role="button"
-													data-bs-toggle="dropdown" aria-expanded="false"></div>
-												<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userAvatar">
-													<li><a class="dropdown-item profile" href="https://wic-doctor.com/profil.html">Mon Profil</a></li>
+												<div class="avatar-initial rounded-circle me-2" id="userAvatar"
+													role="button" data-bs-toggle="dropdown" aria-expanded="false"></div>
+												<ul class="dropdown-menu dropdown-menu-end"
+													aria-labelledby="userAvatar">
+													<li><a class="dropdown-item profile"
+															href="https://wic-doctor.com/profil.html">Mon Profil</a>
+													</li>
 													<li>
 														<hr class="dropdown-divider">
 													</li>
-													<li><a class="dropdown-item" onclick="Deconexion()">Se déconnecter</a></li>
+													<li><a class="dropdown-item" onclick="Deconexion()">Se
+															déconnecter</a></li>
 												</ul>
-										</div>
+											</div>
 										</li>
 									</ul>
 								</div>
@@ -214,179 +222,183 @@
 		<div class="auto-container">
 			<div class="content-box">
 				<h1>Login</h1>
-			
+
 			</div>
 		</div>
 	</section>
 	<!--End Page Title-->
 	<!--rihem 09-01-2025-->
 
-	
-		
-		<style>
-			/* Background with gradient */
-			.banner-section {
-				background: linear-gradient(30deg, rgb(145 171 165), rgb(33 30 209));
-				/*background:rgb(66 63 205);*/
-				color: white;
-				padding: 0px 0px 60px 0px;
-				position: relative;
+
+
+	<style>
+		/* Background with gradient */
+		.banner-section {
+			background: linear-gradient(30deg, rgb(145 171 165), rgb(33 30 209));
+			/*background:rgb(66 63 205);*/
+			color: white;
+			padding: 0px 0px 60px 0px;
+			position: relative;
+		}
+
+		/* Header text */
+		.header-text h1 {
+			font-size: 3rem;
+			font-weight: bold;
+			text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+			margin-bottom: 15px;
+		}
+
+		.subtext {
+			font-size: 1.2rem;
+			font-weight: 300;
+			opacity: 0.9;
+		}
+
+		/* Button styles */
+		.search-btn {
+			background-color: #ff5722;
+			color: white;
+			border-radius: 25px;
+			transition: transform 0.3s, background-color 0.3s;
+		}
+
+		.search-btn:hover {
+			background-color: #e64a19;
+			transform: scale(1.05);
+		}
+
+		/* Input fields */
+
+
+		/* Floating image and shapes */
+		.floating-elements {
+			position: absolute;
+
+			bottom: 0;
+			display: flex;
+			align-items: initial;
+			height: 300px;
+			z-index: -1;
+		}
+
+		.bubble {
+			background: transparent !important;
+			position: absolute;
+			animation: pop 4s infinite ease-in-out;
+			overflow: hidden;
+			z-index: 1;
+			border-radius: 0% !important;
+		}
+
+		.bubble-p {
+			background: transparent !important;
+			position: absolute;
+			overflow: hidden;
+			z-index: 1;
+			border-radius: 0% !important;
+		}
+
+		.bubble-1 {
+			top: 0%;
+			left: -50px;
+			width: 140px;
+			height: 140px;
+		}
+
+		.bubble-2 {
+			top: 25%;
+			left: -80px;
+			width: 60px;
+			height: 60px;
+		}
+
+		.bubble-image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		/* Animation "pop" */
+		@keyframes pop {
+
+			0%,
+			100% {
+				transform: scale(1);
 			}
-	
-			/* Header text */
-			.header-text h1 {
-				font-size: 3rem;
-				font-weight: bold;
-				text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-				margin-bottom: 15px;
+
+			50% {
+				transform: scale(1.2);
 			}
-	
-			.subtext {
-				font-size: 1.2rem;
-				font-weight: 300;
-				opacity: 0.9;
+		}
+
+		/* Background shapes */
+		.background-shape {
+			position: absolute;
+			border-radius: 40%;
+			z-index: -1;
+			/* Derrière l'image */
+			opacity: 0.9;
+		}
+
+
+		/* Doctor image */
+		.doctor-image {
+			width: 100%;
+			border-radius: 10px;
+		}
+
+
+
+		/* Media query for mobile */
+		@media (max-width: 768px) {
+			.doctor-image {
+				display: none;
 			}
-	
-			/* Button styles */
-			.search-btn {
-				background-color: #ff5722;
-				color: white;
-				border-radius: 25px;
-				transition: transform 0.3s, background-color 0.3s;
-			}
-	
-			.search-btn:hover {
-				background-color: #e64a19;
-				transform: scale(1.05);
-			}
-	
-			/* Input fields */
-	
-	
-			/* Floating image and shapes */
-			.floating-elements {
-				position: absolute;
-	
-				bottom: 0;
-				display: flex;
-				align-items: initial;
-				height: 300px;
-				z-index: -1;
-			}
-	
-			.bubble {
-				background: transparent !important;
-				position: absolute;
-				animation: pop 4s infinite ease-in-out;
-				overflow: hidden;
-				z-index: 1;
-				border-radius: 0% !important;
-			}
-			.bubble-p {
-				background: transparent !important;
-				position: absolute;
-				overflow: hidden;
-				z-index: 1;
-				border-radius: 0% !important;
-			}
-			.bubble-1 {
-				top: 0%;
-				left: -50px;
-				width: 140px;
-				height: 140px;
-			}
-	
-			.bubble-2 {
-				top: 25%;
-				left: -80px;
-				width: 60px;
-				height: 60px;
-			}
-	
-			.bubble-image {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-	
-			/* Animation "pop" */
-			@keyframes pop {
-	
-				0%,
-				100% {
-					transform: scale(1);
-				}
-	
-				50% {
-					transform: scale(1.2);
-				}
-			}
-	
-			/* Background shapes */
+
 			.background-shape {
-				position: absolute;
-				border-radius: 40%;
-				z-index: -1;
-				/* Derrière l'image */
-				opacity: 0.9;
+				display: none;
 			}
-	
-	
-			/* Doctor image */
+
+			.bubble {
+				display: none;
+			}
+
+			.bubble-p {
+				display: none;
+			}
+		}
+
+		.doctor-image {
+			width: 100%;
+
+		}
+
+
+
+		/* Tab menu styles */
+		.nav-tabs .nav-link {
+			color: white;
+			background: transparent;
+			border: none;
+			font-size: 1.2rem;
+			margin-right: 10px;
+			transition: color 0.3s;
+		}
+
+		.nav-tabs .nav-link:hover,
+		.nav-tabs .nav-link.active {
+			color: #ff9800;
+			font-weight: bold;
+		}
+
+		/* HIDE IMAGE ON MOBILE */
+		@media (max-width: 768px) {
 			.doctor-image {
-				width: 100%;
-				border-radius: 10px;
+				display: none;
 			}
-	
-	
-	
-			/* Media query for mobile */
-			@media (max-width: 768px) {
-				.doctor-image {
-					display: none;
-				}
-	
-				.background-shape {
-					display: none;
-				}
-				.bubble{
-					display: none;
-				}
-				.bubble-p{
-					display: none;
-				}
-			}
-	
-			.doctor-image {
-				width: 100%;
-	
-			}
-	
-	
-	
-			/* Tab menu styles */
-			.nav-tabs .nav-link {
-				color: white;
-				background: transparent;
-				border: none;
-				font-size: 1.2rem;
-				margin-right: 10px;
-				transition: color 0.3s;
-			}
-	
-			.nav-tabs .nav-link:hover,
-			.nav-tabs .nav-link.active {
-				color: #ff9800;
-				font-weight: bold;
-			}
-	
-			/* HIDE IMAGE ON MOBILE */
-			@media (max-width: 768px) {
-				.doctor-image {
-					display: none;
-				}
-			}
-		</style>
+		}
+	</style>
 
 	<!--Section-->
 	<section class="sptb">
@@ -500,12 +512,13 @@
 							<p class="footer-title">Trouvez</p>
 							<hr class="deep-purple text-primary accent-2 mb-4 mt-0 d-inline-block mx-auto">
 							<div class="clearfix"></div>
-								<ul class="list-unstyled mb-0">
+							<ul class="list-unstyled mb-0">
 								<li>
 									<a href="https://wic-doctor.com/medecin/tous.html">Professionnels de santé</a>
 								</li>
 								<li>
-									<a href="https://wic-doctor.com/pharmacies/pharmacie.html">Pharmacies & Parapharmacies</a>
+									<a href="https://wic-doctor.com/pharmacies/pharmacie.html">Pharmacies &
+										Parapharmacies</a>
 								</li>
 								<li>
 									<a href="https://wic-doctor.com/Cliniques/tous.html">Cliniques</a>
@@ -618,7 +631,7 @@
 	<a href="#top" id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 	<!-- JQuery js-->
-	 <!--rihem 09-01-2025-->
+	<!--rihem 09-01-2025-->
 
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/new-js/popper.min.js"></script>
