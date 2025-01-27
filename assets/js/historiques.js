@@ -78,10 +78,11 @@ if (authData) {
                 const appointmentTimeCell = document.createElement('td');
                 appointmentTimeCell.textContent = formattedTime; // Display the formatted time
                 const appointmentActionsCell = document.createElement('td');
+                if(appointment.appointment_status  != "Failed")
                 appointmentActionsCell.innerHTML = appointmentActionsCell.innerHTML +
 
                     `
-                	<a href="#" onclick="EditAppointment(${appointment.iddoctor},${appointment.id})" class="btn btn-success btn-sm text-white" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="fa fa-pencil"></i></a>
+                	<!--<a href="#" onclick="EditAppointment(${appointment.iddoctor},${appointment.id})" class="btn btn-success btn-sm text-white" data-bs-toggle="tooltip" data-bs-original-title="Edit"><i class="fa fa-pencil"></i></a>-->
 					<a href="#" onclick="CancelAppointment(${appointment.id})"     class="btn btn-danger btn-sm text-white" data-bs-toggle="tooltip" data-bs-original-title="Delete"><i class="fa fa-times-circle-o"></i></a>															
                 `
                 /*   const paymentCell = document.createElement('td');
