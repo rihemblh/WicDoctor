@@ -146,6 +146,8 @@ console.log("appointmentid: ",appointmentid)
     //window.location.href = 'prise-de-rendez-vous.html'; // Rediriger vers la page 2
 }
 function CancelAppointment(id) {
+    const isConfirmed = confirm("Êtes-vous sûr(e) de vouloir annuler ce rendez-vous ?");
+    if (isConfirmed) {
     const requestOptions = {
         method: 'DELETE', // ou 'GET', 'PUT', 'DELETE' selon votre besoin
         headers: {
@@ -161,4 +163,5 @@ function CancelAppointment(id) {
             console.log("resp cancel appointment: ", data)
             location.reload();
         })
+    }
 }
