@@ -1306,8 +1306,9 @@
 										
 				alert("Ce médecin n'est pas encore conventionné avec nous. Nous allons le contacter afin qu'il puisse être intégré à notre plateforme, et ainsi vous permettre de prendre un rendez-vous en toute simplicité.")
 
-				window.location.href="https://wic-doctor.com/"
-									//window.location.href=""
+				//window.location.href="https://wic-doctor.com/"
+				if (document.referrer) { window.location.href = document.referrer; } else { window.location.href = 'https://wic-doctor.com/'; }
+				//window.location.href=""
 										// Supprimer la classe 'selected-slot' des autres boutons
 										
 
