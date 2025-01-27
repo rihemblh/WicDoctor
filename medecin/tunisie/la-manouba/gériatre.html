@@ -1050,8 +1050,8 @@
 				const encryptedData = encryptData(doctor);
 
 				container.innerHTML += `
-            <div class="card overflow-hidden">
-                <div class="d-md-flex">
+            <div class="card overflow-hidden" style="box-shadow: 0 0px 30px #cfe8e1 ; border-radius: 15px;">
+                <div class="d-md-flex" style="padding: 2%;">
                     <div class="item-card9-img">
                         <div class="item-card9-imgs">
                             <a href="#" onclick="GetDetailsDoctor('${encryptedData}',0)"  id="doctorDetails"></a>
@@ -1073,17 +1073,17 @@
                                 </div>
                             </div>
                         </div>
-						<div class="card-footer p-0">
+						<div class="card-footer p-0"  style="padding-right: 13% !important;border: 0px !important">
 														<div class="item-card9-footer btn-appointment">
 															<div class="btn-group w-100">
 																
 																			<a href=""  
-																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"
+																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action theme-btn style-one"
 																	onclick="GetDetailsDoctor('${encryptedData}',1)" 
 																	data-bs-toggle="modal"><i
 																		class="fe fe-phone  me-1 d-inline-block"></i>Téléconsultation</a>
 																<a href=""  
-																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action"
+																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action theme-btn style-two"
 																	onclick="GetDetailsDoctor('${encryptedData}',0)" 
 																	data-bs-toggle="modal"><i
 																		class="fe fe-phone  me-1 d-inline-block"></i>Rendez-vous</a>
