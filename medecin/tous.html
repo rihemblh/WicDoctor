@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="fr-fr"  translate="no">
+<html class="no-js" lang="fr-fr" translate="no">
 
 <head>
 	<!-- Google tag (gtag.js) -->
@@ -94,13 +94,13 @@
 													<img src="./../assets/images/media/photos/medecin-solution.png"
 														alt="Logo Praticiens" />
 													<a
-														href="https://wic-doctor.com/nos-solutions.html#Pratcien">Praticiens</a>
+														href="https://wic-doctor.com/nos-solutions-praticien.html">Praticiens</a>
 												</li>
 												<li>
 													<img src="./../assets/images/media/photos/patient-solution.png"
 														alt="Logo Patients" />
 													<a
-														href="https://wic-doctor.com/nos-solutions.html#Patient">Patients</a>
+														href="https://wic-doctor.com/nos-solutions-patient.html">Patients</a>
 												</li>
 												<li>
 													<img src="./../assets/images/media/photos/Télémédecine-soltion.png"
@@ -110,7 +110,7 @@
 												<li>
 													<img src="./../assets/images/media/photos/technologie-solution.png"
 														alt="Logo Technologie" />
-													<a href="https://wic-doctor.com/nos-solutions.html#Tech">Technologie
+													<a href="https://wic-doctor.com/technologies-de-pointe.html">Technologie
 														de pointe</a>
 												</li>
 											</ul>
@@ -123,7 +123,7 @@
 												<li><a
 														href="https://wic-doctor.com/collaborateur.html">Collaborateur</a>
 												</li>
-																								<li><a href="https://telesecretariat.wic-call.com/">Télésecrétariat</a>
+												<li><a href="https://telesecretariat.wic-call.com/">Télésecrétariat</a>
 
 												</li>
 											</ul>
@@ -226,7 +226,7 @@
 	</section>
 	<!--End Page Title-->
 	<!--rihem 09-01-2025-->
-	
+
 
 
 	<!--Breadcrumb-->
@@ -432,7 +432,7 @@
 
 
 
-							
+
 							</form>
 							<div class="d-grid">
 								<button class="btn btn-warning text-white" onclick="RechercheDoctor()">
@@ -459,87 +459,87 @@
 	</section>
 	<!--/Section-->
 
-<!-- Newsletter-->
-<section class="sptb section-bg">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7 col-xl-6 col-md-12">
-				<div class="sub-newsletter">
-					<h3 class="mb-2"><i class="fa fa-paper-plane-o me-2"></i> Inscrivez-vous </h3>
-					<p class="mb-0">Pour recevoir nos dernières publications
+	<!-- Newsletter-->
+	<section class="sptb section-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-xl-6 col-md-12">
+					<div class="sub-newsletter">
+						<h3 class="mb-2"><i class="fa fa-paper-plane-o me-2"></i> Inscrivez-vous </h3>
+						<p class="mb-0">Pour recevoir nos dernières publications
 
 
-					</p>
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-5 col-xl-6 col-md-12">
-				<div class="input-group sub-input mt-1">
-					<input class="form-control input-lg" id="email-new" placeholder="Enter your Email" type="text">
-					<small id="email-error" style="color: red; display: none;">Veuillez entrer une adresse e-mail
-						valide.</small>
-				</div>
-				<div class="input-group-append">
-					<button id="subscribe-btn" class="btn btn-primary btn-lg br-te-3 br-be-3"
-						type="button">S’inscrire</button>
+				<div class="col-lg-5 col-xl-6 col-md-12">
+					<div class="input-group sub-input mt-1">
+						<input class="form-control input-lg" id="email-new" placeholder="Enter your Email" type="text">
+						<small id="email-error" style="color: red; display: none;">Veuillez entrer une adresse e-mail
+							valide.</small>
+					</div>
+					<div class="input-group-append">
+						<button id="subscribe-btn" class="btn btn-primary btn-lg br-te-3 br-be-3"
+							type="button">S’inscrire</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	</div>
-	<script>
-		document.getElementById('subscribe-btn').addEventListener('click', function () {
-			const emailInput = document.getElementById('email-new'); // Référence au champ input
-			const emailError = document.getElementById('email-error'); // Message d'erreur
-			const emailValue = emailInput.value.trim(); // Récupérer la valeur et supprimer les espaces
-			const apiUrl = 'https://wic-doctor.com:3004/send-News'; // Remplacez par l'URL de votre API
+		</div>
+		<script>
+			document.getElementById('subscribe-btn').addEventListener('click', function () {
+				const emailInput = document.getElementById('email-new'); // Référence au champ input
+				const emailError = document.getElementById('email-error'); // Message d'erreur
+				const emailValue = emailInput.value.trim(); // Récupérer la valeur et supprimer les espaces
+				const apiUrl = 'https://wic-doctor.com:3004/send-News'; // Remplacez par l'URL de votre API
 
-			if (emailValue) {
-				// Création de l'objet JSON
-				// Expression régulière pour valider les adresses e-mail
-				const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				if (emailValue) {
+					// Création de l'objet JSON
+					// Expression régulière pour valider les adresses e-mail
+					const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-				// Vérifier si l'e-mail est valide
-				if (emailRegex.test(emailValue)) {
-					// Masquer le message d'erreur si l'e-mail est valide
-					emailError.style.display = 'none';
-					const data = {
-						email: emailValue
-					};
-					console.log("data: ", JSON.stringify(data))
-					// Envoi de la requête
-					fetch(apiUrl, {
-						method: 'POST',
-						headers: {
-							'Content-Type': 'application/json'
-						},
-						body: JSON.stringify(data) // Conversion de l'objet en JSON
-					})
-						.then(response => response.json())
-						.then(result => {
-							console.log('Succès:', result);
-							if (result.message == "Cet email est déjà enregistré.")
-								alert("Cette adresse email a déjà été enregistrée.")
-							else
-								alert('Inscription réussie !'); emailInput.value = '';
+					// Vérifier si l'e-mail est valide
+					if (emailRegex.test(emailValue)) {
+						// Masquer le message d'erreur si l'e-mail est valide
+						emailError.style.display = 'none';
+						const data = {
+							email: emailValue
+						};
+						console.log("data: ", JSON.stringify(data))
+						// Envoi de la requête
+						fetch(apiUrl, {
+							method: 'POST',
+							headers: {
+								'Content-Type': 'application/json'
+							},
+							body: JSON.stringify(data) // Conversion de l'objet en JSON
 						})
-						.catch(error => {
-							console.error('Erreur:', error);
-							alert('Une erreur s\'est produite.');
-						});
-				}
-				else {
-					// Afficher un message d'erreur si l'e-mail est invalide
-					emailError.style.display = 'block';
+							.then(response => response.json())
+							.then(result => {
+								console.log('Succès:', result);
+								if (result.message == "Cet email est déjà enregistré.")
+									alert("Cette adresse email a déjà été enregistrée.")
+								else
+									alert('Inscription réussie !'); emailInput.value = '';
+							})
+							.catch(error => {
+								console.error('Erreur:', error);
+								alert('Une erreur s\'est produite.');
+							});
+					}
+					else {
+						// Afficher un message d'erreur si l'e-mail est invalide
+						emailError.style.display = 'block';
+					}
+
+				} else {
+					alert('Veuillez entrer une adresse e-mail.');
 				}
 
-			} else {
-				alert('Veuillez entrer une adresse e-mail.');
-			}
-
-		});
-	</script>
-</section>
-<!--/Newsletter-->
+			});
+		</script>
+	</section>
+	<!--/Newsletter-->
 
 	<!--Footer Section-->
 	<section>
@@ -845,7 +845,7 @@
 
 		}
 		let selectedville = ""
-		let obj={}
+		let obj = {}
 		function handleCheckboxChange(checkbox) {
 			if (checkbox.checked) {
 				console.log(`Checkbox checked: ${checkbox.value}`);
@@ -914,19 +914,20 @@
 			button.onclick = () => {
 				currentPage = page; // Mettre à jour la page actuelle
 
-				if (obj != {})
-					{
-						obj=Object.assign(obj,{"limit": 10},
-						{"offset": (page - 1) * 10})
-						loadDoctors(obj)}
-				else
-					{loadDoctors({
+				if (obj != {}) {
+					obj = Object.assign(obj, { "limit": 10 },
+						{ "offset": (page - 1) * 10 })
+					loadDoctors(obj)
+				}
+				else {
+					loadDoctors({
 						speciality_id: undefined,
 						ville: undefined,
 						pays: undefined,
 						limit: 10,
 						offset: (page - 1) * 10
-					});}
+					});
+				}
 			};
 			return button;
 		}
