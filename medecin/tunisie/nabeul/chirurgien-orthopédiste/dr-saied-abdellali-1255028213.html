@@ -894,8 +894,6 @@
 											class="ion-checkmark-circled  text-success fs-14 ms-1"></i></h4>
 								</a>
 								<span class="text-gray">${getDoctorSpec(Detailsdoctors.specialities)}</span><br>
-<span class="text-gray">Spécialiste en churigie orthopédique et traumatologique</span><br>
-<span class="text-gray">Ancien médecin aux hopitaux de france</span><br>
 
 								
 
@@ -934,9 +932,9 @@
 											Informations de contact: 
 											</b>
 											</p>
-										<span class="text-muted"><b>Addresse: </b>101 Avenue Habib Thameur Immeuble Jawhara, Nabeul 1er étage Cabinet B1.4 </span><br>
-								<span class="text-muted"><b>Tel: </b>72 102 612 / 94 452 929 </span><br>
-<span class="text-muted"><b>Email: </b>dr.abdellali.said@gmail.com</span><br>
+										<span class="text-muted"><b>Addresse: </b>${getAddr(Detailsdoctors.adresse_exacte)} </span><br>
+								<span class="text-muted"><b>Tel: </b>${Detailsdoctors.phone_number} </span><br>
+
 										<p>${getDesc(Detailsdoctors.description)}</p>
 										
 									</div>
@@ -992,29 +990,7 @@
 						</div>
 					</div>
 				</div>
-			  <div class="photo-album mt-4">
-        <h4 class="mb-3">Photo Album</h4>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <img src="./../../../../assets/images/abd/WhatsApp Image 2025-01-28 at 16.23.22 (1).jpeg" alt="Photo 1" class="img-fluid rounded">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="./../../../../assets/images/abd/WhatsApp Image 2025-01-28 at 16.23.22.jpeg" alt="Photo 1" class="img-fluid rounded">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="./../../../../assets/images/abd/WhatsApp Image 2025-01-28 at 16.23.22 (2).jpeg" alt="Photo 1" class="img-fluid rounded">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="./../../../../assets/images/abd/WhatsApp Image 2025-01-28 at 16.23.22 (3).jpeg" alt="Photo 1" class="img-fluid rounded">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="./../../../../assets/images/abd/WhatsApp Image 2025-01-28 at 16.23.57.jpeg" alt="Photo 5" class="img-fluid rounded">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="./../../../../assets/images/abd/WhatsApp Image 2025-01-28 at 16.24.20.jpeg" alt="Photo 6" class="img-fluid rounded">
-            </div>
-        </div>
-    </div>
+			
 			<!--	<div class="card-footer">
 					<div class="btn-list">
 						<a href="javascript:void(0);" class="btn btn-success icons"><i
