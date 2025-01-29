@@ -137,13 +137,13 @@ async function fetchCarouselData2() {
 		  const encryptedData = encryptData(item);
 		  console.log("Données chiffrées : ", encryptedData);
    
-		  const photos = item.doctor_photo || "doctor.png";
+		  const photos = item.doctor_photo || "assets/images/media/doctors/doctor.png";
 		  console.log("********************************************************photots doc: ",photos)
 	const carouselItem = ` 	<div class="card mb-0">
 							<div class="card-body padding-body">
 								<div class="team-section text-center">
 									<div class="team-img">
-										<img src="assets/images/media/doctors/${photos}" class="img-thumbnail rounded-circle image alt=" alt="">
+										<img src="${photos}" class="img-thumbnail rounded-circle image alt=" alt="">
 									</div>
 									<div class="item-card2">
 								<small class="text-muted">${JSON.parse(item.specialities[0].name).fr || ""}</small>
