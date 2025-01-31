@@ -879,7 +879,7 @@
 				/*Detailsdoctors.created_at*/
 				const date = new Date(Detailsdoctors.created_at);
 				const year = date.getFullYear();
-				const photos = Detailsdoctors.doctor_photo || "doctor.png";
+				//const photos = Detailsdoctors.doctor_photo || "doctor.png";
 
 				document.getElementById("DoctorsDetails").innerHTML = document.getElementById("DoctorsDetails").innerHTML +
 					`<div class="col-lg-6">
@@ -887,7 +887,7 @@
 				<div class="card-body  item-user">
 					<div class="profile-pic mb-0">
 						<div class="d-md-flex">
-							<img src="./../../../../assets/images/media/doctors/${photos}" class="w-150 h-150 br-2" alt="user">
+							<img src="./../../../../assets/images/media/doctors/doctor.png" class="w-150 h-150 br-2" alt="user">
 							<div class="ms-4">
 								<a class="text-dark">
 									<h4 class="mt-3 mb-1 font-weight-bold">Dr. ${getDoctorName(Detailsdoctors.name)} <i
