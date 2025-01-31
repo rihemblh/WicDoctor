@@ -1039,7 +1039,8 @@
 
 			doctors.forEach(doctor => {
 				console.log("doctor to show: ", doctor)
-				const photo = doctor.doctor_photo || "doctor.png";
+				const photo = doctor.doctor_photo;
+				console.log("photo: ",photo)
 				const name = getDoctorName(doctor.name);
 				const speciality = getDoctorSpec(doctor.specialities, doctor.specialites);
 				const addr = getDoctorName(doctor.adresse_exacte);
@@ -1050,13 +1051,16 @@
 				const encryptedData = encryptData(doctor);
 
 				container.innerHTML += `
-            <div class="card overflow-hidden" style="box-shadow: 0 0px 30px #cfe8e1 ; border-radius: 15px;">
+          `
+							if (doctor.doctor_photo !== null)
+							container.innerHTML += `
+                             <div class="card overflow-hidden" style="box-shadow: 0 0px 30px #cfe8e1 ; border-radius: 15px;">
                 <div class="d-md-flex" style="padding: 2%;">
                     <div class="item-card9-img">
                         <div class="item-card9-imgs">
                             <a href="#" onclick="GetDetailsDoctor('${encryptedData}',0)"  id="doctorDetails"></a>
-                            <img alt="img" class="cover-image" src="./../../assets/images/media/doctors/${photo}">
-                        </div>
+							<img alt="img" class="cover-image" src="${photo}">
+							 </div>
                     </div>
                     <div class="card border-0 mb-0">
                         <div class="card-body">
@@ -1107,7 +1111,71 @@
 													</div>
                     </div>
                 </div>
-            </div>`;
+            </div>
+							`
+							else
+							container.innerHTML += `
+						 <div class="card overflow-hidden" style="box-shadow: 0 0px 30px #cfe8e1 ; border-radius: 15px;">
+                <div class="d-md-flex" style="padding: 2%;">
+                    <div class="item-card9-img">
+                        <div class="item-card9-imgs">
+                            <a href="#" onclick="GetDetailsDoctor('${encryptedData}',0)"  id="doctorDetails"></a>
+                            <img alt="img" class="cover-image" src="./../../assets/images/media/doctors/doctor.png">
+							 </div>
+                    </div>
+                    <div class="card border-0 mb-0">
+                        <div class="card-body">
+                            <div class="item-card9">
+                                <a href="#" onclick="GetDetailsDoctor('${encryptedData}',0)"  class="text-dark">
+                                    <h4 class="font-weight-bold mt-1 mb-1">Dr ${name}</h4>
+                                </a>
+                                <span class="text-muted fs-13 mt-0">
+                                    <i class="fa fa-user-md text-muted me-2"></i>${speciality}
+                                </span>
+                                <div class="item-card9-desc mb-0 mt-2">
+                                    <span class="me-4 d-inline-block"><i class="fa fa-map-marker text-muted me-1"></i>${addr} , ${gouv} , ${city}</span>
+                                    <span class="me-4"><i class="fe fe-phone text-muted me-1"></i>${phone}</span>
+                                </div>
+                            </div>
+                        </div>
+							<style>
+							 /* Cible les écrans de taille mobile (moins de 768px) */
+  @media (max-width: 767.98px) { 
+    .custom-padding {
+      padding-right: 0 !important;
+    }
+  }
+
+  /* Cible les écrans au-dessus de 768px (tablettes et plus grandes tailles) */
+  @media (min-width: 768px) { 
+    .custom-padding {
+      padding-right: 13% !important;
+    }
+  }
+							</style>
+						<div class="card-footer p-0 custom-padding"  style="border: 0px !important">
+														<div class="item-card9-footer btn-appointment">
+															<div class="btn-group w-100">
+																
+																			<a href=""  
+																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action theme-btn style-one"
+																	onclick="GetDetailsDoctor('${encryptedData}',1)" 
+																	data-bs-toggle="modal"><i
+																		class="fe fe-phone  me-1 d-inline-block"></i>Téléconsultation</a>
+																<a href=""  
+																	class="btn btn-outline-light w-55 p-2 border-top-0 border-end-0 border-bottom-0 call-to-action theme-btn style-two"
+																	onclick="GetDetailsDoctor('${encryptedData}',0)" 
+																	data-bs-toggle="modal"><i
+																		class="fe fe-phone  me-1 d-inline-block"></i>Rendez-vous</a>
+															</div>
+														</div>
+													</div>
+                    </div>
+                </div>
+            </div>
+							`
+							container.innerHTML += `
+                       `;
 			});
 		}
 
